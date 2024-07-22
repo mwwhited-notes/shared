@@ -3,7 +3,7 @@
 ## Model View Controller (MVC)
 
 ```plantuml
-title: Model View Controller (MVC)
+title: Presentation Pattern - Model View Controller (MVC)
 
 () User
 
@@ -22,7 +22,7 @@ Controller --> Model : Manipulates
 ## Model View Presenter (MVP)
 
 ```plantuml
-title: Model View Presenter (MVP)
+title: Presentation Pattern - Model View Presenter (MVP)
 () User
 
 [View]
@@ -42,7 +42,7 @@ Model --> Presenter : State Changes Events
 ## Model View ViewModel (MVVM)
 
 ```plantuml
-title: Model View ViewModel (MVVM)
+title: Presentation Pattern - Model View ViewModel (MVVM)
 
 () User
 

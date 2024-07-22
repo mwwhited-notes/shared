@@ -3,7 +3,7 @@
 ## Create, Read, Update, Delete (CRUD)
 
 ```plantuml
-title: Create, Read, Update, Delete (CRUD)
+title: Data Access Pattern - Create, Read, Update, Delete (CRUD)
 
 ()User
 
@@ -28,7 +28,7 @@ Delete --> Storage : Delete
 ## Command Query Responsibility Segregation (CQRS)
 
 ```plantuml
-title: Command Query Responsibility Segregation (CQRS) 
+title: Data Access Pattern - Command Query Responsibility Segregation (CQRS) 
 
 ()User
 cloud "Front End"{
