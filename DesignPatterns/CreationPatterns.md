@@ -1,7 +1,5 @@
 # Creation Patterns
 
-https://en.wikipedia.org/wiki/Software_design_pattern#Classification_and_list
-
 ## Abstract Factory
 
 Abstract factories are used to create a set of related objects without specifying their type.
@@ -222,27 +220,24 @@ class ConcretePrototypeB implements Prototype {
 }
 ```
 
-## Proxy (Lazy Initialization)
+## Lazy Initialization
 
 Proxies or Lazy Initialized objects may be used for objects that are expensive to create.  The actual creation of the object is not called until the first time the object is required.
 
 ```plantuml
-title: Create Pattern - Proxy
+title: Create Pattern - Lazy Initialization
 
-interface Subject {
-    void request()
+class Client {
+    - lazyObject: LazyObject
+    + getLazyObject(): LazyObject
+    + someMethod()
 }
 
-class RealSubject implements Subject {
-    void request()
+class LazyObject {
+    + doWork()
 }
 
-class Proxy implements Subject {
-    - realSubject: RealSubject
-    + request()
-}
-
-Proxy --> RealSubject: delegates
+Client --> LazyObject: uses
 
 ```
 
