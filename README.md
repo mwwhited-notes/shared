@@ -2,7 +2,9 @@
 
 ## Summary
 
-This is a collection of personal notes on various design/architectural patterns, application/feature design and much more.
+This is a collection of personal notes on various design/architectural patterns, application/feature design and much more. Feel free to use as you like but remember Buddy is watching you.
+
+![Buddy](./images/buddy_300x400.jpg)
 
 ## Sources and References
 
