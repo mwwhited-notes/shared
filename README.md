@@ -1,5 +1,9 @@
 # General Notes
 
+## Summary
+
+This is a collection of personal notes on various design/architectural patterns, application/feature design and much more.
+
 ## Sources and References
 
 - [Software design patterns](https://en.wikipedia.org/wiki/Software_design_pattern)
