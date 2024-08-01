@@ -26,6 +26,7 @@ cloud "Front End" {
     [App Service 1] AS API_A1
     [App Service 2] AS API_A2
 }
+
 frame Service1 {
     [System Service 1] AS API_S1
     database Data1
@@ -79,4 +80,42 @@ Func3 --> Service
 Service -> Data2
 Queue1 -> Func4
 Func4 -> Data1
+```
+
+## Sidecar
+
+A Sidecar is an application component that is an external process in the same container or a secondary process in a related container to manage some cross cutting concern.  
+
+```plantuml
+title: Service Pattern - Sidecar
+
+package "Container" {
+    [Sidecar Proxy] <<component>>
+    [Primary Application] <<component>>
+    [Sidecar Service] <<component>>
+}
+
+[Client] --> [Sidecar Proxy] : gRPC/HTTP Call
+[Sidecar Proxy] --> [Primary Application] : gRPC/Named Pipes Communication
+[Primary Application] --> [Sidecar Service] : gRPC/Named Pipes Communication
+
+note left of [Client]
+  External client making a request
+  to the primary application
+end note
+
+note right of [Sidecar Proxy]
+  Handles cross-cutting concerns
+  (e.g., service discovery, translation)
+end note
+
+note right of [Primary Application]
+  Handles core business logic and requests
+end note
+
+note right of [Sidecar Service]
+  Handles cross-cutting concerns
+  (e.g., logging, monitoring)
+end note
+
 ```

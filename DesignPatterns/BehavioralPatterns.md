@@ -481,3 +481,50 @@ activate Subject
     end
 
 ```
+
+## State
+
+### Class Diagram
+
+```plantuml
+class Context {
+    -state: State
+    +setState(state: State)
+    +request()
+}
+
+interface State {
+    +handle(context: Context)
+}
+
+class ConcreteStateA implements State {
+    +handle(context: Context)
+}
+
+class ConcreteStateB implements State {
+    +handle(context: Context)
+}
+
+Context --> State
+```
+
+### Sequence Diagram
+
+```plantuml
+actor Client
+participant Context
+participant ConcreteStateA
+participant ConcreteStateB
+
+Client -> Context: request()
+activate Context
+    Context -> ConcreteStateA: handle()
+    activate ConcreteStateA
+    return stateA
+    Context -> Context : setState(stateA)
+
+    Context -> ConcreteStateB: handle()
+    activate ConcreteStateB
+    return stateB
+    Context -> Context : setState(stateB)
+```
