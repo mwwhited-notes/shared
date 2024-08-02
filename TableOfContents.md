@@ -54,6 +54,14 @@
     - [Marker](./DesignPatterns/StructuralPatterns.md#markertagging-interfaces)
     - [Proxy](./DesignPatterns/StructuralPatterns.md#proxy)
 
+  - [Transactional Patterns](./DesignPatterns/TransactionPatterns.md)
+    - [Event Sourcing](./DesignPatterns/TransactionPatterns.md#event-sourcing)
+    - [Outbox](./DesignPatterns/TransactionPatterns.md#outbox)
+    - [Saga - Choreography](./DesignPatterns/TransactionPatterns.md#saga---choreography)
+    - [Saga - Orchestration](./DesignPatterns/TransactionPatterns.md#saga---orchestration)
+    - [Two-Phase Commit (2PC)](./DesignPatterns/TransactionPatterns.md#two-phase-commit-2pc)
+    - [Three-Phase Commit (3PC)](./DesignPatterns/TransactionPatterns.md#three-phase-commit-3pc)
+
 - [Example Code](./Examples/)
   - [Design Pattern - Behavior: Blackboard](./Examples/BehaviorBlackboard/)
   - [Design Pattern - Behavior: Specification](./Examples/BehaviorSpecification/)

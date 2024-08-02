@@ -33,9 +33,6 @@
     - Producer/Consumer
     - Fork/Join
   - data consistency
-    - transactional outbox
-    - event sourcing
-    - two phase commit
     - eventually consistent
     - idempotency
     - data versioning
