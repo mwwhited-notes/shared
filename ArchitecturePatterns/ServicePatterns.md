@@ -3,6 +3,8 @@
 ## N-Tier, Layered
 
 ```plantuml
+@startuml
+
 title: Service Pattern - N-Tier
 
 ()User
@@ -13,11 +15,15 @@ database "Data Access" as DataAccess
 User <-> Presentation
 Presentation <--> Business
 Business <--> DataAccess
+
+@enduml
 ```
 
 ## Microservices
 
 ```plantuml
+@startuml
+
 title: Service Pattern - Microservices
 
 () User
@@ -45,11 +51,15 @@ API_S1 -> API_S2
 
 API_S1 -- Data1
 API_S2 -- Data2
+
+@enduml
 ```
 
 ## Serverless
 
 ```plantuml
+@startuml
+
 title: Service Pattern - Serverless
 
 () User
@@ -80,6 +90,8 @@ Func3 --> Service
 Service -> Data2
 Queue1 -> Func4
 Func4 -> Data1
+
+@enduml
 ```
 
 ## Sidecar
@@ -87,6 +99,8 @@ Func4 -> Data1
 A Sidecar is an application component that is an external process in the same container or a secondary process in a related container to manage some cross cutting concern.  
 
 ```plantuml
+@startuml
+
 title: Service Pattern - Sidecar
 
 package "Container" {
@@ -118,4 +132,5 @@ note right of [Sidecar Service]
   (e.g., logging, monitoring)
 end note
 
+@enduml
 ```

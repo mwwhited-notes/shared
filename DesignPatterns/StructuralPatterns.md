@@ -5,6 +5,8 @@
 Adapters are used to convert from one implementation to another.
 
 ```plantuml
+@startuml
+
 title: Structural Pattern - Adapter
 
 interface Target {
@@ -27,6 +29,8 @@ class Client {
 
 Adapter --> Adaptee
 Client --> Target
+
+@enduml
 ```
 
 ## Bridge
@@ -34,6 +38,8 @@ Client --> Target
 Bridge pattern is used to decouple abstractions from implementations 
 
 ```plantuml
+@startuml
+
 title: Structural Pattern - Bridge
 
 interface Implementor {
@@ -60,6 +66,8 @@ class RefinedAbstraction extends BridgeAbstraction {
 }
 
 BridgeAbstraction o-- Implementor
+
+@enduml
 ```
 
 ## Composite
@@ -67,6 +75,8 @@ BridgeAbstraction o-- Implementor
 Composite classes may be used to simplify multiple types into a single component.  This provides a means to represent complex hierarchies in a simplified fashion.
 
 ```plantuml
+@startuml
+
 title: Structural Pattern - Composite
 
 interface Graphic {
@@ -89,6 +99,8 @@ class CompositeGraphic implements Graphic {
 }
 
 CompositeGraphic --> "1..*" Graphic : contains
+
+@enduml
 ```
 
 ## Decorator / Wrapper
@@ -96,6 +108,8 @@ CompositeGraphic --> "1..*" Graphic : contains
 Decorators provide a means to add functionality to a object dynamically without sub-classing.
 
 ```plantuml
+@startuml
+
 title: Structural Pattern - Decorator
 
 interface Component {
@@ -114,6 +128,8 @@ class Composite implements Component {
 }
 
 Composite --> "1..*" Component : contains
+
+@enduml
 ```
 
 ## Facade
@@ -121,6 +137,8 @@ Composite --> "1..*" Component : contains
 Facades may be used to isolated sub-systems of functionality into a simplified abstraction.  This provide a means to manage access to a collection of functionality in from a single point.
 
 ```plantuml
+@startuml
+
 title: Structural Pattern - Facade
 
 class SubsystemA {
@@ -148,6 +166,8 @@ class Facade {
 Facade --> SubsystemA : uses
 Facade --> SubsystemB : uses
 Facade --> SubsystemC : uses
+
+@enduml
 ```
 
 ## Flyweight
@@ -155,6 +175,8 @@ Facade --> SubsystemC : uses
 Flyweight provides a means to reduce resources by allowing child classed to reference the same implementation instead of creating their own.
 
 ```plantuml
+@startuml
+
 title: Structural Pattern - Flyweight
 
 interface Flyweight {
@@ -173,6 +195,8 @@ class FlyweightFactory {
 }
 
 FlyweightFactory --> Flyweight : manages
+
+@enduml
 ```
 
 ## Marker/Tagging Interfaces
@@ -180,6 +204,8 @@ FlyweightFactory --> Flyweight : manages
 Marker interfaces are a means to provide additional metadata to your type definitions.   
 
 ```plantuml
+@startuml
+
 title: Structural Pattern - Marker Interface
 
 interface MarkerInterface1
@@ -191,6 +217,8 @@ class MyClass2
 MyClass1 ..|> MarkerInterface1
 MyClass2 ..|> MarkerInterface2
 MyClass2 ..|> MarkerInterface1
+
+@enduml
 ```
 
 ## Proxy
@@ -198,6 +226,8 @@ MyClass2 ..|> MarkerInterface1
 Proxies are similar to an adapter but typically provide an additional layer such as logging or access control. 
 
 ```plantuml
+@startuml
+
 title: Structural Pattern - Proxy
 
 interface Subject {
@@ -216,4 +246,6 @@ class Proxy {
 Subject <|-- RealSubject
 Subject <|-- Proxy
 Proxy --> RealSubject
+
+@enduml
 ```

@@ -4,6 +4,8 @@
 ## Login and Token Exchange
 
 ```plantuml
+@startuml
+
 title: OAuth2 - Login and Token Exchange
 
 actor User
@@ -27,11 +29,14 @@ ResourceServer -> STS : Validate Access Token
 STS -> ResourceServer : Validates Access Token
 ResourceServer -> Client : Provides Protected Resource
 
+@enduml
 ```
 
 ## Account Registration
 
 ```plantuml
+@startuml
+
 title: OAuth2 - Registration with SCIM
 
 actor User
@@ -51,11 +56,15 @@ Client -> SCIM: Send request to provision user\nwith access token
 SCIM -> Client: Confirm user provisioned
 
 User -> Client: Access application with new credentials
+
+@enduml
 ```
 
 ## Profile Management - SCIM
 
 ```plantuml
+@startuml
+
 title: OAuth2 - Account Management with SCIM
 
 actor Admin
@@ -79,5 +88,7 @@ Admin -> Client: Request to delete user profile
 Client -> SCIM: Send DELETE request for user profile\nwith user ID
 SCIM -> Client: Confirm user profile deleted
 Client -> Admin: Notify deletion success
+
+@enduml
 ```
 

@@ -3,6 +3,8 @@
 ## Model View Controller (MVC)
 
 ```plantuml
+@startuml
+
 title: Presentation Pattern - Model View Controller (MVC)
 
 () User
@@ -17,11 +19,14 @@ Model --> View : Updates
 View -> Controller : Requests
 Controller --> Model : Manipulates
 
+@enduml
 ```
 
 ## Model View Presenter (MVP)
 
 ```plantuml
+@startuml
+
 title: Presentation Pattern - Model View Presenter (MVP)
 () User
 
@@ -37,11 +42,14 @@ Presenter --> View : Updates
 Presenter --> Model : Updates
 Model --> Presenter : State Changes Events
 
+@enduml
 ```
 
 ## Model View ViewModel (MVVM)
 
 ```plantuml
+@startuml
+
 title: Presentation Pattern - Model View ViewModel (MVVM)
 
 () User
@@ -58,4 +66,5 @@ View --> ViewModel : Commands
 ViewModel --> Model : Updates
 Model --> ViewModel : State Change
 
+@enduml
 ```

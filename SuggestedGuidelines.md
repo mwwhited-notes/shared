@@ -29,7 +29,6 @@ public class MyImplementation : MyAbstractBase {
 Using composition makes testing `ImportantFunction` trivial as the object may be instantiated on its own.  It is also possible to mock out the functionality of `ImportantFunction` when testing `ExecuteOperation` allowing for testing just the implementation's functionality while ensuring the dependent operation is also called.  
 
 ```csharp
-
 public interface IProvideFunction {
     void OnImportantFunction();
 } 
@@ -64,7 +63,6 @@ Service Locators create tightly coupled implementation that are more difficult t
 While service locators/singletons may be tested in isolation.  Calling code and not mock out or easily replace the dependent call.
 
 ```csharp
-
 public class MyFunctionProvider {
     public static void ImportantFunction() {
         //do work here
@@ -86,7 +84,6 @@ public class MyImplementation {
 Using dependency injection makes it much easier to test operations in isolation.  It also allows for less contention in multi-threaded environments.
 
 ```csharp
-
 public interface IProvideFunction {
     void OnImportantFunction();
 } 

@@ -3,6 +3,8 @@
 ## Create, Read, Update, Delete (CRUD)
 
 ```plantuml
+@startuml
+
 title: Data Access Pattern - Create, Read, Update, Delete (CRUD)
 
 ()User
@@ -23,11 +25,15 @@ Read   --> Storage : Select
 Create --> Storage : Insert
 Update --> Storage : Update
 Delete --> Storage : Delete
+
+@enduml
 ```
 
 ## Command Query Responsibility Segregation (CQRS)
 
 ```plantuml
+@startuml
+
 title: Data Access Pattern - Command Query Responsibility Segregation (CQRS) 
 
 ()User
@@ -46,11 +52,15 @@ User --> Write : Command
 Read --> Storage : Data Query
 Write --> Queue : Store Command
 Queue -> Storage : Handle Command
+
+@enduml
 ```
 
 ## Event Sourcing
 
 ```plantuml
+@startuml
+
 title: Data Access Pattern - Event Sourcing
 
 class AggregateRoot {
@@ -88,11 +98,15 @@ AggregateRoot --> Command : processes
 AggregateRoot --> EventPublisher : publishes
 EventStore --> Event : stores
 EventPublisher --> Event : publishes
+
+@enduml
 ```
 
 ## Repository
 
 ```plantuml
+@startuml
+
 title: Data Access Pattern - Repository
 
 class Repository {
@@ -107,4 +121,6 @@ class Entity {
 }
 
 Repository --> Entity : manages
+
+@enduml
 ```

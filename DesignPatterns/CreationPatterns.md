@@ -5,6 +5,8 @@
 Abstract factories are used to create a set of related objects without specifying their type.
 
 ```plantuml
+@startuml
+
 title: Create Pattern - Abstract Factory
 
 interface AbstractFactory {
@@ -51,6 +53,7 @@ ConcreteFactory1 --> ProductB1: creates
 ConcreteFactory2 --> ProductA2: creates
 ConcreteFactory2 --> ProductB2: creates
 
+@enduml
 ```
 
 ## Builder
@@ -58,6 +61,8 @@ ConcreteFactory2 --> ProductB2: creates
 Builder is used to construct an object instance with control flow
 
 ```plantuml
+@startuml
+
 title: Create Pattern - Builder
 
 interface Builder {
@@ -97,6 +102,8 @@ class Director {
 Director -> Builder: Uses
 ConcreteBuilder1 --> Product: creates
 ConcreteBuilder2 --> Product: creates
+
+@enduml
 ```
 
 ## Dependency Injection
@@ -104,6 +111,8 @@ ConcreteBuilder2 --> Product: creates
 Dependency Injection is a means to control/provide dependent functionality to a class
 
 ```plantuml
+@startuml
+
 title: Create Pattern - Dependency Injection
 
 interface Service {
@@ -131,6 +140,8 @@ class Injector {
 Client --> Service: uses
 Injector --> Client: injects
 Injector --> Service: provides
+
+@enduml
 ```
 
 ## Factory
@@ -138,6 +149,8 @@ Injector --> Service: provides
 Factories are used to create the particular type of class instance
 
 ```plantuml
+@startuml
+
 title: Create Pattern - Factory
 
 interface Product {
@@ -167,6 +180,7 @@ class ConcreteCreatorB extends Creator {
 ConcreteCreatorA --> ConcreteProductA: creates
 ConcreteCreatorB --> ConcreteProductB: creates
 
+@enduml
 ```
 
 ## Pool
@@ -174,6 +188,8 @@ ConcreteCreatorB --> ConcreteProductB: creates
 Object pools provide a means to reuse object instances that are expensive to create.  Examples may include data service connection or threads.
 
 ```plantuml
+@startuml
+
 title: Create Pattern - Pool
 
 interface Poolable {
@@ -196,6 +212,8 @@ class ConcretePoolable implements Poolable {
 ObjectPool -> Poolable: manages
 ObjectPool --> ConcretePoolable: creates
 ObjectPool --> ConcretePoolable: reuses
+
+@enduml
 ```
 
 ## Prototype
@@ -203,6 +221,8 @@ ObjectPool --> ConcretePoolable: reuses
 Prototypes create instances by copying an existing object
 
 ```plantuml
+@startuml
+
 title: Create Pattern - Prototype
 
 interface Prototype {
@@ -218,6 +238,8 @@ class ConcretePrototypeB implements Prototype {
     - fieldB: int
     + clone(): Prototype
 }
+
+@enduml
 ```
 
 ## Lazy Initialization
@@ -225,6 +247,8 @@ class ConcretePrototypeB implements Prototype {
 Proxies or Lazy Initialized objects may be used for objects that are expensive to create.  The actual creation of the object is not called until the first time the object is required.
 
 ```plantuml
+@startuml
+
 title: Create Pattern - Lazy Initialization
 
 class Client {
@@ -239,6 +263,7 @@ class LazyObject {
 
 Client --> LazyObject: uses
 
+@enduml
 ```
 
 ## Registry (Multiton)
@@ -246,6 +271,8 @@ Client --> LazyObject: uses
 A registry allowed for storing/re-using a collect of named instances of an object.  
 
 ```plantuml
+@startuml
+
 title: Create Pattern - Registry
 
 class Registry {
@@ -261,6 +288,8 @@ class Client {
 }
 
 Registry --> Client: provides
+
+@enduml
 ```
 
 ## Singleton
@@ -268,6 +297,8 @@ Registry --> Client: provides
 Singletons are used to ensure only a single instance of an object is created in the lifetime of the application.
 
 ```plantuml
+@startuml
+
 title: Create Pattern - Singleton
 
 class Singleton {
@@ -277,4 +308,5 @@ class Singleton {
     + someMethod()
 }
 
+@enduml
 ```
