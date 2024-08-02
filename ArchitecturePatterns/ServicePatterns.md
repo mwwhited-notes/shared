@@ -1,6 +1,6 @@
 # Service Patterns
 
-## N-Tier
+## N-Tier, Layered
 
 ```plantuml
 title: Service Pattern - N-Tier

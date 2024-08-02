@@ -134,7 +134,6 @@ else Handler1 can't handle
     end
 end
 @enduml
-
 ```
 
 ## Command
@@ -144,6 +143,7 @@ The command pattern allows for defining a common means to execute operations.  T
 ## Class Diagram
 
 ```plantuml
+@startuml
 interface ICommand {
     +Execute()
 }
@@ -171,11 +171,14 @@ ICommand <|.. ConcreteCommand2
 Invoker --> ICommand
 ConcreteCommand1 --> Receiver
 ConcreteCommand2 --> Receiver
+
+@enduml
 ```
 
 ### Sequence Diagram
 
 ```plantuml
+@startuml
 participant Caller
 participant Command
 participant CommandHandler1
@@ -192,6 +195,8 @@ activate CommandHandler2
 CommandHandler2 -> CommandHandler2: Process Command
 deactivate CommandHandler2
 deactivate Command
+
+@enduml
 ```
 
 ## Interpreter 
@@ -201,6 +206,7 @@ Interpreters are used to declare a graph based representation of a syntax expres
 ### Class Diagram
 
 ```plantuml
+@startuml
 interface IExpression {
     +Interpret(context: string): int
 }
@@ -219,11 +225,14 @@ class Context {
 }
 
 Context --> IExpression : uses
+
+@enduml
 ```
 
 ### Sequence Diagram
 
 ```plantuml
+@startuml
 participant Client
 participant Context
 participant Interpreter
@@ -249,6 +258,8 @@ end
 
 deactivate Context
 deactivate Interpreter
+
+@enduml
 ```
 
 ## Iterator or Cursor
@@ -258,6 +269,7 @@ Iterators are used to access the elements of a set of objects sequentially.
 ### Class Diagram
 
 ```plantuml
+@startuml
 interface IIterator {
     +HasNext() : bool
     +Next() : Object
@@ -283,11 +295,14 @@ class ConcreteAggregate implements IAggregate {
 
 ConcreteAggregate --> ConcreteIterator
 ConcreteAggregate --> Object
+
+@enduml
 ```
 
 ### Sequence Diagram
 
 ```plantuml
+@startuml
 participant Client
 participant Collection
 participant Iterator
@@ -323,6 +338,8 @@ end
 
 Client -> Iterator: Release Iterator()
 deactivate Iterator
+
+@enduml
 ```
 
 ## Mediator
@@ -330,6 +347,7 @@ deactivate Iterator
 Mediator is used as a meant ot separate object interactions.  
 
 ```plantuml
+@startuml
 interface IMediator {
     +Notify(sender: Component, event: string): void
 }
@@ -358,6 +376,8 @@ class ConcreteComponent2 extends Component {
 
 ConcreteMediator --> ConcreteComponent1
 ConcreteMediator --> ConcreteComponent2
+
+@enduml
 ```
 
 ## Memento
@@ -367,6 +387,7 @@ Memento is a mean to capture/replay state for an applications.  Examples use cas
 ### Class Diagram
 
 ```plantuml
+@startuml
 class Originator {
     - state: String
     + SetState(state: String): void
@@ -389,11 +410,14 @@ class Caretaker {
 
 Originator --> Memento
 Caretaker --> Memento
+
+@enduml
 ```
 
 ### Sequence Diagram
 
 ```plantuml
+@startuml
 participant Originator
 participant Memento
 participant Caretaker
@@ -417,6 +441,8 @@ activate Memento
 Originator -> Memento: RestoreState()
 deactivate Memento
 deactivate Caretaker
+
+@enduml
 ```
 
 ## Observer, Dependents or Publisher/Subscriber
@@ -426,6 +452,7 @@ Observers are used to track changes and notify dependents.
 ### Class Diagram
 
 ```plantuml
+@startuml
 interface IObserver {
     + Update(subject: Subject): void
 }
@@ -452,11 +479,14 @@ class ConcreteObserver implements IObserver {
 }
 
 ConcreteSubject --> IObserver : maintains
+
+@enduml
 ```
 
 ### Sequence Diagram
 
 ```plantuml
+@startuml
 participant Publisher as Subject
 participant Subscriber1 as Observer1
 participant Subscriber2 as Observer2
@@ -480,6 +510,66 @@ activate Subject
         return
     end
 
+@enduml
+```
+
+## Specification
+
+The Specifications pattern is used as a means to define combinable business logic
+
+### Class Diagram
+
+```plantuml
+@startuml
+interface Specification {
+    +isSatisfiedBy(entity): bool
+}
+
+class ConcreteSpecificationA {
+    +isSatisfiedBy(entity): bool
+}
+
+class ConcreteSpecificationB {
+    +isSatisfiedBy(entity): bool
+}
+
+class CompositeSpecification {
+    +isSatisfiedBy(entity): bool
+}
+
+Specification <|-- ConcreteSpecificationA
+Specification <|-- ConcreteSpecificationB
+Specification <|-- CompositeSpecification
+
+CompositeSpecification --> Specification : specifications
+@enduml
+```
+
+### Sequence Diagram
+
+```plantuml
+@startuml
+actor Client
+participant "CompositeSpecification" as Composite
+participant "ConcreteSpecificationA" as SpecA
+participant "ConcreteSpecificationB" as SpecB
+
+Client -> Composite : isSatisfiedBy(Entity)
+activate Composite
+
+    Composite -> SpecA : isSatisfiedBy(Entity)
+    activate SpecA
+        SpecA -> SpecA : Check criteria
+    deactivate SpecA
+
+    Composite -> SpecB : isSatisfiedBy(Entity)
+    activate SpecB
+        SpecB -> SpecB : Check criteria
+    deactivate SpecB
+    
+    return result
+@enduml
+
 ```
 
 ## State
@@ -487,6 +577,7 @@ activate Subject
 ### Class Diagram
 
 ```plantuml
+@startuml
 class Context {
     -state: State
     +setState(state: State)
@@ -506,11 +597,14 @@ class ConcreteStateB implements State {
 }
 
 Context --> State
+@enduml
 ```
 
 ### Sequence Diagram
 
 ```plantuml
+@startuml
+
 actor Client
 participant Context
 participant ConcreteStateA
@@ -527,4 +621,5 @@ activate Context
     activate ConcreteStateB
     return stateB
     Context -> Context : setState(stateB)
+@enduml
 ```

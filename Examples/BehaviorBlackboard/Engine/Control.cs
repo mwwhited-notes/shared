@@ -1,11 +1,10 @@
 ﻿
 namespace BehaviorBlackboard.Engine;
 
-public class Control : IControl
+public class Control(IBlackboard blackboard) : IControl
 {
-    private readonly IBlackboard _blackboard;
+    private readonly IBlackboard _blackboard = blackboard;
     private readonly List<IKnowledgeSource> _knowledgeSources = [];
-    public Control(IBlackboard blackboard) => _blackboard = blackboard;
 
     public IControl Add(IKnowledgeSource knowledgeSource)
     {
