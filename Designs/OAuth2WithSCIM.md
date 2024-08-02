@@ -1,7 +1,6 @@
+# OAuth2 with System for Cross-domain Identity Management (SCIM)
 
-## OAuth2
-
-## Login and Token Exchange
+## OAuth - Login and Token Exchange
 
 ```plantuml
 @startuml
@@ -32,7 +31,7 @@ ResourceServer -> Client : Provides Protected Resource
 @enduml
 ```
 
-## Account Registration
+## SCIM - Account Registration
 
 ```plantuml
 @startuml
@@ -60,7 +59,7 @@ User -> Client: Access application with new credentials
 @enduml
 ```
 
-## Profile Management - SCIM
+## SCIM - Profile Management
 
 ```plantuml
 @startuml

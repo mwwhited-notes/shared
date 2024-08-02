@@ -4,6 +4,8 @@
 
 The blackboard pattern allows discrete state management across multiple knowledge source providers.  Each knowledge provider owns its own validate and data lookup.  Shared state is stored in the Blackboard and access in managed through the control. 
 
+[Example](../Examples/BehaviorBlackboard/)
+
 ### Class Diagram
 
 ```plantuml
@@ -524,6 +526,8 @@ activate Subject
 ## Specification
 
 The Specifications pattern is used as a means to define combinable business logic
+
+[Example](../Examples/BehaviorSpecification/)
 
 ### Class Diagram
 
