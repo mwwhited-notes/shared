@@ -635,3 +635,146 @@ activate Context
     Context -> Context : setState(stateB)
 @enduml
 ```
+
+## Strategy
+
+The Strategy patterns allows for changing algorithm independently from the client.
+
+### Class Diagram
+
+```plantuml
+@startuml
+
+interface Strategy {
+    +execute(data): void
+}
+
+class ConcreteStrategyA {
+    +execute(data): void
+}
+
+class ConcreteStrategyB {
+    +execute(data): void
+}
+
+class Context {
+    -strategy: Strategy
+    +setStrategy(strategy: Strategy): void
+    +executeStrategy(data): void
+}
+
+Strategy <|-- ConcreteStrategyA
+Strategy <|-- ConcreteStrategyB
+Context --> Strategy : strategy
+
+@enduml
+```
+
+### Sequence Diagram
+
+```plantuml
+@startuml
+
+actor Client
+participant "Context" as Context
+participant "ConcreteStrategyA" as StrategyA
+participant "ConcreteStrategyB" as StrategyB
+
+Client -> Context : setStrategy(StrategyA)
+activate Context
+deactivate Context
+
+Client -> Context : executeStrategy(data)
+activate Context
+    Context -> StrategyA : execute(data)
+    activate StrategyA
+        StrategyA -> StrategyA : Perform algorithm
+    deactivate StrategyA
+    Context -> Client : return result
+deactivate Context
+
+Client -> Context : setStrategy(StrategyB)
+activate Context
+deactivate Context
+
+Client -> Context : executeStrategy(data)
+activate Context
+    Context -> StrategyB : execute(data)
+    activate StrategyB
+        StrategyB -> StrategyB : Perform algorithm
+    deactivate StrategyB
+    Context -> Client : return result
+deactivate Context
+
+@enduml
+```
+
+## Template Method
+
+Template Methods provide a means to use object hierarchy to abstract your application specific implementation from a shared definition.
+
+### Class Diagram
+
+```plantuml
+@startuml
+abstract class AbstractClass {
+    +templateMethod(): void
+    #primitiveOperation1(): void
+    #primitiveOperation2(): void
+}
+
+class ConcreteClassA {
+    +primitiveOperation1(): void
+    +primitiveOperation2(): void
+}
+
+class ConcreteClassB {
+    +primitiveOperation1(): void
+    +primitiveOperation2(): void
+}
+
+AbstractClass <|-- ConcreteClassA
+AbstractClass <|-- ConcreteClassB
+@enduml
+```
+
+### Sequence Diagram
+
+```plantuml
+@startuml
+actor Client
+participant "ConcreteClassA" as ClassA
+participant "ConcreteClassB" as ClassB
+participant "AbstractClass" as AbstractClass
+
+Client -> ClassA : templateMethod()
+activate ClassA
+    ClassA -> AbstractClass : templateMethod()
+    activate AbstractClass
+        AbstractClass -> ClassA : primitiveOperation1()
+        activate ClassA
+            ClassA -> ClassA : Execute specific logic
+        deactivate ClassA
+        AbstractClass -> ClassA : primitiveOperation2()
+        activate ClassA
+            ClassA -> ClassA : Execute specific logic
+        deactivate ClassA
+    deactivate AbstractClass
+deactivate ClassA
+
+Client -> ClassB : templateMethod()
+activate ClassB
+    ClassB -> AbstractClass : templateMethod()
+    activate AbstractClass
+        AbstractClass -> ClassB : primitiveOperation1()
+        activate ClassB
+            ClassB -> ClassB : Execute specific logic
+        deactivate ClassB
+        AbstractClass -> ClassB : primitiveOperation2()
+        activate ClassB
+            ClassB -> ClassB : Execute specific logic
+        deactivate ClassB
+    deactivate AbstractClass
+deactivate ClassB
+@enduml
+```

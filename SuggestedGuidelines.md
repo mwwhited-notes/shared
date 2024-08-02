@@ -4,6 +4,8 @@
 
 Using composition makes for more reuseable and more testable code.  
 
+Another common example would be to use a [Strategy](./DesignPatterns/BehavioralPatterns.md#strategy) over a [Template Method](./DesignPatterns/BehavioralPatterns.md#template-method)
+
 ### Inheritance
 
 Is it not possible to create instances of abstract classes making testing just the abstract functionality difficult.  On top of that you are not able to mock out the dependent functionality meaning every test over `ExecuteOperation` must also test `OnImportantFunction`
@@ -42,6 +44,7 @@ public class MyFunctionProvider : IProvideFunction {
 public class MyImplementation {
     private readonly IProvideFunction _function;
 
+    // pass in the required dependency
     public MyImplementation(IProvideFunction function) {
         _function = function;
     }
@@ -56,7 +59,7 @@ public class MyImplementation {
 
 ## Dependency Injection over Service Locators (Singletons)
 
-Service Locators create tightly coupled implementation that are more difficult to manage and test.  Singletons can also cause threading issues by allowing contention on shared resources.  
+Service Locators/[Singletons](./DesignPatterns//CreationPatterns.md#singleton) create tightly coupled implementation that are more difficult to manage and test.  Singletons can also cause threading issues by allowing contention on shared resources.  
 
 ### Service Locator (Singleton)
 

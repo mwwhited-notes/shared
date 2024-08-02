@@ -1,21 +1,25 @@
 # Table of Contents
 
 - [README](./README.md)
+
 - [Architecture Patterns](./ArchitecturePatterns/)
   - [Data Access Patterns](./ArchitecturePatterns/DataAccessPatterns.md)
     - [Command Query Responsibility Segregation (CQRS)](./ArchitecturePatterns/DataAccessPatterns.md#command-query-responsibility-segregation-cqrs)
     - [Create Read Update Delete (CRUD)](./ArchitecturePatterns/DataAccessPatterns.md#create-read-update-delete-crud)
     - [Event Sourcing](./ArchitecturePatterns/DataAccessPatterns.md#event-sourcing)
     - [Repository](./ArchitecturePatterns/DataAccessPatterns.md#repository)
+
   - [Presentation Patterns](./ArchitecturePatterns/PresentationPatterns.md)
     - [Model View Controller (MVC)](./ArchitecturePatterns/PresentationPatterns.md#model-view-controller-mvc)
     - [Model View Presenter (MVP)](./ArchitecturePatterns/PresentationPatterns.md#model-view-presenter-mvp)
     - [Model View ViewModel (MVVM)](./ArchitecturePatterns/PresentationPatterns.md#model-view-viewmodel-mvvm)
+
   - [Service Patterns](./ArchitecturePatterns/ServicePatterns.md)
     - [Microservices](./ArchitecturePatterns/ServicePatterns.md#microservices)
     - [N-Tier](./ArchitecturePatterns/ServicePatterns.md#n-tier-layered)
     - [Serverless](./ArchitecturePatterns/ServicePatterns.md#serverless)
     - [Sidecar](./ArchitecturePatterns/ServicePatterns.md#sidecar)
+
 - [Design Patterns](./DesignPatterns/)
   - [Behavioral Patterns](./DesignPatterns/BehavioralPatterns.md)
     - [Blackboard](./DesignPatterns/BehavioralPatterns.md#blackboard)
@@ -27,6 +31,8 @@
     - [Observer](./DesignPatterns/BehavioralPatterns.md#observer-dependents-or-publishersubscriber)
     - [Specification](./DesignPatterns/BehavioralPatterns.md#specification)
     - [State](./DesignPatterns/BehavioralPatterns.md#state)
+    - [Strategy](./DesignPatterns/BehavioralPatterns.md#strategy)
+
   - [Creation Patterns](./DesignPatterns/CreationPatterns.md)
     - [Abstract Factory](./DesignPatterns/CreationPatterns.md#abstract-factory)
     - [Builder](./DesignPatterns/CreationPatterns.md#builder)
@@ -37,6 +43,7 @@
     - [Prototype](./DesignPatterns/CreationPatterns.md#prototype)
     - [Registry](./DesignPatterns/CreationPatterns.md#registry-multiton)
     - [Singleton](./DesignPatterns/CreationPatterns.md#singleton)
+
   - [Structural Patterns](./DesignPatterns/StructuralPatterns.md)
     - [Adapter](./DesignPatterns/StructuralPatterns.md#adapter)
     - [Bridge](./DesignPatterns/StructuralPatterns.md#bridge)
@@ -46,9 +53,12 @@
     - [Flyweight](./DesignPatterns/StructuralPatterns.md#flyweight)
     - [Marker](./DesignPatterns/StructuralPatterns.md#markertagging-interfaces)
     - [Proxy](./DesignPatterns/StructuralPatterns.md#proxy)
+
 - [Example Code](./Examples/)
   - [Design Pattern - Behavior: Blackboard](./Examples/BehaviorBlackboard/)
   - [Design Pattern - Behavior: Specification](./Examples/BehaviorSpecification/)
+
 - [Example Designs](./Designs/)
   - [OAuth2 with System for Cross-domain Identity Management (SCIM)](./Designs/OAuth2WithSCIM.md)
+
 - [Suggested Guidelines](./SuggestedGuidelines.md)
