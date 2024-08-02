@@ -7,6 +7,7 @@ The blackboard pattern allows discrete state management across multiple knowledg
 ### Class Diagram
 
 ```plantuml
+@startuml
 
 interface IControl {
     + Add(IKnowledgeSource)
@@ -51,11 +52,14 @@ Blackboard --> IControl  : onChange
 Control --> IBlackboard : read/write
 Control --> IBlackboard : get state
 Control --> IKnowledgeSource : call
+
+@enduml
 ```
 
 ### Sequence Diagram
 
 ```plantuml
+@startuml
 participant Controller
 participant Blackboard
 participant KnowledgeSource1
@@ -73,6 +77,7 @@ activate Blackboard
 Controller -> Blackboard: Retrieve Combined Data/Action()
 Controller -> Blackboard: Finalize()
 
+@enduml
 ```
 
 ## Chain of Responsibility
@@ -82,6 +87,7 @@ Chain of Responsibility provides a means to decouple the requester from the actu
 ### Class Diagram
 
 ```plantuml
+@startuml
 abstract class Handler {
   + SetNext(handler: Handler)
   + HandleRequest(request: string)
@@ -103,6 +109,8 @@ Handler <|-- ConcreteHandler1
 Handler <|-- ConcreteHandler2
 Handler <|-- ConcreteHandler3
 Handler --> Handler : nextHandler
+
+@enduml
 ```
 
 ###  Sequence Diagram
