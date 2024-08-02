@@ -1,0 +1,45 @@
+# Architecture Design Document
+
+## 1. Overview
+{{overview}}
+
+## 2. Architectural Goals
+{{#each architecturalGoals}}
+- **{{this.title}}**: {{this.description}}
+{{/each}}
+
+## 3. Architectural Diagram
+![Architecture Diagram]({{architectureDiagramPath}})
+
+## 4. Components
+{{#each components}}
+### {{this.name}}
+- **Description**: {{this.description}}
+- **Responsibilities**: 
+  {{#each this.responsibilities}}
+  - {{this}}
+  {{/each}}
+{{/each}}
+
+## 5. Data Flow
+{{dataFlowDescription}}
+
+## 6. Integration Points
+{{#each integrationPoints}}
+- **{{this.name}}**: {{this.description}}
+{{/each}}
+
+## 7. Technology Stack
+- **Frontend**: {{frontendTechnology}}
+- **Backend**: {{backendTechnology}}
+- **Database**: {{databaseTechnology}}
+- **Other**: {{otherTechnologies}}
+
+## 8. Security Considerations
+{{securityConsiderations}}
+
+## 9. Deployment Strategy
+{{deploymentStrategy}}
+
+## 10. Conclusion
+{{conclusion}}

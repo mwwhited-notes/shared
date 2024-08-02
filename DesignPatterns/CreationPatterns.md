@@ -2,7 +2,7 @@
 
 ## Abstract Factory
 
-Abstract factories are used to create a set of related objects without specifying their type.
+Abstract factories are used to create difference related related objects without specifying their type.
 
 ```plantuml
 @startuml

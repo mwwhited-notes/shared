@@ -62,3 +62,4 @@
   - [OAuth2 with System for Cross-domain Identity Management (SCIM)](./Designs/OAuth2WithSCIM.md)
 
 - [Suggested Guidelines](./SuggestedGuidelines.md)
+- [Future Ideas](./FutureIdeas.md)
