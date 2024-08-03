@@ -95,105 +95,6 @@ activate Scheduler
 @enduml
 ```
 
-## Stream Processing
-
-Stream Processing is used to process data in near real-time
-
-### Class Diagram
-
-```plantuml
-@startuml
-class DataSource {
-    - sourceID: String
-    - sourceType: String
-    + fetchData(): Data
-}
-
-class StreamProcessor {
-    - processorID: String
-    - processingLogic: String
-    + processStream(data: Data): ProcessedData
-    + updateState(data: Data): State
-}
-
-class StateStore {
-    - stateID: String
-    - stateData: Map
-    + saveState(state: State): void
-    + getState(stateID: String): State
-}
-
-class Sink {
-    - sinkID: String
-    - sinkType: String
-    + writeData(processedData: ProcessedData): void
-}
-
-class MonitoringSystem {
-    - monitorID: String
-    - metrics: Map
-    + logMetrics(metrics: Metrics): void
-    + getMetrics(): Metrics
-}
-
-class Data {
-    - content: String
-    - timestamp: Date
-}
-
-class ProcessedData {
-    - results: String
-    - processedTimestamp: Date
-}
-
-class State {
-    - stateInfo: String
-}
-
-class Metrics {
-    - processedCount: int
-    - errorCount: int
-    - latency: double
-}
-
-DataSource --> StreamProcessor : streams data
-StreamProcessor --> StateStore : updates state
-StreamProcessor --> Sink : sends processed data
-StreamProcessor --> MonitoringSystem : logs metrics
-
-@enduml
-```
-
-### Sequence Diagram
-
-```plantuml
-@startuml
-actor User
-
-participant "Data Source" as DataSource
-participant "Stream Processor" as StreamProcessor
-participant "State Store" as StateStore
-participant "Sink" as Sink
-participant "Monitoring System" as MonitoringSystem
-
-User -\ DataSource : sendData()
-    activate DataSource
-    DataSource -> StreamProcessor : streamingData()
-        activate StreamProcessor
-        StreamProcessor -> StateStore : updateState(data)
-            activate StateStore
-            return stateUpdated()
-
-        StreamProcessor -> Sink : writeProcessedData(processedData)
-            activate Sink
-            return success
-
-        StreamProcessor -\ MonitoringSystem : logMetrics()
-        return metricsConfirmed
-
-@enduml
-```
-
 ## Data Lake
 
 Data Lake is used to store vast amounts of raw and processed data for analysis and reporting.
@@ -276,6 +177,84 @@ User -\ Access : executeQuery(query)
         return results
 
     Access -\ User : results
+
+@enduml
+```
+
+## Data Partitioning
+
+### Class Diagram
+
+```plantuml
+@startuml
+class DataPartitioning {
+    - partitions: List<Partition>
+    - partitioningStrategy: String
+    + createPartition(data: Data): Partition
+    + queryPartition(query: Query): ResultSet
+}
+
+class Partition {
+    - partitionID: String
+    - data: List<Data>
+    + addData(data: Data): void
+    + getData(query: Query): List<Data>
+}
+
+class Data {
+    - content: String
+    - timestamp: Date
+}
+
+class Query {
+    - sql: String
+    - parameters: Map
+}
+
+class ResultSet {
+    - results: List<Data>
+    - queryTime: Date
+}
+
+class PartitioningStrategy {
+    + partitionByRange(data: Data): Partition
+    + partitionByHash(data: Data): Partition
+}
+
+DataPartitioning --> PartitioningStrategy : uses
+DataPartitioning --> Partition : manages
+
+@enduml
+```
+
+### Sequence Diagram
+
+```plantuml
+@startuml
+actor User
+
+participant "Data Partitioning" as DataPartitioning
+participant "Partition" as Partition
+participant "Partitioning Strategy" as Strategy
+
+User -\ DataPartitioning : createPartition(data)
+    activate DataPartitioning
+    DataPartitioning -> Strategy : partitionByRange(data)
+        activate Strategy
+        return partition
+
+    DataPartitioning -> Partition : addData(data)
+        activate Partition
+        return confirmation
+    deactivate DataPartitioning
+
+User -\ DataPartitioning : queryPartition(query)
+    activate DataPartitioning
+    DataPartitioning -> Partition : getData(query)
+        activate Partition
+        return results
+
+    return ResultSet
 
 @enduml
 ```
@@ -433,24 +412,46 @@ User -\ Federation : queryData(query)
 @enduml
 ```
 
-## Data Partitioning
+
+## Stream Processing
+
+Stream Processing is used to process data in near real-time
 
 ### Class Diagram
 
 ```plantuml
 @startuml
-class DataPartitioning {
-    - partitions: List<Partition>
-    - partitioningStrategy: String
-    + createPartition(data: Data): Partition
-    + queryPartition(query: Query): ResultSet
+class DataSource {
+    - sourceID: String
+    - sourceType: String
+    + fetchData(): Data
 }
 
-class Partition {
-    - partitionID: String
-    - data: List<Data>
-    + addData(data: Data): void
-    + getData(query: Query): List<Data>
+class StreamProcessor {
+    - processorID: String
+    - processingLogic: String
+    + processStream(data: Data): ProcessedData
+    + updateState(data: Data): State
+}
+
+class StateStore {
+    - stateID: String
+    - stateData: Map
+    + saveState(state: State): void
+    + getState(stateID: String): State
+}
+
+class Sink {
+    - sinkID: String
+    - sinkType: String
+    + writeData(processedData: ProcessedData): void
+}
+
+class MonitoringSystem {
+    - monitorID: String
+    - metrics: Map
+    + logMetrics(metrics: Metrics): void
+    + getMetrics(): Metrics
 }
 
 class Data {
@@ -458,23 +459,25 @@ class Data {
     - timestamp: Date
 }
 
-class Query {
-    - sql: String
-    - parameters: Map
+class ProcessedData {
+    - results: String
+    - processedTimestamp: Date
 }
 
-class ResultSet {
-    - results: List<Data>
-    - queryTime: Date
+class State {
+    - stateInfo: String
 }
 
-class PartitioningStrategy {
-    + partitionByRange(data: Data): Partition
-    + partitionByHash(data: Data): Partition
+class Metrics {
+    - processedCount: int
+    - errorCount: int
+    - latency: double
 }
 
-DataPartitioning --> PartitioningStrategy : uses
-DataPartitioning --> Partition : manages
+DataSource --> StreamProcessor : streams data
+StreamProcessor --> StateStore : updates state
+StreamProcessor --> Sink : sends processed data
+StreamProcessor --> MonitoringSystem : logs metrics
 
 @enduml
 ```
@@ -485,28 +488,26 @@ DataPartitioning --> Partition : manages
 @startuml
 actor User
 
-participant "Data Partitioning" as DataPartitioning
-participant "Partition" as Partition
-participant "Partitioning Strategy" as Strategy
+participant "Data Source" as DataSource
+participant "Stream Processor" as StreamProcessor
+participant "State Store" as StateStore
+participant "Sink" as Sink
+participant "Monitoring System" as MonitoringSystem
 
-User -\ DataPartitioning : createPartition(data)
-    activate DataPartitioning
-    DataPartitioning -> Strategy : partitionByRange(data)
-        activate Strategy
-        return partition
+User -\ DataSource : sendData()
+    activate DataSource
+    DataSource -> StreamProcessor : streamingData()
+        activate StreamProcessor
+        StreamProcessor -> StateStore : updateState(data)
+            activate StateStore
+            return stateUpdated()
 
-    DataPartitioning -> Partition : addData(data)
-        activate Partition
-        return confirmation
-    deactivate DataPartitioning
+        StreamProcessor -> Sink : writeProcessedData(processedData)
+            activate Sink
+            return success
 
-User -\ DataPartitioning : queryPartition(query)
-    activate DataPartitioning
-    DataPartitioning -> Partition : getData(query)
-        activate Partition
-        return results
-
-    return ResultSet
+        StreamProcessor -\ MonitoringSystem : logMetrics()
+        return metricsConfirmed
 
 @enduml
 ```

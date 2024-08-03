@@ -150,7 +150,7 @@ end
 
 The command pattern allows for defining a common means to execute operations.  This allows for decoupling the caller from the handler.
 
-## Class Diagram
+### Class Diagram
 
 ```plantuml
 @startuml

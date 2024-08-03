@@ -1,7 +1,6 @@
 
 ## Suggested Topics
 
-- [Actor Model](https://en.wikipedia.org/wiki/Actor_model)
 - [Software development philosophies](https://en.wikipedia.org/wiki/List_of_software_development_philosophies)
 
 - Modular Components
@@ -16,13 +15,6 @@
   - Automation
 
 - Other Patterns
-  - threading
-    - Actor Model
-    - Pipelineing
-    - Async/Await, Future/Promise
-    - Read/Write Locks
-    - Producer/Consumer
-    - Fork/Join
   - data consistency
     - eventually consistent
     - idempotency

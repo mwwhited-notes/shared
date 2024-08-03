@@ -396,7 +396,7 @@ participant "Consumer" as Consumer
 participant "Message Broker" as MessageBroker
 participant "Queue" as Queue
 
-alt Publisher
+par Publisher
 User -\ Producer : publish(message)
     activate Producer
     Producer -> MessageBroker : sendMessage(queueName, message)
@@ -408,7 +408,7 @@ User -\ Producer : publish(message)
     deactivate Producer
 end 
 
-alt Reader
+par Reader
 User -> Consumer : consume()
     activate Consumer
     Consumer -> MessageBroker : receiveMessage(queueName)

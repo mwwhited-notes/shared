@@ -6,6 +6,12 @@ This is a collection of personal notes on various design/architectural patterns,
 
 ![Buddy](./images/buddy_300x400.jpg)
 
+## Tell me more
+
+- [Table of Contents](./TableOfContents.md)
+- [Future Ideas](./FutureIdeas.md)
+- [Suggested Guidelines](./SuggestedGuidelines.md)
+
 ## Sources and References
 
 - [Software design patterns](https://en.wikipedia.org/wiki/Software_design_pattern)

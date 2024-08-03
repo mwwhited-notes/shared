@@ -1,24 +1,5 @@
 # Service Patterns
 
-## N-Tier, Layered
-
-```plantuml
-@startuml
-
-title: Service Pattern - N-Tier
-
-()User
-[Presentation]
-[Business]
-database "Data Access" as DataAccess
-
-User <-> Presentation
-Presentation <--> Business
-Business <--> DataAccess
-
-@enduml
-```
-
 ## Microservices
 
 ```plantuml
@@ -51,6 +32,25 @@ API_S1 -> API_S2
 
 API_S1 -- Data1
 API_S2 -- Data2
+
+@enduml
+```
+
+## N-Tier, Layered
+
+```plantuml
+@startuml
+
+title: Service Pattern - N-Tier
+
+()User
+[Presentation]
+[Business]
+database "Data Access" as DataAccess
+
+User <-> Presentation
+Presentation <--> Business
+Business <--> DataAccess
 
 @enduml
 ```

@@ -52,6 +52,13 @@
     - [Registry](./DesignPatterns/CreationPatterns.md#registry-multiton)
     - [Singleton](./DesignPatterns/CreationPatterns.md#singleton)
 
+  - [Concurrency Patterns](./DesignPatterns/ConcurrencyPatterns.md)
+    - [Actor Model](./DesignPatterns/ConcurrencyPatterns.md#actor-model)
+    - [Async/Await](./DesignPatterns/ConcurrencyPatterns.md#asyncawait)
+    - [Pipelining](./DesignPatterns/ConcurrencyPatterns.md#pipelining)
+    - [Producer/Consumer](./DesignPatterns/ConcurrencyPatterns.md#producerconsumer)
+    - [Read/Write Lock](./DesignPatterns/ConcurrencyPatterns.md#readwrite-lock)
+
   - [Service Patterns](./DesignPatterns/ServicePatterns.md.md)
     - [Bulk Head](./DesignPatterns/ServicePatterns.md#bulk-head)
     - [Circuit Breaker](./DesignPatterns/ServicePatterns.md#circuit-breaker)
