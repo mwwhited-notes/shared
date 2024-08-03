@@ -7,23 +7,15 @@
 - Modular Components
 - Reuseable Design
 - Dependency Injection
+
 - Software Testing
   - Unit
   - Module
   - Integration
   - System
   - Automation
+
 - Other Patterns
-  - services
-    - Circuit Breakers
-    - Service Discovery
-    - API Gateways
-    - Bulk Head
-    - Strangler Fix
-    - Rate Limiting
-    - Database per Service
-    - Message Broker
-    - Health Checks
   - threading
     - Actor Model
     - Pipelineing
@@ -54,6 +46,7 @@
   - Law of Demeter (Principal of Least Knowledge)
   - Fail Fast/Return Early
   - Keep It Simple Stupid (KISS)
+
 - Example Designs
   - Scheduling / Calendaring
   - Notifications / Messaging
@@ -84,6 +77,7 @@
   - Content Filtering
   - Resource Service Authorization
   - Single Sign-on
+
 - Design Tools and methodologies 
   - Unified Modeling Language (UML)
   - Entity-Relationship Diagrams (ERD)

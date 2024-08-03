@@ -52,6 +52,15 @@
     - [Registry](./DesignPatterns/CreationPatterns.md#registry-multiton)
     - [Singleton](./DesignPatterns/CreationPatterns.md#singleton)
 
+  - [Service Patterns](./DesignPatterns/ServicePatterns.md.md)
+    - [Bulk Head](./DesignPatterns/ServicePatterns.md#bulk-head)
+    - [Circuit Breaker](./DesignPatterns/ServicePatterns.md#circuit-breaker)
+    - [Database per Service](./DesignPatterns/ServicePatterns.md#database-per-service)
+    - [Health Check](./DesignPatterns/ServicePatterns.md#health-check)
+    - [Message Broker](./DesignPatterns/ServicePatterns.md#message-broker)
+    - [Service Discovery](./DesignPatterns/ServicePatterns.md#service-discovery)
+    - [Stranger Fig](./DesignPatterns/ServicePatterns.md#stranger-fig)
+
   - [Structural Patterns](./DesignPatterns/StructuralPatterns.md)
     - [Adapter](./DesignPatterns/StructuralPatterns.md#adapter)
     - [Bridge](./DesignPatterns/StructuralPatterns.md#bridge)
