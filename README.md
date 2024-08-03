@@ -26,3 +26,4 @@ This is a collection of personal notes on various design/architectural patterns,
 - [Dependency Injection in .NET](https://www.amazon.com/Dependency-Injection-NET-Mark-Seemann/dp/1935182501)
 - [Event Processing in Action](https://www.amazon.com/Event-Processing-Action-Opher-Etzion/dp/1935182218)
 - [Building Microservices: Designing Fine-Grained Systems](https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358)
+- [Object Constraint Language (OCL)](https://www.omg.org/spec/OCL/2.4/PDF)

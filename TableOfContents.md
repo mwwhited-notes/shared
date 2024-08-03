@@ -19,15 +19,6 @@
     - [Serverless](./ArchitecturePatterns/ServicePatterns.md#serverless)
     - [Sidecar](./ArchitecturePatterns/ServicePatterns.md#sidecar)
 
-  - [Data Patterns](./DesignPatterns/DataPatterns.md)
-    - [Batch Processing](./DesignPatterns/DataPatterns.md#batch-processing)
-    - [Data Lake](./DesignPatterns/DataPatterns.md#data-lake)
-    - [Data Partitioning](./DesignPatterns/DataPatterns.md#data-partitioning)
-    - [Data Warehouse](./DesignPatterns/DataPatterns.md#data-warehouse)
-    - [Federated Data](./DesignPatterns/DataPatterns.md#federated-data)
-    - [Repository](./DesignPatterns/DataPatterns.md#repository)
-    - [Stream Processing](./DesignPatterns/DataPatterns.md#stream-processing)
-
 - [Design Patterns](./DesignPatterns/)
   - [Behavioral Patterns](./DesignPatterns/BehavioralPatterns.md)
     - [Blackboard](./DesignPatterns/BehavioralPatterns.md#blackboard)
@@ -58,6 +49,15 @@
     - [Pipelining](./DesignPatterns/ConcurrencyPatterns.md#pipelining)
     - [Producer/Consumer](./DesignPatterns/ConcurrencyPatterns.md#producerconsumer)
     - [Read/Write Lock](./DesignPatterns/ConcurrencyPatterns.md#readwrite-lock)
+
+  - [Data Patterns](./DesignPatterns/DataPatterns.md)
+    - [Batch Processing](./DesignPatterns/DataPatterns.md#batch-processing)
+    - [Data Lake](./DesignPatterns/DataPatterns.md#data-lake)
+    - [Data Partitioning](./DesignPatterns/DataPatterns.md#data-partitioning)
+    - [Data Warehouse](./DesignPatterns/DataPatterns.md#data-warehouse)
+    - [Federated Data](./DesignPatterns/DataPatterns.md#federated-data)
+    - [Repository](./DesignPatterns/DataPatterns.md#repository)
+    - [Stream Processing](./DesignPatterns/DataPatterns.md#stream-processing)
 
   - [Service Patterns](./DesignPatterns/ServicePatterns.md.md)
     - [Bulk Head](./DesignPatterns/ServicePatterns.md#bulk-head)
@@ -109,10 +109,12 @@
     - [Use Case Diagram](./Examples/Diagrams.md#use-case-diagram)
     - [Wireframe](./Examples/Diagrams.md#wireframe)
     - [Work Breakdown Structure (WBS)](./Examples/Diagrams.md#work-breakdown-structure-wbs)
-  - [Design Pattern - Behavior: Blackboard](./Examples/BehaviorBlackboard/)
-  - [Design Pattern - Behavior: Specification](./Examples/BehaviorSpecification/)
 
-- Modeling Patterns
+  - Design Patterns
+    - [Behavior: Blackboard](./Examples/BehaviorBlackboard/)
+    - [Behavior: Specification](./Examples/BehaviorSpecification/)
+
+- Modeling Languages
   - Unified Modeling Language (UML)
     - [Class Diagram](./Examples/Diagrams.md#class-diagram)
     - [Use Case Diagram](./Examples/Diagrams.md#use-case-diagram)
