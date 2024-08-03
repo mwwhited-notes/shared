@@ -33,6 +33,14 @@
     - [State](./DesignPatterns/BehavioralPatterns.md#state)
     - [Strategy](./DesignPatterns/BehavioralPatterns.md#strategy)
 
+  - [Big Data Patterns](./DesignPatterns/BigDataPatterns.md)
+    - [Batch Processing](./DesignPatterns/BigDataPatterns.md#batch-processing)
+    - [Data Lake](./DesignPatterns/BigDataPatterns.md#data-lake)
+    - [Data Partitioning](./DesignPatterns/BigDataPatterns.md#data-partitioning)
+    - [Data Warehouse](./DesignPatterns/BigDataPatterns.md#data-warehouse)
+    - [Federated Data](./DesignPatterns/BigDataPatterns.md#federated-data)
+    - [Stream Processing](./DesignPatterns/BigDataPatterns.md#stream-processing)
+
   - [Creation Patterns](./DesignPatterns/CreationPatterns.md)
     - [Abstract Factory](./DesignPatterns/CreationPatterns.md#abstract-factory)
     - [Builder](./DesignPatterns/CreationPatterns.md#builder)

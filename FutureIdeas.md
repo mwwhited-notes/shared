@@ -15,7 +15,6 @@
   - Automation
 - Other Patterns
   - services
-    - Saga
     - Circuit Breakers
     - Service Discovery
     - API Gateways
@@ -47,14 +46,7 @@
     - write ahead logging
     - frontend for backend
   - map/reduce
-  - big data
-    - lambda architecture / batch processing
-    - kappa architecture / stream processing
-    - data lake
-    - data warehouse
-    - federated data
-    - data partitioning
-    - hybrid cloud
+
 - Suggested Guidelines
   - Single Responsibility Principal
   - Don't Repeat Yourself (DRY)
