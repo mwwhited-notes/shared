@@ -1,8 +1,111 @@
 # Transaction Patterns
 
+## Event Sourcing
+
+With Event Sourcing data is stored as a collection of events.  This allows for reconstruction and compensation from any point.
+
+```plantuml
+@startuml
+
+actor User
+participant "Command Handler" as CH
+participant "Event Store" as ES
+participant "Event Processor" as EP
+participant "Read Model" as RM
+
+User -> CH: Send command (e.g., Create Order)
+activate CH
+CH -> ES: Store event (e.g., OrderCreated)
+deactivate CH
+
+ES -> EP: Notify event (OrderCreated)
+activate EP
+EP -> RM: Update read model
+deactivate EP
+
+User -> RM: Query current state (e.g., Get Order)
+
+@enduml
+```
+
+## Outbox
+
+Outbox provides a means to store the outbound data in a temporary database before publishing final data as an event.
+
+```plantuml
+@startuml
+actor User
+participant "Service" as S
+participant "Database" as DB
+participant "Outbox Table" as OT
+participant "Message Broker" as MB
+
+User -> S: Send command (e.g., Create Order)
+activate S
+
+S -> DB: Update state (e.g., Insert Order)
+S -> OT: Write event (OrderCreated)
+deactivate S
+
+note right of DB: Both the update and\noutbox entry occur\nin the same transaction.
+
+OT -> MB: Publish event (OrderCreated)
+activate MB
+MB -> User: Notify event received
+deactivate MB
+
+@enduml
+
+```
+
 ## Saga
 
 The Saga Design Pattern allows for transaction compensation on failure.
+
+### Saga - Choreography
+
+```plantuml
+@startuml
+
+actor User
+participant "Service A" as A
+participant "Service B" as B
+participant "Service C" as C
+
+User -> A: Start transaction
+activate A
+A -> A: Process
+A -> B: Notify action A completed
+deactivate A
+
+activate B
+B -> B: Process
+B -> C: Notify action B completed
+deactivate B
+
+activate C
+C -> C: Process
+C -> User: Transaction completed
+deactivate C
+
+note right of C: If any service fails,\nnotify previous services for compensation
+
+alt Failure in Service B
+    C -> B: Compensate action B
+    activate B
+    B -> B: Compensation
+    B -> A: Notify compensation B completed
+    deactivate B
+
+    A -> A: Compensation
+    deactivate A
+
+    C -> User: Transaction compensated
+else All services succeed
+end
+
+@enduml
+```
 
 ### Saga - Orchestration
 
@@ -54,51 +157,6 @@ alt Failure in Service B
     deactivate A
 
     Orchestrator -> User: Transaction compensated
-else All services succeed
-end
-
-@enduml
-```
-
-### Saga - Choreography
-
-```plantuml
-@startuml
-
-actor User
-participant "Service A" as A
-participant "Service B" as B
-participant "Service C" as C
-
-User -> A: Start transaction
-activate A
-A -> A: Process
-A -> B: Notify action A completed
-deactivate A
-
-activate B
-B -> B: Process
-B -> C: Notify action B completed
-deactivate B
-
-activate C
-C -> C: Process
-C -> User: Transaction completed
-deactivate C
-
-note right of C: If any service fails,\nnotify previous services for compensation
-
-alt Failure in Service B
-    C -> B: Compensate action B
-    activate B
-    B -> B: Compensation
-    B -> A: Notify compensation B completed
-    deactivate B
-
-    A -> A: Compensation
-    deactivate A
-
-    C -> User: Transaction compensated
 else All services succeed
 end
 
@@ -234,63 +292,4 @@ else Any vote is No
 end
 
 @enduml
-```
-
-## Event Sourcing
-
-With Event Sourcing data is stored as a collection of events.  This allows for reconstruction and compensation from any point. 
-
-```plantuml
-@startuml
-
-actor User
-participant "Command Handler" as CH
-participant "Event Store" as ES
-participant "Event Processor" as EP
-participant "Read Model" as RM
-
-User -> CH: Send command (e.g., Create Order)
-activate CH
-CH -> ES: Store event (e.g., OrderCreated)
-deactivate CH
-
-ES -> EP: Notify event (OrderCreated)
-activate EP
-EP -> RM: Update read model
-deactivate EP
-
-User -> RM: Query current state (e.g., Get Order)
-
-@enduml
-```
-
-## Outbox
-
-Outbox provides a means to store the outbound data in a temporary database before publishing final data as an event.
-
-
-```plantuml
-@startuml
-actor User
-participant "Service" as S
-participant "Database" as DB
-participant "Outbox Table" as OT
-participant "Message Broker" as MB
-
-User -> S: Send command (e.g., Create Order)
-activate S
-
-S -> DB: Update state (e.g., Insert Order)
-S -> OT: Write event (OrderCreated)
-deactivate S
-
-note right of DB: Both the update and\noutbox entry occur\nin the same transaction.
-
-OT -> MB: Publish event (OrderCreated)
-activate MB
-MB -> User: Notify event received
-deactivate MB
-
-@enduml
-
 ```

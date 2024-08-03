@@ -70,10 +70,8 @@
   - Resource Service Authorization
   - Single Sign-on
 
-- Design Tools and methodologies 
+- Design Tools and methodologies
   - Unified Modeling Language (UML)
-  - Entity-Relationship Diagrams (ERD)
-  - Data Flow Diagrams (DFD)
   - Business Process Model and Notation (BPMN)
   - Component Diagrams
   - Wire frame
