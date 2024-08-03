@@ -4,6 +4,8 @@
 
 Activity diagrams are used to visualize the workflow of a process or the activities involved in a system. They illustrate the flow of control and data between activities, making them useful for modeling business processes and system functionalities.
 
+Also know as `Process Map` under BPMN.
+
 [reference](https://plantuml.com/activity-diagram-beta)
 
 ```plantuml
@@ -36,6 +38,8 @@ stop
 ## Class Diagram
 
 Class diagrams are used to model the static structure of a system by depicting its classes, attributes, methods, and the relationships between the classes. They are an essential part of object-oriented design and help in understanding the organization and design of the software.
+
+Also known as `Component Diagram` under C4-Model
 
 [reference](https://plantuml.com/component-diagram)
 
@@ -113,6 +117,8 @@ Order "1" -- "1" Payment : uses
 
 Collaboration diagrams (also known as communication diagrams) are used to show how objects interact in a particular scenario, emphasizing the relationships and messages exchanged between them. They focus on the structural organization of the system and how objects collaborate to fulfill a specific task.
 
+Also known as `Choreography Diagram` under BPMN
+
 [reference](https://plantuml.com/component-diagram)
 
 ```plantuml
@@ -158,6 +164,10 @@ EmailService --> Customer : 10. confirmationEmail()
 
 Component diagrams are used to visualize the components of a system and their relationships, illustrating how they interact and depend on each other.
 
+Also know as `Value Chain Diagram` under BPMN or `Container Diagram` under C4-Model.
+
+[reference](https://plantuml.com/component-diagram)
+
 ```plantuml
 @startuml
 package "Online Shopping System" {
@@ -177,6 +187,35 @@ package "Online Shopping System" {
     product_service --> database : "Product Data"
     order_service --> database : "Order Data"
 }
+@enduml
+```
+
+## Cross-Functional Flowchart
+
+A cross-functional flowchart, also known as a swimlane diagram, is a type of flowchart that organizes the activities and processes of a system across different departments or functions within an organization. It visually distinguishes who does what in a process, making it easier to understand the roles and responsibilities of each function involved.
+
+Also know as `Business Process Diagram` under BPMN.
+
+[reference](https://plantuml.com/activity-diagram-beta)
+
+```plantuml
+@startuml
+|#pink|Actor_For_red|
+start
+if (color?) is (red) then
+#pink:**action red**;
+:foo1;
+else (not red)
+|#lightgray|Actor_For_no_red|
+#lightgray:**action not red**;
+:foo2;
+endif
+|Next_Actor|
+#lightblue:foo3;
+:foo4;
+|Final_Actor|
+#palegreen:foo5;
+stop
 @enduml
 ```
 
@@ -204,6 +243,87 @@ endif
 
 stop
 @enduml
+```
+
+## Data Model - JSON
+
+[reference](https://plantuml.com/json)
+
+```plantuml
+@startjson
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "isAlive": true,
+  "age": 27,
+  "address": {
+    "streetAddress": "21 2nd Street",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10021-3100"
+  },
+  "phoneNumbers": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    }
+  ],
+  "children": [],
+  "spouse": null
+}
+@endjson
+```
+
+## Data Model - Object
+
+[reference](https://plantuml.com/object-diagram)
+
+```plantuml
+@startuml
+object London
+object Washington
+object Berlin
+object NewYork
+
+map CapitalCity {
+ UK *--> London
+ USA *--> Washington
+ Germany *--> Berlin
+}
+
+NewYork -> CapitalCity::USA
+@enduml
+```
+
+## Data Model - YAML
+
+[reference](https://plantuml.com/yaml)
+
+```plantuml
+@startyaml
+doe: "a deer, a female deer"
+ray: "a drop of golden sun"
+pi: 3.14159
+xmas: true
+french-hens: 3
+calling-birds: 
+	- huey
+	- dewey
+	- louie
+	- fred
+xmas-fifth-day: 
+	calling-birds: four
+	french-hens: 3
+	golden-rings: 5
+	partridges: 
+		count: 1
+		location: "a pear tree"
+	turtle-doves: two
+@endyaml
 ```
 
 ## Deployment Diagram
@@ -282,6 +402,60 @@ Product ||--o{ OrderItem : includes
 @enduml
 ```
 
+## Gantt Chart
+
+A Gantt chart is a visual project management tool that displays a project's schedule, illustrating the start and finish dates of various elements. It helps in planning, coordinating, and tracking specific tasks within a project.
+
+[reference](https://plantuml.com/gantt-diagram)
+
+```plantuml
+@startgantt
+[Task1] requires 4 days 
+then [Task1.1] requires 4 days
+[Task1.1] is 40% completed
+
+[Task1.2] starts at [Task1]'s end and requires 7 days
+[Task1.2] is 55% completed
+
+[Task2] requires 5 days
+then [Task2.1] requires 4 days
+[Task2.1] is 35% completed
+
+[MaxTaskEnd] happens at [Task1.1]'s end
+[MaxTaskEnd] happens at [Task1.2]'s end
+[MaxTaskEnd] happens at [Task2.1]'s end
+
+@endgantt
+```
+
+## Mindmap
+
+A mind map is a visual representation of information that organizes concepts, ideas, and tasks around a central topic. It utilizes a hierarchical structure to show relationships between different elements, making it easier to understand and analyze complex information.
+
+[reference](https://plantuml.com/mindmap-diagram)
+
+```plantuml
+@startmindmap
++ OS
+++_ Linux
++++ Ubuntu
+++++ Linux Mint
+++++ Kubuntu
+++++ Lubuntu
+++++ KDE Neon
++++ LMDE
++++ SolydXK
++++ SteamOS
++++ Raspbian
+--_ Windows 9x
+--- Windows 95
+--- Windows 98
+-- Windows NT
+--- Windows 8
+--- Windows 10
+@endmindmap
+```
+
 ## Network Diagram
 
 Network diagrams are used to represent the layout and connections of a network, illustrating how different devices and components are interconnected. They provide a visual representation of the network's structure, showing how data flows between devices and the relationships between network elements.
@@ -317,9 +491,55 @@ nwdiag {
 @enduml
 ```
 
+## Package Diagram
+
+A package diagram is a type of UML diagram that organizes classes, interfaces, and other elements into groups called packages. It visually represents the structure of a system by showing how these packages are related to one another and how they depend on each other.
+
+[reference](https://plantuml.com/class-diagram)
+
+```plantuml
+@startuml
+package "Online Shopping System" {
+    package "User Management" {
+        class User
+        class UserProfile
+        class Authentication
+    }
+
+    package "Product Management" {
+        class Product
+        class Category
+        class Inventory
+    }
+
+    package "Order Management" {
+        class Order
+        class Payment
+        class Shipment
+    }
+
+    package "Notification" {
+        class EmailService
+        class SMSService
+    }
+
+    User --> Authentication : manages
+    UserProfile --> User : contains
+    Product --> Inventory : tracks
+    Order --> Payment : processes
+    Order --> Shipment : ships
+    EmailService --> User : notifies
+    SMSService --> User : alerts
+}
+
+@enduml
+```
+
 ## Sequence Diagram
 
 Sequence diagrams are used to model the interactions between objects or components in a system over time. They depict how messages are exchanged between participants and the order in which these interactions occur, providing a detailed view of the flow of control and data.
+
+Also known as `Orchestration Diagram` or `Collaboration Diagram` under BPMN or `Code Diagram` under C4-Model.
 
 [reference](https://plantuml.com/sequence-diagram)
 
@@ -357,6 +577,8 @@ activate webApp
 ## State Diagram
 
 State diagrams are used to model the dynamic behavior of an object by illustrating its states and the transitions between those states based on events. They help in understanding how an object reacts to different events throughout its lifecycle.
+
+Also know as `Event-Driven Process Chain (EPC)` under BPMN.
 
 [reference](https://plantuml.com/state-diagram)
 
@@ -407,6 +629,8 @@ A is 1
 ## Use Case Diagram
 
 Use case diagrams are used to visualize the interactions between users (actors) and the system, capturing the functional requirements and depicting how users will interact with the system to achieve specific goals.
+
+Also known as `Context Diagram` under C4-Model
 
 [reference](https://plantuml.com/use-case-diagram)
 

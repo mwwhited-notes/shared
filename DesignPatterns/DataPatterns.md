@@ -1,4 +1,4 @@
-# Big Data Patterns
+# Data Patterns
 
 ## Batch Processing
 
@@ -412,6 +412,30 @@ User -\ Federation : queryData(query)
 @enduml
 ```
 
+## Repository
+
+The Repository pattern acts as a mediator between the domain and data mapping layers, abstracting data access logic. It provides a collection-like interface for accessing domain objects, promoting separation of concerns and making unit testing easier.
+
+```plantuml
+@startuml
+
+title: Data Access Pattern - Repository
+
+class Repository {
+  +add(entity: Entity): void
+  +findById(id: int): Entity
+  +remove(entity: Entity): void
+}
+
+class Entity {
+  +id: int
+  +name: string
+}
+
+Repository --> Entity : manages
+
+@enduml
+```
 
 ## Stream Processing
 

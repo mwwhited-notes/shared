@@ -71,16 +71,9 @@
   - Single Sign-on
 
 - Design Tools and methodologies
-  - Unified Modeling Language (UML)
-  - Business Process Model and Notation (BPMN)
-  - Component Diagrams
-  - Wire frame
-  - Mind maps
-  - C4 Model (Context, Container, Component, Code)
   - User Journey Map
   - Story boarding
   - Service Blueprint
-  - Cross Functional Flow Charts
 
 - Development Life Cycle (SDLC):
   - Business Requirements Document (BRD)

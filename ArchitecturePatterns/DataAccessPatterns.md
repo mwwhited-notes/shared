@@ -101,26 +101,3 @@ EventPublisher --> Event : publishes
 
 @enduml
 ```
-
-## Repository
-
-```plantuml
-@startuml
-
-title: Data Access Pattern - Repository
-
-class Repository {
-  +add(entity: Entity): void
-  +findById(id: int): Entity
-  +remove(entity: Entity): void
-}
-
-class Entity {
-  +id: int
-  +name: string
-}
-
-Repository --> Entity : manages
-
-@enduml
-```
