@@ -14,9 +14,11 @@
     - [Model View ViewModel (MVVM)](./ArchitecturePatterns/PresentationPatterns.md#model-view-viewmodel-mvvm)
 
   - [Service Patterns](./ArchitecturePatterns/ServicePatterns.md)
+    - [Active Service](./ArchitecturePatterns/ServicePatterns.md#active-service)
     - [Microservices](./ArchitecturePatterns/ServicePatterns.md#microservices)
     - [N-Tier](./ArchitecturePatterns/ServicePatterns.md#n-tier-layered)
     - [Serverless](./ArchitecturePatterns/ServicePatterns.md#serverless)
+    - [Service Host](./ArchitecturePatterns/ServicePatterns.md#service-host)
     - [Sidecar](./ArchitecturePatterns/ServicePatterns.md#sidecar)
 
 - [Design Patterns](./DesignPatterns/)

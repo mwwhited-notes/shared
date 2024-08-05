@@ -1,5 +1,60 @@
 # Service Patterns
 
+## Active Service
+
+An Active Server is an application component that actively processes incoming requests, managing session state and returning responses while orchestrating interactions between services and resources.
+
+### Class Diagram
+
+```plantuml
+@startuml
+class ActiveServer {
+    + handleRequest(request: Request)
+    + sendResponse(response: Response)
+}
+
+class Request {
+    - requestData
+    + getData()
+}
+
+class Response {
+    - responseData
+    + setData(data: String)
+}
+
+class Session {
+    - sessionId
+    - userData
+    + getUserData()
+    + setUserData(data: String)
+}
+
+ActiveServer --> Request
+ActiveServer --> Response
+ActiveServer --> Session
+@enduml
+```
+
+### Sequence Diagram
+
+```plantuml
+@startuml
+participant Request
+control ActiveServer
+participant Session
+participant Response
+
+Request -> ActiveServer: handleRequest(request)
+  activate ActiveServer
+  ActiveServer -> Session: getUserData()
+    activate Session
+    return userData
+  ActiveServer -\ Response: setData(responseData)
+  return sendResponse(response)
+@enduml
+```
+
 ## Microservices
 
 ```plantuml
@@ -93,6 +148,62 @@ Func4 -> Data1
 
 @enduml
 ```
+
+## Service Host
+
+A Service Host is an application component that manages the lifecycle and communication of multiple independent services, providing a centralized interface for client interactions.
+
+### Class Diagram
+
+```plantuml
+@startuml
+class ServiceHost {
+    - services: List
+    + start()
+    + stop()
+    + addService()
+    + removeService()
+}
+
+class Service {
+    - serviceName
+    + execute()
+}
+
+class ServiceA {
+    + execute()
+}
+
+class ServiceB {
+    + execute()
+}
+
+ServiceHost --> Service
+Service <|-- ServiceA
+Service <|-- ServiceB
+@enduml
+```
+
+### Sequence Diagram
+
+```plantuml
+@startuml
+participant ServiceHost
+participant ServiceA
+participant ServiceB
+
+ServiceHost -> ServiceA: start()
+activate ServiceA
+  ServiceA -> ServiceA: execute()
+return response
+
+ServiceHost -> ServiceB: execute()
+activate ServiceB
+  ServiceB -> ServiceB: execute()
+return  response
+@enduml
+```
+
 
 ## Sidecar
 
