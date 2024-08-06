@@ -91,3 +91,6 @@
   - Project Status Report
   - Post-Implementation Review Document
   - Quality Assurance Plan
+
+- Additional
+  - https://en.wikipedia.org/wiki/Zero_trust_security_model
