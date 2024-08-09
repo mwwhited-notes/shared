@@ -12,9 +12,12 @@
     - [Model View Controller (MVC)](./ArchitecturePatterns/PresentationPatterns.md#model-view-controller-mvc)
     - [Model View Presenter (MVP)](./ArchitecturePatterns/PresentationPatterns.md#model-view-presenter-mvp)
     - [Model View ViewModel (MVVM)](./ArchitecturePatterns/PresentationPatterns.md#model-view-viewmodel-mvvm)
+    - [Micro Frontends](./ArchitecturePatterns/PresentationPatterns.md#micro-frontends)
 
   - [Service Patterns](./ArchitecturePatterns/ServicePatterns.md)
     - [Active Service](./ArchitecturePatterns/ServicePatterns.md#active-service)
+    - [Enterprise Service Bus (ESB)](./ArchitecturePatterns/ServicePatterns.md#enterprise-service-bus-esb)
+    - [Frontend for Backend](./ArchitecturePatterns/ServicePatterns.md#frontend-for-backend)
     - [Microservices](./ArchitecturePatterns/ServicePatterns.md#microservices)
     - [N-Tier](./ArchitecturePatterns/ServicePatterns.md#n-tier-layered)
     - [Serverless](./ArchitecturePatterns/ServicePatterns.md#serverless)

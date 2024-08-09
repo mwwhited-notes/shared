@@ -55,6 +55,111 @@ Request -> ActiveServer: handleRequest(request)
 @enduml
 ```
 
+## Enterprise Service Bus (ESB)
+
+An Enterprise Service Bus or ESB provides routing, transformation, mediation and much more.  The primary intention of an ESB is to separate the service dependencies between application within a particular enterprise.
+
+### Component Diagram
+
+```plantuml
+@startuml
+title Service Pattern - Enterprise Service Bus (ESB)
+
+frame "Client 1"
+frame "Client 2"
+
+cloud "API Gateway"
+
+queue "Enterprise Service Bus" As ESB
+
+node "Service A"
+node "Service B"
+node "Service C"
+
+database "Data Store A"
+database "Data Store B"
+database "Data Store C"
+
+folder "Notification Service"
+folder "Logging Service"
+
+[Client 1] --> ESB
+[Client 2] --> ESB
+[API Gateway] --> ESB
+
+ESB <--> [Service A]
+ESB <--> [Service B]
+ESB <--> [Service C]
+
+ESB --> [Notification Service]
+ESB --> [Logging Service]
+
+[Service A] --> [Data Store A]
+[Service B] --> [Data Store B]
+[Service C] --> [Data Store C]
+
+@enduml
+```
+
+## Frontend for Backend
+
+`Frontend for Backend` providers a means to desegregate backend services from frontend applications.  Features such as versioning, translation, authentication and more may be controlled independently per frontend application allowing for easier maintenance and deployments.
+
+### Component Diagram
+
+```plantuml
+@startuml
+title Service Pattern - Frontend for Backend
+
+frame "Frontend A"
+cloud "FeB A"
+
+frame "Frontend B"
+cloud "FeB B"
+
+
+component "Service Registry"
+
+package "A" {
+  node "Service A"
+  database "Data Store A"
+}
+package "B" {
+  node "Service B"
+  database "Data Store B"
+}
+package "C" {
+  node "Service C"
+  database "Data Store C"
+}
+
+[Frontend A] --> [FeB A]
+[FeB A] ---> [Service Registry]
+
+[Frontend B] --> [FeB B]
+[FeB B] ---> [Service Registry]
+
+[FeB A] --> [Service A]
+[Service A] --> [Data Store A]
+
+[FeB A] --> [Service B]
+[FeB B] --> [Service B]
+[Service B] --> [Data Store B]
+
+[FeB B] --> [Service C]
+[Service C] --> [Data Store C]
+
+[Service A] ...> [Service Registry]
+[Service B] ...> [Service Registry]
+[Service C] ...> [Service Registry]
+
+[Service A] ---> [Authentication Service]
+[Service B] ---> [Authentication Service]
+[Service C] ---> [Authentication Service]
+
+@enduml
+```
+
 ## Microservices
 
 ```plantuml

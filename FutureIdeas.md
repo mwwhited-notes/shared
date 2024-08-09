@@ -28,12 +28,7 @@
     - data sharding
     - transactional memory
     - write ahead logging
-    - frontend for backend
   - map/reduce
-  - Services
-    - ESB
-    - SOA with Service Discovery
-    - Frontend for Backend
 
 - Suggested Guidelines
   - Single Responsibility Principal
