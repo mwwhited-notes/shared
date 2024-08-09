@@ -119,6 +119,10 @@
     - [Behavior: Blackboard](./Examples/BehaviorBlackboard/)
     - [Behavior: Specification](./Examples/BehaviorSpecification/)
 
+  - Application Designs
+    - [OAuth with System for Cross-domain Identity Management (SCIM)](./Designs/OAuth2WithSCIM.md)
+    - [Web Search Engine](./Designs/WebSearchEngine.md)
+
 - Modeling Languages
   - Unified Modeling Language (UML)
     - [Class Diagram](./Examples/Diagrams.md#class-diagram)
