@@ -151,8 +151,5 @@
     - [Component Diagram](./Examples/Diagrams.md#class-diagram)
     - [Code Diagram](./Examples/Diagrams.md#sequence-diagram)
 
-- [Example Designs](./Designs/)
-  - [OAuth2 with System for Cross-domain Identity Management (SCIM)](./Designs/OAuth2WithSCIM.md)
-
 - [Suggested Guidelines](./SuggestedGuidelines.md)
 - [Future Ideas](./FutureIdeas.md)
