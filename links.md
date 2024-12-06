@@ -62,3 +62,11 @@
   - [Networking mirrored can&#39;t work on WSL2 · Issue #10632 · microsoft/WSL (github.com)](https://github.com/microsoft/WSL/issues/10632)
   - [networking - Cannot communicate with Windows localhost from WSL2 - Super User](https://superuser.com/questions/1732399/cannot-communicate-with-windows-localhost-from-wsl2)
   - [WSL2 cannot connect to localhost when the service is running on Windows · Issue #5211 · microsoft/WSL (github.com)](https://github.com/microsoft/WSL/issues/5211)
+
+- dotnet
+  - [Receiving a broadcast message in C#](https://stackoverflow.com/questions/870328/receiving-a-broadcast-message-in-c-sharp)
+-  Raspberry PI
+   -  [Adding a second Ethernet port](https://raspberrypi.stackexchange.com/questions/907/adding-a-second-ethernet-port)
+-  BusyLight
+   -  https://github.com/jwalanta/busylight-lync-linux-osx/blob/master/linux/busylight.py
+   -  https://github.com/porsager/busylight/blob/master/lib/busylight.js
