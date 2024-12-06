@@ -6,6 +6,13 @@ services:
     networks:
       - backend
 
+  sql-sonarqube:
+    extends:
+      file: docker-compose.sonarqube.yml
+      service: sonarqube
+    networks:
+      - backend
+
 networks:
   frontend:
     driver: bridge
@@ -14,3 +21,6 @@ networks:
 
 volumes:
      sqlserver-data:
+     sonarqube-data:
+     sonarqube-extensions:
+     sonarqube-logs:
