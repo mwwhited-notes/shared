@@ -1,0 +1,29 @@
+# %USERPROFILE%\.wslconfig
+# https://learn.microsoft.com/en-us/windows/wsl/wsl-config
+
+[wsl2]
+# If the value is mirrored then this turns on mirrored networking mode. Default or unrecognized strings result in NAT networking.
+networkingMode=mirrored
+
+# Only applicable when experimental.networkingMode is set to mirrored. When set to True, will allow the Container to connect to 
+# the Host, or the Host to connect to the Container, by an IP address that's assigned to the Host. Note that the 127.0.0.1 
+# loopback address can always be used - this option allows for all additionally assigned local IP addresses to be used as well.
+hostAddressLoopback=true
+
+# 50% of total memory on Windows or 8GB, whichever is less; on builds before 20175: 80% of your total memory on Windows
+#memory=48GB 
+# How many logical processors to assign to the WSL 2 VM., Default is equal to system logical processor count
+#processors=20
+
+# How much swap space to add to the WSL 2 VM, 0 for no swap file. Swap storage is disk-based RAM used when memory demand exceeds 
+# limit on hardware device.
+# 25% of memory size on Windows rounded up to the nearest GB
+#swap=
+
+[experimental]
+# Automatically releases cached memory after detecting idle CPU usage. Set to gradual for slow release, and dropcache for instant 
+# release of cached memory.
+autoMemoryReclaim=dropcache
+
+# When set to true, any newly created VHD will be set to sparse automatically.
+sparseVhd=true

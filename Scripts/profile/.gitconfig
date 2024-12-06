@@ -1,0 +1,35 @@
+[credential "https://source.developers.google.com"]
+    useHttpPath = true
+[user]
+    name = Matthew Whited
+    email = matt@whited.us
+[core]
+    excludesfile = 
+[difftool "sourcetree"]
+    cmd = '' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+    cmd = "'' "
+    trustExitCode = true
+[diff]
+    tool = bc4
+[difftool "bc4"]
+    cmd = \"C:\\Program Files\\Beyond Compare 4\\BCompare.exe\" \"$LOCAL\" \"$REMOTE\"
+[merge]
+    tool = bc4
+[mergetool "bc4"]
+    cmd = \"C:\\Program Files\\Beyond Compare 4\\BCompare.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\"
+[fetch]
+    prune = true
+[difftool]
+    prompt = true
+[difftool "vsdiffmerge"]
+    cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+    keepBackup = false
+[mergetool]
+    prompt = true
+[mergetool "vsdiffmerge"]
+    cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+    keepBackup = false
+    trustExitCode = true
+[gui]
+    recentrepo = C:/Repos/McLane/ProofOfConcept
