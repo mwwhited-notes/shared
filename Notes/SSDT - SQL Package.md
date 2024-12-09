@@ -45,3 +45,17 @@ datatype change?
 [https://docs.microsoft.com/en-us/sql/tools/sqlpackage/sqlpackage?view=sql-server-ver15](https://docs.microsoft.com/en-us/sql/tools/sqlpackage/sqlpackage?view=sql-server-ver15)
 
 [https://docs.microsoft.com/en-us/ef/core/managing-schemas/scaffolding?tabs=dotnet-core-cli](https://docs.microsoft.com/en-us/ef/core/managing-schemas/scaffolding?tabs=dotnet-core-cli)
+
+
+Export
+------
+Creates a .bacpac file from live database.
+
+`"C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\SqlPackage.exe" /a:Export /scs:"Data Source=SERVER;Initial Catalog=db_name;Integrated Security=False;Persist Security Info=False;User ID=db_user;Password=db_password" /tf:"D:\backup\database_backup.bacpac"`
+
+
+Import
+------
+Import from .bacpac file to database.
+
+`"C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\SqlPackage.exe" /a:Import /sf:D:\backup\database_backup.bacpac /tcs:"Server=.\SQLEXPRESS;Database=db_name;Trusted_Connection=True;"`
