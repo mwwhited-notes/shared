@@ -19,8 +19,8 @@
   - [Image Similarity with Hugging Face Datasets and Transformers](https://huggingface.co/blog/image-similarity)
   - [The Stop Sequence GPT-3](https://enjoymachinelearning.com/blog/stop-sequence-gpt-3/)
   - [AI models fed AI-generated data quickly spew nonsense](https://www.nature.com/articles/d41586-024-02420-7)
-- OAuth
 
+- OAuth
   - https://oauth.net/2/token-exchange/
   - https://en.wikipedia.org/wiki/Well-known_URI
   - Datamodel description
@@ -124,7 +124,6 @@
     - https://github.com/brtholomy/hnsw
 
   - **dotnet**
-
     - [Receiving a broadcast message in C#](https://stackoverflow.com/questions/870328/receiving-a-broadcast-message-in-c-sharp)
     - https://stackoverflow.com/questions/15413172/capture-a-keyboard-keypress-in-the-background
     - https://beebom.com/how-remap-keyboard-windows-10/
@@ -132,19 +131,19 @@
     - https://stackoverflow.com/questions/44229274/statuscode-406-not-acceptable-in-asp-net-core
     - https://github.com/ksanman/AllMiniLML6v2Sharp
     - https://github.com/erincon01/Vector
-  - USB
 
+  - USB
     - https://devblogs.microsoft.com/oldnewthing/20160627-00/?p=93755
     - https://www.overclock.net/threads/changing-usb-polling-rate-to-1000hz-or-lower.596276/
-  - BusyLight
 
+  - BusyLight
     - https://github.com/jwalanta/busylight-lync-linux-osx/blob/master/liux/busylight.py
     - https://github.com/porsager/busylight/blob/master/lib/busylight.js
+
   - Blockchain
-
     - https://calpaterson.com/blockchain.html
-- **Electronics Stuff**
 
+- **Electronics Stuff**
   - [Electronics Kits](https://www.electronickits.com/electronic-kits-1/)
   - [Phone line Simulator](https://york.hackspace.org.uk/blog/2017/10/08/simulating-a-phone-line/)
   - https://en.wikipedia.org/wiki/CARDboard_Illustrative_Aid_to_Computation
@@ -166,8 +165,11 @@
   - https://forum.vcfed.org/index.php?threads/wifi232s-evil-clone.1070412/
   - https://electronics.stackexchange.com/questions/464802/using-hc-hct-ahc-ahct-series-logic
   - https://www.electronicsforu.com/buyers-guides/software-buyers-guide/logic-friday-digital-logic-design
-- **Retro Computers**
+  - iPod Interface
+    - https://link.medium.com/suvSCFmrnfb
+  - 
 
+- **Retro Computers**
   - Apple II
     - [For Mocking board on APPLE IIc](https://groups.google.com/g/comp.sys.apple2/c/xn6sxoO6pOY?pli=1)
     - https://www.brutaldeluxe.fr/index.html
@@ -193,22 +195,27 @@
     - https://www.bigmessowires.com/2015/06/11/apple-ii-hard-disk-emulation/
     - https://webstore.kryoflux.com/catalog/product_info.php?products_id=30&osCsid=f1de42b03700d30fc4096bd937601332
     - http://shop.deviceside.com/prod/FC5025
+    - https://archive.org/details/TerrapinLogoLanguageLanguageDisk
   - https://www.retrobat.org/
+  - https://www.viralpatel.net/taj/tutorial/chs_translation.php
+  - https://pete.akeo.ie/2011/06/crafting-bios-from-scratch.html
+  - https://docs.microsoft.com/en-us/windows/compatibility/ntvdm-and-16-bit-app-support
+
 - **Color Math**
-
   - [RGB to HSV](https://osf.io/preprints/discover?page=2&q=Integer-based%20accurate%20conversion%20between%20RGB%20and%20HSV%20color%20spaces)
+
 - **Games**
-
   - http://www.gog.com/forum/dungeon_keeper_series/dungeon_keeper_2_changing_resolution_zooms_the_camera_too_much
-- **Cars**
 
+- **Cars**
   - Infiniti G37
     - https://forums.nicoclub.com/problem-with-trunk-top-t586962.html
     - https://www.autogenius.info/infiniti-g37-2006-2015-fuse-box-diagram/
     - https://www.infinitipartsdeal.com/parts-list/2009-infiniti-g37-convertible/body_side_rear/trunk_opener.html
     - https://www.infinitipartsdeal.com/parts/infiniti-lock-asmy-trunk~84631-jj51a.html
-- **Others**
+    - https://manuals.co/workshop/infiniti/g37/infiniti-g37-sedan-2009-workshop-manual/5525798
 
+- **Others**
   - https://www.androidpolice.com/2020/07/11/how-to-rip-your-movie-collection-to-watch-anywhere/
   - [Chemistrie magnetic glasses clips](https://eyenavision.com/chemistrie/)
   - [Another PostgreSQL Diff Tool (apgdiff) - Official Homepage: How It Works](https://www.apgdiff.com/how_it_works.php)
