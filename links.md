@@ -19,10 +19,49 @@
   - [ChatGPT And Other LLMs Produce Bull Excrement, Not Hallucinations](https://hackaday.com/2024/07/01/chatgpt-and-other-llms-produce-bull-excrement-not-hallucinations/)
   - [Image Similarity with Hugging Face Datasets and Transformers](https://huggingface.co/blog/image-similarity)
   - [The Stop Sequence GPT-3](https://enjoymachinelearning.com/blog/stop-sequence-gpt-3/)
-- OAuth
+  - [AI models fed AI-generated data quickly spew nonsense](https://www.nature.com/articles/d41586-024-02420-7)
 
+- OAuth
   - https://oauth.net/2/token-exchange/
   - https://en.wikipedia.org/wiki/Well-known_URI
+  - Datamodel description
+    - Plant UML like syntax
+    - metadata type mapping
+    - type definitions
+      - based on native types/structures
+      - validation rules like regex
+      - claims binding
+      - claims mapping
+  - view model mapping  
+  - validation rule mapping
+  - authorization rule mapping
+  - claims binding
+  - presentation metadata such a field groups, hidden fields, filter exclusions
+  - presentations command/endpoint mappings
+  - presentation navigation mappings
+  - Models translations
+    - to openapi
+    - to plantuml
+    - to zod
+    - to mermaid.js
+
+  - Authentication/authorization 
+    - oauth token refresh
+    - oauth token exchange (application specific claims)
+    - use msal to exchange data on client side
+    - generate axios based clients for typescript/javascript
+
+  - server side token exchange
+    - if service claims do not include required claims call out to sts for claims exchange 
+    - how to store this for secondary requests?  Is it passed to client?
+
+  - Examples
+    - Provide examples for well known configuration end point
+    - Provide examples for resource service endpoint
+    - Provide example flows for token exchange and refresh
+    - Provide example to authentication redirect with state based navigation
+    - Provide navigation example for deep linking
+
 - Docker / Kubernetes / Containers
 
   - [You should stop writing Dockerfiles today — Do this instead](https://medium.com/kpmg-uk-engineering/you-should-stop-writing-dockerfiles-today-do-this-instead-3cd8a44cb8b0)
@@ -63,10 +102,113 @@
   - [networking - Cannot communicate with Windows localhost from WSL2 - Super User](https://superuser.com/questions/1732399/cannot-communicate-with-windows-localhost-from-wsl2)
   - [WSL2 cannot connect to localhost when the service is running on Windows · Issue #5211 · microsoft/WSL (github.com)](https://github.com/microsoft/WSL/issues/5211)
 
-- dotnet
-  - [Receiving a broadcast message in C#](https://stackoverflow.com/questions/870328/receiving-a-broadcast-message-in-c-sharp)
--  Raspberry PI
-   -  [Adding a second Ethernet port](https://raspberrypi.stackexchange.com/questions/907/adding-a-second-ethernet-port)
--  BusyLight
-   -  https://github.com/jwalanta/busylight-lync-linux-osx/blob/master/linux/busylight.py
-   -  https://github.com/porsager/busylight/blob/master/lib/busylight.js
+- **Programming**
+  - https://chriskiehl.com/article/event-sourcing-is-hard
+  - https://en.wikipedia.org/wiki/Espresso_heuristic_logic_minimizer
+  - https://xyproblem.info/
+  - https://github.com/opf/openproject
+  - https://www.codethink.co.uk/articles/2021/yaml-schemas/
+  - https://open-webui.wonderfulsmoke-f1c0b2f0.westus2.azurecontainerapps.io/
+  - https://www.indiehackers.com/
+  - https://inform-fiction.org/zmachine/standards/z1point1/sect04.html#one
+  - http://openseadragon.github.io/
+  - https://sambanova.ai/
+  - https://www.wearedevelopers.com/magazine/resume-driven-development
+  
+  - Approximate Nearest Neighbor
+    - https://zilliz.com/learn/approximate-nearest-neighbor-oh-yeah-ANNOY
+    - https://towardsdatascience.com/comprehensive-guide-to-approximate-nearest-neighbors-algorithms-8b94f057d6b6
+    - https://arxiv.org/abs/1603.09320
+    - https://github.com/spotify/annoy
+    - https://en.wikipedia.org/wiki/K-means_clustering
+    - https://www.timescale.com/learn/hnsw-vs-diskann
+    - https://github.com/brtholomy/hnsw
+  - 
+  - **dotnet**
+    - [Receiving a broadcast message in C#](https://stackoverflow.com/questions/870328/receiving-a-broadcast-message-in-c-sharp)
+    - https://stackoverflow.com/questions/15413172/capture-a-keyboard-keypress-in-the-background
+    - https://beebom.com/how-remap-keyboard-windows-10/
+    - https://github.com/tunnelvisionlabs/antlr4-grammar-postgresql/blob/master/src/com/tunnelvisionlabs/postgresql/PostgreSqlLexer.g4
+    - https://stackoverflow.com/questions/44229274/statuscode-406-not-acceptable-in-asp-net-core
+    - https://github.com/ksanman/AllMiniLML6v2Sharp
+    - https://github.com/erincon01/Vector
+  - USB
+    - https://devblogs.microsoft.com/oldnewthing/20160627-00/?p=93755
+    - https://www.overclock.net/threads/changing-usb-polling-rate-to-1000hz-or-lower.596276/
+  - BusyLight
+    - https://github.com/jwalanta/busylight-lync-linux-osx/blob/master/liux/busylight.py
+    - https://github.com/porsager/busylight/blob/master/lib/busylight.js
+  - Blockchain
+    - https://calpaterson.com/blockchain.html
+
+- **Electronics Stuff**
+  - [Electronics Kits](https://www.electronickits.com/electronic-kits-1/)
+  - [Phone line Simulator](https://york.hackspace.org.uk/blog/2017/10/08/simulating-a-phone-line/)
+  - https://en.wikipedia.org/wiki/CARDboard_Illustrative_Aid_to_Computation
+  - https://academo.org/demos/logic-gate-simulator/
+  - [Microchip University](https://mu.microchip.com/page/all-courses)
+  - FPGA
+    - [Vivado Cluster](https://adaptivesupport.amd.com/s/question/0D52E00006hpRLDSA2/vivado-cluster-configuration-using-ssh?language=en_US)
+    - [Vivado Cloud Simulator](https://www.cmc.ca/qsg-xilinx-vivado-cloud-simulation/)
+  - Z80
+    - http://jgmalcolm.com/z80/advanced/shif
+    - https://www.best-microcontroller-projects.com/how-rs232-works.html
+    - https://www.seeedstudio.com/blog/2019/12/11/rs232-vs-ttl-beginner-guide-to-serial-communication/
+  - Raspberry PI
+    - [Adding a second Ethernet port](https://raspberrypi.stackexchange.com/questions/907/adding-a-second-ethernet-port)
+  - ESP-01
+    - https://www.theengineeringprojects.com/2019/05/introduction-to-esp-01.html
+  - https://github.com/bozimmerman/Zimodem
+  - https://subethasoftware.com/2018/02/28/wire-up-your-own-rs-232-wifi-modem-for-under-10-using-esp8266-and-zimodem-firmware/
+  - https://forum.vcfed.org/index.php?threads/wifi232s-evil-clone.1070412/
+  - https://electronics.stackexchange.com/questions/464802/using-hc-hct-ahc-ahct-series-logic
+  - https://www.electronicsforu.com/buyers-guides/software-buyers-guide/logic-friday-digital-logic-design
+
+- **Retro Computers**
+  - Apple II
+    - [For Mocking board on APPLE IIc](https://groups.google.com/g/comp.sys.apple2/c/xn6sxoO6pOY?pli=1)
+    - https://www.brutaldeluxe.fr/index.html
+    - http://www.easy68k.com/paulrsm/6502/PDOS8TRM.HTM
+    - https://retrocomputing.stackexchange.com/questions/22424/copy-content-between-floppy-disks-on-apple-ii
+    - https://www.mobygames.com/game/math-blaster
+    - https://68kmla.org/bb/index.php?threads/copy-protected-apple-ii-programs-copy-ii-plus.26106/
+    - http://prodos8.com/copy-ii-plus/
+    - https://ia800506.us.archive.org/20/items/Algernon4amCrack/Algernon %284am crack%29.txt
+    - https://retrocomputing.stackexchange.com/questions/24039/disk-copy-protection-schemes-for-apple-ii
+    - https://www.histo.cat/e/Apple-Locksmith-bit-nibbler
+    - https://www.landsnail.com/a2ref.htm
+    - http://www.easy68k.com/paulrsm/6502/MONREF.HTM
+    - https://www.hackster.io/news/peter-misenko-s-retrovga-is-a-compact-raspberry-pi-pico-powered-retro-emulation-marvel-3f1cbdd635f7
+    - https://applerescueofdenver.com/products-page/apple-ii/cards-motherboards-chips-apple-ii/apple-iic-memory-expansion-card/
+    - https://dreher.net/?s=projects/CFforAppleII&c=projects/CFforAppleII/main.php
+    - https://www.bigmessowires.com/2015/08/27/apple-ii-copy-protection/
+    - https://retrocomputing.stackexchange.com/questions/24039/disk-copy-protection-schemes-for-apple-ii
+    - https://retrocomputing.stackexchange.com/questions/8364/how-did-apple-ii-basic-programs-protect-against-listing
+    - https://www.applefritter.com/content/copying-floppys-apple-iic
+    - https://www.laptopschematic.com/apple-schematics/
+    - https://webstore.kryoflux.com/catalog/
+    - https://www.bigmessowires.com/2015/06/11/apple-ii-hard-disk-emulation/
+    - https://webstore.kryoflux.com/catalog/product_info.php?products_id=30&osCsid=f1de42b03700d30fc4096bd937601332
+    - http://shop.deviceside.com/prod/FC5025
+  - https://www.retrobat.org/
+
+- **Color Math**
+  - [RGB to HSV](https://osf.io/preprints/discover?page=2&q=Integer-based%20accurate%20conversion%20between%20RGB%20and%20HSV%20color%20spaces)
+
+- **Games**
+  - http://www.gog.com/forum/dungeon_keeper_series/dungeon_keeper_2_changing_resolution_zooms_the_camera_too_much
+
+- **Cars**
+  - Infiniti G37
+    - https://forums.nicoclub.com/problem-with-trunk-top-t586962.html
+    - https://www.autogenius.info/infiniti-g37-2006-2015-fuse-box-diagram/
+    - https://www.infinitipartsdeal.com/parts-list/2009-infiniti-g37-convertible/body_side_rear/trunk_opener.html
+    - https://www.infinitipartsdeal.com/parts/infiniti-lock-asmy-trunk~84631-jj51a.html
+
+- **Others**
+  - https://www.androidpolice.com/2020/07/11/how-to-rip-your-movie-collection-to-watch-anywhere/
+  - [Chemistrie magnetic glasses clips](https://eyenavision.com/chemistrie/)
+
+- **Legos**
+  - https://www.bluebrixx.com/en/blog?bid=2204#beitrag2204
+  - https://rebrickable.com/mocs/MOC-198121/skyfox2k/star-trek-advent-calendar-24-ships-all-the-same-scale/
