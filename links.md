@@ -1,5 +1,4 @@
 - AI/ML
-
   - [Tensorflow with GPU on Windows WSL using Docker](https://www.youtube.com/watch?v=YozfiLI1ogY)
   - https://github.com/microsoft/CodeBERT
   - https://github.com/SciSharp/LLamaSharp
@@ -19,10 +18,50 @@
   - [ChatGPT And Other LLMs Produce Bull Excrement, Not Hallucinations](https://hackaday.com/2024/07/01/chatgpt-and-other-llms-produce-bull-excrement-not-hallucinations/)
   - [Image Similarity with Hugging Face Datasets and Transformers](https://huggingface.co/blog/image-similarity)
   - [The Stop Sequence GPT-3](https://enjoymachinelearning.com/blog/stop-sequence-gpt-3/)
-- OAuth
+  - [AI models fed AI-generated data quickly spew nonsense](https://www.nature.com/articles/d41586-024-02420-7)
 
+- OAuth
   - https://oauth.net/2/token-exchange/
   - https://en.wikipedia.org/wiki/Well-known_URI
+  - Datamodel description
+
+    - Plant UML like syntax
+    - metadata type mapping
+    - type definitions
+      - based on native types/structures
+      - validation rules like regex
+      - claims binding
+      - claims mapping
+  - view model mapping
+  - validation rule mapping
+  - authorization rule mapping
+  - claims binding
+  - presentation metadata such a field groups, hidden fields, filter exclusions
+  - presentations command/endpoint mappings
+  - presentation navigation mappings
+  - Models translations
+
+    - to openapi
+    - to plantuml
+    - to zod
+    - to mermaid.js
+  - Authentication/authorization
+
+    - oauth token refresh
+    - oauth token exchange (application specific claims)
+    - use msal to exchange data on client side
+    - generate axios based clients for typescript/javascript
+  - server side token exchange
+
+    - if service claims do not include required claims call out to sts for claims exchange
+    - how to store this for secondary requests?  Is it passed to client?
+  - Examples
+
+    - Provide examples for well known configuration end point
+    - Provide examples for resource service endpoint
+    - Provide example flows for token exchange and refresh
+    - Provide example to authentication redirect with state based navigation
+    - Provide navigation example for deep linking
 - Docker / Kubernetes / Containers
 
   - [You should stop writing Dockerfiles today — Do this instead](https://medium.com/kpmg-uk-engineering/you-should-stop-writing-dockerfiles-today-do-this-instead-3cd8a44cb8b0)
@@ -45,9 +84,8 @@
   - [After installing KB5036893, WSL now logs an event regarding &#34;Invalid networking mode &#39;mirrored&#39; in C:\Users\&lt;username&gt;\.wslconfig&#34; · Issue #11568 · microsoft/WSL (github.com)](https://github.com/microsoft/WSL/issues/11568)
   - [WSL2 will occur network mirrored mode isn&#39;t supported, fallback to NAT mode · Issue #11333 · microsoft/WSL (github.com)](https://github.com/microsoft/WSL/issues/11333)
   - [WSL2 fails to start with networkingMode=bridged · microsoft/WSL · Discussion #9227 (github.com)](https://github.com/microsoft/WSL/discussions/9227)
-
   - [Cannot enable Mirrored
-  network on WSL · Issue #11154 · microsoft/WSL (github.com)](https://github.com/microsoft/WSL/issues/11154)
+    network on WSL · Issue #11154 · microsoft/WSL (github.com)](https://github.com/microsoft/WSL/issues/11154)
   - [config `networkingMode=mirrored` doesn&#39;t apply to wsl2 · Issue #11228 · microsoft/WSL (github.com)](https://github.com/microsoft/WSL/issues/11228)
   - [After installing KB5036893, WSL now logs an event regarding &#34;Invalid networking mode &#39;mirrored&#39; in C:\Users\&lt;username&gt;\.wslconfig&#34; · Issue #11568 · microsoft/WSL (github.com)](https://github.com/microsoft/WSL/issues/11568)
   - [Issues · microsoft/WSL (github.com)](https://github.com/microsoft/WSL/issues?page=2&q=is%3Aissue+is%3Aopen)
@@ -62,11 +100,221 @@
   - [Networking mirrored can&#39;t work on WSL2 · Issue #10632 · microsoft/WSL (github.com)](https://github.com/microsoft/WSL/issues/10632)
   - [networking - Cannot communicate with Windows localhost from WSL2 - Super User](https://superuser.com/questions/1732399/cannot-communicate-with-windows-localhost-from-wsl2)
   - [WSL2 cannot connect to localhost when the service is running on Windows · Issue #5211 · microsoft/WSL (github.com)](https://github.com/microsoft/WSL/issues/5211)
+- **Programming**
 
-- dotnet
-  - [Receiving a broadcast message in C#](https://stackoverflow.com/questions/870328/receiving-a-broadcast-message-in-c-sharp)
--  Raspberry PI
-   -  [Adding a second Ethernet port](https://raspberrypi.stackexchange.com/questions/907/adding-a-second-ethernet-port)
--  BusyLight
-   -  https://github.com/jwalanta/busylight-lync-linux-osx/blob/master/linux/busylight.py
-   -  https://github.com/porsager/busylight/blob/master/lib/busylight.js
+  - https://chriskiehl.com/article/event-sourcing-is-hard
+  - https://en.wikipedia.org/wiki/Espresso_heuristic_logic_minimizer
+  - https://xyproblem.info/
+  - https://github.com/opf/openproject
+  - https://www.codethink.co.uk/articles/2021/yaml-schemas/
+  - https://open-webui.wonderfulsmoke-f1c0b2f0.westus2.azurecontainerapps.io/
+  - https://www.indiehackers.com/
+  - https://inform-fiction.org/zmachine/standards/z1point1/sect04.html#one
+  - http://openseadragon.github.io/
+  - https://sambanova.ai/
+  - https://www.wearedevelopers.com/magazine/resume-driven-development
+  - Approximate Nearest Neighbor
+
+    - https://zilliz.com/learn/approximate-nearest-neighbor-oh-yeah-ANNOY
+    - https://towardsdatascience.com/comprehensive-guide-to-approximate-nearest-neighbors-algorithms-8b94f057d6b6
+    - https://arxiv.org/abs/1603.09320
+    - https://github.com/spotify/annoy
+    - https://en.wikipedia.org/wiki/K-means_clustering
+    - https://www.timescale.com/learn/hnsw-vs-diskann
+    - https://github.com/brtholomy/hnsw
+
+  - **dotnet**
+    - [Receiving a broadcast message in C#](https://stackoverflow.com/questions/870328/receiving-a-broadcast-message-in-c-sharp)
+    - https://stackoverflow.com/questions/15413172/capture-a-keyboard-keypress-in-the-background
+    - https://beebom.com/how-remap-keyboard-windows-10/
+    - https://github.com/tunnelvisionlabs/antlr4-grammar-postgresql/blob/master/src/com/tunnelvisionlabs/postgresql/PostgreSqlLexer.g4
+    - https://stackoverflow.com/questions/44229274/statuscode-406-not-acceptable-in-asp-net-core
+    - https://github.com/ksanman/AllMiniLML6v2Sharp
+    - https://github.com/erincon01/Vector
+
+  - USB
+    - https://devblogs.microsoft.com/oldnewthing/20160627-00/?p=93755
+    - https://www.overclock.net/threads/changing-usb-polling-rate-to-1000hz-or-lower.596276/
+
+  - BusyLight
+    - https://github.com/jwalanta/busylight-lync-linux-osx/blob/master/liux/busylight.py
+    - https://github.com/porsager/busylight/blob/master/lib/busylight.js
+
+  - Blockchain
+    - https://calpaterson.com/blockchain.html
+
+- **Electronics Stuff**
+  - [Electronics Kits](https://www.electronickits.com/electronic-kits-1/)
+  - [Phone line Simulator](https://york.hackspace.org.uk/blog/2017/10/08/simulating-a-phone-line/)
+  - https://en.wikipedia.org/wiki/CARDboard_Illustrative_Aid_to_Computation
+  - https://academo.org/demos/logic-gate-simulator/
+  - [Microchip University](https://mu.microchip.com/page/all-courses)
+  - FPGA
+    - [Vivado Cluster](https://adaptivesupport.amd.com/s/question/0D52E00006hpRLDSA2/vivado-cluster-configuration-using-ssh?language=en_US)
+    - [Vivado Cloud Simulator](https://www.cmc.ca/qsg-xilinx-vivado-cloud-simulation/)
+  - Z80
+    - http://jgmalcolm.com/z80/advanced/shif
+    - https://www.best-microcontroller-projects.com/how-rs232-works.html
+    - https://www.seeedstudio.com/blog/2019/12/11/rs232-vs-ttl-beginner-guide-to-serial-communication/
+  - Raspberry PI
+    - [Adding a second Ethernet port](https://raspberrypi.stackexchange.com/questions/907/adding-a-second-ethernet-port)
+  - ESP-01
+    - https://www.theengineeringprojects.com/2019/05/introduction-to-esp-01.html
+  - https://github.com/bozimmerman/Zimodem
+  - https://subethasoftware.com/2018/02/28/wire-up-your-own-rs-232-wifi-modem-for-under-10-using-esp8266-and-zimodem-firmware/
+  - https://forum.vcfed.org/index.php?threads/wifi232s-evil-clone.1070412/
+  - https://electronics.stackexchange.com/questions/464802/using-hc-hct-ahc-ahct-series-logic
+  - https://www.electronicsforu.com/buyers-guides/software-buyers-guide/logic-friday-digital-logic-design
+  - iPod Interface
+    - https://link.medium.com/suvSCFmrnfb
+  - 
+
+- **Retro Computers**
+  - Apple II
+    - [For Mocking board on APPLE IIc](https://groups.google.com/g/comp.sys.apple2/c/xn6sxoO6pOY?pli=1)
+    - https://www.brutaldeluxe.fr/index.html
+    - http://www.easy68k.com/paulrsm/6502/PDOS8TRM.HTM
+    - https://retrocomputing.stackexchange.com/questions/22424/copy-content-between-floppy-disks-on-apple-ii
+    - https://www.mobygames.com/game/math-blaster
+    - https://68kmla.org/bb/index.php?threads/copy-protected-apple-ii-programs-copy-ii-plus.26106/
+    - http://prodos8.com/copy-ii-plus/
+    - https://ia800506.us.archive.org/20/items/Algernon4amCrack/Algernon %284am crack%29.txt
+    - https://retrocomputing.stackexchange.com/questions/24039/disk-copy-protection-schemes-for-apple-ii
+    - https://www.histo.cat/e/Apple-Locksmith-bit-nibbler
+    - https://www.landsnail.com/a2ref.htm
+    - http://www.easy68k.com/paulrsm/6502/MONREF.HTM
+    - https://www.hackster.io/news/peter-misenko-s-retrovga-is-a-compact-raspberry-pi-pico-powered-retro-emulation-marvel-3f1cbdd635f7
+    - https://applerescueofdenver.com/products-page/apple-ii/cards-motherboards-chips-apple-ii/apple-iic-memory-expansion-card/
+    - https://dreher.net/?s=projects/CFforAppleII&c=projects/CFforAppleII/main.php
+    - https://www.bigmessowires.com/2015/08/27/apple-ii-copy-protection/
+    - https://retrocomputing.stackexchange.com/questions/24039/disk-copy-protection-schemes-for-apple-ii
+    - https://retrocomputing.stackexchange.com/questions/8364/how-did-apple-ii-basic-programs-protect-against-listing
+    - https://www.applefritter.com/content/copying-floppys-apple-iic
+    - https://www.laptopschematic.com/apple-schematics/
+    - https://webstore.kryoflux.com/catalog/
+    - https://www.bigmessowires.com/2015/06/11/apple-ii-hard-disk-emulation/
+    - https://webstore.kryoflux.com/catalog/product_info.php?products_id=30&osCsid=f1de42b03700d30fc4096bd937601332
+    - http://shop.deviceside.com/prod/FC5025
+    - https://archive.org/details/TerrapinLogoLanguageLanguageDisk
+  - https://www.retrobat.org/
+  - https://www.viralpatel.net/taj/tutorial/chs_translation.php
+  - https://pete.akeo.ie/2011/06/crafting-bios-from-scratch.html
+  - https://docs.microsoft.com/en-us/windows/compatibility/ntvdm-and-16-bit-app-support
+
+- **Color Math**
+  - [RGB to HSV](https://osf.io/preprints/discover?page=2&q=Integer-based%20accurate%20conversion%20between%20RGB%20and%20HSV%20color%20spaces)
+
+- **Games**
+  - http://www.gog.com/forum/dungeon_keeper_series/dungeon_keeper_2_changing_resolution_zooms_the_camera_too_much
+
+- **Cars**
+  - Infiniti G37
+    - https://forums.nicoclub.com/problem-with-trunk-top-t586962.html
+    - https://www.autogenius.info/infiniti-g37-2006-2015-fuse-box-diagram/
+    - https://www.infinitipartsdeal.com/parts-list/2009-infiniti-g37-convertible/body_side_rear/trunk_opener.html
+    - https://www.infinitipartsdeal.com/parts/infiniti-lock-asmy-trunk~84631-jj51a.html
+    - https://manuals.co/workshop/infiniti/g37/infiniti-g37-sedan-2009-workshop-manual/5525798
+
+- **Others**
+  - https://www.androidpolice.com/2020/07/11/how-to-rip-your-movie-collection-to-watch-anywhere/
+  - [Chemistrie magnetic glasses clips](https://eyenavision.com/chemistrie/)
+  - [Another PostgreSQL Diff Tool (apgdiff) - Official Homepage: How It Works](https://www.apgdiff.com/how_it_works.php)
+  - [Oracle Database Express Edition](https://www.oracle.com/database/technologies/appdev/xe.html)
+  - [Table valued Parameter Equivalent in Postgresql - Stack Overflow](https://stackoverflow.com/questions/47466801/table-valued-parameter-equivalent-in-postgresql)
+  - [javaparser/javaparser: Java 1-18 Parser and Abstract Syntax Tree for Java with advanced analysis functionalities. (github.com)](https://github.com/javaparser/javaparser)
+  - [Improved package debugging experience with the NuGet.org symbol server - The NuGet Blog (microsoft.com)](https://devblogs.microsoft.com/nuget/improved-package-debugging-experience-with-the-nuget-org-symbol-server/)
+  - [Creating Project Types - Visual Studio (Windows) | Microsoft Learn](https://learn.microsoft.com/en-us/visualstudio/extensibility/internals/creating-project-types?view=vs-2022)
+  - [Home · dotnet/templating Wiki (github.com)](https://github.com/dotnet/templating/wiki/)
+  - [Post Action Registry · dotnet/templating Wiki (github.com)](https://github.com/dotnet/templating/wiki/Post-Action-Registry)
+  - [til/git/list-all-files-changed-between-two-branches.md at master · jbranchaud/til (github.com)](https://github.com/jbranchaud/til/blob/master/git/list-all-files-changed-between-two-branches.md)
+  - [Microsoft-hosted agents for Azure Pipelines - Azure Pipelines | Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&tabs=yaml)
+  - [Expressions - Azure Pipelines | Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/expressions?view=azure-devops)
+  - [git list of files changed between two tags along with intermediate tags changes - Stack Overflow](https://stackoverflow.com/questions/50502888/git-list-of-files-changed-between-two-tags-along-with-intermediate-tags-changes)
+  - [git - How to list all changed files between two tags in GitPython - Stack Overflow](https://stackoverflow.com/questions/64056275/how-to-list-all-changed-files-between-two-tags-in-gitpython)
+  - [How to get only changed files using Azure devops pipelines - Stack Overflow](https://stackoverflow.com/questions/65088433/how-to-get-only-changed-files-using-azure-devops-pipelines)
+  - [Azure Devops pipeline: import variables from template and declare variables in the same variables block - Stack Overflow](https://stackoverflow.com/questions/70990049/azure-devops-pipeline-import-variables-from-template-and-declare-variables-in-t)
+  - [dotnet build command - .NET CLI | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-build)
+  - [Pipeline caching - Azure Pipelines | Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/caching?view=azure-devops)
+  - [Calling a task with a list of files in MSBuild | Musings in Code (wordpress.com)](https://pjbelfield.wordpress.com/2007/11/03/calling-a-task-with-a-list-of-files-in-msbuild/)
+  - [How to get only changed files using Azure devops pipelines - Stack Overflow](https://stackoverflow.com/questions/65088433/how-to-get-only-changed-files-using-azure-devops-pipelines)
+  - [Nerdbank.GitVersioning/doc/pathFilters.md at main · dotnet/Nerdbank.GitVersioning (github.com)](https://github.com/dotnet/Nerdbank.GitVersioning/blob/main/doc/pathFilters.md)
+  - [node.js - How to list all versions of an npm module? - Stack Overflow](https://stackoverflow.com/questions/41415945/how-to-list-all-versions-of-an-npm-module)
+  - [ShellScript@2 - Shell script v2 task | Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/shell-script-v2?view=azure-pipelines)
+  - [nuget - &#34;dotnet restore --interactive&#34; doesn&#39;t work with Azure Artifacts - Stack Overflow](https://stackoverflow.com/questions/58604793/dotnet-restore-interactive-doesnt-work-with-azure-artifacts)
+  - [NuGet pack and restore as MSBuild targets | Microsoft Learn](https://learn.microsoft.com/en-us/nuget/reference/msbuild-targets)
+  - [How can we merge multiple dacpacs into one (agilesql.club)](https://the.agilesql.club/2019/03/how-can-we-merge-multiple-dacpacs-into-one/#:~:text=%20If%20you%20have%20more%20than%20one%20dacpac,scripts%2C%20refactorlog%2C%20references%20%28that%20weren%27t%20same...%20More%20)
+  - [c# - dotnet pack command along with nuspec file not including project&#39;s DLL - Stack Overflow](https://stackoverflow.com/questions/52305975/dotnet-pack-command-along-with-nuspec-file-not-including-projects-dll)
+  - [Customize your build with extensibility hooks - MSBuild | Microsoft Learn](https://learn.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2022)
+  - [Custom templates for dotnet new - .NET CLI | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/core/tools/custom-templates)
+  - [Generate nupkg using msbuild (rubberduckdev.com)](https://rubberduckdev.com/msbuild-nuget/)
+  - [Delete and recover packages - Azure Artifacts | Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/artifacts/how-to/delete-and-recover-packages?view=azure-devops&tabs=nuget)
+  - [MSBuild properties for Microsoft.NET.Sdk - .NET | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props)
+  - [.nuspec File Reference for NuGet | Microsoft Learn](https://learn.microsoft.com/en-us/nuget/reference/nuspec)
+  - [NuGet PackageReference in project files | Microsoft Learn](https://learn.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files)
+  - [c# - NuGet as an application update mechanism - Stack Overflow](https://stackoverflow.com/questions/9014964/nuget-as-an-application-update-mechanism)
+  - [dotnet restore not resolving content/contentfiles · Issue #10313 · dotnet/sdk (github.com)](https://github.com/dotnet/sdk/issues/10313)
+  - [Exec Task - MSBuild | Microsoft Learn](https://learn.microsoft.com/en-us/visualstudio/msbuild/exec-task?view=vs-2022)
+  - [Sampling in Application Insights – my notes on .NET development (wordpress.com)](https://raflrx.wordpress.com/2018/07/23/sampling-in-application-insights/)
+  - [c# - exclude certain projects from using Directory.Build.props - Stack Overflow](https://stackoverflow.com/questions/56155392/exclude-certain-projects-from-using-directory-build-props#:~:text=If%20you%20add%20a%20dummy%20Directory.Build.props%20file%20in,locates%20the%20first%20Directory.Build.props.%20That%20will%20be%20used)
+  - Use msbuild solutions target to build ef scripts if dbcontext project has been updated.
+  - Add a step to detect changes so we only rebuild what updated. It will need to check file paths then look for dependency changes.
+  - Add step to run sql generation step what to do on difference? Error or update?
+  - Does git version support different versions per folder?
+  - [SQL Server Temp Table vs Table Variable Performance Testing (mssqltips.com)](https://www.mssqltips.com/sqlservertip/2825/sql-server-temp-table-vs-table-variable-performance-testing/)
+  - [SQL SERVER - Regular Table or Temp Table - A Quick Performance Comparison - SQL Authority with Pinal Dave](https://blog.sqlauthority.com/2019/09/19/sql-server-regular-table-or-temp-table-a-quick-performance-comparison/)
+  - [Using ETL Staging Tables - Tim Mitchell](https://www.timmitchell.net/post/2017/06/14/etl-staging-tables/)
+  - [How can we merge multiple dacpacs into one (agilesql.club)](https://the.agilesql.club/2019/03/how-can-we-merge-multiple-dacpacs-into-one/#:~:text=If%20you%20have%20more%20than%20one%20dacpac%20and,out%20the%20AST%20of%20all%20of%20the%20objects)
+  - [Sabin.io | Why is SSDT Always Rebuilding My Constraints?](https://www.sabin.io/blog/why-is-ssdt-always-rebuilding-my-constraints/)
+  - [SqlPackage Script - SQL Server | Microsoft Learn](https://learn.microsoft.com/en-us/sql/tools/sqlpackage/sqlpackage-script?view=sql-server-ver16)
+  - [sql server - SSDT Drop and Recreate Tables when nothing has changed - Database Administrators Stack Exchange](https://dba.stackexchange.com/questions/215037/ssdt-drop-and-recreate-tables-when-nothing-has-changed)
+  - [Why does SqlPackage keep dropping and recreating constraints? (agilesql.club)](https://the.agilesql.club/2015/01/why-does-sqlpackage-keep-dropping-and-recreating-constraints/)
+  - [microsoft/artifacts-credprovider: The Azure Artifacts Credential Provider enables dotnet, NuGet.exe, and MSBuild to interactively acquire credentials for Azure Artifacts feeds. (github.com)](https://github.com/microsoft/artifacts-credprovider)
+  - [Table Valued Parameters in SQL SERVER and .NET Core | by Sai Vaibhav Medavarapu | Medium](https://medium.com/@vaibhav.medavarapu/table-valued-parameters-in-sql-server-and-net-core-6e190ee1fd62)
+  - [efcore/src/ef/ReflectionOperationExecutor.cs at release/3.1 · dotnet/efcore (github.com)](https://github.com/dotnet/efcore/blob/release/3.1/src/ef/ReflectionOperationExecutor.cs)
+  - [DbConnectionInterceptor Constructor (Microsoft.EntityFrameworkCore.Diagnostics) | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore.diagnostics.dbconnectioninterceptor.-ctor?view=efcore-8.0)
+  - [Raph&#39;s Blog](https://blog.raph.ws/2019/01/migrations-vs-dacpacs/) - **Migrations VS DACPACs**
+  - [Data Seeding - EF Core | Microsoft Learn](https://learn.microsoft.com/en-us/ef/core/modeling/data-seeding)
+  - [Managing Migrations - EF Core | Microsoft Learn](https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations/managing?tabs=dotnet-core-cli)
+  - [DacServices.ExportBacpac Method (Microsoft.SqlServer.Dac) | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/api/microsoft.sqlserver.dac.dacservices.exportbacpac?view=sql-dacfx-162)
+  - [c# - EF Core: Using ID as Primary key and foreign key at same time - Stack Overflow](https://stackoverflow.com/questions/41261738/ef-core-using-id-as-primary-key-and-foreign-key-at-same-time)
+  - [Rename Columns (Database Engine) - SQL Server | Microsoft Learn](https://learn.microsoft.com/en-us/sql/relational-databases/tables/rename-columns-database-engine?view=sql-server-ver15)
+  - [Companies Using RFCs or Design Docs and Examples of These - The Pragmatic Engineer](https://blog.pragmaticengineer.com/rfcs-and-design-docs/)
+  - [RFC process | Gatsby (gatsbyjs.com)](https://www.gatsbyjs.com/contributing/rfc-process/#:~:text=%20What%20the%20process%20is%20%201%20Copy,to%20revise%20it%20in%20response.%20So...%20More%20)
+  - [Documentation: Request for Comments | by Filipe Mendes | Sharednode | Medium](https://medium.com/sharednode/documentation-request-for-comments-cb61de21174b)
+  - [A Structured RFC Process (philcalcado.com)](https://philcalcado.com/2018/11/19/a_structured_rfc_process.html)
+  - [The Open Software License 3.0 – Open Source Initiative](https://opensource.org/license/osl-3-0-php)
+  - [c# - Why Logging doesn&#39;t use string interpolation - Stack Overflow](https://stackoverflow.com/questions/52200484/why-logging-doesnt-use-string-interpolation)
+  - [.NET Coding Conventions - C# | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
+  - [Index columns, selectivity and equality predicates | SQL in the Wild](https://www.sqlinthewild.co.za/index.php/2009/01/19/index-columns-selectivity-and-equality-predicates/)
+  - [Dynamically Loading Assemblies for Dependency Injection in .Net Core – Code Buckets](https://codebuckets.com/2020/05/29/dynamically-loading-assemblies-for-dependency-injection-in-net-core/)
+  - [Making Win32 APIs More Accessible to More Languages - Windows Developer Blog](https://blogs.windows.com/windowsdeveloper/2021/01/21/making-win32-apis-more-accessible-to-more-languages/)
+  - [Date, Time, and Time Zone Enhancements in .NET 6 - .NET Blog (microsoft.com)](https://devblogs.microsoft.com/dotnet/date-time-and-time-zone-enhancements-in-net-6/)
+  - [Durable Functions Overview - Azure | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=in-process%2Cnodejs-v3%2Cv1-model&pivots=csharp)
+  - [Azure Functions C# script developer reference | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-functions/functions-reference-csharp?tabs=functionsv2%2Cfixed-delay%2Cazure-cli)
+  - [Tutorial: Write your first analyzer and code fix - C# | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
+  - [Adding authorization to Asp.Net Core app using Keycloak | by Xavier Hahn | Medium](https://medium.com/@xavier.hahn/adding-authorization-to-asp-net-core-app-using-keycloak-c6c96ee0e655)
+  - [Adding a Language Server Protocol extension - Visual Studio (Windows) | Microsoft
+    Learn](https://learn.microsoft.com/en-us/visualstudio/extensibility/adding-an-lsp-extension?view=vs-2022)
+  - [sdk/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.Sdk.targets at main · dotnet/sdk (github.com)](https://github.com/dotnet/sdk/blob/main/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.Sdk.targets)
+  - [sdk/src/Tasks/Microsoft.NET.Build.Tasks/sdk at main · dotnet/sdk (github.com)](https://github.com/dotnet/sdk/tree/main/src/Tasks/Microsoft.NET.Build.Tasks/sdk)
+  - [[Bug]: dotnet pack: IncludeAssets and ExcludeAssets on PackageReference differ in generated .nuspec file · Issue #2716 · NuGet/docs.microsoft.com-nuget
+    (github.com)](https://github.com/NuGet/docs.microsoft.com-nuget/issues/2716)
+  - [Run JUnit tests in Parallel using Maven Surefire Plugin (memorynotfound.com)](https://memorynotfound.com/run-junit-tests-parallel-using-maven/)
+  - [https://aashishkoirala.com/blog/tech/writing-your-own-linq-provider-part-3/](https://aashishkoirala.com/blog/tech/writing-your-own-linq-provider-part-3/)
+  - [https://putridparrot.com/blog/creating-a-custom-linq-provider/](https://putridparrot.com/blog/creating-a-custom-linq-provider/)
+  - [http://www.ericwhite.com/blog/transform-docx-to-htmlcss-with-high-fidelity-using-powertools-for-open-xml/](http://www.ericwhite.com/blog/transform-docx-to-htmlcss-with-high-fidelity-using-powertools-for-open-xml/)
+  - [https://www.semianalysis.com/p/groq-inference-tokenomics-speed-but](https://www.semianalysis.com/p/groq-inference-tokenomics-speed-but)
+  - [https://github.com/Sicos1977/ChromiumHtmlToPdf](https://github.com/Sicos1977/ChromiumHtmlToPdf)
+  - [https://open.substack.com/pub/garymarcus/p/when-will-the-genai-bubble-burst?utm_campaign=post&amp;utm_medium=web](https://open.substack.com/pub/garymarcus/p/when-will-the-genai-bubble-burst?utm_campaign=post&utm_medium=web)
+  - [https://www.promptingguide.ai/models/mistral-7b](https://www.promptingguide.ai/models/mistral-7b)
+  - [https://enjoymachinelearning.com/blog/stop-sequence-gpt-3/](https://enjoymachinelearning.com/blog/stop-sequence-gpt-3/)
+  - [https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
+  - [https://platform.openai.com/docs/api-reference/chat%5C](https://platform.openai.com/docs/api-reference/chat%5C)
+  - [https://www.dragonflydb.io/](https://www.dragonflydb.io/)
+  - [https://docs.keydb.dev/](https://docs.keydb.dev/)
+  - [https://techcrunch.com/2024/03/31/why-aws-google-and-oracle-are-backing-the-valkey-redis-fork/](https://techcrunch.com/2024/03/31/why-aws-google-and-oracle-are-backing-the-valkey-redis-fork/)
+
+- **Legos**
+
+  - https://www.bluebrixx.com/en/blog?bid=2204#beitrag2204
+  - https://rebrickable.com/mocs/MOC-198121/skyfox2k/star-trek-advent-calendar-24-ships-all-the-same-scale/

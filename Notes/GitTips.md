@@ -41,3 +41,13 @@ git branch --show-current
 ```shell
 git shortlog -s -n
 ```
+
+
+### Set User Name and Email per Repo
+
+https://stackoverflow.com/questions/42167345/git-set-local-user-name-and-user-email-different-for-each-repo
+
+```shell
+git config user.name "Matthew Whited"
+git config user.email matt@whited.us
+```
