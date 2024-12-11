@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+
+  <Target Name="ConvertDllToHex" AfterTargets="Build">
+    <Message Text="bin: $(OutputPath)$(AssemblyName).dll" Importance="high" />
+  </Target>
+
+  <UsingTask TaskName="RunCSharpCode" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <ParameterGroup>
+      <InputFile ParameterType="System.String" Required="true" />
+      <AssemblyName ParameterType="System.String" Required="true" />
+      <OutputFile ParameterType="System.String" Required="true" />
+      <SqlFile ParameterType="System.String" Required="true" />
+    </ParameterGroup>
+    <Task>
+      <Using Namespace="System" />
+      <Using Namespace="System.IO" />
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
+        // Read the input file
+        var fileContent = File.ReadAllBytes(InputFile);
+
+        // Convert to hex string
+        var hexString = BitConverter.ToString(fileContent).Replace("-", "");
+
+        // Write to output file
+        File.WriteAllText(OutputFile, hexString);
+        
+        var template = @"CREATE ASSEMBLY [{0}]
+FROM 0x{1}
+WITH PERMISSION_SET = SAFE";
+        var sqlScript = string.Format(template, AssemblyName, hexString);
+        
+        // Write to sql file
+        File.WriteAllText(SqlFile, sqlScript);
+        
+        ]]>
+      </Code>
+    </Task>
+  </UsingTask>
+
+  <Target Name="RunCustomCode" AfterTargets="Build">
+    <RunCSharpCode
+        InputFile="$(OutputPath)$(AssemblyName).dll"
+        AssemblyName="$(AssemblyName)"
+        OutputFile="$(OutputPath)$(AssemblyName).hex"
+        SqlFile="$(OutputPath)$(AssemblyName).sql"      
+        />
+
+    <!--    
+        SqlFile="..\TestApp.DB\Generated\$(AssemblyName).sql"  
+        -->
+    
+    <Message Text="Hex file created: $(OutputPath)$(AssemblyName).hex" Importance="High" />
+  </Target>
+
+</Project>
