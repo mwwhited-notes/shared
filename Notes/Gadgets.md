@@ -2,8 +2,8 @@
   - [ ] 6502 Computer kit
   - [ ] Serial Kit
   - [ ] Complete Kit
-- [ ] [Eater 8bit computer kit](https://eater.net/8bit)
-  - [ ] Complete kit
+- [x] [Eater 8bit computer kit](https://eater.net/8bit)
+  - [x] Complete kit
 - [ ] [Compdyna GP-6 analog computer](https://www.glennsmuseum.com/items/comdyna/)
 - [ ] [TI-99/4a computer](https://en.m.wikipedia.org/wiki/TI-99/4A)
 
