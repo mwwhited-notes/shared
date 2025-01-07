@@ -1,0 +1,8 @@
+name: apache-tika
+services:
+    apache-tika:
+        build:
+            dockerfile: DockerFile.apache-tika
+            context: .
+        ports:
+        - 9999:9998

@@ -1,0 +1,26 @@
+FROM apache/tika:latest-full
+
+USER root
+
+## https://cwiki.apache.org/confluence/display/TIKA/TikaOCR
+RUN apt-get update && \
+    apt-get install -y tesseract-ocr python3 python3-pip python3-numpy python3-venv && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+    
+RUN python3 -m venv /opt/venv && \
+    /opt/venv/bin/pip install --upgrade pip && \
+    /opt/venv/bin/pip install scikit-image
+    
+RUN apt-get update && \
+    apt-get install -y imagemagick && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Ensure the virtual environment is used
+ENV PATH="/opt/venv/bin:$PATH"
+
+EXPOSE 9999
+
+# docker compose --project-name ocr --file .\shared\Scripts\containers\docker-compose.apache-tika.yml build
+CMD ["tika-server"]
