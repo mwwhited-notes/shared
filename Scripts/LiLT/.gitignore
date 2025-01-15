@@ -1,0 +1,5 @@
+*.pdf
+pages/
+model_outputs/
+annotated/
+docquery/

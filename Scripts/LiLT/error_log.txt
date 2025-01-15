@@ -1,0 +1,7 @@
+ERROR:root:Error processing image: <PIL.Image.Image image mode=RGB size=956x474 at 0x7EFD5DFBE010>. Error: LiltForTokenClassification.forward() got an unexpected keyword argument 'pixel_values'
+ERROR:root:Error processing image: <PIL.Image.Image image mode=RGB size=800x426 at 0x7EFB62730650>. Error: LiltForTokenClassification.forward() got an unexpected keyword argument 'pixel_values'
+ERROR:root:Error processing image: <PIL.Image.Image image mode=RGB size=800x426 at 0x7EFB62721250>. Error: LiltForTokenClassification.forward() got an unexpected keyword argument 'pixel_values'
+ERROR:root:Error processing image: <PIL.Image.Image image mode=RGB size=935x437 at 0x7EFD6ED47150>. Error: LiltForTokenClassification.forward() got an unexpected keyword argument 'pixel_values'
+ERROR:root:Error processing image: <PIL.Image.Image image mode=RGB size=2500x1666 at 0x7EFD5DFBE010>. Error: LiltForTokenClassification.forward() got an unexpected keyword argument 'pixel_values'
+ERROR:root:Error processing image: <PIL.Image.Image image mode=RGB size=2550x3301 at 0x7EFBE31C1A50>. Error: LiltForTokenClassification.forward() got an unexpected keyword argument 'pixel_values'
+ERROR:root:Error processing image: <PIL.Image.Image image mode=RGB size=2550x3301 at 0x7EFB62722950>. Error: LiltForTokenClassification.forward() got an unexpected keyword argument 'pixel_values'
