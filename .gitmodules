@@ -1,0 +1,18 @@
+[submodule "Scripts/LiLT/LiLT"]
+	path = Scripts/LiLT/LiLT
+	url = https://github.com/jpWang/LiLT.git
+[submodule "Notes/AI ML Stuff/SimilaritySearchExample"]
+	path = Notes/AI ML Stuff/SimilaritySearchExample
+	url = https://github.com/EliassenInnovation/SimilaritySearchExample.git
+[submodule "Notes/AI ML Stuff/VirtualRecruiter"]
+	path = Notes/AI ML Stuff/VirtualRecruiter
+	url = https://github.com/OutOfBandDevelopment/VirtualRecruiter.git
+[submodule "Notes/AI ML Stuff/Transformers-Tutorials"]
+	path = Notes/AI ML Stuff/Transformers-Tutorials
+	url = https://github.com/mwwhited/Transformers-Tutorials.git
+[submodule "Notes/AI ML Stuff/all-mpnet-base-v2-onnx"]
+	path = Notes/AI ML Stuff/all-mpnet-base-v2-onnx
+	url = https://huggingface.co/onnx-models/all-mpnet-base-v2-onnx
+[submodule "Notes/AI ML Stuff/OMR-scanned-documents"]
+	path = Notes/AI ML Stuff/OMR-scanned-documents
+	url = https://huggingface.co/datasets/saurabh1896/OMR-scanned-documents/
