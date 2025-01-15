@@ -16,3 +16,6 @@
 [submodule "Notes/AI ML Stuff/OMR-scanned-documents"]
 	path = Notes/AI ML Stuff/OMR-scanned-documents
 	url = https://huggingface.co/datasets/saurabh1896/OMR-scanned-documents/
+[submodule "Notes/DiagramsAndPatterns"]
+	path = Notes/DiagramsAndPatterns
+	url = https://github.com/mwwhited/DiagramsAndPatterns
