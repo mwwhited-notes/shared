@@ -1,4 +1,7 @@
 !*.md
+*.pdf
 
 .ipynb_checkpoints/
 model_outputs/
+
+.vs/
