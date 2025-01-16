@@ -1,0 +1,58 @@
+%SIGNAL
+PIN  17 =  Bus_Dir 
+PIN  16 =  Bus_OE 
+PIN   2 =  CTR_CLK 
+PIN   3 =  CTR_HLT 
+PIN   4 =  CTR_MI 
+PIN   5 =  CTR_RI 
+PIN   6 =  CTR_RO 
+PIN  18 =  Halt_Out 
+PIN  19 =  MAR_Cp 
+PIN  12 =  RAM_CE 
+PIN  14 =  RAM_OE 
+PIN  13 =  RAM_WE 
+PIN   7 =  U_Inspect 
+PIN  15 =  U_OE 
+PIN   8 =  U_Program 
+PIN   9 =  U_Write 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+Bus_Dir =>
+    CTR_RI & !CTR_RO & !U_Program
+
+Bus_OE =>
+    !CTR_RI & !CTR_RO
+  # CTR_RI & CTR_RO
+  # U_Program
+
+Halt_Out =>
+    CTR_HLT
+  # U_Program
+
+MAR_Cp =>
+    CTR_CLK & CTR_MI
+
+RAM_CE =>
+    !CTR_RI & !CTR_RO & !U_Program
+  # CTR_RI & CTR_RO & !U_Program
+
+RAM_OE =>
+    CTR_RI & !U_Program
+  # !CTR_RO & !U_Program
+  # !U_Inspect & U_Program
+
+RAM_WE =>
+    !CTR_RI & !U_Program
+  # CTR_RO & !U_Program
+  # U_Inspect & U_Program
+  # U_Program & !U_Write
+
+U_OE =>
+    U_Inspect
+  # !U_Program
+
+%END
