@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" 
-  width="600" height="600" 
-  viewBox="0 0 600 600"
+  width="280" height="280" 
+  viewBox="0 -12 230 290"
   >
    <defs>
-    <path id="halfmoon" d="M 0 0 A 10 10 0 1 1 20 0 A 10 10 0 1 1 0 0 Z" fill="white" stroke="black" stroke-width="1" />
+    <path id="halfmoon"  d="M 0 0 A 10 10 0 0 0 20 0 L 20 0 Z" fill="white" stroke="black" stroke-width="1" />
     <rect id="pin"   width="10" height="10" fill="black"/> 
     <rect id="i_pin" width="10" height="10" fill="white" stroke="black" stroke-width="1" /> 
 
@@ -11,7 +11,7 @@
       <rect x="25" y="0" width="71.1" height="266.7" fill="white" stroke="black" stroke-width="1" rx="5" />
 
       <use href="#halfmoon" x="50.55" y="0"/>
-      <!-- <circle cx="37.7" cy="12.7" r="5" fill="black"/> -->
+      <!-- <circle cx="40.7" cy="12.7" r="5" fill="grey"/> -->
 
       <g id="left-pins">
         <use href="#pin" x="15" y="12.7"  />
@@ -48,7 +48,7 @@
         <use href="#i_pin" x="96.1" y="139.7"/>
         <use href="#i_pin" x="96.1" y="165.1"/>
         <use href="#i_pin" x="96.1" y="190.5"/>
-        <use href="#i_pin" x="96.1" y="215.9"/>
+        <use href="#pin" x="96.1" y="215.9"/>
         <use href="#pin" x="96.1" y="241.3"/>
         
         <text x="80" y="21.7 " font-size="12" fill="black">20</text>
@@ -86,7 +86,7 @@
     <text x="165" y="148.7"  font-size="12" fill="black" >/U OE   </text>
     <text x="165" y="174.1"  font-size="12" fill="black" >/RAM OE </text>
     <text x="165" y="199.5"  font-size="12" fill="black" >/RAMWE  </text>
-    <text x="165" y="224.9"  font-size="12" fill="black" >/RAM CE </text>
+    <text x="165" y="224.9"  font-size="12" fill="black" >NC      </text>
     <text x="165" y="250.3"  font-size="12" fill="black" >NC      </text>
  
 </svg>
