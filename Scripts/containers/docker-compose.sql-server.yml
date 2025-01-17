@@ -1,6 +1,7 @@
 name: sql-server
 services:
     sql-server:
+        container_name: sql-server
         build:
             dockerfile: DockerFile.sql-server-2019
             context: .
