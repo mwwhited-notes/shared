@@ -14,6 +14,10 @@
   - Table recognition (detecting rows/columns)
 - https://www.reddit.com/r/LocalLLaMA/comments/1hep8xa/recommendations_for_the_best_ocr_model_for/
 - [Qwen2-VL](https://github.com/QwenLM/Qwen2-VL)
+- [Pixtral 12B](https://mistral.ai/news/pixtral-12b/)
+- [Extracting Structured Data from Complex Docs Using LLMs | Numind/NuExtract 1.5 Guide V2](https://www.youtube.com/watch?v=mqxQP0oT4Dg)
+- [Fine-tune LiLT model for Information extraction from Image and PDF documents | UBIAI | Train LiLT |](https://www.youtube.com/watch?v=EVONngnrJbE)
+- [Van Lindberg Structured Data from Unstructured Text PyCon 2016](https://www.youtube.com/watch?v=-K-XtxSyyvU)
 
 ## Datasets
 
