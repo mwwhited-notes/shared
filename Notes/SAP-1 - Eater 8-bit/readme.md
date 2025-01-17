@@ -22,7 +22,7 @@ The combinational logic was replaced with a ATF16v8b and the following code
 ```cupl
 Name     Memory Controller.dig ;
 PartNo   00 ;
-Date     16.01.2025 ;
+Date     17.01.2025 ;
 Revision 01 ;
 Designer mwwhi ;
 Company  unknown ;
@@ -50,25 +50,26 @@ PIN 18 = Halt_Out;
 PIN 19 = MAR_Clock;
 
 /* combinatorial logic */
-Databus_Direction = !Control_RAM_Out & !User_Program;
-Databus_Output_Enable = (Control_RAM_In & Control_RAM_Out) # User_Program;
-Halt_Out = Control_Halt_In # User_Program;
+Databus_Direction = Control_RAM_In & !Control_RAM_Out & User_Program;
+Databus_Output_Enable = (!Control_RAM_In & !Control_RAM_Out) # (Control_RAM_In & Control_RAM_Out) # !User_Program;
+Halt_Out = !User_Program # Control_Halt_In;
 MAR_Clock = !Control_MAR_In & Control_Clock;
-RAM_Output_Enable = (Control_RAM_Out & !User_Program) # (!User_Inspect & User_Program);
-RAM_Write = (Control_RAM_In & !User_Program) # (User_Program & !User_Write);
-User_Output_Enable = User_Inspect # !User_Program;
+RAM_Output_Enable = (!Control_RAM_In & Control_RAM_Out & User_Program) # (!User_Program & !User_Inspect);
+RAM_Write = (Control_RAM_In & User_Program) # (!Control_RAM_Out & User_Program) # (!User_Program & !User_Write) 
+     # (!User_Program & User_Inspect);
+User_Output_Enable = User_Program # User_Inspect;
 ```
 
 ## Rules
 
 ```logic
-/RAM_Write = (/ControlRAMIn ∧ ¬UserProgram) ∨ (UserProgram ∧ ¬UserWrite)
-/RAM_Output_Enable = (/ControlRAMOut ∧ ¬UserProgram) ∨ (¬UserInspect ∧ UserProgram)
-/User_Output_Enable = UserInspect ∨ ¬UserProgram
-/Databus_Output_Enable = (/ControlRAMIn ∧ /ControlRAMOut) ∨ UserProgram
-Databus_Direction = ¬(/ControlRAMOut) ∧ ¬UserProgram
-Halt_Out = ControlHaltIn ∨ UserProgram
 MAR_Clock = ¬(/ControlMARIn) ∧ ControlClock
+Halt_Out = ¬(/UserProgram) ∨ ControlHaltIn
+/RAM_Write = (/ControlRAMIn ∧ /UserProgram) ∨ (¬(/ControlRAMOut) ∧ /UserProgram) ∨ (¬(/UserProgram) ∧ ¬UserWrite) ∨ (¬(/UserProgram) ∧ UserInspect)
+/RAM_Output_Enable = (¬(/ControlRAMIn) ∧ /ControlRAMOut ∧ /UserProgram) ∨ (¬(/UserProgram) ∧ ¬UserInspect)
+/User_Output_Enable = /UserProgram ∨ UserInspect
+/Databus_Output_Enable = (¬(/ControlRAMIn) ∧ ¬(/ControlRAMOut)) ∨ (/ControlRAMIn ∧ /ControlRAMOut) ∨ ¬(/UserProgram)
+Databus_Direction = /ControlRAMIn ∧ ¬(/ControlRAMOut) ∧ /UserProgram
 ```
 
 ### Data Bus

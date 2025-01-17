@@ -1,63 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <truthTable>
   <variables>
-    <variable name="User_Program"/>
-    <variable name="User_Write"/>
-    <variable name="User_Inspect"/>
-    <variable name="Control_Clock"/>
     <variable name="/Control_MAR_In"/>
+    <variable name="Control_Clock"/>
+    <variable name="Control_Halt_In"/>
+    <variable name="/User_Program"/>
+    <variable name="User_Inspect"/>
+    <variable name="User_Write"/>
     <variable name="/Control_RAM_In"/>
     <variable name="/Control_RAM_Out"/>
-    <variable name="Control_Halt_In"/>
   </variables>
   <results>
     <result>
-      <name>/RAM_Write</name>
+      <name>MAR_Clock</name>
       <values class="BoolTableEx">
-        <e>01011100</e>
+        <e>0100</e>
         <vars>
-          <variable name="User_Program"/>
-          <variable name="User_Write"/>
-          <variable name="/Control_RAM_In"/>
-        </vars>
-        <bitsToRemove>
-          <int>0</int>
-          <int>1</int>
-          <int>3</int>
-          <int>4</int>
-          <int>5</int>
-        </bitsToRemove>
-        <bitRemoveCount>5</bitRemoveCount>
-        <size>256</size>
-      </values>
-    </result>
-    <result>
-      <name>/RAM_Output_Enable</name>
-      <values class="BoolTableEx">
-        <e>01011100</e>
-        <vars>
-          <variable name="User_Program"/>
-          <variable name="User_Inspect"/>
-          <variable name="/Control_RAM_Out"/>
-        </vars>
-        <bitsToRemove>
-          <int>0</int>
-          <int>2</int>
-          <int>3</int>
-          <int>4</int>
-          <int>6</int>
-        </bitsToRemove>
-        <bitRemoveCount>5</bitRemoveCount>
-        <size>256</size>
-      </values>
-    </result>
-    <result>
-      <name>/User_Output_Enable</name>
-      <values class="BoolTableEx">
-        <e>1101</e>
-        <vars>
-          <variable name="User_Program"/>
-          <variable name="User_Inspect"/>
+          <variable name="/Control_MAR_In"/>
+          <variable name="Control_Clock"/>
         </vars>
         <bitsToRemove>
           <int>0</int>
@@ -65,47 +25,7 @@
           <int>2</int>
           <int>3</int>
           <int>4</int>
-          <int>6</int>
-        </bitsToRemove>
-        <bitRemoveCount>6</bitRemoveCount>
-        <size>256</size>
-      </values>
-    </result>
-    <result>
-      <name>/Databus_Output_Enable</name>
-      <values class="BoolTableEx">
-        <e>00011111</e>
-        <vars>
-          <variable name="User_Program"/>
-          <variable name="/Control_RAM_In"/>
-          <variable name="/Control_RAM_Out"/>
-        </vars>
-        <bitsToRemove>
-          <int>0</int>
-          <int>3</int>
-          <int>4</int>
           <int>5</int>
-          <int>6</int>
-        </bitsToRemove>
-        <bitRemoveCount>5</bitRemoveCount>
-        <size>256</size>
-      </values>
-    </result>
-    <result>
-      <name>Databus_Direction</name>
-      <values class="BoolTableEx">
-        <e>1000</e>
-        <vars>
-          <variable name="User_Program"/>
-          <variable name="/Control_RAM_Out"/>
-        </vars>
-        <bitsToRemove>
-          <int>0</int>
-          <int>2</int>
-          <int>3</int>
-          <int>4</int>
-          <int>5</int>
-          <int>6</int>
         </bitsToRemove>
         <bitRemoveCount>6</bitRemoveCount>
         <size>256</size>
@@ -114,30 +34,70 @@
     <result>
       <name>Halt_Out</name>
       <values class="BoolTableEx">
-        <e>0111</e>
+        <e>1011</e>
         <vars>
-          <variable name="User_Program"/>
           <variable name="Control_Halt_In"/>
+          <variable name="/User_Program"/>
         </vars>
         <bitsToRemove>
+          <int>0</int>
           <int>1</int>
           <int>2</int>
           <int>3</int>
-          <int>4</int>
-          <int>5</int>
           <int>6</int>
+          <int>7</int>
         </bitsToRemove>
         <bitRemoveCount>6</bitRemoveCount>
         <size>256</size>
       </values>
     </result>
     <result>
-      <name>MAR_Clock</name>
+      <name>/RAM_Write</name>
       <values class="BoolTableEx">
-        <e>0010</e>
+        <e>11110000111111111011101110111011</e>
         <vars>
-          <variable name="Control_Clock"/>
-          <variable name="/Control_MAR_In"/>
+          <variable name="/User_Program"/>
+          <variable name="User_Inspect"/>
+          <variable name="User_Write"/>
+          <variable name="/Control_RAM_In"/>
+          <variable name="/Control_RAM_Out"/>
+        </vars>
+        <bitsToRemove>
+          <int>5</int>
+          <int>6</int>
+          <int>7</int>
+        </bitsToRemove>
+        <bitRemoveCount>3</bitRemoveCount>
+        <size>256</size>
+      </values>
+    </result>
+    <result>
+      <name>/RAM_Output_Enable</name>
+      <values class="BoolTableEx">
+        <e>1111000001000100</e>
+        <vars>
+          <variable name="/User_Program"/>
+          <variable name="User_Inspect"/>
+          <variable name="/Control_RAM_In"/>
+          <variable name="/Control_RAM_Out"/>
+        </vars>
+        <bitsToRemove>
+          <int>2</int>
+          <int>5</int>
+          <int>6</int>
+          <int>7</int>
+        </bitsToRemove>
+        <bitRemoveCount>4</bitRemoveCount>
+        <size>256</size>
+      </values>
+    </result>
+    <result>
+      <name>/User_Output_Enable</name>
+      <values class="BoolTableEx">
+        <e>0111</e>
+        <vars>
+          <variable name="/User_Program"/>
+          <variable name="User_Inspect"/>
         </vars>
         <bitsToRemove>
           <int>0</int>
@@ -148,6 +108,46 @@
           <int>7</int>
         </bitsToRemove>
         <bitRemoveCount>6</bitRemoveCount>
+        <size>256</size>
+      </values>
+    </result>
+    <result>
+      <name>/Databus_Output_Enable</name>
+      <values class="BoolTableEx">
+        <e>11111001</e>
+        <vars>
+          <variable name="/User_Program"/>
+          <variable name="/Control_RAM_In"/>
+          <variable name="/Control_RAM_Out"/>
+        </vars>
+        <bitsToRemove>
+          <int>2</int>
+          <int>3</int>
+          <int>5</int>
+          <int>6</int>
+          <int>7</int>
+        </bitsToRemove>
+        <bitRemoveCount>5</bitRemoveCount>
+        <size>256</size>
+      </values>
+    </result>
+    <result>
+      <name>Databus_Direction</name>
+      <values class="BoolTableEx">
+        <e>00000010</e>
+        <vars>
+          <variable name="/User_Program"/>
+          <variable name="/Control_RAM_In"/>
+          <variable name="/Control_RAM_Out"/>
+        </vars>
+        <bitsToRemove>
+          <int>2</int>
+          <int>3</int>
+          <int>5</int>
+          <int>6</int>
+          <int>7</int>
+        </bitsToRemove>
+        <bitRemoveCount>5</bitRemoveCount>
         <size>256</size>
       </values>
     </result>
