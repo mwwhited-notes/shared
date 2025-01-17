@@ -71,7 +71,6 @@ Halt_Out = ControlHaltIn ∨ UserProgram
 MAR_Clock = ¬(/ControlMARIn) ∧ ControlClock
 ```
 
-
 ### Data Bus
 
 When the memory is in program mode direct access to memory should be allowed and isolated from the databus.  This may be acomplished by disabling the output on the databus transceiver.  
@@ -94,4 +93,4 @@ When memory is in program mode the control for RAM access will be provided by th
 
 - [Digital](https://github.com/hneemann/Digital)
 - [WinCUPL](https://www.microchip.com/en-us/development-tool/WinCUPL)
-- [](https://truthtablemaker.com/)
+- [Truth Table Maker](https://truthtablemaker.com/)

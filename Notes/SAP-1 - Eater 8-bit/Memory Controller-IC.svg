@@ -15,7 +15,7 @@
 
       <g id="left-pins">
         <use href="#pin" x="15" y="12.7"  />
-        <use href="#i_pin" x="15" y="38.1"  />
+        <use href="#pin" x="15" y="38.1"  />
         <use href="#pin" x="15" y="65.5"  />
         <use href="#i_pin" x="15" y="88.9"  />
         <use href="#i_pin" x="15" y="114.3" />
@@ -67,16 +67,16 @@
 
   <use href="#ic" x="50" y="0"/>
       
-    <text x="55" y="21.7 "  font-size="12" fill="black" text-anchor="end" >NC       </text>
-    <text x="55" y="47.1 "  font-size="12" fill="black" text-anchor="end" >/CTR CLK </text>
-    <text x="55" y="74.5 "  font-size="12" fill="black" text-anchor="end" >CTR HLT  </text>
-    <text x="55" y="97.9 "  font-size="12" fill="black" text-anchor="end" >/CTR MI  </text>
-    <text x="55" y="123.3"  font-size="12" fill="black" text-anchor="end" >/CTR RI  </text>
-    <text x="55" y="148.7"  font-size="12" fill="black" text-anchor="end" >/CTR RO  </text>
-    <text x="55" y="174.1"  font-size="12" fill="black" text-anchor="end" >U Inspect</text>
-    <text x="55" y="199.5"  font-size="12" fill="black" text-anchor="end" >U Program</text>
-    <text x="55" y="224.9"  font-size="12" fill="black" text-anchor="end" >U Write  </text>
-    <text x="55" y="250.3"  font-size="12" fill="black" text-anchor="end" >GND      </text>
+    <text  x="55"  y="21.7 " font-size="12" fill="black" text-anchor="end" >NC       </text>
+    <text  x="55"  y="47.1 " font-size="12" fill="black" text-anchor="end" >CTR CLK  </text>
+    <text  x="55"  y="74.5 " font-size="12" fill="black" text-anchor="end" >CTR HLT  </text>
+    <text  x="55"  y="97.9 " font-size="12" fill="black" text-anchor="end" >/CTR MI  </text>
+    <text  x="55"  y="123.3" font-size="12" fill="black" text-anchor="end" >/CTR RI  </text>
+    <text  x="55"  y="148.7" font-size="12" fill="black" text-anchor="end" >/CTR RO  </text>
+    <text  x="55"  y="174.1" font-size="12" fill="black" text-anchor="end" >U Inspect</text>
+    <text  x="55"  y="199.5" font-size="12" fill="black" text-anchor="end" >U Program</text>
+    <text  x="55"  y="224.9" font-size="12" fill="black" text-anchor="end" >U Write  </text>
+    <text  x="55"  y="250.3" font-size="12" fill="black" text-anchor="end" >GND      </text>
     
     <text x="165" y="21.7 "  font-size="12" fill="black" >Vcc     </text>
     <text x="165" y="47.1 "  font-size="12" fill="black" >MAR Cp  </text>
