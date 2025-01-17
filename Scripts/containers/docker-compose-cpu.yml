@@ -6,17 +6,38 @@ services:
     networks:
       - backend
 
-  sql-sonarqube:
-    extends:
-      file: docker-compose.sonarqube.yml
-      service: sonarqube
-    networks:
-      - backend
+  # sql-sonarqube:
+  #   extends:
+  #     file: docker-compose.sonarqube.yml
+  #     service: sonarqube
+  #   networks:
+  #     - backend
 
   apache-tika:
     extends:
       file: docker-compose.apache-tika.yml
       service: apache-tika
+    networks:
+      - backend
+
+  label-studio:
+    extends:
+      file: docker-compose.label-studio.yml
+      service: label-studio
+    networks:
+      - backend
+
+  gotenberg:
+    extends:
+      file: docker-compose.gotenberg.yml
+      service: gotenberg
+    networks:
+      - backend
+
+  stirling-pdf:
+    extends:
+      file: docker-compose.stirling-pdf.yml
+      service: stirling-pdf
     networks:
       - backend
 
@@ -27,7 +48,10 @@ networks:
     driver: bridge
 
 volumes:
-     sqlserver-data:
-     sonarqube-data:
-     sonarqube-extensions:
-     sonarqube-logs:
+    sqlserver-data:
+    sonarqube-data:
+    sonarqube-extensions:
+    sonarqube-logs:
+    label-studio-data:
+    stirling-pdf-trainingData:
+    stirling-pdf-extraConfigs:
