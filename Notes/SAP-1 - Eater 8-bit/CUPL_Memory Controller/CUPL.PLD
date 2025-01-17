@@ -19,13 +19,13 @@ PIN 8 = User_Program;
 PIN 9 = User_Write;
 
 /* outputs */
+PIN 19 = MAR_Clock;
+PIN 18 = Halt_Out;
 PIN 13 = RAM_Write;
 PIN 14 = RAM_Output_Enable;
 PIN 15 = User_Output_Enable;
 PIN 16 = Databus_Output_Enable;
 PIN 17 = Databus_Direction;
-PIN 18 = Halt_Out;
-PIN 19 = MAR_Clock;
 
 /* combinatorial logic */
 Databus_Direction = Control_RAM_In & !Control_RAM_Out & User_Program;

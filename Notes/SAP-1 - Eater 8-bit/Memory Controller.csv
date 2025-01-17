@@ -1,0 +1,17 @@
+/Control_MAR_In,Control_Clock,Control_Halt_In,/User_Program,User_Inspect,User_Write,/Control_RAM_In,/Control_RAM_Out,,MAR_Clock,Halt_Out,/RAM_Write,/RAM_Output_Enable,/User_Output_Enable,/Databus_Output_Enable,Databus_Direction
+X,X,1,0,X,X,X,X,,X,1,X,X,X,X,X
+X,X,0,0,X,X,X,X,,X,1,X,X,X,X,X
+X,X,X,0,1,0,X,X,,X,X,1,0,1,1,X
+X,X,X,0,1,1,X,X,,X,X,1,0,1,1,X
+X,X,X,0,0,0,X,X,,X,X,1,1,0,1,X
+X,X,X,0,0,1,X,X,,X,X,0,1,0,1,X
+X,X,1,1,X,X,X,X,,X,1,X,X,X,X,X
+X,X,0,1,X,X,X,X,,X,0,X,X,X,X,X
+X,X,X,1,X,X,0,0,,X,X,1,0,1,1,X
+X,X,X,1,X,X,1,1,,X,X,1,0,1,1,X
+X,X,X,1,X,X,0,1,,X,X,0,1,1,0,0
+X,X,X,1,X,X,1,0,,X,X,1,0,1,0,1
+0,1,X,X,X,X,X,X,,1,X,X,X,X,X,X
+0,0,X,X,X,X,X,X,,0,X,X,X,X,X,X
+1,0,X,X,X,X,X,X,,0,X,X,X,X,X,X
+1,1,X,X,X,X,X,X,,0,X,X,X,X,X,X
