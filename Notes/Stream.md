@@ -26,4 +26,6 @@ I rant at Loghter/Eliassen.
   - [ ] form in MD or DE?
   - [ ] should it be nonprofit
     - intention is to share ideas with community
+    - https://www.forbes.com/advisor/business/how-to-start-a-nonprofit/
+    - https://givebutter.com/blog/non-profit-vs-not-for-profit
 
