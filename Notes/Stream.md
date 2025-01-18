@@ -20,3 +20,10 @@ I rant at Loghter/Eliassen.
   - [ ] keep second audio marker drop shortcut
   - [ ] look into stream deck controller
   - [ ] look into second presenter
+- [ ] look into nonprofit status
+- [ ] move business
+  - [ ] shutdown in ohio?
+  - [ ] form in MD or DE?
+  - [ ] should it be nonprofit
+    - intention is to share ideas with community
+
