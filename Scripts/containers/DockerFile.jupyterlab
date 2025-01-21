@@ -1,11 +1,10 @@
-FROM ubuntu:22.04
+FROM ubuntu:20.04
 
 # Install dependencies and tools
 RUN apt update -y && apt upgrade -y && apt install -y \
     python3.10 python3-pip dotnet-sdk-8.0 aspnetcore-runtime-8.0 \
     wget unzip openjdk-21-jdk software-properties-common golang npm \
-    libtool libffi-dev ruby ruby-dev make nvidia-cuda-toolkit \
-    nvidia-driver libcudnn8
+    libtool libffi-dev ruby ruby-dev make
 
 # Install Python packages
 RUN pip install jupyterlab torch torchvision torchaudio tensorflow
