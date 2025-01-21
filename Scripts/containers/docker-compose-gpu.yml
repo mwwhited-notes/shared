@@ -47,6 +47,13 @@ services:
       service: jupyterlab
     networks:
       - backend
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
 
 networks:
   frontend:
