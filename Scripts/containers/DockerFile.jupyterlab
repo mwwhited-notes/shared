@@ -1,68 +1,52 @@
 FROM ubuntu:22.04
 
-# https://www.simplified.guide/jupyter-notebook/install-ubuntu
+# Install dependencies and tools
+RUN apt update -y && apt upgrade -y && apt install -y \
+    python3.10 python3-pip dotnet-sdk-8.0 aspnetcore-runtime-8.0 \
+    wget unzip openjdk-21-jdk software-properties-common golang npm \
+    libtool libffi-dev ruby ruby-dev make nvidia-cuda-toolkit \
+    nvidia-driver libcudnn8
 
-RUN apt update -y
-RUN apt-get update -y
-RUN apt upgrade -y
+# Install Python packages
+RUN pip install jupyterlab torch torchvision torchaudio tensorflow
 
-RUN apt install python3.10 -y
-RUN apt install python3.10-dbg -y
-RUN apt install python3-pip -y
-RUN pip install jupyterlab
-
-RUN pip install torch torchvision torchaudio
-RUN pip install tensorflow 
-
-RUN apt install dotnet-sdk-8.0 -y
-RUN apt install aspnetcore-runtime-8.0 -y
+# Install .NET Interactive and tools
 RUN dotnet tool install --global Microsoft.dotnet-interactive
 ENV PATH="$PATH:/root/.dotnet/tools"
 ENV DOTNET_CLI_TELEMETRY_OPTOUT=1
 RUN dotnet interactive jupyter install
 
-RUN apt install wget -y
-RUN apt install unzip -y
-RUN apt install openjdk-21-jdk -y 
-RUN wget https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip --directory-prefix=/tmp/
-RUN unzip /tmp/ijava-1.3.0.zip -d /tmp/ijava
-RUN python3 /tmp/ijava/install.py
+# Install IJava for Jupyter
+RUN wget https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3.0.zip -P /tmp/ \
+    && unzip /tmp/ijava-1.3.0.zip -d /tmp/ijava \
+    && python3 /tmp/ijava/install.py
 
-ENV GOPATH /go
-ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
+# Install Go and Go tools
+RUN add-apt-repository ppa:longsleep/golang-backports -y \
+    && apt update \
+    && apt install -y golang \
+    && go install github.com/janpfeifer/gonb@latest \
+    && go install golang.org/x/tools/cmd/goimports@latest \
+    && go install golang.org/x/tools/gopls@latest \
+    && gonb --install
 
-RUN apt-get install software-properties-common -y
-RUN add-apt-repository ppa:longsleep/golang-backports -y
-RUN apt update
-RUN apt install golang -y
+# Install Ruby and IRuby
+RUN gem install --user-install iruby \
+    && iruby register --force
 
-RUN go install github.com/janpfeifer/gonb@latest
-RUN go install golang.org/x/tools/cmd/goimports@latest
-RUN go install golang.org/x/tools/gopls@latest
-RUN gonb --install
+# Install TSLab for Jupyter
+RUN npm install --global tslab \
+    && tslab install --python=python3
 
-ENV PATH=/root/.local/share/gem/ruby/3.0.0/bin:$PATH
-RUN apt update && apt install -y libtool libffi-dev ruby ruby-dev make
-RUN gem install --user-install iruby
-RUN iruby register --force
-
-RUN apt install npm -y
-RUN npm install --global tslab
-RUN tslab install --python=python3
-
-RUN mkdir /jupyter
-RUN mkdir /jupyter/src
+# Set up Jupyter working directory
+RUN mkdir -p /jupyter/src
 WORKDIR /jupyter/src
 
-# # Install CUDA and NVIDIA drivers (for TensorFlow GPU support)
-# RUN apt update && apt install -y \
-#     nvidia-cuda-toolkit \
-#     nvidia-driver \
-#     libcudnn8
-    
-# RUN pip uninstall tensorflow 
-# RUN pip install tensorflow-gpu
+# Install CUDA and NVIDIA drivers for TensorFlow GPU support
+RUN pip uninstall tensorflow && pip install tensorflow-gpu
 
+# Expose port for JupyterLab
 EXPOSE 8888
 
-ENTRYPOINT ["jupyter", "lab","--ip=0.0.0.0","--allow-root","--no-browser","--NotebookApp.token=''","--NotebookApp.password=''"]
+# Set JupyterLab entrypoint
+ENTRYPOINT ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--no-browser", "--NotebookApp.token=''", "--NotebookApp.password=''"]
