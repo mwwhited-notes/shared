@@ -3,11 +3,11 @@
 
 SETLOCAL
 
-CALL container-config
+CALL container-config %*
 
-IF "%APP_PROJECT%"=="" SET APP_PROJECT=%CONTAINER_GROUP%
+ECHO Starting %APP_PROJECT% as %APP_MODE%
 
-CALL docker compose --project-name %APP_PROJECT% --file docker-compose-cpu.yml up --detach
+CALL docker compose --project-name %APP_PROJECT% --file docker-compose-%APP_MODE%.yml up --detach
 
 GOTO :EOF
 

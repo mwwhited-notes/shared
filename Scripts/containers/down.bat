@@ -2,9 +2,7 @@
 
 SETLOCAL
 
-CALL container-config
-
-IF "%APP_PROJECT%"=="" SET APP_PROJECT=%CONTAINER_GROUP%
+CALL container-config %*
 
 SET EXTRA_ARGS=
 IF /I "%1" EQU "ALL" (
