@@ -3,13 +3,11 @@
 
 SETLOCAL
 
-CALL container-config
-
-IF "%APP_PROJECT%"=="" SET APP_PROJECT=%CONTAINER_GROUP%
+CALL container-config %*
 
 CALL docker compose ^
 --project-name %APP_PROJECT% ^
---file docker-compose-cpu.yml ^
+--file docker-compose-gpu.yml ^
 build
 
 GOTO :EOF
