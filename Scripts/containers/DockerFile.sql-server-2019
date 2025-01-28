@@ -10,4 +10,6 @@ RUN chown mssql /var/opt/mssql/backups --recursive
 
 USER mssql
 
+EXPOSE 1433
+
 CMD ["/opt/mssql/bin/sqlservr"]

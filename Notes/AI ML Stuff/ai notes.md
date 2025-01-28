@@ -36,3 +36,9 @@
 ### LiLT
   
 - https://medium.com/dair-ai/papers-explained-12-lilt-701057ec6d9e
+
+### LayoutVM x
+
+- https://medium.com/@matt.noe/tutorial-how-to-train-layoutlm-on-a-custom-dataset-with-hugging-face-cda58c96571c
+- https://medium.com/@shivarama/layoutlmv3-from-zero-to-hero-part-2-d2659eaa7dee
+- 

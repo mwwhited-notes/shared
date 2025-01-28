@@ -12,14 +12,18 @@ I rant at Loghter/Eliassen.
 - [ ] Record incoming audio seperate so it can be stripped from recordings.
   - Restate questions and suggestions in my own voice.
 - [ ] setup OBS
-  - [ ] Bench camera
-  - [ ] raw screen capture
+  - [X] Bench camera
+  - [X] raw screen capture
   - [ ] arduino studio
   - [ ] visual studio
   - [ ] edit marker drop shortcut
   - [ ] keep second audio marker drop shortcut
-  - [ ] look into stream deck controller
+  - [X] look into stream deck controller
   - [ ] look into second presenter
+  - [ ] Chat
+    - [ ] [Discord](https://support.discord.com/hc/en-us/articles/223415707-Using-Discord-s-OBS-Streamkit-Overlay)
+    - [ ] Audio Mute Toggle (F24)
+      - [Discord Control](https://www.youtube.com/watch?v=QMhr7iA6zTg)
 - [ ] look into nonprofit status
 - [ ] move business
   - [ ] shutdown in ohio?

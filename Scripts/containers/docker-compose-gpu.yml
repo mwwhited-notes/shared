@@ -1,8 +1,9 @@
 services:
+
   sql-server:
     extends:
       file: docker-compose.sql-server.yml
-      service: sql-server
+      service: sql-server-2022
     networks:
       - backend
 
@@ -10,6 +11,20 @@ services:
   #   extends:
   #     file: docker-compose.sonarqube.yml
   #     service: sonarqube
+  #   networks:
+  #     - backend
+
+  # cvat-server:
+  #   extends:
+  #     file: docker-compose.cvat.yml
+  #     service: cvat-server
+  #   networks:
+  #     - backend
+      
+  # cvat-ui:
+  #   extends:
+  #     file: docker-compose.cvat.yml
+  #     service: cvat-ui
   #   networks:
   #     - backend
 
@@ -62,7 +77,8 @@ networks:
     driver: bridge
 
 volumes:
-    sqlserver-data:
+    sqlserver-2019-data:
+    sqlserver-2022-data:
     sonarqube-data:
     sonarqube-extensions:
     sonarqube-logs:
@@ -70,3 +86,4 @@ volumes:
     stirling-pdf-trainingData:
     stirling-pdf-extraConfigs:
     jupyterlab-working:
+    cvat-server-data:
