@@ -24,6 +24,8 @@ I rant at Loghter/Eliassen.
     - [ ] [Discord](https://support.discord.com/hc/en-us/articles/223415707-Using-Discord-s-OBS-Streamkit-Overlay)
     - [ ] Audio Mute Toggle (F24)
       - [Discord Control](https://www.youtube.com/watch?v=QMhr7iA6zTg)
+    - [ ] Second Computer
+      - [ ] [Teleport](https://obsproject.com/forum/resources/teleport.1445/)
 - [ ] look into nonprofit status
 - [ ] move business
   - [ ] shutdown in ohio?
