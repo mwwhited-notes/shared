@@ -137,11 +137,24 @@ If you find the missing changes, create a branch:
 git checkout -b recovered-branch <commit-hash>
 ```
 
-
 ### 7. **Update the Parent Repository**
 Once you’ve recovered the changes in the submodule, commit the updated state in the parent repository:
 ```bash
 cd /path/to/parent-repo
 git add path/to/submodule
 git commit -m "Updated submodule with recovered changes"
+```
+
+### 8. Fix Detached Head
+
+```script
+git branch tmp
+git add .
+git commit -m "fix detachment"
+git checkout main
+git pull --all
+git merge tmp
+git commit -m "merged"
+git push
+# git branch --delete tmp
 ```
