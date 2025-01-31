@@ -1,8 +1,9 @@
 services:
+
   sql-server:
     extends:
       file: docker-compose.sql-server.yml
-      service: sql-server
+      service: sql-server-2022
     networks:
       - backend
 
@@ -20,12 +21,26 @@ services:
     networks:
       - backend
 
-  label-studio:
-    extends:
-      file: docker-compose.label-studio.yml
-      service: label-studio
-    networks:
-      - backend
+  # label-studio:
+  #   extends:
+  #     file: docker-compose.label-studio.yml
+  #     service: label-studio
+  #   networks:
+  #     - backend
+
+  # cvat-server:
+  #   extends:
+  #     file: docker-compose.cvat.yml
+  #     service: cvat-server
+  #   networks:
+  #     - backend
+      
+  # cvat-ui:
+  #   extends:
+  #     file: docker-compose.cvat.yml
+  #     service: cvat-ui
+  #   networks:
+  #     - backend
 
   gotenberg:
     extends:
@@ -63,3 +78,5 @@ volumes:
     stirling-pdf-trainingData:
     stirling-pdf-extraConfigs:
     jupyterlab-working:
+    cvat-server-data:
+    
