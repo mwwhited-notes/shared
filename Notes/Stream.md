@@ -34,4 +34,5 @@ I rant at Loghter/Eliassen.
     - intention is to share ideas with community
     - https://www.forbes.com/advisor/business/how-to-start-a-nonprofit/
     - https://givebutter.com/blog/non-profit-vs-not-for-profit
-
+- [ ] Figure out how to turn off Copilot for VS
+- [ ] Figure out how to block github reports from being included in Copilot/Gen AI datasets
