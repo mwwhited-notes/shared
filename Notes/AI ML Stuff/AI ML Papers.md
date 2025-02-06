@@ -10,3 +10,9 @@
 - [LiLT: A Simple yet Effective Language-Independent Layout Transformer for Structured Document Understanding](https://arxiv.org/abs/2202.13669)
 - [LayoutXLM: Multimodal Pre-training for Multilingual Visually-rich Document Understanding](https://arxiv.org/abs/2104.08836)
   - [https://github.com/microsoft/unilm/tree/master/layoutxlm](https://github.com/microsoft/unilm/tree/master/layoutxlm)
+- [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020)
+- [Eight Things to Know about Large Language Models](https://arxiv.org/abs/2304.00612)
+- [Cosine Normalization: Using Cosine Similarity Instead of Dot Product in Neural Networks](https://arxiv.org/pdf/1702.05870v2)
+- [Expand-and-Quantize: Unsupervised Semantic Segmentation Using High-Dimensional Space and Product Quantization](https://arxiv.org/pdf/2312.07342)
+- [Co-design Hardware and Algorithm for Vector Search](https://arxiv.org/pdf/2306.11182)
+- 
