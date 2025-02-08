@@ -1,15 +1,17 @@
-# Ideas for Streaming Channel 
+# Ideas for Streaming Channel
 
-## Description 
+## Description
 
 I want to setup something like the `choose your own adventure` program
-I rant at Loghter/Eliassen.  
+I ran at Lightwell/Eliassen.
+
+- [Discord Event](https://discord.gg/8qbsM4U9YX?event=1335286628041752627)
 
 ## Notes
 
 - [ ] Choose a streaming platform
   - probably discord to start so I can have bidirectional audio
-- [ ] Record incoming audio seperate so it can be stripped from recordings.
+- [ ] Record incoming audio separate so it can be stripped from recordings.
   - Restate questions and suggestions in my own voice.
 - [ ] setup OBS
   - [X] Bench camera
