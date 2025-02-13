@@ -1,6 +1,6 @@
 Name     Memory Controller.dig ;
 PartNo   00 ;
-Date     17.01.2025 ;
+Date     11.02.2025 ;
 Revision 01 ;
 Designer mwwhi ;
 Company  unknown ;
@@ -31,7 +31,7 @@ PIN 17 = Databus_Direction;
 Databus_Direction = Control_RAM_In & !Control_RAM_Out & User_Program;
 Databus_Output_Enable = (!Control_RAM_In & !Control_RAM_Out) # (Control_RAM_In & Control_RAM_Out) # !User_Program;
 Halt_Out = !User_Program # Control_Halt_In;
-MAR_Clock = !Control_MAR_In & Control_Clock;
+MAR_Clock = !Control_MAR_In & !Control_Clock;
 RAM_Output_Enable = (!Control_RAM_In & Control_RAM_Out & User_Program) # (!User_Program & !User_Inspect);
 RAM_Write = (Control_RAM_In & User_Program) # (!Control_RAM_Out & User_Program) # (!User_Program & !User_Write) 
      # (!User_Program & User_Inspect);
