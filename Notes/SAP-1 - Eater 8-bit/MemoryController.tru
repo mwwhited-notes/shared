@@ -14,7 +14,7 @@
     <result>
       <name>MAR_Clock</name>
       <values class="BoolTableEx">
-        <e>0100</e>
+        <e>1000</e>
         <vars>
           <variable name="/Control_MAR_In"/>
           <variable name="Control_Clock"/>
