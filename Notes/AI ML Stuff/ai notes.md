@@ -36,6 +36,7 @@
 ### LiLT
 
 - https://medium.com/dair-ai/papers-explained-12-lilt-701057ec6d9e
+- https://medium.com/@sakshi99tantak/lilt-a-cute-multimodal-model-that-might-not-make-you-cry-in-gpu-hours-f8111acc318f
 
 ### LayoutVM x
 
