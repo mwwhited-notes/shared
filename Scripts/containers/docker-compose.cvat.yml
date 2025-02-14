@@ -5,8 +5,6 @@ services:
     container_name: cvat-server
     ports:
       - "8083:8080"
-    environment:
-      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
     volumes:
       - cvat-server-data:/home/django/data
 
