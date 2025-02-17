@@ -1,13 +1,17 @@
-
 @ECHO OFF
 
 SETLOCAL
 
 CALL container-config %*
 
-ECHO Starting %APP_PROJECT% as %APP_MODE%
+IF /I "%1" NEQ "interactive" (
+    SET EXTRA_ARGS=--detach 
+)
 
-CALL docker compose --project-name %APP_PROJECT% --file docker-compose-%APP_MODE%.yml up --detach
+CALL docker compose ^
+--project-name %APP_PROJECT% ^
+--file docker-compose-%APP_MODE%.yaml ^
+up %EXTRA_ARGS%
 
 GOTO :EOF
 

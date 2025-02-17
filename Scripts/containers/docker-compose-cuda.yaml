@@ -1,0 +1,135 @@
+services:
+
+  sql-server:
+    extends:
+      file: docker-compose.sql-server.yaml
+      service: sql-server-2022
+    networks:
+      - backend
+
+  # sql-sonarqube:
+  #   extends:
+  #     file: docker-compose.sonarqube.yaml
+  #     service: sonarqube
+  #   networks:
+  #     - backend
+
+  apache-tika:
+    extends:
+      file: docker-compose.apache-tika.yaml
+      service: apache-tika
+    networks:
+      - backend
+
+  # label-studio:
+  #   extends:
+  #     file: docker-compose.label-studio.yaml
+  #     service: label-studio
+  #   networks:
+  #     - backend
+
+  # cvat-server:
+  #   extends:
+  #     file: docker-compose.cvat.yaml
+  #     service: cvat-server
+  #   networks:
+  #     - backend
+      
+  # cvat-ui:
+  #   extends:
+  #     file: docker-compose.cvat.yaml
+  #     service: cvat-ui
+  #   networks:
+  #     - backend
+
+  gotenberg:
+    extends:
+      file: docker-compose.gotenberg.yaml
+      service: gotenberg
+    networks:
+      - backend
+
+  stirling-pdf:
+    extends:
+      file: docker-compose.stirling-pdf.yaml
+      service: stirling-pdf
+    networks:
+      - backend
+
+  jupyterlab:
+    extends:
+      file: docker-compose.jupyterlab.yaml
+      service: jupyterlab
+    networks:
+      - backend
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  ollama:
+    extends:
+      file: docker-compose.ollama.yaml
+      service: ollama
+    networks:
+      - backend
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  searxng:
+    extends:
+      file: docker-compose.searxng.yaml
+      service: searxng
+    networks:
+      - backend
+
+  open-webui:
+    extends:
+      file: docker-compose.open-web-ui.yaml
+      service: open-webui
+    # environment:
+    #   USE_CUDA_DOCKER: True
+    depends_on:
+      - ollama
+      - searxng
+      - apache-tika
+    networks:
+      - frontend
+      - backend
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+      
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
+    
+volumes:
+    sqlserver-2019-data:
+    sqlserver-2022-data:
+    sonarqube-data:
+    sonarqube-extensions:
+    sonarqube-logs:
+    label-studio-data:
+    stirling-pdf-trainingData:
+    stirling-pdf-extraConfigs:
+    jupyterlab-working:
+    cvat-server-data:
+    open-webui-docs:
+    open-webui-data:
+    ollama-models:

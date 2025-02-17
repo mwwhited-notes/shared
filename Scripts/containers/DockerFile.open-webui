@@ -1,0 +1,5 @@
+FROM ghcr.io/open-webui/open-webui:main
+
+COPY ./open-webui/config.yaml /app/backend/data/litellm/config.yaml
+
+EXPOSE 8080
