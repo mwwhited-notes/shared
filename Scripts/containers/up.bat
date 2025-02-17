@@ -4,8 +4,13 @@ SETLOCAL
 
 CALL container-config %*
 
+IF /I "%1" EQU "clean" (
+    SET EXTRA_ARGS=--remove-orphans %EXTRA_ARGS%
+    SHIFT
+)
+
 IF /I "%1" NEQ "interactive" (
-    SET EXTRA_ARGS=--detach 
+    SET EXTRA_ARGS=--detach %EXTRA_ARGS% 
 )
 
 CALL docker compose ^

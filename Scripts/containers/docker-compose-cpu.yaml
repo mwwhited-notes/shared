@@ -1,24 +1,24 @@
 services:
 
-  sql-server:
-    extends:
-      file: docker-compose.sql-server.yaml
-      service: sql-server-2022
-    networks:
-    - backend
-    ports:
-    - ${SERVER_PORT_SQL_SERVER}:1433
-    # restart: 'unless-stopped'
+  # sql-server:
+  #   extends:
+  #     file: docker-compose.sql-server.yaml
+  #     service: sql-server-2022
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_SQL_SERVER}:1433
+  #   # restart: 'unless-stopped'
 
-  sql-sonarqube:
-    extends:
-      file: docker-compose.sonarqube.yaml
-      service: sonarqube
-    networks:
-    - backend
-    ports:
-    - ${SERVER_PORT_SONARQUBE}:9000
-    # restart: 'unless-stopped'
+  # sql-sonarqube:
+  #   extends:
+  #     file: docker-compose.sonarqube.yaml
+  #     service: sonarqube
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_SONARQUBE}:9000
+  #   # restart: 'unless-stopped'
 
   apache-tika:
     extends:
@@ -30,15 +30,15 @@ services:
     - ${SERVER_PORT_APACHE_TIKA}:9998
     # restart: 'unless-stopped'
 
-  label-studio:
-    extends:
-      file: docker-compose.label-studio.yaml
-      service: label-studio
-    networks:
-    - backend
-    ports:
-    - ${SERVER_PORT_LABEL_STUDIO}:8080
-  #   restart: 'unless-stopped'
+  # label-studio:
+  #   extends:
+  #     file: docker-compose.label-studio.yaml
+  #     service: label-studio
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_LABEL_STUDIO}:8080
+  # #   restart: 'unless-stopped'
 
   # cvat-server:
   #   extends:
@@ -60,42 +60,42 @@ services:
   #   - ${SERVER_PORT_CVAT_UI}:80
   #   restart: 'unless-stopped'
 
-  gotenberg:
-    extends:
-      file: docker-compose.gotenberg.yaml
-      service: gotenberg
-    networks:
-    - backend
-    ports:
-    - ${SERVER_PORT_GOTENBERG}:3000
-  #   restart: 'unless-stopped'
+  # gotenberg:
+  #   extends:
+  #     file: docker-compose.gotenberg.yaml
+  #     service: gotenberg
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_GOTENBERG}:3000
+  # #   restart: 'unless-stopped'
 
-  stirling-pdf:
-    extends:
-      file: docker-compose.stirling-pdf.yaml
-      service: stirling-pdf
-    networks:
-    - backend
-    ports:
-    - ${SERVER_PORT_STIRLING_PDF}:8080
-  #   restart: 'unless-stopped'
+  # stirling-pdf:
+  #   extends:
+  #     file: docker-compose.stirling-pdf.yaml
+  #     service: stirling-pdf
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_STIRLING_PDF}:8080
+  # #   restart: 'unless-stopped'
 
-  jupyterlab:
-    extends:
-      file: docker-compose.jupyterlab.yaml
-      service: jupyterlab
-    networks:
-    - backend
-    ports:
-    - ${SERVER_PORT_JUYPTERLAB}:8888
-  #   restart: 'unless-stopped'
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: 1
-    #           capabilities: [gpu]
+  # jupyterlab:
+  #   extends:
+  #     file: docker-compose.jupyterlab.yaml
+  #     service: jupyterlab
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_JUYPTERLAB}:8888
+  # #   restart: 'unless-stopped'
+  #   # deploy:
+  #   #   resources:
+  #   #     reservations:
+  #   #       devices:
+  #   #         - driver: nvidia
+  #   #           count: 1
+  #   #           capabilities: [gpu]
 
   ollama:
     extends:
