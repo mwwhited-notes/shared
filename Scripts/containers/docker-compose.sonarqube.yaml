@@ -2,10 +2,8 @@ services:
   sonarqube:
     image: sonarqube:latest
     environment:
-      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
-    ports:
-      - "9000:9000"
+    - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
     volumes:
-      - sonarqube-data:/opt/sonarqube/data
-      - sonarqube-extensions:/opt/sonarqube/extensions
-      - sonarqube-logs:/opt/sonarqube/logs
+    - sonarqube-data:/opt/sonarqube/data
+    - sonarqube-extensions:/opt/sonarqube/extensions
+    - sonarqube-logs:/opt/sonarqube/logs

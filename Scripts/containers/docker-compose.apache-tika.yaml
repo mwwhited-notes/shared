@@ -4,5 +4,3 @@ services:
         build:
             dockerfile: DockerFile.apache-tika
             context: .
-        ports:
-        - ${SERVER_PORT_APACHE_TIKA}:9998

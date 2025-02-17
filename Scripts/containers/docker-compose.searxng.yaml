@@ -1,8 +1,5 @@
 services:
   searxng:
     image: searxng/searxng:latest
-    ports:
-      - ${SERVER_PORT_SEARXNG}:8080
     volumes:
       - ./searxng:/etc/searxng
-    restart: 'unless-stopped'

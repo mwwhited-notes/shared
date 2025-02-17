@@ -6,6 +6,3 @@ services:
             context: .
         volumes:
         - ollama-models:/root/.ollama/models:rw
-        ports:
-        - ${SERVER_PORT_OLLAMA}:11434
-        restart: 'unless-stopped'

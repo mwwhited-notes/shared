@@ -5,63 +5,90 @@ services:
       file: docker-compose.sql-server.yaml
       service: sql-server-2022
     networks:
-      - backend
+    - backend
+    ports:
+    - ${SERVER_PORT_SQL_SERVER}:1433
+    # restart: 'unless-stopped'
 
   sql-sonarqube:
     extends:
       file: docker-compose.sonarqube.yaml
       service: sonarqube
     networks:
-      - backend
+    - backend
+    ports:
+    - ${SERVER_PORT_SONARQUBE}:9000
+    # restart: 'unless-stopped'
 
   apache-tika:
     extends:
       file: docker-compose.apache-tika.yaml
       service: apache-tika
     networks:
-      - backend
+    - backend    
+    ports:
+    - ${SERVER_PORT_APACHE_TIKA}:9998
+    # restart: 'unless-stopped'
 
   label-studio:
     extends:
       file: docker-compose.label-studio.yaml
       service: label-studio
     networks:
-      - backend
+    - backend
+    ports:
+    - ${SERVER_PORT_LABEL_STUDIO}:8080
+  #   restart: 'unless-stopped'
 
   # cvat-server:
   #   extends:
   #     file: docker-compose.cvat.yaml
   #     service: cvat-server
   #   networks:
-  #     - backend
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_CVAT_SERVER}:8080
+  #   restart: 'unless-stopped'
       
   # cvat-ui:
   #   extends:
   #     file: docker-compose.cvat.yaml
   #     service: cvat-ui
   #   networks:
-  #     - backend
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_CVAT_UI}:80
+  #   restart: 'unless-stopped'
 
   gotenberg:
     extends:
       file: docker-compose.gotenberg.yaml
       service: gotenberg
     networks:
-      - backend
+    - backend
+    ports:
+    - ${SERVER_PORT_GOTENBERG}:3000
+  #   restart: 'unless-stopped'
 
   stirling-pdf:
     extends:
       file: docker-compose.stirling-pdf.yaml
       service: stirling-pdf
     networks:
-      - backend
+    - backend
+    ports:
+    - ${SERVER_PORT_STIRLING_PDF}:8080
+  #   restart: 'unless-stopped'
 
   jupyterlab:
     extends:
       file: docker-compose.jupyterlab.yaml
       service: jupyterlab
     networks:
-      - backend
+    - backend
+    ports:
+    - ${SERVER_PORT_JUYPTERLAB}:8888
+  #   restart: 'unless-stopped'
     # deploy:
     #   resources:
     #     reservations:
@@ -75,7 +102,10 @@ services:
       file: docker-compose.ollama.yaml
       service: ollama
     networks:
-      - backend
+    - backend
+    ports:
+    - ${SERVER_PORT_OLLAMA}:11434
+    # restart: 'unless-stopped'
     # deploy:
     #   resources:
     #     reservations:
@@ -89,7 +119,10 @@ services:
       file: docker-compose.searxng.yaml
       service: searxng
     networks:
-      - backend
+    - backend
+    ports:
+      - ${SERVER_PORT_SEARXNG}:8080
+    # restart: 'unless-stopped'
 
   open-webui:
     extends:
@@ -98,12 +131,15 @@ services:
     # environment:
     #   USE_CUDA_DOCKER: True
     depends_on:
-      - ollama
-      - searxng
-      - apache-tika
+    - ollama
+    - searxng
+    - apache-tika
     networks:
-      - frontend
-      - backend
+    - frontend
+    - backend
+    ports:
+    - ${SERVER_PORT_OPEN_WEBUI}:8080
+    # restart: 'unless-stopped'
     # deploy:
     #   resources:
     #     reservations:
@@ -111,7 +147,6 @@ services:
     #         - driver: nvidia
     #           count: 1
     #           capabilities: [gpu]
-      
 
 networks:
   frontend:

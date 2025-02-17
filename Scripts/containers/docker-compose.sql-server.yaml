@@ -4,8 +4,6 @@ services:
         build:
             dockerfile: DockerFile.sql-server-2019
             context: .
-        ports:
-        - ${SERVER_PORT_SQL_SERVER_2019}:1433
         environment:
         - ACCEPT_EULA=Y
         - MSSQL_SA_PASSWORD=${CONTAINER_DATABASE_PASSWORD}
@@ -16,8 +14,6 @@ services:
         build:
             dockerfile: DockerFile.sql-server-2022
             context: .
-        ports:
-        - ${SERVER_PORT_SQL_SERVER_2022}:1433
         environment:
         - ACCEPT_EULA=Y
         - MSSQL_SA_PASSWORD=${CONTAINER_DATABASE_PASSWORD}

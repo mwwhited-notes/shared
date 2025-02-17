@@ -1,5 +1,3 @@
 services:
   gotenberg:
     image: gotenberg/gotenberg:latest
-    ports:
-      - ${SERVER_PORT_GOTENBERG}:3000

@@ -4,7 +4,5 @@ services:
     build:
         dockerfile: DockerFile.jupyterlab
         context: .
-    ports:
-      - ${SERVER_PORT_JUYPTERLAB}:8888
     volumes:
       - jupyterlab-working:/jupyter/src

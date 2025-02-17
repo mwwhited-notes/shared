@@ -2,7 +2,5 @@
 services:
   label-studio:
     image: heartexlabs/label-studio:latest
-    ports:
-      - ${SERVER_PORT_LABEL_STUDIO}:8080
     volumes:
-      - label-studio-data:/label-studio/data
+    - label-studio-data:/label-studio/data
