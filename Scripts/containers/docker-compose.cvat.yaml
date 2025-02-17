@@ -2,14 +2,12 @@ services:
 
   cvat-server:
     image: cvat/server:latest
-    container_name: cvat-server
     ports:
-      - "8083:8080"
+      - ${SERVER_PORT_CVAT_SERVER}:8080
     volumes:
       - cvat-server-data:/home/django/data
 
   cvat-ui:
     image: cvat/ui:latest
-    container_name: cvat-ui
     ports:
-      - "8082:80"
+      - ${SERVER_PORT_CVAT_UI}:80

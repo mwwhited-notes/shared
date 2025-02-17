@@ -7,12 +7,12 @@ services:
     networks:
       - backend
 
-  # sql-sonarqube:
-  #   extends:
-  #     file: docker-compose.sonarqube.yaml
-  #     service: sonarqube
-  #   networks:
-  #     - backend
+  sql-sonarqube:
+    extends:
+      file: docker-compose.sonarqube.yaml
+      service: sonarqube
+    networks:
+      - backend
 
   apache-tika:
     extends:
@@ -21,12 +21,12 @@ services:
     networks:
       - backend
 
-  # label-studio:
-  #   extends:
-  #     file: docker-compose.label-studio.yaml
-  #     service: label-studio
-  #   networks:
-  #     - backend
+  label-studio:
+    extends:
+      file: docker-compose.label-studio.yaml
+      service: label-studio
+    networks:
+      - backend
 
   # cvat-server:
   #   extends:

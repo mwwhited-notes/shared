@@ -7,12 +7,12 @@ services:
     networks:
       - backend
 
-  # sql-sonarqube:
-  #   extends:
-  #     file: docker-compose.sonarqube.yaml
-  #     service: sonarqube
-  #   networks:
-  #     - backend
+  sql-sonarqube:
+    extends:
+      file: docker-compose.sonarqube.yaml
+      service: sonarqube
+    networks:
+      - backend
 
   apache-tika:
     extends:
@@ -21,12 +21,12 @@ services:
     networks:
       - backend
 
-  # label-studio:
-  #   extends:
-  #     file: docker-compose.label-studio.yaml
-  #     service: label-studio
-  #   networks:
-  #     - backend
+  label-studio:
+    extends:
+      file: docker-compose.label-studio.yaml
+      service: label-studio
+    networks:
+      - backend
 
   # cvat-server:
   #   extends:
@@ -95,8 +95,8 @@ services:
     extends:
       file: docker-compose.open-web-ui.yaml
       service: open-webui
-    # environment:
-    #   USE_CUDA_DOCKER: True
+    environment:
+      USE_CUDA_DOCKER: True
     depends_on:
       - ollama
       - searxng
@@ -104,13 +104,13 @@ services:
     networks:
       - frontend
       - backend
-    # deploy:
-    #   resources:
-    #     reservations:
-    #       devices:
-    #         - driver: nvidia
-    #           count: 1
-    #           capabilities: [gpu]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
       
 
 networks:

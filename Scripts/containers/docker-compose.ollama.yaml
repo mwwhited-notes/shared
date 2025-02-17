@@ -1,12 +1,11 @@
 name: ollama
 services:
     ollama:
-        container_name: ollama
         build:
             dockerfile: DockerFile.ollama
             context: .
         volumes:
-        - 'ollama-models:/root/.ollama/models:rw'
+        - ollama-models:/root/.ollama/models:rw
         ports:
-        - 11434:11434
+        - ${SERVER_PORT_OLLAMA}:11434
         restart: 'unless-stopped'

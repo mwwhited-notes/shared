@@ -1,9 +1,8 @@
 name: apache-tika
 services:
     apache-tika:
-        container_name: apache-tika
         build:
             dockerfile: DockerFile.apache-tika
             context: .
         ports:
-        - 9998:9998
+        - ${SERVER_PORT_APACHE_TIKA}:9998
