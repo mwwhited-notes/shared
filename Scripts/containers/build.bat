@@ -1,4 +1,3 @@
-
 @ECHO OFF
 
 SETLOCAL
@@ -7,8 +6,8 @@ CALL container-config %*
 
 CALL docker compose ^
 --project-name %APP_PROJECT% ^
---file docker-compose-gpu.yml ^
-build
+--file docker-compose-%APP_MODE%.yaml ^
+build %EXTRA_ARGS%
 
 GOTO :EOF
 
