@@ -96,3 +96,76 @@ nwdiag {
 }
 @enduml
 ```
+
+
+## Matt's Desk - Proposed
+
+```plantuml
+@startuml
+nwdiag {
+
+    Left;
+    Right;
+    Keyboard;
+    Mouse;
+
+    network {
+        Left;
+        Keyboard;
+        Mouse;   
+
+        KVM2;
+        KVM;
+        OPEN3;
+        OPEN4;
+    }
+
+    network {
+        KVM2;
+
+        BeagleBone1;
+        BeagleBone2;
+        BeagleBone3;
+        BeagleBone4;
+
+        RaspberryPi1;
+        RaspberryPi2;
+        RaspberryPi3;
+        RaspberryPi4;
+
+        HomeSeer;
+        Open;
+    }
+
+    network {
+        Right;
+        Speakers;
+        AudioExtractor;
+    }
+
+    network {
+        AudioExtractor;
+        KVM;
+        
+        DeskSwitch    
+    }
+    network {
+        DeskSwitch
+
+        EvengerBook
+        OPEN;
+        ERiskLaptop;   
+        RackSwitch;         
+    }
+    
+    network {  
+        RackSwitch;  
+
+        Agimus;
+        MacMini;
+        OldGame;
+        OldServer;
+    }
+}
+@enduml
+```
