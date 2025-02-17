@@ -148,6 +148,16 @@ services:
     #           count: 1
     #           capabilities: [gpu]
 
+  n8n:
+    extends:
+      file: docker-compose.n8n.yaml
+      service: n8n
+    networks:
+    - backend
+    ports:
+    - ${SERVER_PORT_N8N}:5678
+    # restart: 'unless-stopped'  
+
 networks:
   frontend:
     driver: bridge
@@ -168,3 +178,4 @@ volumes:
     open-webui-docs:
     open-webui-data:
     ollama-models:
+    n8n_data:
