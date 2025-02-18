@@ -1,0 +1,53 @@
+# Change Management Document
+
+## 1. Introduction
+{{introduction}}
+
+## 2. Change Request Process
+### 2.1 Steps for Submitting a Change Request
+1. Identify the need for a change.
+2. Complete the Change Request Form (see Section 3).
+3. Submit the form to the Change Control Board (CCB).
+
+### 2.2 Change Control Board (CCB)
+- **Members**: 
+  {{#each ccbMembers}}
+  - {{this.name}} ({{this.role}})
+  {{/each}}
+- **Responsibilities**: {{ccbResponsibilities}}
+
+## 3. Change Request Form
+| Field                | Description                             |
+|----------------------|-----------------------------------------|
+| Request ID           | {{changeRequest.requestId}}            |
+| Requestor Name       | {{changeRequest.requestorName}}        |
+| Date Submitted       | {{changeRequest.dateSubmitted}}        |
+| Description          | {{changeRequest.description}}          |
+| Reason for Change    | {{changeRequest.reason}}                |
+| Impact Analysis      | {{changeRequest.impactAnalysis}}       |
+| Approval Status      | {{changeRequest.approvalStatus}}       |
+
+## 4. Impact Analysis
+{{impactAnalysis}}
+
+## 5. Approval Process
+### 5.1 Criteria for Approval
+{{#each approvalCriteria}}
+- {{this}}
+{{/each}}
+
+### 5.2 Approval Workflow
+{{approvalWorkflow}}
+
+## 6. Implementation Plan
+### 6.1 Implementation Steps
+{{implementationSteps}}
+
+### 6.2 Communication Plan
+{{communicationPlan}}
+
+## 7. Monitoring and Review
+{{monitoringReview}}
+
+## 8. Conclusion
+{{conclusion}}

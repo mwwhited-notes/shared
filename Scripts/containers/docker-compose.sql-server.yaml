@@ -1,27 +1,21 @@
 name: sql-server
 services:
     sql-server-2019:
-        container_name: sql-server
         build:
             dockerfile: DockerFile.sql-server-2019
             context: .
-        ports:
-        - 1433:1433
         environment:
         - ACCEPT_EULA=Y
-        - MSSQL_SA_PASSWORD=L0c@lD3v
+        - MSSQL_SA_PASSWORD=${CONTAINER_DATABASE_PASSWORD}
         volumes:
         - sqlserver-2019-data:/var/opt/mssql
         
     sql-server-2022:
-        container_name: sql-server
         build:
             dockerfile: DockerFile.sql-server-2022
             context: .
-        ports:
-        - 1433:1433
         environment:
         - ACCEPT_EULA=Y
-        - MSSQL_SA_PASSWORD=L0c@lD3v
+        - MSSQL_SA_PASSWORD=${CONTAINER_DATABASE_PASSWORD}
         volumes:
         - sqlserver-2022-data:/var/opt/mssql

@@ -34,7 +34,7 @@ search:
   # Filter results. 0: None, 1: Moderate, 2: Strict
   safe_search: 0
   # Existing autocomplete backends: "baidu", "brave", "dbpedia", "duckduckgo", "google", "yandex",
-  # "mwmbl", "seznam", "startpage", "stract", "swisscows", "qwant", "wikipedia" -
+  # "mwmbl", "seznam", "stract", "swisscows", "qwant", "wikipedia" -
   # leave blank to turn it off by default.
   autocomplete: ""
   # minimun characters to type before autocompleter starts
@@ -95,7 +95,7 @@ server:
   # If your instance owns a /etc/searxng/settings.yml file, then set the following
   # values there.
 
-  secret_key: "d9ad81c55aafd238bba99f4c1d8861bc712f8de15a3329170ec535957090354e"  # Is overwritten by ${SEARXNG_SECRET}
+  secret_key: "e8425fb67ddcbffda0fb1d6d30ae8c3980bf519cd095272ab81f9fad0bfe46e7"  # Is overwritten by ${SEARXNG_SECRET}
   # Proxy image results through SearXNG. Is overwritten by ${SEARXNG_IMAGE_PROXY}
   image_proxy: false
   # 1.0 and 1.1 are supported

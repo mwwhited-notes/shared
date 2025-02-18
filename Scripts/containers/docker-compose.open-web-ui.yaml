@@ -1,21 +1,18 @@
 services:
   open-webui:
-    container_name: open-web-ui
     build:
         dockerfile: DockerFile.open-webui
         context: .
     volumes:
-      - 'open-webui-data:/app/backend/data:rw'
-      - 'open-webui-docs:/app/backend/data/docs:rw'
-    ports:
-      - '3003:8080'
+      - open-webui-data:/app/backend/data:rw
+      - open-webui-docs:/app/backend/data/docs:rw
     environment:
       #https://docs.openwebui.com/getting-started/advanced-topics/env-configuration#ollama 
       ENV: dev
       
       DEFAULT_MODELS: 'llama3-70b-8192'
       
-      WEBUI_URL: http://192.168.1.170:3003
+      WEBUI_URL: ${OPEN_WEBUI_BASE_URL}
       WEBUI_AUTH: True
       ENABLE_SIGUP: True
       DEFAULT_USER_ROLE: pending
@@ -23,29 +20,25 @@ services:
 
 
       ## Groq support
-      OPENAI_API_BASE_URLS: 'https://api.groq.com/openai/v1'
-      OPENAI_API_KEYS: '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'
+      OPENAI_API_BASE_URLS: ${OPENAI_API_BASE_URLS}
+      OPENAI_API_KEYS: ${OPENAI_API_KEYS}
 
       ENABLE_OLLAMA_API: True
       USE_OLLAMA_DOCKER: False
-      OLLAMA_BASE_URL: http://ollama:11434
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL}
       
       ## SearNG
       ENABLE_RAG_WEB_SEARCH: True
       RAG_WEB_SEARCH_ENGINE: "searxng"
-      RAG_WEB_SEARCH_RESULT_COUNT: 3
+      RAG_WEB_SEARCH_RESULT_COUNT: 10
       RAG_WEB_SEARCH_CONCURRENT_REQUESTS: 10
-      SEARXNG_QUERY_URL: "http://searxng:8080/search?q=<query>"
+      SEARXNG_QUERY_URL: ${SEARXNG_QUERY_URL}
       ENABLE_RAG_HYBRID_SEARCH: True
 
     ## Apache Tika
       PDF_EXTRACT_IMAGES: True
       USE_TIKA: True
-      TIKA_SERVER_URL: "http://tika:9998"
+      TIKA_SERVER_URL: ${TIKA_SERVER_URL}
       CONTENT_EXTRACTION_ENGINE: tika
-
-    # extra_hosts:
-    #   - 'host.docker.internal:host-gateway'
-    restart: 'unless-stopped'
 
   

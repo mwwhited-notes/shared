@@ -1,0 +1,36 @@
+# Requirements Document
+
+## 1. Introduction
+{{introduction}}
+
+## 2. Business Goals
+{{#each businessGoals}}
+- **{{this.title}}**: {{this.description}}
+{{/each}}
+
+## 3. Functional Requirements
+| Requirement ID | Description                          | Priority |
+|----------------|--------------------------------------|----------|
+{{#each functionalRequirements}}
+| {{this.id}}           | {{this.description}} | {{this.priority}} |
+{{/each}}
+
+## 4. Non-Functional Requirements
+{{#each nonFunctionalRequirements}}
+- **{{this.type}}**: {{this.description}}
+{{/each}}
+
+## 5. Constraints
+{{#each constraints}}
+- {{this}}
+{{/each}}
+
+## 6. Assumptions
+{{#each assumptions}}
+- {{this}}
+{{/each}}
+
+## 7. Stakeholders
+{{#each stakeholders}}
+- **{{this.name}}**: {{this.role}}
+{{/each}}

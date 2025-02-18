@@ -1,6 +1,3 @@
 services:
   gotenberg:
     image: gotenberg/gotenberg:latest
-    container_name: gotenberg
-    ports:
-      - "9001:3000"
