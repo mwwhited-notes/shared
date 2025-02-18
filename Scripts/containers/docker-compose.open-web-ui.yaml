@@ -17,8 +17,7 @@ services:
       ENABLE_SIGUP: True
       DEFAULT_USER_ROLE: pending
       #WEBHOOK_URL: 
-
-
+      
       ## Groq support
       OPENAI_API_BASE_URLS: ${OPENAI_API_BASE_URLS}
       OPENAI_API_KEYS: ${OPENAI_API_KEYS}

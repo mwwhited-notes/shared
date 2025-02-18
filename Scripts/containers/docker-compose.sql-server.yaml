@@ -6,9 +6,9 @@ services:
             context: .
         environment:
         - ACCEPT_EULA=Y
-        - MSSQL_SA_PASSWORD=${CONTAINER_DATABASE_PASSWORD}
+        - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
         volumes:
-        - sqlserver-2019-data:/var/opt/mssql
+        - sqlserver-data:/var/opt/mssql:rw
         
     sql-server-2022:
         build:
@@ -16,6 +16,6 @@ services:
             context: .
         environment:
         - ACCEPT_EULA=Y
-        - MSSQL_SA_PASSWORD=${CONTAINER_DATABASE_PASSWORD}
+        - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
         volumes:
-        - sqlserver-2022-data:/var/opt/mssql
+        - sqlserver-data:/var/opt/mssql

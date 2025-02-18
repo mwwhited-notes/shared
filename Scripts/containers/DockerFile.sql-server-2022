@@ -15,9 +15,10 @@ RUN mkdir /var/opt/mssql/extensions && \
 # RUN cd /opt && git clone https://github.com/microsoft/sql-server-language-extensions.git
 # RUN cd /opt/sql-server-language-extensions && chmod +x *.sh && ./restore-packages.sh
 
-# USER root
-# RUN chown mssql /var/opt/mssql/bin --recursive
-# RUN chown mssql /var/opt/mssql/backups --recursive
+USER root
+RUN chown mssql /var/opt/mssql --recursive
+RUN chown mssql /var/opt/mssql/bin --recursive
+RUN chown mssql /var/opt/mssql/backups --recursive
 
 USER mssql
 

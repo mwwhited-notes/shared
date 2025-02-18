@@ -1,0 +1,6 @@
+name: mongodb
+services:
+    mongodb:
+        image: mongo:latest
+        volumes:
+        - mongodb-data:/data/db

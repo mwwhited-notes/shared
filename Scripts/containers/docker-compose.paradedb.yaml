@@ -1,0 +1,11 @@
+name: paradedb
+services:
+  paradedb:
+    environment:
+      POSTGRESQL_USERNAME: ${POSTGRESQL_USERNAME}
+      POSTGRESQL_PASSWORD: ${POSTGRESQL_PASSWORD}
+      POSTGRESQL_DATABASE: ${POSTGRESQL_DATABASE}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    image: paradedb/paradedb
+    volumes:
+    - paradedb-data:/bitnami/postgresql

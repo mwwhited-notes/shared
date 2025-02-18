@@ -1,0 +1,9 @@
+name: rabbitmq
+services:
+    rabbitmq:
+        ports:
+        - ${SERVER_PORT_RABBITMQ}:5672
+        - ${SERVER_PORT_RABBITMQ_TLS}:15672
+        image: rabbitmq:latest
+        volumes:
+        - rabbitmq-data:/var/lib/rabbitmq

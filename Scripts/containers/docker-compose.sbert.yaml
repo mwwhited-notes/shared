@@ -1,0 +1,7 @@
+name: sbert
+services:
+
+  sbert:
+    build:
+      dockerfile: DockerFile.sbert
+      context: .

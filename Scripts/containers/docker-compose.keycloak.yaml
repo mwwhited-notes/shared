@@ -1,0 +1,13 @@
+
+services:
+  keycloak:
+    build:
+      dockerfile: DockerFile.keycloak
+      context: .
+    environment:
+      - KEYCLOAK_ADMIN=${KEYCLOAK_ADMIN}
+      - KEYCLOAK_ADMIN_PASSWORD=${KEYCLOAK_ADMIN_PASSWORD}
+      - KEYCLOAK_SCRIPT_UPLOAD_ENABLED=true
+    volumes:
+      - keycloak-data:/opt/keycloak/data
+

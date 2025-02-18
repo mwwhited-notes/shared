@@ -1,0 +1,4 @@
+name: localstack
+services:
+    localstack:
+        image: localstack/localstack

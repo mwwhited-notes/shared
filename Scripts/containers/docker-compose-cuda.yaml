@@ -1,5 +1,163 @@
 services:
 
+  
+
+  # azurite:
+  #   extends:
+  #     file: docker-compose.azurite.yaml
+  #     service: azurite
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_AZURITE_BLOB}:10000
+  #   - ${SERVER_PORT_AZURITE_QUEUE}:10001
+  #   - ${SERVER_PORT_AZURITE_TABLE}:10002
+  #   # restart: 'unless-stopped'
+
+  # TODO: keycloak needs fixed
+  # keycloak:
+  #   extends:
+  #     file: docker-compose.keycloak.yaml
+  #     service: keycloak
+  #   networks:
+  #   - frontend
+  #   - backend 
+  #   ports:
+  #   - ${SERVER_PORT_KEYCLOAK}:8080
+  #   # restart: 'unless-stopped'
+
+  # mongodb:
+  #   extends:
+  #     file: docker-compose.mongodb.yaml
+  #     service: mongodb
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_MONGODB}:27017
+  #   # restart: 'unless-stopped'
+
+  # rabbitmq:
+  #   extends:
+  #     file: docker-compose.rabbitmq.yaml
+  #     service: rabbitmq
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_RABBITMQ}:5672
+  #   - ${SERVER_PORT_RABBITMQ_TLS}:15672
+  #   # restart: 'unless-stopped'
+
+  smtp4dev:
+    extends:
+      file: docker-compose.smtp4dev.yaml
+      service: smtp4dev
+    networks:
+    - frontend
+    - backend
+    ports:
+    - ${SERVER_PORT_SMTP4DEV_HTTP}:80
+    - ${SERVER_PORT_SMTP4DEV_SMTP}:25
+    - ${SERVER_PORT_SMTP4DEV_IMAP}:143
+    - ${SERVER_PORT_SMTP4DEV_POP3}:110
+    # restart: 'unless-stopped'
+      
+  # sbert:
+  #   extends:
+  #     file: docker-compose.sbert.yaml
+  #     service: sbert
+  #   deploy:
+  #     # mode: replicated
+  #     # replicas: 6
+  #     resources:
+  #       reservations:
+  #         devices:
+  #         - driver: nvidia
+  #           count: 1
+  #           capabilities: [gpu]
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_SBERT}:5080
+  #   # restart: 'unless-stopped'
+      
+  qdrant:
+    extends:
+      file: docker-compose.qdrant.yaml
+      service: qdrant
+    networks:
+    - backend
+    ports:
+    - ${SERVER_PORT_QDRANT_HTTP}:6333
+    - ${SERVER_PORT_QDRANT_HTTPS}:6334
+    # restart: 'unless-stopped'
+
+  # paradedb:
+  #   extends:
+  #     file: docker-compose.paradedb.yaml
+  #     service: paradedb
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_PARADEDB}:5432 
+  #   # restart: 'unless-stopped'
+
+  # pgadmin:
+  #   extends:
+  #     file: docker-compose.pgadmin.yaml
+  #     service: pgadmin
+  #   depends_on:
+  #   - paradedb
+  #   networks:
+  #   - frontend
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_PGADMIN_HTTP}:80
+  #   # restart: 'unless-stopped'
+
+  # localstack:
+  #   extends:
+  #     file: docker-compose.localstack.yaml
+  #     service: localstack
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_LOCALSTACK}:4566
+  #   - ${SERVER_PORT_LOCALSTACK_RANGE}:4510-4559
+  #   # restart: 'unless-stopped'
+
+  # opensearch:
+  #   extends:
+  #     file: docker-compose.opensearch.yaml
+  #     service: opensearch
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_OPENSEARCH_HTTP}:9200
+  #   - ${SERVER_PORT_OPENSEARCH_TRANSPORT}:9600
+  #   # restart: 'unless-stopped'
+
+  # opensearch-dashboards:
+  #   extends:
+  #     file: docker-compose.opensearch-dashboards.yaml
+  #     service: opensearch-dashboards
+  #   networks:
+  #   - frontend
+  #   - backend
+  #   ports: 
+  #   - ${SERVER_PORT_OPENSEARCH_DASHBOARD}:5601
+  #   # restart: 'unless-stopped'
+
+  # kafka:
+  #   extends:
+  #     file: docker-compose.kafka.yaml
+  #     service: kafka
+  #   networks:
+  #   - backend
+  #   ports: 
+  #   - ${SERVER_PORT_KAFKA_LISTENER}:9092
+  #   - ${SERVER_PORT_KAFKA_EXTERNAL}:9094
+  #   # restart: 'unless-stopped'
+      
   sql-server:
     extends:
       file: docker-compose.sql-server.yaml
@@ -165,8 +323,17 @@ networks:
     driver: bridge
     
 volumes:
-    # sqlserver-2019-data:
-    # sqlserver-2022-data:
+    mongodb-data:
+    keycloak-data:
+    smtp4dev-data:
+    rabbitmq-data:
+    azurite-data:
+    qdrant-storage:
+    qdrant-snapshots:
+    opensearch-data:
+    paradedb-data:
+    kafka-data:
+    sqlserver-data:
     # sonarqube-data:
     # sonarqube-extensions:
     # sonarqube-logs:

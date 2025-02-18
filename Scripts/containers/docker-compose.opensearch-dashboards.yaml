@@ -1,0 +1,7 @@
+name: opensearch-dashboards
+services:
+
+  opensearch-dashboards:
+    image: opensearchproject/opensearch-dashboards:latest
+    environment:
+      OPENSEARCH_HOSTS: ${OPENSEARCH_HOSTS}
