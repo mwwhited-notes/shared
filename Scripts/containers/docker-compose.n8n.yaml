@@ -12,5 +12,6 @@ services:
       # EXTERNAL_FRONTEND_HOOKS_URLS: ''
       # N8N_DIAGNOSTICS_CONFIG_FRONTEND: ''
       # N8N_DIAGNOSTICS_CONFIG_BACKEND: ''
+      N8N_SECURE_COOKIE: false
     volumes:
     - n8n_data:/home/node/.n8n
