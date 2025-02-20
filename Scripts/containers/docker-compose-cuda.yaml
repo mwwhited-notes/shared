@@ -1,6 +1,14 @@
 services:
 
-  
+  webhook-receiver:
+    extends:
+      file: docker-compose.webhooks.yaml
+      service: webhook-receiver
+    networks:
+    - backend
+    ports:
+    - ${SERVER_PORT_WEBHOOKS_HTTP}:18003
+    # restart: 'unless-stopped'
 
   # azurite:
   #   extends:

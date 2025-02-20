@@ -1,0 +1,4 @@
+
+services:
+  webhook-receiver:
+    image: webhookdb/webhookdb
