@@ -6,7 +6,9 @@ services:
             context: .
         environment:
         - ACCEPT_EULA=Y
+        - ACCEPT_EULA_ML=Y
         - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
+        - MSSQL_PID=Developer
         volumes:
         - sqlserver-data:/var/opt/mssql:rw
         
@@ -16,6 +18,8 @@ services:
             context: .
         environment:
         - ACCEPT_EULA=Y
+        - ACCEPT_EULA_ML=Y
         - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
+        - MSSQL_PID=Developer
         volumes:
         - sqlserver-data:/var/opt/mssql

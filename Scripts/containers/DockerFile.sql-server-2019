@@ -1,5 +1,9 @@
 FROM mcr.microsoft.com/mssql/server:2019-latest
 
+# https://github.com/microsoft/mssql-docker/tree/master/linux/preview/examples/mssql-mlservices
+
+# RUN apt update && apt-get install -y python3 python3-pip r-base
+
 RUN mkdir /var/opt/mssql/bin 
 RUN mkdir /var/opt/mssql/backups 
 # COPY ./publish/sqlclr/project.* /var/opt/mssql/bin
