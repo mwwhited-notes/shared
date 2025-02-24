@@ -6,6 +6,17 @@ services:
             context: .
         environment:
         - ACCEPT_EULA=Y
+        - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
+        - MSSQL_PID=Developer
+        volumes:
+        - sqlserver-data:/var/opt/mssql:rw
+
+    sql-server-2019-ml:
+        build:
+            dockerfile: DockerFile.sql-server-2019-ml
+            context: .
+        environment:
+        - ACCEPT_EULA=Y
         - ACCEPT_EULA_ML=Y
         - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
         - MSSQL_PID=Developer
@@ -18,7 +29,6 @@ services:
             context: .
         environment:
         - ACCEPT_EULA=Y
-        - ACCEPT_EULA_ML=Y
         - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
         - MSSQL_PID=Developer
         volumes:
