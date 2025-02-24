@@ -56,7 +56,8 @@ RUN /opt/mssql/bin/checkinstallextensibility.sh && \
 
 RUN mkdir /var/opt/mssql/bin 
 RUN mkdir /var/opt/mssql/backups 
-COPY ./publish/sqlclr/ERisk.SubmissionClearing.Vectors.* /var/opt/mssql/bin
+
+# COPY ./publish/sqlclr/YourAssembly.Name.* /var/opt/mssql/bin
 
 # USER root
 
@@ -74,3 +75,12 @@ EXPOSE 1433
 
 # start services with supervisord
 CMD /usr/bin/supervisord -n -c /usr/local/etc/supervisord.conf
+
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+# . "$HOME/.cargo/env"
+# /opt/mssql/mlservices/runtime/python/bin/python -m pip install --upgrade importlib-metadata setuptools pip
+# apt-get update
+# apt-get install build-essential -y
+# /opt/mssql/mlservices/runtime/python/bin/python -m pip install sentence-transformers
+# /opt/mssql/mlservices/runtime/python/bin/python -m pip install torch torchvision
+# /opt/mssql/mlservices/runtime/python/bin/python -m pip install transformers tqdm sentencepiece filelock safetensors huggingface-hub
