@@ -332,6 +332,16 @@ services:
   #   - ${SERVER_PORT_N8N}:5678
   #   # restart: 'unless-stopped'  
 
+  # flowise:
+  #   extends:
+  #     file: docker-compose.flowiseai.yaml
+  #     service: flowise
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_FLOWISE_HTTP}:3000
+  #   # restart: 'unless-stopped'  
+
 networks:
   frontend:
     driver: bridge

@@ -1,0 +1,6 @@
+services:
+  flowise:
+    image: flowiseai/flowise
+    environment:
+      FLOWISE_USERNAME: ${FLOWISE_USERNAME}
+      FLOWISE_PASSWORD: ${FLOWISE_PASSWORD}
