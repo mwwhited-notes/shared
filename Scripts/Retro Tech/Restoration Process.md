@@ -16,20 +16,20 @@ I'm looking for a recommended procedure for firing up old electronics? I want to
 
 ## Tools Checklist
 
-- [ ] Oscilloscope
-  - [ ] Probes
-  - [ ] alligator clips
-  - [ ] banana plugs
-  - [ ] bnc patch
-- [ ] LCR Meter
-  - [ ] leads
-- [ ] Multi-meter
-  - [ ] Leads
-- [ ] Screw Drivers
-- [ ] Magnifying glass
-- [ ] Flashlight
-- [ ] Banana Plug Wires
-- [ ] Camera, extension tubes, flash
-- [ ] ESD Gloves
-- [ ] Soft brushes
+- [x] Oscilloscope
+  - [x] Probes
+  - [x] alligator clips
+  - [x] banana plugs
+  - [x] bnc patch
+- [x] LCR Meter
+  - [x]] leads
+- [x] Multi-meter
+  - [x] Leads
+- [x] Screw Drivers
+- [x] Magnifying glass
+- [x] Flashlight
+- [x] Banana Plug Wires
+- [x] Camera, extension tubes, flash
+- [x] ESD Gloves
+- [x] Soft brushes
 - [ ] Variac
