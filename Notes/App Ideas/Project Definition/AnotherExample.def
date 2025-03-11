@@ -1,0 +1,300 @@
+﻿Thing3SearchService @service
+	| Ns123.IThing3SearchService
+	| AssemblyInfo, Version=1.2.3.4
+	| 
+	| test comment
+	+ GetThing25ByThing4
+		> Thing4id : int
+		> Thing4Context : Thing4ContextDTO
+		< Thing25List : List<Thing5DTO>
+ 
+	+ GetSearchResults
+		> SearchData : Thing3SearchRequestDto
+		< SearchResults : List<Thing3SearchResultDto>
+		< TotalRows : int?
+		< CurrentPage : int
+		< TotalPages : int?
+ 
+	+ GetSearchTemplates
+		> Thing4Id : int
+		> Thing4Context : Thing4ContextDTO
+		< Templates : List<SearchRequestTemplateDto>
+ 
+	+ GetThing2Search
+	| other comment
+		> SearchData : Thing2SearchRequestDto
+		< SearchResults : List<Thing2SearchResultDto>
+		< TotalRows : int?
+		< CurrentPage : int
+		< TotalPages : int?
+ 
+	+ GetThing13MasterData
+		> Thing22rCode : int
+		> CountryCode : string
+		> MinimumThing6Thing21 : int
+		< Thing26 : List<Thing1Dto>
+ 
+DateRangeDto @dto
+	| Ns123.Common.DateRangeDto
+	| AssemblyInfo, Version=1.2.3.4
+	Start : DateTime
+	End : DateTime
+ 
+Thing4ContextDTO @dto
+	| Ns123.Thing3Search.Thing4ContextDTO
+	| AssemblyInfo, Version=1.2.3.4
+	Thing7Id : string
+	DpNumber : string
+	Outlet : string
+	Thing8Code : string
+ 
+NumberRangeDto @dto
+	| Ns123.Common.NumberRangeDto
+	| AssemblyInfo, Version=1.2.3.4
+	Start : int
+	End : int
+ 
+Thing3SearchRequestDto @dto
+	| Ns123.Thing3Search.Thing3SearchRequestDto
+	| AssemblyInfo, Version=1.2.3.4
+	| 
+	| http://confluence/wiki/Thing3+Search+and+Results+Field+Descriptions
+	| db123..Thing3_search_view => e
+	| $SourceControl/src/db123/Schema Objects/Views/dbo.Thing3_search_view.view.sql
+	Thing4ID : int
+	| This field is always required
+	| e.fs_Thing4_id == searchData.Thing4ID
+	Thing26Codes : List<string>
+	| filter by selected Thing6 Thing26
+	| http://yourjira/JIRA-6887
+	| 
+	| where searchData.Thing26Codes.Contains(e.Thing26_cde)
+	Thing6Ids : List<int>
+	| filter by selected Thing6 ids
+	| http://yourjira/JIRA-6887
+	| 
+	| where searchData.Thing6Ids.Contains(e.Thing6_id ?? 0)
+	Thing6Thing21s : List<string>
+	| filter by selected Thing6 ids
+	| http://yourjira/JIRA-6887
+	| 
+	| where searchData.Thing6Ids.Contains(e.Thing6_id ?? 0)
+	Keyword : string
+	| where e.cust_last_nme.StartsWith(keyword) ||
+	| e.Thing10_no.StartsWith(keyword) ||
+	| e.Thing12.StartsWith(keyword) ||
+	| e.Thing12_7.StartsWith(keyword)
+	Thing10StatusCodes : List<byte>
+	| http://yourjira/JIRA-6712
+	| 
+	| where searchData.Thing10StatusCodes.Contains(e.status_category_cde)
+	Thing11TypeCodes : List<short>
+	| http://yourjira/JIRA-6754
+	| 
+	| where searchData.Thing11TypeCodes.Contains(e.Thing11_type_cde)
+	Thing5List : List<Thing5DTO>
+	| this allows you to search for cars based on the sales person/"client advisor"
+	| http://yourjira/JIRA-6778
+	| 
+	| Thing25= i => string.Concat((i.Thing5LastName ?? "").Trim(), (i.Thing5FirstName ?? "").Trim())
+	| let val = (e.Thing16_last_nme ?? "").Trim() + (e.Thing16_first_nme ?? "").Trim()
+	| where Thing25.Contains(val)
+	MarketTierList : List<int>
+	| this allows for filtering for a set of market tiers
+	| http://yourjira/JIRA-6789
+	| 
+	| where searchData.MarketTierList.Contains(e.in_market_tier_id ?? -1)
+	Thing17 : DateRangeDto
+	Thing19 : DateRangeDto
+	Thing9Payoff : DateRangeDto
+	Thing11Term : NumberRangeDto
+	Thing20 : NumberRangeDto
+	SortOrderList : List<Thing3SearchSortOrderTypes>
+	| The order of the values in this field will control the sort order.
+	| currently all sorts are ascending
+	PageNumber : int
+	PageLength : int
+	| number of records to return for page.  if 0 then default (current value is 10)
+	Thing18Date : DateRangeDto
+	Thing24StatusIndicator : List<byte>
+	| http://yourjira/JIRA-7009
+	| 
+	| where searchData.Thing24StatusIndicator.Contains(e.ewt_ind ?? 0)
+	Thing25Indicator : List<byte>
+	| this is a filter for Thing25 product
+	| http://yourjira/JIRA-6821
+	| 
+	| where searchData.Thing25Indicator.Contains(e.Thing25_product_ind ?? 0)
+	Thing13Type : List<string>
+	| this is a filter for new/pre-owned/cpo
+	| http://yourjira/JIRA-6886
+	| 
+	| where searchData.Thing13Type.Contains(e.new_cde)
+	ExcessThing15Indicator : List<int>
+	| http://yourjira/JIRA-6823
+	| 
+	| where searchData.ExcessThing15Indicator.Contains(e.ExcessThing15Indicator ?? 0)
+	| WHEN [Thing11_Thing17_detail].[tot_Thing11_Thing15] > 0
+	| AND [Thing11_Thing17_detail].[status_category_cde] IN (1/*Active*/,2/*Grounded*/)
+	| THEN CASE WHEN
+	| /* Estimated miles per month */
+	| [Thing11_Thing17_detail].[estimated_Thing15] / DATEDIFF(MONTH, [Thing11_Thing17_detail].[Thing11_dte], GETDATE())
+	| >
+	| /*Allowed Miles per month */
+	| [Thing11_Thing17_detail].[tot_Thing11_Thing15] / DATEDIFF(MONTH, [Thing11_Thing17_detail].[Thing11_dte], [Thing11_Thing17_detail].[Thing11_end_dte])
+	| THEN 1
+	| ELSE 0 END
+	Thing9ContactType : List<byte>
+	| this allows the user to check based on contact status
+	| http://yourjira/JIRA-6710
+	| 
+	| where searchData.Thing9ContactType.Contains(e.contact_type_cde ?? 0)
+	| ,[Thing13_lease_end].[contact_type_cde]
+	Thing9Intent : List<int>
+	| this allows for filtering by Thing9 intent
+	| http://yourjira/JIRA-6820
+	| 
+	| where searchData.Thing9Intent.Contains(e.Thing9IntentCode ?? 0)
+	| ,CAST(NULL AS INT) AS [Thing9IntentCode]
+	Thing9Type : List<int>
+	| this allows for filtering by first time Thing9/repeat Thing9
+	| http://yourjira/JIRA-6790
+	| 
+	| where searchData.Thing9Type.Contains(e.Thing9TypeCode ?? 0)
+	| ,CAST(NULL AS INT) AS [Thing9TypeCode]
+	Thing23Status : List<int>
+	| http://yourjira/JIRA-6822
+	| 
+	| where searchData.Thing23Status.Contains(e.Thing23StatusCode ?? 0)
+	| ,CAST(NULL AS INT) AS [Thing23StatusCode]
+ 
+Thing3SearchResultDto @dto
+	| Ns123.Thing3Search.Thing3SearchResultDto
+	| AssemblyInfo, Version=1.2.3.4
+	Thing10Id : int
+	Thing10Number : string
+	Thing10ypeCode : string
+	Thing9LastName : string
+	Thing9FirstName : string
+	Thing9MiddleName : string
+	Thing9EmailAddress : string
+	DayToThing17 : short?
+	Thing11TypeCode : short
+	Thing11TypeName : string
+	Thing11Term : byte
+	Thing11Thing17Date : DateTime
+	Thing5FirstName : string
+	Thing5LastName : string
+	Thing12 : string
+	Thing127 : string
+	Thing13ColorCode : string
+	Thing13Thing22Code : short
+	Thing13Thing22Name : string
+	Thing1Code : string
+	Thing13Thing6Id : int?
+	Thing13Thing6Name : string
+	Thing13Thing6Thing21 : string
+	Thing13ColorName : string
+ 
+Thing5DTO @dto
+	| Ns123.Thing3Search.Thing5DTO
+	| AssemblyInfo, Version=1.2.3.4
+	Thing5FirstName : string
+	Thing5LastName : string
+ 
+SearchRequestTemplateDto @dto
+	| Ns123.Thing3Search.SearchRequestTemplateDto
+	| AssemblyInfo, Version=1.2.3.4
+	TemplateId : int?
+	TranslationKey : string
+	Route : string
+	SearchTemplate : string
+	UserDefined : bool
+ 
+Thing2SearchRequestDto @dto
+	| Ns123.Thing3Search.Thing2SearchRequestDto
+	| AssemblyInfo, Version=1.2.3.4
+	Thing4ID : int
+	Thing26Codes : List<string>
+	Thing6Ids : List<int>
+	Thing6Thing21s : List<string>
+	Thing11TypeCodes : List<short>
+	Thing2Date : DateRangeDto
+	Thing27s : List<Thing5DTO>
+	SortOrderList : List<Thing2SearchSortOrderTypes>
+	PageNumber : int
+	PageLength : int
+ 
+Thing2SearchResultDto @dto
+	| Ns123.Thing3Search.Thing2SearchResultDto
+	| AssemblyInfo, Version=1.2.3.4
+	Thing10Id : int?
+	Thing10Number : string
+	Thing10ypeCode : string
+	Thing9LastName : string
+	Thing9FirstName : string
+	Thing9MiddleName : string
+	Thing9EmailAddress : string
+	DayToThing17 : short?
+	Thing11TypeCode : short?
+	Thing11TypeName : string
+	Thing11Term : byte?
+	Thing11Thing17Date : DateTime
+	Thing5FirstName : string
+	Thing5LastName : string
+	Thing12 : string
+	Thing127 : string
+	Thing13ColorCode : string
+	Thing13Thing22Code : short?
+	Thing13Thing22Name : string
+	Thing1Code : string
+	Thing13Thing6Id : int?
+	Thing13Thing6Name : string
+	Thing13Thing6Thing21 : string
+	Thing13ColorName : string
+	Thing4Thing14ScheduleId : long
+	Thing14Id : string
+	Thing14Date : DateTime?
+	Thing14TypeId : byte
+	Thing4Description : string
+ 
+Thing1Dto @dto
+	| Ns123.Thing3Search.Thing1Dto
+	| AssemblyInfo, Version=1.2.3.4
+	Id : int
+	Name : string
+	Thing6s : List<Thing1Thing6Dto>
+ 
+Thing1Thing6Dto @dto
+	| Ns123.Thing3Search.Thing1Thing6Dto
+	| AssemblyInfo, Version=1.2.3.4
+	Id : int
+	Name : string
+	Thing21 : string
+ 
+Thing3SearchSortOrderTypes @enum
+	| Ns123.Thing3SearchSortOrderTypes
+	| AssemblyInfo, Version=1.2.3.4
+	None = 0
+	Thing17Date = 1
+	Thing9LastName = 2
+	Thing20 = 3
+	Thing19Date = 4
+	Thing18Date = 6
+	Thing11TermComplete = 7
+	Thing9PayoffDate = 8
+	Thing9FirstName = 9
+ 
+Thing2SearchSortOrderTypes @enum
+	| Ns123.Thing3Search.Thing2SearchSortOrderTypes
+	| AssemblyInfo, Version=1.2.3.4
+	None = 0
+	Thing17Date = 1
+	Thing9LastName = 2
+	Thing20 = 3
+	Thing19Date = 4
+	Thing18Date = 6
+	Thing11TermComplete = 7
+	Thing9PayoffDate = 8
+	Thing9FirstName = 9
+	Thing2Date = 10
