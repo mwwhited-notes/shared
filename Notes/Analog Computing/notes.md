@@ -6,7 +6,10 @@
 - https://www.analogmuseum.org/english/library.html
 - https://www.analogmuseum.org/english/impressions/
 
-
-## Build this 
+## Build this
 
 - https://www.analogmuseum.org/library/Webster1965.pdf
+
+- [Memristor](https://knowm.com/products/m-sdc-memristor-8-discrete-16-dip)
+- [FPAA (Field Programmable Analog Array)](https://zrna.org/shop)
+- [Piecewise Diode Functions](https://www.allaboutcircuits.com/technical-articles/forward-conducting-diodes-exponential-and-piecewise-linear-analysis/)
