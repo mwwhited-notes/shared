@@ -13,3 +13,7 @@
 - [Memristor](https://knowm.com/products/m-sdc-memristor-8-discrete-16-dip)
 - [FPAA (Field Programmable Analog Array)](https://zrna.org/shop)
 - [Piecewise Diode Functions](https://www.allaboutcircuits.com/technical-articles/forward-conducting-diodes-exponential-and-piecewise-linear-analysis/)
+- [Easy four-quadrant multiplier using a quad op amp](https://www.edn.com/easy-four-quadrant-multiplier-using-a-quad-op-amp/)
+- [Forgotten circuits (that should be brought back)](https://www.edn.com/forgotten-circuits-that-should-be-brought-back/)
+- [Protect Vintage Gear With Easy Capacitor Reforming](https://hackaday.com/2023/06/05/protect-vintage-gear-with-easy-capacitor-reforming/)
+- 
