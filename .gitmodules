@@ -1,0 +1,3 @@
+[submodule "my-resume"]
+	path = my-resume
+	url = https://gist.github.com/a40bb3f3069cee86bedfdeccd4aff872.git
