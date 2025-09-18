@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<truthTable>
+  <variables>
+    <variable name="/RI"/>
+    <variable name="/RO"/>
+    <variable name="Progam"/>
+    <variable name="Write"/>
+    <variable name="Inspect"/>
+    <variable name="Halt-In"/>
+  </variables>
+  <results>
+    <result>
+      <name>Y</name>
+      <values class="BoolTable">0000000000000000000000000000000000000000000000000000000000000000</values>
+    </result>
+  </results>
+</truthTable>

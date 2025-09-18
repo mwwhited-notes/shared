@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<truthTable>
+  <variables>
+    <variable name="_RI"/>
+    <variable name="_RO"/>
+    <variable name="Program"/>
+    <variable name="Write"/>
+    <variable name="Inspect"/>
+    <variable name="Halt In"/>
+  </variables>
+  <results>
+    <result>
+      <name>DB /OE</name>
+      <values class="BoolTable">1111111111111111000000001111111100000000111111111111111111111111</values>
+    </result>
+    <result>
+      <name>DB A-&gt;B</name>
+      <values class="BoolTable">1111111111111111111111111111111100000000111111111111111111111111</values>
+    </result>
+    <result>
+      <name>User /OE</name>
+      <values class="BoolTable">1111111111000000111111111100000011111111110000001111111111000000</values>
+    </result>
+    <result>
+      <name>RAM /OE</name>
+      <values class="BoolTable">1111111111110011000000001111001100000000111100111111111111110011</values>
+    </result>
+    <result>
+      <name>RAM /WE</name>
+      <values class="BoolTable">1111111111001111111111111100111100000000110011111111111111001111</values>
+    </result>
+    <result>
+      <name>Halt Out</name>
+      <values class="BoolTable">0101010111111111010101011111111101010101111111110101010111111111</values>
+    </result>
+    <result>
+      <name>User A-&gt;B</name>
+      <values class="BoolTable">0000000000000000000000000000000000000000000000000000000000000000</values>
+    </result>
+    <result>
+      <name>RAM /CE</name>
+      <values class="BoolTable">0000000000000000000000000000000000000000000000000000000000000000</values>
+    </result>
+  </results>
+</truthTable>

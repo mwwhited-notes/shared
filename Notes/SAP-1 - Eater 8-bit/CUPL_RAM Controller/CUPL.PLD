@@ -1,0 +1,37 @@
+Name     RAM Controller.tru ;
+PartNo   00 ;
+Date     15.01.2025 ;
+Revision 01 ;
+Designer mwwhi ;
+Company  unknown ;
+Assembly None ;
+Location unknown ;
+Device   g16v8a ;
+
+/* inputs */
+PIN 2 = HaltIn;
+PIN 3 = Inspect;
+PIN 4 = Program;
+PIN 5 = Write;
+PIN 6 = _RI;
+PIN 7 = _RO;
+
+/* outputs */
+PIN 12 = DBOE;
+PIN 13 = DBAB;
+PIN 14 = UserOE;
+PIN 15 = RAMOE;
+PIN 16 = RAMWE;
+PIN 17 = HaltOut;
+PIN 18 = UserAB;
+PIN 19 = RAMCE;
+
+/* combinatorial logic */
+DBAB = Program # !_RI # _RO;
+DBOE = Program # (!_RI & !_RO) # (_RI & _RO);
+HaltOut = HaltIn # Program;
+RAMCE = 'b'0;
+RAMOE = (Inspect & Program) # (!Program & !_RI & !_RO) # (!Program & _RI & _RO) # (Program & !Write);
+RAMWE = (!Inspect & Program) # (Program & Write) # (!Program & _RO) # (!Program & !_RI);
+UserAB = 'b'0;
+UserOE = (!Inspect & !Write) # !Program;
