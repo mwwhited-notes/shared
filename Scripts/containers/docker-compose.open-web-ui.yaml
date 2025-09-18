@@ -9,12 +9,16 @@ services:
     environment:
       #https://docs.openwebui.com/getting-started/advanced-topics/env-configuration#ollama 
       ENV: dev
+
+      ENABLE_ADMIN_EXPORT: true
+      ENABLE_CHANNELS: true
+      SHOW_ADMIN_DETAILS: true
       
       DEFAULT_MODELS: 'llama3-70b-8192'
       
       WEBUI_URL: ${OPEN_WEBUI_BASE_URL}
       WEBUI_AUTH: True
-      ENABLE_SIGUP: True
+      ENABLE_SIGNUP: True
       DEFAULT_USER_ROLE: pending
       #WEBHOOK_URL: 
       

@@ -15,4 +15,4 @@
 - [Cosine Normalization: Using Cosine Similarity Instead of Dot Product in Neural Networks](https://arxiv.org/pdf/1702.05870v2)
 - [Expand-and-Quantize: Unsupervised Semantic Segmentation Using High-Dimensional Space and Product Quantization](https://arxiv.org/pdf/2312.07342)
 - [Co-design Hardware and Algorithm for Vector Search](https://arxiv.org/pdf/2306.11182)
-- 
+  
