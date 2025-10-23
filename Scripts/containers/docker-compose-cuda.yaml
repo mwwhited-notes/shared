@@ -55,19 +55,19 @@ services:
   #   - ${SERVER_PORT_RABBITMQ_TLS}:15672
   #   # restart: 'unless-stopped'
 
-  smtp4dev:
-    extends:
-      file: docker-compose.smtp4dev.yaml
-      service: smtp4dev
-    networks:
-    - frontend
-    - backend
-    ports:
-    - ${SERVER_PORT_SMTP4DEV_HTTP}:80
-    - ${SERVER_PORT_SMTP4DEV_SMTP}:25
-    - ${SERVER_PORT_SMTP4DEV_IMAP}:143
-    - ${SERVER_PORT_SMTP4DEV_POP3}:110
-    # restart: 'unless-stopped'
+  # smtp4dev:
+  #   extends:
+  #     file: docker-compose.smtp4dev.yaml
+  #     service: smtp4dev
+  #   networks:
+  #   - frontend
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_SMTP4DEV_HTTP}:80
+  #   - ${SERVER_PORT_SMTP4DEV_SMTP}:25
+  #   - ${SERVER_PORT_SMTP4DEV_IMAP}:143
+  #   - ${SERVER_PORT_SMTP4DEV_POP3}:110
+  #   # restart: 'unless-stopped'
       
   # sbert:
   #   extends:
@@ -166,23 +166,23 @@ services:
   #   - ${SERVER_PORT_KAFKA_EXTERNAL}:9094
   #   # restart: 'unless-stopped'
       
-  sql-server:
-    extends:
-      file: docker-compose.sql-server.yaml
-      service: sql-server-2019-ml
-    networks:
-    - backend
-    ports:
-    - ${SERVER_PORT_SQL_SERVER}:1433
-    # restart: 'unless-stopped'
-    # Note: these are only useful if ML Services are configured
-    deploy:
-      resources:
-        reservations:
-          devices:
-          - driver: nvidia
-            count: 1
-            capabilities: [gpu]
+  # sql-server:
+  #   extends:
+  #     file: docker-compose.sql-server.yaml
+  #     service: sql-server-2019-ml
+  #   networks:
+  #   - backend
+  #   ports:
+  #   - ${SERVER_PORT_SQL_SERVER}:1433
+  #   # restart: 'unless-stopped'
+  #   # Note: these are only useful if ML Services are configured
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #         - driver: nvidia
+  #           count: 1
+  #           capabilities: [gpu]
 
   # sql-sonarqube:
   #   extends:
