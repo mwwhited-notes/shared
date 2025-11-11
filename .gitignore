@@ -5,3 +5,4 @@
 model_outputs/
 
 .vs/
+*_tmp.html
