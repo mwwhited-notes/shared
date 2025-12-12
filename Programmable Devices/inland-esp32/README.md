@@ -7,7 +7,8 @@
 | Field | Value |
 |-------|-------|
 | Manufacturer | Inland (Micro Center) |
-| Module | ESP32-WROOM-32 |
+| Model | KS0413 |
+| Module | ESP32-WROOM-32D |
 | SoC | ESP32-D0WDQ6 |
 | Date Acquired | |
 | Quantity | |
@@ -115,9 +116,14 @@
 
 ## Notes
 
+### Inland-Specific Quirks
+- **Pin labels on bottom** - Silkscreen is on underside to keep board compact for breadboard use
+- **BOOT button must be held throughout programming** - Unlike other ESP32 boards that only need BOOT held at power-up
+- **Pinout differs from generic ESP32-WROOM-32** - See [natedogg2020/Inland_ESP32-Supplements](https://github.com/natedogg2020/Inland_ESP32-Supplements) for detailed mapping
+
+### General ESP32 Notes
 - GPIO6-11 are used for internal flash - avoid using
 - GPIO34-39 are input only
-- Requires pressing BOOT button for some uploads
 - More capable than ESP8266 (dual-core, BLE, more GPIO)
 - 3.3V logic but 5V tolerant on some pins (check datasheet)
 - Touch pins can wake from deep sleep

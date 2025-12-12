@@ -304,6 +304,46 @@ For each device README, include:
 4. **Debugging Tools** - Both official and open-source
 5. **Setup Instructions** - Board package URLs, configuration steps
 
+### Arduino IDE & PlatformIO Support Check
+
+**MANDATORY**: For every device, verify and document support in:
+
+#### Arduino IDE Support
+
+| Check | How to Verify |
+|-------|---------------|
+| Native Support | Check Arduino IDE board list |
+| Board Package Required | Search for board manager URL |
+| Board Selection | Document exact board name to select |
+| Upload Settings | Note any special settings (programmer, port, speed) |
+
+#### PlatformIO Support
+
+| Check | How to Verify |
+|-------|---------------|
+| Platform | Check [PlatformIO Boards](https://platformio.org/boards) |
+| Board ID | Document exact `board = xxx` setting |
+| Framework | Note supported frameworks (arduino, espidf, stm32cube, etc.) |
+| Upload Protocol | Document upload_protocol if non-standard |
+
+#### Example Format in README
+
+```markdown
+## Development Environment Support
+
+### Arduino IDE
+- **Supported:** Yes / Requires board package / Not supported
+- **Board Package URL:** `https://...`
+- **Board Selection:** Tools > Board > "Board Name"
+- **Special Settings:** [any notes]
+
+### PlatformIO
+- **Supported:** Yes / Experimental / Not supported
+- **Board ID:** `board_name`
+- **Platform:** `platform_name`
+- **Framework:** `arduino` / `espidf` / etc.
+```
+
 ### Example Software Section Format
 
 ```markdown

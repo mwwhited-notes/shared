@@ -4,7 +4,10 @@
       "Bash(mkdir:*)",
       "Bash(cd:*)",
       "Bash(curl:*)",
-      "Bash(file:*)"
+      "Bash(file:*)",
+      "WebFetch(domain:www.microcenter.com)",
+      "WebFetch(domain:github.com)",
+      "WebSearch"
     ]
   }
 }
