@@ -20,3 +20,7 @@
 ## Notes
 
 General-purpose handheld meter for quick measurements and field work.
+
+## Local Files
+
+*No official documentation found online. Check Tenma/Farnell website for current manuals.*

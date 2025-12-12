@@ -86,10 +86,10 @@ if %ROBOCOPY_EXIT% LEQ 3 (
 echo ============================================================================
 echo.
 
-REM Show summary
-echo Destination contents:
-dir /b "%DEST%"
-
-echo.
-pause
+REM REM Show summary
+REM echo Destination contents:
+REM dir /b "%DEST%"
+REM 
+REM echo.
+REM pause
 exit /b %ROBOCOPY_EXIT%

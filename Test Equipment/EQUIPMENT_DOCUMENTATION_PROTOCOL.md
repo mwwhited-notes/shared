@@ -26,6 +26,15 @@ This protocol ensures consistent documentation across all test equipment in the 
 - Locally archived PDFs (user manuals, service manuals, datasheets)
 - Software/firmware files where appropriate
 
+### Key Files
+
+| File | Purpose |
+|------|---------|
+| `readme.md` | Main index with equipment tables and navigation |
+| `EQUIPMENT_DOCUMENTATION_PROTOCOL.md` | This protocol document |
+| `MISSING_DOCUMENTATION.md` | Tracks downloads that failed/require manual action |
+| `sync-docs.bat` | Windows script to sync to OneDrive |
+
 ### Design Principles
 
 1. **Self-contained** - Each device directory should be usable standalone
@@ -77,14 +86,78 @@ This section describes how to work with users to gather equipment information an
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│  CREATE: Directory, README, download documentation              │
+│  CREATE: Directory and README.md with specifications            │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│  UPDATE: Add to main index, confirm with user                   │
+│  DOWNLOAD: PDFs and software (see Download Checklist below)     │
+│       - User manual                                             │
+│       - Service manual                                          │
+│       - Datasheet                                               │
+│       - Programming/SCPI reference                              │
+│       - Firmware (if open source or updatable)                  │
+│       - Software installers (if small/portable)                 │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  VERIFY: Check all PDFs are valid (not HTML error pages)        │
+│       - file *.pdf should show "PDF document"                   │
+│       - Files should be > 50KB typically                        │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  UPDATE: Main readme.md index and directory structure           │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+### Download Checklist
+
+For each new device, attempt to download these files locally:
+
+#### Documentation (Priority Order)
+
+| Priority | Document Type | Typical Filename |
+|----------|--------------|------------------|
+| 1 | User Manual | `<Model>_UserManual.pdf` |
+| 2 | Datasheet | `<Model>_Datasheet.pdf` |
+| 3 | Service Manual | `<Model>_ServiceManual.pdf` |
+| 4 | Programming/SCPI Guide | `<Model>_ProgrammingGuide.pdf` |
+| 5 | Quick Start Guide | `<Model>_QuickStart.pdf` |
+| 6 | Application Notes | `AN_<number>_<topic>.pdf` |
+
+#### Software/Firmware
+
+| Type | When to Download | Storage |
+|------|------------------|---------|
+| Firmware updates | If device has updatable firmware | `firmware/` subdirectory |
+| Open-source firmware | If available (e.g., DSO Nano, Bus Pirate) | `firmware/` subdirectory |
+| Small utilities (<50MB) | If portable/standalone | `software/` subdirectory |
+| Large software suites | Don't download - link only | Document in README |
+| Driver packages | If hard to find online | `drivers/` subdirectory |
+
+#### Download Commands
+
+```bash
+# Standard PDF download
+curl -L -o "<Model>_UserManual.pdf" "<url>"
+
+# With user agent (if blocked)
+curl -L --user-agent "Mozilla/5.0" -o "<Model>_UserManual.pdf" "<url>"
+
+# Verify download succeeded
+file *.pdf  # Should show "PDF document", not "HTML" or "XML"
+ls -lh *.pdf  # Check file sizes are reasonable
+```
+
+#### What NOT to Download
+
+- Large software installers (>50MB) - link only
+- Proprietary software requiring license - link only
+- Content requiring login/registration - note in README
+- Malware/cracked software - never
 
 ### Conversation Templates
 
@@ -231,6 +304,8 @@ I'll search for:
 /equipment-inventory/
 ├── readme.md                          # Main index with equipment tables
 ├── EQUIPMENT_DOCUMENTATION_PROTOCOL.md # This file
+├── MISSING_DOCUMENTATION.md           # Tracker for failed/manual downloads
+├── sync-docs.bat                      # OneDrive sync script (Windows)
 ├── <device-directory>/
 │   ├── README.md                      # Device specifications and info
 │   ├── <ManualName>_UserGuide.pdf     # User manual
@@ -416,9 +491,128 @@ Search for documentation in this order:
 
 Use the [README Template](#readme-template) below.
 
-### Step 5: Download Documentation
+### Step 5: Download Documentation and Software
 
-Follow the [Documentation Download Procedures](#documentation-download-procedures).
+**This step is mandatory** - always attempt to download documentation locally.
+
+#### 5a. Download PDFs
+
+```bash
+cd /path/to/inventory/<manufacturer-model>
+
+# Download user manual
+curl -L -o "<Model>_UserManual.pdf" "<manual_url>"
+
+# Download service manual (if available)
+curl -L -o "<Model>_ServiceManual.pdf" "<service_manual_url>"
+
+# Download datasheet (if available)
+curl -L -o "<Model>_Datasheet.pdf" "<datasheet_url>"
+
+# Download programming guide (if applicable)
+curl -L -o "<Model>_ProgrammingGuide.pdf" "<programming_guide_url>"
+```
+
+#### 5b. Verify Downloads
+
+**Step 1: Check file type**
+
+```bash
+# Check all PDFs are valid (not HTML error pages)
+file *.pdf
+
+# Expected output: "PDF document, version X.X"
+# If you see "HTML document" or "XML", the download failed
+
+# Check file sizes (PDFs should typically be > 100KB)
+ls -lh *.pdf
+
+# Remove any failed downloads
+rm -f *.pdf  # only if file command shows HTML/XML
+```
+
+**Step 2: Verify PDF content matches the device**
+
+This is critical - a valid PDF file may still be the wrong document!
+
+```bash
+# Extract first page text to verify content
+pdftotext -l 1 "<filename>.pdf" - | head -20
+
+# Or if pdftotext not available, check PDF metadata
+pdfinfo "<filename>.pdf"
+```
+
+**Content verification checklist:**
+
+- [ ] PDF title/header mentions the correct manufacturer
+- [ ] PDF title/header mentions the correct model number
+- [ ] Content appears to be the right document type (manual vs datasheet vs schematic)
+- [ ] Language is appropriate (English or user's preferred language)
+- [ ] Document is not for a completely different product
+
+**Common issues:**
+
+| Problem | Symptom | Solution |
+|---------|---------|----------|
+| Wrong product | PDF is for different model | Delete and find correct URL |
+| Generic datasheet | Shows component, not full product | Search for actual user manual |
+| Marketing brochure | No technical content | Search for technical documentation |
+| Wrong language | Document in Chinese/German/etc | Search for English version |
+| Corrupted PDF | Opens but content garbled | Re-download or try alternate source |
+
+**If content verification fails:**
+
+1. Delete the incorrect PDF immediately
+2. Document the issue in the README
+3. Search for alternate sources
+4. If no correct documentation available, note in README:
+   ```markdown
+   ## Local Files
+
+   *No official documentation found. [Reason/notes]*
+   ```
+
+#### 5c. Download Firmware (if applicable)
+
+```bash
+# Create firmware directory
+mkdir -p firmware
+
+# Download firmware files
+curl -L -o "firmware/<firmware_file>" "<firmware_url>"
+```
+
+#### 5d. Handle Download Failures
+
+If downloads fail:
+1. Try adding `--user-agent "Mozilla/5.0"` to curl
+2. Try archive.org: `https://web.archive.org/web/<year>/<original_url>`
+3. Search for alternate sources (university sites, Adafruit, SparkFun)
+4. If no source available:
+   - Document in the device README:
+     ```markdown
+     ## Local Files
+
+     *Note: Documentation requires manual download from [source] (registration required).*
+     ```
+   - **Add entry to `MISSING_DOCUMENTATION.md`** with:
+     - Device name and document type
+     - Best known download URL
+     - Reason for failure (blocked, requires login, not found)
+     - Alternative sources to try
+
+#### 5e. Update README Local Files Section
+
+After downloading, update the README to list local files:
+
+```markdown
+## Local Files
+
+- `<Model>_UserManual.pdf` - User manual
+- `<Model>_ServiceManual.pdf` - Service manual
+- `<Model>_Datasheet.pdf` - Datasheet
+```
 
 ### Step 6: Update Main Index
 
@@ -704,6 +898,37 @@ sleep 2 && curl -L -o file.pdf "https://example.com/file.pdf"
 | PDF validation | Monthly | Ensure no corrupted files |
 | Software updates | Quarterly | Check for new software versions |
 | Spec verification | As needed | Confirm specs match actual equipment |
+| Missing docs review | Monthly | Check `MISSING_DOCUMENTATION.md` for items to retry |
+
+### Managing Missing Documentation
+
+The `MISSING_DOCUMENTATION.md` file tracks downloads that couldn't be automated:
+
+**When to add entries:**
+- Download fails after trying all fallback methods
+- Site requires login/registration
+- Document not available online
+- Downloaded file was wrong content
+
+**Entry format:**
+```markdown
+### Device Name
+- [ ] **Document Type** - Description
+  - Source: [best URL]
+  - Issue: [why it failed]
+  - Manual download: [instructions]
+```
+
+**When you manually obtain a document:**
+1. Place file in the correct device directory
+2. Update the device README's "Local Files" section
+3. Move the entry in `MISSING_DOCUMENTATION.md` to "Completed" section:
+   ```markdown
+   ### Device Name
+   - [x] **Document Type** - Downloaded YYYY-MM-DD
+     - Verified content matches device
+     - File: `device-folder/filename.pdf`
+   ```
 
 ### Archival Best Practices
 

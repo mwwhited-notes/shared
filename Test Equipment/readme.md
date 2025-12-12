@@ -6,6 +6,8 @@ Each device has its own directory with detailed specifications and locally archi
 
 **[Equipment Documentation Protocol](EQUIPMENT_DOCUMENTATION_PROTOCOL.md)** - Guide for adding new equipment and maintaining this inventory.
 
+**[Missing Documentation Tracker](MISSING_DOCUMENTATION.md)** - Documents that require manual download (check off when obtained).
+
 ---
 
 ## Equipment Index
@@ -108,7 +110,8 @@ Each device has its own directory with detailed specifications and locally archi
 │   ├── DM3058_UserGuide.pdf
 │   └── DM3058_ServiceGuide.pdf
 ├── tenma-72-2055/
-│   └── README.md
+│   ├── README.md
+│   └── Tenma_72-2055_Manual.pdf
 ├── deree-de5000/
 │   ├── README.md
 │   ├── DE-5000_Manual.pdf
@@ -144,7 +147,8 @@ Each device has its own directory with detailed specifications and locally archi
 │   ├── FT232H_Datasheet.pdf
 │   └── AN_108_MPSSE_Commands.pdf
 ├── usb-esp01-adapter/
-│   └── README.md
+│   ├── README.md
+│   └── ESP8266_Datasheet.pdf
 └── maxstream-xbib-u-dev/
     ├── README.md
     └── XBIB-U-DEV_UserGuide.pdf
