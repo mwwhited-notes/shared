@@ -8,13 +8,16 @@ Standard operating procedure for creating, maintaining, and expanding the progra
 
 1. [Overview](#overview)
 2. [Interactive Workflow](#interactive-workflow)
-3. [Directory Structure](#directory-structure)
-4. [Adding New Devices](#adding-new-devices)
-5. [Reviewing Existing Documentation](#reviewing-existing-documentation)
-6. [Documentation Download Procedures](#documentation-download-procedures)
-7. [README Template](#readme-template)
-8. [Troubleshooting Downloads](#troubleshooting-downloads)
-9. [Maintenance Tasks](#maintenance-tasks)
+3. [File Verification Procedures](#file-verification-procedures)
+4. [Development Tools Documentation](#development-tools-documentation)
+5. [PlantUML Diagram Requirements](#plantuml-diagram-requirements)
+6. [Directory Structure](#directory-structure)
+7. [Adding New Devices](#adding-new-devices)
+8. [README Template](#readme-template)
+9. [Reviewing Existing Documentation](#reviewing-existing-documentation)
+10. [Troubleshooting Downloads](#troubleshooting-downloads)
+11. [Maintenance Tasks](#maintenance-tasks)
+12. [Request Templates](#request-templates)
 
 ---
 
@@ -29,6 +32,14 @@ This protocol ensures consistent documentation across all programmable devices i
 - **PlantUML block diagrams** showing internal device architecture and external interfaces
 - Pinout diagrams and reference cards
 - Example code or project templates (where appropriate)
+
+### Key Files
+
+| File | Purpose |
+|------|---------|
+| `readme.md` | Main index with device tables and navigation |
+| `PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md` | This protocol document |
+| `MISSING_DOCUMENTATION.md` | Tracks downloads that failed/require manual action |
 
 ### Design Principles
 
@@ -207,6 +218,131 @@ Download relevant application notes from chip vendors:
 - Proprietary toolchains - link only
 - Content requiring login/registration - note in README
 - Licensed IP cores - never
+
+### Conversation Templates
+
+#### Starting the conversation
+
+```
+I'd be happy to add that to your programmable devices inventory. To make sure I get
+the right documentation, can you tell me:
+
+1. What's the exact board/model name? (usually silkscreened on the PCB)
+2. What's the main chip part number? (e.g., STM32F103C8T6, ATmega328P)
+3. Is there a revision marked? (like "Rev B" or "v2.0")
+4. When did you acquire it? (helps identify the hardware generation)
+```
+
+#### When user doesn't know the exact chip
+
+```
+No problem - let's figure out which chip you have. Can you check:
+
+1. Look at the main chip - what's printed on it? (the largest IC on the board)
+2. Is there a silkscreen label near the chip?
+3. What does the vendor's product page say?
+
+If you can send me a photo of the board, I can help identify it.
+```
+
+#### When user provides partial information
+
+```
+Thanks! I found that the [Board] was made in several versions:
+
+- [Board] v1 (2015-2018): [key difference - e.g., different chip variant]
+- [Board] v2 (2018-2021): [key difference - e.g., more flash]
+- [Board] v3 (2021-present): [key difference - e.g., USB-C connector]
+
+Based on [what they told you], yours is likely the [version].
+Does that sound right?
+```
+
+#### When specifications need verification
+
+```
+I found these specifications for the [Board Rev X]:
+
+| Spec | Value |
+|------|-------|
+| ... | ... |
+
+A few questions to verify:
+1. Does your unit have [specific feature]?
+2. What interfaces are on the board? (USB type, headers, connectors)
+3. Any installed modules or shields?
+```
+
+#### When documentation can't be found
+
+```
+I couldn't find downloadable documentation for the [Board]. Here are some options:
+
+1. Do you have any original manuals or CDs that came with it?
+2. I can create a basic entry with the specs we know, and you can add docs later
+3. Would you like me to search archive.org or maker forums?
+
+What would you prefer?
+```
+
+### Handling Special Cases
+
+#### Rebranded/Clone Boards
+
+Many development boards are sold under multiple brand names or as clones:
+
+```
+The [Brand] [Board] appears to be a clone/rebrand of [Original Brand] [Original Board].
+Documentation for the original should work. Would you like me to:
+1. Use the original manufacturer's documentation
+2. Search for your specific brand's documentation
+3. Include both in the entry with notes about compatibility
+```
+
+**Common clone scenarios:**
+- Arduino clones (Elegoo, LAFVIN, HiLetgo, etc.) - use official Arduino docs
+- ESP32/ESP8266 modules from various manufacturers - use Espressif docs
+- STM32 BluePill variants - may have different USB chips or fake STM32 chips
+- Generic FPGA boards - may be copies of Digilent/Terasic designs
+
+#### Discontinued Boards
+
+```
+The [Board] was discontinued in [year]. Documentation may be harder to find.
+I'll check:
+1. Archive.org Wayback Machine
+2. Maker community forums (Reddit, EEVBlog, Hackaday)
+3. GitHub repositories with cached documentation
+
+In the meantime, do you have any original documentation?
+```
+
+**Examples of discontinued boards:**
+- Particle Spark Core (replaced by Photon)
+- Netduino series (.NET Micro Framework discontinued)
+- RedBear boards (company acquired)
+- Original Arduino boards (replaced by newer revisions)
+
+#### Chinese/Generic Boards
+
+```
+This appears to be a generic or clone board. These often:
+- Have limited official documentation
+- Use common chipsets with known specs
+- May have quality variations (check for fake chips)
+- Have community-created resources
+
+I'll search for:
+1. Reviews that verified actual specifications
+2. Teardown articles showing internal components
+3. User forums with operational guides
+4. Comparison to "official" versions
+```
+
+**Known issues with generic boards:**
+- STM32 BluePill: Often has fake STM32 chips, wrong USB resistor
+- ESP32 clones: May have different flash sizes than advertised
+- Arduino clones: Different USB bridge chips (CH340 vs FTDI)
 
 ---
 
@@ -524,19 +660,139 @@ Search for documentation in this order:
 
 Use the [README Template](#readme-template) below.
 
-### Step 5: Download Documentation
+### Step 5: Download Documentation and Verify
+
+**This step is mandatory** - always attempt to download documentation locally.
+
+#### 5a. Download PDFs
 
 ```bash
 cd /path/to/inventory/<device-directory>
 
-# Download datasheet
-curl -L -o "<Chip>_Datasheet.pdf" "<url>"
+# Download main chip datasheet
+curl -L -o "<Chip>_Datasheet.pdf" "<datasheet_url>"
 
-# Download schematic
-curl -L -o "<Board>_Schematic.pdf" "<url>"
+# Download board schematic (if available)
+curl -L -o "<Board>_Schematic.pdf" "<schematic_url>"
 
-# Verify downloads
+# Download reference manual (if available)
+curl -L -o "<Board>_ReferenceManual.pdf" "<reference_url>"
+
+# Download pinout image
+curl -L -o "<Board>_Pinout.png" "<pinout_url>"
+
+# Download peripheral chip datasheets
+curl -L -o "<USBChip>_Datasheet.pdf" "<usb_chip_url>"
+```
+
+#### 5b. Verify Downloads
+
+**Step 1: Check file type**
+
+```bash
+# Check all PDFs are valid (not HTML error pages)
 file *.pdf
+
+# Expected output: "PDF document, version X.X"
+# If you see "HTML document" or "XML", the download failed
+
+# Check file sizes (PDFs should typically be > 100KB)
+ls -lh *.pdf
+
+# Remove any failed downloads
+rm -f *.pdf  # only if file command shows HTML/XML
+```
+
+**Step 2: Verify PDF content matches the device**
+
+This is critical - a valid PDF file may still be the wrong document!
+
+```bash
+# Extract first page text to verify content
+pdftotext -l 1 "<filename>.pdf" - | head -20
+
+# Or if pdftotext not available, check PDF metadata
+pdfinfo "<filename>.pdf"
+```
+
+**Content verification checklist:**
+
+- [ ] PDF title/header mentions the correct manufacturer
+- [ ] PDF title/header mentions the correct chip/board model
+- [ ] Content appears to be the right document type (datasheet vs schematic vs reference)
+- [ ] Language is appropriate (English or user's preferred language)
+- [ ] Document is not for a completely different product
+- [ ] Pinout image matches the actual board layout
+
+**Common issues:**
+
+| Problem | Symptom | Solution |
+|---------|---------|----------|
+| Wrong chip variant | PDF is for similar but different part (e.g., STM32F103C6 vs C8) | Delete and find exact part number |
+| Generic datasheet | Shows chip only, not board-specific info | Search for board reference manual |
+| Marketing brochure | No technical content | Search for technical documentation |
+| Wrong language | Document in Chinese/German/etc | Search for English version |
+| Corrupted PDF | Opens but content garbled | Re-download or try alternate source |
+| Wrong pinout | Image shows different board variant | Find board-specific pinout |
+
+**If content verification fails:**
+
+1. Delete the incorrect file immediately
+2. Document the issue in the README
+3. Search for alternate sources
+4. If no correct documentation available, note in README and add to `MISSING_DOCUMENTATION.md`:
+   ```markdown
+   ## Local Files
+
+   *No official documentation found. [Reason/notes]*
+   ```
+
+#### 5c. Download Firmware/Examples (if applicable)
+
+```bash
+# Create subdirectories
+mkdir -p firmware examples
+
+# Download bootloader/firmware files
+curl -L -o "firmware/<firmware_file>" "<firmware_url>"
+
+# Clone example repositories (if small)
+git clone --depth 1 "<examples_repo>" examples/
+```
+
+#### 5d. Handle Download Failures
+
+If downloads fail:
+1. Try adding `--user-agent "Mozilla/5.0"` to curl
+2. Try archive.org: `https://web.archive.org/web/<year>/<original_url>`
+3. Search for alternate sources (Adafruit, SparkFun, GitHub)
+4. If no source available:
+   - Document in the device README:
+     ```markdown
+     ## Local Files
+
+     *Note: Documentation requires manual download from [source] (registration required).*
+     ```
+   - **Add entry to `MISSING_DOCUMENTATION.md`** with:
+     - Device name and document type
+     - Best known download URL
+     - Reason for failure (blocked, requires login, not found)
+     - Alternative sources to try
+
+#### 5e. Update README Local Files Section
+
+After downloading, update the README to list local files:
+
+```markdown
+## Local Files
+
+### Primary Documentation
+- `<Chip>_Datasheet.pdf` - Main chip datasheet
+- `<Board>_Schematic.pdf` - Board schematic
+- `<Board>_Pinout.png` - Pinout diagram
+
+### Peripheral Documentation
+- `<USBChip>_Datasheet.pdf` - USB bridge datasheet
 ```
 
 ### Step 6: Update Main Index
@@ -722,7 +978,7 @@ rm downloaded_file.pdf
 1. `mkdir <manufacturer-model>`
 2. Create `README.md` from template
 3. Download PDFs with `curl -L -o`
-4. Verify PDFs with `file *.pdf`
+4. Verify PDFs with `file *.pdf` and content check
 5. Update main `readme.md` index
 
 ### Periodic Maintenance
@@ -733,8 +989,105 @@ rm downloaded_file.pdf
 | PDF validation | Monthly | Ensure no corrupted files |
 | Software updates | Quarterly | Check for new toolchain versions |
 | Spec verification | As needed | Confirm specs match actual devices |
+| Missing docs review | Monthly | Check `MISSING_DOCUMENTATION.md` for items to retry |
+
+### Managing Missing Documentation
+
+The `MISSING_DOCUMENTATION.md` file tracks downloads that couldn't be automated:
+
+**When to add entries:**
+- Download fails after trying all fallback methods
+- Site requires login/registration
+- Document not available online
+- Downloaded file was wrong content
+- Pinout image doesn't match the specific board variant
+
+**Entry format:**
+```markdown
+### Device Name
+- [ ] **Document Type** - Description
+  - Source: [best URL]
+  - Issue: [why it failed]
+  - Manual download: [instructions]
+```
+
+**When you manually obtain a document:**
+1. Place file in the correct device directory
+2. Update the device README's "Local Files" section
+3. Move the entry in `MISSING_DOCUMENTATION.md` to "Completed" section:
+   ```markdown
+   ### Device Name
+   - [x] **Document Type** - Downloaded YYYY-MM-DD
+     - Verified content matches device
+     - File: `device-folder/filename.pdf`
+   ```
+
+### Archival Best Practices
+
+1. **Keep original filenames** when they're descriptive
+2. **Rename to consistent format** when originals are cryptic:
+   - `<Chip>_Datasheet.pdf`
+   - `<Board>_Schematic.pdf`
+   - `<Board>_Pinout.png`
+3. **Document download date** in commit message or notes
+4. **Preserve version numbers** in filenames for firmware
 
 ---
 
-*Protocol version: 1.0*
+## Request Templates
+
+### User Request: Add New Device
+
+```
+I'd like to add the following device to the inventory:
+
+Manufacturer: _______________
+Board/Model: _______________
+Main Chip: _______________
+Type: (FPGA / MCU / SoC / Arduino-compatible / etc.)
+
+Key specs:
+- _______________
+- _______________
+
+Documentation links (if known):
+- _______________
+
+Notes:
+_______________
+```
+
+### User Request: Update Existing Entry
+
+```
+Please update the entry for: _______________
+
+Changes needed:
+- [ ] Fix broken documentation link
+- [ ] Add missing specification
+- [ ] Download additional datasheet/schematic
+- [ ] Update software/tool versions
+- [ ] Fix pinout image
+- [ ] Other: _______________
+
+Details:
+_______________
+```
+
+### User Request: Review Documentation
+
+```
+Please review documentation for: [ ] All devices / [ ] Specific: _______________
+
+Check for:
+- [ ] Broken links
+- [ ] Missing PDFs/pinouts
+- [ ] Outdated software versions
+- [ ] Specification accuracy
+- [ ] Content verification (files match devices)
+```
+
+---
+
+*Protocol version: 1.1*
 *Last updated: December 2024*
