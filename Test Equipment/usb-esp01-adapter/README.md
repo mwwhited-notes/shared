@@ -135,4 +135,4 @@ After programming, switch to UART mode for serial debugging:
 
 ## Local Files
 
-*Generic adapter - no official documentation. See ESP8266 docs above.*
+- `ESP8266_Datasheet.pdf` - ESP8266EX chip datasheet (Espressif)
