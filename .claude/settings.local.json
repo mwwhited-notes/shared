@@ -10,7 +10,14 @@
       "WebSearch",
       "WebFetch(domain:microcontrollerslab.com)",
       "WebFetch(domain:www.velleman.eu)",
-      "WebFetch(domain:devicesolutions.net)"
+      "WebFetch(domain:devicesolutions.net)",
+      "WebFetch(domain:www.digi.com)",
+      "Bash(for dir in */)",
+      "Bash(do if [ -f \"$dirREADME.md\" ])",
+      "Bash(then echo \"✓ $dirREADME.md\")",
+      "Bash(else echo \"✗ $dirREADME.md MISSING\")",
+      "Bash(fi)",
+      "Bash(done)"
     ]
   }
 }

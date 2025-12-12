@@ -15,6 +15,7 @@ Each device has its own directory with detailed specifications and locally archi
 | Board | FPGA/Chip | Logic Cells | RAM | Directory |
 |-------|-----------|-------------|-----|-----------|
 | [Digilent Arty A7-100](digilent-arty-a7-100/) | Artix-7 XC7A100T | 101,440 | 4,860 Kb | `digilent-arty-a7-100/` |
+| [Altera EP2C5 Mini](altera-ep2c5-mini/) | Cyclone II EP2C5T144 | 4,608 | 119 Kb | `altera-ep2c5-mini/` |
 
 ### SoC Development Boards
 
@@ -31,6 +32,7 @@ Each device has its own directory with detailed specifications and locally archi
 | [Arduino Nano](arduino-nano/) | ATmega328P | 32 KB | 2 KB | 16 MHz | `arduino-nano/` |
 | [Arduino Pro Mini](arduino-pro-mini/) | ATmega328P | 32 KB | 2 KB | 8/16 MHz | `arduino-pro-mini/` |
 | [Arduino Pro Micro](arduino-pro-micro/) | ATmega32U4 | 32 KB | 2.5 KB | 16 MHz | `arduino-pro-micro/` |
+| [Arduino Duemilanove](arduino-duemilanove/) | ATmega328P | 32 KB | 2 KB | 16 MHz | `arduino-duemilanove/` |
 
 ### AVR Microcontrollers (Standalone)
 
@@ -49,6 +51,7 @@ Each device has its own directory with detailed specifications and locally archi
 | [ESP8266mod AI-Thinker](esp8266mod-ai-thinker/) | ESP8266 | 4 MB | 80 KB | WiFi 802.11 b/g/n | `esp8266mod-ai-thinker/` |
 | [Inland ESP32](inland-esp32/) | ESP32-WROOM | 4 MB | 520 KB | WiFi + BLE 4.2 | `inland-esp32/` |
 | [ESP-01](esp-01/) | ESP8266 | 1 MB | 80 KB | WiFi 802.11 b/g/n | `esp-01/` |
+| [D1 ESP8266](d1-esp8266/) | ESP8266 | 4 MB | 80 KB | WiFi 802.11 b/g/n | `d1-esp8266/` |
 
 ### ARM Development Boards
 
@@ -64,6 +67,13 @@ Each device has its own directory with detailed specifications and locally archi
 |-------|-----|--------------|-----------|
 | [Spark Core (Particle)](spark-core/) | STM32F103 | WiFi (CC3000) | `spark-core/` |
 | [RedBear Blend Micro](redbear-blend-micro/) | ATmega32U4 | BLE (nRF8001) | `redbear-blend-micro/` |
+
+### Wireless Modules
+
+| Module | Protocol | Frequency | Power | Range | Directory |
+|--------|----------|-----------|-------|-------|-----------|
+| [MaxStream XBee](maxstream-xbee/) | 802.15.4 | 2.4 GHz | 1 mW | 300 ft | `maxstream-xbee/` |
+| [Digi XBee Pro S1](digi-xbee-pro-s1/) | 802.15.4 | 2.4 GHz | 60 mW | 1 mile | `digi-xbee-pro-s1/` |
 
 ### PIC Microcontrollers
 
@@ -106,6 +116,7 @@ Each device has its own directory with detailed specifications and locally archi
 ├── MISSING_DOCUMENTATION.md               # Tracks failed downloads
 │
 ├── digilent-arty-a7-100/                  # FPGA
+├── altera-ep2c5-mini/
 ├── digilent-arty-z7-20/                   # SoC (Zynq)
 │
 ├── arduino-uno/                           # Arduino/AVR Boards
@@ -113,6 +124,7 @@ Each device has its own directory with detailed specifications and locally archi
 ├── arduino-nano/
 ├── arduino-pro-mini/
 ├── arduino-pro-micro/
+├── arduino-duemilanove/
 │
 ├── attiny2313/                            # AVR Standalone
 ├── attiny85/
@@ -123,6 +135,7 @@ Each device has its own directory with detailed specifications and locally archi
 ├── esp8266mod-ai-thinker/                 # ESP/WiFi
 ├── inland-esp32/
 ├── esp-01/
+├── d1-esp8266/
 │
 ├── stm32-bluepill/                        # ARM
 ├── netduino-mini/
@@ -130,6 +143,9 @@ Each device has its own directory with detailed specifications and locally archi
 │
 ├── spark-core/                            # IoT/Wireless
 ├── redbear-blend-micro/
+│
+├── maxstream-xbee/                        # Wireless Modules
+├── digi-xbee-pro-s1/
 │
 ├── pic16f627/                             # PIC
 │
