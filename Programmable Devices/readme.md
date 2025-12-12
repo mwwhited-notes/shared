@@ -31,7 +31,16 @@ Each device has its own directory with detailed specifications and locally archi
 | [Arduino Nano](arduino-nano/) | ATmega328P | 32 KB | 2 KB | 16 MHz | `arduino-nano/` |
 | [Arduino Pro Mini](arduino-pro-mini/) | ATmega328P | 32 KB | 2 KB | 8/16 MHz | `arduino-pro-mini/` |
 | [Arduino Pro Micro](arduino-pro-micro/) | ATmega32U4 | 32 KB | 2.5 KB | 16 MHz | `arduino-pro-micro/` |
-| [ATtiny2313](attiny2313/) | ATtiny2313 | 2 KB | 128 B | 20 MHz | `attiny2313/` |
+
+### AVR Microcontrollers (Standalone)
+
+| Chip | Flash | RAM | GPIO | Clock | Directory |
+|------|-------|-----|------|-------|-----------|
+| [ATtiny2313](attiny2313/) | 2 KB | 128 B | 18 | 20 MHz | `attiny2313/` |
+| [ATtiny85](attiny85/) | 8 KB | 512 B | 6 | 20 MHz | `attiny85/` |
+| [ATtiny84A](attiny84a/) | 8 KB | 512 B | 12 | 20 MHz | `attiny84a/` |
+| [ATmega328](atmega328/) | 32 KB | 2 KB | 23 | 20 MHz | `atmega328/` |
+| [ATmega32](atmega32/) | 32 KB | 2 KB | 32 | 16 MHz | `atmega32/` |
 
 ### ESP / WiFi Boards
 
@@ -55,6 +64,37 @@ Each device has its own directory with detailed specifications and locally archi
 | [Spark Core (Particle)](spark-core/) | STM32F103 | WiFi (CC3000) | `spark-core/` |
 | [RedBear Blend Micro](redbear-blend-micro/) | ATmega32U4 | BLE (nRF8001) | `redbear-blend-micro/` |
 
+### PIC Microcontrollers
+
+| Chip | Flash | RAM | I/O | Clock | Directory |
+|------|-------|-----|-----|-------|-----------|
+| [PIC16F627](pic16f627/) | 1K words | 224 B | 16 | 4 MHz | `pic16f627/` |
+
+### 8051-Compatible Microcontrollers
+
+| Chip | Flash | RAM | Clock | Interface | Directory |
+|------|-------|-----|-------|-----------|-----------|
+| [STC 89C52RC](stc-89c52rc/) | 8 KB | 512 B | 35 MHz | UART ISP | `stc-89c52rc/` |
+
+### Other Microcontrollers
+
+| Chip | Architecture | Flash | RAM | Directory |
+|------|--------------|-------|-----|-----------|
+| [Zilog Z8 Encore!](zilog-z8/) | Z8 (8-bit CISC) | 8 KB | 512 B | `zilog-z8/` |
+| [Basic Stamp 2](parallax-basic-stamp-2/) | PBASIC Interpreter | 2 KB EEPROM | 32 B | `parallax-basic-stamp-2/` |
+
+### CPLDs
+
+| Device | Macrocells | I/O | Speed | Directory |
+|--------|------------|-----|-------|-----------|
+| [Xilinx XC95108](xilinx-xc95108/) | 108 | 81 | 7.5 ns | `xilinx-xc95108/` |
+
+### PLDs / GALs
+
+| Device | Type | Macrocells | I/O | Directory |
+|--------|------|------------|-----|-----------|
+| [ATF16V8B](atf16v8b/) | GAL/SPLD | 8 | 8 | `atf16v8b/` |
+
 ---
 
 ## Directory Structure
@@ -62,36 +102,42 @@ Each device has its own directory with detailed specifications and locally archi
 ```
 ├── readme.md                              # This file
 ├── PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md
-├── digilent-arty-a7-100/
-│   └── README.md
-├── digilent-arty-z7-20/
-│   └── README.md
-├── arduino-uno/
-│   └── README.md
+├── MISSING_DOCUMENTATION.md               # Tracks failed downloads
+│
+├── digilent-arty-a7-100/                  # FPGA
+├── digilent-arty-z7-20/                   # SoC (Zynq)
+│
+├── arduino-uno/                           # Arduino/AVR Boards
 ├── arduino-mega/
-│   └── README.md
 ├── arduino-nano/
-│   └── README.md
 ├── arduino-pro-mini/
-│   └── README.md
 ├── arduino-pro-micro/
-│   └── README.md
-├── attiny2313/
-│   └── README.md
-├── esp8266mod-ai-thinker/
-│   └── README.md
+│
+├── attiny2313/                            # AVR Standalone
+├── attiny85/
+├── attiny84a/
+├── atmega328/
+├── atmega32/
+│
+├── esp8266mod-ai-thinker/                 # ESP/WiFi
 ├── inland-esp32/
-│   └── README.md
 ├── esp-01/
-│   └── README.md
-├── stm32-bluepill/
-│   └── README.md
+│
+├── stm32-bluepill/                        # ARM
 ├── netduino-mini/
-│   └── README.md
-├── spark-core/
-│   └── README.md
-└── redbear-blend-micro/
-    └── README.md
+│
+├── spark-core/                            # IoT/Wireless
+├── redbear-blend-micro/
+│
+├── pic16f627/                             # PIC
+│
+├── stc-89c52rc/                           # 8051
+│
+├── zilog-z8/                              # Other MCUs
+├── parallax-basic-stamp-2/
+│
+├── xilinx-xc95108/                        # CPLD
+└── atf16v8b/                              # PLD/GAL
 ```
 
 ---
@@ -128,9 +174,22 @@ Each device has its own directory with detailed specifications and locally archi
 ## Notes
 
 - **Arduino UNO/Mega** entries cover both official boards and common clones (CH340/CH341 USB)
-- **STM32 BluePill** - Some have 128KB flash despite being marked as 64KB
+- **STM32 BluePill** - Some have 128KB flash despite being marked as 64KB; may have fake STM32 chips
 - **ESP-01** requires external USB-serial adapter for programming
-- **Netduino Mini** runs .NET Micro Framework
+- **Netduino Mini** runs .NET Micro Framework (deprecated)
+- **Inland ESP32** has unique pinout - labels on bottom of board
+- **STC 89C52RC** programs via UART (power cycle to enter ISP mode)
+- **ATF16V8B** programmable with TL866II Plus universal programmer
+- **XC95108** requires Xilinx JTAG programmer (not compatible with Altera USB Blaster)
+- **Basic Stamp 2** uses PBASIC interpreted language
+
+## Programmer Compatibility
+
+See `../Test Equipment/` for available programmers:
+- **USBasp** - All AVR (ATtiny, ATmega)
+- **TL866II Plus** - AVR, 8051, PICs, GALs, EEPROMs
+- **ST-Link V2** - STM32 BluePill
+- **USB-Serial** - ESP8266, ESP32, STC, Basic Stamp
 
 ---
 

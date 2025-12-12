@@ -139,12 +139,36 @@ The Z8 Encore! uses a single-wire debug interface (DBG pin):
 
 ## Software & Tools
 
-### Official Tools
-- **ZDS II IDE** - Zilog Developer Studio (free)
+### Official Tools (Required)
+- **ZDS II IDE** - Zilog Developer Studio (free, Windows only)
 - **Z8 Encore! Smart Cable** - USB programming/debug
 - Download from: https://www.zilog.com/software/
 
-### Development Environment
+### Open Source Tools
+
+**⚠️ No open source toolchain exists for Z8 Encore!**
+
+| Tool | Z8 Encore Support | Notes |
+|------|-------------------|-------|
+| SDCC | ❌ No | Supports Z80/Z180/eZ80, NOT Z8 Encore |
+| z88dk | ❌ No | Z80 family only |
+| GCC | ❌ No | No Z8 backend exists |
+
+The Z8 Encore uses a completely different instruction set from the Z80 family.
+Despite similar naming, they are incompatible architectures. You must use ZDS II.
+
+### Programmers & Development Kits
+
+| Part Number | Type | Price | Source |
+|-------------|------|-------|--------|
+| ZUSBZSP0100ZACG | USB Smart Cable | ~$66 | [DigiKey](https://www.digikey.com/en/products/detail/zilog/ZUSBZSP0100ZACG/13402449) |
+| ZUSBOPTSC01ZACG | Opto-isolated Smart Cable | ~$70 | [DigiKey](https://www.digikey.com/en/products/detail/zilog/ZUSBOPTSC01ZACG/269-4664-ND/1236589) |
+| Z8F64200100KITG | 64K Dev Kit + Cable | Varies | [Zilog](https://zilog.com/index.php?option=com_product&task=dev_tool_detail&DevToolKit=Z8F64200100KITG) |
+| Z8F04A08100KIT | 4K Dev Kit + Cable | Varies | [eBay](https://www.ebay.com/itm/393442692436) |
+
+**Tip:** Development kits include the Smart Cable, so you get programmer + dev board together.
+
+### Development Environment Setup
 
 1. Download ZDS II from Zilog website
 2. Install USB Smart Cable drivers
@@ -156,9 +180,9 @@ The Z8 Encore! uses a single-wire debug interface (DBG pin):
 
 ## Programming Languages
 
-- **C** - Full ANSI C support in ZDS II
+- **C** - Full ANSI C support in ZDS II (C89 standard)
 - **Assembly** - Z8 assembly language
-- **BASIC** - Some third-party support
+- **BASIC** - Some third-party support (limited)
 
 ## Example C Code
 

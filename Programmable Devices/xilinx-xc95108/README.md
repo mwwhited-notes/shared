@@ -210,15 +210,93 @@ end Behavioral;
 
 ## Software & Tools
 
-### Official Tools
+### Official Tools (Synthesis)
 - **Xilinx ISE WebPACK 14.7** - Free, last version to support XC9500
   - Download: https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/archive-ise.html
 - **iMPACT** - Programming utility (part of ISE)
 
-### Open-Source Alternatives
-- **UrJTAG** - JTAG programming
-- **xc3sprog** - Xilinx programming utility
-- **OpenOCD** - Limited CPLD support
+### Open-Source Programming Tools ✅
+
+| Tool | XC95108 Support | Notes |
+|------|-----------------|-------|
+| [**xc3sprog**](https://xc3sprog.sourceforge.net/) | ✅ Full | Programs .jed directly, recommended |
+| [OpenOCD](https://openocd.org/) | ⚠️ SVF only | Detect + SVF playback |
+| [UrJTAG](http://urjtag.org/) | ⚠️ SVF only | SVF playback |
+
+### xc3sprog (Recommended)
+
+[xc3sprog](https://xc3sprog.sourceforge.net/) can program XC9500 CPLDs directly with .jed files - no commercial programmer needed!
+
+**Compatible Hardware:**
+
+| Hardware | Cable Type | Notes |
+|----------|------------|-------|
+| **FT232H** | `ft232h` | Works great! See wiring below |
+| FT2232H | `ft2232` | Dual-channel version |
+| Raspberry Pi GPIO | `sysfsgpio` | [Direct GPIO wiring](https://anastas.io/hardware/2020/09/29/xc9500-cpld-raspberry-pi-xc3sprog.html) |
+| Bus Pirate | `bp` | Slower but works |
+| Digilent JTAG-HS2 | `jtaghs2` | Commercial option |
+
+### Programming with FT232H
+
+**Wiring (FT232H → XC95108):**
+
+| FT232H Pin | JTAG Function | XC95108 |
+|------------|---------------|---------|
+| AD0 | TCK | TCK |
+| AD1 | TDI | TDI |
+| AD2 | TDO | TDO |
+| AD3 | TMS | TMS |
+| GND | GND | GND |
+| 3.3V | VCCIO | VCCIO |
+
+**xc3sprog Commands:**
+
+```bash
+# Install xc3sprog (Linux)
+git clone https://github.com/matrix-io/xc3sprog
+cd xc3sprog && mkdir build && cd build
+cmake .. && make
+sudo make install
+
+# Detect device
+xc3sprog -c ft232h -j
+
+# Expected output:
+# JTAG loc.: 0  IDCODE: 0x59604093  Desc: XC95108
+
+# Program JEDEC file
+xc3sprog -c ft232h -v design.jed
+
+# Verify programming
+xc3sprog -c ft232h -c design.jed
+```
+
+### Open-Source Synthesis (Work in Progress)
+
+| Tool | Status | Link |
+|------|--------|------|
+| XC9500 Reverse Engineering | 🚧 WIP | [GitHub](https://github.com/anuejn/XC9500) |
+| Yosys → XC9500 | 🚧 Early | Goal: Full open source flow |
+
+The [XC9500 project](https://github.com/anuejn/XC9500) aims to create a fully open source synthesis flow from Yosys to JEDEC bitstream, but it's still early-stage (focused on XC9572XL first).
+
+**Current practical flow:**
+```
+Verilog/VHDL → ISE 14.7 (free, closed) → .jed → xc3sprog (open source)
+                                              ↑
+                                     Use FT232H or Raspberry Pi
+```
+
+### JTAG Programmers (Commercial)
+
+| Option | Price | Source |
+|--------|-------|--------|
+| Xilinx Platform Cable USB II | ~$250 | [AMD/Xilinx](https://www.xilinx.com/products/boards-and-kits/hw-usb-ii-g.html) |
+| Platform Cable Clone (DLC10) | ~$15-30 | [eBay](https://www.ebay.com/itm/124443394214) |
+| Waveshare Platform Cable | ~$25 | [Waveshare](https://www.waveshare.com/platform-cable-usb.htm) |
+
+**Note:** Clones work identically to official cables for CPLD programming.
 
 ### ISE Installation Notes
 
@@ -226,7 +304,7 @@ ISE 14.7 is the last version supporting XC9500:
 1. Download ISE WebPACK 14.7 from Xilinx archive
 2. Install on Windows 7/10 or Linux
 3. Get free WebPACK license
-4. Use iMPACT for programming
+4. Use iMPACT or xc3sprog for programming
 
 ## Common Uses
 

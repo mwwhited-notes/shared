@@ -8,7 +8,8 @@
       "WebFetch(domain:www.microcenter.com)",
       "WebFetch(domain:github.com)",
       "WebSearch",
-      "WebFetch(domain:microcontrollerslab.com)"
+      "WebFetch(domain:microcontrollerslab.com)",
+      "WebFetch(domain:www.velleman.eu)"
     ]
   }
 }

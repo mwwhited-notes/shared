@@ -67,6 +67,7 @@ Each device has its own directory with detailed specifications and locally archi
 | [Altera USB Blaster](altera-usb-blaster/) | FPGA/CPLD | Altera/Intel FPGAs, CPLDs | `altera-usb-blaster/` |
 | [ST-Link V2](st-link-v2/) | ARM/STM8 | STM32, STM8 | `st-link-v2/` |
 | [USB to ESP-01 Adapter](usb-esp01-adapter/) | ESP8266 | ESP-01 module | `usb-esp01-adapter/` |
+| [Velleman K8048RS](velleman-k8048rs/) | PIC ISP | PIC 8/14/18/28-pin | `velleman-k8048rs/` |
 
 ### Protocol Tools
 
@@ -149,6 +150,9 @@ Each device has its own directory with detailed specifications and locally archi
 ├── usb-esp01-adapter/
 │   ├── README.md
 │   └── ESP8266_Datasheet.pdf
+├── velleman-k8048rs/
+│   ├── README.md
+│   └── K8048_UserManual.pdf
 └── maxstream-xbib-u-dev/
     ├── README.md
     └── XBIB-U-DEV_UserGuide.pdf

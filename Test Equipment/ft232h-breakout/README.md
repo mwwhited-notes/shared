@@ -86,6 +86,8 @@
 ### Tools
 - **FT_PROG** (Windows) - FTDI EEPROM programmer
 - **flashrom** - Can use FT232H for SPI flash programming
+- **xc3sprog** - Programs Xilinx CPLDs (XC9500 series) via JTAG
+- **OpenOCD** - Open On-Chip Debugger (JTAG/SWD)
 
 ## Driver Setup
 
@@ -141,6 +143,47 @@ gpio.configure('ftdi://ftdi:232h/1', direction=0xFF)  # All outputs
 gpio.write(0x01)  # Set AD0 high
 gpio.write(0x00)  # Set AD0 low
 ```
+
+## CPLD/FPGA Programming (xc3sprog)
+
+The FT232H can program Xilinx XC9500 series CPLDs using xc3sprog:
+
+### Wiring (FT232H → CPLD JTAG)
+
+| FT232H Pin | JTAG Function | CPLD Pin |
+|------------|---------------|----------|
+| AD0 | TCK | TCK |
+| AD1 | TDI | TDI |
+| AD2 | TDO | TDO |
+| AD3 | TMS | TMS |
+| GND | GND | GND |
+| 3.3V | VCCIO | VCCIO |
+
+### xc3sprog Commands
+
+```bash
+# Install xc3sprog (Linux)
+git clone https://github.com/matrix-io/xc3sprog
+cd xc3sprog && mkdir build && cd build
+cmake .. && make
+sudo make install
+
+# Detect device
+xc3sprog -c ft232h -j
+
+# Program JEDEC file
+xc3sprog -c ft232h -v design.jed
+```
+
+### Supported Devices
+
+| Device | Support |
+|--------|---------|
+| XC9536 | ✅ |
+| XC9572 | ✅ |
+| XC95108 | ✅ |
+| XC95144 | ✅ |
+| XC9536XL/XC9572XL | ✅ |
 
 ## Notes
 
