@@ -56,6 +56,7 @@ Each device has its own directory with detailed specifications and locally archi
 |-------|-----|-------|-----|-------|-----------|
 | [STM32 BluePill](stm32-bluepill/) | STM32F103C8T6 | 64 KB | 20 KB | 72 MHz | `stm32-bluepill/` |
 | [Netduino Mini](netduino-mini/) | AT91SAM7X512 | 512 KB | 128 KB | 48 MHz | `netduino-mini/` |
+| [Device Solutions Tahoe II](devicesolutions-tahoe-ii/) | i.MXS (ARM920T) | 4 MB | 8 MB | 100 MHz | `devicesolutions-tahoe-ii/` |
 
 ### IoT / Wireless Boards
 
@@ -125,6 +126,7 @@ Each device has its own directory with detailed specifications and locally archi
 │
 ├── stm32-bluepill/                        # ARM
 ├── netduino-mini/
+├── devicesolutions-tahoe-ii/
 │
 ├── spark-core/                            # IoT/Wireless
 ├── redbear-blend-micro/

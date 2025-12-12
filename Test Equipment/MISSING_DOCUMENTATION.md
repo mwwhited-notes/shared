@@ -57,6 +57,18 @@ Documentation that couldn't be automatically downloaded. Check off items as manu
     2. Search "UM1075"
     3. Download requires free ST account
 
+### Velleman K8055
+- [ ] **User Manual** - USB I/O board documentation
+  - Source: https://www.velleman.eu/downloads/0/user/usermanual_k8055_uk.pdf
+  - Issue: Velleman CDN returns "Access Denied"
+  - Manual download: Visit Velleman support page, navigate to K8055
+  - Note: Assembly manual downloaded successfully
+
+- [ ] **DLL Programming Manual** - API reference
+  - Source: https://www.velleman.eu/downloads/0/software/k8055_dll_manual.pdf
+  - Issue: Same CDN access issue
+  - Manual download: Search Velleman downloads for K8055 software
+
 ---
 
 ## Completed (Manual Downloads)

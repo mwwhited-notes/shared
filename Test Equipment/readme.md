@@ -76,6 +76,12 @@ Each device has its own directory with detailed specifications and locally archi
 | [SparkFun Bus Pirate v3.6a](sparkfun-bus-pirate/) | SPI, I2C, UART, 1-Wire, JTAG | `sparkfun-bus-pirate/` |
 | [FT232H Breakout](ft232h-breakout/) | SPI, I2C, JTAG, UART, GPIO | `ft232h-breakout/` |
 
+### Data Acquisition / I/O
+
+| Model | Inputs | Outputs | Interface | Directory |
+|-------|--------|---------|-----------|-----------|
+| [Velleman K8055](velleman-k8055/) | 5 DI, 2 AI | 8 DO, 2 AO | USB | `velleman-k8055/` |
+
 ### Development Boards
 
 | Model | Purpose | Directory |
@@ -153,6 +159,9 @@ Each device has its own directory with detailed specifications and locally archi
 ├── velleman-k8048rs/
 │   ├── README.md
 │   └── K8048_UserManual.pdf
+├── velleman-k8055/
+│   ├── README.md
+│   └── K8055_UserManual.pdf
 └── maxstream-xbib-u-dev/
     ├── README.md
     └── XBIB-U-DEV_UserGuide.pdf

@@ -9,7 +9,8 @@
       "WebFetch(domain:github.com)",
       "WebSearch",
       "WebFetch(domain:microcontrollerslab.com)",
-      "WebFetch(domain:www.velleman.eu)"
+      "WebFetch(domain:www.velleman.eu)",
+      "WebFetch(domain:devicesolutions.net)"
     ]
   }
 }
