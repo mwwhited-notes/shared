@@ -146,4 +146,9 @@ Some boards have counterfeit chips:
 
 ## Local Files
 
-*Documentation to be downloaded*
+### Pinout
+![STM32 BluePill Pinout](STM32_BluePill_Pinout.jpg)
+
+### Documentation
+- `STM32F103C8_Datasheet.pdf` - Main MCU datasheet
+- `STM32_BluePill_Pinout.jpg` - Board pinout diagram

@@ -82,4 +82,10 @@ Common clone variations:
 
 ## Local Files
 
-*Documentation to be downloaded*
+### Pinout
+![Arduino UNO Pinout](Arduino_UNO_Pinout.png)
+
+### Documentation
+- `ATmega328P_Datasheet.pdf` - Main MCU datasheet
+- `Arduino_UNO_Schematic.pdf` - Board schematic
+- `CH340_Datasheet.pdf` - USB bridge datasheet (for clones)

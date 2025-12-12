@@ -130,4 +130,13 @@
 
 ## Local Files
 
-*Documentation to be downloaded*
+### Pinout
+**Note:** Pin labels are on the BOTTOM of the board. See both images:
+
+![Inland ESP32 Top View](Inland_ESP32_Pinout_Top.jpg)
+![Inland ESP32 Bottom View (Pin Labels)](Inland_ESP32_Pinout_Bottom.jpg)
+
+### Documentation
+- `ESP32_Datasheet.pdf` - ESP32 SoC datasheet
+- `Inland_ESP32_Pinout_Top.jpg` - Board top view
+- `Inland_ESP32_Pinout_Bottom.jpg` - Board bottom view with pin labels
