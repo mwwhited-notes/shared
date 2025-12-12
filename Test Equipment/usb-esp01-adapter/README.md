@@ -135,4 +135,4 @@ After programming, switch to UART mode for serial debugging:
 
 ## Local Files
 
-*No official documentation for this generic adapter - see ESP8266 docs above.*
+*Generic adapter - no official documentation. See ESP8266 docs above.*

@@ -6,7 +6,8 @@
       "WebFetch(domain:seeeddoc.github.io)",
       "WebFetch(domain:www.siliconinvestigations.com)",
       "Bash(find:*)",
-      "Bash(sort:*)"
+      "Bash(sort:*)",
+      "Bash(file:*)"
     ]
   }
 }

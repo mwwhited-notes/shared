@@ -58,15 +58,26 @@ Each device has its own directory with detailed specifications and locally archi
 
 ### Programmers
 
-| Model | Type | Supported ICs | Directory |
-|-------|------|---------------|-----------|
-| [XGecu TL866II Plus](xgecu-tl866ii-plus/) | Universal | 15,000+ | `xgecu-tl866ii-plus/` |
+| Model | Type | Targets | Directory |
+|-------|------|---------|-----------|
+| [XGecu TL866II Plus](xgecu-tl866ii-plus/) | Universal | EEPROM, Flash, MCU, GAL | `xgecu-tl866ii-plus/` |
+| [USBasp](usbasp/) | AVR ISP | ATmega, ATtiny, AT90 | `usbasp/` |
+| [Altera USB Blaster](altera-usb-blaster/) | FPGA/CPLD | Altera/Intel FPGAs, CPLDs | `altera-usb-blaster/` |
+| [ST-Link V2](st-link-v2/) | ARM/STM8 | STM32, STM8 | `st-link-v2/` |
+| [USB to ESP-01 Adapter](usb-esp01-adapter/) | ESP8266 | ESP-01 module | `usb-esp01-adapter/` |
 
 ### Protocol Tools
 
 | Model | Protocols | Directory |
 |-------|-----------|-----------|
 | [SparkFun Bus Pirate v3.6a](sparkfun-bus-pirate/) | SPI, I2C, UART, 1-Wire, JTAG | `sparkfun-bus-pirate/` |
+| [FT232H Breakout](ft232h-breakout/) | SPI, I2C, JTAG, UART, GPIO | `ft232h-breakout/` |
+
+### Development Boards
+
+| Model | Purpose | Directory |
+|-------|---------|-----------|
+| [Maxstream XBIB-U-DEV](maxstream-xbib-u-dev/) | XBee development/programming | `maxstream-xbib-u-dev/` |
 
 ---
 
@@ -119,8 +130,24 @@ Each device has its own directory with detailed specifications and locally archi
 ├── xgecu-tl866ii-plus/
 │   ├── README.md
 │   └── TL866II_UserManual.pdf
-└── sparkfun-bus-pirate/
-    └── README.md
+├── sparkfun-bus-pirate/
+│   └── README.md
+├── usbasp/
+│   └── README.md
+├── altera-usb-blaster/
+│   ├── README.md
+│   └── USB-Blaster_UserGuide.pdf
+├── st-link-v2/
+│   └── README.md
+├── ft232h-breakout/
+│   ├── README.md
+│   ├── FT232H_Datasheet.pdf
+│   └── AN_108_MPSSE_Commands.pdf
+├── usb-esp01-adapter/
+│   └── README.md
+└── maxstream-xbib-u-dev/
+    ├── README.md
+    └── XBIB-U-DEV_UserGuide.pdf
 ```
 
 ---
@@ -135,10 +162,14 @@ Each device has its own directory with detailed specifications and locally archi
 - **Universal:** sigrok/PulseView, PyVISA, NI-VISA
 
 ### Protocol Analysis & Debugging
-- **OpenOCD** - JTAG/SWD debugging
-- **AVRDUDE** - AVR programming
+- **OpenOCD** - JTAG/SWD debugging (ST-Link, FTDI, etc.)
+- **AVRDUDE** - AVR programming (USBasp, USBtiny, etc.)
 - **flashrom** - Flash chip programming
 - **pyBusPirateLite** - Bus Pirate Python library
+- **pyftdi** - Python FTDI library for FT232H
+- **stlink** - Open source ST-Link tools
+- **esptool** - ESP8266/ESP32 flashing tool
+- **XCTU** - Digi XBee configuration utility
 
 ### Cross-Platform Tools
 - **sigrok/PulseView** - Logic analyzer, oscilloscope, DMM support

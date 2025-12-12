@@ -18,8 +18,8 @@
 |--------------|-------|
 | Target MCUs | STM32 (Cortex-M), STM8 |
 | Interface | USB 2.0 Full Speed |
-| Debug Protocols | SWD, JTAG, SWIM (STM8) |
-| Connector | 20-pin IDC (0.1" pitch) |
+| Debug Protocols | SWD, SWIM (STM8) |
+| Connector | 10-pin IDC (0.1" pitch) |
 | Voltage | 3.0V to 3.6V target |
 | Max SWD Clock | 4 MHz |
 
@@ -28,45 +28,43 @@
 | Protocol | Target | Pins Used |
 |----------|--------|-----------|
 | SWD | STM32 (Cortex-M) | SWDIO, SWCLK |
-| JTAG | STM32 (Cortex-M) | TMS, TCK, TDI, TDO, TRST |
 | SWIM | STM8 | SWIM, RESET |
 
-## Pinout (20-pin IDC)
+*Note: 10-pin version does not support full JTAG (20-pin version required for JTAG).*
+
+## Pinout (10-pin IDC)
 
 ```
         ┌─────────────┐
-   VCC  │ 1        2  │  N/C
+   RST  │ 1        2  │  SWDIO
         │             │
-  TRST  │ 3        4  │  GND
+   GND  │ 3        4  │  GND
         │             │
-   TDI  │ 5        6  │  GND
+  SWIM  │ 5        6  │  SWCLK
         │             │
-   TMS  │ 7        8  │  GND
-  SWDIO │             │
+  3.3V  │ 7        8  │  3.3V
         │             │
-   TCK  │ 9       10  │  GND
- SWCLK  │             │
-        │             │
-  RTCK  │ 11      12  │  GND
-        │             │
-   TDO  │ 13      14  │  GND
-        │             │
- RESET  │ 15      16  │  GND
-        │             │
-  N/C   │ 17      18  │  GND
-        │             │
-  N/C   │ 19      20  │  GND
+  5.0V  │ 9       10  │  5.0V
         └─────────────┘
 ```
 
-## Minimum SWD Connection
+## SWD Connection (STM32)
 
-Only 4 wires needed for basic SWD:
-- Pin 1: VCC (3.3V reference)
-- Pin 7: SWDIO
-- Pin 9: SWCLK
-- Pin 15: RESET (optional but recommended)
-- Pin 4/6/8/etc: GND
+| ST-Link Pin | Target | Function |
+|-------------|--------|----------|
+| 2 | SWDIO | Data I/O |
+| 6 | SWCLK | Clock |
+| 1 | NRST | Reset (optional) |
+| 3 or 4 | GND | Ground |
+| 7 or 8 | 3.3V | Power (optional, if powering target) |
+
+## SWIM Connection (STM8)
+
+| ST-Link Pin | Target | Function |
+|-------------|--------|----------|
+| 5 | SWIM | Single-wire debug |
+| 1 | NRST | Reset |
+| 3 or 4 | GND | Ground |
 
 ## Documentation
 
@@ -133,10 +131,11 @@ ST-Link firmware can be updated using:
 
 ## Notes
 
-- Small aluminum case suggests genuine ST unit (clones usually plastic)
+- Small aluminum case with 10-pin connector
+- 10-pin version supports SWD and SWIM only (no full JTAG)
 - Supports both STM32 (ARM Cortex-M) and STM8 (proprietary core)
-- SWD is preferred over JTAG for STM32 (fewer wires, same functionality)
+- SWD is standard for STM32 debugging (JTAG rarely needed)
 
 ## Local Files
 
-- `ST-Link_V2_UserManual.pdf` - User manual (UM1075)
+*Note: ST website blocks automated downloads. Download manually from the documentation links above.*

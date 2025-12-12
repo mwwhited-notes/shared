@@ -103,4 +103,4 @@ avrdude -c usbasp -p m328p -U lfuse:w:0xFF:m -U hfuse:w:0xDE:m
 
 ## Local Files
 
-*No downloadable documentation - see links above.*
+*USBasp is open-source - see [fischl.de](https://www.fischl.de/usbasp/) for schematics and firmware.*
