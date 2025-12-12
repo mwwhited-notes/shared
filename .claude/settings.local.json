@@ -17,7 +17,8 @@
       "Bash(then echo \"✓ $dirREADME.md\")",
       "Bash(else echo \"✗ $dirREADME.md MISSING\")",
       "Bash(fi)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(find:*)"
     ]
   }
 }

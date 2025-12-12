@@ -105,6 +105,7 @@ Each device has its own directory with detailed specifications and locally archi
 | Device | Type | Macrocells | I/O | Directory |
 |--------|------|------------|-----|-----------|
 | [ATF16V8B](atf16v8b/) | GAL/SPLD | 8 | 8 | `atf16v8b/` |
+| [AMPAL22V10APC](ampal22v10/) | PAL | 10 | 10 | `ampal22v10/` |
 
 ---
 
@@ -155,7 +156,9 @@ Each device has its own directory with detailed specifications and locally archi
 ├── parallax-basic-stamp-2/
 │
 ├── xilinx-xc95108/                        # CPLD
-└── atf16v8b/                              # PLD/GAL
+│
+├── atf16v8b/                              # PLD/GAL
+└── ampal22v10/
 ```
 
 ---
@@ -189,6 +192,47 @@ Each device has its own directory with detailed specifications and locally archi
 
 ---
 
+## Programmer Compatibility
+
+Cross-reference with programmers in `../Test Equipment/`:
+
+### USBasp (AVR ISP)
+- Arduino UNO, Mega, Nano, Pro Mini, Pro Micro, Duemilanove (via ICSP)
+- ATtiny2313, ATtiny85, ATtiny84A
+- ATmega328, ATmega32
+
+### TL866II Plus (Universal)
+- ATtiny2313, ATtiny85, ATtiny84A, ATmega328, ATmega32 (socket)
+- ATF16V8B, AMPAL22V10APC (GAL/PAL)
+- PIC16F627
+- STC 89C52RC
+
+### ST-Link V2 (ARM)
+- STM32 BluePill
+
+### Altera USB Blaster (FPGA/CPLD)
+- Altera EP2C5 Mini (Cyclone II)
+
+### FT232H + xc3sprog (Xilinx CPLD)
+- Xilinx XC95108
+
+### Velleman K8048RS (PIC)
+- PIC16F627 (requires RS-232 serial port)
+
+### USB-Serial / Built-in USB
+- Arduino boards (USB bootloader)
+- ESP8266/ESP32 boards (esptool via USB)
+- D1 ESP8266 (CH340 USB)
+- ESP-01 (requires USB-ESP01 Adapter)
+
+### No Compatible Programmer (Need Additional Hardware)
+- Zilog Z8 Encore (requires Zilog USB Smart Cable)
+- Digilent Arty A7/Z7 (requires Xilinx Platform Cable or built-in JTAG via USB)
+- XBee modules (use XBIB-U-DEV or XBee Explorer via USB)
+- Netduino Mini, Tahoe II (USB deployment via .NET MF)
+
+---
+
 ## Notes
 
 - **Arduino UNO/Mega** entries cover both official boards and common clones (CH340/CH341 USB)
@@ -198,16 +242,9 @@ Each device has its own directory with detailed specifications and locally archi
 - **Inland ESP32** has unique pinout - labels on bottom of board
 - **STC 89C52RC** programs via UART (power cycle to enter ISP mode)
 - **ATF16V8B** programmable with TL866II Plus universal programmer
-- **XC95108** requires Xilinx JTAG programmer (not compatible with Altera USB Blaster)
+- **AMPAL22V10** is OTP (one-time programmable); use GAL22V10 for development, then program PAL
+- **XC95108** can be programmed with FT232H + xc3sprog (not compatible with Altera USB Blaster)
 - **Basic Stamp 2** uses PBASIC interpreted language
-
-## Programmer Compatibility
-
-See `../Test Equipment/` for available programmers:
-- **USBasp** - All AVR (ATtiny, ATmega)
-- **TL866II Plus** - AVR, 8051, PICs, GALs, EEPROMs
-- **ST-Link V2** - STM32 BluePill
-- **USB-Serial** - ESP8266, ESP32, STC, Basic Stamp
 
 ---
 
