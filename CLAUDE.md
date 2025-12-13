@@ -9,6 +9,7 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 ## Key Directories
 
 - **Programmable Devices/** - Inventory of FPGA, CPLD, MCU, and development boards with specifications and archived documentation
+- **Expansion Boards/** - Inventory of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and other dev board accessories
 - **Test Equipment/** - Lab equipment documentation (oscilloscopes, DMMs, power supplies, programmers)
 - **Notes/** - Technical notes on various topics (Kubernetes, dotnet, FPGA, vintage computing, etc.)
 - **Scripts/** - Utility scripts (JavaScript, T-SQL, dotnet, Vivado TCL, WSL configuration)
@@ -30,12 +31,19 @@ Key requirements:
 - Include pinout images and text-based pinout tables
 - Document both official tools and open-source alternatives (Arduino IDE, PlatformIO)
 
+### Expansion Boards
+Follow `Expansion Boards/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md` when:
+- Adding shields, HATs, capes, or other expansion modules
+- Documenting pin mappings and compatibility with parent boards
+- Cross-referencing with boards in `Programmable Devices/`
+
 ### Test Equipment
 Follow `Test Equipment/EQUIPMENT_DOCUMENTATION_PROTOCOL.md` for lab equipment entries.
 
 ## File Naming Conventions
 
 - Device directories: lowercase with hyphens (`arduino-uno`, `digilent-arty-a7-100`)
+- Expansion board directories: platform prefix + name (`arduino-motor-shield`, `rpi-sense-hat`, `bbb-relay-cape`)
 - Datasheets: `<Chip>_Datasheet.pdf`
 - Schematics: `<Board>_Schematic.pdf`
 - Pinouts: `<Board>_Pinout.png`
@@ -60,6 +68,7 @@ done
 ## Cross-References
 
 - `Programmable Devices/readme.md` - Device index with programmer compatibility
+- `Expansion Boards/readme.md` - Shields, HATs, capes index with compatibility info
 - `Test Equipment/readme.md` - Equipment index
 - `links.md` - Curated reference links (AI/ML, dotnet, electronics, retro computing)
 - `project-ideas.md` - Ongoing project list
