@@ -141,6 +141,4 @@ void loop() {
 
 ## Local Files
 
-*To be downloaded*
-
-- `XBee_Shield_Schematic.pdf` - Board schematic
+- `XBee_Shield_Schematic.pdf` - Arduino XBee shield schematic (141 KB)

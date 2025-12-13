@@ -127,6 +127,5 @@ dtparam=poe_fan_temp3=80000
 
 ## Local Files
 
-*To be downloaded*
-
-- `RPi_PoE_HAT_Schematic.pdf` - Board schematic (if available)
+### Pending (Manual Download Required)
+- `RPi_PoE_HAT_Schematic.pdf` - see [MISSING_DOCUMENTATION.md](../MISSING_DOCUMENTATION.md)

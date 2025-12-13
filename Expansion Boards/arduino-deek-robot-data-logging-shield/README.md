@@ -242,6 +242,5 @@ void loop() {
 
 ## Local Files
 
-*To be downloaded*
-
-- `DS1307_Datasheet.pdf` - RTC chip datasheet
+### Pending (Manual Download Required)
+- `DS1307_Datasheet.pdf` - see [MISSING_DOCUMENTATION.md](../MISSING_DOCUMENTATION.md)

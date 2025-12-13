@@ -276,6 +276,4 @@ void loop() {
 
 ## Local Files
 
-*To be downloaded*
-
-- `HD44780_Datasheet.pdf` - LCD controller datasheet
+- `HD44780_Datasheet.pdf` - LCD controller datasheet (323 KB)

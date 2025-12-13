@@ -18,7 +18,8 @@
       "Bash(else echo \"✗ $dirREADME.md MISSING\")",
       "Bash(fi)",
       "Bash(done)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(sort:*)"
     ]
   }
 }

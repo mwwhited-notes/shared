@@ -227,7 +227,7 @@ except KeyboardInterrupt:
 
 ## Local Files
 
-*To be downloaded*
+- `PCF8563_Datasheet.pdf` - RTC chip datasheet (484 KB)
 
-- `PCF8563_Datasheet.pdf` - RTC chip datasheet
-- `ARPI600_Schematic.pdf` - Board schematic
+### Pending (Manual Download Required)
+- `ARPI600_Schematic.pdf` - see [MISSING_DOCUMENTATION.md](../MISSING_DOCUMENTATION.md)

@@ -147,6 +147,4 @@ void loop() {
 
 ## Local Files
 
-*To be downloaded*
-
-- `Mega_Sensor_Shield_V2_Schematic.pdf` - Board schematic
+*No datasheets required - this is a passive breakout board with no active ICs.*

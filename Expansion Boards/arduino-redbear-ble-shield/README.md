@@ -169,7 +169,5 @@ void loop() {
 
 ## Local Files
 
-*To be downloaded*
-
-- `nRF8001_ProductSpecification.pdf` - BLE chip datasheet
-- `BLE_Shield_v2.1_Schematic.pdf` - Board schematic
+### Pending (Manual Download Required)
+- `nRF8001_ProductSpecification.pdf` - see [MISSING_DOCUMENTATION.md](../MISSING_DOCUMENTATION.md)

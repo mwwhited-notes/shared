@@ -239,6 +239,5 @@ void loop() {
 
 ## Local Files
 
-*To be downloaded*
-
-- `74HC595_Datasheet.pdf` - Shift register datasheet
+- `74HC595_Datasheet.pdf` - Shift register datasheet (2.6 MB)
+- `Multi_Function_Shield_Guide.pdf` - Hackatronics user guide (375 KB)

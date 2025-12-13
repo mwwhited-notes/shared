@@ -130,4 +130,4 @@ void loop() {
 
 ## Local Files
 
-*No datasheets available - passive breakout board*
+*No datasheets required - this is a passive breakout board with no active ICs.*

@@ -150,7 +150,7 @@ void loop() {
 
 ## Local Files
 
-*To be downloaded*
+- `PCA9685_Datasheet.pdf` - PWM controller IC datasheet (400 KB)
 
-- `PCA9685_Datasheet.pdf` - PWM controller IC datasheet
-- `Adafruit_PWM_Servo_Shield_Schematic.pdf` - Board schematic
+### Pending (Manual Download Required)
+- Board schematic - see [MISSING_DOCUMENTATION.md](../MISSING_DOCUMENTATION.md)

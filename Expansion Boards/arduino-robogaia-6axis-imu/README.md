@@ -225,7 +225,5 @@ void loop() {
 
 ## Local Files
 
-*To be downloaded*
-
-- `MPU-6050_Datasheet.pdf` - IMU sensor datasheet
-- `MPU-6050_RegisterMap.pdf` - Register documentation
+- `MPU-6050_Datasheet.pdf` - IMU sensor datasheet (1.6 MB)
+- `MPU-6050_RegisterMap.pdf` - Register documentation (900 KB)

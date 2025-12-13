@@ -181,7 +181,7 @@ void loop() {
 
 ## Local Files
 
-*To be downloaded*
+- `MAX232_Datasheet.pdf` - RS232 level shifter datasheet (1.7 MB)
 
-- `MAX232_Datasheet.pdf` - RS232 level shifter datasheet
-- `MAX485_Datasheet.pdf` - RS485 transceiver datasheet
+### Pending (Manual Download Required)
+- `MAX485_Datasheet.pdf` - see [MISSING_DOCUMENTATION.md](../MISSING_DOCUMENTATION.md)

@@ -141,6 +141,6 @@ avrdude -c avrisp -p m328p -P /dev/ttyUSB0 -b 19200 -U flash:w:firmware.hex
 
 ## Local Files
 
-*To be downloaded*
+*No IC datasheets required - this shield uses the Arduino as the programmer.*
 
-- `ISP_Shield_2.0_Schematic.pdf` - Board schematic
+For board schematic and design files, see the [Evil Mad Science Wiki](https://wiki.evilmadscientist.com/ISP_Shield).

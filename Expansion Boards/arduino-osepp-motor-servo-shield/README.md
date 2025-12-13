@@ -193,7 +193,4 @@ void loop() {
 
 ## Local Files
 
-*To be downloaded*
-
-- `L293D_Datasheet.pdf` - Motor driver IC datasheet
-- `OSEPP_Motor_Shield_Schematic.pdf` - Board schematic
+- `L293D_Datasheet.pdf` - Motor driver IC datasheet (354 KB)
