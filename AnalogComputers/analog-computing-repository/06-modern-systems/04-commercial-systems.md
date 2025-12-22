@@ -81,13 +81,13 @@ See [detailed THAT documentation](01-the-analog-thing.md)
 
 ### For Designing Analog Computers
 
-| Software | Type | Cost |
-|----------|------|------|
-| LTspice | Circuit simulation | Free |
-| TINA-TI | Circuit simulation | Free |
-| Multisim | Educational | Paid/Academic |
-| MATLAB/Simulink | System simulation | Paid |
-| Xcos (Scilab) | Block diagram | Free |
+| Software        | Type               | Cost          |
+|-----------------|--------------------|---------------|
+| LTspice         | Circuit simulation | Free          |
+| TINA-TI         | Circuit simulation | Free          |
+| Multisim        | Educational        | Paid/Academic |
+| MATLAB/Simulink | System simulation  | Paid          |
+| Xcos (Scilab)   | Block diagram      | Free          |
 
 ### Analog Computer Emulators
 
@@ -106,12 +106,12 @@ See [detailed THAT documentation](01-the-analog-thing.md)
 
 ### Common Finds
 
-| System | Era | Typical Condition |
-|--------|-----|-------------------|
-| EAI TR-10 | 1960s | May need restoration |
-| EAI TR-20 | 1960s | Often functional |
-| Heathkit EC-1 | 1960s | Educational, simple |
-| Various European | 1960s-70s | Variable |
+| System           | Era       | Typical Condition    |
+|------------------|-----------|----------------------|
+| EAI TR-10        | 1960s     | May need restoration |
+| EAI TR-20        | 1960s     | Often functional     |
+| Heathkit EC-1    | 1960s     | Educational, simple  |
+| Various European | 1960s-70s | Variable             |
 
 ### Restoration Considerations
 
@@ -140,14 +140,14 @@ See [detailed THAT documentation](01-the-analog-thing.md)
 
 ### Recommendations by Use Case
 
-| Use Case | Recommendation |
-|----------|----------------|
-| Learning basics | DIY simple circuits |
-| Education (classroom) | THAT or Comdyna |
-| Research (moderate) | THAT + expansion |
-| Research (advanced) | Analog Paradigm |
-| Professional simulation | Custom or hybrid |
-| AI acceleration | Mythic, Rain, etc. |
+| Use Case                | Recommendation      |
+|-------------------------|---------------------|
+| Learning basics         | DIY simple circuits |
+| Education (classroom)   | THAT or Comdyna     |
+| Research (moderate)     | THAT + expansion    |
+| Research (advanced)     | Analog Paradigm     | 
+| Professional simulation | Custom or hybrid    |
+| AI acceleration         | Mythic, Rain, etc.  |
 
 ## Future Trends
 
@@ -174,13 +174,13 @@ See [detailed THAT documentation](01-the-analog-thing.md)
 
 ### Industry Players
 
-| Company | Focus | Status |
-|---------|-------|--------|
-| Mythic | Analog AI inference | Production |
-| Rain Neuromorphics | Analog AI training | Development |
-| Aspinity | Voice-first analog ML | Production |
-| Lightmatter | Photonic computing | Development |
-| anabrid | Educational analog | Production |
+| Company            | Focus                 | Status      |
+|--------------------|-----------------------|-------------|
+| Mythic             | Analog AI inference   | Production  |
+| Rain Neuromorphics | Analog AI training    | Development |
+| Aspinity           | Voice-first analog ML | Production  |
+| Lightmatter        | Photonic computing    | Development |
+| anabrid            | Educational analog    | Production  |
 
 ## Procurement Considerations
 
@@ -216,13 +216,13 @@ See [detailed THAT documentation](01-the-analog-thing.md)
 
 ## Summary
 
-| System | Price Range | Primary Use |
-|--------|-------------|-------------|
-| DIY Simple | $50-200 | Learning, hobby |
-| THAT | $300-400 | Education, learning |
-| Analog Paradigm | $1000+ | Research, professional |
-| Vintage (used) | Variable | Collection, restoration |
-| AI accelerators | Enterprise | Commercial AI |
+| System          | Price Range | Primary Use             |
+|-----------------|-------------|-------------------------|
+| DIY Simple      | $50-200     | Learning, hobby         |
+| THAT            | $300-400    | Education, learning     |
+| Analog Paradigm | $1000+      | Research, professional  |
+| Vintage (used)  | Variable    | Collection, restoration |
+| AI accelerators | Enterprise  | Commercial AI           |
 
 ## Further Reading
 

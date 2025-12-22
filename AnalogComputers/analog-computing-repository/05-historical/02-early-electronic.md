@@ -23,7 +23,7 @@ The transition from mechanical to electronic analog computers in the 1940s-1960s
 ```
 Vacuum Tube Op-Amp (typical):
 ┌────────────────────────────────────┐
-│  Gain: 10,000 - 1,000,000         │
+│  Gain: 10,000 - 1,000,000          │
 │  Input impedance: ~1 MΩ            │
 │  Output: ±50V to ±100V             │
 │  Power: 10-50 Watts per channel    │
@@ -76,42 +76,42 @@ Goodyear Electronic Differential Analyzer:
 ### Major Manufacturers
 
 **United States:**
-| Company | Notable Products | Era |
-|---------|------------------|-----|
-| Electronic Associates Inc. (EAI) | PACE series, 231R | 1950s-1980s |
-| Applied Dynamics | AD-4, AD-256 | 1960s-1980s |
-| Beckman/Berkeley | EASE series | 1950s-1970s |
-| Philbrick | Op-amps, small computers | 1950s-1970s |
-| GPS Instrument | Various | 1960s-1970s |
+| Company                          | Notable Products         | Era         |
+|----------------------------------|--------------------------|-------------|
+| Electronic Associates Inc. (EAI) | PACE series, 231R        | 1950s-1980s |
+| Applied Dynamics                 | AD-4, AD-256             | 1960s-1980s |
+| Beckman/Berkeley                 | EASE series              | 1950s-1970s |
+| Philbrick                        | Op-amps, small computers | 1950s-1970s |
+| GPS Instrument                   | Various                  | 1960s-1970s |
 
 **Europe:**
-| Company | Country | Products |
-|---------|---------|----------|
-| Telefunken | Germany | RA series |
-| EAI Europe | Belgium | PACE/EAI |
-| Solartron | UK | Various |
-| Hitachi | Japan | Large systems |
+| Company    | Country | Products      |
+|------------|---------|---------------|
+| Telefunken | Germany | RA series     |
+| EAI Europe | Belgium | PACE/EAI      |
+| Solartron  | UK      | Various       |
+| Hitachi    | Japan   | Large systems |
 
 ### Typical System Architecture
 
 ```
 ┌───────────────────────────────────────────────────────────┐
 │                    PATCH PANEL                            │
-│  ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐                 │
+│  ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐ ┌─────┐                  │
 │  │ INT │ │ INT │ │ SUM │ │MULT │ │ POT │ ...              │
-│  └──●──┘ └──●──┘ └──●──┘ └──●──┘ └──●──┘                 │
+│  └──●──┘ └──●──┘ └──●──┘ └──●──┘ └──●──┘                  │
 │     │       │       │       │       │                     │
 │     └───────┴───────┴───────┴───────┘                     │
 │              PATCH CORD CONNECTIONS                       │
 ├───────────────────────────────────────────────────────────┤
 │  COEFFICIENT POTENTIOMETERS                               │
-│  [0.000] [0.000] [0.000] [0.000] [0.000] ...             │
+│  [0.000] [0.000] [0.000] [0.000] [0.000] ...              │
 ├───────────────────────────────────────────────────────────┤
 │  MODE CONTROL                                             │
-│  [RESET] [OPERATE] [HOLD] [REPOP] [TIME SCALE]           │
+│  [RESET] [OPERATE] [HOLD] [REPOP] [TIME SCALE]            │
 ├───────────────────────────────────────────────────────────┤
 │  OUTPUT DEVICES                                           │
-│  [Oscilloscope] [X-Y Plotter] [Meters] [Strip Chart]     │
+│  [Oscilloscope] [X-Y Plotter] [Meters] [Strip Chart]      │
 └───────────────────────────────────────────────────────────┘
 ```
 

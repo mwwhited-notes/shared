@@ -181,13 +181,13 @@
 
 Essential datasheets to study:
 
-| Component | Manufacturer | Key Information |
-|-----------|--------------|-----------------|
-| TL074 | TI | General purpose quad op-amp |
-| OP07 | ADI | Precision op-amp |
-| AD633 | ADI | Analog multiplier |
-| REF5010 | TI | Precision reference |
-| LM311 | TI | Comparator |
+| Component | Manufacturer | Key Information             |
+|-----------|--------------|-----------------------------|
+| TL074     | TI           | General purpose quad op-amp |
+| OP07      | ADI          | Precision op-amp            |
+| AD633     | ADI          | Analog multiplier           |
+| REF5010   | TI           | Precision reference         |
+| LM311     | TI           | Comparator                  |
 
 ## Journals
 

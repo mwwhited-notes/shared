@@ -74,11 +74,11 @@ Resistance = R × k
 
 ### Multi-Turn Potentiometers
 
-| Turns | Resolution | Linearity | Use |
-|-------|------------|-----------|-----|
-| 3-turn | ~0.5% | 0.25% | General purpose |
-| 10-turn | ~0.1% | 0.1% | Precision computing |
-| 15-turn | ~0.05% | 0.05% | High precision |
+| Turns   | Resolution | Linearity | Use                 |
+|---------|------------|-----------|---------------------|
+| 3-turn  | ~0.5%      | 0.25%     | General purpose     |
+| 10-turn | ~0.1%      | 0.1%      | Precision computing |
+| 15-turn | ~0.05%     | 0.05%     | High precision      |
 
 **10-Turn with Dial Counter:**
 ```
@@ -86,19 +86,19 @@ Resistance = R × k
     │  ╔═══════╗  │
     │  ║ 0.347 ║  │ ← Digital readout
     │  ╚═══════╝  │
-    │     ◎       │ ← 10-turn shaft
-    │   COEFF    │
+    │     ◎      │ ← 10-turn shaft
+    │   COEFF     │
     └─────────────┘
 ```
 
 ### Precision Characteristics
 
-| Type | Resolution | Linearity | Temp Coeff |
-|------|------------|-----------|------------|
-| Wirewound | 0.01% | 0.02% | 20-50 ppm/°C |
-| Cermet | 0.1% | 0.1% | 100 ppm/°C |
-| Conductive Plastic | 0.5% | 0.1% | 500 ppm/°C |
-| Carbon | 1% | 2% | 1000 ppm/°C |
+| Type               | Resolution | Linearity | Temp Coeff   |
+|--------------------|------------|-----------|--------------|
+| Wirewound          | 0.01%      | 0.02%     | 20-50 ppm/°C |
+| Cermet             | 0.1%       | 0.1%      | 100 ppm/°C   |
+| Conductive Plastic | 0.5%       | 0.1%      | 500 ppm/°C   |
+| Carbon             | 1%         | 2%        | 1000 ppm/°C  |
 
 ## Coefficient Setting Units
 
@@ -218,13 +218,13 @@ Adjust pot until null detector shows zero.
 
 For precision work, create calibration table:
 
-| Dial Reading | Actual k | Error |
-|--------------|----------|-------|
-| 0.100 | 0.1003 | +0.03% |
-| 0.200 | 0.2001 | +0.01% |
-| 0.500 | 0.5002 | +0.02% |
-| 0.800 | 0.7998 | -0.02% |
-| 1.000 | 1.0001 | +0.01% |
+| Dial Reading | Actual k | Error  |
+|--------------|----------|--------|
+| 0.100        | 0.1003   | +0.03% |
+| 0.200        | 0.2001   | +0.01% |
+| 0.500        | 0.5002   | +0.02% |
+| 0.800        | 0.7998   | -0.02% |
+| 1.000        | 1.0001   | +0.01% |
 
 ## Special Coefficient Configurations
 
@@ -294,25 +294,25 @@ Reference ──────┤ A               │
 
 ### Comparison
 
-| Parameter | Mechanical | Digital |
-|-----------|------------|---------|
-| Resolution | 0.01% (10T) | 8-12 bit (0.4%-0.02%) |
-| Setting Speed | Manual | Microseconds |
-| Repeatability | Wear dependent | Perfect |
-| Temperature | 20-50 ppm/°C | 1-100 ppm/°C |
-| Wiper current | High | Limited (1-5 mA) |
-| Power consumption | Zero | Few mW |
-| Cost | Low | Medium |
+| Parameter         | Mechanical     | Digital               |
+|-------------------|----------------|-----------------------|
+| Resolution        | 0.01% (10T)    | 8-12 bit (0.4%-0.02%) |
+| Setting Speed     | Manual         | Microseconds          |
+| Repeatability     | Wear dependent | Perfect               |
+| Temperature       | 20-50 ppm/°C   | 1-100 ppm/°C          |
+| Wiper current     | High           | Limited (1-5 mA)      |
+| Power consumption | Zero           | Few mW                |
+| Cost              | Low            | Medium                |
 
 ### Common Digital Pot ICs
 
-| Device | Resolution | Interface | Resistance |
-|--------|------------|-----------|------------|
-| MCP4131 | 7-bit | SPI | 5k-100k |
-| AD5290 | 8-bit | SPI | 10k-50k |
-| AD5241 | 8-bit | I2C | 10k-1M |
-| AD5270 | 10-bit | SPI | 20k-50k |
-| AD5293 | 10-bit | SPI | 20k-100k |
+| Device  | Resolution | Interface | Resistance |
+|---------|------------|-----------|------------|
+| MCP4131 | 7-bit      | SPI       | 5k-100k    |
+| AD5290  | 8-bit      | SPI       | 10k-50k    |
+| AD5241  | 8-bit      | I2C       | 10k-1M     |
+| AD5270  | 10-bit     | SPI       | 20k-50k    |
+| AD5293  | 10-bit     | SPI       | 20k-100k   |
 
 ## Practical Considerations
 
@@ -332,12 +332,12 @@ Allow potentiometers to stabilize:
 
 ### Environmental Effects
 
-| Factor | Effect | Mitigation |
-|--------|--------|------------|
-| Temperature | Resistance drift | Use low TC pots, temperature control |
-| Humidity | Resistance change | Sealed/conformal coated units |
-| Vibration | Setting shifts | Locking mechanisms |
-| Age | Wear, oxidation | Regular recalibration |
+| Factor      | Effect            | Mitigation                           |
+|-------------|-------------------|--------------------------------------|
+| Temperature | Resistance drift  | Use low TC pots, temperature control |
+| Humidity    | Resistance change | Sealed/conformal coated units        |
+| Vibration   | Setting shifts    | Locking mechanisms                   |
+| Age         | Wear, oxidation   | Regular recalibration                |
 
 ### Noise
 
