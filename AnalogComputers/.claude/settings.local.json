@@ -8,7 +8,10 @@
       "Bash(wget:*)",
       "WebFetch(domain:anabrid.com)",
       "Bash(ls:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(while read d)",
+      "Bash(done)",
+      "Bash(for d in /current/src/analog-computing-repository/12-analog-computer-docs/*/)"
     ]
   }
 }
