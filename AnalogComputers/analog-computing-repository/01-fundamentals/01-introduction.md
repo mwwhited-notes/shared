@@ -138,6 +138,14 @@ To begin learning analog computing:
 5. **Build Simple Circuits**: Start with an inverting amplifier
 6. **Solve a Simple ODE**: First-order RC circuit as integrator
 
+## References
+
+[^1]: [Analog Computer - Wikipedia](https://en.wikipedia.org/wiki/Analog_computer)
+[^2]: [Operational Amplifier History - Computer History Museum](https://www.computerhistory.org/revolution/analog-computers/3/143)
+[^3]: Ulmann, Bernd. *Analog Computing*. Oldenbourg Wissenschaftsverlag, 2013.
+[^4]: [The Revival of Analog Computing - Nature](https://www.nature.com/articles/s41928-020-0469-1)
+[^5]: [Electronic Differential Analyzer - Engineering LibreTexts](https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Analog_Computing)
+
 ## Further Reading
 
 - See [Operational Amplifier Basics](02-op-amp-basics.md) for circuit fundamentals
@@ -146,4 +154,4 @@ To begin learning analog computing:
 
 ---
 
-*"The analog computer is not obsolete; it has merely been forgotten."* — Bernd Ulmann
+*"The analog computer is not obsolete; it has merely been forgotten."* — Bernd Ulmann[^3]

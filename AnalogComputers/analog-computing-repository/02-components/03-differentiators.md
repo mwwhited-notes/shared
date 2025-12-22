@@ -315,6 +315,13 @@ Then dx/dt is already available!
 
 **Key Takeaway:** In analog computing, avoid differentiators when possible by restructuring problems to use integration instead.
 
+## References
+
+[^1]: [Differentiator - Wikipedia](https://en.wikipedia.org/wiki/Differentiator)
+[^2]: [Op-Amp Differentiator - Electronics Tutorials](https://www.electronics-tutorials.ws/opamp/opamp_7.html)
+[^3]: [Practical Differentiator Design - All About Circuits](https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/differentiator-integrator-circuits/)
+[^4]: [High-Frequency Compensation - Analog Devices MT-049](https://www.analog.com/media/en/training-seminars/tutorials/MT-049.pdf)
+
 ## Further Reading
 
 - [Integrators](02-integrators.md)

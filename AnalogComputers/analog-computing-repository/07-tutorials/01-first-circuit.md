@@ -277,6 +277,13 @@ See [Solving a Simple ODE Tutorial](02-simple-ode.md)
 | Wire | - | 22 AWG | Solid core |
 | Power supply | 1 | ±12V | Current limited |
 
+## References
+
+[^1]: [Operational Amplifier - Wikipedia](https://en.wikipedia.org/wiki/Operational_amplifier)
+[^2]: [Inverting Amplifier Tutorial - Electronics Tutorials](https://www.electronics-tutorials.ws/opamp/opamp_2.html)
+[^3]: [TL071 Datasheet - Texas Instruments](https://www.ti.com/lit/ds/symlink/tl071.pdf)
+[^4]: [Breadboard Basics - SparkFun](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)
+
 ## Further Reading
 
 - [Op-Amp Basics](../01-fundamentals/02-op-amp-basics.md)

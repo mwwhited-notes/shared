@@ -321,6 +321,15 @@ Before building, simulate with:
 - Use power supply current limiting
 - Don't exceed op-amp ratings
 
+## References
+
+[^1]: [LTspice - Analog Devices](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
+[^2]: [Falstad Circuit Simulator](https://www.falstad.com/circuit/)
+[^3]: Ulmann, Bernd. *Analog Computing*. Oldenbourg Wissenschaftsverlag, 2013.
+[^4]: Horowitz, Paul and Hill, Winfield. *The Art of Electronics*. 3rd Edition, Cambridge University Press, 2015.
+[^5]: [AD633 Analog Multiplier Datasheet - Analog Devices](https://www.analog.com/media/en/technical-documentation/data-sheets/AD633.pdf)
+[^6]: [Op-Amp Applications Handbook - Analog Devices](https://www.analog.com/en/education/education-library/op-amp-applications-handbook.html)
+
 ## Resources
 
 ### Online Communities
@@ -332,9 +341,9 @@ Before building, simulate with:
 
 ### Books
 
-- "Analog and Hybrid Computing" by Bernd Ulmann
-- "Op-Amp Applications Handbook" by Analog Devices
-- "The Art of Electronics" by Horowitz & Hill
+- "Analog and Hybrid Computing" by Bernd Ulmann[^3]
+- "Op-Amp Applications Handbook" by Analog Devices[^6]
+- "The Art of Electronics" by Horowitz & Hill[^4]
 
 ## Further Reading
 

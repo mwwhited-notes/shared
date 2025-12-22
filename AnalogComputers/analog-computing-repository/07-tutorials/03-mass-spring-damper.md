@@ -323,6 +323,13 @@ Coupled oscillators:
 4. **Resonance occurs when forcing frequency = natural frequency**
 5. **Parameter changes have immediate, visible effect**
 
+## References
+
+[^1]: [Harmonic Oscillator - Wikipedia](https://en.wikipedia.org/wiki/Harmonic_oscillator)
+[^2]: [Mass-Spring-Damper Model - Wikipedia](https://en.wikipedia.org/wiki/Mass-spring-damper_model)
+[^3]: [Damping Ratio - Wikipedia](https://en.wikipedia.org/wiki/Damping_ratio)
+[^4]: [Second-Order Systems - MIT OpenCourseWare](https://ocw.mit.edu/courses/mechanical-engineering/)
+
 ## Further Reading
 
 - [ODE Solving](../03-mathematics/03-ode-solving.md)

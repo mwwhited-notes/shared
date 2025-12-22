@@ -255,6 +255,14 @@ For building analog computers:
 5. **REF02** (5V reference)
 6. **LM311** (comparator)
 
+## References
+
+[^1]: [Operational Amplifier - Wikipedia](https://en.wikipedia.org/wiki/Operational_amplifier)
+[^2]: [Op-Amp Selection Guide - Texas Instruments](https://www.ti.com/lit/sg/slyt050/slyt050.pdf)
+[^3]: [Zero-Drift Amplifiers - Analog Devices](https://www.analog.com/en/products/amplifiers/operational-amplifiers/zero-drift-amplifiers.html)
+[^4]: [TL07x Datasheet - Texas Instruments](https://www.ti.com/lit/ds/symlink/tl071.pdf)
+[^5]: [OP07 Datasheet - Analog Devices](https://www.analog.com/media/en/technical-documentation/data-sheets/op07.pdf)
+
 ## Further Reading
 
 - [Op-Amp Basics](../01-fundamentals/02-op-amp-basics.md)

@@ -313,6 +313,12 @@ If f(t) = step function:
 - [Oscillators](04-oscillators.md) - Harmonic motion
 - [Chaos and Attractors](05-chaos-attractors.md) - Nonlinear systems
 
+## References
+
+[^1]: [RC Time Constant - Wikipedia](https://en.wikipedia.org/wiki/RC_time_constant)
+[^2]: [First-Order ODE - Wolfram MathWorld](https://mathworld.wolfram.com/OrdinaryDifferentialEquationFirstOrder.html)
+[^3]: [Op-Amp Integrator - Electronics Tutorials](https://www.electronics-tutorials.ws/opamp/opamp_6.html)
+
 ## Further Reading
 
 - [Integrators](../02-components/02-integrators.md)

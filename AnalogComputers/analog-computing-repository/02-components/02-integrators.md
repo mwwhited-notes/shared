@@ -421,6 +421,14 @@ Cutoff: fc = 1/(2πRfC)
 | Initial condition | Vout(0) = -Vic | Inverted |
 | Summing | Σ(Vi/Ri)/C | Weighted integration |
 
+## References
+
+[^1]: [Op-Amp Integrator - Wikipedia](https://en.wikipedia.org/wiki/Op_amp_integrator)
+[^2]: [Miller Integrator - Electronics Tutorials](https://www.electronics-tutorials.ws/opamp/opamp_6.html)
+[^3]: [Integrator Circuit - All About Circuits](https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/differentiator-integrator-circuits/)
+[^4]: [Analog Integrator Design - Analog Devices](https://www.analog.com/media/en/training-seminars/tutorials/MT-049.pdf)
+[^5]: [Capacitor Selection for Analog Circuits - Kemet](https://www.kemet.com/en/us/technical-resources/film-capacitor-selection-guide.html)
+
 ## Further Reading
 
 - [Differentiators](03-differentiators.md)

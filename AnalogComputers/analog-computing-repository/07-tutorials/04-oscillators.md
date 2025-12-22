@@ -369,6 +369,13 @@ With R = 100kΩ: C = 1.59μF
 4. Set ICs: INT1 = 0V, INT2 = 5V
 5. Observe sine wave on oscilloscope
 
+## References
+
+[^1]: [Electronic Oscillator - Wikipedia](https://en.wikipedia.org/wiki/Electronic_oscillator)
+[^2]: [Wien Bridge Oscillator - Wikipedia](https://en.wikipedia.org/wiki/Wien_bridge_oscillator)
+[^3]: [Phase-Shift Oscillator - Wikipedia](https://en.wikipedia.org/wiki/Phase-shift_oscillator)
+[^4]: [Relaxation Oscillator - Electronics Tutorials](https://www.electronics-tutorials.ws/waveforms/generators.html)
+
 ## Further Reading
 
 - [Mass-Spring-Damper](03-mass-spring-damper.md)

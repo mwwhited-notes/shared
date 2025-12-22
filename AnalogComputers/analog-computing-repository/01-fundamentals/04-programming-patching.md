@@ -318,6 +318,13 @@ Scope Ch2: INT1 output (x')
 6. **Document as you go**: Update patch sheet immediately
 7. **Save working setups**: Take photos of successful patches
 
+## References
+
+[^1]: [Analog Computer Programming - Wikipedia](https://en.wikipedia.org/wiki/Analog_computer#Programming)
+[^2]: Korn, Granino A. and Korn, Theresa M. *Electronic Analog and Hybrid Computers*. McGraw-Hill, 1972.
+[^3]: [Patching Analog Computers - anabrid wiki](https://the-analog-thing.org/wiki/)
+[^4]: [Kelvin Feedback - Engineering Electromagnetics](https://www.analog.com/en/technical-articles/understand-kelvin-connections.html)
+
 ## Further Reading
 
 - [Scaling and Normalization](05-scaling.md)

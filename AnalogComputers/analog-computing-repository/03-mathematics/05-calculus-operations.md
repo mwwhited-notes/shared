@@ -299,6 +299,13 @@ For integration over microseconds/milliseconds:
 4. Consider restructuring problem to avoid
 5. Use only when absolutely necessary
 
+## References
+
+[^1]: [Integration - Wikipedia](https://en.wikipedia.org/wiki/Integral)
+[^2]: [Analog Integration Techniques - Analog Devices](https://www.analog.com/media/en/training-seminars/tutorials/MT-049.pdf)
+[^3]: [Op-Amp Integrator - Electronics Tutorials](https://www.electronics-tutorials.ws/opamp/opamp_6.html)
+[^4]: Korn, Granino A. and Korn, Theresa M. *Electronic Analog and Hybrid Computers*. McGraw-Hill, 1972.
+
 ## Further Reading
 
 - [Integrators](../02-components/02-integrators.md)

@@ -297,6 +297,14 @@ Always use decoupling capacitors:
 6. **Allow warm-up time** (10-30 minutes) for best accuracy
 7. **Check for oscillation** - unwanted high-frequency oscillation is common
 
+## References
+
+[^1]: [Operational Amplifier - Wikipedia](https://en.wikipedia.org/wiki/Operational_amplifier)
+[^2]: [Op-Amp Basics - Analog Devices](https://www.analog.com/en/education/landing-pages/003/beginners-guide-to-op-amps.html)
+[^3]: [Op-Amp History - Computer History Museum](https://www.computerhistory.org/revolution/analog-computers/3/156)
+[^4]: Jung, Walter G. *Op Amp Applications Handbook*. Analog Devices, 2005.
+[^5]: [TL07x Datasheet - Texas Instruments](https://www.ti.com/lit/ds/symlink/tl071.pdf)
+
 ## Further Reading
 
 - [Summers and Inverters](../02-components/01-summers-inverters.md)

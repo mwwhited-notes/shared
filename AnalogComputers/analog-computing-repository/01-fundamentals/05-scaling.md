@@ -322,6 +322,13 @@ For x² term: 1/[x]² = 1/25 = 0.04 ✓
 
 All coefficients are in range!
 
+## References
+
+[^1]: Korn, Granino A. and Korn, Theresa M. *Electronic Analog and Hybrid Computers*. McGraw-Hill, 1972.
+[^2]: [Scaling in Analog Computing - THE Analog Thing Wiki](https://the-analog-thing.org/wiki/index.php?title=Scaling)
+[^3]: Ulmann, Bernd. *Analog Computing*. Oldenbourg Wissenschaftsverlag, 2013.
+[^4]: [Dynamic Range - Wikipedia](https://en.wikipedia.org/wiki/Dynamic_range)
+
 ## Further Reading
 
 - [Programming and Patching](04-programming-patching.md)

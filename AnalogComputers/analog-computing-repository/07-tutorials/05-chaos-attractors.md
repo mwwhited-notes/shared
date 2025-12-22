@@ -366,11 +366,15 @@ d²x/dt² + δ·dx/dt + αx + βx³ = γcos(ωt)
 
 Shows chaos in driven system.
 
-## Resources
+## References
 
-- [Analog Computer Chaos - Bernd Ulmann](https://analogparadigm.com/)
-- Edward Lorenz, "Deterministic Nonperiodic Flow" (1963)
-- [Chua's Circuit - Scholarpedia](http://scholarpedia.org/article/Chua_circuit)
+[^1]: [Lorenz System - Wikipedia](https://en.wikipedia.org/wiki/Lorenz_system)
+[^2]: [Chaos Theory - Wikipedia](https://en.wikipedia.org/wiki/Chaos_theory)
+[^3]: [Van der Pol Oscillator - Wikipedia](https://en.wikipedia.org/wiki/Van_der_Pol_oscillator)
+[^4]: [Chua's Circuit - Scholarpedia](http://scholarpedia.org/article/Chua_circuit)
+[^5]: [Rössler Attractor - Wikipedia](https://en.wikipedia.org/wiki/R%C3%B6ssler_attractor)
+[^6]: Lorenz, Edward N. "Deterministic Nonperiodic Flow." *Journal of the Atmospheric Sciences* 20.2 (1963): 130-141.
+[^7]: [Analog Computer Chaos - Analog Paradigm](https://analogparadigm.com/)
 
 ## Further Reading
 

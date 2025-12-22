@@ -390,6 +390,14 @@ Analog: Weighted summer + sigmoid function generator
 4. **Repeatability**: Unit-to-unit variation
 5. **Complexity**: Difficult for adaptive algorithms
 
+## References
+
+[^1]: [Active Filter - Wikipedia](https://en.wikipedia.org/wiki/Active_filter)
+[^2]: [State Variable Filter - Wikipedia](https://en.wikipedia.org/wiki/State_variable_filter)
+[^3]: [Phase-Locked Loop - Wikipedia](https://en.wikipedia.org/wiki/Phase-locked_loop)
+[^4]: [Analog Filter Design - Texas Instruments](https://www.ti.com/lit/an/sloa049d/sloa049d.pdf)
+[^5]: [Active Filter Design Techniques - TI SLOA096](https://www.ti.com/lit/an/sloa096/sloa096.pdf)
+
 ## Further Reading
 
 - [Op-Amp Basics](../01-fundamentals/02-op-amp-basics.md)

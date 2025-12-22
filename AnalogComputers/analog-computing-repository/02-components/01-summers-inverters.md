@@ -356,6 +356,13 @@ x3 ──[pot:c]──[INV]─┘
 | Summer | Σ | Add (inverted) | Vout = -(V1+V2+...) |
 | Weighted Sum | Σ | Weighted add | Vout = -(a·V1+b·V2+...) |
 
+## References
+
+[^1]: [Summing Amplifier - Wikipedia](https://en.wikipedia.org/wiki/Summing_amplifier)
+[^2]: [Inverting Amplifier - Electronics Tutorials](https://www.electronics-tutorials.ws/opamp/opamp_2.html)
+[^3]: [Summing Amplifier - All About Circuits](https://www.allaboutcircuits.com/textbook/semiconductors/chpt-8/summing-amplifier/)
+[^4]: [Op-Amp Applications - Texas Instruments](https://www.ti.com/lit/an/sloa097/sloa097.pdf)
+
 ## Further Reading
 
 - [Integrators](02-integrators.md)

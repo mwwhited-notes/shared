@@ -310,6 +310,13 @@ Typical: 1-3 significant figures
 | √a | dx/dt = -(x²-a) | 1 INT, 1 MULT |
 | General f(x)=0 | dx/dt = -f(x) | Depends on f |
 
+## References
+
+[^1]: [Gradient Descent - Wikipedia](https://en.wikipedia.org/wiki/Gradient_descent)
+[^2]: [Newton's Method - Wikipedia](https://en.wikipedia.org/wiki/Newton%27s_method)
+[^3]: [Analog Solution of Algebraic Equations - MIT](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/)
+[^4]: Karplus, Walter J. *Analog Simulation: Solution of Field Problems*. McGraw-Hill, 1958.
+
 ## Further Reading
 
 - [Ordinary Differential Equations](03-ode-solving.md)

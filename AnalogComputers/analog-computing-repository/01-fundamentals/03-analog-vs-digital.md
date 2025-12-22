@@ -286,6 +286,13 @@ The key insight: **use the right tool for each part of the problem**.
 | Cost for simple tasks   | X                |                   |
 | Cost for complex tasks  |                  | X                 |
 
+## References
+
+[^1]: [Analog Computer - Wikipedia](https://en.wikipedia.org/wiki/Analog_computer)
+[^2]: [Neuromorphic Computing - Nature Electronics](https://www.nature.com/subjects/neuromorphic-computing)
+[^3]: [Analog vs Digital Signals - Electronics Tutorials](https://www.electronics-tutorials.ws/waveforms/waveforms1.html)
+[^4]: [Hybrid Computer - Wikipedia](https://en.wikipedia.org/wiki/Hybrid_computer)
+
 ## Further Reading
 
 - [Hybrid Analog-Digital Systems](../05-historical/03-hybrid-systems.md)
