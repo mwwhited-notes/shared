@@ -143,13 +143,13 @@ High accuracy but limited bandwidth.
 ```
          ┌────────────────────┐
          │                    │
-   Vx ───┤ X1            OUT ├───┬── Vout = (X1-X2)(Y1-Y2)/10 + Z
-         │              (+V) ├───│
-   GND ──┤ X2                │   │
-         │      AD633        │   │
-   Vy ───┤ Y1            (-V)├───┘
+   Vx ───┤ X1             OUT ├───┬── Vout = (X1-X2)(Y1-Y2)/10 + Z
+         │               (+V) ├───│
+   GND ──┤ X2                 │   │
+         │      AD633         │   │
+   Vy ───┤ Y1             (-V)├───┘
          │                    │
-   GND ──┤ Y2              Z ├─── GND (or offset)
+   GND ──┤ Y2               Z ├─── GND (or offset)
          │                    │
          └────────────────────┘
 
@@ -167,8 +167,8 @@ A multiplier in the feedback loop of an op-amp performs division[^6]:
 ```
             ┌─────────────────────────┐
             │                         │
-            │   ┌──────┐             │
-            │   │      ├─────────────┘
+            │   ┌──────┐              │
+            │   │      ├──────────────┘
             └───┤ MULT │
                 │      ├──┐
     Vy ─────────┤      │  │
@@ -225,8 +225,8 @@ Use squarer in feedback loop:
 ```
             ┌─────────────────────────┐
             │                         │
-            │   ┌──────┐             │
-            └───┤ MULT ├──┬──────────┘
+            │   ┌──────┐              │
+            └───┤ MULT ├──┬───────────┘
                 │      │  │
             ┌───┤      │  │
             │   └──────┘  │
@@ -294,13 +294,13 @@ Vin ───────┘
 
 ### Error Sources
 
-| Source | Typical Error | Notes |
-|--------|---------------|-------|
-| Scale factor | 0.1-2% | Can be trimmed |
-| Offset | 1-50 mV | Temperature dependent |
-| Nonlinearity | 0.1-1% | Inherent in technique |
-| Feedthrough | 0.1-1% | X input at Y=0 |
-| Temperature | 50-500 ppm/°C | Affects all parameters |
+| Source       | Typical Error | Notes                  |
+|--------------|---------------|------------------------|
+| Scale factor | 0.1-2%        | Can be trimmed         |
+| Offset       | 1-50 mV       | Temperature dependent  |
+| Nonlinearity | 0.1-1%        | Inherent in technique  |
+| Feedthrough  | 0.1-1%        | X input at Y=0         |
+| Temperature  | 50-500 ppm/°C | Affects all parameters |
 
 ### Improving Accuracy
 

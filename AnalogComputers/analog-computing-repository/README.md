@@ -61,6 +61,19 @@ A comprehensive collection of documents, research, and training materials on ana
 - [Bibliography and Further Reading](08-references/04-bibliography.md)
 - [Online Resources and Communities](08-references/05-online-resources.md)
 
+### 9. Component Datasheets
+- [Datasheets Index](09-datasheets/README.md)
+- [TL074 JFET Op-Amp](09-datasheets/01-tl074.md)
+- [OP07 Precision Op-Amp](09-datasheets/02-op07.md)
+- [AD633 Analog Multiplier](09-datasheets/03-ad633.md)
+- [LM741 General Purpose Op-Amp](09-datasheets/04-lm741.md)
+
+### 10. Application Notes
+- [Application Notes Index](10-application-notes/README.md)
+- [TI Handbook of Op-Amp Applications (SBOA092B)](10-application-notes/01-ti-sboa092b.md)
+- [Analog Devices Multiplier Applications](10-application-notes/02-adi-multipliers.md)
+- [Anabrid THE Analog Thing Guide](10-application-notes/03-anabrid-that.md)
+
 ---
 
 ## About This Repository
