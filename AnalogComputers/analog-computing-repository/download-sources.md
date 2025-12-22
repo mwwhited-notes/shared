@@ -198,6 +198,83 @@ This document tracks the sources used to download PDFs, organized by reliability
 - Some Caltech links (SSL certificate issues) - use wget --no-check-certificate
 - Systron-Donner Design_of_an_Analog_Computer_1966.pdf on bitsavers (returned HTML)
 
+### Biomedical/University Sources
+- **University of Washington**: faculty.washington.edu - EEG signal processing textbook
+- **Roberto Merletti**: robertomerletti.it - EMG detection tutorials
+- **MSU**: egr.msu.edu - ECG circuit design projects
+- **Stanford**: web.stanford.edu - ECG lab projects
+- **Oxford**: robots.ox.ac.uk - ECG instrumentation lectures
+- **Northeastern**: ece.northeastern.edu - ECG lab manuals
+- **Files Downloaded**:
+  - eeg-signal-processing.pdf
+  - emg-tutorial-merletti.pdf
+  - msu-ecg-circuit-design.pdf
+  - stanford-ecg-project.pdf
+  - oxford-ecg-instrumentation.pdf
+  - northeastern-ecg-lab.pdf
+
+### Cambridge University
+- **Base URL**: `https://www.cl.cam.ac.uk/techreports/`
+- **Content**: Technical reports including inertial navigation
+- **Files Downloaded**:
+  - cambridge-inertial-navigation.pdf (UCAM-CL-TR-696)
+
+### ICTP (International Centre for Theoretical Physics)
+- **Base URL**: `https://indico.ictp.it/`
+- **Content**: Scientific conference materials
+- **Files Downloaded**:
+  - ictp-inertial-navigation.pdf
+
+### UCL Discovery
+- **Base URL**: `https://discovery.ucl.ac.uk/`
+- **Content**: Academic research papers
+- **Files Downloaded**:
+  - antikythera-cosmos-model-2021.pdf (Nature paper)
+
+### ArXiv
+- **Base URL**: `https://arxiv.org/pdf/`
+- **Content**: Preprint papers
+- **Files Downloaded**:
+  - antikythera-reconstruction-arxiv.pdf
+
+### NavSoft
+- **Base URL**: `http://navsoft.com/`
+- **Content**: Celestial navigation tutorials
+- **Files Downloaded**:
+  - celestial-navigation-tutorial.pdf
+
+### BluewaterMiles
+- **Base URL**: `https://bluewatermiles.com/docs/`
+- **Content**: Sailing and navigation resources
+- **Files Downloaded**:
+  - celestial-navigation-sextant.pdf
+
+### Copernicus Publications
+- **Base URL**: `https://hgss.copernicus.org/`
+- **Content**: History of Geo- and Space Sciences journal
+- **Files Downloaded**:
+  - liverpool-tide-machines.pdf
+
+### ASME
+- **Base URL**: `https://www.asme.org/getmedia/`
+- **Content**: Engineering landmarks and history
+- **Files Downloaded**:
+  - asme-antikythera-landmark.pdf
+
+### ASEE (American Society for Engineering Education)
+- **Base URL**: `https://peer.asee.org/`
+- **Content**: Engineering education papers
+- **Files Downloaded**:
+  - asee-pid-experiment.pdf
+
+### Keysight
+- **Base URL**: `https://www.keysight.com/us/en/assets/`
+- **Content**: Application notes and technical documentation
+- **Files Downloaded**:
+  - keysight-dyno-testing.pdf
+
+---
+
 ## Search Strategies by Topic
 
 ### Flight Simulation / Aerospace
@@ -223,6 +300,30 @@ This document tracks the sources used to download PDFs, organized by reliability
 1. NTRS for aerospace/nuclear applications
 2. NOAA for tidal prediction
 3. University repositories for specific topics
+
+### Biomedical Signal Processing (ECG/EEG/EMG)
+1. University course materials (MSU, Stanford, Oxford, Northeastern)
+2. Roberto Merletti's publications for EMG
+3. Analog Devices datasheets (AD8232 for ECG)
+4. Kaiser/Premera medical policies for IONM
+
+### Navigation Computing
+1. Cambridge tech reports for INS fundamentals
+2. NavSoft for celestial navigation
+3. Maritime.org for Navy navigation manuals
+4. ICTP conference materials
+
+### Historical Computing (Antikythera, Tide Machines)
+1. UCL Discovery for Nature papers
+2. ArXiv for reconstruction papers
+3. ASME for engineering landmarks
+4. Copernicus journals for history of science
+
+### Economic Computing (MONIAC)
+1. Reserve Bank of New Zealand bulletins
+2. University of Melbourne collections
+3. Open University research outputs
+- **Note**: Many MONIAC PDFs blocked - try archive.org mirrors
 
 ## Download Commands
 

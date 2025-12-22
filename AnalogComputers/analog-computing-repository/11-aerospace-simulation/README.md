@@ -2,16 +2,43 @@
 
 This folder contains PDF documentation related to analog computer applications in aerospace, defense, and scientific simulation. These documents cover flight simulation, spacecraft guidance, fire control systems, and other practical applications of analog computing.
 
-## Contents (47 PDFs, 226MB)
+## Contents (52 PDFs, 230MB)
 
-### NASA Flight Simulation History
+The `pdfs/` subfolder contains documents organized by category:
+
+```
+pdfs/
+├── nasa-history/          (2 files)
+├── apollo-saturn/         (7 files)
+├── space-shuttle/         (2 files)
+├── reentry-vehicles/      (4 files)
+├── aircraft-simulation/   (8 files)
+├── helicopter-vtol/       (3 files)
+├── missile-guidance/      (3 files)
+├── fire-control/          (6 files)
+├── orbital-mechanics/     (2 files)
+├── inertial-navigation/   (2 files)
+├── celestial-navigation/  (3 files)
+├── hybrid-computing/      (6 files)
+└── practical-applications/(4 files)
+```
+
+---
+
+## nasa-history/
+
+NASA Flight Simulation History
 
 | File | Description |
 |------|-------------|
 | nasa-black-magic-gremlins.pdf | "Black Magic and Gremlins" - History of analog flight simulation at NASA |
 | nasa-computers-take-flight.pdf | Overview of computers in aerospace from NASA |
 
-### Apollo/Saturn Program
+---
+
+## apollo-saturn/
+
+Apollo/Saturn Program
 
 | File | Description |
 |------|-------------|
@@ -23,14 +50,22 @@ This folder contains PDF documentation related to analog computer applications i
 | ntrs-lunar-module-docking-sim.pdf | LM docking simulation with Command Module |
 | ntrs-visual-simulation-lunar.pdf | Visual simulation of lunar operations |
 
-### Space Shuttle
+---
+
+## space-shuttle/
+
+Space Shuttle
 
 | File | Description |
 |------|-------------|
 | ntrs-shuttle-gnc-equations.pdf | Space Shuttle GNC equations |
 | ntrs-shuttle-avionics-system.pdf | Space Shuttle avionics system overview |
 
-### Reentry Vehicles
+---
+
+## reentry-vehicles/
+
+Reentry Vehicles
 
 | File | Description |
 |------|-------------|
@@ -39,7 +74,11 @@ This folder contains PDF documentation related to analog computer applications i
 | ntrs-optimum-reentry-trajectories.pdf | Optimum reentry trajectory calculations |
 | ntrs-spacecraft-reentry-simulation.pdf | Spacecraft reentry simulation program |
 
-### Aircraft Simulation
+---
+
+## aircraft-simulation/
+
+Aircraft Simulation
 
 | File | Description |
 |------|-------------|
@@ -52,7 +91,11 @@ This folder contains PDF documentation related to analog computer applications i
 | aerostudents-flight-dynamics.pdf | AeroStudents flight dynamics summary |
 | autopilot-control-system.pdf | Autopilot control system fundamentals |
 
-### Helicopter/VTOL Simulation
+---
+
+## helicopter-vtol/
+
+Helicopter/VTOL Simulation
 
 | File | Description |
 |------|-------------|
@@ -60,7 +103,11 @@ This folder contains PDF documentation related to analog computer applications i
 | ntrs-single-rotor-helicopter-model.pdf | Single rotor helicopter mathematical model |
 | ntrs-vtol-rate-control-simulator.pdf | VTOL rate control system simulator |
 
-### Missile Guidance
+---
+
+## missile-guidance/
+
+Missile Guidance
 
 | File | Description |
 |------|-------------|
@@ -68,7 +115,11 @@ This folder contains PDF documentation related to analog computer applications i
 | dtic-missile-autopilot-models.pdf | Missile autopilot models |
 | jhuapl-6dof-missile-simulation.pdf | JHUAPL 6-DOF missile simulation |
 
-### Fire Control Systems
+---
+
+## fire-control/
+
+Fire Control Systems
 
 | File | Description |
 |------|-------------|
@@ -79,14 +130,45 @@ This folder contains PDF documentation related to analog computer applications i
 | scr584-mk56-fire-control-getting.pdf | SCR-584 radar and Mark 56 fire control |
 | radionerds-scr584-tm11-487c.pdf | SCR-584 technical manual |
 
-### Orbital Mechanics
+---
+
+## orbital-mechanics/
+
+Orbital Mechanics
 
 | File | Description |
 |------|-------------|
 | caltech-three-body-mission-design.pdf | Three-body problem and space mission design |
 | sjsu-three-body-simulation.pdf | Three-body orbit simulation |
 
-### Analog/Hybrid Computing Methods
+---
+
+## inertial-navigation/
+
+Inertial Navigation Systems
+
+| File | Description |
+|------|-------------|
+| cambridge-inertial-navigation.pdf | Cambridge introduction to inertial navigation |
+| ictp-inertial-navigation.pdf | ICTP inertial navigation systems overview |
+
+---
+
+## celestial-navigation/
+
+Celestial & Maritime Navigation
+
+| File | Description |
+|------|-------------|
+| celestial-navigation-tutorial.pdf | NavSoft celestial navigation tutorial |
+| celestial-navigation-sextant.pdf | Introduction to celestial navigation and sextant |
+| maritime-navigation-et4.pdf | Navy electronics technician navigation manual |
+
+---
+
+## hybrid-computing/
+
+Analog/Hybrid Computing Methods
 
 | File | Description |
 |------|-------------|
@@ -97,7 +179,11 @@ This folder contains PDF documentation related to analog computer applications i
 | bitsavers-asn24g-computer-sets.pdf | AN/ASN-24G airborne navigation computer |
 | vissim-6dof-tutorial.pdf | VisSim 6-DOF simulation tutorial |
 
-### Practical Applications
+---
+
+## practical-applications/
+
+Practical Applications
 
 | File | Description |
 |------|-------------|
@@ -106,6 +192,8 @@ This folder contains PDF documentation related to analog computer applications i
 | noaa-harmonic-tides-sp98.pdf | NOAA tidal harmonic analysis (Special Pub 98) |
 | core-analog-power-system.pdf | Analog methods for power system analysis |
 
+---
+
 ## Topics Covered
 
 - **Flight Simulation**: Real-time aircraft and spacecraft dynamics
@@ -113,6 +201,8 @@ This folder contains PDF documentation related to analog computer applications i
 - **Fire Control**: WWII-era mechanical and electronic directors
 - **Orbital Mechanics**: Three-body problem, trajectory optimization
 - **Reentry Dynamics**: Atmospheric entry, guidance schemes
+- **Inertial Navigation**: Gyroscopes, accelerometers, INS fundamentals
+- **Celestial Navigation**: Sextant calculations, star tables, maritime navigation
 - **Hybrid Computing**: Combined analog-digital techniques
 - **Practical Applications**: Weather, tides, nuclear reactors, power systems
 

@@ -2,7 +2,7 @@
 
 This folder contains application notes and technical documentation relevant to analog computing from Texas Instruments, Analog Devices, Anabrid, and other sources.
 
-## PDF Collection (125 PDFs, 131MB)
+## PDF Collection (144 PDFs, 192MB)
 
 The `pdfs/` subfolder contains downloaded application notes organized by source.
 
@@ -159,6 +159,67 @@ The ALPACA (Analog Paradigm Application Collection of Analog computing) series c
 
 ---
 
+## Biomedical Signal Processing
+
+### ECG/Electrocardiography
+
+| File | Description |
+|------|-------------|
+| ad8232-ecg-front-end.pdf | AD8232 single-lead ECG front end datasheet |
+| msu-ecg-circuit-design.pdf | MSU ECE480 electrocardiography circuit design |
+| stanford-ecg-project.pdf | Stanford ENGR 40M ECG project |
+| oxford-ecg-instrumentation.pdf | Oxford ECG instrumentation notes |
+| northeastern-ecg-lab.pdf | Northeastern ECG instrumentation amplifier lab |
+
+### EEG/EMG Signal Processing
+
+| File | Description |
+|------|-------------|
+| eeg-signal-processing.pdf | EEG Signal Processing textbook (U. Washington) |
+| emg-tutorial-merletti.pdf | Surface EMG detection and conditioning tutorial |
+| mit-cardiovascular-acceleration.pdf | MIT cardiovascular simulation thesis |
+
+### IONM (Intraoperative Neurophysiological Monitoring)
+
+| File | Description |
+|------|-------------|
+| kaiser-ionm-policy.pdf | Kaiser IONM clinical policy |
+| nass-ionm-coverage.pdf | NASS IONM coverage recommendations |
+
+---
+
+## Historical Analog Computing
+
+### Antikythera Mechanism
+
+The world's first known analog computer, dating to ~150-100 BC.
+
+| File | Description |
+|------|-------------|
+| antikythera-cosmos-model-2021.pdf | Nature paper: Model of the Cosmos reconstruction |
+| antikythera-modern-reproduction.pdf | Modern reproduction of the mechanism |
+| antikythera-reconstruction-arxiv.pdf | ArXiv reconstruction instructions |
+| asme-antikythera-landmark.pdf | ASME historical mechanical engineering landmark |
+
+### Tide Prediction Machines
+
+| File | Description |
+|------|-------------|
+| liverpool-tide-machines.pdf | Tide prediction machines at Liverpool Tidal Institute |
+| ostrander-planetarium-calculator.pdf | 1841 planetarium and astronomical calculator |
+
+---
+
+## Process Control & Automation
+
+| File | Description |
+|------|-------------|
+| asee-pid-experiment.pdf | ASEE PID controller modeling and simulation |
+| keysight-dyno-testing.pdf | Keysight dynamometer engine testing |
+| pmu-dynamometer-design.pdf | Dynamometer design for engine testing |
+
+---
+
 ## Detailed Summaries
 
 In-depth summaries of key application notes:
@@ -182,6 +243,9 @@ In-depth summaries of key application notes:
 | VFC circuits | ti-lm331-vfc.pdf |
 | Discrete circuits | passdiy-discrete-opamp.pdf |
 | Physics simulations | alpaca_8-pendulum.pdf, alpaca_11-three-body.pdf |
+| ECG/biomedical | ad8232-ecg-front-end.pdf, msu-ecg-circuit-design.pdf |
+| PID control | asee-pid-experiment.pdf |
+| Historical computing | antikythera-cosmos-model-2021.pdf, liverpool-tide-machines.pdf |
 
 ---
 

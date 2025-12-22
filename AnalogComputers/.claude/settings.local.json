@@ -11,7 +11,8 @@
       "Bash(find:*)",
       "Bash(while read d)",
       "Bash(done)",
-      "Bash(for d in /current/src/analog-computing-repository/12-analog-computer-docs/*/)"
+      "Bash(for d in /current/src/analog-computing-repository/12-analog-computer-docs/*/)",
+      "Bash(du:*)"
     ]
   }
 }
