@@ -2,84 +2,166 @@
 
 This folder contains application notes and technical documentation relevant to analog computing from Texas Instruments, Analog Devices, Anabrid, and other sources.
 
+## PDF Collection (125 PDFs, 131MB)
+
+The `pdfs/` subfolder contains downloaded application notes organized by source.
+
+---
+
+## Anabrid ALPACA Application Notes
+
+The ALPACA (Analog Paradigm Application Collection of Analog computing) series covers practical analog computing examples.
+
+| File | Topic |
+|------|-------|
+| alpaca_1-rossler.pdf | Rössler attractor |
+| alpaca_2-lorenz.pdf | Lorenz attractor |
+| alpaca_3-chua.pdf | Chua's circuit |
+| alpaca_11-three-body.pdf | Three-body problem |
+| alpaca_12-charged-particle.pdf | Charged particle dynamics |
+| alpaca_14-rutherford.pdf | Rutherford scattering |
+| alpaca_15-elegant-chaos.pdf | Elegant chaos systems |
+| alpaca_17-aizawa.pdf | Aizawa attractor |
+| alpaca_19-spacecraft.pdf | Spacecraft dynamics |
+| alpaca_20-inverted-pendulum.pdf | Inverted pendulum |
+| alpaca_21-double-pendulum.pdf | Double pendulum |
+| alpaca_23-pde.pdf | Partial differential equations |
+| alpaca_27-music.pdf | Music synthesis |
+| alpaca_28-hindmarsh-rose.pdf | Hindmarsh-Rose neuron model |
+| alpaca_30-neutron.pdf | Neutron kinetics |
+| alpaca_31-sprott-sqm.pdf | Sprott systems |
+| alpaca_33-euler-spiral.pdf | Euler spiral |
+| alpaca_34-buckling.pdf | Beam buckling |
+| alpaca_35-brusselator.pdf | Brusselator oscillator |
+| alpaca_36-pursuit.pdf | Pursuit curves |
+| alpaca_37-pursuit-4.pdf | Four-body pursuit |
+| alpaca_38-pursuit-n.pdf | N-body pursuit |
+| alpaca_39-circle.pdf | Circle generation |
+| alpaca_4-bouncing-ball.pdf | Bouncing ball |
+| alpaca_40-roessler-hyperchaos.pdf | Rössler hyperchaos |
+| alpaca_41-rabinovitch.pdf | Rabinovitch-Fabrikant system |
+| alpaca_42-mandelbrot.pdf | Mandelbrot set |
+| alpaca_43-linear-ode.pdf | Linear ODEs |
+| alpaca_44-nonlinear-ode.pdf | Nonlinear ODEs |
+| alpaca_45-logistic-map.pdf | Logistic map |
+| alpaca_5-van-der-pol.pdf | Van der Pol oscillator |
+| alpaca_50-bessel.pdf | Bessel functions |
+| alpaca_51-root-finding.pdf | Root finding |
+| alpaca_54-stochastic-deq.pdf | Stochastic differential equations |
+| alpaca_6-mathieu.pdf | Mathieu equation |
+| alpaca_7-duffing.pdf | Duffing oscillator |
+| alpaca_8-pendulum.pdf | Simple pendulum |
+
+---
+
 ## Texas Instruments Application Notes
 
-### Essential Op-Amp Application Notes
+### Op-Amp Fundamentals
 
-| Document | Title | Description | Link |
-|----------|-------|-------------|------|
-| SBOA092B | Handbook of Operational Amplifier Applications | Comprehensive guide covering summers, integrators, differentiators, filters | [PDF](https://www.ti.com/lit/an/sboa092b/sboa092b.pdf) |
-| SNOA621C | AN-20: Applications Guide for Op Amps | Classic applications guide - oscillators, multipliers, rectifiers | [PDF](https://www.ti.com/lit/an/snoa621c/snoa621c.pdf) |
-| SNLA140D | AN-31: Amplifier Circuit Collection | Practical circuits - integrator, differentiator, transimpedance | [PDF](https://www.ti.com/lit/an/snla140d/snla140d.pdf) |
-| SBOA275 | Integrator Circuit | Detailed integrator design with equations and component selection | [PDF](https://www.ti.com/lit/sboa275) |
+| File | Description |
+|------|-------------|
+| sboa092b.pdf | Handbook of Operational Amplifier Applications |
+| sboa275.pdf | Integrator circuit design |
+| snla140d.pdf | AN-31: Amplifier Circuit Collection |
+| snoa621c.pdf | AN-20: Applications Guide for Op Amps |
+| sloa049d.pdf | Active Filter Design Techniques |
 
-### Filter Design
+### Sensor Interface
 
-| Document | Title | Description | Link |
-|----------|-------|-------------|------|
-| SLOA049D | Active Filter Design Techniques | Comprehensive filter design guide | [PDF](https://www.ti.com/lit/an/sloa049d/sloa049d.pdf) |
-| SLOA096 | More Filter Design on a Budget | Sallen-Key and MFB topologies | [PDF](https://www.ti.com/lit/an/sloa096/sloa096.pdf) |
-| SLOA064A | Differential Op-Amp Circuit Collection | Fully differential circuits | [PDF](https://www.ti.com/lit/an/sloa064a/sloa064a.pdf) |
+| File | Description |
+|------|-------------|
+| ti-transimpedance.pdf | Transimpedance amplifier design |
+| ti-strain-gauge.pdf | Strain gauge bridge conditioning |
+| ti-thermocouple-cjc.pdf | Thermocouple cold junction compensation |
+| ti-rtd-guide.pdf | RTD/PT100 temperature sensor guide |
+| ti-pt100-circuit.pdf | PT100 circuit design |
+| ti-piezo-charge-amp.pdf | Piezoelectric charge amplifier |
+| ti-opt101.pdf | OPT101 photodiode amplifier |
+| ti-bridge-conditioning.pdf | Bridge sensor conditioning |
+| ti-fdc1004-cap.pdf | FDC1004 capacitive sensing |
 
-### Op-Amp Selection and Design
+### Signal Processing
 
-| Document | Title | Description | Link |
-|----------|-------|-------------|------|
-| SLOA097 | Op-Amp Selection | Choosing the right op-amp | [PDF](https://www.ti.com/lit/an/sloa097/sloa097.pdf) |
-| SLOA011 | Feedback Amplifier Analysis Tools | Stability analysis | [PDF](https://www.ti.com/lit/an/sloa011/sloa011.pdf) |
+| File | Description |
+|------|-------------|
+| ti-lm331-vfc.pdf | LM331 voltage-to-frequency converter |
+| ti-cd4046b-pll.pdf | CD4046B PLL circuits |
+| ti-sboa068-abs-value.pdf | Absolute value circuits |
+| ti-snoa575b-log-amp.pdf | Log amplifier applications |
+| ti-tidu024-rectifier.pdf | Precision rectifier circuits |
 
 ---
 
 ## Analog Devices Application Notes
 
-### Precision Amplifiers
+### Multipliers and Nonlinear Circuits
 
-| Document | Title | Description | Link |
-|----------|-------|-------------|------|
-| AN-244 | Precision Op-Amp Applications | Precision circuit techniques | [PDF](https://www.analog.com/media/en/technical-documentation/application-notes/an-244.pdf) |
-| AN-106 | A Collection of Amp Applications | Classic amp applications | [PDF](https://www.analog.com/media/en/technical-documentation/application-notes/28080533an106.pdf) |
-| MT-049 | Op Amp Total Output Noise | Noise analysis and calculation | [PDF](https://www.analog.com/media/en/training-seminars/tutorials/MT-049.pdf) |
+| File | Description |
+|------|-------------|
+| adi-multiplier-app-guide.pdf | AD633/AD534 multiplier applications |
+| ad538-computational.pdf | AD538 computational circuits |
 
-### Multipliers
+### Sensor Interface
 
-| Document | Title | Description | Link |
-|----------|-------|-------------|------|
-| AN-106 | Multiplier Application Guide | AD633 and AD534 applications | [PDF](https://www.analog.com/media/en/technical-documentation/application-notes/an-106.pdf) |
+| File | Description |
+|------|-------------|
+| adi-inamp-guide.pdf | Instrumentation amplifier guide |
+| adi-cn0314-420ma.pdf | 4-20mA current loop interface |
+| adi-cn0301-lvdt.pdf | LVDT position sensor interface |
+| adi-cn0350-piezo.pdf | Piezoelectric sensor interface |
+| adi-ad598-lvdt.pdf | AD598 LVDT signal conditioner |
+| adi-ad7745-cap.pdf | AD7745 capacitive sensor |
+| adi-lt1025-cjc.pdf | LT1025 thermocouple CJC |
+| adi-sensor-handbook-ch6.pdf | Sensor signal conditioning handbook |
 
-### Op-Amp Handbook
+### Op-Amp Applications
 
-| Resource | Description | Link |
-|----------|-------------|------|
-| Op Amp Applications Handbook | Comprehensive reference (Walter Jung) | [ADI Resource](https://www.analog.com/en/education/education-library/op-amp-applications-handbook.html) |
-| Section 1: Op-Amp Basics | Fundamentals and history | [PDF](https://www.analog.com/media/en/training-seminars/design-handbooks/op-amp-applications/section1.pdf) |
+| File | Description |
+|------|-------------|
+| adi-op-amp-data-converters.pdf | Op-amps with data converters |
 
 ---
 
-## Anabrid / THE Analog Thing Documentation
+## Discrete Component Circuits
 
-### Official Documentation
+| File | Description |
+|------|-------------|
+| passdiy-discrete-opamp.pdf | Building discrete op-amps |
+| adafruit-discrete-opamp.pdf | Adafruit discrete op-amp tutorial |
+| unc-diffpair-mirror.pdf | Differential pair and current mirror |
+| triode-diode-function-gen.pdf | Diode function generators |
+| ucsd-fet-switches.pdf | FET analog switches |
+| toronto-vco.pdf | VCO design |
+| oxford-peak-detector.pdf | Peak detector circuits |
+| bobpease-bandgap.pdf | Bandgap voltage reference design |
+| kuhn-log-circuits.pdf | Discrete log/antilog circuits |
+| gilbert-cell-multiplier.pdf | Gilbert cell analog multiplier |
 
-| Resource | Description | Link |
-|----------|-------------|------|
-| THAT First Steps | Getting started guide (PDF) | [PDF](https://the-analog-thing.org/THAT_First_Steps.pdf) |
-| THAT Documentation | Full online documentation | [Docs](https://the-analog-thing.org/docs/dirhtml/) |
-| THAT Wiki | Community wiki and FAQs | [Wiki](https://the-analog-thing.org/wiki/) |
-| GitHub Docs | Documentation source | [GitHub](https://github.com/anabrid/the-analog-thing-docs) |
+---
 
-### Analog Paradigm Application Notes
+## Educational Resources
 
-The following application notes from Analog Paradigm are also applicable to THE Analog Thing:
+| File | Description |
+|------|-------------|
+| uiuc-analog-computing.pdf | UIUC analog computing course |
+| uiuc-analog-manual.pdf | UIUC analog computer manual |
+| THAT_First_Steps.pdf | THE Analog Thing getting started guide |
 
-| Topic | Description | Link |
-|-------|-------------|------|
-| Application Notes | Various analog computing applications | [Analog Paradigm](https://analogparadigm.com/documentation.html) |
-| GitHub Repository | Model-1 application notes | [GitHub](https://github.com/anabrid/Model-1/tree/main/application_notes) |
+---
+
+## Sensor-Specific
+
+| File | Description |
+|------|-------------|
+| vishay-photodiode.pdf | Photodiode application notes |
+| sgx-electrochemical-sensor.pdf | Electrochemical gas sensors |
+| st-shock-sensor.pdf | Shock/vibration sensors |
 
 ---
 
 ## Detailed Summaries
 
-Detailed summaries of key application notes are available:
+In-depth summaries of key application notes:
 
 - [TI Handbook of Op-Amp Applications (SBOA092B)](01-ti-sboa092b.md)
 - [Analog Devices Multiplier Applications](02-adi-multipliers.md)
@@ -89,25 +171,31 @@ Detailed summaries of key application notes are available:
 
 ## Quick Reference: Which App Note for What?
 
-| Task | Recommended Document |
-|------|---------------------|
-| Building an integrator | TI SBOA275, SBOA092B |
-| Designing a filter | TI SLOA049D, SLOA096 |
-| Multiplier circuits | ADI AN-106 |
-| Precision amplifiers | ADI AN-244 |
-| General op-amp circuits | TI SBOA092B, SNOA621C |
-| Getting started with THAT | Anabrid First Steps PDF |
-| Solving differential equations | Anabrid THAT Docs |
+| Task | Recommended PDF |
+|------|-----------------|
+| Building an integrator | sboa275.pdf, sboa092b.pdf |
+| Designing a filter | sloa049d.pdf |
+| Multiplier circuits | adi-multiplier-app-guide.pdf |
+| Chaos/attractors | alpaca_2-lorenz.pdf, alpaca_3-chua.pdf |
+| Solving ODEs | alpaca_43-linear-ode.pdf, alpaca_44-nonlinear-ode.pdf |
+| Sensor interface | adi-inamp-guide.pdf, ti-strain-gauge.pdf |
+| VFC circuits | ti-lm331-vfc.pdf |
+| Discrete circuits | passdiy-discrete-opamp.pdf |
+| Physics simulations | alpaca_8-pendulum.pdf, alpaca_11-three-body.pdf |
 
 ---
 
-## How to Use These Resources
+## Sources
 
-1. **Start with SBOA092B** - TI's Handbook of Op-Amp Applications is the most comprehensive single resource for analog computing circuits.
+- **Texas Instruments**: ti.com/lit/
+- **Analog Devices**: analog.com/en/resources/
+- **Anabrid/Analog Paradigm**: analogparadigm.com/documentation.html
+- **University courses**: UIUC, Toronto, UCSD, Oxford
 
-2. **For specific components** - Refer to manufacturer application notes (TI for TL074, ADI for OP07 and AD633).
+---
 
-3. **For THE Analog Thing** - Start with First Steps PDF, then use the online documentation.
+## See Also
 
-4. **For filter design** - TI's SLOA049D and SLOA096 provide complete design procedures.
-
+- [Datasheets](../09-datasheets/) - Component datasheets
+- [Aerospace Simulation](../11-aerospace-simulation/) - Practical applications
+- [Analog Computer Docs](../12-analog-computer-docs/) - Computer-specific documentation

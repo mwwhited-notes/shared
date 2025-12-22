@@ -74,6 +74,24 @@ A comprehensive collection of documents, research, and training materials on ana
 - [Analog Devices Multiplier Applications](10-application-notes/02-adi-multipliers.md)
 - [Anabrid THE Analog Thing Guide](10-application-notes/03-anabrid-that.md)
 
+### 11. Aerospace Simulation
+- [Aerospace Simulation Index](11-aerospace-simulation/README.md)
+- NASA flight simulators and guidance systems
+- Fire control computers and missile guidance
+- Spacecraft trajectory and reentry simulation
+- Weather prediction and tidal analysis
+- Nuclear reactor simulation
+
+### 12. Analog Computer Documentation
+- [Analog Computer Docs Index](12-analog-computer-docs/README.md)
+- [Comdyna GP-6](12-analog-computer-docs/comdyna-gp6/)
+- [Systron-Donner](12-analog-computer-docs/systron-donner/)
+- [Heathkit EC-1](12-analog-computer-docs/heathkit-ec1/)
+- [EAI Computers](12-analog-computer-docs/eai-computers/)
+- [Donner Computers](12-analog-computer-docs/donner-computers/)
+- [Anabrid THAT](12-analog-computer-docs/anabrid-that/)
+- [DIY/Homebrew](12-analog-computer-docs/diy-homebrew/)
+
 ---
 
 ## About This Repository
