@@ -6,15 +6,45 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is Matt's personal notebook - a collection of notes, project ideas, scripts, and technical documentation covering embedded systems, electronics, retro computing, and software development.
 
+## Owner Information
+
+**GitHub:** [mwwhited](https://github.com/mwwhited)
+
+**Organizations:**
+- [OutOfBandDevelopment](https://github.com/OutOfBandDevelopment) - 1099 consulting organization (.NET libraries, build tools)
+- [mwwhited-archives](https://github.com/mwwhited-archives) - Archived projects
+- [mwwhited-notes](https://github.com/mwwhited-notes) - Documentation and notes (includes this repo)
+
+**Key Repositories by Domain:**
+
+*Embedded & Hardware:*
+- [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) - Arduino, AVR, ESP8266, STM32, FPGA (Arty A7/Z7, Cyclone II), CPLD, PAL, analog circuits
+- [DeviceBridge](https://github.com/mwwhited/DeviceBridge) / [PrinterEmulator](https://github.com/mwwhited/PrinterEmulator) - TDS2024 IEEE-1284 parallel-to-USB capture
+- [MM8000](https://github.com/mwwhited-archives/MM8000) - Intel 8085 trainer emulator (CLI + ANTLR assembler)
+- [MyMashedDuet](https://github.com/mwwhited/MyMashedDuet) - Velleman K8200 3D printer Duet 3 config
+
+*.NET Libraries & Tools (Out-of-Band Development):*
+- [dotex](https://github.com/OutOfBandDevelopment/dotex) - .NET extensions framework
+- [oobtainium](https://github.com/OutOfBandDevelopment/oobtainium) - Mocking framework
+- [BuildFirstOnce](https://github.com/OutOfBandDevelopment/BuildFirstOnce) - MSBuild orchestration
+- [RunScripts](https://github.com/OutOfBandDevelopment/RunScripts) - Docker wrapper scripts for dev tools
+
+*Data & Encoding:*
+- [BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders) - Encoding/decoding libraries (.NET)
+
+**Skills/Experience:** FPGA (Xilinx, Intel/Altera), embedded systems (12+ platforms), protocol engineering (IEEE-1284, LANC, LXI, RS485, SCPI), .NET architecture, DevOps/build tooling, vintage computing (8085, Apple II, TI-99/4A), 3D printing
+
 ## Key Directories
 
 - **Programmable Devices/** - Inventory of FPGA, CPLD, MCU, and development boards with specifications and archived documentation
 - **Expansion Boards/** - Inventory of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and other dev board accessories
-- **Test Equipment/** - Lab equipment documentation (oscilloscopes, DMMs, power supplies, programmers)
+- **Test Equipment/** - Lab equipment documentation (oscilloscopes, DMMs, power supplies, programmers, 3D printer)
+- **Vintage Computers/** - Apple IIc, Apple IIgs, TI-99/4A with peripherals (Floppy Emu, VGA adapters, RAM expansions)
 - **Notes/** - Technical notes on various topics (Kubernetes, dotnet, FPGA, vintage computing, etc.)
 - **Scripts/** - Utility scripts (JavaScript, T-SQL, dotnet, Vivado TCL, WSL configuration)
 - **HammingDistances/** - Precomputed Hamming distance lookup tables (CSV format)
 - **AnalogComputers/** - Analog computing research repository (~232 PDFs, 660MB) covering fundamentals, aerospace simulation, vintage computer manuals, and application notes
+- **workshop-capabilities.md** - Workshop equipment summary, project ideas by difficulty/category, troubleshooting guides, wishlist
 
 ## Documentation Protocols
 
@@ -40,6 +70,12 @@ Follow `Expansion Boards/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md` when:
 
 ### Test Equipment
 Follow `Test Equipment/EQUIPMENT_DOCUMENTATION_PROTOCOL.md` for lab equipment entries.
+
+### Vintage Computers
+Follow `Vintage Computers/VINTAGE_COMPUTERS_DOCUMENTATION_PROTOCOL.md` when:
+- Adding vintage computer systems or peripherals
+- Documenting accessories (Floppy Emu, RAM expansions, video adapters)
+- Cross-referencing with related FPGA soft cores or emulation projects
 
 ### Analog Computers
 Reference `AnalogComputers/analog-computing-repository/CLAUDE.md` for the analog computing research collection.
@@ -90,11 +126,23 @@ done
 
 ## Cross-References
 
+- `workshop-capabilities.md` - **Main workshop reference** with equipment summary, project ideas, troubleshooting guides
 - `Programmable Devices/readme.md` - Device index with programmer compatibility
 - `Expansion Boards/readme.md` - Shields, HATs, capes index with compatibility info
-- `Test Equipment/readme.md` - Equipment index
+- `Test Equipment/readme.md` - Equipment index (oscilloscopes, DMMs, programmers, 3D printer)
+- `Vintage Computers/readme.md` - Apple IIc, Apple IIgs, TI-99/4A inventory
 - `AnalogComputers/analog-computing-repository/README.md` - Analog computing collection overview
 - `AnalogComputers/analog-computing-repository/research-protocol.md` - Search strategies and download sources by topic
 - `AnalogComputers/analog-computing-repository/download-sources.md` - PDF source registry
 - `links.md` - Curated reference links (AI/ML, dotnet, electronics, retro computing)
 - `project-ideas.md` - Ongoing project list
+
+## Notable Hardware
+
+Key equipment that connects to GitHub projects:
+- **TDS2024 Oscilloscope** - Target hardware for [DeviceBridge](https://github.com/mwwhited/DeviceBridge) IEEE-1284 capture project
+- **MM-8000K Trainer** - Physical Intel 8085 trainer with [MM8000 emulator](https://github.com/mwwhited-archives/MM8000)
+- **Velleman K8200** - 3D printer with Duet 3 upgrade, config at [MyMashedDuet](https://github.com/mwwhited/MyMashedDuet)
+- **Arty A7-100 / Arty Z7-20** - FPGA boards used in [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) projects
+- **Gigatron TTL** - TTL computer kit (7400-series, no microprocessor)
+- **Multicomp EP2C5-DB** - FPGA retro computing kit (Z80/6502/6809)
