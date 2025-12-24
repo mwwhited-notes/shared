@@ -29,6 +29,7 @@ Each device has its own directory with detailed specifications and locally archi
   - [Imaging & Documentation](#imaging--documentation)
   - [Input Devices](#input-devices)
   - [Lab Equipment](#lab-equipment)
+  - [Fabrication](#fabrication)
 - [Directory Structure](#directory-structure)
 - [Software Resources](#software-resources)
   - [Instrument Control](#instrument-control)
@@ -159,6 +160,12 @@ Each device has its own directory with detailed specifications and locally archi
 | [CREWORKS Ultrasonic Cleaner](creworks-ultrasonic-cleaner/) | Ultrasonic Cleaner | 10L | `creworks-ultrasonic-cleaner/` |
 | [Magnetic Stirrer Hot Plate](magnetic-stirrer-hotplate/) | Stirrer/Hot Plate | - | `magnetic-stirrer-hotplate/` |
 
+### Fabrication
+
+| Model | Type | Build Volume | Directory |
+|-------|------|--------------|-----------|
+| [Velleman K8200](velleman-k8200/) | 3D Printer (Duet 3) | 200x200x200mm | `velleman-k8200/` |
+
 ---
 
 ## Directory Structure
@@ -263,7 +270,9 @@ Each device has its own directory with detailed specifications and locally archi
 │   └── README.md
 ├── fifine-d6/
 │   └── README.md
-└── greaseweazle-v41/
+├── greaseweazle-v41/
+│   └── README.md
+└── velleman-k8200/
     └── README.md
 ```
 

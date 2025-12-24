@@ -84,10 +84,16 @@ Quick reference for what this workshop can do and project suggestions when you n
 | CREWORKS Ultrasonic Cleaner | PCB cleaning, parts degreasing, flux removal |
 | Magnetic Stirrer Hot Plate  | Solution prep, chemical mixing               |
 
+### Fabrication
+
+| Tool | Specs | Use |
+|------|-------|-----|
+| [Velleman K8200](https://github.com/mwwhited/MyMashedDuet) | 200x200x200mm, Duet 3, multi-tool, multi-filament | Enclosures, brackets, fixtures, replacement parts |
+
 ### Automation & Input
 
-| Tool | Use |
-|------|-----|
+| Tool                   | Use                                               |
+|------------------------|---------------------------------------------------|
 | Fifine D6 Macro Keypad | 15-key programmable shortcuts, instrument control |
 
 ### Programmers
@@ -365,14 +371,96 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 ## Wishlist (Would Expand Capabilities)
 
-- [ ] Spectrum analyzer (RF work)
-- [ ] Isolation transformer (safety)
-- [ ] Bench LCR meter (in-circuit SMD)
-- [ ] Reflow oven (batch SMD assembly)
-- [ ] Hot air pencil (finer SMD work)
-- [ ] Current probe for scope
-- [ ] Higher resolution thermal camera
-- [ ] Variac (motor testing)
+- [ ] **Spectrum analyzer** - RF debugging, EMI troubleshooting, SDR projects
+  - Budget/Used:
+    - [tinySA Ultra](https://www.tinysa.org/wiki/pmwiki.php?n=Main.Buying) (~$120)
+    - Used HP 8590A
+  - New:
+    - [Rigol DSA815](https://www.rigolna.com/products/spectrum-analyzers/dsa800/)
+    - [Siglent SSA3021X](https://siglentna.com/spectrum-analyzers/ssa3000x-series/)
+
+- [ ] **Isolation transformer** - Safe work on line-connected equipment
+  - Budget/Used:
+    - Used Topaz or Tripp Lite (eBay)
+    - Surplus hospital-grade
+  - New:
+    - [Triad N-68X](https://www.amazon.com/dp/B00BXMBOTG) (500VA)
+    - [Hammond 171E](https://www.hammfg.com/electronics/transformers/isolation/171)
+
+- [ ] **Bench LCR meter** - In-circuit SMD testing, better accuracy than DE-5000
+  - Budget/Used:
+    - Used HP 4263A/4263B
+    - BK Precision 879B
+  - New:
+    - [Keysight U1731C](https://www.keysight.com/us/en/product/U1731C/handheld-lcr-meter.html)
+    - [GW Instek LCR-6100](https://www.gwinstek.com/en-global/products/detail/LCR-6000)
+
+- [ ] **Reflow oven** - Batch SMD assembly, consistent results
+  - Budget/Used:
+    - DIY toaster oven + [Controleo3 kit](https://www.whizoo.com/c3)
+    - Used T-962
+  - New:
+    - [Miniware MHP50](https://www.amazon.com/dp/B0C7KXQQ8X) (hot plate)
+    - [Puhui T-937](https://www.amazon.com/dp/B07VR3Q3ZK)
+
+- [ ] **Current probe** - Non-contact current measurement on scope
+  - Budget/Used:
+    - Used Tektronix A621/A622
+    - [Micsig CP2100A](https://www.amazon.com/dp/B07WNLQVZJ)
+  - New:
+    - [Tektronix A622](https://www.tek.com/en/products/probes/current-probes)
+    - [Keysight N2783B](https://www.keysight.com/us/en/product/N2783B/current-probe-100-mhz.html)
+
+- [ ] **Higher res thermal camera** - Better hotspot detection than TG130
+  - Budget/Used:
+    - [Uni-T UTi260B](https://www.amazon.com/dp/B08R6NK44L)
+    - Used FLIR E4/E5
+  - New:
+    - [FLIR C5](https://www.flir.com/products/c5/)
+    - [FLIR ONE Pro](https://www.flir.com/products/flir-one-pro/)
+
+- [ ] **Variac** - Motor testing, slow power-up for vintage gear
+  - Budget/Used:
+    - Used Powerstat/Superior Electric (eBay)
+    - Surplus lab units
+  - New:
+    - [Variac TDGC2-2KVA](https://www.amazon.com/dp/B09WDHM6NV)
+    - [Staco 3PN1010B](https://www.staco-energy.com/variable-transformers/)
+
+- [ ] **PCB mill/router** - Prototype PCBs without waiting for fab (3D printer can't do this)
+  - Budget/Used:
+    - [Genmitsu 3018-PROVer](https://www.amazon.com/dp/B07P6J9VB4) + PCB kit
+    - Used Roland Modela MDX-20
+  - New:
+    - [BobsCNC E4](https://www.amazon.com/dp/B07GJBTBB9) + spindle upgrade
+    - [Bantam Tools Desktop PCB Milling Machine](https://www.bantamtools.com/)
+
+- [ ] **Logic analyzer upgrade** - More channels, higher speed than current setup
+  - Budget/Used:
+    - [DSLogic Plus](https://www.dreamsourcelab.com/product/dslogic-plus/) (16ch 400MHz)
+    - Used Agilent 16700
+  - New:
+    - [Saleae Logic Pro 16](https://www.saleae.com/products/saleae-logic-pro-16)
+    - [Analog Discovery 3](https://digilent.com/shop/analog-discovery-3/)
+
+- [ ] **RF signal generator** - Clean LO/IF source for RF work, mixer testing, receiver alignment
+  - Budget/Used:
+    - Used HP 8648A/B (100 kHz - 1 GHz / 2 GHz)
+    - Used HP 8656B (100 kHz - 990 MHz)
+    - Used Marconi 2024 (9 kHz - 2.4 GHz)
+  - New:
+    - [Siglent SSG3021X](https://siglentna.com/rf-signal-generators/ssg3000x-series/) (9 kHz - 2.1 GHz)
+    - [Rigol DSG815](https://www.rigolna.com/products/rf-signal-generators/dsg800/) (9 kHz - 1.5 GHz)
+    - [Windfreak SynthHD](https://windfreaktech.com/product/microwave-signal-generator-synthhd/) (10 MHz - 15 GHz, USB)
+
+- [ ] **SDR transceiver** - TX/RX capable for RF experimentation, ham radio, Zynq projects
+  - Budget/Used:
+    - [RTL-SDR Blog V4](https://www.rtl-sdr.com/rtl-sdr-blog-v4-dongle-initial-release/) (RX only, ~$30)
+    - Used USRP B200mini
+  - New:
+    - [HackRF One](https://greatscottgadgets.com/hackrf/one/) (1 MHz - 6 GHz, half-duplex TX/RX)
+    - [LimeSDR Mini 2.0](https://limemicro.com/products/boards/limesdr-mini-2-0/) (10 MHz - 3.5 GHz, full-duplex)
+    - [ADALM-PLUTO](https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/adalm-pluto.html) (325 MHz - 3.8 GHz, full-duplex, hackable to 70 MHz - 6 GHz)
 
 ---
 
