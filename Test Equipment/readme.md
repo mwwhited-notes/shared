@@ -49,6 +49,7 @@ Each device has its own directory with detailed specifications and locally archi
 | Model | Output | Programmable | Directory |
 |-------|--------|--------------|-----------|
 | [Korad KA3005P](korad-ka3005p/) | 30V/5A | Yes (USB/RS-232) | `korad-ka3005p/` |
+| [Korad KA6003P](korad-ka6003p/) | 60V/3A | Yes (USB/RS-232) | `korad-ka6003p/` |
 | [QE-MS305D](qe-ms305d/) | 30V/5A | No | `qe-ms305d/` |
 
 ### Logic Analyzers
@@ -135,6 +136,9 @@ Each device has its own directory with detailed specifications and locally archi
 ├── korad-ka3005p/
 │   ├── README.md
 │   └── KA3005P_UserManual.pdf
+├── korad-ka6003p/
+│   ├── README.md
+│   └── KA6003P_UserManual.pdf
 ├── qe-ms305d/
 │   └── README.md
 ├── saleae-logic/

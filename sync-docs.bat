@@ -9,3 +9,7 @@ popd
 pushd "Programmable Devices"
 call sync-docs.bat
 popd
+
+pushd "Test Equipment"
+call sync-docs.bat
+popd
