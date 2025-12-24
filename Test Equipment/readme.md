@@ -273,7 +273,10 @@ Each device has its own directory with detailed specifications and locally archi
 ├── greaseweazle-v41/
 │   └── README.md
 └── velleman-k8200/
-    └── README.md
+    ├── README.md
+    ├── K8200_Assembly_Manual.pdf
+    ├── K8200_User_Manual.pdf
+    └── Duet3_MB_6HC_Schematic.pdf
 ```
 
 ---

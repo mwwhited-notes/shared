@@ -83,7 +83,11 @@ Originally a kit printer, now heavily customized with a Duet 3 controller replac
 
 ## Local Files
 
-*Configuration synced from GitHub repository*
+- `K8200_Assembly_Manual.pdf` - Original assembly manual (61MB)
+- `K8200_User_Manual.pdf` - User manual (2.4MB)
+- `Duet3_MB_6HC_Schematic.pdf` - Duet 3 controller schematic (1.2MB)
+
+*Configuration synced from [MyMashedDuet](https://github.com/mwwhited/MyMashedDuet) repository*
 
 ## Revision History
 

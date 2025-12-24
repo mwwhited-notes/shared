@@ -25,7 +25,8 @@
       "WebFetch(domain:www.bigmessowires.com)",
       "WebFetch(domain:www.a2heaven.com)",
       "WebFetch(domain:www.tindie.com)",
-      "WebFetch(domain:gigatron.io)"
+      "WebFetch(domain:gigatron.io)",
+      "WebFetch(domain:api.github.com)"
     ]
   }
 }

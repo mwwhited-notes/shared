@@ -181,8 +181,11 @@ Each device has its own directory with detailed specifications and locally archi
 ├── anabrid-that/                          # Analog Computer
 │
 ├── gigatron-ttl/                          # TTL Computer
+│   ├── README.md
+│   └── Gigatron_Manual.pdf
 │
 └── multicomp-ep2c5/                       # Retro Computing Kit
+    └── README.md
 ```
 
 ---

@@ -64,7 +64,8 @@ Excellent for cleaning PCBs after soldering, removing old flux from vintage boar
 
 ## Local Files
 
-*Documentation to be downloaded*
+*Manual requires manual download:*
+- [CREWORKS 10L Multi-Slot Manual](https://manuals.plus/asin/B0CNGFCNQK)
 
 ## Revision History
 

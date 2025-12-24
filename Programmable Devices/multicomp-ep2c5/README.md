@@ -71,7 +71,9 @@
 
 - [Tindie Product Page](https://www.tindie.com/products/land_boards/z80-6502-6809-fpga-multicomp-pcb-ep2c5-db/)
 - [Land Boards GitHub](https://github.com/land-boards)
-- [Grant Searle Multicomp](http://searle.x10host.com/Multicomp/)
+- [Grant Searle Multicomp](http://searle.x10host.com/Multicomp/) - Original design, schematics, VHDL
+- [Multicomp CP/M](http://searle.x10host.com/Multicomp/cpm/fpgaCPM.html) - CP/M implementation
+- [Multicomp 6809 GitHub](https://github.com/nealcrook/multicomp6809) - 6809 variant with Forth, FLEX, NITROS9
 
 ## Notes
 

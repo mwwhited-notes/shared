@@ -77,7 +77,7 @@ Production is being discontinued after current stock is sold.
 
 ## Local Files
 
-*Documentation to be downloaded*
+- `Gigatron_Manual.pdf` - Assembly and user manual with schematics (7.8MB)
 
 ## Revision History
 
