@@ -2,11 +2,25 @@
 
 Quick reference for what this workshop can do and project suggestions when you need inspiration.
 
-**GitHub Profile:** [mwwhited](https://github.com/mwwhited)
+**GitHub Profile:** [mwwhited](https://github.com/mwwhited) | **Organizations:** [OutOfBandDevelopment](https://github.com/OutOfBandDevelopment) | [mwwhited-archives](https://github.com/mwwhited-archives) | [mwwhited-notes](https://github.com/mwwhited-notes)
 
 **Key Repositories:**
+
+*Embedded & Hardware:*
 - [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) - Arduino, AVR, ESP8266, STM32, FPGA (Arty A7/Z7, Cyclone II), CPLD, analog circuits
-- [DeviceBridge](https://github.com/mwwhited/DeviceBridge) - TDS2024 Centronics-to-USB adapter (IEEE-1284, Arduino Mega)
+- [DeviceBridge](https://github.com/mwwhited/DeviceBridge) / [PrinterEmulator](https://github.com/mwwhited/PrinterEmulator) - TDS2024 IEEE-1284 parallel-to-USB capture (Arduino Mega)
+- [MM8000](https://github.com/mwwhited-archives/MM8000) - Intel 8085 Microprocessor Trainer emulator (CLI + ANTLR assembler)
+- [MyMashedDuet](https://github.com/mwwhited/MyMashedDuet) - Velleman K8200 Duet 3 multi-tool configuration
+
+*.NET Libraries & Tools (Out-of-Band Development):*
+- [dotex](https://github.com/OutOfBandDevelopment/dotex) - .NET extensions framework (shared libraries)
+- [oobtainium](https://github.com/OutOfBandDevelopment/oobtainium) - Method interception mocking framework
+- [BuildFirstOnce](https://github.com/OutOfBandDevelopment/BuildFirstOnce) - MSBuild orchestration (run tasks once per solution)
+- [RunScripts](https://github.com/OutOfBandDevelopment/RunScripts) - Docker wrapper scripts for dev tools (Python, Node, Rust, TensorFlow, etc.)
+- [AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp) - Fork: sentence embeddings for C#
+- [MSBuild.Sdk.SqlProj](https://github.com/OutOfBandDevelopment/MSBuild.Sdk.SqlProj) - Fork: SDK-style .dacpac builds
+
+*Data & Encoding:*
 - [BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders) - Encoding/decoding libraries (.NET)
 
 ---
@@ -39,6 +53,7 @@ Quick reference for what this workshop can do and project suggestions when you n
 | **CPLD/GAL**     | XC95108, ATF16V8B               | Glue logic, vintage chip replacement    |
 | **TTL Computer** | Gigatron                        | CPU architecture learning, retro gaming |
 | **Retro Kits**   | Multicomp (Z80/6502/6809)       | CP/M, vintage OS emulation              |
+| **8-bit Trainers** | MM-8000K (8085A) + [emulator](https://github.com/mwwhited-archives/MM8000) | Vintage CPU learning, assembler dev |
 
 ### Vintage Computers
 
@@ -127,8 +142,8 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 *Building on your Arty A7/Z7 and Cyclone II work.*
 
-- [ ] Soft CPU cores (6502, Z80, TMS9900, custom ISA)
-- [ ] Retro computer clones (Apple II, TI-99/4A)
+- [ ] Soft CPU cores (6502, Z80, 8080/8085, TMS9900, custom ISA)
+- [ ] Retro computer clones (Apple II, TI-99/4A, 8085 trainer)
 - [ ] Video controllers (VGA, HDMI encoder)
 - [ ] High-speed logic analyzers
 - [ ] DSP pipelines and filters
@@ -206,6 +221,7 @@ Quick reference for what this workshop can do and project suggestions when you n
 | RS485 sniffer               | STM32 + UART       | [RS485 work](https://github.com/mwwhited/EmbeddedBakery)             |
 | I2C bus scanner/debugger    | Arduino + OLED     | Sensor interfaces                                                    |
 | ROM dumper utility          | Arduino Mega       | [DeviceBridge parallel](https://github.com/mwwhited/DeviceBridge)    |
+| MM-8000K serial terminal    | USB-TTL + terminal | [MM8000 tools](https://github.com/mwwhited-archives/MM8000)          |
 
 ### Medium Projects (Days to Weeks)
 
@@ -214,6 +230,7 @@ Quick reference for what this workshop can do and project suggestions when you n
 | GPIB/IEEE-488 adapter        | STM32 + level shift   | [DeviceBridge](https://github.com/mwwhited/DeviceBridge) (IEEE-1284) |
 | LANC controller expansion    | Arduino + protocol    | [LANC projects](https://github.com/mwwhited/EmbeddedBakery)          |
 | LXI-to-serial gateway        | ESP32 + SCPI          | [LXI Serial Bridge](https://github.com/mwwhited/EmbeddedBakery)      |
+| 8085 FPGA soft core          | Arty A7 + VHDL        | MM-8000K hardware + [emulator](https://github.com/mwwhited-archives/MM8000) |
 | Apple II SmartPort device    | ATmega + CPLD         | [CPLD work](https://github.com/mwwhited/EmbeddedBakery)              |
 | TI-99/4A speech synth clone  | FPGA + DAC            | FPGA experience                                                      |
 | Ensoniq DOC experiments      | Apple IIgs + code     | Audio/synthesis interest                                             |
@@ -255,9 +272,10 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 ### FPGA & CPU Design
 
-*Building on your [Arty A7 MicroBlaze and custom CPU work](https://github.com/mwwhited/EmbeddedBakery).*
+*Building on your [Arty A7 MicroBlaze and custom CPU work](https://github.com/mwwhited/EmbeddedBakery) and [MM8000 emulator](https://github.com/mwwhited-archives/MM8000).*
 
 - [ ] Custom ISA CPU (beyond MicroBlaze)
+- [ ] 8085 soft core (FPGA version of MM-8000K trainer)
 - [ ] 65C816 soft core (Apple IIgs compatible)
 - [ ] TMS9900 soft core (TI-99/4A compatible)
 - [ ] VGA framebuffer controller

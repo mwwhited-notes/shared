@@ -119,6 +119,12 @@ Each device has its own directory with detailed specifications and locally archi
 |--------|--------------|--------------|-----------|
 | [Gigatron TTL](gigatron-ttl/) | 8-bit Harvard | 7400 TTL | `gigatron-ttl/` |
 
+### Microprocessor Trainers
+
+| Trainer | CPU | RAM | ROM | Directory |
+|---------|-----|-----|-----|-----------|
+| [NRI/Elenco MM-8000K](mm-8000k/) | Intel 8085A (3 MHz) | 256 B | 2 KB | `mm-8000k/` |
+
 ### Retro Computing Kits
 
 | Board | FPGA/MCU | Supported CPUs | Directory |
@@ -183,6 +189,9 @@ Each device has its own directory with detailed specifications and locally archi
 ├── gigatron-ttl/                          # TTL Computer
 │   ├── README.md
 │   └── Gigatron_Manual.pdf
+│
+├── mm-8000k/                              # Microprocessor Trainer
+│   └── README.md
 │
 └── multicomp-ep2c5/                       # Retro Computing Kit
     └── README.md
