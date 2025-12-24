@@ -2,6 +2,13 @@
 
 Quick reference for what this workshop can do and project suggestions when you need inspiration.
 
+**GitHub Profile:** [mwwhited](https://github.com/mwwhited)
+
+**Key Repositories:**
+- [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) - Arduino, AVR, ESP8266, STM32, FPGA (Arty A7/Z7, Cyclone II), CPLD, analog circuits
+- [DeviceBridge](https://github.com/mwwhited/DeviceBridge) - TDS2024 Centronics-to-USB adapter (IEEE-1284, Arduino Mega)
+- [BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders) - Encoding/decoding libraries (.NET)
+
 ---
 
 ## Table of Contents
@@ -97,45 +104,50 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 ## What Can I Build?
 
-### Electronics & Embedded
+*Based on equipment inventory and your demonstrated skills from [GitHub](https://github.com/mwwhited).*
 
-- [ ] Custom Arduino shields
-- [ ] ESP8266/ESP32 IoT devices
-- [ ] Wireless sensor networks (XBee mesh)
-- [ ] USB HID devices (STM32)
-- [ ] Motor controllers
-- [ ] LED matrix displays
-- [ ] Audio synthesizers
-- [ ] Data loggers
-- [ ] Environmental monitors
+### Protocol Bridges & Interfaces
 
-### FPGA Projects
+*Extends your [DeviceBridge](https://github.com/mwwhited/DeviceBridge) and [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) expertise.*
 
-- [ ] Soft CPU cores (RISC-V, 6502, Z80)
-- [ ] Retro computer clones
-- [ ] Video signal generators
-- [ ] DSP filters
-- [ ] Logic analyzers
-- [ ] Custom peripherals
-- [ ] Hardware accelerators
+- [ ] GPIB/IEEE-488 to USB (like DeviceBridge for GPIB instruments)
+- [ ] LXI/SCPI instrument automation
+- [ ] LANC camera control systems
+- [ ] RS485/Modbus gateways
+- [ ] Parallel-to-WiFi bridges
+- [ ] Protocol analyzers and sniffers
+
+### FPGA & Custom Logic
+
+*Building on your Arty A7/Z7 and Cyclone II work.*
+
+- [ ] Soft CPU cores (6502, Z80, TMS9900, custom ISA)
+- [ ] Retro computer clones (Apple II, TI-99/4A)
+- [ ] Video controllers (VGA, HDMI encoder)
+- [ ] High-speed logic analyzers
+- [ ] DSP pipelines and filters
+- [ ] Hardware accelerators (Zynq HLS)
 
 ### Analog Computing
 
-- [ ] Lorenz attractor (chaos)
-- [ ] Predator-prey simulation
-- [ ] Mechanical oscillator models
-- [ ] Control system simulation
-- [ ] RC circuit analysis
-- [ ] Hybrid analog-digital systems
+*Using The Analog Thing.*
 
-### Vintage Computing
+- [ ] Chaotic systems (Lorenz, Rössler)
+- [ ] Ecosystem simulations
+- [ ] Control system modeling
+- [ ] Hybrid analog-digital with MCU interface
+- [ ] Real-time differential equation solving
 
-- [ ] Apple II software development
-- [ ] TI-99/4A cartridge creation
+### Vintage Computer Hardware
+
+*For Apple IIc, IIgs, and TI-99/4A.*
+
 - [ ] Custom expansion cards
-- [ ] GAL replacements for failed chips
-- [ ] Composite video mods
-- [ ] Floppy emulators (Gotek/FlashFloppy)
+- [ ] SmartPort/floppy alternatives
+- [ ] Speech synthesizer clones
+- [ ] Memory expansions
+- [ ] GAL replacements for customs
+- [ ] Video output adapters
 
 ---
 
@@ -176,98 +188,121 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 ## Project Ideas by Difficulty
 
-### Beginner (Hours to Days)
+*Calibrated to your skill level based on EmbeddedBakery, DeviceBridge, and related work.*
 
-| Project               | Platform             | Skills          |
-|-----------------------|----------------------|-----------------|
-| Blink LED             | Arduino              | Basic           |
-| Temperature logger    | ESP8266 + DHT22      | WiFi, sensors   |
-| USB volume knob       | Arduino Pro Micro    | USB HID         |
-| IR remote decoder     | Arduino + IR sensor  | Protocols       |
-| EEPROM reader/writer  | Arduino + I2C EEPROM | I2C             |
-| Logic probe           | ATtiny85             | Simple circuits |
-| Persistence of vision | Arduino + LEDs       | Timing          |
+### Quick Builds (Hours to Days)
 
-### Intermediate (Days to Weeks)
+| Project                     | Platform           | Prior Work                                                           |
+|-----------------------------|--------------------|----------------------------------------------------------------------|
+| SCPI instrument controller  | ESP8266 + LXI      | [EmbeddedBakery ESP8266](https://github.com/mwwhited/EmbeddedBakery) |
+| Macro keypad firmware       | ATmega32U4         | USB HID experience |
+| GAL replacement for vintage | ATF16V8B + TL866   | [PAL projects](https://github.com/mwwhited/EmbeddedBakery)           |
+| RS485 sniffer               | STM32 + UART       | [RS485 work](https://github.com/mwwhited/EmbeddedBakery)             |
+| I2C bus scanner/debugger    | Arduino + OLED     | Sensor interfaces                                                    |
+| ROM dumper utility          | Arduino Mega       | [DeviceBridge parallel](https://github.com/mwwhited/DeviceBridge)    |
 
-| Project              | Platform            | Skills              |
-|----------------------|---------------------|---------------------|
-| Wireless sensor node | ESP32 + sensors     | WiFi, MQTT          |
-| MIDI controller      | Arduino Pro Micro   | USB MIDI            |
-| Frequency counter    | Arduino + prescaler | Timing, display     |
-| CNC pendant          | STM32 + encoder     | USB, interrupts     |
-| Analog synth module  | Op-amps + Arduino   | Analog + digital    |
-| XBee mesh network    | XBee + Arduino      | Wireless protocols  |
-| SD card oscilloscope | STM32 + ADC         | High-speed sampling |
-| GPS tracker          | ESP32 + GPS         | Location, cellular  |
+### Medium Projects (Days to Weeks)
 
-### Advanced (Weeks to Months)
+| Project                      | Platform              | Prior Work                                                           |
+|------------------------------|-----------------------|----------------------------------------------------------------------|
+| GPIB/IEEE-488 adapter        | STM32 + level shift   | [DeviceBridge](https://github.com/mwwhited/DeviceBridge) (IEEE-1284) |
+| LANC controller expansion    | Arduino + protocol    | [LANC projects](https://github.com/mwwhited/EmbeddedBakery)          |
+| LXI-to-serial gateway        | ESP32 + SCPI          | [LXI Serial Bridge](https://github.com/mwwhited/EmbeddedBakery)      |
+| Apple II SmartPort device    | ATmega + CPLD         | [CPLD work](https://github.com/mwwhited/EmbeddedBakery)              |
+| TI-99/4A speech synth clone  | FPGA + DAC            | FPGA experience                                                      |
+| Ensoniq DOC experiments      | Apple IIgs + code     | Audio/synthesis interest                                             |
+| H4n remote interface         | ESP8266 + protocol    | [H4n protocol](https://github.com/mwwhited/EmbeddedBakery)           |
+| XBee sensor mesh + dashboard | XBee + ESP32 + web    | ESP + wireless experience                                            |
+| Analog + digital hybrid      | THAT + STM32          | [Analog circuits](https://github.com/mwwhited/EmbeddedBakery)        |
 
-| Project               | Platform     | Skills                 |
-|-----------------------|--------------|------------------------|
-| 6502 on FPGA          | Arty A7      | Verilog, CPU design    |
-| TI-99/4A cartridge    | CPLD + Flash | Vintage, CPLD          |
-| Apple II clone core   | Arty A7      | FPGA, retro            |
-| Hybrid analog-digital | THAT + MCU   | Analog computing       |
-| USB protocol analyzer | Zynq         | High-speed, USB        |
-| SDR receiver          | Zynq + ADC   | RF, DSP                |
-| Ben Eater CPU in HDL  | Arty A7      | CPU architecture       |
-| Video game console    | Arty A7      | Graphics, audio        |
-| Analog computer sim   | THAT         | Differential equations |
-| Custom logic analyzer | FPGA + SRAM  | High-speed capture     |
+### Major Projects (Weeks to Months)
+
+| Project                       | Platform            | Prior Work                                                        |
+|-------------------------------|---------------------|-------------------------------------------------------------------|
+| Custom CPU with unique ISA    | Arty A7             | [MicroBlaze/CPU work](https://github.com/mwwhited/EmbeddedBakery) |
+| 65C816 core (IIgs compatible) | Arty A7             | 6502 FPGA experience                                              |
+| TMS9900 core (TI-99 compat)   | Arty A7             | CPU design skills                                                 |
+| VGA/HDMI framebuffer          | Arty A7             | [Arty A7 projects](https://github.com/mwwhited/EmbeddedBakery)    |
+| Apple II expansion card       | KiCad + CPLD        | CPLD + vintage computing                                          |
+| USB protocol analyzer         | Zynq                | [Arty Z7 HLS](https://github.com/mwwhited/EmbeddedBakery)         |
+| Zynq accelerator (HLS)        | Arty Z7             | [HLS tutorials](https://github.com/mwwhited/EmbeddedBakery)       |
+| SDR receiver frontend         | Zynq + ADC          | DSP + Zynq skills                                                 |
+| Centronics-to-WiFi bridge     | ESP32 + parallel    | [DeviceBridge](https://github.com/mwwhited/DeviceBridge)          |
+| Multi-protocol test instrument| Zynq + analog       | Full-stack embedded                                               |
+| Gigatron expansion module     | TTL + interface     | TTL computer ownership                                            |
 
 ---
 
 ## Project Ideas by Category
 
-### Home Automation
+### Protocol Bridges & Instrument Control
 
-- [ ] ESP8266 smart outlet
-- [ ] Temperature/humidity monitor
-- [ ] Garage door controller
-- [ ] Plant watering system
-- [ ] Motion-activated lighting
-- [ ] Energy monitor (CT clamp)
-- [ ] HVAC zone controller
+*Building on [DeviceBridge](https://github.com/mwwhited/DeviceBridge) and [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) work.*
 
-### Audio/Music
+- [ ] GPIB/IEEE-488 USB adapter (extend DeviceBridge parallel expertise)
+- [ ] LXI instrument gateway (extend your ESP8266 LXI bridge)
+- [ ] LANC camera controller (expand existing LANC work)
+- [ ] H4n recorder interface (build on H4n protocol work)
+- [ ] RS485 protocol analyzer
+- [ ] SCPI command library for test equipment
+- [ ] Centronics-to-WiFi print server
 
-- [ ] MIDI controller
-- [ ] Analog synthesizer module
-- [ ] Audio spectrum analyzer
-- [ ] Guitar effects pedal
-- [ ] Chiptune player (SID, AY-3-8910)
-- [ ] Apple IIgs Ensoniq projects
+### FPGA & CPU Design
 
-### Retro Computing
+*Building on your [Arty A7 MicroBlaze and custom CPU work](https://github.com/mwwhited/EmbeddedBakery).*
 
-- [ ] Floppy drive emulator
-- [ ] Composite to HDMI converter
-- [ ] PS/2 to vintage keyboard adapter
-- [ ] ROM cartridge with flash
-- [ ] Reproduction PCBs
-- [ ] Failed chip replacement (GAL)
-- [ ] Memory expansion
+- [ ] Custom ISA CPU (beyond MicroBlaze)
+- [ ] 65C816 soft core (Apple IIgs compatible)
+- [ ] TMS9900 soft core (TI-99/4A compatible)
+- [ ] VGA framebuffer controller
+- [ ] HDMI/DVI output encoder
+- [ ] Hardware JSON/binary decoder (complement [BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders))
+- [ ] Multi-channel logic analyzer
+- [ ] DSP filter pipeline
 
-### Test Equipment
+### Vintage Computing
 
-- [ ] Curve tracer
-- [ ] Component tester
-- [ ] Logic analyzer (FPGA-based)
-- [ ] Frequency counter
-- [ ] Signal generator
-- [ ] ESR meter
-- [ ] Cable tester
+*For your Apple IIc, Apple IIgs, and TI-99/4A.*
 
-### Learning Projects
+- [ ] Apple II expansion card (custom peripheral)
+- [ ] SmartPort SD card interface
+- [ ] TI-99/4A cartridge with banked ROM
+- [ ] TMS5220 speech synthesizer clone
+- [ ] Composite to VGA/HDMI scan converter
+- [ ] GAL replacements for failed customs
+- [ ] Apple IIgs Ensoniq DOC experiments
+- [ ] Memory expansion cards
 
-- [ ] 555 timer circuits
-- [ ] Op-amp experiments
-- [ ] Analog computing basics (THAT)
-- [ ] 8-bit CPU (Ben Eater style in HDL)
-- [ ] FPGA basics (blinky to UART)
-- [ ] Bare metal ARM programming
-- [ ] Assembly language (6502, Z80, ARM)
+### Zynq / SoC Projects
+
+*Building on your [Arty Z7 HLS tutorials](https://github.com/mwwhited/EmbeddedBakery).*
+
+- [ ] Linux + PL hardware accelerator
+- [ ] USB protocol analyzer (high-speed capture)
+- [ ] SDR receiver with DSP
+- [ ] Multi-protocol test instrument
+- [ ] Video processing pipeline
+- [ ] Network-attached instrument server
+
+### Analog Computing
+
+*Using The Analog Thing.*
+
+- [ ] Lorenz attractor (chaos visualization)
+- [ ] Predator-prey ecosystem simulation
+- [ ] Control system modeling
+- [ ] Hybrid analog-digital with STM32 interface
+- [ ] Mechanical system simulation
+- [ ] Real-time ODE solving with digital readout
+
+### Test Equipment DIY
+
+- [ ] FPGA-based logic analyzer (> 100 MSa/s)
+- [ ] Curve tracer (transistor/diode characterization)
+- [ ] ESR meter for capacitor testing
+- [ ] Frequency counter (reciprocal counting)
+- [ ] Protocol-aware cable tester
+- [ ] Programmable load (for PSU testing)
 
 ---
 
