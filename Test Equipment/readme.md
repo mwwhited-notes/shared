@@ -88,6 +88,13 @@ Each device has its own directory with detailed specifications and locally archi
 |-------|---------|-----------|
 | [Maxstream XBIB-U-DEV](maxstream-xbib-u-dev/) | XBee development/programming | `maxstream-xbib-u-dev/` |
 
+### Microscopes
+
+| Model | Type | Magnification | Directory |
+|-------|------|---------------|-----------|
+| [AmScope T490-DK](amscope-t490-dk/) | Compound (Darkfield) | 40X-2000X | `amscope-t490-dk/` |
+| [AmScope SM-3](amscope-sm-3/) | Stereo | 3.5X-90X | `amscope-sm-3/` |
+
 ---
 
 ## Directory Structure
@@ -162,9 +169,15 @@ Each device has its own directory with detailed specifications and locally archi
 ├── velleman-k8055/
 │   ├── README.md
 │   └── K8055_UserManual.pdf
-└── maxstream-xbib-u-dev/
+├── maxstream-xbib-u-dev/
+│   ├── README.md
+│   └── XBIB-U-DEV_UserGuide.pdf
+├── amscope-t490-dk/
+│   ├── README.md
+│   └── T490_UserManual.pdf
+└── amscope-sm-3/
     ├── README.md
-    └── XBIB-U-DEV_UserGuide.pdf
+    └── SM-3_UserManual.pdf
 ```
 
 ---
@@ -204,4 +217,4 @@ Each device has its own directory with detailed specifications and locally archi
 
 ---
 
-*Last updated: December 2024*
+*Last updated: December 2025*

@@ -19,7 +19,8 @@
       "Bash(fi)",
       "Bash(done)",
       "Bash(find:*)",
-      "Bash(sort:*)"
+      "Bash(sort:*)",
+      "WebFetch(domain:amscope.com)"
     ]
   }
 }

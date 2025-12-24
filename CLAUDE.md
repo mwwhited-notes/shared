@@ -94,6 +94,7 @@ done
 - `Expansion Boards/readme.md` - Shields, HATs, capes index with compatibility info
 - `Test Equipment/readme.md` - Equipment index
 - `AnalogComputers/analog-computing-repository/README.md` - Analog computing collection overview
+- `AnalogComputers/analog-computing-repository/research-protocol.md` - Search strategies and download sources by topic
 - `AnalogComputers/analog-computing-repository/download-sources.md` - PDF source registry
 - `links.md` - Curated reference links (AI/ML, dotnet, electronics, retro computing)
 - `project-ideas.md` - Ongoing project list
