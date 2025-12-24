@@ -63,6 +63,13 @@ Quick reference for what this workshop can do and project suggestions when you n
 | Microscope camera | Capture images/video of work |
 | Document camera | PCB overview photos, tutorials |
 
+### Lab Equipment
+
+| Tool | Use |
+|------|-----|
+| CREWORKS Ultrasonic Cleaner | PCB cleaning, parts degreasing, flux removal |
+| Magnetic Stirrer Hot Plate | Solution prep, chemical mixing |
+
 ### Programmers
 
 | Programmer | Targets |
@@ -137,16 +144,20 @@ Quick reference for what this workshop can do and project suggestions when you n
 | Vintage computer repair | All of the above | ✓ |
 | Serial/I2C/SPI debug | Bus Pirate, logic analyzer | ✓ |
 | USB device issues | Scope, protocol analyzer | ✓ |
+| Dirty/contaminated PCB | Ultrasonic cleaner | ✓ |
+| Old flux residue | Ultrasonic cleaner + IPA | ✓ |
 
 ### Repair Workflow
 
 1. **Visual inspection** - Microscope for damaged components
-2. **Thermal scan** - FLIR for hot spots
-3. **Power check** - DMM for voltages
-4. **Signal trace** - Scope for waveforms
-5. **Protocol debug** - Logic analyzer for digital
-6. **Component test** - LCR meter, TL866
-7. **Rework** - Solder/hot air/desolder as needed
+2. **Cleaning** - Ultrasonic cleaner for dirty/corroded boards
+3. **Thermal scan** - FLIR for hot spots
+4. **Power check** - DMM for voltages
+5. **Signal trace** - Scope for waveforms
+6. **Protocol debug** - Logic analyzer for digital
+7. **Component test** - LCR meter, TL866
+8. **Rework** - Solder/hot air/desolder as needed
+9. **Post-rework cleaning** - Ultrasonic to remove flux residue
 
 ---
 

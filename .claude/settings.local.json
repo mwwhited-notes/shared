@@ -20,7 +20,8 @@
       "Bash(done)",
       "Bash(find:*)",
       "Bash(sort:*)",
-      "WebFetch(domain:amscope.com)"
+      "WebFetch(domain:amscope.com)",
+      "WebFetch(domain:www.amazon.com)"
     ]
   }
 }

@@ -34,13 +34,32 @@
 - Anti-skid base
 - Interchangeable nozzles
 
-## Included Nozzles
+## Nozzles
+
+### Stock Nozzles
 
 | Size | Use Case |
 |------|----------|
 | Small round | SOIC, small QFP |
 | Medium round | QFP, PLCC |
 | Large round | BGA, large ICs |
+
+### OCR 12-Piece Nozzle Kit
+
+| Sizes | Range |
+|-------|-------|
+| 12 nozzles | 3mm - 20mm |
+
+Provides full range of nozzle sizes for any SMD component.
+
+## Accessories
+
+### AIWFL Hot Air Clamp Stand
+
+- Hands-free holder for hot air gun
+- 2 PCB fixtures included
+- Designed for BGA rework
+- Frees both hands for component placement
 
 ## Applications
 

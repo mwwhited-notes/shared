@@ -36,8 +36,14 @@
 | Eyepieces | WF10X/20 (pair) |
 | Barlow Lens | 0.5X |
 | Barlow Lens | 2X |
-| Camera | MU500-HS (5MP USB 2.0 high-speed) |
-| Reduction Lens | FMA050 (0.5X C-mount adapter) |
+
+### Shared Camera Equipment (with T490-DK)
+
+| Accessory | Specification |
+|-----------|---------------|
+| USB Camera | MU500-HS (5MP USB 2.0 high-speed) |
+| C-mount Reduction | FMA050 (0.5X) |
+| Nikon F-mount Adapter | NDPL-1 (2X) |
 
 ## Features
 
@@ -101,6 +107,8 @@ Allows use of Nikon DSLR/mirrorless cameras on the trinocular port.
 ## Notes
 
 The SM-3 head can be mounted on various stands (table stand, boom stand, etc.). With the 0.5X and 2X Barlow lenses, the full magnification range spans 3.5X to 90X.
+
+**Not simul-focal** - Light is directed either to the eyepieces OR the camera port (unlike the T490-DK which allows simultaneous viewing).
 
 Magnification calculations:
 - Base: Objective (0.7X-4.5X) × Eyepiece (10X) = 7X-45X

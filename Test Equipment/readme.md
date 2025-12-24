@@ -27,6 +27,7 @@ Each device has its own directory with detailed specifications and locally archi
   - [Soldering & Rework](#soldering--rework)
   - [Thermal Imaging](#thermal-imaging)
   - [Imaging & Documentation](#imaging--documentation)
+  - [Lab Equipment](#lab-equipment)
 - [Directory Structure](#directory-structure)
 - [Software Resources](#software-resources)
   - [Instrument Control](#instrument-control)
@@ -142,6 +143,13 @@ Each device has its own directory with detailed specifications and locally archi
 |-------|------|------------|-----------|
 | [Kitchbar KB-700](kitchbar-kb700/) | Document Camera | 8MP | `kitchbar-kb700/` |
 
+### Lab Equipment
+
+| Model | Type | Capacity | Directory |
+|-------|------|----------|-----------|
+| [CREWORKS Ultrasonic Cleaner](creworks-ultrasonic-cleaner/) | Ultrasonic Cleaner | 10L | `creworks-ultrasonic-cleaner/` |
+| [Magnetic Stirrer Hot Plate](magnetic-stirrer-hotplate/) | Stirrer/Hot Plate | - | `magnetic-stirrer-hotplate/` |
+
 ---
 
 ## Directory Structure
@@ -236,7 +244,11 @@ Each device has its own directory with detailed specifications and locally archi
 │   └── README.md
 ├── flir-tg130/
 │   └── README.md
-└── kitchbar-kb700/
+├── kitchbar-kb700/
+│   └── README.md
+├── creworks-ultrasonic-cleaner/
+│   └── README.md
+└── magnetic-stirrer-hotplate/
     └── README.md
 ```
 

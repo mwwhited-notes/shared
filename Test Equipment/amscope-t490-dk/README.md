@@ -68,6 +68,35 @@
 - [AmScope T490-DK Product Page](https://amscope.com/products/c-t490-dk)
 - [AmScope Support](https://amscope.com/pages/support)
 
+## Camera Options
+
+### AmScope MU500-HS (shared with SM-3)
+
+| Specification | Value |
+|--------------|-------|
+| Sensor | 5MP CMOS |
+| Resolution | 2592 x 1944 |
+| Interface | USB 2.0 (high-speed) |
+| Mount | C-mount |
+| Reduction Lens | FMA050 (0.5X) |
+
+Features:
+- High-speed preview with independent capture resolution
+- Extended Depth of Focus (EDF)
+- Image stitching
+- Measurement tools
+- Video recording
+
+### Nikon F-Mount Adapter (shared with SM-3)
+
+| Specification | Value |
+|--------------|-------|
+| Model | NDPL-1 |
+| Magnification | 2X |
+| Mount | Nikon F-mount |
+
+Allows use of Nikon DSLR/mirrorless cameras on the trinocular port.
+
 ## Software
 
 - **AmScope Software** - Image capture and analysis for Windows
@@ -76,7 +105,7 @@
 
 ## Notes
 
-Trinocular head supports C-mount cameras. A 0.37X reduction lens recommended for camera use to capture full field of view.
+Trinocular head supports C-mount cameras. The simul-focal design allows simultaneous viewing through eyepieces while using the camera port.
 
 ## Local Files
 
