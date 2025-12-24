@@ -19,66 +19,79 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 ### Compute Platforms
 
-| Category | Devices | Best For |
-|----------|---------|----------|
-| **FPGA** | Artix-7 (100K LCs), Cyclone II | Custom logic, retro clones, DSP |
-| **SoC** | Zynq (ARM + FPGA) | Linux + hardware acceleration |
-| **Arduino/AVR** | UNO, Mega, Nano, ATtiny, ATmega | Prototyping, sensors, simple control |
-| **ESP WiFi** | ESP8266, ESP32 | IoT, home automation, wireless |
-| **ARM** | STM32 BluePill | USB devices, RTOS, performance |
-| **Wireless** | XBee, BLE modules | Mesh networks, remote sensors |
-| **Analog** | The Analog Thing | ODEs, control systems, simulation |
-| **Legacy** | PIC, 8051, Z8, Basic Stamp | Specific applications, learning |
-| **CPLD/GAL** | XC95108, ATF16V8B | Glue logic, vintage chip replacement |
+| Category         | Devices                         | Best For                                |
+|------------------|---------------------------------|-----------------------------------------|
+| **FPGA**         | Artix-7 (100K LCs), Cyclone II  | Custom logic, retro clones, DSP         |
+| **SoC**          | Zynq (ARM + FPGA)               | Linux + hardware acceleration           |
+| **Arduino/AVR**  | UNO, Mega, Nano, ATtiny, ATmega | Prototyping, sensors, simple control    |
+| **ESP WiFi**     | ESP8266, ESP32                  | IoT, home automation, wireless          |
+| **ARM**          | STM32 BluePill                  | USB devices, RTOS, performance          |
+| **Wireless**     | XBee, BLE modules               | Mesh networks, remote sensors           |
+| **Analog**       | The Analog Thing                | ODEs, control systems, simulation       |
+| **Legacy**       | PIC, 8051, Z8, Basic Stamp      | Specific applications, learning         |
+| **CPLD/GAL**     | XC95108, ATF16V8B               | Glue logic, vintage chip replacement    |
+| **TTL Computer** | Gigatron                        | CPU architecture learning, retro gaming |
+| **Retro Kits**   | Multicomp (Z80/6502/6809)       | CP/M, vintage OS emulation              |
 
 ### Vintage Computers
 
-| System | Projects |
-|--------|----------|
-| Apple IIc | Software, peripherals, restoration |
-| Apple IIgs | 16-bit dev, sound/graphics, GS/OS |
-| TI-99/4A | Cartridges, speech, expansion |
+| System     | Projects                           |
+|------------|------------------------------------|
+| Apple IIc  | Software, peripherals, restoration |
+| Apple IIgs | 16-bit dev, sound/graphics, GS/OS  |
+| TI-99/4A   | Cartridges, speech, expansion      |
+
+**Shared Accessories:**
+- Floppy Emu (Big Mess O' Wires) - SD-based floppy/HD emulator for Apple II systems
+- Greaseweazle V4.1 - USB floppy controller for disk imaging/writing (3" to 8")
 
 ### Test & Measurement
 
-| Category | Equipment | Capability |
-|----------|-----------|------------|
-| **Oscilloscope** | 200 MHz DSO, 150 MHz analog | Debug signals to ~50 MHz |
-| **Multimeter** | 6½ digit HP 34401A | Precision measurements |
-| **LCR Meter** | 100 kHz DE-5000 | Component characterization |
-| **Logic Analyzer** | 16 ch @ 100 MSa/s | Digital protocol debug |
-| **Power Supply** | 30V/5A, 60V/3A | Most bench projects |
-| **Thermal** | FLIR TG130 (80x60) | Hot spot detection |
-| **Microscope** | 3.5X-90X stereo + 5MP camera, 40X-2000X compound | SMD work, inspection, imaging |
-| **Document Camera** | Kitchbar KB-700 (8MP) | PCB photos, documentation |
+| Category            | Equipment                                        | Capability                    |
+|---------------------|--------------------------------------------------|-------------------------------|
+| **Oscilloscope**    | 200 MHz DSO, 150 MHz analog                      | Debug signals to ~50 MHz      |
+| **Multimeter**      | 6½ digit HP 34401A                               | Precision measurements        |
+| **LCR Meter**       | 100 kHz DE-5000                                  | Component characterization    |
+| **Logic Analyzer**  | 16 ch @ 100 MSa/s                                | Digital protocol debug        |
+| **Power Supply**    | 30V/5A, 60V/3A                                   | Most bench projects           |
+| **Thermal**         | FLIR TG130 (80x60)                               | Hot spot detection            |
+| **Microscope**      | 3.5X-90X stereo + 5MP camera, 40X-2000X compound | SMD work, inspection, imaging |
+| **Document Camera** | Kitchbar KB-700 (8MP)                            | PCB photos, documentation     |
+| **Webcam**          | Lenovo 510 FHD (1080p, 95° wide)                 | Video tutorials, streaming    |
 
 ### Assembly & Rework
 
-| Tool | Use |
-|------|-----|
-| KSGER T12 | Soldering (10 tip shapes) |
-| YaeCCC 858D | Hot air SMD rework |
-| Hakko FR-301 | Through-hole desoldering |
-| Stereo microscope | SMD inspection/placement |
-| Microscope camera | Capture images/video of work |
-| Document camera | PCB overview photos, tutorials |
+| Tool              | Use                            |
+|-------------------|--------------------------------|
+| KSGER T12         | Soldering (10 tip shapes)      |
+| YaeCCC 858D       | Hot air SMD rework             |
+| Hakko FR-301      | Through-hole desoldering       |
+| Stereo microscope | SMD inspection/placement       |
+| Microscope camera | Capture images/video of work   |
+| Document camera   | PCB overview photos, tutorials |
 
 ### Lab Equipment
 
+| Tool                        | Use                                          |
+|-----------------------------|----------------------------------------------|
+| CREWORKS Ultrasonic Cleaner | PCB cleaning, parts degreasing, flux removal |
+| Magnetic Stirrer Hot Plate  | Solution prep, chemical mixing               |
+
+### Automation & Input
+
 | Tool | Use |
 |------|-----|
-| CREWORKS Ultrasonic Cleaner | PCB cleaning, parts degreasing, flux removal |
-| Magnetic Stirrer Hot Plate | Solution prep, chemical mixing |
+| Fifine D6 Macro Keypad | 15-key programmable shortcuts, instrument control |
 
 ### Programmers
 
-| Programmer | Targets |
-|------------|---------|
-| TL866II Plus | EEPROM, Flash, AVR, PIC, GAL |
-| USBasp | AVR (Arduino, ATtiny, ATmega) |
-| ST-Link V2 | STM32, STM8 |
-| Altera USB Blaster | Intel/Altera FPGA, CPLD |
-| FT232H | Xilinx CPLD (via xc3sprog) |
+| Programmer         | Targets                       |
+|--------------------|-------------------------------|
+| TL866II Plus       | EEPROM, Flash, AVR, PIC, GAL  |
+| USBasp             | AVR (Arduino, ATtiny, ATmega) |
+| ST-Link V2         | STM32, STM8                   |
+| Altera USB Blaster | Intel/Altera FPGA, CPLD       |
+| FT232H             | Xilinx CPLD (via xc3sprog)    |
 
 ---
 
@@ -130,22 +143,22 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 ### With Current Equipment
 
-| Problem | Tools Needed | Can Do? |
-|---------|--------------|---------|
-| Dead power supply | DMM, scope, thermal | ✓ |
-| Bad capacitors | Soldering, ESR meter | ✓ |
-| Failed through-hole IC | Desoldering gun | ✓ |
-| Failed SMD IC | Hot air, microscope | ✓ |
-| Bad solder joints | Microscope, soldering | ✓ |
-| Intermittent connection | Scope, thermal | ✓ |
-| Logic IC failure | Logic analyzer, TL866 | ✓ |
-| EEPROM/Flash corruption | TL866II Plus | ✓ |
-| GAL/PAL failure | TL866II Plus + new GAL | ✓ |
-| Vintage computer repair | All of the above | ✓ |
-| Serial/I2C/SPI debug | Bus Pirate, logic analyzer | ✓ |
-| USB device issues | Scope, protocol analyzer | ✓ |
-| Dirty/contaminated PCB | Ultrasonic cleaner | ✓ |
-| Old flux residue | Ultrasonic cleaner + IPA | ✓ |
+| Problem                 | Tools Needed               | Can Do? |
+|-------------------------|----------------------------|---------|
+| Dead power supply       | DMM, scope, thermal        | [x]     |
+| Bad capacitors          | Soldering, ESR meter       | [x]     |
+| Failed through-hole IC  | Desoldering gun            | [x]     |
+| Failed SMD IC           | Hot air, microscope        | [x]     |
+| Bad solder joints       | Microscope, soldering      | [x]     |
+| Intermittent connection | Scope, thermal             | [x]     |
+| Logic IC failure        | Logic analyzer, TL866      | [x]     |
+| EEPROM/Flash corruption | TL866II Plus               | [x]     |
+| GAL/PAL failure         | TL866II Plus + new GAL     | [x]     |
+| Vintage computer repair | All of the above           | [x]     |
+| Serial/I2C/SPI debug    | Bus Pirate, logic analyzer | [x]     |
+| USB device issues       | Scope, protocol analyzer   | [x]     |
+| Dirty/contaminated PCB  | Ultrasonic cleaner         | [x]     |
+| Old flux residue        | Ultrasonic cleaner + IPA   | [x]     |
 
 ### Repair Workflow
 
@@ -165,43 +178,43 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 ### Beginner (Hours to Days)
 
-| Project | Platform | Skills |
-|---------|----------|--------|
-| Blink LED | Arduino | Basic |
-| Temperature logger | ESP8266 + DHT22 | WiFi, sensors |
-| USB volume knob | Arduino Pro Micro | USB HID |
-| IR remote decoder | Arduino + IR sensor | Protocols |
-| EEPROM reader/writer | Arduino + I2C EEPROM | I2C |
-| Logic probe | ATtiny85 | Simple circuits |
-| Persistence of vision | Arduino + LEDs | Timing |
+| Project               | Platform             | Skills          |
+|-----------------------|----------------------|-----------------|
+| Blink LED             | Arduino              | Basic           |
+| Temperature logger    | ESP8266 + DHT22      | WiFi, sensors   |
+| USB volume knob       | Arduino Pro Micro    | USB HID         |
+| IR remote decoder     | Arduino + IR sensor  | Protocols       |
+| EEPROM reader/writer  | Arduino + I2C EEPROM | I2C             |
+| Logic probe           | ATtiny85             | Simple circuits |
+| Persistence of vision | Arduino + LEDs       | Timing          |
 
 ### Intermediate (Days to Weeks)
 
-| Project | Platform | Skills |
-|---------|----------|--------|
-| Wireless sensor node | ESP32 + sensors | WiFi, MQTT |
-| MIDI controller | Arduino Pro Micro | USB MIDI |
-| Frequency counter | Arduino + prescaler | Timing, display |
-| CNC pendant | STM32 + encoder | USB, interrupts |
-| Analog synth module | Op-amps + Arduino | Analog + digital |
-| XBee mesh network | XBee + Arduino | Wireless protocols |
-| SD card oscilloscope | STM32 + ADC | High-speed sampling |
-| GPS tracker | ESP32 + GPS | Location, cellular |
+| Project              | Platform            | Skills              |
+|----------------------|---------------------|---------------------|
+| Wireless sensor node | ESP32 + sensors     | WiFi, MQTT          |
+| MIDI controller      | Arduino Pro Micro   | USB MIDI            |
+| Frequency counter    | Arduino + prescaler | Timing, display     |
+| CNC pendant          | STM32 + encoder     | USB, interrupts     |
+| Analog synth module  | Op-amps + Arduino   | Analog + digital    |
+| XBee mesh network    | XBee + Arduino      | Wireless protocols  |
+| SD card oscilloscope | STM32 + ADC         | High-speed sampling |
+| GPS tracker          | ESP32 + GPS         | Location, cellular  |
 
 ### Advanced (Weeks to Months)
 
-| Project | Platform | Skills |
-|---------|----------|--------|
-| 6502 on FPGA | Arty A7 | Verilog, CPU design |
-| TI-99/4A cartridge | CPLD + Flash | Vintage, CPLD |
-| Apple II clone core | Arty A7 | FPGA, retro |
-| Hybrid analog-digital | THAT + MCU | Analog computing |
-| USB protocol analyzer | Zynq | High-speed, USB |
-| SDR receiver | Zynq + ADC | RF, DSP |
-| Ben Eater CPU in HDL | Arty A7 | CPU architecture |
-| Video game console | Arty A7 | Graphics, audio |
-| Analog computer sim | THAT | Differential equations |
-| Custom logic analyzer | FPGA + SRAM | High-speed capture |
+| Project               | Platform     | Skills                 |
+|-----------------------|--------------|------------------------|
+| 6502 on FPGA          | Arty A7      | Verilog, CPU design    |
+| TI-99/4A cartridge    | CPLD + Flash | Vintage, CPLD          |
+| Apple II clone core   | Arty A7      | FPGA, retro            |
+| Hybrid analog-digital | THAT + MCU   | Analog computing       |
+| USB protocol analyzer | Zynq         | High-speed, USB        |
+| SDR receiver          | Zynq + ADC   | RF, DSP                |
+| Ben Eater CPU in HDL  | Arty A7      | CPU architecture       |
+| Video game console    | Arty A7      | Graphics, audio        |
+| Analog computer sim   | THAT         | Differential equations |
+| Custom logic analyzer | FPGA + SRAM  | High-speed capture     |
 
 ---
 

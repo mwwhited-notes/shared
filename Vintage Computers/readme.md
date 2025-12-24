@@ -13,6 +13,7 @@ Each system has its own directory with detailed specifications and locally archi
   - [Computer Index](#computer-index)
     - [Apple II Family](#apple-ii-family)
     - [Texas Instruments](#texas-instruments)
+    - [Homebrew / Project PCBs](#homebrew--project-pcbs)
   - [Directory Structure](#directory-structure)
   - [Software Resources](#software-resources)
     - [Emulators](#emulators)
@@ -37,6 +38,12 @@ Each system has its own directory with detailed specifications and locally archi
 |--------|------|-----|-----|---------|-----------|
 | [TI-99/4A](ti-99-4a/) | 1981 | TMS9900 @ 3.0 MHz | 16 KB | Cassette/Floppy | `ti-99-4a/` |
 
+### Homebrew / Project PCBs
+
+| Item | Platform | Purpose | Directory |
+|------|----------|---------|-----------|
+| [NESMaker PCB](nesmaker-pcb/) | NES | Homebrew cartridge | `nesmaker-pcb/` |
+
 ---
 
 ## Directory Structure
@@ -44,10 +51,16 @@ Each system has its own directory with detailed specifications and locally archi
 ```
 ├── readme.md                    # This file
 ├── apple-iic/
-│   └── README.md
+│   ├── README.md
+│   ├── FloppyEmu_Instructions.pdf
+│   └── FloppyEmu_QuickStart.pdf
 ├── apple-iigs/
+│   ├── README.md
+│   ├── FloppyEmu_Instructions.pdf
+│   └── FloppyEmu_QuickStart.pdf
+├── ti-99-4a/
 │   └── README.md
-└── ti-99-4a/
+└── nesmaker-pcb/
     └── README.md
 ```
 

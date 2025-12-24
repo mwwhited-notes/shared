@@ -53,6 +53,26 @@
 - SCSI card + hard drive
 - RAM expansion cards
 
+### Floppy Emu (shared with IIc)
+
+| Specification | Value |
+|--------------|-------|
+| Manufacturer | Big Mess O' Wires |
+| Model | Floppy Emu Model C |
+| Storage | SD Card |
+| Emulation | 5.25" floppy, 3.5" floppy, SmartPort HD |
+
+Features:
+- Emulates 5.25" (140K) and 3.5" (800K/1.4MB) floppy drives
+- SmartPort hard disk emulation (up to 4x 2GB volumes)
+- Supports .DSK, .PO, .DO, .2MG, .NIB, .WOZ, .MOOF formats
+- On-screen menu for disk selection
+- No drivers required - behaves like real hardware
+
+Documentation:
+- [Floppy Emu Product Page](https://www.bigmessowires.com/floppy-emu/)
+- [Floppy Emu User Guide](https://www.bigmessowires.com/floppy-emu-user-guide/)
+
 ## Documentation
 
 - [Apple IIgs Hardware Reference](https://archive.org/details/Apple_IIgs_Hardware_Reference)
@@ -72,7 +92,8 @@ The IIgs was the most powerful Apple II, featuring a 16-bit CPU and the same sou
 
 ## Local Files
 
-*Documentation to be downloaded*
+- `FloppyEmu_Instructions.pdf` - Floppy Emu full manual (28 pages)
+- `FloppyEmu_QuickStart.pdf` - Floppy Emu quick start guide
 
 ## Revision History
 

@@ -27,6 +27,7 @@ Each device has its own directory with detailed specifications and locally archi
   - [Soldering & Rework](#soldering--rework)
   - [Thermal Imaging](#thermal-imaging)
   - [Imaging & Documentation](#imaging--documentation)
+  - [Input Devices](#input-devices)
   - [Lab Equipment](#lab-equipment)
 - [Directory Structure](#directory-structure)
 - [Software Resources](#software-resources)
@@ -96,6 +97,7 @@ Each device has its own directory with detailed specifications and locally archi
 | [ST-Link V2](st-link-v2/) | ARM/STM8 | STM32, STM8 | `st-link-v2/` |
 | [USB to ESP-01 Adapter](usb-esp01-adapter/) | ESP8266 | ESP-01 module | `usb-esp01-adapter/` |
 | [Velleman K8048RS](velleman-k8048rs/) | PIC ISP | PIC 8/14/18/28-pin | `velleman-k8048rs/` |
+| [Greaseweazle V4.1](greaseweazle-v41/) | Floppy Controller | 3", 3.5", 5.25", 8" disks | `greaseweazle-v41/` |
 
 ### Protocol Tools
 
@@ -142,6 +144,13 @@ Each device has its own directory with detailed specifications and locally archi
 | Model | Type | Resolution | Directory |
 |-------|------|------------|-----------|
 | [Kitchbar KB-700](kitchbar-kb700/) | Document Camera | 8MP | `kitchbar-kb700/` |
+| [Lenovo 510 FHD](lenovo-510-fhd/) | Webcam | 1080p | `lenovo-510-fhd/` |
+
+### Input Devices
+
+| Model | Type | Keys | Directory |
+|-------|------|------|-----------|
+| [Fifine AmpliGame D6](fifine-d6/) | Macro Keypad | 15 | `fifine-d6/` |
 
 ### Lab Equipment
 
@@ -248,7 +257,13 @@ Each device has its own directory with detailed specifications and locally archi
 │   └── README.md
 ├── creworks-ultrasonic-cleaner/
 │   └── README.md
-└── magnetic-stirrer-hotplate/
+├── magnetic-stirrer-hotplate/
+│   └── README.md
+├── lenovo-510-fhd/
+│   └── README.md
+├── fifine-d6/
+│   └── README.md
+└── greaseweazle-v41/
     └── README.md
 ```
 

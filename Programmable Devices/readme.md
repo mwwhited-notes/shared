@@ -113,6 +113,18 @@ Each device has its own directory with detailed specifications and locally archi
 |--------|-------------|---------|-------------|-----------|
 | [Anabrid THAT](anabrid-that/) | 5 | 4 | 2 | `anabrid-that/` |
 
+### TTL Computers
+
+| Device | Architecture | Logic Family | Directory |
+|--------|--------------|--------------|-----------|
+| [Gigatron TTL](gigatron-ttl/) | 8-bit Harvard | 7400 TTL | `gigatron-ttl/` |
+
+### Retro Computing Kits
+
+| Board | FPGA/MCU | Supported CPUs | Directory |
+|-------|----------|----------------|-----------|
+| [Multicomp EP2C5-DB](multicomp-ep2c5/) | Cyclone II EP2C5 | Z80, 6502, 6809 | `multicomp-ep2c5/` |
+
 ---
 
 ## Directory Structure
@@ -166,7 +178,11 @@ Each device has its own directory with detailed specifications and locally archi
 ├── atf16v8b/                              # PLD/GAL
 ├── ampal22v10/
 │
-└── anabrid-that/                          # Analog Computer
+├── anabrid-that/                          # Analog Computer
+│
+├── gigatron-ttl/                          # TTL Computer
+│
+└── multicomp-ep2c5/                       # Retro Computing Kit
 ```
 
 ---

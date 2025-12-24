@@ -21,7 +21,11 @@
       "Bash(find:*)",
       "Bash(sort:*)",
       "WebFetch(domain:amscope.com)",
-      "WebFetch(domain:www.amazon.com)"
+      "WebFetch(domain:www.amazon.com)",
+      "WebFetch(domain:www.bigmessowires.com)",
+      "WebFetch(domain:www.a2heaven.com)",
+      "WebFetch(domain:www.tindie.com)",
+      "WebFetch(domain:gigatron.io)"
     ]
   }
 }
