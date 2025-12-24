@@ -2,21 +2,120 @@
 
 This folder contains application notes and technical documentation relevant to analog computing from Texas Instruments, Analog Devices, Anabrid, and other sources.
 
-## PDF Collection (144 PDFs, 192MB)
+## Contents (159 PDFs, 253MB)
 
-The `pdfs/` subfolder contains downloaded application notes organized by source.
+The `pdfs/` subfolder contains documents organized by category:
+
+```
+pdfs/
+├── acoustic-sonar/       (3 files)   # Sonar signal processing
+├── adi-appnotes/         (39 files)  # Analog Devices MT/AN series
+├── anabrid-alpaca/       (37 files)  # ALPACA application notes
+├── biomedical/           (9 files)   # ECG, EEG, EMG, IONM
+├── discrete-circuits/    (25 files)  # DIY op-amps, nonlinear circuits
+├── educational/          (4 files)   # Course materials
+├── historical-computing/ (11 files)  # Antikythera, perceptron, etc.
+├── music-synthesis/      (1 file)    # Moog, VCO
+├── petroleum/            (1 file)    # Reservoir simulation
+├── process-control/      (3 files)   # PID, dynamometer
+├── radar/                (1 file)    # MTI, pulse Doppler
+├── seismology/           (2 files)   # Earthquake instrumentation
+├── sensors/              (4 files)   # Photodiodes, gas sensors
+└── ti-appnotes/          (19 files)  # Texas Instruments app notes
+```
 
 ---
 
-## Anabrid ALPACA Application Notes
+## acoustic-sonar/
 
-The ALPACA (Analog Paradigm Application Collection of Analog computing) series covers practical analog computing examples.
+Sonar and Acoustic Signal Processing
+
+| File | Description |
+|------|-------------|
+| jhuapl-sonar-processing.pdf | JHUAPL sonar signal processing techniques |
+| intechopen-sonar-signal-processing.pdf | InTech Open sonar signal processing |
+| acoustics-today-defense.pdf | Acoustics Today defense applications |
+
+---
+
+## adi-appnotes/
+
+Analog Devices Application Notes and Tutorials
+
+### MT Series (Tutorials)
+
+| File | Description |
+|------|-------------|
+| adi-mt001.pdf | MT-001: Decoupling Techniques |
+| adi-mt003.pdf | MT-003: Understand SINAD, ENOB, SNR, THD |
+| adi-mt004.pdf | MT-004: The Good, the Bad, and the Ugly Aspects of ADC Input Noise |
+| adi-mt006.pdf | MT-006: ADC Noise Figure |
+| adi-mt007.pdf | MT-007: Aperture Time, Jitter, and Precision of Edges |
+| adi-mt008.pdf | MT-008: Converting Noise Spectral Densities |
+| adi-mt009.pdf | MT-009: Data Converter Codes |
+| adi-mt010.pdf | MT-010: The Importance of Data Converter Static Specs |
+| adi-mt011.pdf | MT-011: Find Those Elusive ADC/DAC Spoilers |
+| adi-mt012.pdf | MT-012: Intermodulation Distortion |
+| adi-mt014.pdf | MT-014: Basic DAC Architectures I |
+| adi-mt015.pdf | MT-015: Basic DAC Architectures II |
+| adi-mt017.pdf | MT-017: Oversampling Interpolating DACs |
+| adi-mt020.pdf | MT-020: ADC Architectures I (Pipelined) |
+| adi-mt021.pdf | MT-021: ADC Architectures II (SAR) |
+| adi-mt022.pdf | MT-022: ADC Architectures III (Sigma-Delta) |
+| adi-mt023.pdf | MT-023: ADC Architectures IV (Flash) |
+| adi-mt024.pdf | MT-024: ADC Architectures V (Dual Slope) |
+| adi-mt025.pdf | MT-025: ADC Noise Figure |
+| adi-mt031.pdf | MT-031: Grounding Data Converters |
+| adi-mt035.pdf | MT-035: Op Amp Inputs, Outputs, Single-Supply |
+| adi-mt036.pdf | MT-036: Op Amp Output Phase Reversal |
+| adi-mt038.pdf | MT-038: Op Amp Input Impedance |
+| adi-mt042.pdf | MT-042: Op Amp Common-Mode Rejection Ratio |
+| adi-mt043.pdf | MT-043: Op Amp Power Supply Rejection Ratio |
+| adi-mt044.pdf | MT-044: Op Amp Open-Loop Gain and Open-Loop Gain Nonlinearity |
+| adi-mt047.pdf | MT-047: Op Amp Noise |
+| adi-mt048.pdf | MT-048: Op Amp Noise Relationships |
+| adi-mt049.pdf | MT-049: Op Amp Total Output Noise Calculations |
+| adi-mt050.pdf | MT-050: Op Amp Distortion: HD and IMD |
+
+### AN Series (Application Notes)
+
+| File | Description |
+|------|-------------|
+| adi-an360.pdf | AN-360: Multiplier application notes |
+| adi-an397.pdf | AN-397: Electrically induced model motion |
+
+### Other ADI Documents
+
+| File | Description |
+|------|-------------|
+| adi-multiplier-app-guide.pdf | AD633/AD534 multiplier applications guide |
+| adi-inamp-guide.pdf | Instrumentation amplifier guide |
+| adi-cn0314-420ma.pdf | CN-0314: 4-20mA current loop interface |
+| adi-cn0301-lvdt.pdf | CN-0301: LVDT position sensor interface |
+| adi-cn0350-piezo.pdf | CN-0350: Piezoelectric sensor interface |
+| adi-ad598-lvdt.pdf | AD598 LVDT signal conditioner |
+| adi-ad7745-cap.pdf | AD7745 capacitive sensor |
+| adi-lt1025-cjc.pdf | LT1025 thermocouple CJC |
+| adi-sensor-handbook-ch6.pdf | Sensor signal conditioning handbook Ch.6 |
+| adi-op-amp-data-converters.pdf | Op-amps with data converters |
+| adi-nonlinear-circuits-handbook.pdf | Nonlinear circuits design handbook |
+
+---
+
+## anabrid-alpaca/
+
+ALPACA (Analog Paradigm Application Collection of Analog computing)
 
 | File | Topic |
 |------|-------|
 | alpaca_1-rossler.pdf | Rössler attractor |
 | alpaca_2-lorenz.pdf | Lorenz attractor |
 | alpaca_3-chua.pdf | Chua's circuit |
+| alpaca_4-bouncing-ball.pdf | Bouncing ball |
+| alpaca_5-van-der-pol.pdf | Van der Pol oscillator |
+| alpaca_6-mathieu.pdf | Mathieu equation |
+| alpaca_7-duffing.pdf | Duffing oscillator |
+| alpaca_8-pendulum.pdf | Simple pendulum |
 | alpaca_11-three-body.pdf | Three-body problem |
 | alpaca_12-charged-particle.pdf | Charged particle dynamics |
 | alpaca_14-rutherford.pdf | Rutherford scattering |
@@ -37,24 +136,217 @@ The ALPACA (Analog Paradigm Application Collection of Analog computing) series c
 | alpaca_37-pursuit-4.pdf | Four-body pursuit |
 | alpaca_38-pursuit-n.pdf | N-body pursuit |
 | alpaca_39-circle.pdf | Circle generation |
-| alpaca_4-bouncing-ball.pdf | Bouncing ball |
 | alpaca_40-roessler-hyperchaos.pdf | Rössler hyperchaos |
 | alpaca_41-rabinovitch.pdf | Rabinovitch-Fabrikant system |
 | alpaca_42-mandelbrot.pdf | Mandelbrot set |
 | alpaca_43-linear-ode.pdf | Linear ODEs |
 | alpaca_44-nonlinear-ode.pdf | Nonlinear ODEs |
 | alpaca_45-logistic-map.pdf | Logistic map |
-| alpaca_5-van-der-pol.pdf | Van der Pol oscillator |
 | alpaca_50-bessel.pdf | Bessel functions |
 | alpaca_51-root-finding.pdf | Root finding |
 | alpaca_54-stochastic-deq.pdf | Stochastic differential equations |
-| alpaca_6-mathieu.pdf | Mathieu equation |
-| alpaca_7-duffing.pdf | Duffing oscillator |
-| alpaca_8-pendulum.pdf | Simple pendulum |
 
 ---
 
-## Texas Instruments Application Notes
+## biomedical/
+
+Biomedical Signal Processing (ECG, EEG, EMG, IONM)
+
+### ECG/Electrocardiography
+
+| File | Description |
+|------|-------------|
+| ad8232-ecg-front-end.pdf | AD8232 single-lead ECG front end datasheet |
+| msu-ecg-circuit-design.pdf | MSU ECE480 electrocardiography circuit design |
+| stanford-ecg-project.pdf | Stanford ENGR 40M ECG project |
+| oxford-ecg-instrumentation.pdf | Oxford ECG instrumentation notes |
+| northeastern-ecg-lab.pdf | Northeastern ECG instrumentation amplifier lab |
+
+### EEG/EMG Signal Processing
+
+| File | Description |
+|------|-------------|
+| eeg-signal-processing.pdf | EEG Signal Processing textbook (U. Washington) |
+| emg-tutorial-merletti.pdf | Surface EMG detection and conditioning tutorial |
+| mit-cardiovascular-acceleration.pdf | MIT cardiovascular simulation thesis |
+
+### IONM (Intraoperative Neurophysiological Monitoring)
+
+| File | Description |
+|------|-------------|
+| kaiser-ionm-policy.pdf | Kaiser IONM clinical policy |
+
+---
+
+## discrete-circuits/
+
+Discrete Component Circuit Design
+
+### Op-Amp Construction
+
+| File | Description |
+|------|-------------|
+| passdiy-discrete-opamp.pdf | PassDIY: Building discrete op-amps |
+| adafruit-discrete-opamp.pdf | Adafruit discrete op-amp tutorial |
+| unc-diffpair-mirror.pdf | Differential pair and current mirror |
+
+### Nonlinear Circuits
+
+| File | Description |
+|------|-------------|
+| triode-diode-function-gen.pdf | Diode function generators |
+| kuhn-log-circuits.pdf | Discrete log/antilog circuits |
+| gilbert-cell-multiplier.pdf | Gilbert cell analog multiplier |
+| ad538-computational.pdf | AD538 computational circuits |
+
+### Analog Switches and VCO
+
+| File | Description |
+|------|-------------|
+| ucsd-fet-switches.pdf | FET analog switches |
+| toronto-vco.pdf | VCO design |
+| oxford-peak-detector.pdf | Peak detector circuits |
+
+### Reference Circuits
+
+| File | Description |
+|------|-------------|
+| bobpease-bandgap.pdf | Bandgap voltage reference design |
+
+### Filter Design
+
+| File | Description |
+|------|-------------|
+| sloa049d.pdf | TI Active Filter Design Techniques |
+
+(Plus additional discrete circuit files)
+
+---
+
+## educational/
+
+Educational Materials and Getting Started Guides
+
+| File | Description |
+|------|-------------|
+| THAT_First_Steps.pdf | THE Analog Thing getting started guide |
+| uiuc-analog-computing.pdf | UIUC analog computing course |
+| uiuc-analog-manual.pdf | UIUC analog computer manual |
+| vissim-6dof-tutorial.pdf | VisSim 6-DOF simulation tutorial |
+
+---
+
+## historical-computing/
+
+Historical Analog Computing
+
+### Antikythera Mechanism
+
+| File | Description |
+|------|-------------|
+| antikythera-cosmos-model-2021.pdf | Nature paper: Model of the Cosmos reconstruction |
+| antikythera-modern-reproduction.pdf | Modern reproduction of the mechanism |
+| antikythera-reconstruction-arxiv.pdf | ArXiv reconstruction instructions |
+| asme-antikythera-landmark.pdf | ASME historical mechanical engineering landmark |
+
+### Tide Prediction Machines
+
+| File | Description |
+|------|-------------|
+| liverpool-tide-machines.pdf | Tide prediction machines at Liverpool Tidal Institute |
+| ostrander-planetarium-calculator.pdf | 1841 planetarium and astronomical calculator |
+
+### Differential Analyzer
+
+| File | Description |
+|------|-------------|
+| bush-differential-analyzer-1986.pdf | Bush differential analyzer history |
+
+### Early Neural Networks
+
+| File | Description |
+|------|-------------|
+| rosenblatt-perceptron-1958.pdf | Rosenblatt's original perceptron paper |
+| perceptron-lecture-notes.pdf | Perceptron lecture notes |
+
+### Ballistic Computation
+
+| File | Description |
+|------|-------------|
+| iop-artillery-firing-tables.pdf | Artillery firing tables computation |
+| aberdeen-ballistic-computation.pdf | Aberdeen ballistic computer history |
+
+---
+
+## music-synthesis/
+
+Music Synthesis and Audio
+
+| File | Description |
+|------|-------------|
+| moog-voltage-controlled-modules-1964.pdf | Moog 1964 AES paper on voltage-controlled modules |
+
+---
+
+## petroleum/
+
+Petroleum and Reservoir Simulation
+
+| File | Description |
+|------|-------------|
+| usgs-petroleum-modeling.pdf | USGS petroleum reservoir modeling |
+
+---
+
+## process-control/
+
+Process Control and Automation
+
+| File | Description |
+|------|-------------|
+| asee-pid-experiment.pdf | ASEE PID controller modeling and simulation |
+| keysight-dyno-testing.pdf | Keysight dynamometer engine testing |
+| pmu-dynamometer-design.pdf | Dynamometer design for engine testing |
+
+---
+
+## radar/
+
+Radar Signal Processing
+
+| File | Description |
+|------|-------------|
+| recw-mti-pulse-doppler.pdf | MTI and pulse Doppler radar processing |
+
+---
+
+## seismology/
+
+Seismology and Earthquake Instrumentation
+
+| File | Description |
+|------|-------------|
+| seismology-instrumentation.pdf | Seismology instrumentation fundamentals |
+| aees-seismic-instrumentation.pdf | AEES seismic instrumentation standards |
+
+---
+
+## sensors/
+
+Sensor Interface Circuits
+
+| File | Description |
+|------|-------------|
+| vishay-photodiode.pdf | Photodiode application notes |
+| sgx-electrochemical-sensor.pdf | Electrochemical gas sensors |
+| st-shock-sensor.pdf | Shock/vibration sensors |
+| iaea-reactor-simulator.pdf | IAEA nuclear reactor instrumentation |
+
+---
+
+## ti-appnotes/
+
+Texas Instruments Application Notes
 
 ### Op-Amp Fundamentals
 
@@ -64,7 +356,6 @@ The ALPACA (Analog Paradigm Application Collection of Analog computing) series c
 | sboa275.pdf | Integrator circuit design |
 | snla140d.pdf | AN-31: Amplifier Circuit Collection |
 | snoa621c.pdf | AN-20: Applications Guide for Op Amps |
-| sloa049d.pdf | Active Filter Design Techniques |
 
 ### Sensor Interface
 
@@ -92,160 +383,24 @@ The ALPACA (Analog Paradigm Application Collection of Analog computing) series c
 
 ---
 
-## Analog Devices Application Notes
-
-### Multipliers and Nonlinear Circuits
-
-| File | Description |
-|------|-------------|
-| adi-multiplier-app-guide.pdf | AD633/AD534 multiplier applications |
-| ad538-computational.pdf | AD538 computational circuits |
-
-### Sensor Interface
-
-| File | Description |
-|------|-------------|
-| adi-inamp-guide.pdf | Instrumentation amplifier guide |
-| adi-cn0314-420ma.pdf | 4-20mA current loop interface |
-| adi-cn0301-lvdt.pdf | LVDT position sensor interface |
-| adi-cn0350-piezo.pdf | Piezoelectric sensor interface |
-| adi-ad598-lvdt.pdf | AD598 LVDT signal conditioner |
-| adi-ad7745-cap.pdf | AD7745 capacitive sensor |
-| adi-lt1025-cjc.pdf | LT1025 thermocouple CJC |
-| adi-sensor-handbook-ch6.pdf | Sensor signal conditioning handbook |
-
-### Op-Amp Applications
-
-| File | Description |
-|------|-------------|
-| adi-op-amp-data-converters.pdf | Op-amps with data converters |
-
----
-
-## Discrete Component Circuits
-
-| File | Description |
-|------|-------------|
-| passdiy-discrete-opamp.pdf | Building discrete op-amps |
-| adafruit-discrete-opamp.pdf | Adafruit discrete op-amp tutorial |
-| unc-diffpair-mirror.pdf | Differential pair and current mirror |
-| triode-diode-function-gen.pdf | Diode function generators |
-| ucsd-fet-switches.pdf | FET analog switches |
-| toronto-vco.pdf | VCO design |
-| oxford-peak-detector.pdf | Peak detector circuits |
-| bobpease-bandgap.pdf | Bandgap voltage reference design |
-| kuhn-log-circuits.pdf | Discrete log/antilog circuits |
-| gilbert-cell-multiplier.pdf | Gilbert cell analog multiplier |
-
----
-
-## Educational Resources
-
-| File | Description |
-|------|-------------|
-| uiuc-analog-computing.pdf | UIUC analog computing course |
-| uiuc-analog-manual.pdf | UIUC analog computer manual |
-| THAT_First_Steps.pdf | THE Analog Thing getting started guide |
-
----
-
-## Sensor-Specific
-
-| File | Description |
-|------|-------------|
-| vishay-photodiode.pdf | Photodiode application notes |
-| sgx-electrochemical-sensor.pdf | Electrochemical gas sensors |
-| st-shock-sensor.pdf | Shock/vibration sensors |
-
----
-
-## Biomedical Signal Processing
-
-### ECG/Electrocardiography
-
-| File | Description |
-|------|-------------|
-| ad8232-ecg-front-end.pdf | AD8232 single-lead ECG front end datasheet |
-| msu-ecg-circuit-design.pdf | MSU ECE480 electrocardiography circuit design |
-| stanford-ecg-project.pdf | Stanford ENGR 40M ECG project |
-| oxford-ecg-instrumentation.pdf | Oxford ECG instrumentation notes |
-| northeastern-ecg-lab.pdf | Northeastern ECG instrumentation amplifier lab |
-
-### EEG/EMG Signal Processing
-
-| File | Description |
-|------|-------------|
-| eeg-signal-processing.pdf | EEG Signal Processing textbook (U. Washington) |
-| emg-tutorial-merletti.pdf | Surface EMG detection and conditioning tutorial |
-| mit-cardiovascular-acceleration.pdf | MIT cardiovascular simulation thesis |
-
-### IONM (Intraoperative Neurophysiological Monitoring)
-
-| File | Description |
-|------|-------------|
-| kaiser-ionm-policy.pdf | Kaiser IONM clinical policy |
-| nass-ionm-coverage.pdf | NASS IONM coverage recommendations |
-
----
-
-## Historical Analog Computing
-
-### Antikythera Mechanism
-
-The world's first known analog computer, dating to ~150-100 BC.
-
-| File | Description |
-|------|-------------|
-| antikythera-cosmos-model-2021.pdf | Nature paper: Model of the Cosmos reconstruction |
-| antikythera-modern-reproduction.pdf | Modern reproduction of the mechanism |
-| antikythera-reconstruction-arxiv.pdf | ArXiv reconstruction instructions |
-| asme-antikythera-landmark.pdf | ASME historical mechanical engineering landmark |
-
-### Tide Prediction Machines
-
-| File | Description |
-|------|-------------|
-| liverpool-tide-machines.pdf | Tide prediction machines at Liverpool Tidal Institute |
-| ostrander-planetarium-calculator.pdf | 1841 planetarium and astronomical calculator |
-
----
-
-## Process Control & Automation
-
-| File | Description |
-|------|-------------|
-| asee-pid-experiment.pdf | ASEE PID controller modeling and simulation |
-| keysight-dyno-testing.pdf | Keysight dynamometer engine testing |
-| pmu-dynamometer-design.pdf | Dynamometer design for engine testing |
-
----
-
-## Detailed Summaries
-
-In-depth summaries of key application notes:
-
-- [TI Handbook of Op-Amp Applications (SBOA092B)](01-ti-sboa092b.md)
-- [Analog Devices Multiplier Applications](02-adi-multipliers.md)
-- [Anabrid THE Analog Thing Guide](03-anabrid-that.md)
-
----
-
 ## Quick Reference: Which App Note for What?
 
-| Task | Recommended PDF |
-|------|-----------------|
-| Building an integrator | sboa275.pdf, sboa092b.pdf |
-| Designing a filter | sloa049d.pdf |
-| Multiplier circuits | adi-multiplier-app-guide.pdf |
-| Chaos/attractors | alpaca_2-lorenz.pdf, alpaca_3-chua.pdf |
-| Solving ODEs | alpaca_43-linear-ode.pdf, alpaca_44-nonlinear-ode.pdf |
-| Sensor interface | adi-inamp-guide.pdf, ti-strain-gauge.pdf |
-| VFC circuits | ti-lm331-vfc.pdf |
-| Discrete circuits | passdiy-discrete-opamp.pdf |
-| Physics simulations | alpaca_8-pendulum.pdf, alpaca_11-three-body.pdf |
-| ECG/biomedical | ad8232-ecg-front-end.pdf, msu-ecg-circuit-design.pdf |
-| PID control | asee-pid-experiment.pdf |
-| Historical computing | antikythera-cosmos-model-2021.pdf, liverpool-tide-machines.pdf |
+| Task | Recommended PDF | Folder |
+|------|-----------------|--------|
+| Building an integrator | sboa275.pdf, sboa092b.pdf | ti-appnotes/ |
+| Designing a filter | sloa049d.pdf | discrete-circuits/ |
+| Multiplier circuits | adi-multiplier-app-guide.pdf | adi-appnotes/ |
+| Chaos/attractors | alpaca_2-lorenz.pdf, alpaca_3-chua.pdf | anabrid-alpaca/ |
+| Solving ODEs | alpaca_43-linear-ode.pdf, alpaca_44-nonlinear-ode.pdf | anabrid-alpaca/ |
+| Sensor interface | adi-inamp-guide.pdf, ti-strain-gauge.pdf | adi-appnotes/, ti-appnotes/ |
+| VFC circuits | ti-lm331-vfc.pdf | ti-appnotes/ |
+| Discrete circuits | passdiy-discrete-opamp.pdf | discrete-circuits/ |
+| Physics simulations | alpaca_8-pendulum.pdf, alpaca_11-three-body.pdf | anabrid-alpaca/ |
+| ECG/biomedical | ad8232-ecg-front-end.pdf, msu-ecg-circuit-design.pdf | biomedical/ |
+| PID control | asee-pid-experiment.pdf | process-control/ |
+| Historical computing | antikythera-cosmos-model-2021.pdf | historical-computing/ |
+| Sonar processing | jhuapl-sonar-processing.pdf | acoustic-sonar/ |
+| Radar MTI | recw-mti-pulse-doppler.pdf | radar/ |
 
 ---
 
@@ -254,12 +409,13 @@ In-depth summaries of key application notes:
 - **Texas Instruments**: ti.com/lit/
 - **Analog Devices**: analog.com/en/resources/
 - **Anabrid/Analog Paradigm**: analogparadigm.com/documentation.html
-- **University courses**: UIUC, Toronto, UCSD, Oxford
+- **JHUAPL**: secwww.jhuapl.edu/techdigest/
+- **University courses**: UIUC, Toronto, UCSD, Oxford, MSU, Stanford
 
 ---
 
 ## See Also
 
 - [Datasheets](../09-datasheets/) - Component datasheets
-- [Aerospace Simulation](../11-aerospace-simulation/) - Practical applications
+- [Aerospace Simulation](../11-aerospace-simulation/) - Flight simulation and guidance
 - [Analog Computer Docs](../12-analog-computer-docs/) - Computer-specific documentation
