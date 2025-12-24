@@ -24,6 +24,9 @@ Each device has its own directory with detailed specifications and locally archi
   - [Data Acquisition / I/O](#data-acquisition--io)
   - [Development Boards](#development-boards)
   - [Microscopes](#microscopes)
+  - [Soldering & Rework](#soldering--rework)
+  - [Thermal Imaging](#thermal-imaging)
+  - [Imaging & Documentation](#imaging--documentation)
 - [Directory Structure](#directory-structure)
 - [Software Resources](#software-resources)
   - [Instrument Control](#instrument-control)
@@ -119,6 +122,26 @@ Each device has its own directory with detailed specifications and locally archi
 | [AmScope T490-DK](amscope-t490-dk/) | Compound (Darkfield) | 40X-2000X | `amscope-t490-dk/` |
 | [AmScope SM-3](amscope-sm-3/) | Stereo | 3.5X-90X | `amscope-sm-3/` |
 
+### Soldering & Rework
+
+| Model | Type | Power | Directory |
+|-------|------|-------|-----------|
+| [KSGER T12](ksger-t12/) | Soldering Station | 75W | `ksger-t12/` |
+| [YaeCCC 858D](yaeccc-858d/) | Hot Air Rework | 700W | `yaeccc-858d/` |
+| [Hakko FR-301](hakko-fr301/) | Desoldering Gun | 140W | `hakko-fr301/` |
+
+### Thermal Imaging
+
+| Model | Type | Resolution | Directory |
+|-------|------|------------|-----------|
+| [FLIR TG130](flir-tg130/) | Spot Thermal Camera | 80x60 | `flir-tg130/` |
+
+### Imaging & Documentation
+
+| Model | Type | Resolution | Directory |
+|-------|------|------------|-----------|
+| [Kitchbar KB-700](kitchbar-kb700/) | Document Camera | 8MP | `kitchbar-kb700/` |
+
 ---
 
 ## Directory Structure
@@ -202,9 +225,19 @@ Each device has its own directory with detailed specifications and locally archi
 ├── amscope-t490-dk/
 │   ├── README.md
 │   └── T490_UserManual.pdf
-└── amscope-sm-3/
-    ├── README.md
-    └── SM-3_UserManual.pdf
+├── amscope-sm-3/
+│   ├── README.md
+│   └── SM-3_UserManual.pdf
+├── ksger-t12/
+│   └── README.md
+├── yaeccc-858d/
+│   └── README.md
+├── hakko-fr301/
+│   └── README.md
+├── flir-tg130/
+│   └── README.md
+└── kitchbar-kb700/
+    └── README.md
 ```
 
 ---

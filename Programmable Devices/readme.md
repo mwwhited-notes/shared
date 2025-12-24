@@ -107,6 +107,12 @@ Each device has its own directory with detailed specifications and locally archi
 | [ATF16V8B](atf16v8b/) | GAL/SPLD | 8 | 8 | `atf16v8b/` |
 | [AMPAL22V10APC](ampal22v10/) | PAL | 10 | 10 | `ampal22v10/` |
 
+### Analog Computers
+
+| Device | Integrators | Summers | Multipliers | Directory |
+|--------|-------------|---------|-------------|-----------|
+| [Anabrid THAT](anabrid-that/) | 5 | 4 | 2 | `anabrid-that/` |
+
 ---
 
 ## Directory Structure
@@ -158,7 +164,9 @@ Each device has its own directory with detailed specifications and locally archi
 ├── xilinx-xc95108/                        # CPLD
 │
 ├── atf16v8b/                              # PLD/GAL
-└── ampal22v10/
+├── ampal22v10/
+│
+└── anabrid-that/                          # Analog Computer
 ```
 
 ---

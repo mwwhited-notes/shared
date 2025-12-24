@@ -36,6 +36,8 @@
 | Eyepieces | WF10X/20 (pair) |
 | Barlow Lens | 0.5X |
 | Barlow Lens | 2X |
+| Camera | MU500-HS (5MP USB 2.0 high-speed) |
+| Reduction Lens | FMA050 (0.5X C-mount adapter) |
 
 ## Features
 
@@ -61,10 +63,40 @@
 - [AmScope SM-3 Product Page](https://amscope.com/products/sm-3tz-54s-3m3)
 - [AmScope Support](https://amscope.com/pages/support)
 
+## Camera Options
+
+### AmScope MU500-HS (shared with T490-DK)
+
+| Specification | Value |
+|--------------|-------|
+| Sensor | 5MP CMOS |
+| Resolution | 2592 x 1944 |
+| Interface | USB 2.0 (high-speed) |
+| Mount | C-mount |
+| Reduction Lens | FMA050 (0.5X) |
+
+Features:
+- High-speed preview with independent capture resolution
+- Extended Depth of Focus (EDF)
+- Image stitching
+- Measurement tools
+- Video recording
+
+### Nikon F-Mount Adapter (shared with T490-DK)
+
+| Specification | Value |
+|--------------|-------|
+| Model | NDPL-1 |
+| Magnification | 2X |
+| Mount | Nikon F-mount |
+
+Allows use of Nikon DSLR/mirrorless cameras on the trinocular port.
+
 ## Software
 
 - **AmScope Software** - Image capture and analysis for Windows
   - [Download](https://amscope.com/pages/software-downloads)
+- **AmScope Camera Software** - Windows 8.1/10/11, macOS, Linux
 
 ## Notes
 

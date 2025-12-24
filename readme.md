@@ -14,6 +14,7 @@ Enjoy!
   - [Programmable Devices](#programmable-devices)
   - [Expansion Boards](#expansion-boards)
   - [Test Equipment](#test-equipment)
+  - [Vintage Computers](#vintage-computers)
 - [Research Collections](#research-collections)
   - [Analog Computers](#analog-computers)
 - [Notes](#notes)
@@ -46,10 +47,22 @@ Arduino shields, Raspberry Pi HATs, BeagleBone capes, and other dev board access
 
 ### Test Equipment
 
-Lab equipment documentation including oscilloscopes, DMMs, power supplies, programmers, and microscopes.
+Lab equipment documentation including oscilloscopes, DMMs, power supplies, programmers, microscopes, and soldering tools.
 
 - **[Test Equipment/](Test%20Equipment/)** - Equipment index and inventory
 - **[Documentation Protocol](Test%20Equipment/EQUIPMENT_DOCUMENTATION_PROTOCOL.md)** - Standards for adding new equipment
+
+### Vintage Computers
+
+Classic home computers from the 1980s.
+
+- **[Vintage Computers/](Vintage%20Computers/)** - Computer index and inventory
+
+| System | Year | CPU |
+|--------|------|-----|
+| Apple IIc | 1984 | 65C02 @ 1 MHz |
+| Apple IIgs | 1986 | 65C816 @ 2.8 MHz |
+| TI-99/4A | 1981 | TMS9900 @ 3 MHz |
 
 ---
 
@@ -143,6 +156,7 @@ Utility scripts for various platforms and tools.
 
 ## Quick Links
 
+- **[workshop-capabilities.md](workshop-capabilities.md)** - What can I build/fix? Project ideas by difficulty
 - **[links.md](links.md)** - Curated reference links (AI/ML, .NET, electronics, retro computing)
 - **[project-ideas.md](project-ideas.md)** - Ongoing project list
 
