@@ -10,6 +10,29 @@ Each device has its own directory with detailed specifications and locally archi
 
 ---
 
+## Table of Contents
+
+- [Equipment Index](#equipment-index)
+  - [Oscilloscopes](#oscilloscopes)
+  - [Signal Generators](#signal-generators)
+  - [Multimeters](#multimeters)
+  - [LCR Meters](#lcr-meters)
+  - [Power Supplies](#power-supplies)
+  - [Logic Analyzers](#logic-analyzers)
+  - [Programmers](#programmers)
+  - [Protocol Tools](#protocol-tools)
+  - [Data Acquisition / I/O](#data-acquisition--io)
+  - [Development Boards](#development-boards)
+  - [Microscopes](#microscopes)
+- [Directory Structure](#directory-structure)
+- [Software Resources](#software-resources)
+  - [Instrument Control](#instrument-control)
+  - [Protocol Analysis & Debugging](#protocol-analysis--debugging)
+  - [Cross-Platform Tools](#cross-platform-tools)
+- [Notes](#notes)
+
+---
+
 ## Equipment Index
 
 ### Oscilloscopes

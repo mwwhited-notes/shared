@@ -84,4 +84,4 @@ Higher voltage version of the KA3005P (60V/3A vs 30V/5A). Same power rating (180
 
 | Date | Change |
 |------|--------|
-| 2024-12-24 | Initial entry (unit on order) |
+| 2025-12-24 | Initial entry (unit on order) |

@@ -86,4 +86,4 @@ Trinocular head supports C-mount cameras. A 0.37X reduction lens recommended for
 
 | Date | Change |
 |------|--------|
-| 2024-12-24 | Initial entry |
+| 2025-12-24 | Initial entry |
