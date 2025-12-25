@@ -21,7 +21,7 @@
 | ROM | 32 KB |
 | Display | 40/80 column text, 280x192 graphics |
 | Storage | Internal 5.25" floppy (140 KB) |
-| Ports | 2x Serial (DB-19), Video, Joystick, Disk |
+| Ports | 2x Serial (DIN 5), Video (DB-15), Joystick (DB-9), Disk (DB-15) |
 | Audio | 1-bit speaker |
 | Power | External 15V AC adapter |
 | Dimensions | 12" x 11.5" x 2.5" |
