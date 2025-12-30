@@ -48,6 +48,13 @@ This protocol ensures consistent documentation of online shopping experiences, p
 
 ---
 
+## Default Assumptions
+
+- **Would Buy Again:** Assume "Yes" unless the user explicitly states otherwise
+- If seller is added to Blacklist, "Would Buy Again" is automatically "No"
+
+---
+
 ## Conversation Triggers
 
 When the user mentions any of the following, update `ShoppingOnline.md`:
