@@ -40,6 +40,7 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 - **Expansion Boards/** - Inventory of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and other dev board accessories
 - **Test Equipment/** - Lab equipment documentation (oscilloscopes, DMMs, power supplies, programmers, 3D printer)
 - **Vintage Computers/** - Apple IIc, Apple IIgs, TI-99/4A with peripherals (Floppy Emu, VGA adapters, RAM expansions)
+- **Camera Collection/** - Photography equipment inventory (Nikon D800, film cameras, lenses, M42 vintage glass)
 - **Notes/** - Technical notes on various topics (Kubernetes, dotnet, FPGA, vintage computing, etc.)
 - **Scripts/** - Utility scripts (JavaScript, T-SQL, dotnet, Vivado TCL, WSL configuration)
 - **HammingDistances/** - Precomputed Hamming distance lookup tables (CSV format)
@@ -84,6 +85,13 @@ Follow `.claude/protocols/ONLINE_SHOPPING_PROTOCOL.md` when:
 - User mentions purchases from online sellers
 - Documenting seller experiences (good or bad)
 - Tracking pricing and shipping quality
+
+### Camera Collection
+Follow `.claude/protocols/CAMERA_COLLECTION_PROTOCOL.md` when:
+- Adding camera bodies (digital or film)
+- Documenting lenses, teleconverters, and accessories
+- Tracking lens mount compatibility
+- Cross-referencing with purchase info in ShoppingOnline.md
 
 ### Analog Computers
 Reference `AnalogComputers/analog-computing-repository/CLAUDE.md` for the analog computing research collection.
@@ -139,6 +147,7 @@ done
 - `Expansion Boards/readme.md` - Shields, HATs, capes index with compatibility info
 - `Test Equipment/readme.md` - Equipment index (oscilloscopes, DMMs, programmers, 3D printer)
 - `Vintage Computers/readme.md` - Apple IIc, Apple IIgs, TI-99/4A inventory
+- `Camera Collection/readme.md` - Cameras, lenses, and photography accessories
 - `AnalogComputers/analog-computing-repository/README.md` - Analog computing collection overview
 - `AnalogComputers/analog-computing-repository/research-protocol.md` - Search strategies and download sources by topic
 - `AnalogComputers/analog-computing-repository/download-sources.md` - PDF source registry
