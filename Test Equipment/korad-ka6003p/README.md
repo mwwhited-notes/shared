@@ -9,8 +9,11 @@
 | Manufacturer | Korad |
 | Model | KA6003P |
 | Type | Linear Regulated DC Power Supply |
-| Status | On Order |
-| Condition | New |
+| Status | Working |
+| Condition | Cosmetic damage (scratches on left side), functional |
+| Date Acquired | December 2025 |
+| Purchase Price | $101.17 shipped |
+| Source | eBay (Missouri Liquidation) |
 
 ## Specifications
 
@@ -76,6 +79,8 @@ SAV1-4         # Save preset
 
 Higher voltage version of the KA3005P (60V/3A vs 30V/5A). Same power rating (180W), uses identical SCPI command set and software.
 
+**Acquisition notes:** Purchased from eBay seller "Missouri Liquidation". Unit arrived poorly packed with cosmetic scratches on the left side of the case. Despite the rough handling, the unit functions correctly.
+
 ## Local Files
 
 - `KA6003P_UserManual.pdf` - KA Series User Manual (162KB)
@@ -85,3 +90,4 @@ Higher voltage version of the KA3005P (60V/3A vs 30V/5A). Same power rating (180
 | Date | Change |
 |------|--------|
 | 2025-12-24 | Initial entry (unit on order) |
+| 2025-12-29 | Unit received and verified working |

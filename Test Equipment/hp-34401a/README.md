@@ -2,6 +2,19 @@
 
 **6½ Digit Benchtop Digital Multimeter**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | HP/Agilent/Keysight |
+| Model | 34401A |
+| Status | Working |
+| Condition | As described, works great |
+| Date Ordered | 2025-12-03 |
+| Date Received | 2025-12-11 |
+| Purchase Price | $270 ($250 + $20 shipping) |
+| Source | eBay (ACH Electronics, LLC) |
+
 ## Specifications
 
 | Specification | Value |

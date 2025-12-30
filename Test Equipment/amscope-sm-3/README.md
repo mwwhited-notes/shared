@@ -10,7 +10,13 @@
 | Model | SM-3 |
 | Type | Stereo Microscope |
 | Head Type | Trinocular (45° inclined) |
-| Condition | Working |
+| Status | Working |
+| Condition | Good (oculars were mismatched - see notes) |
+| Date Ordered | 2025-05-23 |
+| Date Received | 2025-06-04 |
+| Purchase Price | $477.00 |
+| Source | eBay (ntc_tech) |
+| Included | 56 LED light, 5MP camera |
 
 ## Specifications
 
@@ -110,6 +116,8 @@ The SM-3 head can be mounted on various stands (table stand, boom stand, etc.). 
 
 **Not simul-focal** - Light is directed either to the eyepieces OR the camera port (unlike the T490-DK which allows simultaneous viewing).
 
+**Purchase notes:** Listed with 20X oculars but received mismatched set (one 20X, one 10X). Seller apologized - was not intentional. Worked out fine since 10X eyepieces were planned for SMD work anyway.
+
 Magnification calculations:
 - Base: Objective (0.7X-4.5X) × Eyepiece (10X) = 7X-45X
 - With 0.5X Barlow: 3.5X-22.5X
@@ -124,3 +132,4 @@ Magnification calculations:
 | Date | Change |
 |------|--------|
 | 2025-12-24 | Initial entry |
+| 2025-12-30 | Added purchase information |

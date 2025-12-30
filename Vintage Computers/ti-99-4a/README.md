@@ -10,7 +10,12 @@
 | Model | TI-99/4A |
 | Year | 1981 |
 | Type | Home Computer |
-| Condition | Working |
+| Status | Working |
+| Condition | Listed "for parts or repair" - works perfectly |
+| Date Ordered | 2025-10-29 |
+| Date Received | 2025-11-03 |
+| Purchase Price | $50.92 shipped |
+| Source | eBay (depotstreettreasures) |
 
 ## Specifications
 
@@ -80,3 +85,4 @@ The TI-99/4A was the first 16-bit home computer, though its architecture bottlen
 | Date | Change |
 |------|--------|
 | 2025-12-24 | Initial entry |
+| 2025-12-30 | Added purchase information |
