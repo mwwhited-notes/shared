@@ -29,7 +29,18 @@
       "WebFetch(domain:api.github.com)",
       "WebFetch(domain:oldcomputermuseum.com)",
       "WebFetch(domain:www.tequipment.net)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(xargs:*)",
+      "Bash(for dir in \"/current/src/Programmable Devices\"/*/)",
+      "Bash(do)",
+      "Bash(if [ ! -f \"$dir/README.md\" ])",
+      "Bash(then)",
+      "Bash(for dir in \"/current/src/Expansion Boards\"/*/)",
+      "Bash(for dir in \"/current/src/Test Equipment\"/*/)",
+      "Bash(for dir in \"/current/src/Camera Collection\"/*/*/)",
+      "Bash(echo:*)",
+      "Bash(git -C /current/src log --oneline -20)"
     ]
   }
 }

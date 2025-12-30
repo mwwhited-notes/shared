@@ -28,6 +28,7 @@ Each device has its own directory with detailed specifications and locally archi
   - [Thermal Imaging](#thermal-imaging)
   - [Imaging & Documentation](#imaging--documentation)
   - [Input Devices](#input-devices)
+  - [Audio](#audio)
   - [Lab Equipment](#lab-equipment)
   - [Fabrication](#fabrication)
 - [Directory Structure](#directory-structure)
@@ -158,6 +159,12 @@ Each device has its own directory with detailed specifications and locally archi
 |-------|------|------|-----------|
 | [Fifine AmpliGame D6](fifine-d6/) | Macro Keypad | 15 | `fifine-d6/` |
 
+### Audio
+
+| Model | Type | Power | Directory |
+|-------|------|-------|-----------|
+| [Pyle PTAU45](pyle-ptau45/) | Stereo Amplifier | 2×120W | `pyle-ptau45/` |
+
 ### Lab Equipment
 
 | Model | Type | Capacity | Directory |
@@ -275,6 +282,8 @@ Each device has its own directory with detailed specifications and locally archi
 │   └── README.md
 ├── fifine-d6/
 │   └── README.md
+├── pyle-ptau45/
+│   └── README.md
 ├── greaseweazle-v41/
 │   └── README.md
 └── velleman-k8200/
@@ -331,7 +340,7 @@ Each device has its own directory with detailed specifications and locally archi
 | Holdpeak HP-4070L | LCR Meter | $25.99 | Amazon | - |
 | Korad KA3005P | Power Supply | $143.99 | Micro Center | 2023-01-15 |
 | Korad KA6003P | Power Supply | $101.17 | eBay | - |
-| QE-MS305D | Power Supply | $39.99 | Amazon | - |
+| QE-MS305D | Power Supply | $39.99 | eBay | - |
 | AmScope T490-DK | Microscope | $341.98 | Amazon | - |
 | AmScope T490-DK Accessories | Microscope | $319.56 | Amazon/eBay | 2016-2025 |
 | AmScope SM-3 | Microscope | $477.00 | Amazon | - |
@@ -358,7 +367,8 @@ Each device has its own directory with detailed specifications and locally archi
 | SparkFun Bus Pirate v3.6a | Protocol Tool | - | SparkFun (new) | - |
 | Velleman K8048RS | Programmer | - | Micro Center | - |
 | Velleman K8055 (×3) | Data Acquisition | - | Micro Center | - |
-| **Documented Total** | | **$5,795.33+** | | |
+| Pyle PTAU45 | Audio Amplifier | $71.99 | Amazon | 2013-10-11 |
+| **Documented Total** | | **$5,867.32+** | | |
 
 ---
 

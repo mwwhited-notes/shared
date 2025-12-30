@@ -54,6 +54,7 @@ Quick reference for what this workshop can do and project suggestions when you n
 | **TTL Computer** | Gigatron                        | CPU architecture learning, retro gaming |
 | **Retro Kits**   | Multicomp (Z80/6502/6809)       | CP/M, vintage OS emulation              |
 | **8-bit Trainers** | MM-8000K (8085A) + [emulator](https://github.com/mwwhited-archives/MM8000) | Vintage CPU learning, assembler dev |
+| **Robot Kits**     | D2-1 Line Follower               | Sensor integration, motor control   |
 
 ### Vintage Computers
 
@@ -105,11 +106,25 @@ Quick reference for what this workshop can do and project suggestions when you n
 |------|-------|-----|
 | [Velleman K8200](https://github.com/mwwhited/MyMashedDuet) | 200x200x200mm, Duet 3, multi-tool, multi-filament | Enclosures, brackets, fixtures, replacement parts |
 
+### Audio Equipment
+
+| Tool       | Specs                | Use                                           |
+|------------|----------------------|-----------------------------------------------|
+| Pyle PTAU45| 2×120W, USB/RCA/AUX  | Audio circuit testing, speaker testing, signal amplification |
+
 ### Automation & Input
 
 | Tool                   | Use                                               |
 |------------------------|---------------------------------------------------|
 | Fifine D6 Macro Keypad | 15-key programmable shortcuts, instrument control |
+
+### Protocol Tools
+
+| Tool                | Protocols                        | Use                                    |
+|---------------------|----------------------------------|----------------------------------------|
+| Bus Pirate v3.6a    | SPI, I2C, UART, 1-Wire, JTAG     | Interactive protocol debugging         |
+| FT232H Breakout     | SPI, I2C, JTAG, UART, GPIO       | High-speed protocol interface, bitbang |
+| Analog Discovery 2  | SPI, I2C, UART, CAN, etc.        | Protocol analysis with scope/logic     |
 
 ### Programmers
 
@@ -192,6 +207,8 @@ Quick reference for what this workshop can do and project suggestions when you n
 | USB device issues       | Scope, protocol analyzer   | [x]     |
 | Dirty/contaminated PCB  | Ultrasonic cleaner         | [x]     |
 | Old flux residue        | Ultrasonic cleaner + IPA   | [x]     |
+| Audio circuit debug     | Scope, DG1022, PTAU45      | [x]     |
+| Speaker/amp testing     | DG1022 + PTAU45            | [x]     |
 
 ### Repair Workflow
 
@@ -319,6 +336,17 @@ Quick reference for what this workshop can do and project suggestions when you n
 - [ ] Mechanical system simulation
 - [ ] Real-time ODE solving with digital readout
 
+### Audio & Sound
+
+*Using DG1022 signal generator and PTAU45 amplifier.*
+
+- [ ] Audio spectrum analyzer (FPGA + ADC)
+- [ ] Vintage computer sound card testing
+- [ ] Speaker impedance measurement jig
+- [ ] Audio signal tracer/injector
+- [ ] Synthesizer/effects pedal projects
+- [ ] Ensoniq DOC experiments (Apple IIgs)
+
 ### Test Equipment DIY
 
 - [ ] FPGA-based logic analyzer (> 100 MSa/s)
@@ -383,6 +411,18 @@ Quick reference for what this workshop can do and project suggestions when you n
 5. Test RAM with diagnostic
 6. Check custom chips (logic analyzer)
 7. Recap if electrolytics are old
+```
+
+### "Audio Circuit Not Working"
+
+```
+1. Check power supply rails (DMM)
+2. Inject test signal (DG1022 sine wave)
+3. Trace signal path (scope)
+4. Check for DC offset at output
+5. Test output with known-good amp (PTAU45)
+6. Verify component values (LCR for caps)
+7. Check for oscillation/noise (scope)
 ```
 
 ---

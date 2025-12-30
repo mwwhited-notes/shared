@@ -131,6 +131,12 @@ Each device has its own directory with detailed specifications and locally archi
 |-------|----------|----------------|-----------|
 | [Multicomp EP2C5-DB](multicomp-ep2c5/) | Cyclone II EP2C5 | Z80, 6502, 6809 | `multicomp-ep2c5/` |
 
+### Robot Kits
+
+| Kit | Type | Control | Directory |
+|-----|------|---------|-----------|
+| [D2-1 Line Follower](d2-1-line-follower/) | Line Following Robot | Analog (no MCU) | `d2-1-line-follower/` |
+
 ### Homebrew Cartridge PCBs
 
 | Item | Platform | Qty | Price | Source | Date |
@@ -327,6 +333,7 @@ The following items need purchase information added:
 | Basic Stamp 2 | Other MCU |
 | ATF16V8B | PLD |
 | AMPAL22V10 | PLD |
+| D2-1 Line Follower | Robot Kit |
 
 ---
 

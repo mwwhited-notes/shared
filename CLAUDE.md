@@ -93,6 +93,20 @@ Follow `.claude/protocols/CAMERA_COLLECTION_PROTOCOL.md` when:
 - Tracking lens mount compatibility
 - Cross-referencing with purchase info in ShoppingOnline.md
 
+### Project Review
+Follow `.claude/protocols/PROJECT_REVIEW_PROTOCOL.md` when:
+- Reviewing repository inventory for consistency
+- Updating `workshop-capabilities.md` with new equipment or projects
+- Updating `project-ideas.md` with new project ideas
+- Performing periodic maintenance on project documentation
+- Syncing project files after adding new equipment
+
+Key features:
+- Full review workflow for quarterly maintenance
+- Quick sync workflow after adding equipment
+- Cross-reference verification between inventory and project files
+- Project idea generation based on equipment combinations
+
 ### Analog Computers
 Reference `AnalogComputers/analog-computing-repository/CLAUDE.md` for the analog computing research collection.
 
