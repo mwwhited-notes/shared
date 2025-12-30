@@ -2,6 +2,16 @@
 
 **Handheld Digital Multimeter**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | Tenma |
+| Model | 72-2055 |
+| Type | Handheld Digital Multimeter |
+| Status | Working |
+| Origin | High school (no purchase record) |
+
 ## Specifications
 
 | Specification | Value |

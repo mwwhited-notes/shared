@@ -6,11 +6,14 @@
 
 | Field | Value |
 |-------|-------|
-| Manufacturer | Clone (generic) |
+| Manufacturer | Clone (HonsCreat) |
 | Model | USBasp |
 | Hardware Revision | Unknown |
 | Firmware Version | Unknown |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2019-01-28 |
+| Purchase Price | $8.50 |
+| Source | Amazon (Jiaheyi) |
 
 ## Specifications
 

@@ -6,10 +6,13 @@
 
 | Field | Value |
 |-------|-------|
-| Manufacturer | Generic |
-| Model | USB to ESP-01 Adapter |
+| Manufacturer | diymore |
+| Model | USB to ESP-01 Adapter (CH340) |
 | Modifications | Reset button added |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2019-01-28 |
+| Purchase Price | $8.28 |
+| Source | Amazon (diymore) |
 
 ## Specifications
 

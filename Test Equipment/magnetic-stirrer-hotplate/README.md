@@ -7,7 +7,16 @@
 | Field | Value |
 |-------|-------|
 | Type | Magnetic Stirrer / Hot Plate |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2016-01-31 |
+| Purchase Price | $179.95 |
+| Source | Amazon (Mountain Home Biological) |
+
+## Accessories
+
+| Item | Price | Source |
+|------|-------|--------|
+| Karter Scientific Glass Flask Set (5pc) | $17.25 | Amazon (Lake Charles Manufacturing) |
 
 ## Features
 

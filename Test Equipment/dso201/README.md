@@ -2,6 +2,16 @@
 
 **Pocket Digital Oscilloscope**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | Seeed Studio |
+| Model | DSO201 / DSO Nano |
+| Type | Pocket Digital Oscilloscope |
+| Status | Working |
+| Purchase Price | $0.00 (gift for project work) |
+
 ## Specifications
 
 | Specification | Value |

@@ -312,6 +312,63 @@ Each device has its own directory with detailed specifications and locally archi
 
 ---
 
+## Collection Value Summary
+
+### Documented Purchases
+
+| Item | Category | Price | Source | Date |
+|------|----------|-------|--------|------|
+| Rigol DS1102E | Oscilloscope | $357.00 | Amazon (super-se11er) | 2017-04-11 |
+| Tektronix TDS2024 | Oscilloscope | $411.09 | eBay | - |
+| Hitachi V-1150 | Oscilloscope | $187.68 | eBay | - |
+| DSO201 (DSO Nano) | Pocket Oscilloscope | $0.00 | Gift (project work) | - |
+| Rigol DG1022 | Signal Generator | $200.00 | eBay (darny61) | - |
+| HP 34401A | Multimeter | $270.00 | eBay | - |
+| Rigol DM3058E | Multimeter | $399.95 | TEquipment.net | 2021-12-30 |
+| Tenma 72-2055 | Multimeter | $0.00 | High school | - |
+| DER EE DE-5000 | LCR Meter | $139.99 | Amazon | - |
+| DER EE DE-5000 Kelvin Clips | LCR Accessory | $34.98 | Amazon | 2025-01 |
+| Holdpeak HP-4070L | LCR Meter | $25.99 | Amazon | - |
+| Korad KA3005P | Power Supply | $143.99 | Micro Center | 2023-01-15 |
+| Korad KA6003P | Power Supply | $101.17 | eBay | - |
+| QE-MS305D | Power Supply | $39.99 | Amazon | - |
+| AmScope T490-DK | Microscope | $341.98 | Amazon | - |
+| AmScope T490-DK Accessories | Microscope | $319.56 | Amazon/eBay | 2016-2025 |
+| AmScope SM-3 | Microscope | $477.00 | Amazon | - |
+| KSGER T12 | Soldering | $80.66 | AliExpress | 2022-12-27 |
+| YaeCCC 858D + Accessories | Hot Air Rework | $94.47 | Amazon | 2022-04-18 |
+| Hakko FR-301 | Desoldering | $0.00 | Gift (birthday) | 2023 |
+| FLIR TG130 | Thermal | $199.99 | Amazon | - |
+| Lenovo 510 FHD | Webcam | $58.99 | Amazon | 2025-01-30 |
+| Fifine AmpliGame D6 | Macro Keypad | $71.09 | Amazon | 2025-01-23 |
+| CREWORKS Ultrasonic Cleaner | Lab Equipment | $89.95 | Amazon | 2025-10-29 |
+| Velleman K8200 | 3D Printer | $749.45 | Amazon | 2014-03-07 |
+| Magnetic Stirrer + Flasks | Lab Equipment | $197.20 | Amazon | 2016-01-31 |
+| Kitchbar KB-700 | Document Camera | $47.16 | Amazon | 2022-12-07 |
+| Analog Discovery 2 + Accessories | Multi-instrument | $571.88 | Digilent | 2021-11-22 |
+| XGecu TL866II Plus | Programmer | $59.99 | Amazon | 2020-01-21 |
+| USBasp | Programmer | $8.50 | Amazon | 2019-01-28 |
+| USB to ESP-01 Adapter | Programmer | $8.28 | Amazon | 2019-01-28 |
+| **Documented Total** | | **$5,686.98** | | |
+
+### Undocumented Equipment
+
+The following items need purchase information added:
+
+| Item | Category |
+|------|----------|
+| Saleae Logic | Logic Analyzer |
+| Altera USB Blaster | Programmer |
+| ST-Link V2 | Programmer |
+| Velleman K8048RS | Programmer |
+| Greaseweazle V4.1 | Programmer |
+| SparkFun Bus Pirate v3.6a | Protocol Tool |
+| FT232H Breakout | Protocol Tool |
+| Velleman K8055 | Data Acquisition |
+| Maxstream XBIB-U-DEV | Development Board |
+
+---
+
 ## Notes
 
 - **TDS2024** has TDS2CMA module (GPIB, RS-232, Centronics, FFT) but NO USB and NO CompactFlash

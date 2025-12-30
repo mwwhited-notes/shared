@@ -9,7 +9,10 @@
 | Manufacturer | Fifine |
 | Model | AmpliGame D6 |
 | Type | Macro Keypad / Stream Controller |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2025-01-23 |
+| Purchase Price | $71.09 |
+| Source | Amazon (Fifine Design) |
 
 ## Specifications
 

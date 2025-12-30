@@ -9,7 +9,10 @@
 | Manufacturer | Lenovo |
 | Model | 510 FHD |
 | Type | USB Webcam |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2025-01-30 |
+| Purchase Price | $58.99 |
+| Source | Amazon |
 
 ## Specifications
 

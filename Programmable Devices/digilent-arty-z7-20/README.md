@@ -9,7 +9,10 @@
 | Manufacturer | Digilent |
 | Board | Arty Z7-20 |
 | SoC | Xilinx Zynq-7000 XC7Z020-1CLG400C |
-| Date Acquired | |
+| Status | Working |
+| Date Ordered | 2021-11-22 |
+| Purchase Price | $209.00 |
+| Source | Digilent |
 | Quantity | 1 |
 
 ## Specifications

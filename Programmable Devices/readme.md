@@ -269,6 +269,59 @@ Cross-reference with programmers in `../Test Equipment/`:
 
 ---
 
+## Collection Value Summary
+
+### Documented Purchases
+
+| Item | Category | Price | Source | Date |
+|------|----------|-------|--------|------|
+| Digilent Arty Z7-20 | SoC FPGA | $209.00 | Digilent | 2021-11-22 |
+| **Documented Total** | | **$209.00** | | |
+
+### Undocumented Equipment
+
+The following items need purchase information added:
+
+| Item | Category |
+|------|----------|
+| Digilent Arty A7-100 | FPGA |
+| Altera EP2C5 Mini | FPGA |
+| Multicomp EP2C5 | Retro FPGA Kit |
+| Arduino UNO | Arduino |
+| Arduino Mega | Arduino |
+| Arduino Nano | Arduino |
+| Arduino Pro Mini | Arduino |
+| Arduino Pro Micro | Arduino |
+| Arduino Duemilanove | Arduino |
+| ATtiny2313 | AVR |
+| ATtiny85 | AVR |
+| ATtiny84A | AVR |
+| ATmega328 | AVR |
+| ATmega32 | AVR |
+| ESP8266mod AI-Thinker | ESP |
+| Inland ESP32 | ESP |
+| ESP-01 | ESP |
+| D1 ESP8266 | ESP |
+| STM32 BluePill | ARM |
+| Netduino Mini | ARM |
+| Device Solutions Tahoe II | ARM |
+| Spark Core | IoT |
+| RedBear Blend Micro | IoT |
+| MaxStream XBee | Wireless |
+| Digi XBee Pro S1 | Wireless |
+| PIC16F627 | PIC |
+| STC 89C52RC | 8051 |
+| Zilog Z8 Encore | Other MCU |
+| Basic Stamp 2 | Other MCU |
+| Xilinx XC95108 | CPLD |
+| ATF16V8B | PLD |
+| AMPAL22V10 | PLD |
+| Anabrid THAT | Analog |
+| Gigatron TTL | TTL Computer |
+| MM-8000K | Trainer |
+
+---
+
 ## Notes
 
 - **Arduino UNO/Mega** entries cover both official boards and common clones (CH340/CH341 USB)

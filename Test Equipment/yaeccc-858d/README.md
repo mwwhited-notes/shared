@@ -10,7 +10,10 @@
 | Model | 858D |
 | MPN | KT0003 |
 | Type | Hot Air Rework Station |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2022-04-18 |
+| Purchase Price | $34.99 |
+| Source | Amazon (Yae First Trading) |
 
 ## Specifications
 
@@ -52,7 +55,17 @@
 
 Provides full range of nozzle sizes for any SMD component.
 
+*Purchased: $19.49 - Amazon (Orcity) - 2022-04-18*
+
 ## Accessories
+
+### KOTTO Fume Extractor
+
+- Solder smoke absorber
+- DIY fan-based extractor
+- Works with any soldering station
+
+*Purchased: $39.99 - Amazon (F.Stop Labs) - 2022-04-18*
 
 ### AIWFL Hot Air Clamp Stand
 

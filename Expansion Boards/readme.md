@@ -66,6 +66,23 @@ Each expansion board has its own directory with detailed specifications and loca
 |--------|----------|-----------|-------------------|-----------|
 | *None yet* | | | | |
 
+### Digilent Pmod Modules
+
+| Module | Function | Interface | Qty | Price | Date |
+|--------|----------|-----------|-----|-------|------|
+| Pmod SSD | Seven-segment Display | GPIO | 1 | $6.99 | 2021-03-15 |
+| Pmod SWT | 4 Slide Switches | GPIO | 2 | $9.98 | 2021-03-15 |
+| Pmod TPH2 | 12-pin Test Point Header | - | 2 | $9.98 | 2021-03-15 |
+| Pmod I2S2 | Stereo Audio I/O | I2S | 1 | $21.99 | 2021-11-22 |
+| Pmod Shield (Uno) | Arduino to Pmod Adapter | - | 3 | $31.99 | 2021 |
+| Pmod KYPD | 16-Button Keypad | GPIO | 1 | $9.99 | - |
+| Pmod ENC | Rotary Encoder | GPIO | 1 | $6.99 | - |
+| Pmod VGA | Video Graphics Array | GPIO | 1 | $8.99 | 2020-12-25 |
+
+*Pmod modules compatible with Arty A7, Arty Z7, and other Digilent FPGA boards.*
+
+*Pmod total: $106.90*
+
 ---
 
 ## Quick Reference by Function
@@ -183,6 +200,45 @@ Each expansion board has its own directory with detailed specifications and loca
 | UART | Serial communication | GPS, Bluetooth, XBee |
 | GPIO | General purpose I/O | Relays, buttons, LEDs |
 | PWM | Pulse width modulation | Motor control, servos, LEDs |
+
+---
+
+## Collection Value Summary
+
+### Documented Purchases
+
+| Item | Category | Price | Source | Date |
+|------|----------|-------|--------|------|
+| Pmod SSD | Pmod | $6.99 | Digilent | 2021-03-15 |
+| Pmod SWT (×2) | Pmod | $9.98 | Digilent | 2021-03-15 |
+| Pmod TPH2 (×2) | Pmod | $9.98 | Digilent | 2021-03-15 |
+| Pmod Shield (×3) | Pmod | $31.99 | Digilent | 2021 |
+| Pmod I2S2 | Pmod | $21.99 | Digilent | 2021-11-22 |
+| Pmod KYPD | Pmod | $9.99 | Digilent | - |
+| Pmod ENC | Pmod | $6.99 | Digilent | - |
+| Pmod VGA | Pmod | $8.99 | Amazon (Digilent) | 2020-12-25 |
+| Multi-Function Shield | Arduino | $6.99 | Amazon | 2020-12-25 |
+| **Documented Total** | | **$113.88** | | |
+
+### Undocumented Equipment
+
+The following items need purchase information added:
+
+| Item | Category |
+|------|----------|
+| Adafruit 16-Ch PWM/Servo Shield | Arduino Motor |
+| OSEPP Motor & Servo Shield | Arduino Motor |
+| XBee Shield (×2) | Arduino Wireless |
+| RedBear BLE Shield v2.1 | Arduino Wireless |
+| RS232/RS485 Shield | Arduino Communication |
+| SainSmart Sensor Shield v4.0 (×2) | Arduino Sensors |
+| Mega Sensor Shield v2.0 (×2) | Arduino Sensors |
+| Robogaia 6-Axis IMU | Arduino Sensors |
+| Deek-Robot Data Logger (×3) | Arduino Data |
+| OSEPP LCD Keypad Shield | Arduino Display |
+| Evil Mad Science ISP Shield 2.0 | Arduino Programming |
+| Raspberry Pi PoE HAT (2018) | Raspberry Pi |
+| ARPI600 | Raspberry Pi |
 
 ---
 

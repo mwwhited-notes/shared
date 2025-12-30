@@ -2,6 +2,18 @@
 
 **Digital Storage Oscilloscope**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | Rigol |
+| Model | DS1102E |
+| Type | Digital Storage Oscilloscope |
+| Status | Working |
+| Date Ordered | 2017-04-11 |
+| Purchase Price | $357.00 |
+| Source | Amazon (super-se11er) |
+
 ## Specifications
 
 | Specification | Value |

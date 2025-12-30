@@ -7,8 +7,12 @@
 | Field | Value |
 |-------|-------|
 | Manufacturer | CREWORKS |
+| Model | 10L Multi-Slot |
 | Type | Ultrasonic Cleaner |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2025-10-29 |
+| Purchase Price | $89.95 |
+| Source | Amazon (Creworks) |
 
 ## Specifications
 

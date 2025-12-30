@@ -9,7 +9,10 @@
 | Manufacturer | Kitchbar / Kitchbai |
 | Model | KB-700 |
 | Type | Document Camera / Visualizer |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2022-12-07 |
+| Purchase Price | $47.16 |
+| Source | Amazon (Kitchen-Ware Store) |
 
 ## Specifications
 

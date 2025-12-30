@@ -28,7 +28,8 @@
       "WebFetch(domain:gigatron.io)",
       "WebFetch(domain:api.github.com)",
       "WebFetch(domain:oldcomputermuseum.com)",
-      "WebFetch(domain:www.tequipment.net)"
+      "WebFetch(domain:www.tequipment.net)",
+      "Bash(grep:*)"
     ]
   }
 }

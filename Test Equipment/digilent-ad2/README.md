@@ -2,6 +2,35 @@
 
 **USB Multi-Instrument**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | Digilent |
+| Model | Analog Discovery 2 |
+| Type | USB Multi-Instrument |
+| Status | Working |
+| Date Ordered | 2021-11-22 |
+| Purchase Price | $399.00 |
+| Source | Digilent |
+
+## Accessories
+
+| Item | Price | Source | Date |
+|------|-------|--------|------|
+| 6-pin Header & Gender Changer (×2) | $2.98 | Digilent | 2021-11-22 |
+| Pmod Cable Kit (×2) | $11.98 | Digilent | 2021-11-22 |
+| Audio Adapter for AD2 | $18.99 | Amazon (Digilent) | 2022-12-27 |
+| Breadboard Breakout for AD2 | $12.99 | Amazon (Digilent) | 2022-12-27 |
+| BNC Cables 6-pack (1m) | $14.98 | Amazon | 2022-12-27 |
+| BNC Adapter for AD2 | $21.99 | Digilent | - |
+| Impedance Analyzer for AD2 | $24.99 | Digilent | 2023-03-13 |
+| Transistor Tester for AD2 | $49.00 | Digilent | 2023-03-13 |
+| Pmod DIP Adapters (×2) | $9.98 | Digilent | 2023-03-13 |
+| USB to Serial Adapter Cable | $5.00 | Digilent | 2023-03-13 |
+
+*Accessories total: $172.88*
+
 ## Instruments
 
 | Instrument | Specifications |

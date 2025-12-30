@@ -10,7 +10,10 @@
 | Model | K8200 |
 | Type | 3D Printer / CNC |
 | Controller | Duet 3 + Raspberry Pi (upgraded) |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2014-03-07 |
+| Purchase Price | $749.45 |
+| Source | Amazon (Legends Supply Company) |
 
 ## Original Specifications
 

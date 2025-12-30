@@ -2,6 +2,18 @@
 
 **Universal USB Programmer**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | XGecu |
+| Model | TL866II Plus |
+| Type | Universal Programmer |
+| Status | Working |
+| Date Ordered | 2020-01-21 |
+| Purchase Price | $59.99 |
+| Source | Amazon (LAQIYA) |
+
 ## Specifications
 
 | Specification | Value |

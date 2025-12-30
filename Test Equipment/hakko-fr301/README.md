@@ -9,7 +9,9 @@
 | Manufacturer | Hakko |
 | Model | FR-301 |
 | Type | Portable Desoldering Tool |
-| Condition | Working |
+| Status | Working |
+| Year Acquired | 2023 |
+| Purchase Price | $0.00 (birthday gift) |
 
 ## Specifications
 
