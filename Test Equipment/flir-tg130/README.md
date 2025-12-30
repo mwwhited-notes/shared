@@ -9,7 +9,10 @@
 | Manufacturer | FLIR / Teledyne FLIR |
 | Model | TG130 |
 | Type | Spot Thermal Camera |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2017-01-08 |
+| Purchase Price | $199.99 |
+| Source | Amazon |
 
 ## Specifications
 
@@ -88,3 +91,4 @@ Entry-level thermal imager useful for quick thermal troubleshooting. Good for fi
 | Date | Change |
 |------|--------|
 | 2025-12-24 | Initial entry |
+| 2025-12-30 | Added purchase information |

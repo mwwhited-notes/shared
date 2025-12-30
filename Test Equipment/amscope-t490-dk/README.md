@@ -7,10 +7,13 @@
 | Field | Value |
 |-------|-------|
 | Manufacturer | AmScope |
-| Model | T490-DK |
+| Model | T490B-DK |
 | Type | Compound Microscope |
 | Head Type | Siedentopf Trinocular |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2016-02-11 |
+| Purchase Price | $341.98 |
+| Source | Amazon |
 
 ## Specifications
 
@@ -56,12 +59,21 @@
 
 ## Accessories
 
+### Included
 - WF10X/18 eyepieces (pair)
 - WF20X eyepieces (pair)
 - Dry darkfield condenser
 - Dust cover
 - Extra halogen bulb
 - Immersion oil
+
+### Purchased Separately
+| Item | Price | Source |
+|------|-------|--------|
+| AC-B400 Aluminum Case | $112.70 | Amazon (Feb 2016) |
+| CA-NIK-SLR Nikon Adapter | $89.75 | Amazon (Feb 2016) |
+| OMAX Stage Micrometer 0.01mm | $9.99 | Amazon (Feb 2016) |
+| Slides (72) + Coverslips (100) | $12.98 | Amazon (Feb 2016) |
 
 ## Documentation
 
@@ -117,3 +129,4 @@ Trinocular head supports C-mount cameras. The simul-focal design allows simultan
 |------|--------|
 | 2025-12-24 | Initial entry |
 | 2025-12-30 | Added 1X/2X objective purchase info |
+| 2025-12-30 | Added purchase info and accessories |
