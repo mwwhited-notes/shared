@@ -10,8 +10,10 @@
 | Part Number | XC95108 |
 | Family | XC9500 |
 | Package | PLCC-84, TQFP-100, PQ160 |
-| Date Acquired | |
-| Quantity | |
+| Status | Working |
+| Date Acquired | - |
+| Purchase Price | $0.00 (college) |
+| Source | College |
 
 ## Specifications
 

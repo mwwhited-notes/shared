@@ -9,7 +9,10 @@
 | Designer | Marcel van Kervinck, Walter Belgers |
 | Type | TTL Microcomputer Kit |
 | Architecture | 8-bit, Harvard |
-| Condition | Working |
+| Status | Working |
+| Date Acquired | 2020-03-16 |
+| Purchase Price | $0.00 (birthday gift) |
+| Source | Gift |
 
 ## Specifications
 

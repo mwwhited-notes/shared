@@ -9,8 +9,11 @@
 | Manufacturer | Velleman |
 | Model | K8048RS (Kit) / VM111 (Assembled) |
 | Year | 2003 |
-| Date Acquired | |
-| Quantity | |
+| Status | Working |
+| Date Ordered | - |
+| Purchase Price | - (receipt not found) |
+| Source | Micro Center |
+| Quantity | 1 |
 
 ## Kit Description
 

@@ -9,7 +9,10 @@
 | Manufacturer | Digilent |
 | Board | Arty A7-100T |
 | FPGA | Xilinx Artix-7 XC7A100T-1CSG324C |
-| Date Acquired | |
+| Status | Working |
+| Date Acquired | 2020-12-25 |
+| Purchase Price | $0.00 (Christmas gift) |
+| Source | Gift |
 | Quantity | 1 |
 
 ## Specifications

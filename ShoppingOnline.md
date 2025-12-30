@@ -554,13 +554,24 @@ Sellers to avoid.
 |----------|----------|-------|
 | TEquipment.net | Test Equipment | Excellent! Open-box deals, full warranty. Highly recommended. |
 | Micro Center | PC Components, Electronics | In-store pickup, competitive prices. Columbus: 747 Bethel Rd. |
+| Digilent | FPGA, Test Equipment | Analog Discovery, Arty boards, Pmods. Educational discounts. |
+| Tindie | DIY Electronics | Indie makers, unique projects. Greaseweazle, retro computing. |
+| the-analog-thing.org | Analog Computing | Anabrid THAT analog computer. Ships from Germany via DHL. |
 | Digikey | Components | Reliable, fast shipping, good documentation |
 | Mouser | Components | Reliable, good selection |
 | Adafruit | Dev boards, kits | Quality products, good tutorials |
 | SparkFun | Dev boards, kits | Quality products, good hookup guides |
 | Amazon | Mixed | Varies by seller, watch for counterfeits |
-| AliExpress | Budget electronics | Long shipping, mixed quality |
+| AliExpress | Budget electronics | Long shipping, mixed quality (KSGER, etc.) |
 | Banggood | Budget electronics | Long shipping, mixed quality |
+
+---
+
+## Sellers to Avoid
+
+| Seller | Platform | Issue |
+|--------|----------|-------|
+| Shop2982020 Store | AliExpress | Sold fake AD633 analog multiplier chips |
 
 ---
 
@@ -569,3 +580,4 @@ Sellers to avoid.
 - Always check seller feedback before purchasing test equipment
 - Budget for potential cosmetic damage on liquidation purchases
 - Document serial numbers for warranty purposes
+- **Counterfeit ICs:** Common on AliExpress/eBay - verify critical analog ICs before use

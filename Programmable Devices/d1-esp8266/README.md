@@ -7,11 +7,14 @@
 | Field | Value |
 |-------|-------|
 | Manufacturer | WeMos / Generic |
-| Model | D1 (ESP8266-based) |
+| Model | D1 R3 (ESP-12E based) |
 | MCU | ESP8266EX |
 | Form Factor | Arduino UNO compatible |
-| Date Acquired | |
-| Quantity | |
+| Status | Working |
+| Date Ordered | 2022-12-14 |
+| Purchase Price | $0.36 |
+| Source | AliExpress (diymore module Store) |
+| Quantity | 1 |
 
 ## Specifications
 

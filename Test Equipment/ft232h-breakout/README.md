@@ -6,11 +6,14 @@
 
 | Field | Value |
 |-------|-------|
-| Manufacturer | Generic (sold as "TXS0108E 8-channel logger") |
+| Manufacturer | KOOBOOK / CJMCU |
 | Model | FT232H Breakout |
 | Chip | FTDI FT232H (appears genuine) |
 | PCB Color | Purple |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2021-03-15 |
+| Purchase Price | $10.99 |
+| Source | Amazon (WenLiJun) |
 
 ## Specifications
 

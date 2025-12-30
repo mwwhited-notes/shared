@@ -10,7 +10,10 @@
 | Model | MM-8000K |
 | Type | Microprocessor Trainer Kit |
 | CPU | Intel 8085A |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2012-12-04 |
+| Purchase Price | $129.00 |
+| Source | Amazon (Zack's Edu Castle) |
 
 ## Specifications
 

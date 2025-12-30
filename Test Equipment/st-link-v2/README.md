@@ -6,11 +6,14 @@
 
 | Field | Value |
 |-------|-------|
-| Manufacturer | STMicroelectronics (possibly genuine) |
+| Manufacturer | HiLetgo (clone) |
 | Model | ST-Link V2 |
 | Hardware Revision | V2 |
 | Case | Small aluminum enclosure |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2023-04-02 |
+| Purchase Price | $10.49 |
+| Source | Amazon (HiLetgo) |
 
 ## Specifications
 

@@ -2,6 +2,18 @@
 
 **Universal Serial Interface Tool**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | SparkFun / Dangerous Prototypes |
+| Model | Bus Pirate v3.6a |
+| Type | Protocol Tool |
+| Status | Working |
+| Date Ordered | - |
+| Purchase Price | - (receipt not found) |
+| Source | SparkFun (new) |
+
 ## Specifications
 
 | Specification | Value |

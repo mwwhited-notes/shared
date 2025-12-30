@@ -11,9 +11,11 @@
 | Revision | Rev 1.0 |
 | Year | 2008 |
 | Platform | .NET Micro Framework |
-| Status | Discontinued |
-| Date Acquired | |
-| Quantity | |
+| Status | Working |
+| Date Acquired | - |
+| Purchase Price | $0.00 (competition prize) |
+| Source | Microsoft .NET Micro Framework competition |
+| Quantity | 1 |
 
 ## Specifications
 

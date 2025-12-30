@@ -6,11 +6,14 @@
 
 | Field | Value |
 |-------|-------|
-| Manufacturer | Keir Fraser (emmybear) |
+| Manufacturer | Keir Fraser (Emmy Bear's Retro) |
 | Model | Greaseweazle V4.1 |
 | Type | Floppy Disk Controller |
 | Interface | USB |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2023-10-29 |
+| Purchase Price | $39.38 |
+| Source | Tindie |
 
 ## Specifications
 

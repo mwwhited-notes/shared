@@ -6,11 +6,14 @@
 
 | Field | Value |
 |-------|-------|
-| Manufacturer | Unknown (possibly clone) |
+| Manufacturer | Unknown (clone) |
 | Model | USB-Blaster |
 | Hardware Revision | Rev C (per label) |
 | PCB Color | Green |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2014-01-28 |
+| Purchase Price | $14.50 |
+| Source | Amazon (get005) |
 
 ## Specifications
 

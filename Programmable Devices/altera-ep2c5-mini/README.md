@@ -10,8 +10,11 @@
 | Part Number | EP2C5T144C8N |
 | Board Type | Mini Development Board (Generic) |
 | Companion Board | Land Boards EP2C5-DB-TH Rev 1 |
-| Date Acquired | |
-| Quantity | |
+| Status | Working |
+| Date Ordered | 2014-01-28 |
+| Purchase Price | $22.80 |
+| Source | Amazon (get005) |
+| Quantity | 1 |
 
 ## FPGA Specifications (EP2C5T144C8N)
 

@@ -9,7 +9,22 @@
 | Manufacturer | Anabrid GmbH |
 | Model | The Analog Thing (THAT) |
 | Type | Analog Computer |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2024-02-24 |
+| Date Delivered | 2024-03-12 |
+| Purchase Price | $529.70 (incl. shipping) |
+| Source | the-analog-thing.org |
+
+## Order Details
+
+| Item | Qty | Price |
+|------|-----|-------|
+| The Analog Thing | 1 | $494.00 |
+| THAT Flyer | 10 | $0.70 (after discount) |
+| THAT Sticker | 2 | $2.00 |
+| The Analog Thing logo sticker | 2 | $2.00 |
+| Shipping (DHL International) | - | $31.00 |
+| **Total** | | **$529.70** |
 
 ## Specifications
 

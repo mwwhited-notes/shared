@@ -8,9 +8,12 @@
 |-------|-------|
 | Manufacturer | STC Microelectronics (China) |
 | Part Number | STC89C52RC |
-| Package | DIP-40, PLCC-44, LQFP-44 |
-| Date Acquired | |
-| Quantity | |
+| Package | DIP-40 (on dev board) |
+| Status | Working |
+| Date Ordered | 2024-03-10 |
+| Purchase Price | $7.41 (DIY kit) |
+| Source | AliExpress (cuiisw module Store) |
+| Quantity | 1 |
 
 ## Specifications
 

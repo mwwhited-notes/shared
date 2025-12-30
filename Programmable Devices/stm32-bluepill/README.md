@@ -6,11 +6,14 @@
 
 | Field | Value |
 |-------|-------|
-| Manufacturer | Various (Generic) |
+| Manufacturer | Teyleten Robot |
 | Board | BluePill |
 | MCU | STM32F103C8T6 |
-| Date Acquired | |
-| Quantity | |
+| Status | Working |
+| Date Ordered | 2023-04-02 |
+| Purchase Price | $15.88 (5-pack) |
+| Source | Amazon (Teyleten Robot-US) |
+| Quantity | 5 |
 
 ## Specifications
 

@@ -9,7 +9,10 @@
 | Manufacturer | Digi International (formerly MaxStream) |
 | Model | XBIB-U-DEV |
 | Hardware Revision | Rev 3 |
-| Condition | Working |
+| Status | Working |
+| Date Acquired | - |
+| Purchase Price | $0.00 (competition prize) |
+| Source | Microsoft .NET Micro Framework competition |
 
 ## Specifications
 

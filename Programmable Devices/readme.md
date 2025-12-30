@@ -131,6 +131,12 @@ Each device has its own directory with detailed specifications and locally archi
 |-------|----------|----------------|-----------|
 | [Multicomp EP2C5-DB](multicomp-ep2c5/) | Cyclone II EP2C5 | Z80, 6502, 6809 | `multicomp-ep2c5/` |
 
+### Homebrew Cartridge PCBs
+
+| Item | Platform | Qty | Price | Source | Date |
+|------|----------|-----|-------|--------|------|
+| NESMaker Compatible NES PCB | NES | 2 | $11.80 | Tindie (mrTentacle) | 2021-02-05 |
+
 ---
 
 ## Directory Structure
@@ -275,8 +281,22 @@ Cross-reference with programmers in `../Test Equipment/`:
 
 | Item | Category | Price | Source | Date |
 |------|----------|-------|--------|------|
+| Anabrid THAT | Analog Computer | $529.70 | the-analog-thing.org | 2024-02-24 |
+| Digilent Arty A7-100 | FPGA | $0.00 | Gift (Christmas) | 2020-12-25 |
 | Digilent Arty Z7-20 | SoC FPGA | $209.00 | Digilent | 2021-11-22 |
-| **Documented Total** | | **$209.00** | | |
+| Altera EP2C5 Mini | FPGA | $22.80 | Amazon (get005) | 2014-01-28 |
+| Raspberry Pi 3 B+ | SBC | $38.30 | Amazon | 2019-01-28 |
+| ATmega328P-PU (×3) | AVR | $12.99 | Amazon | 2019-01-28 |
+| NESMaker NES PCB (×2) | Homebrew PCB | $11.80 | Tindie (mrTentacle) | 2021-02-05 |
+| Gigatron TTL | TTL Computer | $0.00 | Gift (birthday) | 2020-03-16 |
+| MM-8000K | Trainer | $129.00 | Amazon (Zack's Edu Castle) | 2012-12-04 |
+| Xilinx XC95108 | CPLD | $0.00 | College | - |
+| STM32 BluePill (×5) | ARM | $15.88 | Amazon (Teyleten Robot) | 2023-04-02 |
+| Device Solutions Tahoe II | ARM | $0.00 | MS .NET MF competition | - |
+| Multicomp EP2C5-DB | Retro FPGA Kit | $16.00 | Tindie (Land Boards) | 2021-02-05 |
+| STC 89C52RC (DIY kit) | 8051 | $7.41 | AliExpress (cuiisw) | 2024-03-10 |
+| D1 ESP8266 | ESP | $0.36 | AliExpress (diymore) | 2022-12-14 |
+| **Documented Total** | | **$993.24** | | |
 
 ### Undocumented Equipment
 
@@ -284,9 +304,6 @@ The following items need purchase information added:
 
 | Item | Category |
 |------|----------|
-| Digilent Arty A7-100 | FPGA |
-| Altera EP2C5 Mini | FPGA |
-| Multicomp EP2C5 | Retro FPGA Kit |
 | Arduino UNO | Arduino |
 | Arduino Mega | Arduino |
 | Arduino Nano | Arduino |
@@ -296,29 +313,20 @@ The following items need purchase information added:
 | ATtiny2313 | AVR |
 | ATtiny85 | AVR |
 | ATtiny84A | AVR |
-| ATmega328 | AVR |
 | ATmega32 | AVR |
 | ESP8266mod AI-Thinker | ESP |
 | Inland ESP32 | ESP |
 | ESP-01 | ESP |
-| D1 ESP8266 | ESP |
-| STM32 BluePill | ARM |
 | Netduino Mini | ARM |
-| Device Solutions Tahoe II | ARM |
 | Spark Core | IoT |
 | RedBear Blend Micro | IoT |
 | MaxStream XBee | Wireless |
 | Digi XBee Pro S1 | Wireless |
 | PIC16F627 | PIC |
-| STC 89C52RC | 8051 |
 | Zilog Z8 Encore | Other MCU |
 | Basic Stamp 2 | Other MCU |
-| Xilinx XC95108 | CPLD |
 | ATF16V8B | PLD |
 | AMPAL22V10 | PLD |
-| Anabrid THAT | Analog |
-| Gigatron TTL | TTL Computer |
-| MM-8000K | Trainer |
 
 ---
 
@@ -337,4 +345,4 @@ The following items need purchase information added:
 
 ---
 
-*Last updated: December 2024*
+*Last updated: December 2025*

@@ -9,9 +9,11 @@
 | Manufacturer | Velleman |
 | Model | K8055 (Kit) / VM110 (Assembled) |
 | Type | USB I/O Interface |
-| Status | Discontinued (replaced by K8055N/VM110N) |
-| Date Acquired | |
-| Quantity | |
+| Status | Working |
+| Date Ordered | - |
+| Purchase Price | - (receipt not found) |
+| Source | Micro Center |
+| Quantity | 3 |
 
 ## Specifications
 

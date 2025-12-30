@@ -74,6 +74,21 @@ The STM32 firmware supports:
 - Power-on defaults
 - Display orientation
 
+## Accessories
+
+| Item | Price | Source | Date |
+|------|-------|--------|------|
+| T12 Soldering Stand (zinc alloy) | $12.46 | AliExpress (Online list Store) | 2022-12-27 |
+| T12-KF tip | $4.30 | AliExpress (Fancys Module Mall) | 2023-09-12 |
+| T12-J02 tip | $2.26 | AliExpress (HANDSKIT) | 2024-12-06 |
+| T12-C1 tip | $2.39 | AliExpress (HANDSKIT) | 2024-12-06 |
+| T12-D52 tip | $2.39 | AliExpress (HANDSKIT) | 2024-12-06 |
+| T12-KU tip | $2.13 | AliExpress (HANDSKIT) | 2024-12-06 |
+| 6pcs Precision Tweezers | $2.27 | AliExpress (HANDSKIT) | 2024-12-06 |
+| T12-ILS tip | $2.35 | AliExpress (QUICKO) | 2025-04-22 |
+| T12-J02 tip | $2.44 | AliExpress (QUICKO) | 2025-04-22 |
+| **Accessories Total** | **$32.99** | | |
+
 ## Notes
 
 - Tips are Hakko T12-compatible

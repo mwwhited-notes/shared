@@ -6,11 +6,14 @@
 
 | Field | Value |
 |-------|-------|
-| Manufacturer | Land Boards |
-| Model | EP2C5-DB |
+| Manufacturer | Land Boards, LLC |
+| Model | EP2C5-DB (Through Hole) |
 | Type | FPGA Carrier PCB |
 | FPGA | Altera Cyclone II EP2C5 |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2021-02-05 |
+| Purchase Price | $16.00 (incl. shipping) |
+| Source | Tindie (Land Boards, LLC) |
 
 ## Specifications
 

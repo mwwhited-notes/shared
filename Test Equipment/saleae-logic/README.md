@@ -2,6 +2,18 @@
 
 **USB Logic Analyzer**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | Saleae |
+| Model | Logic (Original 8-channel) |
+| Type | Logic Analyzer |
+| Status | Working |
+| Date Ordered | - |
+| Purchase Price | - (receipt not found) |
+| Source | SparkFun (new) |
+
 ## Specifications
 
 | Specification | Value |

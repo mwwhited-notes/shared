@@ -335,7 +335,7 @@ Each device has its own directory with detailed specifications and locally archi
 | AmScope T490-DK | Microscope | $341.98 | Amazon | - |
 | AmScope T490-DK Accessories | Microscope | $319.56 | Amazon/eBay | 2016-2025 |
 | AmScope SM-3 | Microscope | $477.00 | Amazon | - |
-| KSGER T12 | Soldering | $80.66 | AliExpress | 2022-12-27 |
+| KSGER T12 + Accessories | Soldering | $113.65 | AliExpress | 2022-12-27 |
 | YaeCCC 858D + Accessories | Hot Air Rework | $94.47 | Amazon | 2022-04-18 |
 | Hakko FR-301 | Desoldering | $0.00 | Gift (birthday) | 2023 |
 | FLIR TG130 | Thermal | $199.99 | Amazon | - |
@@ -349,23 +349,16 @@ Each device has its own directory with detailed specifications and locally archi
 | XGecu TL866II Plus | Programmer | $59.99 | Amazon | 2020-01-21 |
 | USBasp | Programmer | $8.50 | Amazon | 2019-01-28 |
 | USB to ESP-01 Adapter | Programmer | $8.28 | Amazon | 2019-01-28 |
-| **Documented Total** | | **$5,686.98** | | |
-
-### Undocumented Equipment
-
-The following items need purchase information added:
-
-| Item | Category |
-|------|----------|
-| Saleae Logic | Logic Analyzer |
-| Altera USB Blaster | Programmer |
-| ST-Link V2 | Programmer |
-| Velleman K8048RS | Programmer |
-| Greaseweazle V4.1 | Programmer |
-| SparkFun Bus Pirate v3.6a | Protocol Tool |
-| FT232H Breakout | Protocol Tool |
-| Velleman K8055 | Data Acquisition |
-| Maxstream XBIB-U-DEV | Development Board |
+| Greaseweazle V4.1 | Floppy Controller | $39.38 | Tindie | 2023-10-29 |
+| Altera USB Blaster | Programmer | $14.50 | Amazon (get005) | 2014-01-28 |
+| ST-Link V2 | Programmer | $10.49 | Amazon (HiLetgo) | 2023-04-02 |
+| FT232H Breakout | Protocol Tool | $10.99 | Amazon (KOOBOOK) | 2021-03-15 |
+| Maxstream XBIB-U-DEV | Development Board | $0.00 | MS .NET MF competition | - |
+| Saleae Logic | Logic Analyzer | - | SparkFun (new) | - |
+| SparkFun Bus Pirate v3.6a | Protocol Tool | - | SparkFun (new) | - |
+| Velleman K8048RS | Programmer | - | Micro Center | - |
+| Velleman K8055 (×3) | Data Acquisition | - | Micro Center | - |
+| **Documented Total** | | **$5,795.33+** | | |
 
 ---
 

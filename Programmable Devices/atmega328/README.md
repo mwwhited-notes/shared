@@ -7,10 +7,13 @@
 | Field | Value |
 |-------|-------|
 | Manufacturer | Microchip (formerly Atmel) |
-| Part Number | ATmega328P / ATmega328PB |
-| Package | DIP-28, TQFP-32, QFN-32 |
-| Date Acquired | |
-| Quantity | |
+| Part Number | ATmega328P-PU (with UNO bootloader) |
+| Package | DIP-28 |
+| Status | Working |
+| Date Ordered | 2019-01-28 |
+| Purchase Price | $12.99 (3-pack) |
+| Source | Amazon (Fii Tech) |
+| Quantity | 3 |
 
 ## Specifications
 
