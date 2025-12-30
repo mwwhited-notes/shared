@@ -40,7 +40,12 @@
       "Bash(for dir in \"/current/src/Test Equipment\"/*/)",
       "Bash(for dir in \"/current/src/Camera Collection\"/*/*/)",
       "Bash(echo:*)",
-      "Bash(git -C /current/src log --oneline -20)"
+      "Bash(git -C /current/src log --oneline -20)",
+      "Bash(do if [ ! -f \"$dir/README.md\" ])",
+      "Bash(then echo \"Missing README: $dir\")",
+      "Bash(for:*)",
+      "Bash(while read f)",
+      "Bash(do echo $f)"
     ]
   }
 }

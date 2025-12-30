@@ -135,6 +135,23 @@ Quick reference for what this workshop can do and project suggestions when you n
 | ST-Link V2         | STM32, STM8                   |
 | Altera USB Blaster | Intel/Altera FPGA, CPLD       |
 | FT232H             | Xilinx CPLD (via xc3sprog)    |
+| Velleman K8048RS   | PIC 8/14/18/28-pin (RS-232)   |
+| Greaseweazle V4.1  | Floppy disk read/write (3"-8")|
+
+### Data Acquisition
+
+| Tool           | Inputs      | Outputs   | Interface |
+|----------------|-------------|-----------|-----------|
+| Velleman K8055 | 5 DI, 2 AI  | 8 DO, 2 AO| USB       |
+
+### Expansion Boards
+
+| Type | Count | Examples |
+|------|-------|----------|
+| Arduino Shields | 12 | Motor/Servo, LCD Keypad, XBee, RS232/RS485, ISP, Sensor |
+| Raspberry Pi HATs | 2 | PoE HAT, ARPI600 |
+
+*See `Expansion Boards/` for full inventory.*
 
 ---
 
@@ -184,6 +201,27 @@ Quick reference for what this workshop can do and project suggestions when you n
 - [ ] Memory expansions
 - [ ] GAL replacements for customs
 - [ ] Video output adapters
+
+### Floppy Disk Archival & Preservation
+
+*Using Greaseweazle V4.1 and vintage computers.*
+
+- [ ] Apple II disk imaging (5.25" DOS 3.3, ProDOS)
+- [ ] Apple IIgs disk imaging (3.5" ProDOS, GS/OS)
+- [ ] TI-99/4A disk imaging (5.25" TI format)
+- [ ] Flux-level preservation (Kryoflux-compatible)
+- [ ] Disk repair and recovery
+- [ ] Write-back to original media
+
+### Mesh & Wireless Networks
+
+*Using XBee modules and XBIB-U-DEV board.*
+
+- [ ] XBee mesh sensor networks
+- [ ] Wireless data logging
+- [ ] Remote monitoring systems
+- [ ] Point-to-multipoint communication
+- [ ] Coordinator/router/end device topologies
 
 ---
 
@@ -239,6 +277,9 @@ Quick reference for what this workshop can do and project suggestions when you n
 | I2C bus scanner/debugger    | Arduino + OLED     | Sensor interfaces                                                    |
 | ROM dumper utility          | Arduino Mega       | [DeviceBridge parallel](https://github.com/mwwhited/DeviceBridge)    |
 | MM-8000K serial terminal    | USB-TTL + terminal | [MM8000 tools](https://github.com/mwwhited-archives/MM8000)          |
+| Floppy disk imaging setup   | Greaseweazle + PC  | Vintage computer collection                                          |
+| D2-1 robot MCU upgrade      | ATtiny85 + D2-1    | Line follower analog base                                            |
+| K8055 automation script     | K8055 + Python     | USB I/O experience                                                   |
 
 ### Medium Projects (Days to Weeks)
 
@@ -254,6 +295,10 @@ Quick reference for what this workshop can do and project suggestions when you n
 | H4n remote interface         | ESP8266 + protocol    | [H4n protocol](https://github.com/mwwhited/EmbeddedBakery)           |
 | XBee sensor mesh + dashboard | XBee + ESP32 + web    | ESP + wireless experience                                            |
 | Analog + digital hybrid      | THAT + STM32          | [Analog circuits](https://github.com/mwwhited/EmbeddedBakery)        |
+| Multicomp Z80 CP/M system    | Multicomp EP2C5       | Retro FPGA kit + [Grant Searle designs](http://searle.wales/)        |
+| Multicomp 6502 system        | Multicomp EP2C5       | Apple II experience, 6502 assembly                                   |
+| Vintage disk archival system | Greaseweazle + scripts| Apple II/TI-99 disk preservation                                     |
+| XBee remote sensor station   | XBee + ATtiny + sensors| XBIB-U-DEV board                                                    |
 
 ### Major Projects (Weeks to Months)
 
@@ -270,6 +315,9 @@ Quick reference for what this workshop can do and project suggestions when you n
 | Centronics-to-WiFi bridge     | ESP32 + parallel    | [DeviceBridge](https://github.com/mwwhited/DeviceBridge)          |
 | Multi-protocol test instrument| Zynq + analog       | Full-stack embedded                                               |
 | Gigatron expansion module     | TTL + interface     | TTL computer ownership                                            |
+| USB floppy emulator           | STM32 + Greaseweazle| Floppy imaging experience                                         |
+| Complete vintage disk archive | Greaseweazle + DB   | Full Apple II/TI-99 disk collection                               |
+| Multicomp 6809 Flex/OS-9      | Multicomp EP2C5     | 6809 soft core experience                                         |
 
 ---
 
@@ -346,6 +394,40 @@ Quick reference for what this workshop can do and project suggestions when you n
 - [ ] Audio signal tracer/injector
 - [ ] Synthesizer/effects pedal projects
 - [ ] Ensoniq DOC experiments (Apple IIgs)
+
+### Floppy Disk Archival & Preservation
+
+*Using Greaseweazle V4.1 with Apple II, Apple IIgs, and TI-99/4A.*
+
+- [ ] Complete Apple II disk imaging workflow
+- [ ] Apple IIgs 3.5" disk preservation
+- [ ] TI-99/4A disk format imaging
+- [ ] Flux-level preservation (raw captures)
+- [ ] Damaged disk recovery and repair
+- [ ] Disk image database and catalog system
+- [ ] Write-back verification tools
+
+### Mesh & Wireless Networks
+
+*Using XBee modules, XBee Pro S1, and XBIB-U-DEV.*
+
+- [ ] Multi-node sensor mesh network
+- [ ] Wireless environmental monitoring
+- [ ] Remote equipment status dashboard
+- [ ] XBee-to-MQTT gateway (ESP32)
+- [ ] Battery-powered sensor nodes (ATtiny + XBee)
+- [ ] Long-range outdoor sensor deployment
+
+### Retro Computing FPGA
+
+*Using Multicomp EP2C5-DB and Altera EP2C5 Mini.*
+
+- [ ] Z80 CP/M system (Grant Searle design)
+- [ ] 6502 system with BASIC
+- [ ] 6809 Flex or OS-9 system
+- [ ] Custom peripheral interfaces
+- [ ] VGA text/graphics output
+- [ ] SD card mass storage interface
 
 ### Test Equipment DIY
 
@@ -522,4 +604,4 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 ---
 
-*Last updated: December 2025*
+*Last updated: December 2025 (Project Review Protocol sync)*
