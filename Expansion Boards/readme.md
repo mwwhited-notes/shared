@@ -4,7 +4,7 @@ Personal collection of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and
 
 Each expansion board has its own directory with detailed specifications and locally archived documentation.
 
-**[Expansion Boards Documentation Protocol](EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md)** - Guide for adding new expansion boards and maintaining this inventory.
+**[Expansion Boards Documentation Protocol](../.claude/protocols/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md)** - Guide for adding new expansion boards and maintaining this inventory.
 
 ---
 

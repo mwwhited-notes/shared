@@ -36,21 +36,21 @@ Enjoy!
 FPGAs, CPLDs, MCUs, and development boards with specifications and archived documentation.
 
 - **[Programmable Devices/](Programmable%20Devices/)** - Device index and inventory
-- **[Documentation Protocol](Programmable%20Devices/PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md)** - Standards for adding new devices
+- **[Documentation Protocol](.claude/protocols/PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md)** - Standards for adding new devices
 
 ### Expansion Boards
 
 Arduino shields, Raspberry Pi HATs, BeagleBone capes, and other dev board accessories.
 
 - **[Expansion Boards/](Expansion%20Boards/)** - Shields, HATs, capes index
-- **[Documentation Protocol](Expansion%20Boards/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md)** - Standards for adding new boards
+- **[Documentation Protocol](.claude/protocols/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md)** - Standards for adding new boards
 
 ### Test Equipment
 
 Lab equipment documentation including oscilloscopes, DMMs, power supplies, programmers, microscopes, and soldering tools.
 
 - **[Test Equipment/](Test%20Equipment/)** - Equipment index and inventory
-- **[Documentation Protocol](Test%20Equipment/EQUIPMENT_DOCUMENTATION_PROTOCOL.md)** - Standards for adding new equipment
+- **[Documentation Protocol](.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md)** - Standards for adding new equipment
 
 ### Vintage Computers
 
@@ -164,13 +164,14 @@ Utility scripts for various platforms and tools.
 
 ## Documentation Protocols
 
-Standards for maintaining consistent documentation across the repository:
+Standards for maintaining consistent documentation across the repository. All protocols are located in [.claude/protocols/](.claude/protocols/).
 
 | Protocol | Scope |
 |----------|-------|
-| [Programmable Devices Protocol](Programmable%20Devices/PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md) | Dev boards, MCUs, FPGAs |
-| [Expansion Boards Protocol](Expansion%20Boards/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md) | Shields, HATs, capes |
-| [Equipment Protocol](Test%20Equipment/EQUIPMENT_DOCUMENTATION_PROTOCOL.md) | Lab equipment |
+| [Programmable Devices Protocol](.claude/protocols/PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md) | Dev boards, MCUs, FPGAs |
+| [Expansion Boards Protocol](.claude/protocols/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md) | Shields, HATs, capes |
+| [Equipment Protocol](.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md) | Lab equipment |
+| [Online Shopping Protocol](.claude/protocols/ONLINE_SHOPPING_PROTOCOL.md) | Seller tracking |
 | [Analog Computing Research Protocol](AnalogComputers/analog-computing-repository/research-protocol.md) | PDF research & archiving |
 
 ---

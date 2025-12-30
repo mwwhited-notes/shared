@@ -4,7 +4,7 @@ Personal electronics lab equipment reference with specifications, documentation 
 
 Each device has its own directory with detailed specifications and locally archived documentation.
 
-**[Equipment Documentation Protocol](EQUIPMENT_DOCUMENTATION_PROTOCOL.md)** - Guide for adding new equipment and maintaining this inventory.
+**[Equipment Documentation Protocol](../.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md)** - Guide for adding new equipment and maintaining this inventory.
 
 **[Missing Documentation Tracker](MISSING_DOCUMENTATION.md)** - Documents that require manual download (check off when obtained).
 

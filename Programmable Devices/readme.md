@@ -4,7 +4,7 @@ Personal collection of FPGA, CPLD, MCU, and other programmable development board
 
 Each device has its own directory with detailed specifications and locally archived documentation.
 
-**[Programmable Devices Documentation Protocol](PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md)** - Guide for adding new devices and maintaining this inventory.
+**[Programmable Devices Documentation Protocol](../.claude/protocols/PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md)** - Guide for adding new devices and maintaining this inventory.
 
 ---
 

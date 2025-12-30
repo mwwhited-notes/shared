@@ -48,8 +48,10 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 
 ## Documentation Protocols
 
+All protocols are located in `.claude/protocols/`.
+
 ### Programmable Devices
-Follow `Programmable Devices/PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md` when:
+Follow `.claude/protocols/PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md` when:
 - Adding new development boards or microcontrollers
 - Creating device README files with specifications
 - Downloading and verifying datasheets/schematics
@@ -63,19 +65,25 @@ Key requirements:
 - Document both official tools and open-source alternatives (Arduino IDE, PlatformIO)
 
 ### Expansion Boards
-Follow `Expansion Boards/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md` when:
+Follow `.claude/protocols/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md` when:
 - Adding shields, HATs, capes, or other expansion modules
 - Documenting pin mappings and compatibility with parent boards
 - Cross-referencing with boards in `Programmable Devices/`
 
 ### Test Equipment
-Follow `Test Equipment/EQUIPMENT_DOCUMENTATION_PROTOCOL.md` for lab equipment entries.
+Follow `.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md` for lab equipment entries.
 
 ### Vintage Computers
-Follow `Vintage Computers/VINTAGE_COMPUTERS_DOCUMENTATION_PROTOCOL.md` when:
+Follow `.claude/protocols/VINTAGE_COMPUTERS_DOCUMENTATION_PROTOCOL.md` when:
 - Adding vintage computer systems or peripherals
 - Documenting accessories (Floppy Emu, RAM expansions, video adapters)
 - Cross-referencing with related FPGA soft cores or emulation projects
+
+### Online Shopping
+Follow `.claude/protocols/ONLINE_SHOPPING_PROTOCOL.md` when:
+- User mentions purchases from online sellers
+- Documenting seller experiences (good or bad)
+- Tracking pricing and shipping quality
 
 ### Analog Computers
 Reference `AnalogComputers/analog-computing-repository/CLAUDE.md` for the analog computing research collection.
