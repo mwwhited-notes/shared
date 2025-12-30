@@ -2,6 +2,19 @@
 
 **Adjustable DC Power Supply**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | QE (Generic) |
+| Model | MS305D |
+| Type | Linear DC Power Supply |
+| Status | Working |
+| Date Ordered | 2017-07-20 |
+| Date Received | 2017-07-25 |
+| Purchase Price | $39.99 |
+| Source | eBay (campingsurvival) |
+
 ## Specifications
 
 | Specification | Value |
@@ -21,3 +34,9 @@
 ## Notes
 
 Basic manual bench supply. For programmable control, use the Korad KA3005P.
+
+## Revision History
+
+| Date | Change |
+|------|--------|
+| 2025-12-30 | Added purchase information |

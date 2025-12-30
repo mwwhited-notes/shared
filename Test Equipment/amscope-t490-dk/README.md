@@ -32,10 +32,10 @@
 
 ## Additional Objectives
 
-| Set | Objectives |
-|-----|------------|
-| Plan Olympus | 10X, 20X, 40X, 100X HI (oil) |
-| Achromatic | 1X, 2X |
+| Set | Objectives | Source |
+|-----|------------|--------|
+| Plan Olympus | 10X, 20X, 40X, 100X HI (oil) | eBay (dcimaging) $56.70 - May 2025 |
+| Achromatic | 1X, 2X (RMS, 45mm) | eBay (augua_66) $37.44 - May 2025 |
 
 ## Features
 
@@ -116,3 +116,4 @@ Trinocular head supports C-mount cameras. The simul-focal design allows simultan
 | Date | Change |
 |------|--------|
 | 2025-12-24 | Initial entry |
+| 2025-12-30 | Added 1X/2X objective purchase info |

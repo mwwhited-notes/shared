@@ -2,6 +2,20 @@
 
 **Analog Oscilloscope**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | Hitachi |
+| Model | V-1150 |
+| Type | Analog Oscilloscope |
+| Status | Working |
+| Date Ordered | 2024-12-30 |
+| Date Received | 2025-01-08 |
+| Purchase Price | $187.68 |
+| Source | eBay (aratta2012) |
+| Included | 2 probes |
+
 ## Specifications
 
 | Specification | Value |
@@ -27,3 +41,9 @@
 ## Local Files
 
 *Note: Service manual requires manual download from opweb.de or elektrotanya.com (registration may be required).*
+
+## Revision History
+
+| Date | Change |
+|------|--------|
+| 2025-12-30 | Added purchase information |

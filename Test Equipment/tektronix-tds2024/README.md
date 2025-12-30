@@ -2,6 +2,19 @@
 
 **Digital Storage Oscilloscope with Communications Module**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | Tektronix |
+| Model | TDS2024 |
+| Type | Digital Storage Oscilloscope |
+| Status | Working |
+| Date Ordered | 2023-02-10 |
+| Date Received | 2023-02-16 |
+| Purchase Price | $411.09 |
+| Source | eBay (tryc2) |
+
 ## Specifications
 
 | Specification | Value |
@@ -46,3 +59,9 @@ The communications module adds:
 
 - `TDS2000B_UserManual.pdf` - User manual
 - `TDS2000_ServiceManual.pdf` - Service manual
+
+## Revision History
+
+| Date | Change |
+|------|--------|
+| 2025-12-30 | Added purchase information |

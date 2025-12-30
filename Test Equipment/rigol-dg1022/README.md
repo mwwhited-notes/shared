@@ -2,6 +2,19 @@
 
 **Function/Arbitrary Waveform Generator**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | Rigol |
+| Model | DG1022 |
+| Type | Function/Arbitrary Waveform Generator |
+| Status | Working |
+| Date Ordered | 2017-06-21 |
+| Date Received | 2017-06-23 |
+| Purchase Price | $200.00 |
+| Source | eBay (darny61) |
+
 ## Specifications
 
 | Specification | Value |
@@ -41,3 +54,9 @@
 ## Local Files
 
 - `DG1022_UserGuide.pdf` - User manual
+
+## Revision History
+
+| Date | Change |
+|------|--------|
+| 2025-12-30 | Added purchase information |
