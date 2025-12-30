@@ -552,6 +552,8 @@ Sellers to avoid.
 
 | Retailer | Category | Notes |
 |----------|----------|-------|
+| TEquipment.net | Test Equipment | Excellent! Open-box deals, full warranty. Highly recommended. |
+| Micro Center | PC Components, Electronics | In-store pickup, competitive prices. Columbus: 747 Bethel Rd. |
 | Digikey | Components | Reliable, fast shipping, good documentation |
 | Mouser | Components | Reliable, good selection |
 | Adafruit | Dev boards, kits | Quality products, good tutorials |

@@ -7,10 +7,13 @@
 | Field | Value |
 |-------|-------|
 | Manufacturer | KSGER |
-| Model | T12 STM32 V2.1S |
+| Model | T12 STM32 V3.1S |
 | Handle | FX9501 |
 | Type | Temperature-Controlled Soldering Station |
-| Condition | Working |
+| Status | Working |
+| Date Ordered | 2022-12-27 |
+| Purchase Price | $80.66 |
+| Source | AliExpress (KSGER Official Store) |
 
 ## Specifications
 

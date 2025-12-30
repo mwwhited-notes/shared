@@ -2,6 +2,18 @@
 
 **Programmable DC Power Supply**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | Korad / SRA Soldering |
+| Model | KA3005P |
+| Type | Programmable DC Power Supply |
+| Status | Working |
+| Date Ordered | 2023-01-15 |
+| Purchase Price | $143.99 |
+| Source | Micro Center (Columbus) |
+
 ## Specifications
 
 | Specification | Value |

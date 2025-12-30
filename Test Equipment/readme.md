@@ -65,6 +65,10 @@ Each device has its own directory with detailed specifications and locally archi
 | [HP/Agilent/Keysight 34401A](hp-34401a/) | Bench | 6½ digit | `hp-34401a/` |
 | [Rigol DM3058E](rigol-dm3058e/) | Bench | 5½ digit | `rigol-dm3058e/` |
 | [Tenma 72-2055](tenma-72-2055/) | Handheld | 3½ digit | `tenma-72-2055/` |
+| Eversame USB-C Tester | USB | V/A/W | - |
+| Nubee IR Thermometer | Handheld | Non-contact | - |
+| DBPOWER SC-8108 Cable Tester | Network | Cat5/6 Length | - |
+| Dr.meter LX1010B Lux Meter | Handheld | 0-100k Lux | - |
 
 ### LCR Meters
 
@@ -144,6 +148,7 @@ Each device has its own directory with detailed specifications and locally archi
 
 | Model | Type | Resolution | Directory |
 |-------|------|------------|-----------|
+| Epson Perfection V850 Pro | Film/Flatbed Scanner | 6400 dpi | - |
 | [Kitchbar KB-700](kitchbar-kb700/) | Document Camera | 8MP | `kitchbar-kb700/` |
 | [Lenovo 510 FHD](lenovo-510-fhd/) | Webcam | 1080p | `lenovo-510-fhd/` |
 

@@ -2,6 +2,19 @@
 
 **5½ Digit Benchtop Digital Multimeter**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | Rigol |
+| Model | DM3058E |
+| Type | Benchtop Digital Multimeter |
+| Status | Working |
+| Condition | Open Box (Demo Unit) |
+| Date Ordered | 2021-12-30 |
+| Purchase Price | $399.95 |
+| Source | TEquipment.net |
+
 ## Specifications
 
 | Specification | Value |

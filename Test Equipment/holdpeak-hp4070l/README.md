@@ -2,6 +2,17 @@
 
 **Handheld LCR Meter**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | Holdpeak |
+| Model | HP-4070L |
+| Type | Handheld LCR Meter |
+| Status | Working |
+| Purchase Price | $25.99 |
+| Source | Amazon (Hiyadeal/popzone) |
+
 ## Specifications
 
 | Specification | Value |

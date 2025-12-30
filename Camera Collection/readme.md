@@ -33,19 +33,27 @@ See [CAMERA_COLLECTION_PROTOCOL.md](../.claude/protocols/CAMERA_COLLECTION_PROTO
 
 | Lens | Focal Length | Aperture | Status | Price |
 |------|--------------|----------|--------|-------|
+| Sigma 12-24mm f/4.5-5.6 II DG HSM | 12-24mm | f/4.5-5.6 | Working | $949.00 |
+| Sigma 24-70mm f/2.8 IF EX DG HSM | 24-70mm | f/2.8 | Working | $824.00 |
+| Sigma 70-200mm f/2.8 APO EX DG OS HSM | 70-200mm | f/2.8 | Working | $1,299.00 |
 | [Nikon AF-S 28-300mm f/3.5-5.6G ED VR](Lenses/nikon-28-300mm-vr/) | 28-300mm | f/3.5-5.6 | Working | $946.95 |
 | [Nikon AF-S 85mm f/1.8G](Lenses/nikon-85mm-f1.8g/) | 85mm | f/1.8 | Working | $476.95 |
 | [Nikon AF-S 50mm f/1.8G](Lenses/nikon-50mm-f1.8g/) | 50mm | f/1.8 | Working | $216.95 |
 | [Sigma APO 300mm f/2.8 EX DG HSM](Lenses/sigma-300mm-f2.8-ex-dg/) | 300mm | f/2.8 | Needs Repair | $606.24 |
-| Holga 60mm f/8 | 60mm | f/8 | Working | $29.95 |
+| Bower 24mm f/3.5 Tilt-Shift | 24mm | f/3.5 | Working | $679.00 |
+| Holga 60mm f/8 | 60mm | f/8 | Working | $24.99 |
 | Holga Effect Lens Turret (Nikon) | Multi | - | Working | $39.99 |
 | Holga HT-25 2.5X Telephoto | Teleconverter | - | Working | $16.81 |
 | Lensbaby Edge 80 Optic | 80mm | - | Working | $274.39 |
 | Lensbaby Edge 50 Optic | 50mm | - | Working | $224.95 |
 | Lensbaby Sweet 50 Optic | 50mm | - | Working | $119.95 |
 | Lensbaby Twist 60 Optic | 60mm | - | Working | $179.95 |
+| Lensbaby Composer Pro + Double Glass | Body | - | Working | $299.95 |
+| Lensbaby Sweet 35 Optic | 35mm | - | Working | $179.95 |
+| Lensbaby Optic Kit | Multi | - | Working | $99.95 |
 | Lensbaby Macro Converters (8mm + 16mm) | Macro | - | Working | $49.95 |
 | Lensbaby Creative Aperture Kit 2 | Apertures | - | Working | $19.95 |
+| Zeikos AF Macro Extension Tubes | Macro | - | Working | $69.89 |
 
 ### M42 (Screw Mount)
 
@@ -62,6 +70,7 @@ See [CAMERA_COLLECTION_PROTOCOL.md](../.claude/protocols/CAMERA_COLLECTION_PROTO
 | Teleconverter | Magnification | Mount | Status | Price |
 |---------------|---------------|-------|--------|-------|
 | [Sigma APO 1.4x EX DG](Teleconverters/sigma-1.4x-ex-dg/) | 1.4x | Nikon F | Working | $79.01 |
+| Sigma APO 2x EX DG | 2x | Nikon F | Working | $299.00 |
 
 ---
 
@@ -78,6 +87,11 @@ See [CAMERA_COLLECTION_PROTOCOL.md](../.claude/protocols/CAMERA_COLLECTION_PROTO
 | Breakthrough 77mm X1 Circular Polarizer | Filter | Working | $59.00 |
 | X-Rite i1 Display Pro + ColorChecker Passport | Color Calibration | Working | $347.98 |
 | AmScope CA-NIK-SLR Microscope Adapter | Adapter | Working | $89.75 |
+| ExpoDisc 77mm Neutral WB Filter | White Balance | Working | $99.95 |
+| ExpoDisc 77mm Portrait WB Filter | White Balance | Working | $99.95 |
+| Rogue Small Diffusion Panel | Flash Modifier | Working | $19.95 |
+| Rogue FlashBenders Small Reflector | Flash Modifier | Working | $34.95 |
+| Nikon R1 Wireless Close-Up Speedlight | Macro Flash Kit | Working | $469.00 |
 
 ---
 
@@ -142,6 +156,30 @@ Adapted lenses via Fotasy adapters:
 | Item | Type | Price |
 |------|------|-------|
 | Paterson Universal Tank + 2 Reels | Film Developing Tank | $34.95 |
+
+---
+
+## Workstation / Editing
+
+### Desktop
+| Item | Specs | Price |
+|------|-------|-------|
+| PowerSpec G474 Gaming PC | Intel i9-14900KF | $2,773.48 |
+| G.Skill Trident Z5 RGB 96GB | DDR5-6400 CL32 (2x48GB) | $365.49 |
+| ASUS VP279HE 27" (×2) | 1080p IPS FreeSync | $320.36 |
+| Lenovo 510 FHD Webcam | 1080p USB | $58.99 |
+
+### Laptop
+| Item | Specs | Price |
+|------|-------|-------|
+| Microsoft Surface Book 2 15" | Intel i7, 2-in-1 | $3,579.73 |
+
+### Peripherals
+| Item | Specs | Price |
+|------|-------|-------|
+| Epson Perfection V850 Pro | Film/Flatbed Scanner, 6400 dpi | $911.22 |
+
+*Workstation total: $8,009.27*
 
 ---
 

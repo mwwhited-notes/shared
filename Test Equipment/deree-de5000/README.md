@@ -2,6 +2,17 @@
 
 **Handheld LCR Meter**
 
+## Unit Information
+
+| Field | Value |
+|-------|-------|
+| Manufacturer | DER EE |
+| Model | DE-5000 |
+| Type | Handheld LCR Meter |
+| Status | Working |
+| Purchase Price | $139.99 |
+| Source | Amazon (Fun Fun Hobby Japan) |
+
 ## Specifications
 
 | Specification | Value |
@@ -30,10 +41,17 @@
 
 ## Accessories
 
+### Standard
 - **TL-21** - Alligator clips
 - **TL-22** - SMD tweezers
 - **TL-23** - Guard lead
 - **IR-USB interface** - Optional PC connection
+
+### Purchased
+| Item | Price | Source |
+|------|-------|--------|
+| ZIBOO ZB-L100K Kelvin Test Clips | $21.99 | Amazon (Jan 2025) |
+| Goupchn Kelvin Clips to Banana Plugs | $12.99 | Amazon |
 
 ## Documentation
 

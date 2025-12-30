@@ -12,10 +12,13 @@
 | Format | Full Frame (FX) |
 | Mount | Nikon F-mount |
 | Status | Working |
-| Date Ordered | 2025-05-21 |
-| Date Received | 2025-05-27 |
-| Purchase Price | $625.85 |
-| Source | eBay (uniquephoto) |
+
+### Purchase History
+
+| Date | Price | Source | Notes |
+|------|-------|--------|-------|
+| 2012-08-10 | $2,999.00 | Amazon | Original purchase (new) |
+| 2018-11-28 | $625.85 | eBay (aabestsales) | Second body |
 
 ## Specifications
 
@@ -64,7 +67,7 @@
 
 ## Condition Notes
 
-Purchased working from eBay.
+Two D800 bodies owned - original from 2012 and backup purchased 2018.
 
 ## Revision History
 
