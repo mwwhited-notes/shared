@@ -1,6 +1,6 @@
 # Protocol: Documentation Standards
 
-This protocol defines the standards for organizing and maintaining documentation in the GreenOnion React/TypeScript project.
+This protocol defines the standards for organizing and maintaining documentation in the YourApplication React/TypeScript project.
 
 ---
 
@@ -196,8 +196,8 @@ Always show complete imports:
 
 ```typescript
 // Good - shows actual import path
-import { QueryManufacturerModelComboBox } from '@/components/GreenOnion';
-import type { IQueryManufacturerModel } from '@/api/GreenOnion/Models';
+import { QueryManufacturerModelComboBox } from '@/components/YourApplication';
+import type { IQueryManufacturerModel } from '@/api/YourApplication/Models';
 ```
 
 ---

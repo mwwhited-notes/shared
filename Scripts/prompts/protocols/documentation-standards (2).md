@@ -1,6 +1,6 @@
 # Protocol: Documentation Standards
 
-This protocol defines the standards for organizing and maintaining documentation in the GreenOnion project.
+This protocol defines the standards for organizing and maintaining documentation in the YourApplication project.
 
 ---
 
@@ -148,7 +148,7 @@ If documentation exists at project root (other than README.md, CLAUDE.md, TODO.m
 
 ### Moving Source-Level Docs
 
-If documentation exists in source directories (e.g., `src/GreenOnion.Common/notes.md`):
+If documentation exists in source directories (e.g., `src/YourApplication.Common/notes.md`):
 
 1. Move to appropriate `docs/` subdirectory
 2. Update any references

@@ -12,10 +12,10 @@ Generated files are overwritten during the build process. Any direct modificatio
 
 | Template Type | Location |
 |---------------|----------|
-| Zod Schemas | `TypeScriptGenerator/api/GreenOnion/Schema/{Entity}Schema.ts.hbs` |
-| Components | `TypeScriptGenerator/components/GreenOnion/_Entity_/` |
-| Pages | `TypeScriptGenerator/pages/GreenOnion/_Entity_/` |
-| Routes | `TypeScriptGenerator/pages/GreenOnion/Routes.tsx.hbs` |
+| Zod Schemas | `TypeScriptGenerator/api/YourApplication/Schema/{Entity}Schema.ts.hbs` |
+| Components | `TypeScriptGenerator/components/YourApplication/_Entity_/` |
+| Pages | `TypeScriptGenerator/pages/YourApplication/_Entity_/` |
+| Routes | `TypeScriptGenerator/pages/YourApplication/Routes.tsx.hbs` |
 | Common Helpers | `TypeScriptGenerator/_common/` |
 
 ## Workflow Steps

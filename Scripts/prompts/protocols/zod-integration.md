@@ -1,10 +1,10 @@
 # Zod Schema Integration with GenericGrid - Enhanced Edition
 
-This guide explains how to leverage the comprehensive Zod schema metadata to automatically configure GenericGrid components in the Green Onion application with advanced features including permissions, relationships, and intelligent defaults.
+This guide explains how to leverage the comprehensive Zod schema metadata to automatically configure GenericGrid components in the YourApplication application with advanced features including permissions, relationships, and intelligent defaults.
 
 ## Overview
 
-The Green Onion application has auto-generated Zod schemas in `/src/api/GreenOnion/Schema/` that contain rich metadata about each model. This metadata can be used to automatically:
+The YourApplication application has auto-generated Zod schemas in `/src/api/YourApplication/Schema/` that contain rich metadata about each model. This metadata can be used to automatically:
 - Generate column definitions with proper labeling and tooltips
 - Determine filter, sort, and search capabilities per field
 - Identify primary keys and foreign key relationships
@@ -75,7 +75,7 @@ The Zod schemas contain comprehensive metadata fields organized into several cat
 ### Basic Auto-Configuration
 
 ```typescript
-import ZQueryManufacturerModel from '@/api/GreenOnion/Schema/ZQueryManufacturerModel';
+import ZQueryManufacturerModel from '@/api/YourApplication/Schema/ZQueryManufacturerModel';
 import { zodSchemaToGridColumns, getSchemaMetadata } from '@/utils/zodSchemaHelper';
 
 // Auto-generate columns from schema
@@ -199,7 +199,7 @@ The Zod schema integration can be extended to support:
 
 ### Schema Not Found
 If a schema is not found, check:
-1. The schema exists in `/src/api/GreenOnion/Schema/`
+1. The schema exists in `/src/api/YourApplication/Schema/`
 2. The interface name mapping in `createSchemaLookup()` is correct
 3. The import path is correct
 

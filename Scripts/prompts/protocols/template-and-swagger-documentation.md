@@ -4,7 +4,7 @@ This protocol defines procedures for reviewing and maintaining documentation rel
 
 ## Overview
 
-The GreenOnion project uses a code generation pipeline that transforms OpenAPI/Swagger metadata into TypeScript clients, components, and pages. This protocol ensures documentation stays synchronized with implementation changes.
+The YourApplication project uses a code generation pipeline that transforms OpenAPI/Swagger metadata into TypeScript clients, components, and pages. This protocol ensures documentation stays synchronized with implementation changes.
 
 ## Key Locations
 
@@ -15,7 +15,7 @@ The GreenOnion project uses a code generation pipeline that transforms OpenAPI/S
 | **Template Source** | `docs/templates/TypeScriptGenerator/` | Handlebars templates (62 files) |
 | **Template Output** | `publish/TypeScriptClient/` | Generated TypeScript files |
 | **Swagger Data** | `docs/swagger.json` | OpenAPI spec with extensions |
-| **Entity Models** | `src/GreenOnion.Common/Models/` | C# models with metadata attributes |
+| **Entity Models** | `src/YourApplication.Common/Models/` | C# models with metadata attributes |
 | **Metadata Attributes** | `src/Common/Eliassen.Common.Abstractions/System/ComponentModel/Metadata/` | Attribute definitions |
 | **Schema Filters** | `src/Common/Eliassen.Common.AspNetCore/Mvc/SwaggerGen/` | Swagger extension processors |
 | **Handlebars Helpers** | `src/Common/Eliassen.Common.Extensions/Handlebars/` | Custom template helpers |
@@ -53,11 +53,11 @@ diff -r publish/TypeScriptClient/ <previous_output>
 - `_common/schema-template.hbs` - TypeScript type mapping
 - `_common/entity-definition.hbs` - Entity metadata table
 - `_common/get-entity-label.hbs` - Label extraction
-- `components/GreenOnion/_Entity_/ComboBox.tsx.hbs` - Dropdown component
-- `components/GreenOnion/_Entity_/MultiSelect.tsx.hbs` - Multi-select component
-- `components/GreenOnion/_Entity_/DataGrid.tsx.hbs` - Data grid component
-- `components/GreenOnion/_Entity_/PropertyEditor.tsx.hbs` - Form editor
-- `components/GreenOnion/_Entity_/FormSchema.ts.hbs` - Zod schema generation
+- `components/YourApplication/_Entity_/ComboBox.tsx.hbs` - Dropdown component
+- `components/YourApplication/_Entity_/MultiSelect.tsx.hbs` - Multi-select component
+- `components/YourApplication/_Entity_/DataGrid.tsx.hbs` - Data grid component
+- `components/YourApplication/_Entity_/PropertyEditor.tsx.hbs` - Form editor
+- `components/YourApplication/_Entity_/FormSchema.ts.hbs` - Zod schema generation
 
 **Template Variable Inheritance:**
 - `call` helper does NOT automatically inherit parent context
@@ -96,16 +96,16 @@ When reviewing entity models:
 
 ```bash
 # Step 1: List all Query models
-find src/GreenOnion.Common/Models -name "Query*.cs"
+find src/YourApplication.Common/Models -name "Query*.cs"
 
 # Step 2: Check model attributes
-grep -l "ComboBoxVariant\|NavigationVariant" src/GreenOnion.Common/Models/*.cs
+grep -l "ComboBoxVariant\|NavigationVariant" src/YourApplication.Common/Models/*.cs
 
 # Step 3: Verify swagger output for specific model
 cat docs/swagger.json | python3 -c "
 import json,sys
 d=json.load(sys.stdin)
-schema = d['components']['schemas']['GreenOnion.Common.Models.QuerySchoolDistrictModel']
+schema = d['components']['schemas']['YourApplication.Common.Models.QuerySchoolDistrictModel']
 print(json.dumps(schema, indent=2))
 "
 ```
@@ -173,9 +173,9 @@ When updating documentation, ensure:
 cd docs/templates/TypeScriptGenerator
 
 # Clean and regenerate
-rmdir /s/q ..\..\..\.publish\TypeScriptClient\api\GreenOnion
-rmdir /s/q ..\..\..\.publish\TypeScriptClient\components\GreenOnion
-rmdir /s/q ..\..\..\.publish\TypeScriptClient\pages\GreenOnion
+rmdir /s/q ..\..\..\.publish\TypeScriptClient\api\YourApplication
+rmdir /s/q ..\..\..\.publish\TypeScriptClient\components\YourApplication
+rmdir /s/q ..\..\..\.publish\TypeScriptClient\pages\YourApplication
 
 # Run builder
 call builder.bat
@@ -188,8 +188,8 @@ dir /s publish\TypeScriptClient\*.tsx | find /c ".tsx"
 
 ```bash
 # Regenerate swagger.json
-dotnet build src/GreenOnion.API
-dotnet run --project src/GreenOnion.API -- --urls=http://localhost:5000
+dotnet build src/YourApplication.API
+dotnet run --project src/YourApplication.API -- --urls=http://localhost:5000
 curl http://localhost:5000/swagger/all/swagger.json > docs/swagger.json
 
 # Verify extension count
@@ -215,8 +215,8 @@ var metadataTypes = typeof(IMetadata).Assembly
 
 **Fix:** Add `def=@def` parameter to `call` invocation:
 ```handlebars
-{{~call template="components/GreenOnion/_Entity_/ComboBox.tsx"
-        name=(concat "components/GreenOnion/" @entityNameSimple "/ComboBox")
+{{~call template="components/YourApplication/_Entity_/ComboBox.tsx"
+        name=(concat "components/YourApplication/" @entityNameSimple "/ComboBox")
         def=@def
         }}
 ```
@@ -258,7 +258,7 @@ call zod-demo.bat
 
 ## Related Protocols
 
-- Template development workflow (GreenOnion.UI repository)
+- Template development workflow (YourApplication.UI repository)
 - Swagger generation and API documentation
 - Entity model design patterns
 

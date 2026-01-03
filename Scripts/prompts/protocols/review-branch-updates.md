@@ -18,10 +18,10 @@ Review changes after pulling latest from API/UI branches, verify implementations
 ### 1.1 Get Recent Commits
 ```bash
 # For API submodule
-cd GreenOnion.API && git log --oneline -10
+cd YourApplication.API && git log --oneline -10
 
 # For UI submodule
-cd GreenOnion.UI && git log --oneline -10
+cd YourApplication.UI && git log --oneline -10
 ```
 
 ### 1.2 Review Commit Details
@@ -44,13 +44,13 @@ Group changes by type:
 
 ### 2.1 For Each New Controller
 Verify frontend has matching:
-- API client in `GreenOnion.UI/src/api/GreenOnion/Clients/`
-- Zod schema in `GreenOnion.UI/src/api/GreenOnion/Schema/`
-- TypeScript model in `GreenOnion.UI/src/api/GreenOnion/Models/`
+- API client in `YourApplication.UI/src/api/YourApplication/Clients/`
+- Zod schema in `YourApplication.UI/src/api/YourApplication/Schema/`
+- TypeScript model in `YourApplication.UI/src/api/YourApplication/Models/`
 
 ### 2.2 For Each Model Extension
 Verify:
-- C# property exists in `GreenOnion.Common/Models/`
+- C# property exists in `YourApplication.Common/Models/`
 - Zod schema has matching field with correct type
 - TypeScript interface includes the field
 
@@ -248,7 +248,7 @@ Before completing review:
 User: I pulled latest into the API branch
 
 Claude:
-1. Check GreenOnion.API recent commits
+1. Check YourApplication.API recent commits
 2. Review new controllers/models
 3. Verify frontend has matching clients (may note gaps)
 4. Update backend-related documentation

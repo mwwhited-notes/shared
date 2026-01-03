@@ -12,7 +12,7 @@
 
 ## Overview
 
-This protocol defines the steps for conducting a security audit of the GreenOnion API. The audit ensures that all endpoints and services are properly secured according to the application's security model.
+This protocol defines the steps for conducting a security audit of the YourApplication API. The audit ensures that all endpoints and services are properly secured according to the application's security model.
 
 ### Key Security Principles
 

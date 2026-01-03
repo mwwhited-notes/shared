@@ -1,12 +1,12 @@
 # SimpleGenericGrid Style Guide (Updated 2025-08-10)
 
-This guide establishes the current standard for SimpleGenericGrid component usage across the Green Onion application, reflecting the successful migration from DataGrid to modern PrimeReact-based table components.
+This guide establishes the current standard for SimpleGenericGrid component usage across the YourApplication application, reflecting the successful migration from DataGrid to modern PrimeReact-based table components.
 
 ## Migration Status Notice
 
 **Current Implementation**: All examples use SimpleGenericGrid with PrimeReact DataTable and modern client patterns. The original DataGrid component using TanStack React Table is deprecated as of 2025-08-10.
 
-**API Client Support**: Examples support both current production (`@/api/GreenOnionClient`) and future modular (`@/api/GreenOnion/Clients/*`) patterns.
+**API Client Support**: Examples support both current production (`@/api/YourApplicationClient`) and future modular (`@/api/YourApplication/Clients/*`) patterns.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -22,7 +22,7 @@ This guide establishes the current standard for SimpleGenericGrid component usag
 
 ## Overview
 
-SimpleGenericGrid is the current standardized solution for all tabular data display in the Green Onion application. Built on PrimeReact DataTable, it provides modern UI components, advanced features, and consistent user experience.
+SimpleGenericGrid is the current standardized solution for all tabular data display in the YourApplication application. Built on PrimeReact DataTable, it provides modern UI components, advanced features, and consistent user experience.
 
 ### Design Principles
 1. **Modern UI**: PrimeReact components with consistent styling and behavior
@@ -51,7 +51,7 @@ import {
   ManufacturerClient, 
   QueryManufacturerModel,
   QueryManufacturerModel3,
-} from "@/api/GreenOnionClient"; // Current production client
+} from "@/api/YourApplicationClient"; // Current production client
 import edit_icon from "@/assets/icons/edit_icon.svg";
 import DataGrid from "@/components/Reusable/DataGrid";
 import "./index.scss";
@@ -383,7 +383,7 @@ import {
   [EntityClient], 
   [QueryEntityModel],
   [QueryEntityModel3],
-} from "@/api/GreenOnionClient";
+} from "@/api/YourApplicationClient";
 import edit_icon from "@/assets/icons/edit_icon.svg";
 import DataGrid from "@/components/Reusable/DataGrid";
 import "./index.scss";
@@ -632,7 +632,7 @@ import React, { useMemo } from "react";           // React imports
 import { createColumnHelper } from "@tanstack/react-table"; // Third-party
 import { Button } from "@mui/material";            // UI library
 import { useNavigate } from "react-router-dom";    // React Router
-import { /* API types */ } from "@/api/GreenOnionClient"; // Generated API
+import { /* API types */ } from "@/api/YourApplicationClient"; // Generated API
 import edit_icon from "@/assets/icons/edit_icon.svg"; // Assets
 import DataGrid from "@/components/Reusable/DataGrid"; // Components
 import "./index.scss";                             // Styles
@@ -691,7 +691,7 @@ import {
   UserClient, 
   QueryUserModel,
   QueryUserModel3,
-} from "@/api/GreenOnionClient";
+} from "@/api/YourApplicationClient";
 import edit_icon from "@/assets/icons/edit_icon.svg";
 import view_icon from "@/assets/icons/sunglass.svg";
 import DataGrid from "@/components/Reusable/DataGrid";
@@ -846,7 +846,7 @@ When updating existing DataGrid implementations to match this standard:
 
 ### Overview
 
-The Green Onion application uses standardized dropdown components for all form selects, ensuring type safety, performance, and consistent user experience across the application.
+The YourApplication application uses standardized dropdown components for all form selects, ensuring type safety, performance, and consistent user experience across the application.
 
 ### Available Dropdown Components
 

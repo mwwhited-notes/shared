@@ -1,6 +1,6 @@
 # Task Management Protocol
 
-This protocol defines the standard workflow for managing feature requests, bug fixes, and enhancements in the Green Onion application.
+This protocol defines the standard workflow for managing feature requests, bug fixes, and enhancements in the YourApplication application.
 
 ---
 

@@ -277,7 +277,7 @@ dotnet build
 dotnet test
 
 # Manual verification
-dotnet run --project src/GreenOnion.API
+dotnet run --project src/YourApplication.API
 ```
 
 ### 5.5 Self-Review Checklist
