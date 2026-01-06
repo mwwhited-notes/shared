@@ -34,6 +34,13 @@
 - One-hand operation
 - Replaceable filters
 
+## Accessories
+
+| Item | Model | Price | Date | Source |
+|------|-------|-------|------|--------|
+| Iron Holder | Hakko C1100 (with cleaning sponge) | $32.50 | 2023-03-12 | Amazon (UJC Mart Japan) |
+| Desoldering Nozzle | N61-13 (1.3mm extra long) | $14.43 | 2023-10-30 | Amazon |
+
 ## Installed Nozzles
 
 | Nozzle | Size | Type | Use Case |

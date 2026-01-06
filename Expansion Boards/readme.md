@@ -41,6 +41,14 @@ Each expansion board has its own directory with detailed specifications and loca
 | [OSEPP LCD Keypad](arduino-osepp-lcd-keypad-shield/) | 16x2 LCD + 5 buttons | HD44780 | 4-bit parallel | 1 | `arduino-osepp-lcd-keypad-shield/` |
 | [Multi-Function Shield](arduino-multi-function-shield/) | 7-seg, LEDs, buttons, buzzer | 74HC595 | Shift register | 1 | `arduino-multi-function-shield/` |
 
+### Arduino Shields - Prototyping
+
+| Shield | Function | Main IC | Interface | Qty | Directory |
+|--------|----------|---------|-----------|-----|-----------|
+| Arduino Mega Proto Shield | Solderable prototype PCB | - | Passthrough | 10 | - |
+
+*KEYESTUDIO 10-pack double-sided PCB prototype shields for Arduino Mega 2560. Purchased 2022-12-30 for $16.66.*
+
 ### Arduino Shields - Programming & Development
 
 | Shield | Function | Main IC | Interface | Qty | Directory |

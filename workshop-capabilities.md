@@ -190,6 +190,29 @@ Two-node home lab for container orchestration and DevOps learning:
 
 *See `Expansion Boards/` for full inventory.*
 
+### Components & Consumables Stock
+
+*See [tools-and-components.md](tools-and-components.md) for complete inventory.*
+
+| Category | Stock Summary |
+|----------|---------------|
+| **Passive Components** | 30-value resistor kit (1Ω-1MΩ), 300x 10KΩ, 10x 100Ω 5W, ceramic/electrolytic cap kits |
+| **Potentiometers** | 50x 10K trimpots, 20x 10K with knobs, slide pots, 4-axis joystick |
+| **Voltage Regulators** | LM317T (25), LM337T (10), LM2596 buck (20), DC-DC boost converters |
+| **Op-amps/Comparators** | TL074CN (20), LM324N (25), LM339 (30) |
+| **Logic ICs** | 74HC14 Schmitt (20), 74HCT138 (10), 74LS83 adders (10), CD4070 XOR (10), NE555D (50) |
+| **Transistors/MOSFETs** | IRF4905 P-ch (10), optocouplers PC817C (50) |
+| **LEDs** | 5mm assorted colors (400+), RGB common cathode (100), 5mm holders (600) |
+| **Displays** | Panel voltmeters (15), 7-segment clock displays |
+| **Connectors** | DIP sockets (110), spring terminals, aviation plugs, IDC headers/sockets |
+| **Switches** | Toggle (8), momentary pushbuttons (29), slide switches (100), membrane keypads |
+| **Prototyping** | Perfboard, breadboard, project enclosures (12+), stackable headers |
+| **Wire/Cable** | 30AWG wire wrap, ribbon cable, USB/BNC/HDMI cables |
+| **Soldering** | T12 tips, desoldering nozzles, tip tinner, flux |
+| **Battery Holders** | AA (10), CR123 (10), CR2032 (30) |
+| **Fasteners** | M2 screws/nuts, M4 threaded rods, reusable cable ties |
+| **Hand Tools** | Precision crimper, chip lifter, wire stripper, ESD wrist straps |
+
 ---
 
 ## What Can I Build?

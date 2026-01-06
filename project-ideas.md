@@ -59,6 +59,10 @@ Personal project backlog with notes on progress and equipment.
 * hybrid analog-digital system [THAT + STM32 interface]
 * control system modeling [PID loops, feedback systems]
 
+### Workshop Organization
+
+* **DIY TrekPak-Style Dividers** - Custom drawer and case dividers using corrugated plastic panels, U-shaped hair pins (as locking pins), EVA foam, and felt tape. DIY alternative to [Pelican TrekPak](https://www.pelican.com/us/en/discover/trekpak). [see tools-and-components.md Craft & Project Supplies]
+
 ### Learning & Exploration
 
 * play around more with diode logic (working though this in combination with trying to reverse engineer programming some old PAL chips helped me understand how "high voltage" programmers work as well as ROM, SRAM, and more about combinational logic)

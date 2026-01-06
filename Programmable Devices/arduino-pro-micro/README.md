@@ -9,8 +9,11 @@
 | Manufacturer | SparkFun / Clones |
 | Board | Pro Micro |
 | MCU | ATmega32U4 |
-| Date Acquired | |
-| Quantity | |
+| Date Acquired | April 23, 2023 |
+| Quantity | 3 |
+| Source | Amazon (Hosyond) |
+| Price | $18.99 |
+| Variant | 5V/16MHz |
 
 ## Specifications
 

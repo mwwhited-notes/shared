@@ -120,6 +120,7 @@ Printers, media devices, and anything that doesn't fit the categories above.
 | HD HomeRun Extend | TV Tuner/Streamer | TBD | Network TV tuner |
 | JCHICI USB 2.0 Extender | USB over Ethernet | Active | 50m, 4 ports, $29.99 Jan 2024 |
 | InnoView Portable Monitor | 14" 4K Touch, USB-C | Active | $299.99 Jan 2024 |
+| XGODY X1 Projector | 1080p, Android, WiFi/BT | Active | $179.00 Aug 2023 |
 
 ### SBC Cluster (Legacy)
 
