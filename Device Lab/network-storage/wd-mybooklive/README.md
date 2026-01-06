@@ -9,10 +9,28 @@
 | Manufacturer | Western Digital |
 | Model | My Book Live |
 | Model Number | TBD |
+| Serial Number | WMAZA7408486 |
 | Generation/Year | 2010-2014 |
 | Date Acquired | TBD |
-| Condition | TBD |
-| Current Use | TBD |
+| Condition | Working |
+| Current Use | Network Storage |
+
+## Network Configuration
+
+| Setting | Value |
+|---------|-------|
+| IP Address | 192.168.0.97 |
+| Hostname | MyBookLive |
+| Network | 192.168.0.0/24 |
+
+## Storage
+
+| Metric | Value |
+|--------|-------|
+| Total Capacity | 2 TB |
+| Used | 975 GB |
+| Available | ~1 TB |
+| Usage | ~49% |
 
 ## Specifications
 

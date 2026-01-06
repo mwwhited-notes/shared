@@ -171,6 +171,7 @@ Each device has its own directory with detailed specifications and locally archi
 |-------|------|----------|-----------|
 | [CREWORKS Ultrasonic Cleaner](creworks-ultrasonic-cleaner/) | Ultrasonic Cleaner | 10L | `creworks-ultrasonic-cleaner/` |
 | [Magnetic Stirrer Hot Plate](magnetic-stirrer-hotplate/) | Stirrer/Hot Plate | - | `magnetic-stirrer-hotplate/` |
+| [ExGizmo UV EPROM Eraser](exgizmo-uv-eprom-eraser/) | UV Eraser | Multi-chip | `exgizmo-uv-eprom-eraser/` |
 
 ### Fabrication
 
@@ -368,7 +369,8 @@ Each device has its own directory with detailed specifications and locally archi
 | Velleman K8048RS | Programmer | - | Micro Center | - |
 | Velleman K8055 (×3) | Data Acquisition | - | Micro Center | - |
 | Pyle PTAU45 | Audio Amplifier | $71.99 | Amazon | 2013-10-11 |
-| **Documented Total** | | **$5,867.32+** | | |
+| ExGizmo UV EPROM Eraser | Lab Equipment | $19.88 | Amazon (ExGizmo) | 2020-01-30 |
+| **Documented Total** | | **$5,887.20+** | | |
 
 ---
 

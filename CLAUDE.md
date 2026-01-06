@@ -43,6 +43,8 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 - **Camera Collection/** - Photography equipment inventory (Nikon D800, film cameras, lenses, M42 vintage glass)
 - **Device Lab/** - Computing devices for hacking/tinkering (tablets, phones, gaming handhelds, NAS, desktops)
 - **home-automation/** - Home automation platform migration project (HomeSeer to Home Assistant)
+- **network-diagram.md** - Home network topology, IP assignments, VLAN planning, and security notes
+- **tools-and-components.md** - Hand tools, wire, consumables, and component stock
 - **Notes/** - Technical notes on various topics (Kubernetes, dotnet, FPGA, vintage computing, etc.)
 - **Scripts/** - Utility scripts (JavaScript, T-SQL, dotnet, Vivado TCL, WSL configuration)
 - **HammingDistances/** - Precomputed Hamming distance lookup tables (CSV format)
@@ -178,6 +180,7 @@ done
 - `Camera Collection/readme.md` - Cameras, lenses, and photography accessories
 - `Device Lab/readme.md` - Computing devices for hacking/tinkering
 - `home-automation/CLAUDE.md` - Home automation project (HomeSeer migration)
+- `network-diagram.md` - Network topology and IP assignments
 - `AnalogComputers/analog-computing-repository/README.md` - Analog computing collection overview
 - `AnalogComputers/analog-computing-repository/research-protocol.md` - Search strategies and download sources by topic
 - `AnalogComputers/analog-computing-repository/download-sources.md` - PDF source registry

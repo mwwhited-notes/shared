@@ -11,7 +11,8 @@ Personal inventory of computing devices for hacking, tinkering, and repurposing 
 | Network Storage | 2 | TBD |
 | Desktops | 3 | ★★★★★ |
 | Laptops | 1 | TBD |
-| Networking | TBD | TBD |
+| Networking | 2 switches + 2 SFP+ | ★★★★☆ |
+| Audio | 3 | ★★☆☆☆ |
 
 ---
 
@@ -77,9 +78,25 @@ Laptops and netbooks for portable projects or Linux experimentation.
 
 Routers, switches, and access points.
 
-| Device | Model | Status | Hackability | Notes |
-|--------|-------|--------|-------------|-------|
-| *To be documented* | | | | |
+| Device | Specs | Qty | Status | Notes |
+|--------|-------|-----|--------|-------|
+| [Amazon eero 6+](networking/amazon-eero-6-plus/) | WiFi 6 mesh, Thread | 9 | Active | 6 w/house + 3-pack |
+| [MokerLink 2.5G Switch](networking/mokerlink-2.5g-switch/) | 8x 2.5GbE + 10G SFP, managed | 2 | Active | VLAN, LACP, QoS |
+| ipolex SFP+ to RJ45 | 10GBase-T transceiver | 2 | Active | For switch interconnect |
+
+*See [Network Diagram](../network-diagram.md) for topology and IP assignments.*
+
+---
+
+## Audio Equipment
+
+Home stereo and audio equipment.
+
+| Device | Model | Status | Notes |
+|--------|-------|--------|-------|
+| [Sonos Port](audio/) | Streaming component | Active | Sonos/stereo integration |
+| [Stereo Sound Mixer](audio/) | 4-channel mixer | Active | Richer-R |
+| [SOLUPEAK NA2](audio/) | Phono preamp (MM) | Active | Turntable preamp |
 
 ---
 
@@ -125,6 +142,7 @@ Anything that doesn't fit the categories above.
 
 ## Cross-References
 
+- [Network Diagram](../network-diagram.md) - IP assignments, topology, VLANs
 - [Programmable Devices](../Programmable%20Devices/) - Dev boards, MCUs, FPGAs
 - [Vintage Computers](../Vintage%20Computers/) - Apple II, TI-99/4A, classic systems
 - [Test Equipment](../Test%20Equipment/) - Lab equipment

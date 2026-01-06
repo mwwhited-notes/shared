@@ -42,6 +42,7 @@
 | Eyepieces | WF10X/20 (pair) |
 | Barlow Lens | 0.5X |
 | Barlow Lens | 2X |
+| Step-Up Ring | Fotodiox 48mm-52mm (for polarizer mount) |
 
 ### Shared Camera Equipment (with T490-DK)
 
@@ -133,3 +134,4 @@ Magnification calculations:
 |------|--------|
 | 2025-12-24 | Initial entry |
 | 2025-12-30 | Added purchase information |
+| 2026-01-06 | Added Fotodiox 48-52mm step-up ring ($5.95, 2025-09-29) |
