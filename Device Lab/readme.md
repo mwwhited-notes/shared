@@ -9,10 +9,12 @@ Personal inventory of computing devices for hacking, tinkering, and repurposing 
 | Mobile Devices | 4 | TBD |
 | Gaming Devices | 1 | TBD |
 | Network Storage | 2 | TBD |
-| Desktops | 3 | ★★★★★ |
-| Laptops | 1 | TBD |
-| Networking | 2 switches + 2 SFP+ | ★★★★☆ |
+| Desktops | 5 (+ 2 Mac Mini) | ★★★★★ |
+| Laptops | 4 | TBD |
+| Networking | 5 switches + 9 eero + 2 SFP+ | ★★★★☆ |
 | Audio | 3 | ★★☆☆☆ |
+| SBCs | 8 (legacy cluster) | ★★★★★ |
+| Other | 3+ | TBD |
 
 ---
 
@@ -56,9 +58,11 @@ Desktop computers for servers, workstations, or parts.
 
 | Device | CPU | RAM | GPU | Status | Current Use |
 |--------|-----|-----|-----|--------|-------------|
-| [PowerSpec G474](desktops/powerspec-g474/) | i9-14900KF | 96GB DDR5 | RTX 4070 Ti | Active | Primary workstation |
+| [PowerSpec G474](desktops/powerspec-g474/) | i9-14900KF | 160GB DDR5 | RTX 4070 Ti | Active | Primary workstation |
 | [Reduced BigRig](desktops/reduced-bigrig/) | FX-9590 | 32GB DDR3 | 2x R9 290 | Project | [DevOps Playground](projects/docker-cluster.md) |
 | [Server](desktops/server-fx8350/) | FX-8350 | 32GB DDR3 | HD 5450 | Project | [DevOps Playground](projects/docker-cluster.md) |
+| Mac Mini 2014 | Intel | 8GB | Integrated | TBD | SSD upgraded |
+| Mac Mini 2014 | Intel | 4GB | Integrated | TBD | SSD upgraded |
 
 ---
 
@@ -69,6 +73,9 @@ Laptops and netbooks for portable projects or Linux experimentation.
 | Device | Specs Summary | Status | Current Use |
 |--------|--------------|--------|-------------|
 | Microsoft Surface Book 2 15" | Intel i7, 2-in-1 | TBD | TBD |
+| MacBook Pro A1502 | Intel, 13" Retina | TBD | TBD |
+| MacBook (unknown model) | Intel | TBD | TBD |
+| Toshiba Satellite R10 | Convertible tablet PC | TBD | TBD |
 
 *Note: Surface Book 2 also documented in [Camera Collection](../Camera%20Collection/readme.md) under Workstation.*
 
@@ -83,6 +90,9 @@ Routers, switches, and access points.
 | [Amazon eero 6+](networking/amazon-eero-6-plus/) | WiFi 6 mesh, Thread | 9 | Active | 6 w/house + 3-pack |
 | [MokerLink 2.5G Switch](networking/mokerlink-2.5g-switch/) | 8x 2.5GbE + 10G SFP, managed | 2 | Active | VLAN, LACP, QoS |
 | ipolex SFP+ to RJ45 | 10GBase-T transceiver | 2 | Active | For switch interconnect |
+| TP-Link TL-SG1005D | 5-port Gigabit | 1 | TBD | Unmanaged |
+| TP-Link TL-SG1008D | 8-port Gigabit | 1 | TBD | Unmanaged |
+| D-Link DGS-1100-08 | 8-port Gigabit | 1 | TBD | Smart managed |
 
 *See [Network Diagram](../network-diagram.md) for topology and IP assignments.*
 
@@ -102,11 +112,24 @@ Home stereo and audio equipment.
 
 ## Other Devices
 
-Anything that doesn't fit the categories above.
+Printers, media devices, and anything that doesn't fit the categories above.
 
 | Device | Type | Status | Notes |
 |--------|------|--------|-------|
-| *To be documented* | | | |
+| [Brother HL-3170CDW](other/brother-hl-3170cdw/) | Color Laser Printer | Active | 192.168.0.48, Craft Room |
+| HD HomeRun Extend | TV Tuner/Streamer | TBD | Network TV tuner |
+| JCHICI USB 2.0 Extender | USB over Ethernet | Active | 50m, 4 ports, $29.99 Jan 2024 |
+| InnoView Portable Monitor | 14" 4K Touch, USB-C | Active | $299.99 Jan 2024 |
+
+### SBC Cluster (Legacy)
+
+Originally intended as a Pi cluster. Has power controller/network device (code in [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)).
+
+| Device | Qty | Notes |
+|--------|-----|-------|
+| BeagleBone Black | 4 | ARM Cortex-A8 |
+| Raspberry Pi 2 | 2 | |
+| Raspberry Pi Model A | 2 | Composite video output |
 
 ---
 

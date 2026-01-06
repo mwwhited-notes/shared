@@ -10,9 +10,10 @@
 | Model | My Cloud PR4100 |
 | Model Number | WDBNFA0000NBK |
 | Generation/Year | 2016 |
+| Serial Number | WNAQ29350057 |
 | Date Acquired | TBD |
-| Condition | TBD |
-| Current Use | TBD |
+| Condition | Working |
+| Current Use | Network storage |
 
 ## Specifications
 
@@ -118,9 +119,28 @@ Good hackability - Intel x86 CPU, SSH access, Docker support. Some WD restrictio
 - 4 GB RAM is adequate but not expandable
 - Dual Gigabit with link aggregation for better throughput
 
+### Network Configuration
+
+| Setting | Value |
+|---------|-------|
+| Device Name | MyCloudPR4100 |
+| IP Address | 192.168.0.67 |
+| MAC Address | 00:00:C0:0A:CB:57 |
+| DNS Servers | 192.168.0.1, 75.75.76.76, 1.1.1.1 |
+| IPv6 | fe80::200:c0ff:fe0a:cb57 |
+
+### Storage Configuration
+
+| Volume | Type | Capacity | Status |
+|--------|------|----------|--------|
+| Volume_1 | JBOD | 3.93 TB | Good |
+| Volume_2 | JBOD | 3.93 TB | Good |
+| Volume_3 | JBOD | 11.9 TB | Good |
+| **Total** | | **19.76 TB** | Healthy |
+
 ### Current Configuration
 
-- Installed drives: TBD
-- RAID configuration: TBD
+- Installed drives: 3 drives (JBOD, ~20TB total)
+- RAID configuration: JBOD (no redundancy)
 - Current firmware: TBD
 - Services running: TBD

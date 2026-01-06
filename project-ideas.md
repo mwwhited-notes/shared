@@ -40,7 +40,7 @@ Personal project backlog with notes on progress and equipment.
 ### Protocol Bridges & Interfaces
 
 * GPIB/IEEE-488 USB adapter [for HP 34401A and other GPIB instruments, builds on DeviceBridge work]
-* LXI/SCPI instrument automation gateway [ESP32 + instruments]
+* **LXI Bridge for Test Equipment** - Web interface for controlling/viewing all bench equipment + IP socket for SCPI access. Note: HP 34401A, Rigol DM3058E, and DG1022 do NOT have native LXI - this would add network capability to legacy instruments. [ESP32/Pi gateway]
 * Centronics-to-WiFi print server [builds on DeviceBridge parallel port work]
 * H4n recorder remote interface [have protocol documented]
 * LANC camera controller expansion [have LANC work in EmbeddedBakery]
@@ -69,8 +69,9 @@ Personal project backlog with notes on progress and equipment.
 
 ### DevOps & Infrastructure
 
-*Using DevOps Playground cluster (Reduced BigRig + Server FX machines).*
+*Using DevOps Playground cluster (Reduced BigRig + Server FX machines) and PR4100 NAS.*
 
+* **Self-hosted Git Server** - Options: (1) bare git repos on PR4100 SMB/NFS share, or (2) Gitea/Gogs/GitLab Docker container on PR4100. Container approach adds web UI, issue tracking, CI integration. [PR4100 has Docker support, Intel N3710 CPU]
 * k3s Kubernetes cluster deployment [lightweight K8s for home lab]
 * Docker Swarm multi-node setup [built-in orchestration]
 * Slurm HPC workload manager [job scheduling, batch processing]

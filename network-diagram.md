@@ -37,7 +37,7 @@ Home network topology, device inventory, and IP assignments.
 
 | Device | Specs | Qty | Purchased |
 |--------|-------|-----|-----------|
-| Amazon eero 6+ | WiFi 6 mesh, Thread, 1Gbps | 9 | 6 w/house + 3-pack 2024-09-19 |
+| Amazon eero 6+ | WiFi 6 mesh, Thread, 1Gbps | 9 | 3 w/house + 2x 3-packs |
 | MokerLink 2.5G Managed Switch | 8x 2.5GbE + 10G SFP, VLAN/LACP/QoS | 2 | 2024-03-17 |
 | ipolex SFP+ to RJ45 10Gb | 10GBase-T transceiver | 2 | 2024-03-17 |
 
@@ -58,19 +58,27 @@ Home network topology, device inventory, and IP assignments.
 | TBD | MokerLink 2.5G Switch #1 | Managed Switch | Active | 8x 2.5GbE + 10G SFP |
 | TBD | MokerLink 2.5G Switch #2 | Managed Switch | Active | 8x 2.5GbE + 10G SFP |
 
+**ISP:** Verizon Wireless (Gateway: 192.168.1.1)
+
 #### Network Storage
 
 | IP Address | Device | Type | Status | Notes |
 |------------|--------|------|--------|-------|
+| 192.168.0.67 | [WD My Cloud PR4100](Device%20Lab/network-storage/wd-mycloud-pr4100/) | NAS | Active | 4-bay JBOD, ~20TB, Intel N3710 |
 | 192.168.0.97 | [WD MyBookLive](Device%20Lab/network-storage/wd-mybooklive/) | NAS | Active | 2TB, **ISOLATE** - security risk |
-| TBD | [WD My Cloud PR4100](Device%20Lab/network-storage/wd-mycloud-pr4100/) | NAS | TBD | 4-bay, Intel N3710 |
 
 #### Workstations
 
 | IP Address | Device | Type | Status | Notes |
 |------------|--------|------|--------|-------|
-| DHCP | [PowerSpec G474](Device%20Lab/desktops/powerspec-g474/) | Desktop | Active | Primary workstation |
+| 192.168.0.69 | [PowerSpec G474](Device%20Lab/desktops/powerspec-g474/) | Desktop | Active | Primary workstation (reserved) |
 | DHCP | Surface Book 2 | Laptop | Active | Portable |
+
+#### Printers
+
+| IP Address | Device | Type | Status | Notes |
+|------------|--------|------|--------|-------|
+| 192.168.0.48 | Brother HL-3170CDW | Color Laser | Active | Craft Room, wireless |
 
 #### DevOps Playground Cluster
 

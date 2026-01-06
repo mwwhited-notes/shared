@@ -89,6 +89,8 @@ See [CAMERA_COLLECTION_PROTOCOL.md](../.claude/protocols/CAMERA_COLLECTION_PROTO
 | AmScope CA-NIK-SLR Microscope Adapter | Adapter | Working | $89.75 |
 | ExpoDisc 77mm Neutral WB Filter | White Balance | Working | $99.95 |
 | ExpoDisc 77mm Portrait WB Filter | White Balance | Working | $99.95 |
+| Canon FD Body + Rear Lens Caps | Protective Caps (2-pack) | Working | $6.98 |
+| Nikon Z Body + Rear Lens Caps | Protective Caps (2-pack) | Working | $5.95 |
 | Rogue Small Diffusion Panel | Flash Modifier | Working | $19.95 |
 | Rogue FlashBenders Small Reflector | Flash Modifier | Working | $34.95 |
 | Nikon R1 Wireless Close-Up Speedlight | Macro Flash Kit | Working | $469.00 |
@@ -198,4 +200,4 @@ Adapted lenses via Fotasy adapters:
 
 ---
 
-*Last updated: December 2025*
+*Last updated: January 2026*

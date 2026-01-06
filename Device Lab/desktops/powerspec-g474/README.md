@@ -125,12 +125,20 @@ Primary workstation for:
 
 *None yet*
 
+## Network Configuration
+
+| Setting | Value |
+|---------|-------|
+| IP Address | 192.168.0.69 (reserved) |
+| Connection | 2.5GbE LAN |
+
 ## Notes
 
 - Purchased from Micro Center
 - Part of photo editing workstation setup (see Camera Collection)
 - Monitors: 2x ASUS VP279HE 27" 1080p IPS
 - Webcam: Lenovo 510 FHD
+- **Audio**: VPFET HDMI Audio Extractor (4K, optical/3.5mm out) - $19.99, Nov 2024
 - **Spare parts**: Original WD 2TB NVMe in stockpile (backup/future use)
 
 ### Cross-Reference

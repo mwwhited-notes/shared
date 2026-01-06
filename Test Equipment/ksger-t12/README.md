@@ -87,7 +87,8 @@ The STM32 firmware supports:
 | 6pcs Precision Tweezers | $2.27 | AliExpress (HANDSKIT) | 2024-12-06 |
 | T12-ILS tip | $2.35 | AliExpress (QUICKO) | 2025-04-22 |
 | T12-J02 tip | $2.44 | AliExpress (QUICKO) | 2025-04-22 |
-| **Accessories Total** | **$32.99** | | |
+| T12-C4 tip | $7.49 | Amazon (Dawnsou) | 2024-12-04 |
+| **Accessories Total** | **$40.48** | | |
 
 ## Notes
 

@@ -17,9 +17,12 @@
 
 | Source | Quantity | Date | Cost |
 |--------|----------|------|------|
-| Included with house | 6 | N/A | $0 |
+| Included with house | 3 | N/A | $0 |
 | Amazon (3-pack) | 3 | 2024-09-19 | $206.69 |
+| Amazon (3-pack) | 3 | TBD | TBD |
 | **Total** | **9** | | |
+
+*Note: If 9 total and only 3 came with house, there should be another 3-pack purchase.*
 
 ## Purchase Information (3-pack)
 

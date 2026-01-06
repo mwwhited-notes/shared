@@ -9,8 +9,11 @@
 | Manufacturer | Arduino (and clones) |
 | Board | Mega 2560 R3 |
 | MCU | ATmega2560 |
-| Date Acquired | |
-| Quantity | |
+| Date Acquired | March 2, 2024 |
+| Quantity | 1 |
+| Source | Amazon (ePalZoneXP) |
+| Price | $16.99 |
+| Includes | USB cable + 30pcs 20cm dupont wires |
 
 ## Specifications
 
