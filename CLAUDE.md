@@ -41,6 +41,8 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 - **Test Equipment/** - Lab equipment documentation (oscilloscopes, DMMs, power supplies, programmers, 3D printer)
 - **Vintage Computers/** - Apple IIc, Apple IIgs, TI-99/4A with peripherals (Floppy Emu, VGA adapters, RAM expansions)
 - **Camera Collection/** - Photography equipment inventory (Nikon D800, film cameras, lenses, M42 vintage glass)
+- **Device Lab/** - Computing devices for hacking/tinkering (tablets, phones, gaming handhelds, NAS, desktops)
+- **home-automation/** - Home automation platform migration project (HomeSeer to Home Assistant)
 - **Notes/** - Technical notes on various topics (Kubernetes, dotnet, FPGA, vintage computing, etc.)
 - **Scripts/** - Utility scripts (JavaScript, T-SQL, dotnet, Vivado TCL, WSL configuration)
 - **HammingDistances/** - Precomputed Hamming distance lookup tables (CSV format)
@@ -92,6 +94,18 @@ Follow `.claude/protocols/CAMERA_COLLECTION_PROTOCOL.md` when:
 - Documenting lenses, teleconverters, and accessories
 - Tracking lens mount compatibility
 - Cross-referencing with purchase info in ShoppingOnline.md
+
+### Device Lab
+Follow `.claude/protocols/DEVICE_LAB_PROTOCOL.md` when:
+- Adding computing devices (tablets, phones, gaming handhelds, NAS, desktops)
+- Documenting hackability (root, jailbreak, custom firmware options)
+- Tracking devices for tinkering and repurposing projects
+- Cross-referencing with home-automation and other projects
+
+Key focus areas:
+- Inventory with full specifications
+- Hackability status and options (CFW, root, homebrew)
+- Project ideas for repurposing devices
 
 ### Project Review
 Follow `.claude/protocols/PROJECT_REVIEW_PROTOCOL.md` when:
@@ -162,6 +176,8 @@ done
 - `Test Equipment/readme.md` - Equipment index (oscilloscopes, DMMs, programmers, 3D printer)
 - `Vintage Computers/readme.md` - Apple IIc, Apple IIgs, TI-99/4A inventory
 - `Camera Collection/readme.md` - Cameras, lenses, and photography accessories
+- `Device Lab/readme.md` - Computing devices for hacking/tinkering
+- `home-automation/CLAUDE.md` - Home automation project (HomeSeer migration)
 - `AnalogComputers/analog-computing-repository/README.md` - Analog computing collection overview
 - `AnalogComputers/analog-computing-repository/research-protocol.md` - Search strategies and download sources by topic
 - `AnalogComputers/analog-computing-repository/download-sources.md` - PDF source registry

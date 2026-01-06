@@ -68,6 +68,43 @@ Quick reference for what this workshop can do and project suggestions when you n
 - Floppy Emu (Big Mess O' Wires) - SD-based floppy/HD emulator for Apple II systems
 - Greaseweazle V4.1 - USB floppy controller for disk imaging/writing (3" to 8")
 
+### Device Lab (Modern Computing)
+
+*See [Device Lab/](Device%20Lab/) for full inventory.*
+
+#### Workstations & Servers
+
+| System | Specs | Use |
+|--------|-------|-----|
+| PowerSpec G474 | i9-14900KF, 160GB DDR5, RTX 4070 Ti, 2TB NVMe | Primary workstation, dev, photo editing |
+| Reduced BigRig | FX-9590, 32GB DDR3, 2x R9 290 | DevOps Playground node |
+| Server | FX-8350, 32GB DDR3, 3TB storage | DevOps Playground node |
+| Surface Book 2 15" | Intel i7, 2-in-1 | Portable dev |
+
+#### DevOps Playground Cluster
+
+Two-node home lab for container orchestration and DevOps learning:
+- **Total resources**: 16 cores, 64GB RAM, 3TB+ storage
+- **Target technologies**: Docker, Kubernetes (k3s), Slurm, Docker Swarm, Ansible, Terraform
+- **GPU compute**: 2x R9 290 available for OpenCL workloads
+
+#### Network Storage
+
+| Device | Capacity | Use |
+|--------|----------|-----|
+| WD My Cloud PR4100 | 4-bay, Intel N3710 | Media server, Docker host, backups |
+| WD MyBookLive | Single drive | Offline archive only (security issues) |
+
+#### Mobile Devices (Hackable)
+
+| Device | Status | Project Potential |
+|--------|--------|-------------------|
+| Samsung Galaxy Tab4 Nook | LineageOS candidate | Home automation dashboard |
+| Amazon Fire HD | Google Play hackable | Kiosk, smart display |
+| Apple iPad Mini | Jailbreak candidate | Media, HomeKit |
+| Apple iPhone 2G | Fully jailbreakable | Collectible, retro iOS |
+| Sony PSVita | CFW available | Emulation, homebrew gaming |
+
 ### Test & Measurement
 
 | Category            | Equipment                                        | Capability                    |
@@ -223,6 +260,40 @@ Quick reference for what this workshop can do and project suggestions when you n
 - [ ] Point-to-multipoint communication
 - [ ] Coordinator/router/end device topologies
 
+### DevOps & Infrastructure
+
+*Using DevOps Playground cluster (Reduced BigRig + Server).*
+
+- [ ] Kubernetes (k3s) cluster deployment
+- [ ] Docker Swarm orchestration
+- [ ] Slurm HPC job scheduler
+- [ ] CI/CD pipelines (Jenkins, GitLab Runner, Drone)
+- [ ] GitOps workflows (ArgoCD, Flux)
+- [ ] Infrastructure as Code (Ansible, Terraform)
+- [ ] Monitoring stack (Prometheus, Grafana)
+- [ ] GPU compute workloads (OpenCL on R9 290s)
+
+### Home Automation
+
+*Using home-automation project, Galaxy Tab4 Nook, and cluster.*
+
+- [ ] Home Assistant deployment
+- [ ] Z-Wave device migration
+- [ ] Tablet dashboard (LineageOS + Fully Kiosk/WallPanel)
+- [ ] Multi-protocol hub (Z-Wave, Zigbee, Matter)
+- [ ] Self-hosted remote access (no cloud)
+
+### Mobile Device Repurposing
+
+*Using Device Lab mobile devices.*
+
+- [ ] Kiosk mode displays (Fire HD, iPad)
+- [ ] Digital photo frames
+- [ ] Dedicated media players
+- [ ] Home automation control panels
+- [ ] Retro gaming handhelds (PSVita CFW)
+- [ ] Security cameras / baby monitors
+
 ---
 
 ## What Can I Fix?
@@ -318,6 +389,33 @@ Quick reference for what this workshop can do and project suggestions when you n
 | USB floppy emulator           | STM32 + Greaseweazle| Floppy imaging experience                                         |
 | Complete vintage disk archive | Greaseweazle + DB   | Full Apple II/TI-99 disk collection                               |
 | Multicomp 6809 Flex/OS-9      | Multicomp EP2C5     | 6809 soft core experience                                         |
+
+### DevOps & Home Lab (Quick to Major)
+
+| Project | Platform | Difficulty | Notes |
+|---------|----------|------------|-------|
+| Docker Compose services | Any Linux | Quick | Start with Portainer + Traefik |
+| Docker Swarm cluster | BigRig + Server | Quick | Built-in Docker orchestration |
+| k3s Kubernetes cluster | BigRig + Server | Medium | Lightweight K8s for home lab |
+| Slurm job scheduler | BigRig + Server | Medium | HPC batch job management |
+| GitOps with ArgoCD | k3s cluster | Medium | Declarative deployments |
+| Full monitoring stack | Cluster | Medium | Prometheus + Grafana + alerts |
+| GPU compute on R9 290 | BigRig | Medium | OpenCL workloads, ML experiments |
+| Chaos engineering | k3s cluster | Major | Litmus, resilience testing |
+| Multi-cluster federation | Cluster + cloud | Major | Hybrid cloud learning |
+
+### Home Automation (Quick to Major)
+
+| Project | Platform | Difficulty | Notes |
+|---------|----------|------------|-------|
+| Home Assistant install | Pi / Docker / VM | Quick | Basic platform setup |
+| Z-Wave device migration | HA + Z-Stick | Quick | Move from HomeSeer |
+| Galaxy Tab4 LineageOS flash | Tab4 Nook | Quick | TWRP + ROM flash |
+| Tablet dashboard setup | Tab4 + HA | Medium | Fully Kiosk or WallPanel |
+| Multi-protocol hub | HA + radios | Medium | Z-Wave + Zigbee + Matter |
+| Self-hosted remote access | VPN / Tailscale | Medium | No cloud dependency |
+| Voice control integration | HA + local STT | Major | Privacy-focused voice |
+| Complete home automation | All devices | Major | Full house integration |
 
 ---
 
@@ -428,6 +526,43 @@ Quick reference for what this workshop can do and project suggestions when you n
 - [ ] Custom peripheral interfaces
 - [ ] VGA text/graphics output
 - [ ] SD card mass storage interface
+
+### DevOps & Infrastructure
+
+*Using DevOps Playground cluster and NAS devices.*
+
+- [ ] Kubernetes (k3s) multi-node cluster
+- [ ] Docker Swarm deployment
+- [ ] Slurm HPC workload manager
+- [ ] CI/CD pipeline (Jenkins, GitLab Runner, Drone)
+- [ ] GitOps with ArgoCD or Flux
+- [ ] Ansible playbooks for cluster management
+- [ ] Terraform for infrastructure as code
+- [ ] Prometheus + Grafana monitoring
+- [ ] GPU compute experiments (R9 290 OpenCL)
+- [ ] Chaos engineering (Litmus, Chaos Monkey)
+
+### Home Automation
+
+*Using home-automation project and Device Lab tablets.*
+
+- [ ] Home Assistant on cluster or dedicated Pi
+- [ ] Z-Wave network migration from HomeSeer
+- [ ] Galaxy Tab4 dashboard (LineageOS + WallPanel)
+- [ ] Fire HD as secondary display
+- [ ] Self-hosted remote access (VPN/Tailscale)
+- [ ] Local voice control (no cloud)
+- [ ] Multi-protocol support (Z-Wave, Zigbee, Matter, Thread)
+
+### Mobile Device Repurposing
+
+*Using Device Lab mobile devices and gaming handhelds.*
+
+- [ ] Tablet kiosk displays (Fire HD, iPad)
+- [ ] Digital signage / photo frames
+- [ ] Dedicated streaming clients
+- [ ] PSVita CFW + emulation station
+- [ ] Retro iOS exploration (iPhone 2G)
 
 ### Test Equipment DIY
 
@@ -604,4 +739,4 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 ---
 
-*Last updated: December 2025 (Project Review Protocol sync)*
+*Last updated: January 2026 (Device Lab integration)*

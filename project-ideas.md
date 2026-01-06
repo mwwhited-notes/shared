@@ -12,6 +12,8 @@ Personal project backlog with notes on progress and equipment.
 * build out an analog computer/integrator (opamps for math because why not) [Have Anabrid THAT now!]
 * build out a UI for an Intel 8085 trainer [MM-8000K hardware + MM8000 emulator on GitHub]
 * play around with SoC (system on a chip) based on the Xilinx Zynq Z7 [Have Arty Z7-20]
+* **DevOps Playground Cluster** - building multi-node home lab from Reduced BigRig (FX-9590) + Server (FX-8350) for learning Docker, Kubernetes, Slurm, and other DevOps/development tools [see Device Lab/projects/docker-cluster.md]
+* **Home Automation Migration** - migrating from HomeSeer to Home Assistant, repurposing Galaxy Tab4 Nook as dashboard [see home-automation/]
 
 ---
 
@@ -65,6 +67,43 @@ Personal project backlog with notes on progress and equipment.
 * build out multi-axis hand controller to work with oculus/hololens
 * design and build a handheld/bench calculator that will also function as a simple I/O interface for parallel and serial interfaces
 
+### DevOps & Infrastructure
+
+*Using DevOps Playground cluster (Reduced BigRig + Server FX machines).*
+
+* k3s Kubernetes cluster deployment [lightweight K8s for home lab]
+* Docker Swarm multi-node setup [built-in orchestration]
+* Slurm HPC workload manager [job scheduling, batch processing]
+* CI/CD pipeline deployment [Jenkins, GitLab Runner, or Drone]
+* GitOps workflow with ArgoCD or Flux [declarative deployments]
+* Ansible playbooks for cluster management [IaC learning]
+* Terraform infrastructure as code practice
+* Prometheus + Grafana monitoring stack [observability]
+* GPU compute experiments on R9 290s [OpenCL workloads]
+* Chaos engineering with Litmus [resilience testing]
+
+### Home Automation
+
+*Using home-automation project, Device Lab tablets, and cluster.*
+
+* Home Assistant deployment on cluster or dedicated Pi
+* Z-Wave device migration from HomeSeer [have Z-Net bridge, Z-Stick]
+* Galaxy Tab4 Nook LineageOS flash + dashboard setup
+* Fire HD Google Play + kiosk setup [secondary display]
+* Multi-protocol hub (Z-Wave + Zigbee + Matter)
+* Self-hosted remote access via VPN or Tailscale [no cloud]
+* Local voice control without cloud services
+
+### Mobile Device Repurposing
+
+*Using Device Lab mobile devices.*
+
+* PSVita CFW + emulation station [retro gaming]
+* iPad Mini jailbreak + media player setup
+* Fire HD as kitchen recipe display
+* iPhone 2G jailbreak + retro iOS exploration
+* Tablet-based security camera / baby monitor
+
 ---
 
 ## Equipment Enabling New Projects
@@ -79,7 +118,22 @@ Recent inventory additions that enable new project categories:
 | XBee modules + XBIB-U-DEV | Mesh networking, remote sensors |
 | Gigatron TTL | TTL computing, expansion modules |
 | D2-1 Line Follower | Robot enhancement, sensor fusion |
+| **DevOps Playground Cluster** | Docker, Kubernetes, Slurm, CI/CD, monitoring |
+| PowerSpec G474 (160GB RAM) | Heavy development, VMs, photo editing |
+| WD My Cloud PR4100 | NAS services, Docker host, media server |
+| Galaxy Tab4 Nook | Home automation dashboard, kiosk display |
+| Sony PSVita | Retro gaming, emulation, homebrew |
+| Amazon Fire HD | Smart display, kiosk, Google Play hacking |
 
 ---
 
-*Last updated: December 2025 (Project Review Protocol sync)*
+## Cross-References
+
+- [Device Lab/](Device%20Lab/) - Full computing device inventory
+- [Device Lab/projects/docker-cluster.md](Device%20Lab/projects/docker-cluster.md) - DevOps Playground project details
+- [home-automation/](home-automation/) - Home automation migration project
+- [workshop-capabilities.md](workshop-capabilities.md) - Full equipment summary
+
+---
+
+*Last updated: January 2026*

@@ -161,18 +161,24 @@ Adapted lenses via Fotasy adapters:
 
 ## Workstation / Editing
 
+*See [Device Lab](../Device%20Lab/) for detailed hardware documentation.*
+
 ### Desktop
-| Item | Specs | Price |
-|------|-------|-------|
-| PowerSpec G474 Gaming PC | Intel i9-14900KF | $2,773.48 |
-| G.Skill Trident Z5 RGB 96GB | DDR5-6400 CL32 (2x48GB) | $365.49 |
-| ASUS VP279HE 27" (×2) | 1080p IPS FreeSync | $320.36 |
-| Lenovo 510 FHD Webcam | 1080p USB | $58.99 |
+| Item | Specs | Price | Details |
+|------|-------|-------|---------|
+| PowerSpec G474 Gaming PC | Intel i9-14900KF | $2,773.48 | [Full specs](../Device%20Lab/desktops/powerspec-g474/) |
+| G.Skill Trident Z5 RGB 96GB | DDR5-6400 CL32 (2x48GB) | $365.49 | RAM upgrade |
+| Samsung 990 PRO 2TB | NVMe SSD (replaced stock WD) | TBD | Storage upgrade |
+| ASUS VP279HE 27" (×2) | 1080p IPS FreeSync | $320.36 | |
+| Lenovo 510 FHD Webcam | 1080p USB | $58.99 | |
 
 ### Laptop
-| Item | Specs | Price |
-|------|-------|-------|
-| Microsoft Surface Book 2 15" | Intel i7, 2-in-1 | $3,579.73 |
+
+*Moved to [Device Lab](../Device%20Lab/)*
+
+| Item | Specs | Price | Details |
+|------|-------|-------|---------|
+| Microsoft Surface Book 2 15" | Intel i7, 2-in-1 | $3,579.73 | [Device Lab entry](../Device%20Lab/) |
 
 ### Peripherals
 | Item | Specs | Price |

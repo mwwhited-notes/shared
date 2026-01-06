@@ -45,7 +45,8 @@
       "Bash(then echo \"Missing README: $dir\")",
       "Bash(for:*)",
       "Bash(while read f)",
-      "Bash(do echo $f)"
+      "Bash(do echo $f)",
+      "WebFetch(domain:pcpartpicker.com)"
     ]
   }
 }
