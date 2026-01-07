@@ -6,14 +6,14 @@ Personal project backlog with notes on progress and equipment.
 
 ## Active / In Progress
 
-* Designing my own CPU/computer (and learn system verilog) [I have most of the ALU and a text graphics engine from a few years ago. Use Arty A7-100.]
-* build out that clock (attiny2313) [the new LED screen showed up so I can solder it up now and I need to tweak the counter to see if I can get it to keep time better.] This project was mostly about building something semiuseful with an ATTiny and learning how to built out the ISP (In-circuit Serial Programmer) interface
-* play around with SCPI (standard commands for programmable instruments) to control the test equipment on my bench and probably write my own VISA driver for .Net Core (might also build a RS-232/ethernet gateway or USB them into a raspberry pi/beagle bone black) [have HP 34401A, Rigol DM3058E, Rigol DG1022, Korad supplies]
-* build out an analog computer/integrator (opamps for math because why not) [Have Anabrid THAT now!]
-* build out a UI for an Intel 8085 trainer [MM-8000K hardware + MM8000 emulator on GitHub]
-* play around with SoC (system on a chip) based on the Xilinx Zynq Z7 [Have Arty Z7-20]
-* **DevOps Playground Cluster** - building multi-node home lab from Reduced BigRig (FX-9590) + Server (FX-8350) for learning Docker, Kubernetes, Slurm, and other DevOps/development tools [see Device Lab/projects/docker-cluster.md]
-* **Home Automation Migration** - migrating from HomeSeer to Home Assistant, repurposing Galaxy Tab4 Nook as dashboard [see home-automation/]
+* **FPGA CPU Design** - Designing my own CPU/computer (and learn system verilog) [I have most of the ALU and a text graphics engine from a few years ago. Use Arty A7-100.] → [projects/fpga-cpu-design/](projects/fpga-cpu-design/)
+* **ATtiny2313 Clock** - Build out that clock (attiny2313) [the new LED screen showed up so I can solder it up now and I need to tweak the counter to see if I can get it to keep time better.] This project was mostly about building something semiuseful with an ATTiny and learning how to built out the ISP (In-circuit Serial Programmer) interface → [projects/attiny2313-clock/](projects/attiny2313-clock/)
+* **SCPI Instrument Control** - Play around with SCPI (standard commands for programmable instruments) to control the test equipment on my bench and probably write my own VISA driver for .Net Core (might also build a RS-232/ethernet gateway or USB them into a raspberry pi/beagle bone black) [have HP 34401A, Rigol DM3058E, Rigol DG1022, Korad supplies] → [projects/scpi-instrument-control/](projects/scpi-instrument-control/)
+* **Analog Computer Experiments** - Build out an analog computer/integrator (opamps for math because why not) [Have Anabrid THAT now!] → [projects/analog-computer-experiments/](projects/analog-computer-experiments/)
+* **MM-8000K Trainer UI** - Build out a UI for an Intel 8085 trainer [MM-8000K hardware + MM8000 emulator on GitHub] → [projects/mm8000-trainer-ui/](projects/mm8000-trainer-ui/)
+* **Zynq SoC Exploration** - Play around with SoC (system on a chip) based on the Xilinx Zynq Z7 [Have Arty Z7-20] → [projects/zynq-soc-exploration/](projects/zynq-soc-exploration/)
+* **DevOps Playground Cluster** - Building multi-node home lab from Reduced BigRig (FX-9590) + Server (FX-8350) for learning Docker, Kubernetes, Slurm, and other DevOps/development tools → [Device Lab/projects/docker-cluster.md](Device%20Lab/projects/docker-cluster.md)
+* **Home Automation Migration** - Migrating from HomeSeer to Home Assistant, repurposing Galaxy Tab4 Nook as dashboard → [projects/home-automation/](projects/home-automation/)
 
 ---
 
@@ -61,7 +61,7 @@ Personal project backlog with notes on progress and equipment.
 
 ### Workshop Organization
 
-* **DIY TrekPak-Style Dividers** - Custom drawer and case dividers using corrugated plastic panels, U-shaped hair pins (as locking pins), EVA foam, and felt tape. DIY alternative to [Pelican TrekPak](https://www.pelican.com/us/en/discover/trekpak). [see tools-and-components.md Craft & Project Supplies]
+* **DIY TrekPak-Style Dividers** - Custom drawer and case dividers using corrugated plastic panels, U-shaped hair pins (as locking pins), EVA foam, and felt tape. DIY alternative to [Pelican TrekPak](https://www.pelican.com/us/en/discover/trekpak). → [projects/diy-trekpak-dividers/](projects/diy-trekpak-dividers/)
 
 ### Learning & Exploration
 
@@ -134,9 +134,25 @@ Recent inventory additions that enable new project categories:
 
 ## Cross-References
 
+### Project Directories
+
+- [projects/](projects/) - Active project documentation
+  - [fpga-cpu-design/](projects/fpga-cpu-design/) - Custom CPU in SystemVerilog
+  - [attiny2313-clock/](projects/attiny2313-clock/) - ATtiny LED clock
+  - [scpi-instrument-control/](projects/scpi-instrument-control/) - Test equipment automation
+  - [analog-computer-experiments/](projects/analog-computer-experiments/) - Anabrid THAT projects
+  - [mm8000-trainer-ui/](projects/mm8000-trainer-ui/) - Intel 8085 trainer interface
+  - [zynq-soc-exploration/](projects/zynq-soc-exploration/) - Zynq ARM+FPGA SoC
+  - [diy-trekpak-dividers/](projects/diy-trekpak-dividers/) - Workshop organization
+  - [home-automation/](projects/home-automation/) - Home Assistant migration
+
+### Device Lab Projects
+
 - [Device Lab/](Device%20Lab/) - Full computing device inventory
-- [Device Lab/projects/docker-cluster.md](Device%20Lab/projects/docker-cluster.md) - DevOps Playground project details
-- [home-automation/](home-automation/) - Home automation migration project
+- [Device Lab/projects/docker-cluster.md](Device%20Lab/projects/docker-cluster.md) - DevOps Playground cluster
+
+### Equipment & Capabilities
+
 - [workshop-capabilities.md](workshop-capabilities.md) - Full equipment summary
 
 ---

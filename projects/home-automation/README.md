@@ -49,15 +49,41 @@
 - Pi Z-Wave hats: Need to identify model (RaZberry, Aeotec Z-Pi, etc.)
 - Z-Net bridge: Works via ser2net/socat (TCP to serial bridge)
 
+## Equipment Used
+
+### Display Devices
+- [Galaxy Tab4 Nook](../../Device%20Lab/mobile/) - Primary dashboard display (LineageOS + kiosk mode)
+- [Amazon Fire HD](../../Device%20Lab/mobile/) - Secondary display (Google Play + kiosk)
+
+### Controllers & Infrastructure
+- Raspberry Pi 3 (×2) - With Z-Wave hats/interfaces
+- Z-Wave USB Z-Stick - Direct USB Z-Wave controller
+- Z-Net bridge - Ethernet-based Z-Wave adapter (HomeSeer)
+- [WD My Cloud PR4100](../../Device%20Lab/network-storage/) - Docker host option for Home Assistant
+- [DevOps Playground Cluster](../../Device%20Lab/projects/docker-cluster.md) - Alternative deployment platform
+
 ## Next Steps
 1. Find and identify Z-Wave USB stick model
 2. Check Z-Wave hat models on Pi 3 devices (look for silkscreen/labels)
 3. Count total Z-Wave devices to determine hardware requirements
 4. Decide on deployment platform (Pi 3 vs dedicated hardware vs Docker)
 5. Choose remote access method
+6. Flash LineageOS on Galaxy Tab4 Nook for dashboard
+7. Set up Fire HD with Google Play for secondary display
 
 ## Open Questions
 - What model are the Z-Wave hats on the Pi 3s?
 - How many Z-Wave devices total in the collection?
-- Do you have existing server/NAS for Docker deployment?
+- Deploy on PR4100 NAS or DevOps Playground cluster?
 - Final hardware choice for Home Assistant deployment?
+
+## Cross-References
+
+- [Device Lab/mobile/](../../Device%20Lab/mobile/) - Dashboard tablet inventory
+- [Device Lab/projects/docker-cluster.md](../../Device%20Lab/projects/docker-cluster.md) - Alternative deployment platform
+- [Device Lab/network-storage/](../../Device%20Lab/network-storage/) - NAS/Docker host options
+- [project-ideas.md](../../project-ideas.md) - Original project concept
+
+---
+
+*Last updated: 2026-01-07*

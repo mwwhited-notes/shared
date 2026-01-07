@@ -111,6 +111,33 @@ Key focus areas:
 - Hackability status and options (CFW, root, homebrew)
 - Project ideas for repurposing devices
 
+### Projects
+Follow `.claude/protocols/PROJECTS_PROTOCOL.md` when:
+- Creating documentation for a new project build
+- Documenting an active project that spans multiple sessions
+- Moving a project idea from `project-ideas.md` to active implementation
+- Creating build logs, parts lists, or progress tracking
+
+Key requirements:
+- Each project gets its own directory in `projects/`
+- README.md with overview, materials, build steps, and status
+- Optional build-log.md for session-by-session progress
+- Optional parts-list.md for detailed BOM
+- Cross-reference to/from project-ideas.md and equipment inventories
+
+### Tools and Components
+Follow `.claude/protocols/TOOLS_AND_COMPONENTS_PROTOCOL.md` when:
+- Adding items to `tools-and-components.md`
+- Processing Amazon orders for tools, wire, components, or consumables
+- Organizing inventory into appropriate sections
+- Cross-referencing with Test Equipment or other inventories
+
+Key principles:
+- Major equipment → dedicated inventories (Test Equipment, Programmable Devices, etc.)
+- Consumables, accessories, component stock → tools-and-components.md
+- Consistent date format (YYYY-MM-DD) and pricing
+- Cross-reference related equipment
+
 ### Project Review
 Follow `.claude/protocols/PROJECT_REVIEW_PROTOCOL.md` when:
 - Reviewing repository inventory for consistency
