@@ -47,7 +47,8 @@
       "Bash(while read f)",
       "Bash(do echo $f)",
       "WebFetch(domain:pcpartpicker.com)",
-      "Bash(test:*)"
+      "Bash(test:*)",
+      "Bash(cat:*)"
     ]
   }
 }
