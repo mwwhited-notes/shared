@@ -46,8 +46,10 @@ Each expansion board has its own directory with detailed specifications and loca
 | Shield | Function | Main IC | Interface | Qty | Directory |
 |--------|----------|---------|-----------|-----|-----------|
 | Arduino Mega Proto Shield | Solderable prototype PCB | - | Passthrough | 10 | - |
+| Arduino Uno Proto Shield | ElectroCookie prototyping PCB (3 types) | - | Passthrough | 9 | - |
 
 *KEYESTUDIO 10-pack double-sided PCB prototype shields for Arduino Mega 2560. Purchased 2022-12-30 for $16.66.*
+*ElectroCookie 9-pack prototyping shields for Arduino Uno R3 (3 different types). Purchased 2021-04-01 for $14.99.*
 
 ### Arduino Shields - Programming & Development
 

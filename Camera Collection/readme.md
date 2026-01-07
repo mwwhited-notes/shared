@@ -91,9 +91,24 @@ See [CAMERA_COLLECTION_PROTOCOL.md](../.claude/protocols/CAMERA_COLLECTION_PROTO
 | ExpoDisc 77mm Portrait WB Filter | White Balance | Working | $99.95 |
 | Canon FD Body + Rear Lens Caps | Protective Caps (2-pack) | Working | $6.98 |
 | Nikon Z Body + Rear Lens Caps | Protective Caps (2-pack) | Working | $5.95 |
+| Nikon F Mount Body + Rear Lens Caps | Protective Caps (3-pack) | Working | $7.99 |
+| 58mm Lens Caps | Front lens caps with line (Boyee Lochto, 8pcs) | Working | $6.69 |
 | Rogue Small Diffusion Panel | Flash Modifier | Working | $19.95 |
 | Rogue FlashBenders Small Reflector | Flash Modifier | Working | $34.95 |
 | Nikon R1 Wireless Close-Up Speedlight | Macro Flash Kit | Working | $469.00 |
+| Sky-Watcher Star Adventurer 2i Pro Pack | Motorized star tracker | Working | $425.00 |
+| Neewer Interval Timer Remote | Nikon 10-pin remote | Working | $16.99 |
+| ICE 82mm LiPo Filter | Light pollution filter | Working | $44.95 |
+| 77-82mm Step-Up Ring | Filter adapter (Fire Rock, 2-pack) | Working | $8.59 |
+| 52-77mm Step-Up Ring | Filter adapter (2-pack) | Working | $6.59 |
+| Astromania Bahtinov Mask FM60mm | Telescope focusing aid | Working | $12.99 |
+| USB Lens Dew Heater | Condensation prevention strip | Working | $14.98 |
+| Nikon EN-EL15 Dummy Battery Kit | AC adapter EP-5B/EH-5 (TKDY) | Working | $33.99 |
+| Selens Tripod Weight Bag | Sandbag for stabilization | Working | $12.95 |
+| Transcend 8GB CompactFlash Card | 133x speed (TS8GCF133) | Working | $16.99 |
+| Verbatim 4GB CompactFlash Card | 95188 black | Working | $12.99 |
+
+*Star Adventurer 2i purchased 2021-10-27. Astrophotography accessories for star tracking, night sky photography.*
 
 ---
 
