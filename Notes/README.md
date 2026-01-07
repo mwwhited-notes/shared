@@ -21,13 +21,6 @@ Electronics, FPGA, and digital design notes:
 
 Software development, architecture, and DevOps notes:
 
-- **AI ML Stuff/** - Machine learning and AI resources
-  - `AI ML Papers.md` - Research papers
-  - `ai notes.md` - ML concepts and notes
-  - `Anti-AI.md` - AI skepticism and limitations
-  - `LocalitySensitiveHashing.md` - LSH algorithms
-  - `vectorsearch.md` - Vector search techniques
-
 - **App Ideas/** - Software project ideas and concepts
   - `New dotnet IOC Wrapper.md` - Dependency injection wrapper concept
   - `Road Trip App.md` - Road trip planning application
@@ -41,9 +34,10 @@ Software development, architecture, and DevOps notes:
   - Git tips, NuGet packaging, MSBuild
 
 **Moved to Top Level:**
-- **DiagramsAndPatterns/** → [DiagramsAndPatterns/](../DiagramsAndPatterns/) - Software architecture patterns and templates library
+- **DiagramsAndPatterns/** → [diagrams-and-patterns/](../diagrams-and-patterns/) - Software architecture patterns and templates library
 
 **Moved to Projects:**
+- **AI ML Stuff/** → [AI/ML Research](../projects/ai-ml-research/) - AI/ML research papers and notes (vector search files moved to [Vector Search SQL Server](../projects/vector-search-sqlserver/))
 - **Kubernetes/** → [DevOps Playground Cluster](../projects/devops-playground-cluster/kubernetes-notes/) - Kubernetes and container orchestration notes
 
 ### Other Directories

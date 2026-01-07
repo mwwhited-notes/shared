@@ -20,6 +20,7 @@ Active project documentation and build logs organized by category.
 | [Favero Fencing System](#favero-fencing-scoring-system) | Protocol Integration | Completed | Favero Full-Arm-05 |
 | [SCPI Instrument Control](#scpi-instrument-control) | Test Automation | Planning | Lab equipment |
 | [Vector Search SQL Server](#vector-search-in-sql-server) | Database/ML | Completed | SQL Server, .NET |
+| [AI/ML Research](#aiml-research--reference) | Research/Reference | Reference | Papers, notes |
 | [Self-Hosted Git Server](#self-hosted-git-server) | DevOps/Infrastructure | Planning | PR4100 NAS |
 | [SBC Cluster](#sbc-cluster-arm) | DevOps/Infrastructure | Planning | 8× ARM SBCs |
 | [DevOps Playground Cluster](#devops-playground-cluster) | DevOps/HPC | In Progress | FX-9590, FX-8350 |
@@ -172,6 +173,22 @@ Vector search capabilities in SQL Server using Locality-Sensitive Hashing (LSH) 
 
 ---
 
+#### AI/ML Research & Reference
+**Status:** Reference
+**Directory:** [ai-ml-research/](ai-ml-research/)
+
+Collection of AI/ML research papers, implementation notes, and critical perspectives on artificial intelligence. Includes paper summaries, ML concept notes, and thoughtful skepticism about AI limitations. Serves as a reference library for understanding current AI/ML techniques and their practical boundaries.
+
+**Contents:**
+- Research paper summaries and notes
+- ML implementation concepts (neural networks, training techniques)
+- Critical analysis of AI hype and limitations
+- Related: Vector search research moved to [Vector Search SQL Server](vector-search-sqlserver/) project
+
+**Resources:** Papers from arXiv, Fast.ai courses, AI Snake Oil blog
+
+---
+
 ### Test & Measurement Automation
 
 #### SCPI Instrument Control
@@ -259,7 +276,7 @@ Reference documentation and materials inventory for custom drawer dividers. Uses
 - **Active Development:** 6 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation)
 - **Planning/Research:** 4 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster)
 - **On Hold:** 1 project (MM-8000K Trainer UI - hardware functional, used as reference)
-- **Reference/As Needed:** 2 projects (DIY TrekPak Dividers, DRL/DTL Logic Boards)
+- **Reference/As Needed:** 3 projects (DIY TrekPak Dividers, DRL/DTL Logic Boards, AI/ML Research)
 
 ## Cross-References
 
@@ -277,7 +294,8 @@ Reference documentation and materials inventory for custom drawer dividers. Uses
 
 ### Research Collections
 - [AnalogComputers/analog-computing-repository/](../AnalogComputers/analog-computing-repository/) - Analog computing research (232 PDFs)
-- [Notes/](../Notes/) - Technical notes by topic (hardware, software, FPGA, AI/ML)
+- [ai-ml-research/](ai-ml-research/) - AI/ML research papers and notes
+- [Notes/](../Notes/) - Technical notes by topic (hardware, software, FPGA)
 
 ### Related Repositories
 - [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) - Arduino, AVR, ESP8266, STM32, FPGA projects
@@ -302,4 +320,4 @@ projects/
 ---
 
 *Last updated: 2026-01-07*
-*Total projects: 17*
+*Total projects: 18*

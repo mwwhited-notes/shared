@@ -8,9 +8,9 @@ This is a collection of personal notes on various design/architectural patterns,
 
 ## Tell me more
 
-- [Table of Contents](./TableOfContents.md)
-- [Future Ideas](./FutureIdeas.md)
-- [Suggested Guidelines](./SuggestedGuidelines.md)
+- [Table of Contents](./table-of-contents.md)
+- [Future Ideas](./future-ideas.md)
+- [Suggested Guidelines](./suggested-guidelines.md)
 
 ## Sources and References
 

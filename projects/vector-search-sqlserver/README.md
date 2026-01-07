@@ -250,8 +250,8 @@ ORDER BY dbo.HammingDistance(HashCode, @queryHash)
 
 ### Research Notes
 
-- [LocalitySensitiveHashing.md](../../Notes/software/AI%20ML%20Stuff/LocalitySensitiveHashing.md) - LSH concepts
-- [vectorsearch.md](../../Notes/software/AI%20ML%20Stuff/vectorsearch.md) - Vector search techniques
+- [LocalitySensitiveHashing.md](LocalitySensitiveHashing.md) - LSH concepts
+- [vectorsearch.md](vectorsearch.md) - Vector search techniques
 - `Semantic Search/` - Additional semantic search research and examples (in this project directory)
 
 ## Success Criteria
