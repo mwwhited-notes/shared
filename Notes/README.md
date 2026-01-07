@@ -8,23 +8,14 @@ Technical notes, research, and reference materials organized by topic.
 
 Electronics, FPGA, and digital design notes:
 
-- **74-181/** - 74181 ALU chip research and Digital simulator files
-  - `74-181.dig`, `ALU181.dig` - Digital logic simulations
-  - Related to [SAP-1 Computer project](../projects/sap-1-computer/)
+- **Logic Tables/** - Digital logic reference tables (7-segment display, etc.)
 
-- **74f181.md** - Link to 74181 ALU notes (https://tomnisbet.github.io/nqsap/docs/74181-alu-notes/)
-
-- **3D Printer/** - Velleman K8200 3D printer technical notes
-  - `3d printer pinout.xlsx` - Connector pinouts
-  - `3dprinter power.xlsx` - Power distribution
-  - See [Test Equipment/](../Test%20Equipment/) for full K8200 documentation
-
-- **Field Programmable Analog Array/** - FPAA research notes
-  - Anadigm/Lattice FPAA technology
-
-- **Logic Tables/** - Digital logic reference tables
-
-- **Xilinx Native FIFO.md** - Xilinx FPGA FIFO implementation notes
+**Moved to Projects:**
+- **74-181/** → [SAP-1 Computer](../projects/sap-1-computer/reference-74181-alu/) - 74181 ALU chip research and Digital simulator files
+- **74f181.md** → [SAP-1 Computer](../projects/sap-1-computer/reference-74181-alu/) - Link to 74181 ALU notes
+- **3D Printer/** → [Test Equipment/velleman-k8200/notes/](../Test%20Equipment/velleman-k8200/notes/) - K8200 pinout and power notes
+- **Field Programmable Analog Array/** → [Analog Computer Experiments](../projects/analog-computer-experiments/fpaa-research/) - FPAA research notes
+- **Xilinx Native FIFO.md** → [FPGA CPU Design](../projects/fpga-cpu-design/xilinx-fifo-reference.md) - Xilinx FPGA FIFO implementation notes
 
 ### Software Notes (`software/`)
 
@@ -57,26 +48,25 @@ Software development, architecture, and DevOps notes:
   - ASP.NET Core, Entity Framework, Azure DevOps
   - Git tips, NuGet packaging, MSBuild
 
-- **Kubernetes/** - Kubernetes and container orchestration notes
+**Moved to Projects:**
+- **Kubernetes/** → [DevOps Playground Cluster](../projects/devops-playground-cluster/kubernetes-notes/) - Kubernetes and container orchestration notes
 
 ### Other Directories
-
-- **Favero/** - Fencing timing equipment documentation
-  - `notes.md` - Favero timing system notes
-  - `opto-rs232interf1.pdf` - RS-232 interface documentation
-  - `Fencing.vsdx` - Fencing setup diagrams
 
 - **Hobbies/** - Non-technical hobby notes
   - `Homebrew Beer.md` - Homebrewing notes
   - `Leather working.md` - Leathercraft notes
 
 - **gadgets and gizmos/** - Miscellaneous gadget notes
-  - `Automatic pet feeder.md`
-  - `Duet3 - 3D Printer.md` - Duet 3 control board notes
-  - `E6B - Flight Computer.md`
-  - `KL-1 (Circular Slide Rule).md`
-  - `NeTV.md` - NeTV FPGA video board
-  - `RadexOneReverseEngineerNotes.md` - Geiger counter reverse engineering
+  - `Automatic pet feeder.md` - Pet feeder operating instructions
+  - `E6B - Flight Computer.md` - Flight computer notes
+  - `KL-1 (Circular Slide Rule).md` - Circular slide rule notes
+  - `NeTV.md` - NeTV FPGA video board links
+
+**Moved to Projects:**
+- **Favero/** → [Favero Fencing System](../projects/favero-fencing-scoring-system/reference/) - Fencing timing equipment documentation
+- **Duet3 - 3D Printer.md** → [Test Equipment/velleman-k8200/](../Test%20Equipment/velleman-k8200/duet3-notes.md) - Duet 3 control board notes
+- **RadexOneReverseEngineerNotes.md** → [Radex One Protocol](../projects/radex-one-protocol-reverse-engineering/protocol-notes.md) - Geiger counter reverse engineering
 
 ## Root Level Files
 
@@ -84,13 +74,15 @@ Software development, architecture, and DevOps notes:
 - **DocConversion.md** - Document conversion notes
 - **Gadgets.md** - Gadget links and ideas
 - **Home Network.md** - Home network configuration notes
-- **HomeSeer-pi Backup.md** - HomeSeer backup procedures (now using Home Assistant)
 - **Linux Serial.md** - Linux serial port configuration
 - **Stream.md** - Streaming notes
 - **UsbDevices.reg** - Windows USB device registry exports
 - **UsbHidDecode.md** - USB HID protocol decoding
 - **WSL Repair.md** - WSL troubleshooting notes
 - **sqlclr notes.md** - SQL CLR integration notes
+
+**Moved to Projects:**
+- **HomeSeer-pi Backup.md** → [Home Automation](../projects/home-automation/homeseer-backup-notes.md) - HomeSeer backup procedures
 
 ## Related Documentation
 
@@ -132,4 +124,19 @@ Add content to Notes/ when:
 
 ---
 
-*Last updated: January 2026*
+*Last updated: 2026-01-07*
+
+## Recent Reorganization
+
+Many project-specific notes have been moved from Notes/ to their respective project directories for better organization:
+
+- **SAP-1 Computer:** 74-181 ALU reference files
+- **FPGA CPU Design:** Xilinx FIFO implementation notes
+- **Analog Computer Experiments:** FPAA research
+- **DevOps Playground Cluster:** Kubernetes notes
+- **Home Automation:** HomeSeer backup procedures
+- **Favero Fencing System:** Fencing equipment documentation
+- **Radex One Protocol:** Geiger counter reverse engineering
+- **Test Equipment (K8200):** 3D printer technical notes and Duet3 configuration
+
+General reference notes (DiagramsAndPatterns, AI/ML research, dotnet development) remain in Notes/ as they apply across multiple projects.
