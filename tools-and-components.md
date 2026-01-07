@@ -424,20 +424,7 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 
 ---
 
-## Books & References
-
-| Title | Author/Publisher | Topic | Purchased | Price |
-|-------|------------------|-------|-----------|-------|
-| Analog and Hybrid Computer Programming | De Gruyter Textbook | Analog/hybrid computing programming | 2025-02-21 | $37.71 |
-| Analog Computing | De Gruyter Textbook | Analog computing fundamentals | 2025-12-29 | $53.63 |
-| Operational Amplifiers With Linear Integrated Circuits | ThriftBooks (Used - Acceptable) | Op-amp circuits, linear ICs | 2023-01-20 | $8.86 |
-| Operational Amplifiers: Design and Applications | ThriftBooks (Used - Acceptable) | Op-amp design | 2023-01-20 | $6.03 |
-| Making Games for the NES | 8bitworkshop | NES game development, 6502 assembly | 2022-09-16 | $29.99 |
-| VHDL By Example | Amazon.com | FPGA/VHDL programming | 2021-02-20 | $19.65 |
-| Verilog by Example: A Concise Introduction for FPGA Design | Amazon.com | FPGA/Verilog programming | 2021-01-30 | $19.95 |
-| Digital Computer Electronics | Century books (Used) | Computer architecture, SAP-1, digital logic | 2020-01-09 | $29.44 |
-| Computer Architecture: A Quantitative Approach | Morgan Kaufmann | Computer architecture | 2021-12-30 | $98.46 |
-| The Zynq Book | Xilinx Zynq-7000 reference | Embedded ARM Cortex-A9, Zynq SoC | 2021-12-30 | $27.49 |
+*For technical books, see [books.md](books.md)*
 
 ---
 

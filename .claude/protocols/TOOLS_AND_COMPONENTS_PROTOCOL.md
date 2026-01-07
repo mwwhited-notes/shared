@@ -17,7 +17,6 @@ Add items to tools-and-components.md when:
 4. **Wire & cable** - USB cables, HDMI, BNC, hookup wire
 5. **Accessories** - Test leads, adapters, breakout boards
 6. **Craft supplies** - Materials for projects (foam, tape, fasteners)
-7. **Books** - Technical reference books
 
 ## When NOT to Add Items
 
@@ -78,11 +77,10 @@ Mice, keyboards, hubs, docks, card readers, adapters
 ### 13. Raspberry Pi Accessories
 Pi-specific accessories that aren't HATs
 
-### 14. Books & References
-Technical books, reference materials
-
-### 15. Craft & Project Supplies
+### 14. Craft & Project Supplies
 Materials for projects (foam, tape, fasteners, etc.)
+
+*For technical books, see [books.md](../books.md) - separate inventory maintained by BOOKS_PROTOCOL.md*
 
 ## Adding New Items
 
@@ -230,20 +228,18 @@ Use notes for important context:
 
 Keep notes concise and relevant.
 
-## Books & References Section
+## Books - See books.md
 
-For technical books:
+**Technical books are NOT maintained in tools-and-components.md.**
+
+Books are maintained in a separate `books.md` file following [BOOKS_PROTOCOL.md](BOOKS_PROTOCOL.md).
+
+### Cross-Reference in tools-and-components.md
+
+Add a simple reference note after the main inventory sections:
 ```markdown
-| Title | Author/Publisher | Topic | Purchased | Price |
-|-------|------------------|-------|-----------|-------|
-| Verilog by Example | Amazon.com | FPGA/Verilog programming | 2021-01-30 | $19.95 |
+*For technical books, see [books.md](books.md)*
 ```
-
-Include:
-- Full title
-- Publisher or author (if known)
-- Subject area
-- Purchase date and price
 
 ## Craft & Project Supplies
 
@@ -318,5 +314,5 @@ Update the date when making significant changes.
 
 ---
 
-*Protocol Version: 1.0*
-*Last Updated: January 2026*
+*Protocol Version: 1.1*
+*Last Updated: 2026-01-07*

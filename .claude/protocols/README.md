@@ -15,6 +15,7 @@ This directory contains protocols for documenting equipment, projects, and inven
 | [CAMERA_COLLECTION_PROTOCOL.md](CAMERA_COLLECTION_PROTOCOL.md) | Document cameras, lenses, and accessories | Bodies, lenses, mount compatibility, astrophotography |
 | [DEVICE_LAB_PROTOCOL.md](DEVICE_LAB_PROTOCOL.md) | Document computing devices for hacking/tinkering | Tablets, phones, NAS, hackability, repurposing projects |
 | [TOOLS_AND_COMPONENTS_PROTOCOL.md](TOOLS_AND_COMPONENTS_PROTOCOL.md) | Maintain tools-and-components.md inventory | Hand tools, wire, consumables, component stock |
+| [BOOKS_PROTOCOL.md](BOOKS_PROTOCOL.md) | Maintain books.md inventory | Technical books, software/hardware references |
 
 ### Projects & Documentation
 
@@ -30,6 +31,7 @@ This directory contains protocols for documenting equipment, projects, and inven
 |----------|---------|--------------|
 | [CLAUDE_MD_MAINTENANCE_PROTOCOL.md](CLAUDE_MD_MAINTENANCE_PROTOCOL.md) | Keep CLAUDE.md concise for performance | Content structure, refactoring process, length guidelines |
 | [TODO_MD_ARCHIVAL_PROTOCOL.md](TODO_MD_ARCHIVAL_PROTOCOL.md) | Archive completed tasks to changes/ directory | Archival triggers, file naming, archive format, cleanup process |
+| [CHANGELOG_PROTOCOL.md](CHANGELOG_PROTOCOL.md) | Document repository changes in changes/ directory | Session/topic-based changelogs, file organization, change tracking |
 
 ## Quick Reference
 
@@ -43,6 +45,7 @@ This directory contains protocols for documenting equipment, projects, and inven
 - Camera/lens/photo accessory? → [CAMERA_COLLECTION_PROTOCOL.md](CAMERA_COLLECTION_PROTOCOL.md)
 - Tablet/phone/NAS/gaming device? → [DEVICE_LAB_PROTOCOL.md](DEVICE_LAB_PROTOCOL.md)
 - Hand tool/wire/component/consumable? → [TOOLS_AND_COMPONENTS_PROTOCOL.md](TOOLS_AND_COMPONENTS_PROTOCOL.md)
+- Technical book/reference? → [BOOKS_PROTOCOL.md](BOOKS_PROTOCOL.md)
 
 ### When Working on Projects
 
@@ -57,6 +60,7 @@ This directory contains protocols for documenting equipment, projects, and inven
 - CLAUDE.md getting too long (>600 lines)? → [CLAUDE_MD_MAINTENANCE_PROTOCOL.md](CLAUDE_MD_MAINTENANCE_PROTOCOL.md)
 - TODO.md has >10 completed tasks? → [TODO_MD_ARCHIVAL_PROTOCOL.md](TODO_MD_ARCHIVAL_PROTOCOL.md)
 - Major topic/milestone completed? → [TODO_MD_ARCHIVAL_PROTOCOL.md](TODO_MD_ARCHIVAL_PROTOCOL.md)
+- User requests "create a changelog"? → [CHANGELOG_PROTOCOL.md](CHANGELOG_PROTOCOL.md)
 - Performance issues from large context? → Check both maintenance protocols
 
 ## Protocol Maintenance
@@ -203,5 +207,5 @@ If you encounter:
 
 ---
 
-*Protocol Index Version: 1.1*
+*Protocol Index Version: 1.3*
 *Last Updated: 2026-01-07*
