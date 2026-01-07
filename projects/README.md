@@ -12,6 +12,7 @@ Active project documentation and build logs organized by category.
 | [Analog Computer Experiments](#analog-computer-experiments) | Analog Computing | In Progress | THAT |
 | [ATtiny2313 LED Clock](#attiny2313-led-clock) | Microcontrollers | In Progress | ATtiny2313 |
 | [MM-8000K Trainer UI](#mm-8000k-intel-8085-trainer-ui) | Retro Computing | In Progress | MM-8000K |
+| [Passive Radar SDR](#passive-radar-sdr-system) | RF/SDR | Planning | KrakenSDR/RTL-SDR |
 | [SCPI Instrument Control](#scpi-instrument-control) | Test Automation | Planning | Lab equipment |
 | [Home Automation](#home-automation) | Smart Home | In Progress | Pi 3, Z-Wave |
 | [DIY TrekPak Dividers](#diy-trekpak-dividers) | Workshop | Materials Ready | Foam, pins |
@@ -91,6 +92,22 @@ Modern user interface for the MM-8000K Intel 8085 trainer. Combines physical har
 
 ---
 
+### RF & Software-Defined Radio
+
+#### Passive Radar SDR System
+**Status:** Planning
+**Directory:** [passive-radar-sdr/](passive-radar-sdr/)
+
+Multi-channel SDR receiver system for passive radar detection of aircraft and vehicles using existing RF illuminators (FM radio, TV broadcast, cellular towers). Exploits bistatic radar principles to detect targets without transmitting, using synchronized SDR receivers for reference and surveillance channels.
+
+**Equipment:** KrakenSDR or synchronized RTL-SDR array, GPSDO, directional antennas
+**Software:** GNU Radio, Python/NumPy, KrakenSDR passive radar toolkit
+**Related:** Ham radio operations, [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)
+
+**Key challenges:** Clock synchronization, dynamic range (60-100 dB), multipath, real-time signal processing
+
+---
+
 ### Test & Measurement Automation
 
 #### SCPI Instrument Control
@@ -133,7 +150,7 @@ Custom drawer and parts case dividers using corrugated plastic, EVA foam, and ha
 ## Project Status Summary
 
 - **Active Development:** 7 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, ATtiny Clock, MM8000 UI, Home Automation)
-- **Planning/Research:** 1 project (SCPI Control)
+- **Planning/Research:** 2 projects (Passive Radar SDR, SCPI Control)
 - **Materials Ready:** 1 project (TrekPak Dividers)
 
 ## Cross-References
@@ -177,3 +194,4 @@ projects/
 ---
 
 *Last updated: 2026-01-07*
+*Total projects: 10*
