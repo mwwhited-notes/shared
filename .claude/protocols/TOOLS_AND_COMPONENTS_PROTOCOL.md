@@ -314,5 +314,5 @@ Update the date when making significant changes.
 
 ---
 
-*Protocol Version: 1.1*
+*Protocol Version: 1.2*
 *Last Updated: 2026-01-07*
