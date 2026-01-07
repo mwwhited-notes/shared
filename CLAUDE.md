@@ -55,11 +55,15 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 - **network-diagram.md** - Home network topology, IP assignments, VLAN planning, and security notes
 - **tools-and-components.md** - Hand tools, wire, consumables, and component stock
 - **projects/project-ideas.md** - Project backlog and ideas (references detailed docs in `projects/`)
+- **DiagramsAndPatterns/** - Software architecture patterns and templates library
+  - Design patterns (behavioral, creational, structural, etc.)
+  - Architecture patterns (data access, presentation, service)
+  - Example designs (OAuth2, web search engine)
+  - Templates (architecture docs, test strategies, deployment plans)
 - **Notes/** - Technical notes organized by topic (see Notes/README.md)
-  - `hardware/` - FPGA, digital logic, 3D printer, Field Programmable Analog Array
-  - `software/` - AI/ML, dotnet, Kubernetes, DiagramsAndPatterns, App Ideas
+  - `hardware/` - Logic tables, reference materials
+  - `software/` - AI/ML, dotnet, app ideas
 - **Scripts/** - Utility scripts (JavaScript, T-SQL, dotnet, Vivado TCL, WSL configuration)
-- **HammingDistances/** - Precomputed Hamming distance lookup tables (CSV format)
 - **AnalogComputers/** - Analog computing research repository (~232 PDFs, 660MB) covering fundamentals, aerospace simulation, vintage computer manuals, and application notes
 - **workshop-capabilities.md** - Workshop equipment summary, project ideas by difficulty/category, troubleshooting guides, wishlist
 
