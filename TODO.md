@@ -1,19 +1,6 @@
 # TODO
 
-## Completed ✅
-
-- [x] Create project folders for all active projects
-- [x] Cross-reference project-ideas.md with projects/ directory
-- [x] Reorganize Notes/ directory (hardware/, software/ subdirectories)
-- [x] Consolidate link files into links.md
-- [x] Create Notes/README.md
-- [x] Update CLAUDE.md with new structure
-- [x] Move TI-99/4A notes to Vintage Computers
-- [x] Move Analog Computing notes to projects/analog-computer-experiments
-- [x] Move SAP-1 notes to projects/sap-1-computer
-- [x] Add Digital Computer Electronics book to inventory
-
-## Pending ⏳
+## Active Tasks
 
 ### Order Processing
 - [ ] Review amazon orders from 2020 and before
@@ -30,4 +17,11 @@
 
 ---
 
+## Recent Archives
+
+- [Repository Restructure - January 2026](changes/repository-restructure-2026-01.md) - Documentation reorganization and project structure improvements (10 tasks, 2026-01-07)
+
+---
+
 *Last updated: 2026-01-07*
+*Last cleaned: 2026-01-07*

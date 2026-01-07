@@ -162,6 +162,15 @@ Key features:
 - Cross-reference verification between inventory and project files
 - Project idea generation based on equipment combinations
 
+### Maintenance & Performance
+Follow `.claude/protocols/CLAUDE_MD_MAINTENANCE_PROTOCOL.md` to keep this file concise.
+Follow `.claude/protocols/TODO_MD_ARCHIVAL_PROTOCOL.md` to archive completed tasks from TODO.md.
+
+**Current status:**
+- CLAUDE.md: 256 lines (target <500, warning at 600)
+- TODO.md: Cleaned 2026-01-07 (7 active tasks)
+- See `changes/` directory for archived work
+
 ### Analog Computers
 Reference `AnalogComputers/analog-computing-repository/CLAUDE.md` for the analog computing research collection.
 
