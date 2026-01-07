@@ -24,6 +24,13 @@ This directory contains protocols for documenting equipment, projects, and inven
 | [PROJECT_REVIEW_PROTOCOL.md](PROJECT_REVIEW_PROTOCOL.md) | Periodic inventory review and maintenance | Full review workflow, quick sync, cross-reference checks |
 | [ONLINE_SHOPPING_PROTOCOL.md](ONLINE_SHOPPING_PROTOCOL.md) | Track seller experiences and purchases | Good/bad sellers, pricing, shipping quality |
 
+### Maintenance & Performance
+
+| Protocol | Purpose | Key Sections |
+|----------|---------|--------------|
+| [CLAUDE_MD_MAINTENANCE_PROTOCOL.md](CLAUDE_MD_MAINTENANCE_PROTOCOL.md) | Keep CLAUDE.md concise for performance | Content structure, refactoring process, length guidelines |
+| [TODO_MD_ARCHIVAL_PROTOCOL.md](TODO_MD_ARCHIVAL_PROTOCOL.md) | Archive completed tasks to changes/ directory | Archival triggers, file naming, archive format, cleanup process |
+
 ## Quick Reference
 
 ### When Adding New Equipment
@@ -43,6 +50,14 @@ This directory contains protocols for documenting equipment, projects, and inven
 - Starting a new build project? → [PROJECTS_PROTOCOL.md](PROJECTS_PROTOCOL.md)
 - Doing quarterly inventory review? → [PROJECT_REVIEW_PROTOCOL.md](PROJECT_REVIEW_PROTOCOL.md)
 - Documenting a seller experience? → [ONLINE_SHOPPING_PROTOCOL.md](ONLINE_SHOPPING_PROTOCOL.md)
+
+### When Managing Documentation
+
+**Are you...**
+- CLAUDE.md getting too long (>600 lines)? → [CLAUDE_MD_MAINTENANCE_PROTOCOL.md](CLAUDE_MD_MAINTENANCE_PROTOCOL.md)
+- TODO.md has >10 completed tasks? → [TODO_MD_ARCHIVAL_PROTOCOL.md](TODO_MD_ARCHIVAL_PROTOCOL.md)
+- Major topic/milestone completed? → [TODO_MD_ARCHIVAL_PROTOCOL.md](TODO_MD_ARCHIVAL_PROTOCOL.md)
+- Performance issues from large context? → Check both maintenance protocols
 
 ## Protocol Maintenance
 
@@ -160,8 +175,14 @@ What are you documenting?
 ├─ Is it an active build project?
 │  └─ YES → PROJECTS_PROTOCOL.md
 │
-└─ Is it a purchase experience to document?
-   └─ YES → ONLINE_SHOPPING_PROTOCOL.md
+├─ Is it a purchase experience to document?
+│  └─ YES → ONLINE_SHOPPING_PROTOCOL.md
+│
+├─ Is CLAUDE.md getting too long or cluttered?
+│  └─ YES → CLAUDE_MD_MAINTENANCE_PROTOCOL.md
+│
+└─ Do you have >10 completed tasks in TODO.md?
+   └─ YES → TODO_MD_ARCHIVAL_PROTOCOL.md
 ```
 
 ## Getting Started
@@ -182,5 +203,5 @@ If you encounter:
 
 ---
 
-*Protocol Index Version: 1.0*
-*Last Updated: January 2026*
+*Protocol Index Version: 1.1*
+*Last Updated: 2026-01-07*

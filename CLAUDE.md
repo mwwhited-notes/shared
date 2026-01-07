@@ -43,7 +43,15 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 - **Camera Collection/** - Photography equipment inventory (Nikon D800, film cameras, lenses, M42 vintage glass)
 - **Device Lab/** - Computing devices for hacking/tinkering (tablets, phones, gaming handhelds, NAS, desktops)
 - **projects/** - Active project documentation and build logs
-- **home-automation/** - Home automation platform migration project (HomeSeer to Home Assistant)
+  - `fpga-cpu-design/` - Custom CPU in SystemVerilog
+  - `attiny2313-clock/` - ATtiny LED clock
+  - `scpi-instrument-control/` - Test equipment automation
+  - `analog-computer-experiments/` - Anabrid THAT projects
+  - `mm8000-trainer-ui/` - Intel 8085 trainer interface
+  - `zynq-soc-exploration/` - Xilinx Zynq ARM+FPGA SoC
+  - `sap-1-computer/` - SAP-1/Ben Eater 8-bit breadboard computer
+  - `diy-trekpak-dividers/` - Workshop organization
+  - `home-automation/` - Home Assistant migration
 - **network-diagram.md** - Home network topology, IP assignments, VLAN planning, and security notes
 - **tools-and-components.md** - Hand tools, wire, consumables, and component stock
 - **project-ideas.md** - Project backlog and ideas (references detailed docs in `projects/`)
@@ -203,20 +211,30 @@ done
 
 ## Cross-References
 
+### Main Reference Files
 - `workshop-capabilities.md` - **Main workshop reference** with equipment summary, project ideas, troubleshooting guides
+- `project-ideas.md` - Ongoing project backlog with cross-references to active projects
+- `links.md` - Curated reference links (AI/ML, dotnet, electronics, retro computing, vintage electronics)
+- `tools-and-components.md` - Hand tools, wire, consumables, component stock, books
+
+### Equipment Inventories
 - `Programmable Devices/readme.md` - Device index with programmer compatibility
 - `Expansion Boards/readme.md` - Shields, HATs, capes index with compatibility info
 - `Test Equipment/readme.md` - Equipment index (oscilloscopes, DMMs, programmers, 3D printer)
 - `Vintage Computers/readme.md` - Apple IIc, Apple IIgs, TI-99/4A inventory
 - `Camera Collection/readme.md` - Cameras, lenses, and photography accessories
 - `Device Lab/readme.md` - Computing devices for hacking/tinkering
-- `home-automation/CLAUDE.md` - Home automation project (HomeSeer migration)
+
+### Projects
+- `projects/` - Active project directories with READMEs (see project-ideas.md for complete list)
+- `home-automation/CLAUDE.md` - Home automation project (HomeSeer to Home Assistant migration)
 - `network-diagram.md` - Network topology and IP assignments
+
+### Research Collections
 - `AnalogComputers/analog-computing-repository/README.md` - Analog computing collection overview
 - `AnalogComputers/analog-computing-repository/research-protocol.md` - Search strategies and download sources by topic
 - `AnalogComputers/analog-computing-repository/download-sources.md` - PDF source registry
-- `links.md` - Curated reference links (AI/ML, dotnet, electronics, retro computing)
-- `project-ideas.md` - Ongoing project list
+- `Notes/README.md` - Technical notes directory guide
 
 ## Notable Hardware
 
