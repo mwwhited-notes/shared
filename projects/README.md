@@ -10,6 +10,7 @@ Active project documentation and build logs organized by category.
 |---------|----------|--------|-----------|
 | [FPGA CPU Design](#fpga-cpu-design) | Digital Logic | In Progress | Arty A7-100 |
 | [SAP-1 Computer](#sap-1-computer) | Digital Logic | In Progress | 74-series, breadboards |
+| [DRL/DTL Logic Boards](#drldtl-logic-boards) | Digital Logic | Reference | Diodes, transistors |
 | [Zynq SoC Exploration](#zynq-soc-exploration) | SoC/Embedded | In Progress | Arty Z7-20 |
 | [Analog Computer Experiments](#analog-computer-experiments) | Analog Computing | In Progress | THAT |
 | [ATtiny2313 LED Clock](#attiny2313-led-clock) | Microcontrollers | Completed | ATtiny2313 |
@@ -18,6 +19,7 @@ Active project documentation and build logs organized by category.
 | [Radex One Protocol](#radex-one-geiger-counter-protocol) | Protocol Reverse Eng | Completed | Radex One |
 | [Favero Fencing System](#favero-fencing-scoring-system) | Protocol Integration | Completed | Favero Full-Arm-05 |
 | [SCPI Instrument Control](#scpi-instrument-control) | Test Automation | Planning | Lab equipment |
+| [Vector Search SQL Server](#vector-search-in-sql-server) | Database/ML | Completed | SQL Server, .NET |
 | [Self-Hosted Git Server](#self-hosted-git-server) | DevOps/Infrastructure | Planning | PR4100 NAS |
 | [SBC Cluster](#sbc-cluster-arm) | DevOps/Infrastructure | Planning | 8× ARM SBCs |
 | [DevOps Playground Cluster](#devops-playground-cluster) | DevOps/HPC | In Progress | FX-9590, FX-8350 |
@@ -47,6 +49,18 @@ Building the SAP-1 (Simple As Possible) 8-bit breadboard computer based on Ben E
 
 **Equipment:** 74-series logic, breadboards, EEPROM/GAL programmers
 **Related:** Digital Computer Electronics (Malvino), [Ben Eater's videos](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU)
+
+---
+
+#### DRL/DTL Logic Boards
+**Status:** Reference/As Needed
+**Directory:** [drl-dtl-logic-boards/](drl-dtl-logic-boards/)
+
+Educational logic boards demonstrating digital gates using discrete components (Diode-Resistor Logic and Diode-Transistor Logic) rather than integrated circuits. Shows fundamental gate operation before 74-series TTL chips. Useful reference for understanding logic family evolution and teaching digital fundamentals.
+
+**Equipment:** Diodes, resistors, transistors (2N2222/2N3904), breadboards
+**Related:** SAP-1 Computer, [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) (may contain additional notes)
+**Educational Value:** Understanding what's inside TTL ICs, logic family history (DRL→DTL→TTL→CMOS)
 
 ---
 
@@ -143,6 +157,21 @@ Serial protocol integration for Favero Full-Arm-05 fencing scoring apparatus. Bu
 
 ---
 
+### Database & Machine Learning
+
+#### Vector Search in SQL Server
+**Status:** Completed
+**Directory:** [vector-search-sqlserver/](vector-search-sqlserver/)
+
+Vector search capabilities in SQL Server using Locality-Sensitive Hashing (LSH) with precomputed Hamming distance lookup tables. Enables semantic search, image similarity, and ML/AI applications directly in SQL Server without external vector databases. Part of [dotex](https://github.com/OutOfBandDevelopment/dotex) framework (`OoBDev.Data.Vectors`).
+
+**Source Code:** [OutOfBandDevelopment/dotex](https://github.com/OutOfBandDevelopment/dotex) → `/src/Extensions/OoBDev.Data.Vectors`
+**Technology:** LSH indexing, Hamming distances, SQL CLR, .NET
+**Data:** Precomputed lookup tables (5/8/10/12/16-bit, ~1.9MB total) in `HammingDistances/`
+**Applications:** Semantic search, recommendation engines, anomaly detection, k-NN classification
+
+---
+
 ### Test & Measurement Automation
 
 #### SCPI Instrument Control
@@ -226,11 +255,11 @@ Reference documentation and materials inventory for custom drawer dividers. Uses
 
 ## Project Status Summary
 
-- **Completed:** 3 projects (ATtiny2313 LED Clock, Radex One Protocol, Favero Fencing System)
+- **Completed:** 4 projects (ATtiny2313 LED Clock, Radex One Protocol, Favero Fencing System, Vector Search SQL Server)
 - **Active Development:** 6 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation)
 - **Planning/Research:** 4 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster)
 - **On Hold:** 1 project (MM-8000K Trainer UI - hardware functional, used as reference)
-- **Reference/As Needed:** 1 project (DIY TrekPak Dividers)
+- **Reference/As Needed:** 2 projects (DIY TrekPak Dividers, DRL/DTL Logic Boards)
 
 ## Cross-References
 
@@ -273,4 +302,4 @@ projects/
 ---
 
 *Last updated: 2026-01-07*
-*Total projects: 15*
+*Total projects: 17*
