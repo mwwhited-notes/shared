@@ -15,6 +15,11 @@
 - [ ] Continue cataloging remaining equipment purchases
 - [ ] Verify all equipment has cross-references to related projects
 
+### Infrastructure (Priority)
+- [ ] **Deploy Gitea on PR4100** (see projects/self-hosted-git-server/)
+- [ ] **Set up Docker on PR4100** for production services (Gitea, Nextcloud)
+- [ ] Fix PR4100 Windows credential persistence issue (see Device Lab/network-storage/wd-mycloud-pr4100/windows-credential-fix.md)
+
 ---
 
 ## Recent Archives
@@ -23,5 +28,5 @@
 
 ---
 
-*Last updated: 2026-01-07*
+*Last updated: 2026-01-07 21:00*
 *Last cleaned: 2026-01-07*

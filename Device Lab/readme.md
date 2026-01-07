@@ -8,6 +8,7 @@ Personal inventory of computing devices for hacking, tinkering, and repurposing 
 |----------|-------|----------|
 | Mobile Devices | 4 | TBD |
 | Gaming Devices | 1 | TBD |
+| VR/AR & Motion Sensing | 3 | ★★★★☆ |
 | Network Storage | 2 | TBD |
 | Desktops | 5 (+ 2 Mac Mini) | ★★★★★ |
 | Laptops | 4 | TBD |
@@ -38,6 +39,18 @@ Handhelds and consoles for homebrew, emulation, and portable gaming projects.
 | Device | Model | Status | Hackability | Project Ideas |
 |--------|-------|--------|-------------|---------------|
 | [Sony PSVita](gaming/sony-psvita/) | TBD | TBD | TBD | Emulation, homebrew |
+
+---
+
+## VR/AR & Motion Sensing
+
+Virtual/augmented reality headsets and depth-sensing cameras for 3D scanning, gesture control, and spatial computing projects.
+
+| Device | Model | Status | Hackability | Project Ideas |
+|--------|-------|--------|-------------|---------------|
+| [Microsoft HoloLens](vr-ar/microsoft-hololens/) | HoloLens v1 Developer Edition | TBD | ★★★★☆ | AR development, spatial mapping, gesture control |
+| [Xbox 360 Kinect](sensors/xbox360-kinect/) | Kinect v1 with PC adapter | TBD | ★★★★★ | 3D scanning, motion capture, robotics |
+| [Xbox One Kinect](sensors/xboxone-kinect/) | Kinect v2 (PC version) | TBD | ★★★★☆ | High-res depth sensing, skeletal tracking |
 
 ---
 
@@ -122,9 +135,11 @@ Printers, media devices, and anything that doesn't fit the categories above.
 | InnoView Portable Monitor | 14" 4K Touch, USB-C | Active | $299.99 Jan 2024 |
 | XGODY X1 Projector | 1080p, Android, WiFi/BT | Active | $179.00 Aug 2023 |
 
-### SBC Cluster (Legacy)
+### SBC Cluster
 
-Originally intended as a Pi cluster. Has power controller/network device (code in [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)).
+ARM-based cluster for Docker/Kubernetes learning. See [SBC Cluster project](../../projects/sbc-cluster/) for details.
+
+Has custom power controller/network device (code in [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)).
 
 | Device | Qty | Notes |
 |--------|-----|-------|

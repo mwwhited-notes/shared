@@ -11,7 +11,10 @@ Multi-node home lab cluster for experimenting with container orchestration, HPC 
 | Project Type | Home Lab / Learning / Development |
 | Status | In Progress |
 | Start Date | TBD |
-| Purpose | Playground for DevOps and development experimentation |
+| Purpose | **Playground for DevOps and development experimentation** |
+| Architecture | **Learning/experimental environment** - NOT for production services |
+
+**Note:** This cluster is for learning and experimentation. Production services (Git, file sync, etc.) run on PR4100. This cluster can be powered down, broken, rebuilt without affecting critical services.
 
 ## Target Technologies
 
@@ -105,7 +108,7 @@ This is a **learning playground**, not a production environment. The goal is to 
 | Home Assistant | Home automation | Could run here or dedicated |
 | Plex | Media server | If storage sufficient |
 | Pi-hole | DNS ad blocking | Lightweight |
-| Gitea | Self-hosted Git | Dev workflow |
+| Gitea Mirror | Git repo mirror | Learning only - primary Git on PR4100 |
 
 ## Hardware Considerations
 
@@ -149,8 +152,24 @@ This is a **learning playground**, not a production environment. The goal is to 
 
 ## Related Projects
 
-- [Home Automation](../home-automation/) - Home Assistant could run on this cluster
+- [Home Automation](../home-automation/) - Home Assistant could run on this cluster (if not on dedicated Pi)
 - [WD My Cloud PR4100](../../Device%20Lab/network-storage/wd-mycloud-pr4100/) - Could provide NFS storage to cluster
+- [Self-Hosted Git Server](../self-hosted-git-server/) - Production Git on PR4100; cluster can use for CI/CD webhooks
+
+## Architecture Separation
+
+**PR4100 (Production Services):**
+- Always-on, low power (~10W)
+- Gitea (primary Git hosting)
+- Nextcloud (file sync) - if deployed
+- Critical, persistent services
+
+**DevOps Playground Cluster (Learning):**
+- High power (FX CPUs), run when needed
+- Safe to break/rebuild
+- Docker/Kubernetes/Slurm experimentation
+- CI/CD integration (not primary services)
+- GPU compute experiments
 
 ## Equipment Used
 

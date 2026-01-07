@@ -15,8 +15,11 @@ Active project documentation and build logs organized by category.
 | [ATtiny2313 LED Clock](#attiny2313-led-clock) | Microcontrollers | Completed | ATtiny2313 |
 | [MM-8000K Trainer UI](#mm-8000k-intel-8085-trainer-ui) | Retro Computing | On Hold | MM-8000K |
 | [Passive Radar SDR](#passive-radar-sdr-system) | RF/SDR | Planning | KrakenSDR/RTL-SDR |
+| [Radex One Protocol](#radex-one-geiger-counter-protocol) | Protocol Reverse Eng | Completed | Radex One |
+| [Favero Fencing System](#favero-fencing-scoring-system) | Protocol Integration | Completed | Favero Full-Arm-05 |
 | [SCPI Instrument Control](#scpi-instrument-control) | Test Automation | Planning | Lab equipment |
 | [Self-Hosted Git Server](#self-hosted-git-server) | DevOps/Infrastructure | Planning | PR4100 NAS |
+| [SBC Cluster](#sbc-cluster-arm) | DevOps/Infrastructure | Planning | 8× ARM SBCs |
 | [DevOps Playground Cluster](#devops-playground-cluster) | DevOps/HPC | In Progress | FX-9590, FX-8350 |
 | [Home Automation](#home-automation) | Smart Home | In Progress | Pi 3, Z-Wave |
 | [DIY TrekPak Dividers](#diy-trekpak-dividers) | Workshop | Reference | Foam, pins |
@@ -114,6 +117,32 @@ Multi-channel SDR receiver system for passive radar detection of aircraft and ve
 
 ---
 
+### Protocol Reverse Engineering & Integration
+
+#### Radex One Geiger Counter Protocol
+**Status:** Completed
+**Directory:** [radex-one-protocol-reverse-engineering/](radex-one-protocol-reverse-engineering/)
+
+Successfully reverse-engineered the complete USB serial protocol for the Radex One portable geiger counter from Quarta. Documented packet structure, checksum algorithm, data reading (ambient/accumulated/CPM), settings management, and device identification. Protocol uses 2400 baud with little-endian checksums.
+
+**Equipment:** Radex One USB geiger counter, serial capture tools
+**Outcome:** Full protocol specification with example code snippets (Python, C#)
+**Applications:** Data logging, home automation integration, radiation mapping
+
+---
+
+#### Favero Fencing Scoring System
+**Status:** Completed
+**Directory:** [favero-fencing-scoring-system/](favero-fencing-scoring-system/)
+
+Serial protocol integration for Favero Full-Arm-05 fencing scoring apparatus. Built for old fencing club to capture real-time match data (scores, time, lamp status, penalties). Implemented 20mA current loop to RS-232 interface conversion and real-time data decoding.
+
+**Equipment:** Favero Full-Arm-05, 20mA to RS-232 converter, display system
+**Protocol:** 2400 baud, 10-byte packets @ 42ms update rate
+**Applications:** Scoreboard displays, match logging, live streaming graphics
+
+---
+
 ### Test & Measurement Automation
 
 #### SCPI Instrument Control
@@ -140,6 +169,18 @@ Local Git hosting for personal repositories and backup of public projects. Deplo
 **Use Cases:** Private repo hosting, GitHub backup/mirrors, local development
 
 **Migration strategy:** New repos → migrate private repos → mirror public repos (EmbeddedBakery, BinaryDataDecoders, etc.)
+
+---
+
+#### SBC Cluster (ARM)
+**Status:** Planning
+**Directory:** [sbc-cluster/](sbc-cluster/)
+
+Low-power ARM cluster for learning container orchestration, distributed computing, and network device filtering. 8 single-board computers (4× BeagleBone Black, 2× Raspberry Pi 2, 2× Raspberry Pi Model A) with custom power controller. Focus on ARM Docker/k3s deployment, device filtering experiments, and always-on lightweight services.
+
+**Hardware:** 8× ARM SBCs (~12 cores, 4.5GB RAM total), custom power controller
+**Use Cases:** ARM container testing, network filtering, low-power services (Pi-hole)
+**Comparison:** Complements DevOps Playground Cluster - ARM vs x86, always-on vs on-demand
 
 ---
 
@@ -185,9 +226,9 @@ Reference documentation and materials inventory for custom drawer dividers. Uses
 
 ## Project Status Summary
 
-- **Completed:** 1 project (ATtiny2313 LED Clock)
+- **Completed:** 3 projects (ATtiny2313 LED Clock, Radex One Protocol, Favero Fencing System)
 - **Active Development:** 6 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation)
-- **Planning/Research:** 3 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server)
+- **Planning/Research:** 4 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster)
 - **On Hold:** 1 project (MM-8000K Trainer UI - hardware functional, used as reference)
 - **Reference/As Needed:** 1 project (DIY TrekPak Dividers)
 
@@ -232,4 +273,4 @@ projects/
 ---
 
 *Last updated: 2026-01-07*
-*Total projects: 12*
+*Total projects: 15*

@@ -110,12 +110,17 @@ git clone ssh://user@pr4100/volume1/git-repos/project1.git
 **Primary:** Gitea on WD My Cloud PR4100
 
 **Rationale:**
+- **Production service** - PR4100 is always-on, low power (~10W)
 - Perfect balance of features and resource usage
 - PR4100 already has Docker support
-- Always-on NAS server (low power)
+- Stable platform for critical services (Git repos shouldn't go down)
 - Web UI for easy repository management
 - Issue tracking for personal projects
-- Can integrate with DevOps Cluster for CI/CD later
+- **Separate from DevOps Playground Cluster** - Cluster is for learning/experimentation, not production
+
+**Architecture separation:**
+- **PR4100:** Production services (Gitea, Nextcloud, persistent data)
+- **DevOps Cluster:** Learning environment (can break things, high power, run when needed)
 
 ## Deployment Plan
 
@@ -128,7 +133,11 @@ git clone ssh://user@pr4100/volume1/git-repos/project1.git
 - Existing network storage
 - ~10W idle power
 
-**Alternative:** DevOps Playground Cluster (if GitLab or more resources needed)
+**Alternative:** DevOps Playground Cluster
+- **Not recommended for Git hosting** - Cluster is for learning/experimentation
+- High power consumption (not always-on)
+- Use cluster for CI/CD integration, not primary Git storage
+- Only consider if you need GitLab's full DevOps platform for learning
 
 ### Gitea Docker Deployment
 

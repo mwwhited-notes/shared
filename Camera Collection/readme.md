@@ -195,7 +195,7 @@ Adapted lenses via Fotasy adapters:
 
 | Item | Specs | Price | Details |
 |------|-------|-------|---------|
-| Microsoft Surface Book 2 15" | Intel i7, 2-in-1 | $3,579.73 | [Device Lab entry](../Device%20Lab/) |
+| Microsoft Surface Book 2 15" | Intel i7, 2-in-1 | $3,579.73 | [Device Lab entry](../Device%20Lab/laptops/microsoft-surface-book-2-15/) |
 
 ### Peripherals
 | Item | Specs | Price |
