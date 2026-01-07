@@ -186,7 +186,7 @@ Adapted lenses via Fotasy adapters:
 | PowerSpec G474 Gaming PC | Intel i9-14900KF | $2,773.48 | [Full specs](../Device%20Lab/desktops/powerspec-g474/) |
 | G.Skill Trident Z5 RGB 96GB | DDR5-6400 CL32 (2x48GB) | $365.49 | RAM upgrade |
 | Samsung 990 PRO 2TB | NVMe SSD (replaced stock WD) | TBD | Storage upgrade |
-| ASUS VP279HE 27" (×2) | 1080p IPS FreeSync | $320.36 | |
+| ASUS VP279HE 27" (×2) | 1080p IPS FreeSync | $298.00 (2×$149) | Purchased 2021-02-07 & 2021-02-09 |
 | Lenovo 510 FHD Webcam | 1080p USB | $58.99 | |
 
 ### Laptop

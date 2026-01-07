@@ -39,6 +39,10 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | Hot Wire Foam Cutter | Electric styrofoam cutting tool w/stand (Tinnimtin) | 1 | 2021-11-24 | $26.99 |
 | Kapro Line Level | Aluminum 441-08, V-groove/pocket clip | 1 | 2021-09-15 | $3.78 |
 
+*See [Test Equipment/](Test%20Equipment/) for KSGER T12 soldering station, YaeCCC 858D hot air rework, and Hakko FR-301 desoldering gun.*
+
+---
+
 ## Network Tools
 
 | Item | Description | Qty | Purchased | Price |
@@ -59,15 +63,19 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | PCB Wire-Wrapping Wire 30AWG | 8-color, 1000ft, PVC coated tin plated | 1 | 2024-03-17 | $11.49 |
 | Wire-Wrapping Wire 30AWG | Orange 820ft tin plated (uxcell) | 1 | 2023-03-26 | $11.99 |
 | IDC Rainbow Ribbon Cable | 40-pin 1.27mm, 10ft (Antrader) | 1 | 2023-03-24 | $12.00 |
+| IDC Ribbon Cable | 12-pin 1.27mm pitch, 2m/6.6ft (uxcell) | 1 | 2021-03-15 | $7.49 |
 | 22AWG 8-Conductor Wire | 10ft, stranded tinned copper (DEKIEVALE) | 1 | 2025-03-20 | $11.99 |
 | USB Printer Cable (A to B) | 25ft (PPTVC) | 1 | 2024-11-17 | $9.99 |
 | USB Printer Cable (A to B) | 10ft (UorMe) | 1 | 2024-11-17 | $5.99 |
 | USB Printer Cable (A to B) | 1.5ft gold-plated (Monoprice) | 5 | 2022-09-06 | $7.45 |
+| USB Printer Cable (A to B) | 1.5ft gold-plated (Monoprice) | 1 | 2021-01-01 | $2.99 |
 | HDMI 2.1 Cable | 10ft, 48Gbps 8K/4K (Adauxter) | 1 | 2024-11-17 | $9.99 |
+| HDMI to DVI Cable | 3ft bi-directional DVI-D 24+1 (BlueRigger) | 1 | 2021-01-01 | $7.49 |
 | USB to DIN Serial Cable | For Roomba/Create 2 (EZSync018) | 1 | 2021-11-24 | $24.99 |
 | Micro USB Cable | 10ft, 3-pack (MATEIN) | 3 | 2024-11-17 | $8.99 |
 | USB 3.0 Extension Cable | 15ft A male to A female (WestCowboy) | 1 | 2023-01-13 | $11.99 |
 | USB 3.0 Extension Cable | 32ft active repeater w/signal booster (TECHTOO) | 1 | 2021-11-22 | $36.49 |
+| USB 3.0 Extension Cable | 3.3ft + 6.6ft, 2-pack (NIMASO) | 2 | 2021-03-17 | $9.99 |
 | Mini USB Extension Cable | 0.3m right angle screw mount (Kework) | 1 | 2023-01-04 | $7.99 |
 | HDMI to Mini HDMI Cable | 12ft, 4K@60Hz (Lingnan) | 1 | 2024-01-19 | $11.99 |
 
@@ -133,6 +141,7 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | 2mm Banana Alligator Clips | Mini insulated clips, 6 colors (Peakelect) | 12 | 2025-03-16 | $9.99 |
 | 2mm to 4mm Banana Adapters | Male 2mm to female 4mm (SG Store) | 10 | 2025-03-16 | $9.29 |
 | 2mm Banana Plug Kit | Socket jack connectors, 5 colors (Yanmis) | 20 | 2025-03-16 | $10.12 |
+| 4mm Banana Female to Female | Jack socket coupler adapter (Goupchn) | TBD | 2021-03-15 | $8.99 |
 | 4mm Banana Test Lead Extension | M/F 14AWG silicone 39.4" (Bei Qian) | 1 pair | 2022-05-01 | $11.98 |
 | Type K Thermocouple Probe | Extech TP873 bead wire | 1 | 2023-10-30 | $17.99 |
 | K-Type Panel Mount Connector | Thermocouple male/female, yellow (CESARIAS) | 1 | 2022-02-20 | $7.99 |
@@ -144,6 +153,7 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | BNC to Dual Banana Female | BNC F to dual banana socket (onelinkmore) | 2 | 2022-01-16 | $6.79 |
 | BNC Male to Dual Banana Female | BNC M to dual banana socket (onelinkmore) | 2 | 2022-01-16 | $6.79 |
 | Test Hook Clips | 40mm multicolor grabbers (RuiLing, 12-pack) | 12 | 2022-01-16 | $7.99 |
+| Logic Probe & Pulser | Elenco LP900/625 TTL/CMOS | 1 | 2021-01-13 | $27.68 |
 
 ---
 
@@ -153,8 +163,10 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 |------|-------------|-----|-----------|-------|
 | BB2 BusBoard-2 | Zig-zag pattern PCB, 100x80mm | 1 | 2025-01-23 | $6.00 |
 | 40-Pin Right Angle Headers | Dual row 2.54mm male (bnafes) | 10 | 2025-01-23 | $7.99 |
+| 40-Pin Right Angle Headers | Dual row 2.54mm male (LUOYIMAO, 20pcs) | 20 | 2021-01-30 | $9.59 |
 | 50-Pin Right Angle Headers | Single row 1.27mm (uxcell, 20-pack) | 20 | 2023-02-24 | $9.99 |
 | 40-Pin Male Headers | Long centered breakaway 2.54mm (DIKAVS) | 10 | 2022-12-30 | $8.99 |
+| 40-Pin Male Headers | Single row breakaway 2.54mm (Gikfun, 10pcs) | 10 | 2021-03-15 | $7.99 |
 | Stackable Shield Headers | 6/8/10/double row + 3-pin kit (Hilitchi) | 110 | 2022-12-30 | $9.79 |
 | 40-Pin Female Headers RA | Right angle 2.54mm (Dahszhi) | 20 | 2022-12-19 | $9.99 |
 | Copper Strip Perfboard | 73x100mm, 957 holes (YUNGUI) | 10 | 2024-03-12 | $7.98 |
@@ -170,11 +182,16 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | 37-in-1 Sensor Kit | ALMOCN for Arduino/Raspberry Pi | 1 | 2023-09-15 | $16.99 |
 | PCF8575 I/O Expander | I2C 16-bit GPIO (ACEIRMC, 3-pack) | 3 | 2023-04-23 | $9.99 |
 | CD74HC4067 Multiplexer | 16-ch analog/digital breakout (Ximimark) | 5 | 2021-12-30 | $7.99 |
+| TXS0108E Level Shifter | 8-ch bidirectional 3.3V-5V (Songhe, 4-pack) | 4 | 2021-02-01 | $6.31 |
+| Bluetooth BLE Module | DSD TECH SH-HC-08 BT 4.0 UART (iOS compatible) | 1 | 2021-01-11 | $7.99 |
 | Data Logger Shield | DS1307 RTC + SD card for Arduino (AITRIP, 3-pack) | 3 | 2023-03-14 | $10.99 |
 | DIP IC Sockets | 6/8/14/16/18/24/28/40-pin assortment (Raogoodcx) | 110 | 2023-03-03 | $9.99 |
 | ZIF IC Sockets | 40-pin 2.54mm universal test socket (jiuwu) | 5 | 2022-06-16 | $7.99 |
 | LED Panel Holders | 5mm plastic clip-on black (Yesland, 600pcs) | 600 | 2023-01-05 | $7.69 |
+| MAX7219 8-Digit LED Display | 7-segment module for Arduino/MCU (DAOKI, 4pcs) | 4 | 2021-02-22 | $6.29 |
 | Breadboard Jumper Wires | M/M 12-25cm multicolor (Z&T) | 130 | 2022-06-01 | $7.89 |
+
+*FT232H Breakout module (purchased 2021-03-15, $10.99) documented in [Test Equipment/ft232h-breakout/](Test%20Equipment/ft232h-breakout/)*
 
 ---
 
@@ -196,16 +213,20 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | DC Power Jack 5.5x2.1mm | 3-pin panel mount female | 20 | 2024-12-17 | $7.99 |
 | AC Power Socket Panel Mount | US 3-prong 15A 125V screw terminals (Oiyagai) | 10 | 2022-02-20 | $8.00 |
 | Aviation Plugs GX16-8 | 8-pin 16mm panel mount (Clyxgs, 10-pack) | 10 | 2023-10-30 | $12.99 |
+| PS/2 Mini-DIN 6-Pin | Female PCB mount (5 purple keyboard + 5 green mouse) | 10 | 2021-01-30 | $9.99 |
 | USB Type-A Male Plugs | 4-pin with shell (HiLetgo, 10-pack) | 10 | 2023-08-24 | $5.89 |
 | IDC Box Headers 40-pin | 2x20 male 2.54mm (Antrader, 24-pack) | 24 | 2023-03-24 | $5.60 |
 | IDC Socket Connectors 40-pin | 2x20 female 2.54mm (Antrader, 30-pack) | 30 | 2023-03-24 | $9.49 |
 | IDC Socket Connectors 30-pin | Female 2.54mm (HONJIE, 2x 10-pack) | 20 | 2023-03-24 | $9.98 |
 | IDC Socket Connectors 50-pin | 2x25 female 2.54mm (Connectors Pro, 25-pack) | 25 | 2021-03-19 | $12.55 |
 | IDC Socket Connectors 12-pin | 2x6 female 2.54mm (Connectors Pro, 25-pack) | 25 | 2021-03-19 | $8.95 |
+| IDC Socket Connectors 12-pin | 2x6 female 2mm Mini (Connectors Pro, 20-pack) | 20 | 2021-03-15 | $8.95 |
+| IDC Connector Kit w/Crimp Tool | 10/16/20/26-pin female headers, 2.54mm (Keadic, 49pcs) | 1 | 2021-03-17 | $18.99 |
 | Spring Terminal Blocks | KF141V 12-pin 2.54mm (Hxchen, 20-pack) | 40 | 2023-01-25, 2023-03-02 | $23.78 (2x) |
 | Toggle Switches | SPST 20A 125V, waterproof w/boot (COROTC) | 8 | 2024-11-23 | $7.99 |
 | LED Push Button Switches | 16mm 12V DC momentary, 5 colors SPDT (Baomain) | 5 | 2023-11-03 | $9.99 |
 | Mini Slide Switches | SPDT 3mm knob vertical 50V 0.5A (Tnuocke, 100pcs) | 100 | 2022-04-23 | $8.99 |
+| Mini Slide Switches | 2P3T 3-position 8-pin latching 6mm SK23D05 (Fielect, 20pcs) | 20 | 2021-03-17 | $6.99 |
 | BCD Thumbwheel Switches | 0-9 digital DIP KM1 40x24x10mm (uxcell) | 10 | 2022-02-10 | $11.99 |
 | Mini Slide Switches | SPDT 5mm vertical 50V 0.5A (Tnuocke, 100pcs) | 100 | 2023-02-18 | $7.99 |
 | Tactile Push Buttons | 6x6x5mm 4-pin DIP momentary (QTEATAK) | 120 | 2022-05-22 | $5.99 |
@@ -231,6 +252,7 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | USB 3.0 Hub | 4-port 4ft cord w/power (Alxum) | 1 | 2021-11-22 | $14.95 |
 | Waveshare 2" IPS LCD | 240x320, ST7789, SPI (for Pi/Arduino) | 1 | 2024-03-02 | $14.65 |
 | SunFounder LCD2004 | 20x4 blue/white HD44780 compatible | 1 | 2022-05-01 | $7.69 |
+| GeeekPi LCD2004 with I2C | 20x4 blue backlight, I2C interface adapter (2-pack) | 2 | 2021-01-11 | $15.99 |
 | PWM Fan Splitter Kit | 4-pin female connectors (AYLIFU) | 6 | 2024-01-24 | $8.59 |
 | Thermalright Fan Hub | 10-port 4-pin, SATA powered | 1 | 2024-01-19 | $7.59 |
 | Tablet Stand Holder | KDD 27" arm, 4.7"-13" devices | 1 | 2024-01-19 | $27.95 |
@@ -257,6 +279,9 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | SmartQ C368 Card Reader | USB 3.0 multi-card CF/SD/MMC/MS | 1 | 2021-08-01 | $16.99 |
 | Highwings/Snowkids Card Reader | USB 3.0 4-in-1 CF/SD/TF/MS | 1 | 2021-04-01 | $9.99 |
 | SD to 2.5" IDE Adapter | GODSHARK SD/MMC to 44-pin PATA (vintage laptops/computers) | 1 | 2021-03-25 | $12.99 |
+| USB-C Hub 12-in-1 | Tiergrade triple display, dual HDMI, VGA, 100W PD3.0, Ethernet, USB, SD/TF | 1 | 2021-01-05 | $79.99 |
+| USB-C Hub 13-in-1 | TOTU triple display, 2x HDMI, VGA, Ethernet, 79W PD, USB, SD/TF | 1 | 2021-01-03 | $69.99 |
+| USB Slot Plate Adapter | StarTech 4-port USB-A female bracket | 1 | 2021-01-01 | $5.99 |
 | Mac Mini HDD/SSD Cable | Upper drive connector flex ribbon, A1347 821-1501-A | 1 | 2022-06-16 | $8.99 |
 
 *G502 for PowerSpec G474 workstation. Mac Mini cable for A1347 repair.*
@@ -316,6 +341,7 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | Resistors | 10KΩ 1/6W 1% metal film (uxcell) | 300 | 2022-12-30 | $9.59 |
 | Resistors | 470Ω 1/4W 1% metal film (uxcell) | 300 | 2022-12-19 | $6.86 |
 | Resistors | 1KΩ 1/4W 1% metal film (EDGELEC) | 100 | 2022-12-19 | $5.49 |
+| Resistor Networks | SIP-5/SIP-9 bussed 470Ω-47KΩ kit (Electronics-Salon) | Kit | 2021-02-01 | $12.99 |
 | Ferrite Toroids | Green inductor cores (Dahszhi) | 100 | 2024-03-06 | $8.99 |
 | Diodes | 1N4148WS SMD SOD-323 (Todiys) | 100 | 2023-04-23 | $7.98 |
 | Diodes | 1N4148 fast switching 200mA/100V (Fafeicy) | 500 | 2022-12-19 | $11.04 |
@@ -331,12 +357,14 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | Voltage regulators | LM317T positive adj (TO-220, 1.5A, BOJACK) | 25 | 2023-01-20 | $7.99 |
 | Optocouplers | PC817C (DIP-4, transistor output) | 50 | 2025-03-20 | $6.99 |
 | Motor Drivers | Mini L298N 2-ch H-bridge (MX1508 chip) | 4 | 2024-12-08 | $7.99 |
+| Motors | Vibration micro coreless 4x8mm 1.5-3V DC (tatoko, 10pcs) | 10 | 2021-01-11 | $9.99 |
 | Solid State Relay | CG SSR-25DA, DC-AC 3-32V to 24-480V 25A | 1 | 2023-10-05 | $9.79 |
 | DPDT Relays | HK19F 5V DC 8-pin PCB (ABXLNIU, 12-pack) | 12 | 2023-01-20 | $12.68 |
 | Panel Meter | DROK AC 500V/100A volt-amp, LED 2-in-1 | 1 | 2024-12-17 | $15.99 |
 | Panel Voltmeters | DC 2.5-30V 0.28" LED (diymore, 10-pack) | 10 | 2023-02-08 | $16.99 |
 | Panel Voltmeters | DC 0-30V 0.36" blue LED calibratable (bayite) | 5 | 2022-12-31 | $10.79 |
 | Transistors | IRF4905 P-ch MOSFET 74A/55V TO-220 (Bridgold) | 10 | 2023-03-02 | $8.29 |
+| Transistors | IRFZ44N N-ch MOSFET 49A/55V TO-220 (Bridgold) | 20 | 2021-01-11 | $9.99 |
 | Transistors | 2N2222 NPN 60V/0.8A (BOJACK) | 200 | 2022-12-19 | $6.99 |
 | Photodiodes | 3mm clear flat head (uxcell) | 20 | 2025-01-12 | $6.59 |
 | LEDs | 5mm orange diffused | 100 | 2025-01-12 | $5.99 |
@@ -405,6 +433,8 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | Operational Amplifiers With Linear Integrated Circuits | ThriftBooks (Used - Acceptable) | Op-amp circuits, linear ICs | 2023-01-20 | $8.86 |
 | Operational Amplifiers: Design and Applications | ThriftBooks (Used - Acceptable) | Op-amp design | 2023-01-20 | $6.03 |
 | Making Games for the NES | 8bitworkshop | NES game development, 6502 assembly | 2022-09-16 | $29.99 |
+| VHDL By Example | Amazon.com | FPGA/VHDL programming | 2021-02-20 | $19.65 |
+| Verilog by Example: A Concise Introduction for FPGA Design | Amazon.com | FPGA/Verilog programming | 2021-01-30 | $19.95 |
 | Computer Architecture: A Quantitative Approach | Morgan Kaufmann | Computer architecture | 2021-12-30 | $98.46 |
 | The Zynq Book | Xilinx Zynq-7000 reference | Embedded ARM Cortex-A9, Zynq SoC | 2021-12-30 | $27.49 |
 
@@ -412,7 +442,7 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 
 ## Craft & Project Supplies
 
-*See [DIY Drawer/Case Dividers Project](#diy-drawercase-dividers-project) below.*
+*Materials for [DIY TrekPak-Style Dividers](projects/diy-trekpak-dividers/) project - custom drawer and case organizers.*
 
 | Item | Description | Qty | Purchased | Price |
 |------|-------------|-----|-----------|-------|
@@ -421,29 +451,6 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | EVA Foam Roll | 3mm thick 78.7x11.8" self-adhesive (BENECREAT) | 1 | 2023-01-05 | $15.79 |
 | Felt Tape | Self-adhesive 1.96x14.7ft (Pllieay) | 1 | 2021-11-08 | $7.99 |
 | Corrugated Plastic Panels | TBD | TBD | | |
-
-### DIY TrekPak-Style Dividers Project
-
-Custom drawer and parts case dividers for organizing components - a DIY alternative to [Pelican's TrekPak system](https://www.pelican.com/us/en/discover/trekpak).
-
-TrekPak uses corrugated plastic with foam lamination and steel U-pins for modular, reconfigurable case organization. This DIY version replicates that concept with readily available materials.
-
-**Materials:**
-- U-shaped hair pins (as locking pins - similar to TrekPak's steel U-pins)
-- EVA foam sheets/rolls (padding, divider material)
-- Felt tape (soft lining, cushioning)
-- Corrugated plastic panels (rigid divider walls, like political sign material)
-
-**Method:**
-- Cut corrugated plastic to fit drawer/case dimensions
-- Use hair pins as adjustable locking pins through the corrugation channels
-- Apply felt tape for cushioning and scratch prevention
-- Use EVA foam for padding or custom-shaped compartments
-
-**Advantages over commercial TrekPak:**
-- Much cheaper materials
-- Works in any drawer, case, or container (not just Pelican cases)
-- Easily customizable sizes
 
 ---
 

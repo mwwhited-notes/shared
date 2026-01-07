@@ -42,9 +42,11 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 - **Vintage Computers/** - Apple IIc, Apple IIgs, TI-99/4A with peripherals (Floppy Emu, VGA adapters, RAM expansions)
 - **Camera Collection/** - Photography equipment inventory (Nikon D800, film cameras, lenses, M42 vintage glass)
 - **Device Lab/** - Computing devices for hacking/tinkering (tablets, phones, gaming handhelds, NAS, desktops)
+- **projects/** - Active project documentation and build logs
 - **home-automation/** - Home automation platform migration project (HomeSeer to Home Assistant)
 - **network-diagram.md** - Home network topology, IP assignments, VLAN planning, and security notes
 - **tools-and-components.md** - Hand tools, wire, consumables, and component stock
+- **project-ideas.md** - Project backlog and ideas (references detailed docs in `projects/`)
 - **Notes/** - Technical notes on various topics (Kubernetes, dotnet, FPGA, vintage computing, etc.)
 - **Scripts/** - Utility scripts (JavaScript, T-SQL, dotnet, Vivado TCL, WSL configuration)
 - **HammingDistances/** - Precomputed Hamming distance lookup tables (CSV format)

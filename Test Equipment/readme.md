@@ -8,6 +8,8 @@ Each device has its own directory with detailed specifications and locally archi
 
 **[Missing Documentation Tracker](MISSING_DOCUMENTATION.md)** - Documents that require manual download (check off when obtained).
 
+**For consumables, accessories, hand tools, and components, see [tools-and-components.md](../tools-and-components.md)**
+
 ---
 
 ## Table of Contents
