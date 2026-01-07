@@ -10,20 +10,18 @@ The project combines physical hardware (MM-8000K trainer) with software emulatio
 
 ## Project Status
 
-**Status:** In Progress
+**Status:** On Hold / Reference Hardware
 
 **Completed:**
 - MM-8000K hardware trainer acquired and working
 - [MM8000 emulator](https://github.com/mwwhited-archives/MM8000) implemented (CLI + ANTLR assembler)
 
-**Next Steps:**
-1. Design UI mockups (desktop application or web interface)
-2. Enhance emulator with UI integration hooks
-3. Implement memory viewer/editor
-4. Add register display and single-step debugging
-5. Create assembler integration with syntax highlighting
-6. Add hardware trainer communication (if feasible - serial/parallel interface)
-7. Develop example programs and tutorials
+**Current Use:**
+- Physical MM-8000K trainer used as reference for SAP-1 computer project
+- Hardware available for experimentation with 8085 architecture
+- Emulator repository archived and functional as-is
+
+**UI Development:** Not planned at this time - emulator CLI is functional and hardware trainer meets current needs
 
 ## Equipment Used
 
@@ -74,7 +72,7 @@ The project combines physical hardware (MM-8000K trainer) with software emulatio
 - MM-8000K trainer documentation
 - Intel 8085 datasheet and programming manual
 - [MM8000 GitHub repository](https://github.com/mwwhited-archives/MM8000)
-- [project-ideas.md](../../project-ideas.md) - Original project concept
+- [project-ideas.md](../project-ideas.md) - Original project concept
 
 ---
 

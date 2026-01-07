@@ -61,7 +61,7 @@ The system will control existing bench equipment: HP 34401A DMM, Rigol DM3058E D
 - SCPI specification (IEEE 488.2)
 - HP 34401A programming manual
 - Rigol programming guides
-- [project-ideas.md](../../project-ideas.md) - Original project concept
+- [project-ideas.md](../project-ideas.md) - Original project concept
 
 ---
 

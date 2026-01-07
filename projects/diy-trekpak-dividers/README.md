@@ -86,19 +86,20 @@ All materials documented in [tools-and-components.md](../../tools-and-components
 
 ## Project Status
 
-**Status:** Materials acquired, ready for implementation
+**Status:** Reference/As Needed
 
-**Next Steps:**
-1. Source corrugated plastic panels
-2. Measure target drawers/cases
-3. Design initial divider layout
-4. Prototype first divider set
-5. Refine design based on testing
+Materials are acquired and ready to use whenever drawer/case organization is needed. This is not an active build project but rather a documented method and materials inventory for future organizational needs.
+
+**How to Use:**
+1. Identify drawer/case needing organization
+2. Source corrugated plastic panels (or use existing stock)
+3. Follow construction method in this document
+4. Build custom dividers for specific application
 
 ## References
 
 - [Pelican TrekPak Official](https://www.pelican.com/us/en/discover/trekpak)
-- Original project idea documented in [project-ideas.md](../../project-ideas.md) under Workshop Organization
+- Original project idea documented in [project-ideas.md](../project-ideas.md) under Workshop Organization
 
 ---
 

@@ -2,6 +2,8 @@
 
 Active project documentation and build logs organized by category.
 
+**See also:** [project-ideas.md](project-ideas.md) - Project backlog and future ideas
+
 ## Quick Reference
 
 | Project | Category | Status | Equipment |
@@ -10,12 +12,14 @@ Active project documentation and build logs organized by category.
 | [SAP-1 Computer](#sap-1-computer) | Digital Logic | In Progress | 74-series, breadboards |
 | [Zynq SoC Exploration](#zynq-soc-exploration) | SoC/Embedded | In Progress | Arty Z7-20 |
 | [Analog Computer Experiments](#analog-computer-experiments) | Analog Computing | In Progress | THAT |
-| [ATtiny2313 LED Clock](#attiny2313-led-clock) | Microcontrollers | In Progress | ATtiny2313 |
-| [MM-8000K Trainer UI](#mm-8000k-intel-8085-trainer-ui) | Retro Computing | In Progress | MM-8000K |
+| [ATtiny2313 LED Clock](#attiny2313-led-clock) | Microcontrollers | Completed | ATtiny2313 |
+| [MM-8000K Trainer UI](#mm-8000k-intel-8085-trainer-ui) | Retro Computing | On Hold | MM-8000K |
 | [Passive Radar SDR](#passive-radar-sdr-system) | RF/SDR | Planning | KrakenSDR/RTL-SDR |
 | [SCPI Instrument Control](#scpi-instrument-control) | Test Automation | Planning | Lab equipment |
+| [Self-Hosted Git Server](#self-hosted-git-server) | DevOps/Infrastructure | Planning | PR4100 NAS |
+| [DevOps Playground Cluster](#devops-playground-cluster) | DevOps/HPC | In Progress | FX-9590, FX-8350 |
 | [Home Automation](#home-automation) | Smart Home | In Progress | Pi 3, Z-Wave |
-| [DIY TrekPak Dividers](#diy-trekpak-dividers) | Workshop | Materials Ready | Foam, pins |
+| [DIY TrekPak Dividers](#diy-trekpak-dividers) | Workshop | Reference | Foam, pins |
 
 ## Projects by Category
 
@@ -57,12 +61,13 @@ Exploring Xilinx Zynq architecture combining ARM Cortex-A9 processors with FPGA 
 ---
 
 #### ATtiny2313 LED Clock
-**Status:** In Progress
+**Status:** Completed
 **Directory:** [attiny2313-clock/](attiny2313-clock/)
 
-LED clock using ATtiny2313 microcontroller. Learning ISP programming, AVR architecture, and timekeeping techniques. New LED screen module ready for soldering, counter code needs tuning for accuracy.
+Functional LED clock using ATtiny2313 microcontroller. Successfully implemented ISP programming, timekeeping firmware, and LED display driving. Future enhancement opportunity: implement CPU sleep modes for improved battery life.
 
 **Equipment:** ATtiny2313, LED display, ISP programmer, KSGER T12 soldering station
+**Outcome:** Working clock with accurate timekeeping
 
 ---
 
@@ -82,13 +87,14 @@ Exploring analog computing fundamentals with Anabrid's "The Analog Thing" (THAT)
 ### Retro Computing
 
 #### MM-8000K Intel 8085 Trainer UI
-**Status:** In Progress
+**Status:** On Hold
 **Directory:** [mm8000-trainer-ui/](mm8000-trainer-ui/)
 
-Modern user interface for the MM-8000K Intel 8085 trainer. Combines physical hardware with software emulation for convenient development and debugging. Features memory viewer, register display, and assembler with syntax highlighting.
+Physical MM-8000K Intel 8085 trainer hardware available and functional. CLI emulator exists on GitHub. UI development not currently planned. Hardware primarily serves as reference for SAP-1 computer project and 8085 architecture experimentation.
 
-**Equipment:** MM-8000K trainer, development workstation
+**Equipment:** MM-8000K trainer (built and working), development workstation
 **Related:** [MM8000 Emulator](https://github.com/mwwhited-archives/MM8000) (.NET Core + ANTLR)
+**Cross-reference:** Used as reference for [SAP-1 Computer](../sap-1-computer/) project
 
 ---
 
@@ -121,6 +127,36 @@ Network control system for SCPI-compatible test equipment with custom .NET Core 
 
 ---
 
+### DevOps & Infrastructure
+
+#### Self-Hosted Git Server
+**Status:** Planning
+**Directory:** [self-hosted-git-server/](self-hosted-git-server/)
+
+Local Git hosting for personal repositories and backup of public projects. Deploying Gitea on WD My Cloud PR4100 for self-hosted development workflow with web UI, issue tracking, and repository mirroring. Focus on data sovereignty and backup redundancy.
+
+**Hardware:** WD My Cloud PR4100 (Docker host, always-on NAS)
+**Platform Options:** Gitea (recommended), bare Git repos, or GitLab CE
+**Use Cases:** Private repo hosting, GitHub backup/mirrors, local development
+
+**Migration strategy:** New repos → migrate private repos → mirror public repos (EmbeddedBakery, BinaryDataDecoders, etc.)
+
+---
+
+#### DevOps Playground Cluster
+**Status:** In Progress
+**Directory:** [devops-playground-cluster/](devops-playground-cluster/)
+
+Multi-node home lab cluster built from Reduced BigRig (FX-9590) and Server (FX-8350) for learning container orchestration, HPC workloads, and DevOps tooling. Experimenting with Docker, Kubernetes (k3s), Slurm, Docker Swarm, Ansible, Terraform, and GitOps workflows.
+
+**Hardware:** Reduced BigRig (FX-9590, 32GB RAM, 2x R9 290), Server (FX-8350, 32GB RAM, 3TB storage)
+**Combined Resources:** 16 CPU cores, 64GB RAM, 3TB+ storage
+**Technologies:** Docker, Kubernetes, Slurm, Ansible, Prometheus/Grafana
+
+**Key learning areas:** Container orchestration, HPC job scheduling, infrastructure as code, monitoring
+
+---
+
 ### Smart Home & IoT
 
 #### Home Automation
@@ -137,21 +173,23 @@ Migrating from HomeSeer HS4 to Home Assistant for home automation. Z-Wave focus 
 ### Workshop Organization
 
 #### DIY TrekPak Dividers
-**Status:** Materials Ready
+**Status:** Reference/As Needed
 **Directory:** [diy-trekpak-dividers/](diy-trekpak-dividers/)
 
-Custom drawer and parts case dividers using corrugated plastic, EVA foam, and hair pins. DIY alternative to Pelican TrekPak system at ~$60-70 vs $80-150+ commercial cost. Works with any drawer/case size.
+Reference documentation and materials inventory for custom drawer dividers. Uses corrugated plastic, EVA foam, and hair pins as DIY alternative to Pelican TrekPak (~$60-70 vs $80-150+ commercial). Materials acquired and available for use when organization projects arise.
 
-**Materials:** Hair pins, EVA foam, felt tape, corrugated plastic
-**Use Cases:** Component storage, tool organization, camera cases
+**Materials:** Hair pins, EVA foam, felt tape, corrugated plastic (on hand)
+**Use Cases:** Component storage, tool organization, camera cases - build as needed
 
 ---
 
 ## Project Status Summary
 
-- **Active Development:** 7 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, ATtiny Clock, MM8000 UI, Home Automation)
-- **Planning/Research:** 2 projects (Passive Radar SDR, SCPI Control)
-- **Materials Ready:** 1 project (TrekPak Dividers)
+- **Completed:** 1 project (ATtiny2313 LED Clock)
+- **Active Development:** 6 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation)
+- **Planning/Research:** 3 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server)
+- **On Hold:** 1 project (MM-8000K Trainer UI - hardware functional, used as reference)
+- **Reference/As Needed:** 1 project (DIY TrekPak Dividers)
 
 ## Cross-References
 
@@ -163,7 +201,7 @@ Custom drawer and parts case dividers using corrugated plastic, EVA foam, and ha
 - [Expansion Boards/](../Expansion%20Boards/) - Arduino shields, Pi HATs
 
 ### Planning & Documentation
-- [project-ideas.md](../project-ideas.md) - Project backlog and future ideas
+- [project-ideas.md](project-ideas.md) - Project backlog and future ideas
 - [workshop-capabilities.md](../workshop-capabilities.md) - Equipment summary and project ideas by difficulty
 - [tools-and-components.md](../tools-and-components.md) - Hand tools, wire, consumables, component stock
 
@@ -194,4 +232,4 @@ projects/
 ---
 
 *Last updated: 2026-01-07*
-*Total projects: 10*
+*Total projects: 12*

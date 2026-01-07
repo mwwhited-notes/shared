@@ -89,7 +89,7 @@ Major documentation reorganization and project structure improvements completed 
 ### Modified
 - `CLAUDE.md` - Updated structure references
 - `tools-and-components.md` - Added Digital Computer Electronics book
-- `project-ideas.md` - Added cross-references to active projects
+- `projects/project-ideas.md` - Added cross-references to active projects
 
 ### Reorganized
 - `Notes/hardware/` - Hardware-related notes (FPGA, digital logic, 3D printing, FPAA)

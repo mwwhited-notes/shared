@@ -9,7 +9,7 @@
 
 ### Documentation
 - [ ] Review and update workshop-capabilities.md with new projects
-- [ ] Consider adding project status tracking to project-ideas.md
+- [ ] Consider adding project status tracking to projects/project-ideas.md
 
 ### Equipment
 - [ ] Continue cataloging remaining equipment purchases

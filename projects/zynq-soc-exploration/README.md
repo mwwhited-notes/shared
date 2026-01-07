@@ -86,7 +86,7 @@ This project explores System-on-Chip (SoC) design using the Xilinx Zynq architec
 - Digilent Arty Z7 reference manual
 - Xilinx Zynq-7000 Technical Reference Manual
 - Vivado and Vitis documentation
-- [project-ideas.md](../../project-ideas.md) - Original project concept
+- [project-ideas.md](../project-ideas.md) - Original project concept
 
 ---
 

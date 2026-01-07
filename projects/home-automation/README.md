@@ -82,7 +82,7 @@
 - [Device Lab/mobile/](../../Device%20Lab/mobile/) - Dashboard tablet inventory
 - [Device Lab/projects/docker-cluster.md](../../Device%20Lab/projects/docker-cluster.md) - Alternative deployment platform
 - [Device Lab/network-storage/](../../Device%20Lab/network-storage/) - NAS/Docker host options
-- [project-ideas.md](../../project-ideas.md) - Original project concept
+- [project-ideas.md](../project-ideas.md) - Original project concept
 
 ---
 

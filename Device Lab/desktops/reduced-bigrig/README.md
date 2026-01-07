@@ -11,7 +11,7 @@
 | Year Built | ~2014-2015 era |
 | Date Acquired | TBD |
 | Condition | Working |
-| Current Use | **Project: [DevOps Playground](../../projects/docker-cluster.md)** |
+| Current Use | **Project: [DevOps Playground](../../../projects/devops-playground-cluster/)** |
 
 ## Specifications
 

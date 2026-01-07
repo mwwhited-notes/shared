@@ -7,7 +7,7 @@ This protocol guides documentation of active projects in the `projects/` directo
 Use this protocol when:
 - Creating documentation for a new project build
 - Documenting an active project that spans multiple sessions
-- Moving a project idea from `project-ideas.md` to active implementation
+- Moving a project idea from `projects/project-ideas.md` to active implementation
 - Creating build logs, parts lists, or progress tracking for a project
 
 ## Directory Structure
@@ -91,7 +91,7 @@ High-level steps:
 
 - [Link to inspiration](url)
 - [Related documentation](path)
-- Cross-reference to project-ideas.md
+- Cross-reference to projects/project-ideas.md
 
 ---
 
@@ -171,13 +171,13 @@ When materials are sourced from existing inventory:
 *Materials documented in [tools-and-components.md](../../tools-and-components.md#section-name)*
 ```
 
-### From project-ideas.md
+### From projects/project-ideas.md
 When moving a project from ideas to active:
 ```markdown
-**Related:** Originally documented in [project-ideas.md](../../project-ideas.md)
+**Related:** Originally documented in [projects/project-ideas.md](../../projects/project-ideas.md)
 ```
 
-Update project-ideas.md status:
+Update projects/project-ideas.md status:
 ```markdown
 * ~~Build DIY TrekPak dividers~~ - **ACTIVE** [see projects/diy-trekpak-dividers/](projects/diy-trekpak-dividers/)
 ```
@@ -204,9 +204,9 @@ Create a project directory when:
 4. **Reference value** - Worth documenting for future similar projects
 5. **Active implementation** - Moving from "idea" to "building"
 
-## When to Keep in project-ideas.md
+## When to Keep in projects/project-ideas.md
 
-Keep in project-ideas.md when:
+Keep in projects/project-ideas.md when:
 1. **Early planning** - Still deciding on approach
 2. **Backlog** - Not currently working on it
 3. **Simple concept** - Can be described in a few bullets

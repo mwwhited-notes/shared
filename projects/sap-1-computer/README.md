@@ -119,11 +119,12 @@ See [memory-controller-notes.md](memory-controller-notes.md) for detailed memory
 - [Ben Eater's 8-bit Computer Playlist](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU) - Video tutorial series
 - [74181 ALU Notes](https://tomnisbet.github.io/nqsap/docs/74181-alu-notes/) - Also see [Notes/hardware/74f181.md](../../Notes/hardware/74f181.md)
 - [SAP-1 Architecture](https://en.wikipedia.org/wiki/Simple-As-Possible_computer) - Wikipedia article
-- [project-ideas.md](../../project-ideas.md) - Original project concept
+- [project-ideas.md](../project-ideas.md) - Original project concept
 
 ## Related Projects
 
 - [FPGA CPU Design](../fpga-cpu-design/) - Different project: custom CPU in SystemVerilog, not SAP-1
+- [MM-8000K Trainer UI](../mm8000-trainer-ui/) - Physical Intel 8085 trainer used as reference for 8-bit architecture
 - See [Notes/hardware/74-181/](../../Notes/hardware/74-181/) for 74181 ALU chip Digital simulator files
 
 ## Cross-References

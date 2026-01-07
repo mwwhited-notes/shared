@@ -54,7 +54,7 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
   - `home-automation/` - Home Assistant migration
 - **network-diagram.md** - Home network topology, IP assignments, VLAN planning, and security notes
 - **tools-and-components.md** - Hand tools, wire, consumables, and component stock
-- **project-ideas.md** - Project backlog and ideas (references detailed docs in `projects/`)
+- **projects/project-ideas.md** - Project backlog and ideas (references detailed docs in `projects/`)
 - **Notes/** - Technical notes organized by topic (see Notes/README.md)
   - `hardware/` - FPGA, digital logic, 3D printer, Field Programmable Analog Array
   - `software/` - AI/ML, dotnet, Kubernetes, DiagramsAndPatterns, App Ideas
@@ -222,7 +222,7 @@ done
 
 ### Main Reference Files
 - `workshop-capabilities.md` - **Main workshop reference** with equipment summary, project ideas, troubleshooting guides
-- `project-ideas.md` - Ongoing project backlog with cross-references to active projects
+- `projects/project-ideas.md` - Ongoing project backlog with cross-references to active projects
 - `links.md` - Curated reference links (AI/ML, dotnet, electronics, retro computing, vintage electronics)
 - `tools-and-components.md` - Hand tools, wire, consumables, component stock, books
 
@@ -235,7 +235,7 @@ done
 - `Device Lab/readme.md` - Computing devices for hacking/tinkering
 
 ### Projects
-- `projects/` - Active project directories with READMEs (see project-ideas.md for complete list)
+- `projects/` - Active project directories with READMEs (see projects/project-ideas.md for complete list)
 - `home-automation/CLAUDE.md` - Home automation project (HomeSeer to Home Assistant migration)
 - `network-diagram.md` - Network topology and IP assignments
 

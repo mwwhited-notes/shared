@@ -109,7 +109,7 @@ Personal vintage computer collection including systems, peripherals, and modern 
 ## Cross-References
 
 - [Programmable Devices/](../Programmable%20Devices/) - FPGA boards for retro core projects
-- [project-ideas.md](../project-ideas.md) - 6502/65C816/TMS9900 soft core projects
+- [projects/project-ideas.md](../projects/project-ideas.md) - 6502/65C816/TMS9900 soft core projects
 - [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) - FPGA retro computing projects
 
 ---
@@ -200,7 +200,7 @@ Brief description of the system and its significance.
 
 - [IIgs ROM Upgrade](../projects/iigs-rom-upgrade/) - FPGA-based ROM replacement
 - Software preservation with Greaseweazle
-- Cross-reference to [project-ideas.md](../../project-ideas.md)
+- Cross-reference to [projects/project-ideas.md](../../projects/project-ideas.md)
 
 ## Cross-References
 
@@ -337,17 +337,17 @@ When documenting tools used with vintage systems:
 - [Greaseweazle V4.1](../../Test%20Equipment/greaseweazle-v41/) - For disk archival
 ```
 
-### To project-ideas.md
+### To projects/project-ideas.md
 Link to planned projects:
 ```markdown
 ## Future Projects
 
-See [project-ideas.md](../../project-ideas.md):
+See [projects/project-ideas.md](../../projects/project-ideas.md):
 - 65C816 soft core (Apple IIgs compatible)
 - TMS9900 soft core (TI-99/4A compatible)
 ```
 
-### From project-ideas.md
+### From projects/project-ideas.md
 Reference vintage hardware:
 ```markdown
 * Build 65C816 soft core → [Apple IIgs](Vintage%20Computers/apple-iigs/)

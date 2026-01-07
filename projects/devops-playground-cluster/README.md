@@ -30,8 +30,8 @@ Multi-node home lab cluster for experimenting with container orchestration, HPC 
 
 | Node | Hardware | Role | Status |
 |------|----------|------|--------|
-| [Reduced BigRig](../desktops/reduced-bigrig/) | FX-9590, 32GB RAM, 2x R9 290 | TBD | Building |
-| [Server](../desktops/server-fx8350/) | FX-8350, 32GB RAM, 3TB storage | TBD | Building |
+| [Reduced BigRig](../../Device%20Lab/desktops/reduced-bigrig/) | FX-9590, 32GB RAM, 2x R9 290 | TBD | Building |
+| [Server](../../Device%20Lab/desktops/server-fx8350/) | FX-8350, 32GB RAM, 3TB storage | TBD | Building |
 
 ### Combined Resources
 
@@ -149,8 +149,14 @@ This is a **learning playground**, not a production environment. The goal is to 
 
 ## Related Projects
 
-- [Home Automation](../../home-automation/) - Home Assistant could run on this cluster
-- [WD My Cloud PR4100](../network-storage/wd-mycloud-pr4100/) - Could provide NFS storage to cluster
+- [Home Automation](../home-automation/) - Home Assistant could run on this cluster
+- [WD My Cloud PR4100](../../Device%20Lab/network-storage/wd-mycloud-pr4100/) - Could provide NFS storage to cluster
+
+## Equipment Used
+
+- [Reduced BigRig](../../Device%20Lab/desktops/reduced-bigrig/) - FX-9590, 32GB RAM, 2x R9 290 GPUs
+- [Server FX-8350](../../Device%20Lab/desktops/server-fx8350/) - FX-8350, 32GB RAM, 3TB storage
+- [WD My Cloud PR4100](../../Device%20Lab/network-storage/wd-mycloud-pr4100/) - Optional NFS storage backend
 
 ## Notes
 
@@ -164,4 +170,5 @@ This is a **learning playground**, not a production environment. The goal is to 
 | Date | Update |
 |------|--------|
 | 2025-01 | Project documented in Device Lab |
+| 2026-01-07 | Moved to main projects/ directory for better visibility |
 

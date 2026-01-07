@@ -158,7 +158,7 @@ Utility scripts for various platforms and tools.
 
 - **[workshop-capabilities.md](workshop-capabilities.md)** - What can I build/fix? Project ideas by difficulty
 - **[links.md](links.md)** - Curated reference links (AI/ML, .NET, electronics, retro computing)
-- **[project-ideas.md](project-ideas.md)** - Ongoing project list
+- **[projects/project-ideas.md](projects/project-ideas.md)** - Ongoing project list
 
 ---
 

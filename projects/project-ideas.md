@@ -1,19 +1,8 @@
 # Project Ideas
 
-Personal project backlog with notes on progress and equipment.
+Project backlog for future development. Once a project has its own directory in `projects/`, it's removed from this file.
 
----
-
-## Active / In Progress
-
-* **FPGA CPU Design** - Designing my own CPU/computer (and learn system verilog) [I have most of the ALU and a text graphics engine from a few years ago. Use Arty A7-100.] → [projects/fpga-cpu-design/](projects/fpga-cpu-design/)
-* **ATtiny2313 Clock** - Build out that clock (attiny2313) [the new LED screen showed up so I can solder it up now and I need to tweak the counter to see if I can get it to keep time better.] This project was mostly about building something semiuseful with an ATTiny and learning how to built out the ISP (In-circuit Serial Programmer) interface → [projects/attiny2313-clock/](projects/attiny2313-clock/)
-* **SCPI Instrument Control** - Play around with SCPI (standard commands for programmable instruments) to control the test equipment on my bench and probably write my own VISA driver for .Net Core (might also build a RS-232/ethernet gateway or USB them into a raspberry pi/beagle bone black) [have HP 34401A, Rigol DM3058E, Rigol DG1022, Korad supplies] → [projects/scpi-instrument-control/](projects/scpi-instrument-control/)
-* **Analog Computer Experiments** - Build out an analog computer/integrator (opamps for math because why not) [Have Anabrid THAT now!] → [projects/analog-computer-experiments/](projects/analog-computer-experiments/)
-* **MM-8000K Trainer UI** - Build out a UI for an Intel 8085 trainer [MM-8000K hardware + MM8000 emulator on GitHub] → [projects/mm8000-trainer-ui/](projects/mm8000-trainer-ui/)
-* **Zynq SoC Exploration** - Play around with SoC (system on a chip) based on the Xilinx Zynq Z7 [Have Arty Z7-20] → [projects/zynq-soc-exploration/](projects/zynq-soc-exploration/)
-* **DevOps Playground Cluster** - Building multi-node home lab from Reduced BigRig (FX-9590) + Server (FX-8350) for learning Docker, Kubernetes, Slurm, and other DevOps/development tools → [Device Lab/projects/docker-cluster.md](Device%20Lab/projects/docker-cluster.md)
-* **Home Automation Migration** - Migrating from HomeSeer to Home Assistant, repurposing Galaxy Tab4 Nook as dashboard → [projects/home-automation/](projects/home-automation/)
+**See also:** [Projects Index (README.md)](README.md) - Active projects organized by category
 
 ---
 
@@ -59,10 +48,6 @@ Personal project backlog with notes on progress and equipment.
 * hybrid analog-digital system [THAT + STM32 interface]
 * control system modeling [PID loops, feedback systems]
 
-### Workshop Organization
-
-* **DIY TrekPak-Style Dividers** - Custom drawer and case dividers using corrugated plastic panels, U-shaped hair pins (as locking pins), EVA foam, and felt tape. DIY alternative to [Pelican TrekPak](https://www.pelican.com/us/en/discover/trekpak). → [projects/diy-trekpak-dividers/](projects/diy-trekpak-dividers/)
-
 ### Learning & Exploration
 
 * play around more with diode logic (working though this in combination with trying to reverse engineer programming some old PAL chips helped me understand how "high voltage" programmers work as well as ROM, SRAM, and more about combinational logic)
@@ -73,9 +58,8 @@ Personal project backlog with notes on progress and equipment.
 
 ### DevOps & Infrastructure
 
-*Using DevOps Playground cluster (Reduced BigRig + Server FX machines) and PR4100 NAS.*
+*Using DevOps Playground cluster (Reduced BigRig + Server FX machines) and PR4100 NAS. See [devops-playground-cluster/](devops-playground-cluster/) and [self-hosted-git-server/](self-hosted-git-server/).*
 
-* **Self-hosted Git Server** - Options: (1) bare git repos on PR4100 SMB/NFS share, or (2) Gitea/Gogs/GitLab Docker container on PR4100. Container approach adds web UI, issue tracking, CI integration. [PR4100 has Docker support, Intel N3710 CPU]
 * k3s Kubernetes cluster deployment [lightweight K8s for home lab]
 * Docker Swarm multi-node setup [built-in orchestration]
 * Slurm HPC workload manager [job scheduling, batch processing]
@@ -89,15 +73,12 @@ Personal project backlog with notes on progress and equipment.
 
 ### Home Automation
 
-*Using home-automation project, Device Lab tablets, and cluster.*
+*Using home-automation project, Device Lab tablets, and cluster. See [home-automation/](home-automation/).*
 
-* Home Assistant deployment on cluster or dedicated Pi
-* Z-Wave device migration from HomeSeer [have Z-Net bridge, Z-Stick]
-* Galaxy Tab4 Nook LineageOS flash + dashboard setup
-* Fire HD Google Play + kiosk setup [secondary display]
 * Multi-protocol hub (Z-Wave + Zigbee + Matter)
-* Self-hosted remote access via VPN or Tailscale [no cloud]
 * Local voice control without cloud services
+* Advanced automation scenes and rules
+* Energy monitoring and optimization
 
 ### Mobile Device Repurposing
 
@@ -123,7 +104,7 @@ Recent inventory additions that enable new project categories:
 | XBee modules + XBIB-U-DEV | Mesh networking, remote sensors |
 | Gigatron TTL | TTL computing, expansion modules |
 | D2-1 Line Follower | Robot enhancement, sensor fusion |
-| **DevOps Playground Cluster** | Docker, Kubernetes, Slurm, CI/CD, monitoring |
+| DevOps Playground Cluster | Docker, Kubernetes, Slurm, CI/CD, monitoring |
 | PowerSpec G474 (160GB RAM) | Heavy development, VMs, photo editing |
 | WD My Cloud PR4100 | NAS services, Docker host, media server |
 | Galaxy Tab4 Nook | Home automation dashboard, kiosk display |
@@ -134,27 +115,19 @@ Recent inventory additions that enable new project categories:
 
 ## Cross-References
 
-### Project Directories
+### Active Projects
 
-- [projects/](projects/) - Active project documentation
-  - [fpga-cpu-design/](projects/fpga-cpu-design/) - Custom CPU in SystemVerilog
-  - [attiny2313-clock/](projects/attiny2313-clock/) - ATtiny LED clock
-  - [scpi-instrument-control/](projects/scpi-instrument-control/) - Test equipment automation
-  - [analog-computer-experiments/](projects/analog-computer-experiments/) - Anabrid THAT projects
-  - [mm8000-trainer-ui/](projects/mm8000-trainer-ui/) - Intel 8085 trainer interface
-  - [zynq-soc-exploration/](projects/zynq-soc-exploration/) - Zynq ARM+FPGA SoC
-  - [diy-trekpak-dividers/](projects/diy-trekpak-dividers/) - Workshop organization
-  - [home-automation/](projects/home-automation/) - Home Assistant migration
-
-### Device Lab Projects
-
-- [Device Lab/](Device%20Lab/) - Full computing device inventory
-- [Device Lab/projects/docker-cluster.md](Device%20Lab/projects/docker-cluster.md) - DevOps Playground cluster
+**All active projects have been moved to their own directories.**
+See [Projects Index (README.md)](README.md) for the complete list of 12 active projects.
 
 ### Equipment & Capabilities
 
-- [workshop-capabilities.md](workshop-capabilities.md) - Full equipment summary
+- [workshop-capabilities.md](../workshop-capabilities.md) - Full equipment summary and capabilities
+- [Programmable Devices/](../Programmable%20Devices/) - FPGA, MCU, dev board inventory
+- [Test Equipment/](../Test%20Equipment/) - Lab equipment inventory
+- [Device Lab/](../Device%20Lab/) - Computing devices for hacking/tinkering
+- [Vintage Computers/](../Vintage%20Computers/) - Retro computing hardware
 
 ---
 
-*Last updated: January 2026*
+*Last updated: 2026-01-07*

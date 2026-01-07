@@ -1,6 +1,6 @@
 # Project Review Protocol
 
-Standard operating procedure for reviewing the repository inventory and updating `project-ideas.md` and `workshop-capabilities.md` to reflect current capabilities.
+Standard operating procedure for reviewing the repository inventory and updating `projects/project-ideas.md` and `workshop-capabilities.md` to reflect current capabilities.
 
 ---
 
@@ -11,7 +11,7 @@ Standard operating procedure for reviewing the repository inventory and updating
 3. [Inventory Review Checklist](#inventory-review-checklist)
 4. [Cross-Reference Procedures](#cross-reference-procedures)
 5. [Updating workshop-capabilities.md](#updating-workshop-capabilitiesmd)
-6. [Updating project-ideas.md](#updating-project-ideasmd)
+6. [Updating projects/project-ideas.md](#updating-project-ideasmd)
 7. [Project Idea Generation](#project-idea-generation)
 8. [Verification Steps](#verification-steps)
 9. [Maintenance Schedule](#maintenance-schedule)
@@ -20,7 +20,7 @@ Standard operating procedure for reviewing the repository inventory and updating
 
 ## Overview
 
-This protocol ensures that `project-ideas.md` and `workshop-capabilities.md` accurately reflect the current inventory and capabilities documented in:
+This protocol ensures that `projects/project-ideas.md` and `workshop-capabilities.md` accurately reflect the current inventory and capabilities documented in:
 
 - `Programmable Devices/` - FPGAs, MCUs, development boards
 - `Expansion Boards/` - Shields, HATs, capes, add-on modules
@@ -34,7 +34,7 @@ This protocol ensures that `project-ideas.md` and `workshop-capabilities.md` acc
 | File | Purpose |
 |------|---------|
 | `workshop-capabilities.md` | Equipment summary, project ideas by difficulty/category, troubleshooting guides, wishlist |
-| `project-ideas.md` | Personal project backlog with status notes |
+| `projects/project-ideas.md` | Personal project backlog with status notes |
 | `links.md` | Reference links organized by topic |
 
 ### Design Principles
@@ -142,7 +142,7 @@ This protocol ensures that `project-ideas.md` and `workshop-capabilities.md` acc
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│  SUGGEST: New project ideas for project-ideas.md                │
+│  SUGGEST: New project ideas for projects/project-ideas.md                │
 │  - Projects specifically using the new equipment                │
 │  - Projects combining new equipment with existing               │
 └─────────────────────────────────────────────────────────────────┘
@@ -318,7 +318,7 @@ Always update the footer:
 
 ---
 
-## Updating project-ideas.md
+## Updating projects/project-ideas.md
 
 ### Format Guidelines
 
@@ -450,7 +450,7 @@ done
 Use these prompts to trigger a review:
 
 **Full Review:**
-> "Review the project inventory and update workshop-capabilities.md and project-ideas.md"
+> "Review the project inventory and update workshop-capabilities.md and projects/project-ideas.md"
 
 **Quick Sync:**
 > "I just added [equipment] to [category], sync the project files"
@@ -469,7 +469,7 @@ Use these prompts to trigger a review:
 |------|------|
 | This protocol | `.claude/protocols/PROJECT_REVIEW_PROTOCOL.md` |
 | Workshop capabilities | `workshop-capabilities.md` |
-| Project ideas | `project-ideas.md` |
+| Project ideas | `projects/project-ideas.md` |
 | Reference links | `links.md` |
 | Programmable Devices index | `Programmable Devices/readme.md` |
 | Expansion Boards index | `Expansion Boards/readme.md` |

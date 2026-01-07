@@ -70,7 +70,7 @@ See [AnalogComputers/analog-computing-repository/](../../AnalogComputers/analog-
 
 - Anabrid THAT documentation and tutorials
 - [AnalogComputers/analog-computing-repository/](../../AnalogComputers/analog-computing-repository/) - 232 PDFs, 660MB research collection
-- [project-ideas.md](../../project-ideas.md) - Original project concept
+- [project-ideas.md](../project-ideas.md) - Original project concept
 
 ---
 

@@ -44,7 +44,7 @@ The CPU will be implemented on the Digilent Arty A7-100 FPGA development board.
 ## References
 
 - Existing ALU and graphics engine code (to be migrated)
-- [project-ideas.md](../../project-ideas.md) - Original project concept
+- [project-ideas.md](../project-ideas.md) - Original project concept
 
 ---
 

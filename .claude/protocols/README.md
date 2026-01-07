@@ -114,7 +114,7 @@ Supporting Items (tools-and-components.md)
 ### Project Relationships
 
 ```
-project-ideas.md (backlog)
+projects/project-ideas.md (backlog)
     ↓
 projects/ (active implementation)
     ↓
