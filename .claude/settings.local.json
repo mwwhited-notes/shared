@@ -50,7 +50,8 @@
       "Bash(test:*)",
       "Bash(cat:*)",
       "WebFetch(domain:www.adafruit.com)",
-      "WebFetch(domain:learn.adafruit.com)"
+      "WebFetch(domain:learn.adafruit.com)",
+      "Bash(awk:*)"
     ]
   }
 }
