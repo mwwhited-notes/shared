@@ -43,6 +43,7 @@ EXEC embedding.SearchSimilar
 | Document | Description |
 |----------|-------------|
 | **[Architecture & Design Patterns](docs/architecture.md)** | System architecture, design patterns, integration strategies, performance tuning |
+| **[ONNX Embeddings - Pure .NET](docs/onnx-embeddings.md)** | In-process embedding generation using ONNX Runtime (no Python) |
 | **[Data Flows](docs/data-flows.md)** | LSH indexing and search flows with PlantUML diagrams |
 | **[Message Flows](docs/message-flows.md)** | Service Broker async processing for embedding generation |
 
