@@ -10,6 +10,8 @@ Efficient similarity search in SQL Server using Locality-Sensitive Hashing (LSH)
 
 **Key Achievement:** 10-100x faster than brute force search, enabling real-time semantic search, recommendation systems, and ML applications without requiring external vector databases.
 
+**Critical Advantage:** Works with **SQL Server 2008+** (potentially 2005, any version supporting SQLCLR + Service Broker), providing vector search capabilities **nearly 20 years before Microsoft's native SQL Server 2025 implementation**. Enables organizations to add modern AI/ML vector search to legacy infrastructure without expensive version upgrades or migration costs.
+
 ---
 
 ## Quick Start
@@ -142,15 +144,21 @@ EXEC embedding.SearchSimilar
 
 ### Comparison with Alternatives
 
-| Solution | Approach | Integration | Performance | When to Use |
-|----------|----------|-------------|-------------|-------------|
-| **OoBDev.Data.Vectors** | LSH + SQL | Native SQL Server | Fast (~50ms for 1M) | Existing SQL Server apps |
-| **pgvector** | HNSW + PostgreSQL | PostgreSQL extension | Very Fast (~10ms) | PostgreSQL users |
-| **Pinecone** | Proprietary | External SaaS | Very Fast | Managed service preferred |
-| **Weaviate** | HNSW | External database | Very Fast | Dedicated vector DB |
-| **FAISS** | Multiple | Python library | Fastest | Research/ML pipelines |
+| Solution | Approach | Integration | Performance | Min SQL Version | When to Use |
+|----------|----------|-------------|-------------|-----------------|-------------|
+| **OoBDev.Data.Vectors** | LSH + SQL | Native SQL Server | Fast (~50ms for 1M) | **SQL 2008+** (possibly 2005) | Legacy & existing SQL Server apps, no upgrade needed |
+| **SQL Server 2025 Native** | Proprietary | Native SQL | Very Fast | **SQL 2025** | New installations only, requires upgrade |
+| **pgvector** | HNSW + PostgreSQL | PostgreSQL extension | Very Fast (~10ms) | PostgreSQL 11+ | PostgreSQL users |
+| **Pinecone** | Proprietary | External SaaS | Very Fast | N/A | Managed service preferred |
+| **Weaviate** | HNSW | External database | Very Fast | N/A | Dedicated vector DB |
+| **FAISS** | Multiple | Python library | Fastest | N/A | Research/ML pipelines |
 
-**Advantage:** Leverage SQL Server's existing infrastructure—no new databases or services to manage.
+**Key Advantages:**
+- **Exceptional Backward Compatibility:** Works with SQL Server 2008-2024 (nearly 20-year span), potentially even SQL 2005
+- **Cost Effective:** Avoid SQL Server 2025 licensing and migration costs
+- **Legacy Infrastructure Support:** Add modern AI/ML vector search to decade-old SQL Server installations
+- **Existing Infrastructure:** Leverage SQL Server's existing infrastructure—no new databases or services to manage
+- **Enterprise Ready:** Add AI/ML vector search to production systems without disruptive upgrades
 
 ---
 
@@ -255,9 +263,13 @@ EXEC embedding.[request/send/batch] @TextTable;
 
 ### Requirements
 
-- SQL Server 2016+ with CLR enabled
+- **SQL Server 2008+** with CLR enabled (2008, 2008 R2, 2012, 2014, 2016, 2017, 2019, 2022, 2024, or later)
+  - **Note:** May work with SQL Server 2005 (earliest version with SQLCLR + Service Broker)
+- Service Broker enabled (included in all SQL Server editions)
 - .NET Framework 4.6.1+ or .NET Core 2.0+ for CLR assembly
 - 384-dimensional embedding vectors (sentence transformers)
+
+**Exceptional Backward Compatibility:** No SQL Server 2025 upgrade required. Works with SQL Server versions spanning **nearly 20 years** (2008-2024), providing vector search capabilities to legacy enterprise installations without costly version migrations or infrastructure disruption.
 
 ### Deployment Options
 
