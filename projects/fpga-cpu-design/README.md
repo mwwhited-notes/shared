@@ -27,12 +27,31 @@ The CPU will be implemented on the Digilent Arty A7-100 FPGA development board.
 ## Equipment Used
 
 - [Digilent Arty A7-100](../../Programmable%20Devices/digilent-arty-a7-100/) - FPGA development board (XC7A100T)
+  - Artix-7 XC7A100T FPGA (15,850 slices, 4,860 Kbit Block RAM, 240 DSP slices)
+  - 256MB DDR3L, 16MB Quad-SPI Flash
+  - 4 Pmod connectors, Arduino/ChipKit shield connector
 - [AMD/Xilinx Vivado](../../Programmable%20Devices/digilent-arty-a7-100/README.md#development-tools) - FPGA synthesis and implementation
+- [Test Equipment/](../../Test%20Equipment/) - Logic analyzer for debugging
+
+## Code Repository
+
+**Repository:** [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)
+
+**Location:** FPGA projects and SystemVerilog designs
+
+**Repository Analysis:** [.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md](../../../.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md)
+- 28 FPGA projects identified
+- 484 Arduino sketches
+- 6,586 total files
+- Target platforms: Arty A7-100, Arty Z7-20, Cyclone II, and others
 
 ## Related Projects
 
-- [Intel 8085 Trainer UI](#) - CPU design learning complements trainer UI work
-- See [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) repository for previous FPGA work
+- [SAP-1 Computer](../sap-1-computer/) - Breadboard 8-bit computer (learning progression: TTL breadboard → FPGA)
+- [Zynq SoC Exploration](../zynq-soc-exploration/) - ARM+FPGA SoC on Arty Z7-20
+- [MM-8000K Trainer UI](../mm8000-trainer-ui/) - Intel 8085 architecture reference
+  - Repository: [MM8000](https://github.com/mwwhited-archives/MM8000) (Archived)
+  - Analysis: [.claude/analysis/MM8000/7fbbdec-2026-01-08.md](../../../.claude/analysis/MM8000/7fbbdec-2026-01-08.md)
 
 ## Learning Goals
 

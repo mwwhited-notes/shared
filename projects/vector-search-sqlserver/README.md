@@ -93,9 +93,16 @@ Fast Approximate Nearest-Neighbor Search
 
 **Repository:** [OutOfBandDevelopment/dotex](https://github.com/OutOfBandDevelopment/dotex)
 
-**Location:** `/src/Extensions/OoBDev.Data.Vectors`
+**Location:** `/src/Extensions/OoBDev.Data.Vectors.DB`
+
+**Key Implementation Files:**
+- **SQL Stored Procedures:** `src/Extensions/OoBDev.Data.Vectors.DB/Programmability/Stored Procedures/EmbeddingStorageHashesBuild.sql`
+- **.NET Sentence Transformer:** `src/ExternalServices/AllMiniLML6v2Sharp/` (ONNX-based, pure .NET)
 
 **Package:** Part of the dotex .NET extensions framework
+
+**Repository Analysis:**
+- dotex framework: [.claude/analysis/dotex/687bd7d-2025-08-01.md](../../../.claude/analysis/dotex/687bd7d-2025-08-01.md) (109 projects, .NET 9.0)
 
 ### Key Components
 

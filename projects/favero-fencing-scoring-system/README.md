@@ -241,7 +241,10 @@ while True:
 
 - [Radex One Protocol Reverse Engineering](../radex-one-protocol-reverse-engineering/) - Similar serial protocol work
 - [DeviceBridge](https://github.com/mwwhited/DeviceBridge) - USB/serial device communication
+  - Repository Analysis: [.claude/analysis/DeviceBridge/a9bc076-2025-08-01.md](../../../.claude/analysis/DeviceBridge/a9bc076-2025-08-01.md) (IEEE-1284, SCPI, protocol engineering)
 - [BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders) - Protocol parsing library
+  - Repository Analysis: [.claude/analysis/BinaryDataDecoders/faac1171-2025-02-14.md](../../../.claude/analysis/BinaryDataDecoders/faac1171-2025-02-14.md) (796K+ downloads, 65 projects)
+- [SCPI Instrument Control](../scpi-instrument-control/) - Serial communication patterns
 
 ## Documentation
 

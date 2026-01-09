@@ -31,11 +31,13 @@ Create a new `containers` repository to consolidate all Docker-related assets:
 - Container management scripts and utilities
 - Complete documentation and catalogs
 
-## Proposed Repository
+## Repository
 
-**Name:** containers (or docker-containers)
-**Organization:** OutOfBandDevelopment or mwwhited
-**URL:** https://github.com/[org]/containers.git (to be created)
+**Name:** containers
+**Organization:** OutOfBandDevelopment
+**URL:** https://github.com/OutOfBandDevelopment/containers
+**Submodule Location:** `code/public/containers`
+**Status:** ✅ Created 2026-01-08 - Phase 1 (Infrastructure) Complete
 **Purpose:** Centralized Docker container definitions, compose files, and containerization utilities
 
 ## Repository Structure
@@ -189,19 +191,20 @@ See `.claude/protocols/DOCKER_CONTAINERS_COLLECTION_PROTOCOL.md` for complete wo
 
 ## Current Status
 
-**Phase**: Inventory Complete - Ready for Repository Creation
+**Phase**: Phase 1 Complete - Ready for Phase 2 (Asset Migration)
 
 - [x] Create collection protocol
 - [x] Initial Docker asset scan
 - [x] Document project in shared notes
 - [x] Identify privacy concerns (PRIVATE vs PUBLIC)
 - [x] **Complete asset inventory with details**
-  - Public: 3+ Dockerfiles, multiple compose files
-  - Private: Documented in `../../private/docker-assets/` (requires sanitization)
-- [ ] Create GitHub repository
-- [ ] Set up repository structure
-- [ ] Begin migrating PUBLIC assets
-- [ ] Review PRIVATE assets for publication (especially ContainerStore)
+  - **Public:** 9 Dockerfiles, 49 Docker Compose files, 11 .dockerignore files
+  - **Private:** Documented in `../../private/docker-assets/` (requires sanitization)
+- [x] **Create GitHub repository** ✅ https://github.com/OutOfBandDevelopment/containers
+- [x] **Set up repository structure** ✅ Documentation framework created
+- [ ] **Phase 2: Asset Inventory Review** - Prioritize migration candidates
+- [ ] **Phase 3: Public Asset Migration** - Migrate RunScripts, CQRS-Examples, learning projects
+- [ ] **Phase 4: Private Asset Sanitization** - Review ContainerStore (19 AI/ML services with GPU support)
 
 ## Immediate Next Steps
 
@@ -257,9 +260,21 @@ See `.claude/protocols/DOCKER_CONTAINERS_COLLECTION_PROTOCOL.md` for complete wo
 
 ## References
 
+### Documentation
 - [Docker Documentation](https://docs.docker.com/)
 - [Docker Compose Best Practices](https://docs.docker.com/compose/production/)
+
+### Source Repositories & Analysis
 - [RunScripts Repository](https://github.com/OutOfBandDevelopment/RunScripts)
+  - Analysis: [.claude/analysis/RunScripts/4077d61-2025-10-23.md](../../../.claude/analysis/RunScripts/4077d61-2025-10-23.md) (56 Docker wrapper tools)
+- [CQRS-Examples Repository](https://github.com/mwwhited/CQRS-Examples)
+  - Analysis: [.claude/analysis/CQRS-Examples/2c61d6b-2023-06-04.md](../../../.claude/analysis/CQRS-Examples/2c61d6b-2023-06-04.md) (Multi-service CQRS architecture)
+- [YearOfCode2024 Repository](https://github.com/mwwhited-archives/YearOfCode2024) 🔒 Archived
+  - Analysis: [.claude/analysis/YearOfCode2024/a83c39f-2025-02-14.md](../../../.claude/analysis/YearOfCode2024/a83c39f-2025-02-14.md) (Hybrid search with Qdrant, OpenSearch, Neo4j)
+
+### Related Infrastructure Projects
+- [dotex Consolidation](../dotex-consolidation/) - .NET library consolidation
+- [Self-Hosted Git Server](../self-hosted-git-server/) - Gitea deployment on PR4100 using Docker
 
 ---
 

@@ -303,8 +303,11 @@ ushort threshold = BitConverter.ToUInt16(response, 15);
 ## Related Projects
 
 - [DeviceBridge](https://github.com/mwwhited/DeviceBridge) - USB device communication framework (could be used for Radex One integration)
+  - Repository Analysis: [.claude/analysis/DeviceBridge/a9bc076-2025-08-01.md](../../../.claude/analysis/DeviceBridge/a9bc076-2025-08-01.md) (IEEE-1284, SCPI, protocol engineering)
 - [BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders) - .NET encoding/decoding library (protocol parsing)
+  - Repository Analysis: [.claude/analysis/BinaryDataDecoders/faac1171-2025-02-14.md](../../../.claude/analysis/BinaryDataDecoders/faac1171-2025-02-14.md) (796K+ downloads, 65 projects)
 - [Home Automation](../home-automation/) - Could integrate radiation monitoring
+- [Favero Fencing System](../favero-fencing-scoring-system/) - Similar serial protocol reverse-engineering work
 
 ## Equipment Used
 

@@ -194,11 +194,18 @@ services:
 
 **Repositories to backup:**
 - [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)
+  - Analysis: [.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md](../../../.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md) (6,586 files, 28 FPGA projects)
 - [BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders)
+  - Analysis: [.claude/analysis/BinaryDataDecoders/faac1171-2025-02-14.md](../../../.claude/analysis/BinaryDataDecoders/faac1171-2025-02-14.md) (796K+ downloads, 65 projects)
 - [DeviceBridge](https://github.com/mwwhited/DeviceBridge)
-- [MM8000](https://github.com/mwwhited-archives/MM8000)
-- OutOfBandDevelopment repositories
-- Other public projects
+  - Analysis: [.claude/analysis/DeviceBridge/a9bc076-2025-08-01.md](../../../.claude/analysis/DeviceBridge/a9bc076-2025-08-01.md) (protocol engineering)
+- [MM8000](https://github.com/mwwhited-archives/MM8000) 🔒 Archived
+  - Analysis: [.claude/analysis/MM8000/7fbbdec-2026-01-08.md](../../../.claude/analysis/MM8000/7fbbdec-2026-01-08.md) (Intel 8085 emulator)
+- [dotex](https://github.com/OutOfBandDevelopment/dotex)
+  - Analysis: [.claude/analysis/dotex/687bd7d-2025-08-01.md](../../../.claude/analysis/dotex/687bd7d-2025-08-01.md) (109 projects, .NET 9.0)
+- [RunScripts](https://github.com/OutOfBandDevelopment/RunScripts)
+  - Analysis: [.claude/analysis/RunScripts/4077d61-2025-10-23.md](../../../.claude/analysis/RunScripts/4077d61-2025-10-23.md) (56 Docker tools)
+- Other public projects (see inventory.md)
 
 **Mirror setup:**
 ```bash
@@ -319,8 +326,11 @@ Host gitea
 
 ## Related Projects
 
-- [DevOps Playground Cluster](../devops-playground-cluster/) - Can provide CI/CD integration
-- [Home Automation](../home-automation/) - Could use Gitea for configuration management
+- [DevOps Playground Cluster](../devops-playground-cluster/) - CI/CD integration, container registry
+- [SBC Cluster](../sbc-cluster/) - Alternative ARM deployment platform
+- [Home Automation](../home-automation/) - Configuration management with Git
+- [Docker Containers Collection](../containers-collection/) - Container definitions for Gitea deployment
+- [dotex Consolidation](../dotex-consolidation/) - Infrastructure project benefiting from self-hosted Git
 
 ## Resources & References
 

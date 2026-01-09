@@ -159,10 +159,26 @@ dotex/
 
 ## References
 
+### Target Framework
 - [dotex Repository](https://github.com/OutOfBandDevelopment/dotex)
+- Analysis: [.claude/analysis/dotex/687bd7d-2025-08-01.md](../../../.claude/analysis/dotex/687bd7d-2025-08-01.md)
+  - 109 .NET projects
+  - .NET 9.0 target framework
+  - Categories: Build, Data, Decoders, AI, Messaging, Testing, IO, Web, Documents, Hosting
+
+### Migration Candidates
 - [BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders) - 796K+ downloads
+  - Analysis: [.claude/analysis/BinaryDataDecoders/faac1171-2025-02-14.md](../../../.claude/analysis/BinaryDataDecoders/faac1171-2025-02-14.md)
+  - 65 .NET projects, 342 C# files
+  - Target: `dotex.Decoders.*`
 - [BuildFirstOnce](https://github.com/OutOfBandDevelopment/BuildFirstOnce)
+  - Analysis: [.claude/analysis/BuildFirstOnce/619fa7c-2025-02-14.md](../../../.claude/analysis/BuildFirstOnce/619fa7c-2025-02-14.md)
+  - MSBuild orchestration tool
+  - Target: `dotex.Build.FirstOnce`
 - [oobtainium](https://github.com/OutOfBandDevelopment/oobtainium)
+  - Analysis: [.claude/analysis/oobtainium/7869582-2025-02-14.md](../../../.claude/analysis/oobtainium/7869582-2025-02-14.md)
+  - Mocking framework
+  - Target: `dotex.Testing.Mocking`
 
 ---
 

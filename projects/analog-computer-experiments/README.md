@@ -59,6 +59,20 @@ See [AnalogComputers/analog-computing-repository/](../../AnalogComputers/analog-
 - Vintage analog computer manuals (EAI, Heathkit, Comdyna)
 - Aerospace simulation papers
 
+## Code Repository
+
+**Hybrid Computing Code:** [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)
+
+**Repository Analysis:** [.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md](../../../.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md)
+- STM32 projects for hybrid computing
+- 484 Arduino sketches (including analog interface work)
+
+## Related Projects
+
+- [Zynq SoC Exploration](../zynq-soc-exploration/) - Zynq ARM+FPGA for hybrid analog-digital systems
+- [SCPI Instrument Control](../scpi-instrument-control/) - Automated measurement for analog computer outputs
+- [Passive Radar SDR](../passive-radar-sdr/) - Analog signal processing concepts
+
 ## Learning Goals
 
 - Understand analog computing principles (integrators, summers, function generation)

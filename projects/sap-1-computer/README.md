@@ -124,7 +124,13 @@ See [memory-controller-notes.md](memory-controller-notes.md) for detailed memory
 ## Related Projects
 
 - [FPGA CPU Design](../fpga-cpu-design/) - Different project: custom CPU in SystemVerilog, not SAP-1
+  - Progression: Breadboard SAP-1 → FPGA implementation
+  - Repository: [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) (28 FPGA projects, Arty A7-100)
+  - Analysis: [.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md](../../../.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md) (6,586 files, Arduino + FPGA)
 - [MM-8000K Trainer UI](../mm8000-trainer-ui/) - Physical Intel 8085 trainer used as reference for 8-bit architecture
+  - Repository: [MM8000](https://github.com/mwwhited-archives/MM8000) (Archived - .NET Core emulator + ANTLR assembler)
+  - Analysis: [.claude/analysis/MM8000/7fbbdec-2026-01-08.md](../../../.claude/analysis/MM8000/7fbbdec-2026-01-08.md) (CLI + ANTLR-based assembler)
+- [DRL/DTL Logic Boards](../drl-dtl-logic-boards/) - Understanding TTL internals before building with TTL chips
 - See [Notes/hardware/74-181/](../../Notes/hardware/74-181/) for 74181 ALU chip Digital simulator files
 
 ## Cross-References

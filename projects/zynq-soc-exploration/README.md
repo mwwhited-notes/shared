@@ -76,10 +76,22 @@ This project explores System-on-Chip (SoC) design using the Xilinx Zynq architec
 - Design hardware accelerators for compute-intensive tasks
 - Practice co-design (partitioning between software and hardware)
 
+## Code Repository
+
+**Repository:** [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)
+
+**Analysis:** [.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md](../../../.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md)
+- 28 FPGA projects (includes Arty Z7-20 work)
+- 6,586 files total
+- Platforms: Arty A7-100, Arty Z7-20, Cyclone II, PAL/GAL
+
 ## Related Projects
 
-- [FPGA CPU Design](../fpga-cpu-design/) - Soft-core CPU experience applies to Zynq PL
-- [SCPI Instrument Control](../scpi-instrument-control/) - Zynq could serve as instrument controller
+- [FPGA CPU Design](../fpga-cpu-design/) - Soft-core CPU experience applies to Zynq PL (custom CPU → SoC integration)
+  - Learning progression: Custom FPGA CPU → Commercial SoC (Zynq)
+- [SCPI Instrument Control](../scpi-instrument-control/) - Zynq could serve as high-performance instrument controller
+- [SAP-1 Computer](../sap-1-computer/) - Architecture fundamentals (breadboard → FPGA → SoC)
+- [Analog Computer Experiments](../analog-computer-experiments/) - Hybrid analog-digital using Zynq + THAT
 
 ## References
 

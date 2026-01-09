@@ -60,7 +60,7 @@
 - Z-Wave USB Z-Stick - Direct USB Z-Wave controller
 - Z-Net bridge - Ethernet-based Z-Wave adapter (HomeSeer)
 - [WD My Cloud PR4100](../../Device%20Lab/network-storage/) - Docker host option for Home Assistant
-- [DevOps Playground Cluster](../../Device%20Lab/projects/docker-cluster.md) - Alternative deployment platform
+- [DevOps Playground Cluster](../devops-playground-cluster/) - Alternative deployment platform
 
 ## Next Steps
 1. Find and identify Z-Wave USB stick model
@@ -80,8 +80,11 @@
 ## Cross-References
 
 - [Device Lab/mobile/](../../Device%20Lab/mobile/) - Dashboard tablet inventory
-- [Device Lab/projects/docker-cluster.md](../../Device%20Lab/projects/docker-cluster.md) - Alternative deployment platform
+- [DevOps Playground Cluster](../devops-playground-cluster/) - Alternative deployment platform
 - [Device Lab/network-storage/](../../Device%20Lab/network-storage/) - NAS/Docker host options
+- [SBC Cluster](../sbc-cluster/) - ARM-based cluster alternative for always-on services
+- [Self-Hosted Git Server](../self-hosted-git-server/) - Related infrastructure project on PR4100
+- [Radex One Protocol](../radex-one-protocol-reverse-engineering/) - Potential sensor integration
 - [project-ideas.md](../project-ideas.md) - Original project concept
 
 ---
