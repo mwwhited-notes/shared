@@ -17,6 +17,8 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | Schlage Rekey Kit | 50 master/bottom/top pins + springs (Summit) | 1 | 2022-03-02 | $68.75 |
 | Magnetic Grabber Tool | 4-claw with LED (Housolution) | 1 | 2024-03-06 | $12.99 |
 | Wire Wrap Tool | 3-in-1 AWG 30 strip/wrap/unwrap (Taidda) | 1 | 2023-03-26 | $21.97 |
+| PCB Ruler | Adafruit v2 6" with component measurements (PID 1554) | 1 | 2026-01-09 | $4.95 |
+| Spudger | Double-sided prying tool (Adafruit PID 3434) | 1 | 2026-01-09 | $5.50 |
 | Precision Chip Lifter | Wiha 26810, 5.7" for IC removal | 1 | 2022-12-30 | $9.88 |
 | Micro Crimping Tool | IWISS AWG28-20 for JST/Molex/Tyco | 1 | 2022-12-30 | $19.99 |
 | Step Drill Bit Set | Titanium coated HSS (Aleric, 3pcs) | 1 | 2023-03-02 | $7.49 |
@@ -78,6 +80,9 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | USB 3.0 Extension Cable | 3.3ft + 6.6ft, 2-pack (NIMASO) | 2 | 2021-03-17 | $9.99 |
 | Mini USB Extension Cable | 0.3m right angle screw mount (Kework) | 1 | 2023-01-04 | $7.99 |
 | HDMI to Mini HDMI Cable | 12ft, 4K@60Hz (Lingnan) | 1 | 2024-01-19 | $11.99 |
+| Premium Jumper Wires F/M | 40x 6" extension (Adafruit PID 826) | 2 | 2026-01-09 | $7.90 |
+| Premium Jumper Wires M/M | 40x 6" (Adafruit PID 758) | 2 | 2026-01-09 | $7.90 |
+| Premium Jumper Wires F/F | 40x 6" (Adafruit PID 266) | 2 | 2026-01-09 | $7.90 |
 
 ---
 
@@ -109,6 +114,7 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 |------|-------------|-------|-----------|-------|
 | CR1220 Batteries | 3V lithium coin cell, 40mAh | 5 | 2025-12-14 | $5.97 |
 | PS3 Controller Batteries | LIP1359 1800mAh replacement (Batmax, 3-pack) | 3 | 2023-09-15 | $15.99 |
+| LiPo Battery | 3.7v 1200mAh JST 2-PH connector (Adafruit PID 258) | 1 | 2026-01-09 | $9.95 |
 | 9V Alkaline Batteries | Amazon Basics, 5-year shelf life | 8 | 2024-03-06 | $12.58 |
 | AA NiMH Batteries | 2000mAh flat top w/tabs (Tenergy, 4-pack) | 4 | 2023-03-26 | $9.99 |
 | CMOS/Memory Backup Batteries | 2.4V 80mAh Ni-MH button cell w/tabs (HQRP, 2-pack) | 2 | 2021-03-25 | $13.95 |
@@ -168,9 +174,11 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | 40-Pin Male Headers | Long centered breakaway 2.54mm (DIKAVS) | 10 | 2022-12-30 | $8.99 |
 | 40-Pin Male Headers | Single row breakaway 2.54mm (Gikfun, 10pcs) | 10 | 2021-03-15 | $7.99 |
 | Stackable Shield Headers | 6/8/10/double row + 3-pin kit (Hilitchi) | 110 | 2022-12-30 | $9.79 |
+| BeagleBone Cape Stacking Headers | 2x23 pin 2.54mm for BeagleBone capes (Adafruit PID 706) | 3 | 2026-01-09 | $14.85 |
 | 40-Pin Female Headers RA | Right angle 2.54mm (Dahszhi) | 20 | 2022-12-19 | $9.99 |
 | Copper Strip Perfboard | 73x100mm, 957 holes (YUNGUI) | 10 | 2024-03-12 | $7.98 |
 | Copper Strip Perfboard | 6"x3.5" (Tulead, 10-pack) | 10 | 2021-04-01 | $10.59 |
+| Perma-Proto Breadboard PCB | Adafruit half-sized single (PID 1609) | 1 | 2026-01-09 | $0.00 |
 | RJ11 6P6C Breakout Board | With pin header (whiteeeen) | 10 | 2024-03-12 | $16.99 |
 | SMD to DIP Adapter Kit | QLOUNI 40pcs TQFP/SOP/SSOP/TSSOP | 40 | 2021-04-01 | $10.99 |
 | SOP28 to DIP28 Adapter | Lead-free converter | 1 | 2021-04-01 | $6.69 |
@@ -184,6 +192,7 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | CD74HC4067 Multiplexer | 16-ch analog/digital breakout (Ximimark) | 5 | 2021-12-30 | $7.99 |
 | TXS0108E Level Shifter | 8-ch bidirectional 3.3V-5V (Songhe, 4-pack) | 4 | 2021-02-01 | $6.31 |
 | Bluetooth BLE Module | DSD TECH SH-HC-08 BT 4.0 UART (iOS compatible) | 1 | 2021-01-11 | $7.99 |
+| Bluetooth 4.0 USB Module | v2.1 back-compatible (Adafruit PID 1327) | 1 | 2026-01-09 | $10.95 |
 | Data Logger Shield | DS1307 RTC + SD card for Arduino (AITRIP, 3-pack) | 3 | 2023-03-14 | $10.99 |
 | DIP IC Sockets | 6/8/14/16/18/24/28/40-pin assortment (Raogoodcx) | 110 | 2023-03-03 | $9.99 |
 | ZIF IC Sockets | 40-pin 2.54mm universal test socket (jiuwu) | 5 | 2022-06-16 | $7.99 |
@@ -233,6 +242,8 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | Momentary Push Buttons | 16mm 3A 250V AC, 6 colors (lkelyonewy, 24pcs) | 24 | 2022-12-30 | $11.49 |
 | 4x4 Membrane Keypad | 16 keys matrix, Arduino compatible (DIYmalls) | 1 | 2022-12-30 | $8.99 |
 | 3x4 Membrane Keypad | 12 keys matrix, MCU compatible (ASHATA) | 1 | 2022-12-30 | $6.23 |
+| IR Receiver Sensor | TSOP38238 38kHz (Adafruit PID 157) | 2 | 2026-01-09 | $3.90 |
+| Mini Remote Control | 21-button IR (Adafruit PID 389) | 1 | 2026-01-09 | $4.95 |
 | Spade Wire Connectors | AWG22-10 insulated quick disconnect kit (DZS Elec) | 60 | 2022-12-30 | $8.95 |
 | AC Plug | Non-polarized 15A 125V straight blade, black (Legrand) | 1 | 2022-11-13 | $2.39 |
 | Component to HDMI Converter | Portta YPbPr + R/L audio to HDMI | 1 | 2024-10-17 | $19.99 |
@@ -369,6 +380,7 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | Photodiodes | 3mm clear flat head (uxcell) | 20 | 2025-01-12 | $6.59 |
 | LEDs | 5mm orange diffused | 100 | 2025-01-12 | $5.99 |
 | LEDs | 5mm purple clear | 100 | 2025-01-12 | $5.55 |
+| IR LEDs | 5mm super-bright 940nm (Adafruit PID 387) | 4 | 2026-01-09 | $3.00 |
 | LEDs | 5mm blue diffused | 100 | 2025-01-12 | $6.50 |
 | LEDs | 5mm RGB common cathode 4-pin (OWOFYDR) | 100 | 2023-01-05 | $7.99 |
 | 7-Segment Display | White 0.56" clock display (Adafruit ADA1001) | 1 | 2023-01-03 | $7.24 |
@@ -438,6 +450,7 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 | EVA Foam Roll | 3mm thick red 78.7x11.8" self-adhesive (BENECREAT) | 1 | 2021-11-08 | $14.89 |
 | EVA Foam Roll | 3mm thick 78.7x11.8" self-adhesive (BENECREAT) | 1 | 2023-01-05 | $15.79 |
 | Felt Tape | Self-adhesive 1.96x14.7ft (Pllieay) | 1 | 2021-11-08 | $7.99 |
+| Radial Ball Bearings | 608ZZ 8x22x7mm, set of 4 (Adafruit PID 1178) | 2 | 2026-01-09 | $13.90 |
 | Corrugated Plastic Panels | TBD | TBD | | |
 
 ---

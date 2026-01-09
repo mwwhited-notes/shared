@@ -7,11 +7,14 @@ Open-source FPGA-based video overlay device for real-time video processing and m
 | Field | Value |
 |-------|-------|
 | Manufacturer | bunnie (Andrew "bunnie" Huang) / Chumby |
-| Model | NeTV |
+| Model | NeTV Starter Pack |
+| Product ID | Adafruit PID 609 |
 | Type | FPGA Video Processor |
-| FPGA | Xilinx Spartan-6 LX45 |
+| FPGA | Xilinx Spartan-6 XC6SLX9 |
 | Year | ~2012 |
-| Status | TBD |
+| Date Acquired | 2026-01 |
+| Price | $150.00 |
+| Status | No longer stocked (Adafruit) |
 | Open Source | Yes |
 
 ## Overview
@@ -26,31 +29,36 @@ NeTV is an open-hardware FPGA-based device that sits between a video source (cab
 
 | Component | Specification |
 |-----------|--------------|
-| **FPGA** | Xilinx Spartan-6 LX45 |
-| **Logic Cells** | ~43,000 |
-| **Block RAM** | 2,088 Kb |
-| **DSP Slices** | 58 |
-| **I/O** | Up to 358 user I/O pins |
+| **FPGA** | Xilinx Spartan-6 XC6SLX9 |
+| **Logic Cells** | 9,152 |
+| **Block RAM** | 576 Kb |
+| **DSP Slices** | 16 |
+| **I/O** | User-accessible |
 
 ### Video Capabilities
 
 | Feature | Details |
 |---------|---------|
-| **Input** | HDMI 1.3 (up to 1080p) |
-| **Output** | HDMI 1.3 (up to 1080p) |
-| **Processing** | Real-time video overlay, alpha blending |
-| **Latency** | Low-latency passthrough |
+| **Input** | HDMI 1.3 |
+| **Output** | HDMI 1.3 |
+| **Resolutions** | 480p, 576p, 720p, 1080p/24, 1080i/60 |
+| **Pixel Clock** | Up to 95MHz |
+| **Processing** | Chroma-key overlay, alpha blending |
+| **HDCP** | Supports overlay on encrypted feeds |
 | **Color Depth** | 24-bit color |
 
 ### System
 
 | Component | Specification |
 |-----------|--------------|
-| **CPU** | ARM (embedded in system) |
-| **OS** | Linux (embedded) |
-| **Storage** | SD card |
-| **Network** | Ethernet |
-| **Power** | 12V DC |
+| **CPU** | 800 MHz Marvell PXA168 (ARMv5TE) |
+| **Cache** | 32kB/32kB L1, 128kB L2 |
+| **RAM** | 128 MB DDR2 DRAM |
+| **OS** | Angstrom-derived Linux |
+| **Storage** | 1 GB microSD card (included) |
+| **Network** | 802.11b/g WiFi |
+| **Power** | MicroUSB (5V) |
+| **Dimensions** | 94mm x 57mm |
 
 ## Features
 
@@ -101,12 +109,15 @@ HDMI Input → HDMI Decoder → FPGA Processing → HDMI Encoder → HDMI Output
 - Licensed under open-source hardware license
 
 **Components:**
-- Xilinx Spartan-6 FPGA (video processing)
+- Xilinx Spartan-6 XC6SLX9 FPGA (video processing)
 - HDMI transceivers (input/output)
-- ARM CPU (control system)
-- DDR2 memory (frame buffering)
-- Ethernet PHY
-- SD card slot
+- Marvell PXA168 ARM CPU (control system)
+- 128 MB DDR2 memory (frame buffering)
+- 802.11b/g WiFi
+- MicroSD card slot
+- IR receiver and extender port
+- Status LEDs (blue and green)
+- Injection-molded plastic enclosure
 
 ## Software & Gateware
 
@@ -222,18 +233,29 @@ http://10.0.88.1/bridge?cmd=seturl&value=http://www.abc.com
 http://10.0.88.1/bridge?cmd=seturl&value=http://10.0.88.4:5000
 ```
 
+## Kit Contents
+
+- NeTV board (ARM + FPGA)
+- Injection-molded plastic enclosure with rubber anti-slip bottom
+- 1 GB microSD card with Angstrom Linux pre-installed
+- HDMI cables
+- Power supply / USB cable
+- Documentation links
+
 ## Comparison to Other FPGA Boards
 
-| Feature | NeTV | Arty A7 | DE10-Nano |
-|---------|------|---------|-----------|
+| Feature | NeTV Starter Pack | Arty A7 | DE10-Nano |
+|---------|-------------------|---------|-----------|
 | **Primary Use** | Video overlay | General FPGA dev | SoC development |
-| **FPGA** | Spartan-6 LX45 | Artix-7 100T | Cyclone V |
+| **FPGA** | Spartan-6 XC6SLX9 | Artix-7 100T | Cyclone V |
+| **Logic Cells** | 9,152 | 101,440 | 110,000 |
 | **Video I/O** | HDMI in/out | None (add-on) | None (add-on) |
-| **CPU** | ARM (embedded) | None | ARM Cortex-A9 |
+| **CPU** | ARM PXA168 800MHz | None | ARM Cortex-A9 |
 | **OS** | Linux | None | Linux |
 | **Application** | Specialized | General purpose | SoC development |
+| **Price** | $150 (discontinued) | ~$129 | ~$150 |
 
-**NeTV Advantage:** Ready-made video processing platform with HDMI built-in.
+**NeTV Advantage:** Ready-made video processing platform with HDMI built-in, complete kit with enclosure.
 
 ## Related Projects
 

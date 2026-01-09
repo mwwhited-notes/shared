@@ -16,7 +16,7 @@ Each device has its own directory with detailed specifications and locally archi
 |-------|-----------|-------------|-----|-----------|
 | [Digilent Arty A7-100](digilent-arty-a7-100/) | Artix-7 XC7A100T | 101,440 | 4,860 Kb | `digilent-arty-a7-100/` |
 | [Altera EP2C5 Mini](altera-ep2c5-mini/) | Cyclone II EP2C5T144 | 4,608 | 119 Kb | `altera-ep2c5-mini/` |
-| [NeTV FPGA Video Overlay](netv-fpga/) | Spartan-6 LX45 | ~43,000 | 2,088 Kb | `netv-fpga/` |
+| [NeTV Starter Pack](netv-fpga/) | Spartan-6 XC6SLX9 | 9,152 | 576 Kb | `netv-fpga/` |
 
 ### SoC Development Boards
 

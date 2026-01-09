@@ -48,7 +48,9 @@
       "Bash(do echo $f)",
       "WebFetch(domain:pcpartpicker.com)",
       "Bash(test:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "WebFetch(domain:www.adafruit.com)",
+      "WebFetch(domain:learn.adafruit.com)"
     ]
   }
 }

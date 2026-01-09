@@ -506,6 +506,46 @@ See `.claude/protocols/ONLINE_SHOPPING_PROTOCOL.md` for documentation standards.
 
 ---
 
+## Direct Retailer Orders
+
+### Adafruit Industries
+
+- **Platform:** Direct (adafruit.com)
+- **Store URL:** https://www.adafruit.com/
+- **Purchases:**
+  - Order #338900-2656789359 (2026-01-09):
+    - 3x Proto Cape Kit for BeagleBone (PID 572) @ $9.95 = $29.85
+    - 3x Stacking Header Set for BeagleBone Capes (PID 706) @ $4.95 = $14.85
+    - Subtotal: $44.70, Shipping (USPS First Class): $5.01, Total: $49.71
+    - Tracking: 9400110200881894711127
+  - Order #709237-9701185555 (2026-01-09):
+    - 1x PowerBoost 500 Shield (PID 2078) @ $19.95
+    - 1x LiPo Battery 3.7v 1200mAh (PID 258) @ $9.95
+    - 1x Bluetooth 4.0 USB Module (PID 1327) @ $10.95
+    - 2x Premium Female/Male Jumper Wires (PID 826) @ $3.95 = $7.90
+    - 2x Premium Male/Male Jumper Wires (PID 758) @ $3.95 = $7.90
+    - 2x Premium Female/Female Jumper Wires (PID 266) @ $3.95 = $7.90
+    - 2x IR Receiver Sensor TSOP38238 (PID 157) @ $1.95 = $3.90
+    - 4x IR LED 940nm (PID 387) @ $0.75 = $3.00
+    - 1x Mini Remote Control (PID 389) @ $4.95
+    - 2x Radial Ball Bearing 608ZZ (PID 1178) @ $6.95 = $13.90
+    - Subtotal: $90.30, Shipping (UPS Ground): $12.37, Total: $102.67
+    - Tracking: 1Z71EY050398584623
+  - Order #1670453-3877726898 (2026-01-09):
+    - 1x PCB Ruler v2 6" (PID 1554) @ $4.95
+    - 1x Spudger Double Sided (PID 3434) @ $5.50
+    - 1x NeTV Starter Pack (PID 609) @ $150.00
+    - 1x Perma-Proto Half-sized Breadboard PCB (PID 1609) @ $0.00 (free)
+    - Subtotal: $160.45, Shipping (UPS Ground): $13.31, Total: $173.76
+    - Tracking: 1Z71EY050393867292
+- **Total Spent:** $326.14 (across 3 orders)
+- **Photo Accuracy:** Not yet received
+- **Packaging Quality:** Not yet received
+- **Would Buy Again:** Yes (based on reputation)
+- **Notes:** Well-known maker electronics supplier with excellent documentation and tutorials. Quality products with good community support.
+
+---
+
 ## Blacklist
 
 Sellers to avoid.

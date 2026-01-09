@@ -51,6 +51,12 @@ Each expansion board has its own directory with detailed specifications and loca
 *KEYESTUDIO 10-pack double-sided PCB prototype shields for Arduino Mega 2560. Purchased 2022-12-30 for $16.66.*
 *ElectroCookie 9-pack prototyping shields for Arduino Uno R3 (3 different types). Purchased 2021-04-01 for $14.99.*
 
+### Arduino Shields - Power Management
+
+| Shield | Function | Main IC | Interface | Qty | Directory |
+|--------|----------|---------|-----------|-----|-----------|
+| [Adafruit PowerBoost 500](arduino-adafruit-powerboost-500-shield/) | Rechargeable 5V LiPo power | TPS61090 | Power only | 1 | `arduino-adafruit-powerboost-500-shield/` |
+
 ### Arduino Shields - Programming & Development
 
 | Shield | Function | Main IC | Interface | Qty | Directory |
@@ -66,9 +72,9 @@ Each expansion board has its own directory with detailed specifications and loca
 
 ### BeagleBone Capes
 
-| Cape | Function | Interface | Compatible Models | Directory |
-|------|----------|-----------|-------------------|-----------|
-| *None yet* | | | | |
+| Cape | Function | Interface | Compatible Models | Qty | Directory |
+|------|----------|-----------|-------------------|-----|-----------|
+| [Adafruit Proto Cape](bbb-adafruit-proto-cape/) | Solderable prototyping PCB | All pins | BeagleBone, BBB | 3 | `bbb-adafruit-proto-cape/` |
 
 ### ESP32/ESP8266 Shields
 
@@ -124,10 +130,14 @@ Each expansion board has its own directory with detailed specifications and loca
 - [Evil Mad Science ISP Shield](arduino-evil-mad-science-isp-shield/) - AVR ISP programmer
 
 ### Power
+- [Adafruit PowerBoost 500](arduino-adafruit-powerboost-500-shield/) - Rechargeable LiPo battery power (limited 500mA)
 - [Raspberry Pi PoE HAT](rpi-poe-hat-2018/) - 802.3af Power over Ethernet
 
 ### Platform Adapters
 - [ARPI600](rpi-arpi600/) - Arduino shields on Raspberry Pi (3.3V only!)
+
+### Prototyping Capes
+- [Adafruit Proto Cape](bbb-adafruit-proto-cape/) - Solderable prototyping PCB for BeagleBone
 
 ---
 
@@ -154,10 +164,14 @@ Each expansion board has its own directory with detailed specifications and loca
 ├── arduino-osepp-lcd-keypad-shield/             # Display/UI
 ├── arduino-multi-function-shield/
 │
+├── arduino-adafruit-powerboost-500-shield/      # Power
+│
 ├── arduino-evil-mad-science-isp-shield/         # Programming
 │
 ├── rpi-poe-hat-2018/                            # Raspberry Pi
-└── rpi-arpi600/
+├── rpi-arpi600/
+│
+└── bbb-adafruit-proto-cape/                     # BeagleBone
 ```
 
 ---
@@ -228,7 +242,10 @@ Each expansion board has its own directory with detailed specifications and loca
 | Pmod ENC | Pmod | $6.99 | Digilent | - |
 | Pmod VGA | Pmod | $8.99 | Amazon (Digilent) | 2020-12-25 |
 | Multi-Function Shield | Arduino | $6.99 | Amazon | 2020-12-25 |
-| **Documented Total** | | **$113.88** | | |
+| Proto Cape Kit (×3) | BeagleBone | $29.85 | Adafruit | 2026-01-09 |
+| Cape Stacking Headers (×3) | BeagleBone | $14.85 | Adafruit | 2026-01-09 |
+| PowerBoost 500 Shield | Arduino | $19.95 | Adafruit | 2026-01-09 |
+| **Documented Total** | | **$178.53** | | |
 
 ### Undocumented Equipment
 
