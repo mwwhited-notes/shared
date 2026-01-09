@@ -86,8 +86,10 @@ EXEC embedding.SearchSimilar
 |-----------|------|-------------|
 | **SQL Database Project** | [OoBDev.Data.Vectors.DB](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/Extensions/OoBDev.Data.Vectors.DB) | Tables, stored procedures, Service Broker |
 | **CLR Vector Operations** | [OoBDev.Data.Vectors](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/Extensions/OoBDev.Data.Vectors) | Vector math, distance metrics, aggregates |
+| **ONNX Embeddings (Framework)** | [OoBDev.SBert.AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/SBert/OoBDev.SBert.AllMiniLML6v2Sharp) | Embedding provider with DI support |
+| **ONNX Embeddings (Core)** | [AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp) | Pure .NET ONNX sentence transformer (submodule) |
+| **ONNX Model** | [model/](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/SBert/OoBDev.SBert.AllMiniLML6v2Sharp/model) | Pre-trained all-MiniLM-L6-v2 ONNX model (submodule) |
 | **Example Scripts** | [ExampleScripts/](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/Extensions/OoBDev.Data.Vectors/ExampleScripts) | Working SQL examples |
-| **Sentence Transformer** | [AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp) | Pure .NET ONNX sentence embeddings |
 
 **Commit:** [687bd7d](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d) (2025-08-01)
 

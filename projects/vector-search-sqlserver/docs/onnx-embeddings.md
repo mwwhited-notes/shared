@@ -8,8 +8,26 @@ Pure .NET implementation of the all-MiniLM-L6-v2 sentence transformer using ONNX
 
 **Key Innovation:** No Python dependencies - runs entirely in .NET, enabling in-process embedding generation within your API or application.
 
+---
+
+## Package Information
+
 **Source Repository:** [OutOfBandDevelopment/dotex](https://github.com/OutOfBandDevelopment/dotex)
-**Component Path:** [src/ExternalServices/AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp)
+
+**Framework Integration:** [OoBDev.SBert.AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/SBert/OoBDev.SBert.AllMiniLML6v2Sharp)
+- Provides `IEmbeddingProvider` implementation for dotex framework
+- Dependency injection support
+- Configuration/options pattern
+
+**Core Library:** [AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp) (submodule)
+- ONNX Runtime inference
+- BERT tokenization
+- Mean pooling and L2 normalization
+
+**ONNX Model:** [model submodule](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/SBert/OoBDev.SBert.AllMiniLML6v2Sharp/model)
+- HuggingFace: [onnx-models/all-MiniLM-L6-v2-onnx](https://huggingface.co/onnx-models/all-MiniLM-L6-v2-onnx)
+- Included as Git submodule in dotex
+
 **Commit:** [687bd7d](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d) (2025-08-01)
 
 ---
@@ -146,7 +164,9 @@ VL --> VOCAB
 @enduml
 ```
 
-**Source Code:** [AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp)
+**Source Code:**
+- **Framework Wrapper:** [OoBDev.SBert.AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/SBert/OoBDev.SBert.AllMiniLML6v2Sharp) (dotex)
+- **Core Library:** [AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp) (standalone repository)
 
 ---
 
@@ -194,7 +214,7 @@ stop
 @enduml
 ```
 
-**Source:** [BertTokenizer.cs](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/Tokenizer/BertTokenizer.cs)
+**Source:** [BertTokenizer.cs](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/blob/main/AllMiniLmL6V2Sharp/Tokenizer/BertTokenizer.cs)
 
 **Key Classes:**
 - `BertTokenizer` - Main tokenization coordinator
@@ -241,7 +261,7 @@ using IDisposableReadOnlyCollection<OrtValue> output =
 - Input: Token IDs (max 512 tokens)
 - Output: Token embeddings [batch, tokens, 384]
 
-**Source:** [AllMiniLmL6V2Embedder.cs](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/AllMiniLmL6V2Embedder.cs)
+**Source:** [AllMiniLmL6V2Embedder.cs](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/blob/main/AllMiniLmL6V2Sharp/AllMiniLmL6V2Embedder.cs)
 
 ### 3. Mean Pooling with Attention Mask
 
@@ -333,7 +353,7 @@ private static DenseTensor<float> SingleMeanPooling(
 }
 ```
 
-**Source:** [AllMiniLmL6V2Embedder.cs:80-85](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/AllMiniLmL6V2Embedder.cs)
+**Source:** [AllMiniLmL6V2Embedder.cs:80-85](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/blob/main/AllMiniLmL6V2Sharp/AllMiniLmL6V2Embedder.cs)
 
 ### 4. L2 Normalization
 
@@ -382,7 +402,7 @@ private static float Norm(DenseTensor<float> input, int p, int dim, int flatInde
 
 **Result:** Vector with magnitude 1.0, enabling cosine similarity via dot product.
 
-**Source:** [OnnxExtensions.cs:178-202](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/OnnxExtensions.cs)
+**Source:** [OnnxExtensions.cs:178-202](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/blob/main/AllMiniLmL6V2Sharp/OnnxExtensions.cs)
 
 ---
 
@@ -392,13 +412,13 @@ The implementation includes custom tensor operations (not available in ONNX Runt
 
 | Operation | Purpose | Source |
 |-----------|---------|--------|
-| **Unsqueeze** | Add dimension for broadcasting | [OnnxExtensions.cs:7-19](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
-| **Expand** | Broadcast tensor to new shape | [OnnxExtensions.cs:21-68](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
-| **ElementWiseMultiply** | Multiply tensors element-by-element | [OnnxExtensions.cs:70-80](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
-| **Sum** | Sum along dimension(s) | [OnnxExtensions.cs:82-138](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
-| **Clamp** | Constrain values to range | [OnnxExtensions.cs:154-164](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
-| **ElementWiseDivide** | Divide tensors element-by-element | [OnnxExtensions.cs:166-176](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
-| **Normalize** | L2 normalization | [OnnxExtensions.cs:178-216](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
+| **Unsqueeze** | Add dimension for broadcasting | [OnnxExtensions.cs:7-19](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/blob/main/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
+| **Expand** | Broadcast tensor to new shape | [OnnxExtensions.cs:21-68](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/blob/main/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
+| **ElementWiseMultiply** | Multiply tensors element-by-element | [OnnxExtensions.cs:70-80](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/blob/main/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
+| **Sum** | Sum along dimension(s) | [OnnxExtensions.cs:82-138](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/blob/main/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
+| **Clamp** | Constrain values to range | [OnnxExtensions.cs:154-164](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/blob/main/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
+| **ElementWiseDivide** | Divide tensors element-by-element | [OnnxExtensions.cs:166-176](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/blob/main/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
+| **Normalize** | L2 normalization | [OnnxExtensions.cs:178-216](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/blob/main/AllMiniLmL6V2Sharp/OnnxExtensions.cs) |
 
 **Why Custom?** ONNX Runtime focuses on inference, not post-processing. These operations implement the same algorithms as PyTorch/TensorFlow for sentence-transformers compatibility.
 
@@ -508,7 +528,40 @@ public class DocumentService
 
 ### Dependency Injection Setup
 
+**Option 1: Using dotex Framework Integration (Recommended):**
+
 ```csharp
+using OoBDev.SBert.AllMiniLML6v2Sharp;
+
+// Program.cs or Startup.cs
+services.TryAddAllMiniLmL6V2Services(configuration);
+
+// Provides:
+// - IEmbeddingProvider implementation
+// - IEmbedder (CachedAllMiniLmL6V2Embedder)
+// - Configuration via AllMiniLmL6V2EmbeddingOptions
+
+services.AddScoped<IVectorRepository, SqlServerVectorRepository>();
+services.AddScoped<DocumentService>();
+```
+
+**Configuration (appsettings.json):**
+
+```json
+{
+  "AllMiniLmL6V2EmbeddingOptions": {
+    "ModelPath": "./model/model.onnx",
+    "VocabPath": "./model/vocab.txt",
+    "Truncate": true
+  }
+}
+```
+
+**Option 2: Direct IEmbedder Setup:**
+
+```csharp
+using AllMiniLmL6V2Sharp;
+
 // Startup.cs or Program.cs
 services.AddSingleton<IEmbedder>(sp =>
 {
@@ -668,23 +721,26 @@ model/
 
 ### Obtaining Model Files
 
-**Option 1: Use test resources from dotex repository:**
+**Option 1: Use model submodule from dotex (Recommended):**
 
 ```bash
-# Clone dotex repository
-git clone https://github.com/OutOfBandDevelopment/dotex.git
+# Clone dotex repository with submodules
+git clone --recursive https://github.com/OutOfBandDevelopment/dotex.git
 cd dotex
 
 # Model files located at:
-# src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp.Tests/Resources/
+# src/ExternalServices/SBert/OoBDev.SBert.AllMiniLML6v2Sharp/model/
+# - model.onnx (ONNX model file)
+# - vocab.txt (BERT vocabulary)
 ```
 
+**Model Submodule:** [OoBDev.SBert.AllMiniLML6v2Sharp/model](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/SBert/OoBDev.SBert.AllMiniLML6v2Sharp/model)
+- **HuggingFace Source:** [onnx-models/all-MiniLM-L6-v2-onnx](https://huggingface.co/onnx-models/all-MiniLM-L6-v2-onnx)
+- Included as Git submodule for reproducible builds
+
+**Option 2: Use test resources (for testing/development):**
+
 **Test Resources:** [AllMiniLmL6V2Sharp.Tests/Resources](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp.Tests/Resources)
-
-**Option 2: Download from Hugging Face:**
-
-- **Model:** [sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
-- **vocab.txt:** Standard BERT uncased vocabulary (30,522 tokens)
 
 **Option 3: Export from sentence-transformers (Python):**
 
@@ -714,7 +770,7 @@ torch.onnx.export(
 
 ### Unit Tests
 
-**Source:** [AllMiniLmL6V2Sharp.Tests](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp.Tests)
+**Source:** [AllMiniLmL6V2Sharp.Tests](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/tree/main/AllMiniLmL6V2Sharp.Tests)
 
 ```csharp
 [Fact]
@@ -761,15 +817,20 @@ public void GenerateEmbedding_SimilarTextHasHighSimilarity()
 
 ## External References
 
-**Source Code:**
-- [AllMiniLML6v2Sharp Implementation](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp)
-- [ONNX Extensions](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/OnnxExtensions.cs)
-- [BERT Tokenizer](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/AllMiniLML6v2Sharp/AllMiniLmL6V2Sharp/Tokenizer)
+**dotex Framework Integration:**
+- [OoBDev.SBert.AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/SBert/OoBDev.SBert.AllMiniLML6v2Sharp) - Framework wrapper
+- [Service Collection Extensions](https://github.com/OutOfBandDevelopment/dotex/blob/687bd7d/src/ExternalServices/SBert/OoBDev.SBert.AllMiniLML6v2Sharp/ServiceCollectionExtensions.cs) - DI setup
+- [ONNX Model Submodule](https://github.com/OutOfBandDevelopment/dotex/tree/687bd7d/src/ExternalServices/SBert/OoBDev.SBert.AllMiniLML6v2Sharp/model) - Pre-trained model
+
+**Core Library:**
+- [AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp) - Standalone library (Git submodule)
+- [ONNX Extensions](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/blob/main/AllMiniLmL6V2Sharp/OnnxExtensions.cs) - Custom tensor operations
+- [BERT Tokenizer](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp/tree/main/AllMiniLmL6V2Sharp/Tokenizer) - Tokenization implementation
 
 **Related Technologies:**
 - [ONNX Runtime](https://onnxruntime.ai/) - Microsoft ML inference engine
 - [sentence-transformers](https://www.sbert.net/) - Original Python implementation
-- [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) - Pre-trained model
+- [onnx-models/all-MiniLM-L6-v2-onnx](https://huggingface.co/onnx-models/all-MiniLM-L6-v2-onnx) - Pre-trained ONNX model (HuggingFace)
 
 **Research Papers:**
 - [Sentence-BERT](https://arxiv.org/abs/1908.10084) - Sentence embeddings using siamese BERT networks
