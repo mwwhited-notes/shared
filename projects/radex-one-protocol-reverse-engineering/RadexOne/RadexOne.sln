@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadexOne", "RadexOne.csproj", "{0F7AE3DB-6916-7422-B96A-AF294F4FD723}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F7AE3DB-6916-7422-B96A-AF294F4FD723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7AE3DB-6916-7422-B96A-AF294F4FD723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7AE3DB-6916-7422-B96A-AF294F4FD723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7AE3DB-6916-7422-B96A-AF294F4FD723}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A28FAC14-2874-4F62-9281-7334946E2BA3}
+	EndGlobalSection
+EndGlobal

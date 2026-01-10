@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = RadexOne
+build_property.ProjectDir = C:\repo\notes\shared\projects\radex-one-protocol-reverse-engineering\RadexOne\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 
