@@ -1,5 +1,7 @@
 # TODO
 
+> **Session Reminder:** Check at least once per session if new projects have been added externally to `projects/` directory or `projects/project-ideas.md` to ensure awareness of external updates.
+
 ## Active Tasks
 
 ### Order Processing

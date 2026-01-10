@@ -90,6 +90,10 @@ Project backlog for future development. Once a project has its own directory in 
 * iPhone 2G jailbreak + retro iOS exploration
 * Tablet-based security camera / baby monitor
 
+### Software Architecture & APIs
+
+* **SSO/Authentication Translation Proxy** - ASP.NET Core proxy service to translate between different authentication schemes (JWT, OAuth2, API keys, header keys, client certificates). Review JWT/OAuth2 key exchange protocols and build APIController + HttpClient-based gateway that can convert inbound auth to appropriate outbound auth based on known service contracts. [.NET Core, identity protocols, reverse proxy patterns]
+
 ---
 
 ## Equipment Enabling New Projects
