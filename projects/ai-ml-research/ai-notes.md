@@ -96,13 +96,6 @@
 [.NET
 clients - OpenSearch Documentation](https://opensearch.org/docs/latest/clients/dot-net/)
 
-**From:** Matt Whited [[matt@whited.us](mailto:matt@whited.us)](%5Bmatt@whited.us%5D(mailto:matt@whited.us))
-
-**Sent:** Sunday, March 3, 2024 4:30 PM
-
-**To:** Matt Whited [[matt.whited@lightwellinc.com](mailto:matt.whited@lightwellinc.com)](%5Bmatt.whited@lightwellinc.com%5D(mailto:matt.whited@lightwellinc.com));
-Matt Whited [[matt@whited.us](mailto:matt@whited.us)](%5Bmatt@whited.us%5D(mailto:matt@whited.us))
-
 **Subject:**
 
 [Data Version Control · DVC](https://dvc.org/)
