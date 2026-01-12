@@ -62,13 +62,13 @@ Project backlog for future development. Once a project has its own directory in 
 
 * k3s Kubernetes cluster deployment [lightweight K8s for home lab]
 * Docker Swarm multi-node setup [built-in orchestration]
-* Slurm HPC workload manager [job scheduling, batch processing]
+* Slurm HPC workload manager [job scheduling, batch processing, GPU resource management, container integration (Singularity), fair share/QOS policies, accounting with slurmdbd]
 * CI/CD pipeline deployment [Jenkins, GitLab Runner, or Drone]
 * GitOps workflow with ArgoCD or Flux [declarative deployments]
 * Ansible playbooks for cluster management [IaC learning]
 * Terraform infrastructure as code practice
 * Prometheus + Grafana monitoring stack [observability]
-* GPU compute experiments on R9 290s [OpenCL workloads]
+* GPU compute experiments on R9 290s [OpenCL kernel development: matrix multiplication, image processing (2D convolution/filters), parallel reduction, performance optimization (memory coalescing, work-group design), .NET integration (Cloo/OpenTK.Compute), AMD vs NVIDIA comparison (R9 290 vs RTX 4070 Ti)]
 * Chaos engineering with Litmus [resilience testing]
 
 ### Home Automation
@@ -90,9 +90,15 @@ Project backlog for future development. Once a project has its own directory in 
 * iPhone 2G jailbreak + retro iOS exploration
 * Tablet-based security camera / baby monitor
 
+### Machine Learning & AI
+
+* **Neural Network from Scratch** - Build neural network without ML frameworks using only NumPy/C#, implement backpropagation, gradient descent, activation functions (ReLU, sigmoid, softmax), train on MNIST or simple datasets, compare performance to framework implementations [understanding fundamentals, manual matrix operations]
+* **Machine Learning Model Building** - End-to-end ML pipeline from data preprocessing to deployment, feature engineering, model selection (regression, decision trees, random forests, gradient boosting), hyperparameter tuning, cross-validation, model interpretability (SHAP, LIME), deploy as API endpoint [scikit-learn, XGBoost, practical ML]
+
 ### Software Architecture & APIs
 
 * **SSO/Authentication Translation Proxy** - ASP.NET Core proxy service to translate between different authentication schemes (JWT, OAuth2, API keys, header keys, client certificates). Review JWT/OAuth2 key exchange protocols and build APIController + HttpClient-based gateway that can convert inbound auth to appropriate outbound auth based on known service contracts. [.NET Core, identity protocols, reverse proxy patterns]
+* **gRPC Microservices** - Build production-ready gRPC services in .NET Core with Protocol Buffers (protobuf), implement all four communication patterns (unary, server streaming, client streaming, bidirectional), add interceptors for logging/metrics/auth, performance comparison vs REST, integrate with ASP.NET Core, deploy in Docker/Kubernetes [enterprise microservices, high-performance APIs]
 
 ---
 
