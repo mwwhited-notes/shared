@@ -59,6 +59,7 @@ dotnet run
 | **[BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders)** | Protocol decoders | Favero + Saint George scoring machine protocol parsers |
 | **[FencingScoreBoard](https://github.com/mwwhited/FencingScoreBoard)** | Web service + overlay | ASP.NET Core + SignalR service, HTML/CSS/JS overlay page |
 | **[EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)** | Arduino hardware | HDMI switch (IR), LANC camera, custom PCBs |
+| **[proving-grounds/OoBDev.ScoreMachine](https://github.com/mwwhited/proving-grounds/tree/main/examples/OoBDev.ScoreMachine)** | Original prototype | Historical reference (2017-2018) - .NET Core 2.x, circuits, Arduino |
 
 ### Hardware Documentation
 
@@ -68,6 +69,11 @@ dotnet run
 | **Arduino LANC Camera** | [EmbeddedBakery/src/arduino/LANC/LanCRelayCamera](https://github.com/mwwhited/EmbeddedBakery/tree/master/src/arduino/LANC/LanCRelayCamera) | Sony/Canon LANC protocol camera control |
 | **H4N-to-RS485 PCB** | [EmbeddedBakery/circuits/h4n2rs485](https://github.com/mwwhited/EmbeddedBakery/tree/master/circuits/h4n2rs485) | Zoom H4N audio recorder interface (KiCad) |
 | **LANC-to-RS485 PCB** | [EmbeddedBakery/circuits/lanc2rs485](https://github.com/mwwhited/EmbeddedBakery/tree/master/circuits/lanc2rs485) | Camera LANC interface (KiCad) |
+
+**Original Circuit Designs (Historical):**
+- [h4n2rs485](https://github.com/mwwhited/proving-grounds/tree/main/examples/OoBDev.ScoreMachine/Circuits/h4n2rs485) - Original H4N interface design
+- [lanc2rs485](https://github.com/mwwhited/proving-grounds/tree/main/examples/OoBDev.ScoreMachine/Circuits/lanc2rs485) - Original LANC interface design
+- [SG_Power](https://github.com/mwwhited/proving-grounds/tree/main/examples/OoBDev.ScoreMachine/Circuits/SG_Power) - Saint George power supply circuit
 
 ### Protocol Documentation
 
@@ -113,6 +119,125 @@ dotnet run
 ## Source Code
 
 **Primary Repositories:**
+
+### Original Prototype (Historical - Raspberry Pi Version)
+- **Location:** [mwwhited/proving-grounds/examples/OoBDev.ScoreMachine](https://github.com/mwwhited/proving-grounds/tree/main/examples/OoBDev.ScoreMachine)
+- **Local Path:** `code/public/proving-grounds/examples/OoBDev.ScoreMachine`
+- **Status:** Historical archive (2017-2018 development) - **Phase 1: Raspberry Pi + NeTV**
+- **Framework:** .NET Core 2.x (pre-.NET 5)
+- **Deployment:** Arnold Fencing Classic 2018-2020 (Raspberry Pi version used 2018-2019)
+- **Components:**
+  - **OoBDev.ScoreMachine.Web.Core** - Original web service (pre-FencingScoreBoard)
+  - **OoBDev.ScoreMachine.NetTv.Core** - NeTV integration service
+  - **OoBDev.ScoreMachine.Favero** - Original Favero decoder (pre-BinaryDataDecoders)
+  - **OoBDev.ScoreMachine.SG** - Saint George decoder (pre-BinaryDataDecoders)
+  - **Arduino Projects:**
+    - `OoBDev.HdmiSwitchController.Arduino` - HDMI switch IR control
+    - `OoBDev.LanCRelay.Arduino.Camera` - LANC camera control
+    - `OoBDev.LanCRelay.Arduino.Recorder` - LANC recorder control
+  - **Circuit Designs (KiCad):**
+    - `Circuits/h4n2rs485` - Zoom H4N RS-485 interface
+    - `Circuits/lanc2rs485` - LANC to RS-485 bridge
+    - `Circuits/SG_Power` - Saint George power supply
+
+**Historical Context:**
+- Prototype developed in `proving-grounds` repository (experimental projects)
+- Protocol decoders later extracted to **BinaryDataDecoders** (published NuGet package)
+- Web service/overlay migrated to **FencingScoreBoard** repository (updated to .NET 5+)
+- Arduino/circuit designs migrated to **EmbeddedBakery** repository
+- Original codebase preserved as reference implementation
+
+**Raspberry Pi Network Architecture:**
+```bash
+# Network Configuration (config-interfaces.sh)
+sudo ifconfig -v usb0 10.0.88.4/24     # Internal control network (USB Ethernet to NeTV)
+sudo ifconfig -v eth0 192.168.137.171/24  # External network (built-in Ethernet)
+
+# Network Topology (Phase 1: 2017-2018)
+# External Network (eth0 - 192.168.137.x):
+#   - Internet connectivity
+#   - Venue WiFi access
+#   - Management/monitoring
+
+# Internal Control Network (usb0 - 10.0.88.x):
+#   - 10.0.88.1 - NeTV FPGA device (HDMI overlay)
+#   - 10.0.88.4 - Raspberry Pi (USB Ethernet adapter)
+#   - 4× Ebyte E810-DTU serial-to-TCP/IP converters (addresses unknown from docs)
+#   - Isolated subnet for security
+
+# Startup Script (run.sh)
+cd OoBDev.ScoreMachine.Web.Core
+dotnet run --no-build -u=http://192.168.137.171:5000 -u=http://10.0.88.4:5000 &
+
+cd OoBDev.ScoreMachine.NetTv.Core
+dotnet run --no-build --netv=http://10.0.88.1 --hub=http://10.0.88.4:5000/
+```
+
+**NeTV FPGA Integration Details:**
+```bash
+# NeTV HTTP API Commands (from original docs)
+# Configure NeTV for overlay mode
+http://10.0.88.1/bridge?cmd=enablessh
+http://10.0.88.1/bridge?cmd=keepalive&value=off
+http://10.0.88.1/bridge?cmd=seturl&value=http%3A%2F%2F10.0.88.4%3A5000%2FScoreMachine
+
+# NeTV multitab command (load overlay in browser tab)
+http://10.0.88.1/bridge?cmd=multitab&tab=0&options=load&param=http://10.0.88.4:5000/score.html
+
+# Monitor NeTV console (for debugging)
+ssh root@10.0.88.1
+/etc/init.d/chumby-netvbrowser stop
+NeTVBrowser -qws -nomouse  # Run browser in foreground with debug output
+```
+
+**Services Architecture:**
+- **OoBDev.ScoreMachine.Web.Core** - ASP.NET Core web service
+  - SignalR hub for real-time score updates
+  - Serves overlay page (score.html, manager.html)
+  - Listens on both networks (192.168.137.171:5000 + 10.0.88.4:5000)
+  - Connects to scoring machine via Serial/TCP
+
+- **OoBDev.ScoreMachine.NetTv.Core** - NeTV integration service
+  - Calls NeTV HTTP API to load overlay
+  - Monitors SignalR hub for score changes
+  - Pushes updates to NeTV browser via HTTP bridge commands
+
+**Distributed A/V Control (Phase 1):**
+- **4× Ebyte E810-DTU Serial-to-TCP/IP Converters**
+  - Device 1: Scoring Machine (Favero/Saint George) - RS-485 to TCP
+  - Device 2: Arduino LANC Camera Controller - RS-485 to TCP
+  - Device 3: Arduino HDMI Switch Controller - RS-232 to TCP
+  - Device 4: Zoom H4N Audio Recorder - RS-485 to TCP (via h4n2rs485 PCB)
+- **.NET Service** connects to all devices via TCP sockets
+- **Network-based control** eliminates serial cable length limits (50ft max)
+- **TCP/IP infrastructure** allows equipment placement anywhere on venue network
+
+**Key Components (Phase 1):**
+- **Raspberry Pi 2 Model B** - ARM Cortex-A7, 1GB RAM
+  - Built-in Ethernet (eth0) for external network
+  - USB Ethernet adapter for internal control network (usb0)
+  - **Note:** USB Ethernet added overhead; later migrated to Windows PC for better reliability
+- **NeTV FPGA** (Xilinx Spartan-6) - Hardware HDMI overlay at 10.0.88.1
+  - Custom browser (NeTVBrowser) with Qt/WebKit
+  - HTTP API on port 80, TCP server on port 8081
+  - SignalR transport fallback: LongPolling/ServerSentEvents (no WebSocket support)
+- **Ebyte E810-DTU Converters** - 10/100 Ethernet, RS-232/RS-422/RS-485 support
+- **Arduino Boards** (Uno/Mega) for HDMI and LANC control
+- **Custom PCBs** (KiCad designs):
+  - h4n2rs485 - Zoom H4N recorder to RS-485 interface
+  - lanc2rs485 - Camera LANC to RS-485 interface
+  - SG_Power - Saint George scoring machine power supply
+
+**Original Source Files (Reference):**
+- [config-interfaces.sh](https://github.com/mwwhited/proving-grounds/blob/main/examples/OoBDev.ScoreMachine/config-interfaces.sh) - Network configuration script
+- [run.sh](https://github.com/mwwhited/proving-grounds/blob/main/examples/OoBDev.ScoreMachine/run.sh) - Startup script for both services
+- [build.sh](https://github.com/mwwhited/proving-grounds/blob/main/examples/OoBDev.ScoreMachine/build.sh) - Build script
+- [RaspberryPi.md](https://github.com/mwwhited/proving-grounds/blob/main/examples/OoBDev.ScoreMachine/RaspberryPi.md) - Raspberry Pi configuration notes
+- [SharedNodes.md](https://github.com/mwwhited/proving-grounds/blob/main/examples/OoBDev.ScoreMachine/SharedNodes.md) - Reference links (Tiny Core Linux, NeTV, .NET Core)
+- [ZoomH4n.md](https://github.com/mwwhited/proving-grounds/blob/main/examples/OoBDev.ScoreMachine/ZoomH4n.md) - H4N protocol reverse engineering notes
+- [Web.Core/README.md](https://github.com/mwwhited/proving-grounds/blob/main/examples/OoBDev.ScoreMachine/OoBDev.ScoreMachine.Web.Core/README.md) - NeTV API configuration
+- [NetTv.Core/README.md](https://github.com/mwwhited/proving-grounds/blob/main/examples/OoBDev.ScoreMachine/OoBDev.ScoreMachine.NetTv.Core/README.md) - NeTV console monitoring
+- [Providers/NeTv/NeTV_webservice.md](https://github.com/mwwhited/proving-grounds/blob/main/examples/OoBDev.ScoreMachine/OoBDev.ScoreMachine.Web.Core/Providers/NeTv/NeTV_webservice.md) - Complete NeTV HTTP API documentation
 
 ### BinaryDataDecoders (Protocol Parsing)
 - **Location:** [mwwhited/BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders)
@@ -688,8 +813,10 @@ curl "http://10.0.88.1/bridge?cmd=multitab&tab=0&options=load&param=http://192.1
 ## Related Projects
 
 - **[BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders)** - Encoding/decoding library (796K+ NuGet downloads)
+- **[FencingScoreBoard](https://github.com/mwwhited/FencingScoreBoard)** - Current production web service + overlay
 - **[EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)** - Arduino/FPGA projects collection
 - **[DeviceBridge](https://github.com/mwwhited/DeviceBridge)** - TDS2024 parallel port capture (shows protocol engineering)
+- **[proving-grounds/OoBDev.ScoreMachine](https://github.com/mwwhited/proving-grounds/tree/main/examples/OoBDev.ScoreMachine)** - Original prototype (2017-2018 historical reference)
 - **Favero Protocol Documentation:** [shared/projects/favero-fencing-scoring-system/](../favero-fencing-scoring-system/)
 - **NeTV FPGA:** [shared/Programmable Devices/netv-fpga/](../../Programmable%20Devices/netv-fpga/)
 
