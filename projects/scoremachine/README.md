@@ -115,7 +115,7 @@ See [phase1-raspberry-pi-netv.md](phase1-raspberry-pi-netv.md) for complete arch
 
 | Protocol | Location | Description |
 |:---------|:---------|:------------|
-| **Favero** | [shared/projects/favero-fencing-scoring-system/](../favero-fencing-scoring-system/) | Reverse-engineered Favero protocol specification |
+| **Favero** | [favero-protocol.md](favero-protocol.md) | Complete Favero Full-Arm-05 serial protocol specification |
 | **Saint George** | [BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders/tree/master/src/BinaryDataDecoders.ElectronicScoringMachines.Fencing/SaintGeorge) | Saint George protocol decoder |
 | **LANC** | [EmbeddedBakery/notes](https://github.com/mwwhited/EmbeddedBakery/tree/master/notes) | LANC protocol notes and references |
 | **Zoom H4N** | [proving-grounds/ZoomH4n.md](https://github.com/mwwhited/proving-grounds/blob/main/examples/OoBDev.ScoreMachine/ZoomH4n.md) | H4N remote protocol reverse engineering |
@@ -292,7 +292,7 @@ eth -right-> net
 - **[EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)** - Arduino/FPGA projects collection
 - **[DeviceBridge](https://github.com/mwwhited/DeviceBridge)** - TDS2024 parallel port capture (shows protocol engineering)
 - **[proving-grounds/OoBDev.ScoreMachine](https://github.com/mwwhited/proving-grounds/tree/main/examples/OoBDev.ScoreMachine)** - Original prototype (2017-2018 historical reference)
-- **Favero Protocol Documentation:** [shared/projects/favero-fencing-scoring-system/](../favero-fencing-scoring-system/)
+- **Favero Protocol:** [favero-protocol.md](favero-protocol.md)
 - **NeTV FPGA:** [shared/Programmable Devices/netv-fpga/](../../Programmable%20Devices/netv-fpga/)
 
 ---

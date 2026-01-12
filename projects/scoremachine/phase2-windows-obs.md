@@ -700,7 +700,7 @@ OBS Browser Source Settings:
 
 - **Main README:** [README.md](README.md)
 - **Phase 1 (Historical):** [phase1-raspberry-pi-netv.md](phase1-raspberry-pi-netv.md)
-- **Favero Protocol:** [../favero-fencing-scoring-system/](../favero-fencing-scoring-system/)
+- **Favero Protocol:** [favero-protocol.md](favero-protocol.md)
 
 ### Source Code
 
