@@ -37,22 +37,22 @@ Personal collection of retro computers and systems spanning 1980s technology wit
 
 ### Apple II Family
 
-| System | Year | CPU | RAM | Storage | Directory |
-|--------|------|-----|-----|---------|-----------|
-| [Apple IIc](apple-iic/) | 1984 | 65C02 @ 1.023 MHz | 128 KB | 5.25" floppy | `apple-iic/` |
-| [Apple IIgs](apple-iigs/) | 1986 | 65C816 @ 2.8 MHz | 256 KB-8 MB | 3.5"/5.25" floppy | `apple-iigs/` |
+| System | Year | CPU | RAM | Storage | Git Hash | Directory |
+|--------|------|-----|-----|---------|----------|-----------|
+| [Apple IIc](apple-iic/) | 1984 | 65C02 @ 1.023 MHz | 128 KB | 5.25" floppy | xxxxxxx | `apple-iic/` |
+| [Apple IIgs](apple-iigs/) | 1986 | 65C816 @ 2.8 MHz | 256 KB-8 MB | 3.5"/5.25" floppy | xxxxxxx | `apple-iigs/` |
 
 ### Texas Instruments
 
-| System | Year | CPU | RAM | Storage | Directory |
-|--------|------|-----|-----|---------|-----------|
-| [TI-99/4A](ti-99-4a/) | 1981 | TMS9900 @ 3.0 MHz | 16 KB | Cassette/Floppy | `ti-99-4a/` |
+| System | Year | CPU | RAM | Storage | Git Hash | Directory |
+|--------|------|-----|-----|---------|----------|-----------|
+| [TI-99/4A](ti-99-4a/) | 1981 | TMS9900 @ 3.0 MHz | 16 KB | Cassette/Floppy | xxxxxxx | `ti-99-4a/` |
 
 ### Homebrew / Project PCBs
 
-| Item | Platform | Purpose | Directory |
-|------|----------|---------|-----------|
-| [NESMaker PCB](nesmaker-pcb/) | NES | Homebrew cartridge | `nesmaker-pcb/` |
+| Item | Platform | Purpose | Git Hash | Directory |
+|------|----------|---------|----------|-----------|
+| [NESMaker PCB](nesmaker-pcb/) | NES | Homebrew cartridge | xxxxxxx | `nesmaker-pcb/` |
 
 ---
 

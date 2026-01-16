@@ -43,12 +43,12 @@ Complete inventory of computing devices for hacking, tinkering, and repurposing 
 
 Tablets, phones, and e-readers for kiosk displays, home automation dashboards, or custom ROM experimentation.
 
-| Device | Model | Status | Hackability | Project Ideas |
-|--------|-------|--------|-------------|---------------|
-| [Samsung Galaxy Tab4 Nook](mobile/samsung-galaxy-tab4-nook/) | SM-T230NU | Project | ★★★★☆ | Home automation dashboard |
-| [Amazon Fire HD](mobile/amazon-fire-hd/) | TBD | TBD | TBD | Kids tablet, smart display |
-| [Apple iPad Mini](mobile/apple-ipad-mini/) | TBD | TBD | TBD | Media player, HomeKit hub |
-| [Apple iPhone 2G](mobile/apple-iphone-2g/) | A1203 | TBD | Jailbreakable | Retro collectible, iPod |
+| Device | Model | Status | Hackability | Git Hash | Project Ideas |
+|--------|-------|--------|-------------|----------|---------------|
+| [Samsung Galaxy Tab4 Nook](mobile/samsung-galaxy-tab4-nook/) | SM-T230NU | Project | ★★★★☆ | xxxxxxx | Home automation dashboard |
+| [Amazon Fire HD](mobile/amazon-fire-hd/) | TBD | TBD | TBD | xxxxxxx | Kids tablet, smart display |
+| [Apple iPad Mini](mobile/apple-ipad-mini/) | TBD | TBD | TBD | xxxxxxx | Media player, HomeKit hub |
+| [Apple iPhone 2G](mobile/apple-iphone-2g/) | A1203 | TBD | Jailbreakable | xxxxxxx | Retro collectible, iPod |
 
 ---
 
@@ -56,9 +56,9 @@ Tablets, phones, and e-readers for kiosk displays, home automation dashboards, o
 
 Handhelds and consoles for homebrew, emulation, and portable gaming projects.
 
-| Device | Model | Status | Hackability | Project Ideas |
-|--------|-------|--------|-------------|---------------|
-| [Sony PSVita](gaming/sony-psvita/) | TBD | TBD | TBD | Emulation, homebrew |
+| Device | Model | Status | Hackability | Git Hash | Project Ideas |
+|--------|-------|--------|-------------|----------|---------------|
+| [Sony PSVita](gaming/sony-psvita/) | TBD | TBD | TBD | xxxxxxx | Emulation, homebrew |
 
 ---
 
@@ -66,11 +66,11 @@ Handhelds and consoles for homebrew, emulation, and portable gaming projects.
 
 Virtual/augmented reality headsets and depth-sensing cameras for 3D scanning, gesture control, and spatial computing projects.
 
-| Device | Model | Status | Hackability | Project Ideas |
-|--------|-------|--------|-------------|---------------|
-| [Microsoft HoloLens](vr-ar/microsoft-hololens/) | HoloLens v1 Developer Edition | TBD | ★★★★☆ | AR development, spatial mapping, gesture control |
-| [Xbox 360 Kinect](sensors/xbox360-kinect/) | Kinect v1 with PC adapter | TBD | ★★★★★ | 3D scanning, motion capture, robotics |
-| [Xbox One Kinect](sensors/xboxone-kinect/) | Kinect v2 (PC version) | TBD | ★★★★☆ | High-res depth sensing, skeletal tracking |
+| Device | Model | Status | Hackability | Git Hash | Project Ideas |
+|--------|-------|--------|-------------|----------|---------------|
+| [Microsoft HoloLens](vr-ar/microsoft-hololens/) | HoloLens v1 Developer Edition | TBD | ★★★★☆ | xxxxxxx | AR development, spatial mapping, gesture control |
+| [Xbox 360 Kinect](sensors/xbox360-kinect/) | Kinect v1 with PC adapter | TBD | ★★★★★ | xxxxxxx | 3D scanning, motion capture, robotics |
+| [Xbox One Kinect](sensors/xboxone-kinect/) | Kinect v2 (PC version) | TBD | ★★★★☆ | xxxxxxx | High-res depth sensing, skeletal tracking |
 
 ---
 
@@ -78,10 +78,10 @@ Virtual/augmented reality headsets and depth-sensing cameras for 3D scanning, ge
 
 NAS devices for home lab, media server, and backup solutions.
 
-| Device | Model | Capacity | Status | Hackability | Project Ideas |
-|--------|-------|----------|--------|-------------|---------------|
-| [WD My Cloud PR4100](network-storage/wd-mycloud-pr4100/) | PR4100 | TBD | TBD | TBD | Media server, Docker host |
-| [WD MyBookLive](network-storage/wd-mybooklive/) | TBD | TBD | TBD | TBD | Backup, archive |
+| Device | Model | Capacity | Status | Hackability | Git Hash | Project Ideas |
+|--------|-------|----------|--------|-------------|----------|---------------|
+| [WD My Cloud PR4100](network-storage/wd-mycloud-pr4100/) | PR4100 | TBD | TBD | TBD | xxxxxxx | Media server, Docker host |
+| [WD MyBookLive](network-storage/wd-mybooklive/) | TBD | TBD | TBD | TBD | xxxxxxx | Backup, archive |
 
 ---
 
@@ -89,13 +89,13 @@ NAS devices for home lab, media server, and backup solutions.
 
 Desktop computers for servers, workstations, or parts.
 
-| Device | CPU | RAM | GPU | Status | Current Use |
-|--------|-----|-----|-----|--------|-------------|
-| [PowerSpec G474](desktops/powerspec-g474/) | i9-14900KF | 160GB DDR5 | RTX 4070 Ti | Active | Primary workstation |
-| [Reduced BigRig](desktops/reduced-bigrig/) | FX-9590 | 32GB DDR3 | 2x R9 290 | Project | [DevOps Playground](projects/docker-cluster.md) |
-| [Server](desktops/server-fx8350/) | FX-8350 | 32GB DDR3 | HD 5450 | Project | [DevOps Playground](projects/docker-cluster.md) |
-| Mac Mini 2014 | Intel | 8GB | Integrated | TBD | SSD upgraded |
-| Mac Mini 2014 | Intel | 4GB | Integrated | TBD | SSD upgraded |
+| Device | CPU | RAM | GPU | Status | Git Hash | Current Use |
+|--------|-----|-----|-----|--------|----------|-------------|
+| [PowerSpec G474](desktops/powerspec-g474/) | i9-14900KF | 160GB DDR5 | RTX 4070 Ti | Active | xxxxxxx | Primary workstation |
+| [Reduced BigRig](desktops/reduced-bigrig/) | FX-9590 | 32GB DDR3 | 2x R9 290 | Project | xxxxxxx | [DevOps Playground](projects/docker-cluster.md) |
+| [Server](desktops/server-fx8350/) | FX-8350 | 32GB DDR3 | HD 5450 | Project | xxxxxxx | [DevOps Playground](projects/docker-cluster.md) |
+| Mac Mini 2014 | Intel | 8GB | Integrated | TBD | xxxxxxx | SSD upgraded |
+| Mac Mini 2014 | Intel | 4GB | Integrated | TBD | xxxxxxx | SSD upgraded |
 
 ---
 
@@ -103,12 +103,12 @@ Desktop computers for servers, workstations, or parts.
 
 Laptops and netbooks for portable projects or Linux experimentation.
 
-| Device | Specs Summary | Status | Current Use |
-|--------|--------------|--------|-------------|
-| Microsoft Surface Book 2 15" | Intel i7, 2-in-1 | TBD | TBD |
-| MacBook Pro A1502 | Intel, 13" Retina | TBD | TBD |
-| MacBook (unknown model) | Intel | TBD | TBD |
-| Toshiba Satellite R10 | Convertible tablet PC | TBD | TBD |
+| Device | Specs Summary | Status | Git Hash | Current Use |
+|--------|--------------|--------|----------|-------------|
+| Microsoft Surface Book 2 15" | Intel i7, 2-in-1 | TBD | xxxxxxx | TBD |
+| MacBook Pro A1502 | Intel, 13" Retina | TBD | xxxxxxx | TBD |
+| MacBook (unknown model) | Intel | TBD | xxxxxxx | TBD |
+| Toshiba Satellite R10 | Convertible tablet PC | TBD | xxxxxxx | TBD |
 
 *Note: Surface Book 2 also documented in [Camera Collection](../Camera%20Collection/readme.md) under Workstation.*
 
@@ -118,14 +118,14 @@ Laptops and netbooks for portable projects or Linux experimentation.
 
 Routers, switches, and access points.
 
-| Device | Specs | Qty | Status | Notes |
-|--------|-------|-----|--------|-------|
-| [Amazon eero 6+](networking/amazon-eero-6-plus/) | WiFi 6 mesh, Thread | 9 | Active | 6 w/house + 3-pack |
-| [MokerLink 2.5G Switch](networking/mokerlink-2.5g-switch/) | 8x 2.5GbE + 10G SFP, managed | 2 | Active | VLAN, LACP, QoS |
-| ipolex SFP+ to RJ45 | 10GBase-T transceiver | 2 | Active | For switch interconnect |
-| TP-Link TL-SG1005D | 5-port Gigabit | 1 | TBD | Unmanaged |
-| TP-Link TL-SG1008D | 8-port Gigabit | 1 | TBD | Unmanaged |
-| D-Link DGS-1100-08 | 8-port Gigabit | 1 | TBD | Smart managed |
+| Device | Specs | Qty | Status | Git Hash | Notes |
+|--------|-------|-----|--------|----------|-------|
+| [Amazon eero 6+](networking/amazon-eero-6-plus/) | WiFi 6 mesh, Thread | 9 | Active | xxxxxxx | 6 w/house + 3-pack |
+| [MokerLink 2.5G Switch](networking/mokerlink-2.5g-switch/) | 8x 2.5GbE + 10G SFP, managed | 2 | Active | xxxxxxx | VLAN, LACP, QoS |
+| ipolex SFP+ to RJ45 | 10GBase-T transceiver | 2 | Active | xxxxxxx | For switch interconnect |
+| TP-Link TL-SG1005D | 5-port Gigabit | 1 | TBD | xxxxxxx | Unmanaged |
+| TP-Link TL-SG1008D | 8-port Gigabit | 1 | TBD | xxxxxxx | Unmanaged |
+| D-Link DGS-1100-08 | 8-port Gigabit | 1 | TBD | xxxxxxx | Smart managed |
 
 *See [Network Diagram](../network-diagram.md) for topology and IP assignments.*
 
@@ -135,11 +135,11 @@ Routers, switches, and access points.
 
 Home stereo and audio equipment.
 
-| Device | Model | Status | Notes |
-|--------|-------|--------|-------|
-| [Sonos Port](audio/) | Streaming component | Active | Sonos/stereo integration |
-| [Stereo Sound Mixer](audio/) | 4-channel mixer | Active | Richer-R |
-| [SOLUPEAK NA2](audio/) | Phono preamp (MM) | Active | Turntable preamp |
+| Device | Model | Status | Git Hash | Notes |
+|--------|-------|--------|----------|-------|
+| [Sonos Port](audio/) | Streaming component | Active | xxxxxxx | Sonos/stereo integration |
+| [Stereo Sound Mixer](audio/) | 4-channel mixer | Active | xxxxxxx | Richer-R |
+| [SOLUPEAK NA2](audio/) | Phono preamp (MM) | Active | xxxxxxx | Turntable preamp |
 
 ---
 
@@ -147,13 +147,13 @@ Home stereo and audio equipment.
 
 Printers, media devices, and anything that doesn't fit the categories above.
 
-| Device | Type | Status | Notes |
-|--------|------|--------|-------|
-| [Brother HL-3170CDW](other/brother-hl-3170cdw/) | Color Laser Printer | Active | 192.168.0.48, Craft Room |
-| HD HomeRun Extend | TV Tuner/Streamer | TBD | Network TV tuner |
-| JCHICI USB 2.0 Extender | USB over Ethernet | Active | 50m, 4 ports, $29.99 Jan 2024 |
-| InnoView Portable Monitor | 14" 4K Touch, USB-C | Active | $299.99 Jan 2024 |
-| XGODY X1 Projector | 1080p, Android, WiFi/BT | Active | $179.00 Aug 2023 |
+| Device | Type | Status | Git Hash | Notes |
+|--------|------|--------|----------|-------|
+| [Brother HL-3170CDW](other/brother-hl-3170cdw/) | Color Laser Printer | Active | xxxxxxx | 192.168.0.48, Craft Room |
+| HD HomeRun Extend | TV Tuner/Streamer | TBD | xxxxxxx | Network TV tuner |
+| JCHICI USB 2.0 Extender | USB over Ethernet | Active | xxxxxxx | 50m, 4 ports, $29.99 Jan 2024 |
+| InnoView Portable Monitor | 14" 4K Touch, USB-C | Active | xxxxxxx | $299.99 Jan 2024 |
+| XGODY X1 Projector | 1080p, Android, WiFi/BT | Active | xxxxxxx | $179.00 Aug 2023 |
 
 ### SBC Cluster
 
@@ -161,11 +161,11 @@ ARM-based cluster for Docker/Kubernetes learning. See [SBC Cluster project](../.
 
 Has custom power controller/network device (code in [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)).
 
-| Device | Qty | Notes |
-|--------|-----|-------|
-| BeagleBone Black | 4 | ARM Cortex-A8 |
-| Raspberry Pi 2 | 2 | |
-| Raspberry Pi Model A | 2 | Composite video output |
+| Device | Qty | Git Hash | Notes |
+|--------|-----|----------|-------|
+| BeagleBone Black | 4 | xxxxxxx | ARM Cortex-A8 |
+| Raspberry Pi 2 | 2 | xxxxxxx | |
+| Raspberry Pi Model A | 2 | xxxxxxx | Composite video output |
 
 ---
 

@@ -168,37 +168,37 @@ Complete electronics lab equipment reference with specifications, programming to
 
 ### Imaging & Documentation
 
-| Model | Type | Resolution | Directory |
-|-------|------|------------|-----------|
-| Epson Perfection V850 Pro | Film/Flatbed Scanner | 6400 dpi | - |
-| [Kitchbar KB-700](kitchbar-kb700/) | Document Camera | 8MP | `kitchbar-kb700/` |
-| [Lenovo 510 FHD](lenovo-510-fhd/) | Webcam | 1080p | `lenovo-510-fhd/` |
+| Model | Type | Resolution | Git Hash | Directory |
+|-------|------|------------|----------|-----------|
+| Epson Perfection V850 Pro | Film/Flatbed Scanner | 6400 dpi | xxxxxxx | - |
+| [Kitchbar KB-700](kitchbar-kb700/) | Document Camera | 8MP | xxxxxxx | `kitchbar-kb700/` |
+| [Lenovo 510 FHD](lenovo-510-fhd/) | Webcam | 1080p | xxxxxxx | `lenovo-510-fhd/` |
 
 ### Input Devices
 
-| Model | Type | Keys | Directory |
-|-------|------|------|-----------|
-| [Fifine AmpliGame D6](fifine-d6/) | Macro Keypad | 15 | `fifine-d6/` |
+| Model | Type | Keys | Git Hash | Directory |
+|-------|------|------|----------|-----------|
+| [Fifine AmpliGame D6](fifine-d6/) | Macro Keypad | 15 | xxxxxxx | `fifine-d6/` |
 
 ### Audio
 
-| Model | Type | Power | Directory |
-|-------|------|-------|-----------|
-| [Pyle PTAU45](pyle-ptau45/) | Stereo Amplifier | 2×120W | `pyle-ptau45/` |
+| Model | Type | Power | Git Hash | Directory |
+|-------|------|-------|----------|-----------|
+| [Pyle PTAU45](pyle-ptau45/) | Stereo Amplifier | 2×120W | xxxxxxx | `pyle-ptau45/` |
 
 ### Lab Equipment
 
-| Model | Type | Capacity | Directory |
-|-------|------|----------|-----------|
-| [CREWORKS Ultrasonic Cleaner](creworks-ultrasonic-cleaner/) | Ultrasonic Cleaner | 10L | `creworks-ultrasonic-cleaner/` |
-| [Magnetic Stirrer Hot Plate](magnetic-stirrer-hotplate/) | Stirrer/Hot Plate | - | `magnetic-stirrer-hotplate/` |
-| [ExGizmo UV EPROM Eraser](exgizmo-uv-eprom-eraser/) | UV Eraser | Multi-chip | `exgizmo-uv-eprom-eraser/` |
+| Model | Type | Capacity | Git Hash | Directory |
+|-------|------|----------|----------|-----------|
+| [CREWORKS Ultrasonic Cleaner](creworks-ultrasonic-cleaner/) | Ultrasonic Cleaner | 10L | xxxxxxx | `creworks-ultrasonic-cleaner/` |
+| [Magnetic Stirrer Hot Plate](magnetic-stirrer-hotplate/) | Stirrer/Hot Plate | - | xxxxxxx | `magnetic-stirrer-hotplate/` |
+| [ExGizmo UV EPROM Eraser](exgizmo-uv-eprom-eraser/) | UV Eraser | Multi-chip | xxxxxxx | `exgizmo-uv-eprom-eraser/` |
 
 ### Fabrication
 
-| Model | Type | Build Volume | Directory |
-|-------|------|--------------|-----------|
-| [Velleman K8200](velleman-k8200/) | 3D Printer (Duet 3) | 200x200x200mm | `velleman-k8200/` |
+| Model | Type | Build Volume | Git Hash | Directory |
+|-------|------|--------------|----------|-----------|
+| [Velleman K8200](velleman-k8200/) | 3D Printer (Duet 3) | 200x200x200mm | xxxxxxx | `velleman-k8200/` |
 
 ---
 

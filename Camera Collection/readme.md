@@ -41,14 +41,14 @@ Complete photography equipment inventory including camera bodies, lenses, teleco
 
 ## Camera Bodies
 
-| Camera | Type | Mount | Status | Price |
-|--------|------|-------|--------|-------|
-| [Nikon D800](Bodies/nikon-d800/) | Digital FX DSLR | F-mount | Working | $625.85 |
-| [Nikon F6](Bodies/nikon-f6/) | 35mm Film SLR (Pro) | F-mount | Working | $779.00 |
-| [Nikon FG-20](Bodies/nikon-fg-20/) | 35mm Film SLR | F-mount (AI) | Working | $22.04 |
-| [Mamiya Sekor 1000 DTL](Bodies/mamiya-sekor-1000-dtl/) | 35mm Film SLR | M42 | Working | $14.51 |
-| [Olympus TG-5](Bodies/olympus-tg-5/) | Waterproof Compact | Fixed | Working | $449.00 |
-| Fotodiox DIY Lomo TLR | 35mm Film TLR Kit | Fixed | Working | $14.95 |
+| Camera | Type | Mount | Status | Price | Git Hash | Directory |
+|--------|------|-------|--------|-------|----------|-----------|
+| [Nikon D800](Bodies/nikon-d800/) | Digital FX DSLR | F-mount | Working | $625.85 | xxxxxxx | `Bodies/nikon-d800/` |
+| [Nikon F6](Bodies/nikon-f6/) | 35mm Film SLR (Pro) | F-mount | Working | $779.00 | xxxxxxx | `Bodies/nikon-f6/` |
+| [Nikon FG-20](Bodies/nikon-fg-20/) | 35mm Film SLR | F-mount (AI) | Working | $22.04 | xxxxxxx | `Bodies/nikon-fg-20/` |
+| [Mamiya Sekor 1000 DTL](Bodies/mamiya-sekor-1000-dtl/) | 35mm Film SLR | M42 | Working | $14.51 | xxxxxxx | `Bodies/mamiya-sekor-1000-dtl/` |
+| [Olympus TG-5](Bodies/olympus-tg-5/) | Waterproof Compact | Fixed | Working | $449.00 | xxxxxxx | `Bodies/olympus-tg-5/` |
+| Fotodiox DIY Lomo TLR | 35mm Film TLR Kit | Fixed | Working | $14.95 | xxxxxxx | - |
 
 ---
 
@@ -56,88 +56,88 @@ Complete photography equipment inventory including camera bodies, lenses, teleco
 
 ### Nikon Z-Mount
 
-| Lens | Focal Length | Aperture | Status | Price |
-|------|--------------|----------|--------|-------|
-| [NIKKOR Z 40mm f/2 (SE)](Lenses/nikon-z-40mm-f2-se/) | 40mm | f/2 | Working | $306.95 |
+| Lens | Focal Length | Aperture | Status | Price | Git Hash | Directory |
+|------|--------------|----------|--------|-------|----------|-----------|
+| [NIKKOR Z 40mm f/2 (SE)](Lenses/nikon-z-40mm-f2-se/) | 40mm | f/2 | Working | $306.95 | xxxxxxx | `Lenses/nikon-z-40mm-f2-se/` |
 
 ### Nikon F-Mount
 
-| Lens | Focal Length | Aperture | Status | Price |
-|------|--------------|----------|--------|-------|
-| Sigma 12-24mm f/4.5-5.6 II DG HSM | 12-24mm | f/4.5-5.6 | Working | $949.00 |
-| Sigma 24-70mm f/2.8 IF EX DG HSM | 24-70mm | f/2.8 | Working | $824.00 |
-| Sigma 70-200mm f/2.8 APO EX DG OS HSM | 70-200mm | f/2.8 | Working | $1,299.00 |
-| [Nikon AF-S 28-300mm f/3.5-5.6G ED VR](Lenses/nikon-28-300mm-vr/) | 28-300mm | f/3.5-5.6 | Working | $946.95 |
-| [Nikon AF-S 85mm f/1.8G](Lenses/nikon-85mm-f1.8g/) | 85mm | f/1.8 | Working | $476.95 |
-| [Nikon AF-S 50mm f/1.8G](Lenses/nikon-50mm-f1.8g/) | 50mm | f/1.8 | Working | $216.95 |
-| [Sigma APO 300mm f/2.8 EX DG HSM](Lenses/sigma-300mm-f2.8-ex-dg/) | 300mm | f/2.8 | Needs Repair | $606.24 |
-| Bower 24mm f/3.5 Tilt-Shift | 24mm | f/3.5 | Working | $679.00 |
-| Holga 60mm f/8 | 60mm | f/8 | Working | $24.99 |
-| Holga Effect Lens Turret (Nikon) | Multi | - | Working | $39.99 |
-| Holga HT-25 2.5X Telephoto | Teleconverter | - | Working | $16.81 |
-| Lensbaby Edge 80 Optic | 80mm | - | Working | $274.39 |
-| Lensbaby Edge 50 Optic | 50mm | - | Working | $224.95 |
-| Lensbaby Sweet 50 Optic | 50mm | - | Working | $119.95 |
-| Lensbaby Twist 60 Optic | 60mm | - | Working | $179.95 |
-| Lensbaby Composer Pro + Double Glass | Body | - | Working | $299.95 |
-| Lensbaby Sweet 35 Optic | 35mm | - | Working | $179.95 |
-| Lensbaby Optic Kit | Multi | - | Working | $99.95 |
-| Lensbaby Macro Converters (8mm + 16mm) | Macro | - | Working | $49.95 |
-| Lensbaby Creative Aperture Kit 2 | Apertures | - | Working | $19.95 |
-| Zeikos AF Macro Extension Tubes | Macro | - | Working | $69.89 |
+| Lens | Focal Length | Aperture | Status | Price | Git Hash | Directory |
+|------|--------------|----------|--------|-------|----------|-----------|
+| Sigma 12-24mm f/4.5-5.6 II DG HSM | 12-24mm | f/4.5-5.6 | Working | $949.00 | xxxxxxx | - |
+| Sigma 24-70mm f/2.8 IF EX DG HSM | 24-70mm | f/2.8 | Working | $824.00 | xxxxxxx | - |
+| Sigma 70-200mm f/2.8 APO EX DG OS HSM | 70-200mm | f/2.8 | Working | $1,299.00 | xxxxxxx | - |
+| [Nikon AF-S 28-300mm f/3.5-5.6G ED VR](Lenses/nikon-28-300mm-vr/) | 28-300mm | f/3.5-5.6 | Working | $946.95 | xxxxxxx | `Lenses/nikon-28-300mm-vr/` |
+| [Nikon AF-S 85mm f/1.8G](Lenses/nikon-85mm-f1.8g/) | 85mm | f/1.8 | Working | $476.95 | xxxxxxx | `Lenses/nikon-85mm-f1.8g/` |
+| [Nikon AF-S 50mm f/1.8G](Lenses/nikon-50mm-f1.8g/) | 50mm | f/1.8 | Working | $216.95 | xxxxxxx | `Lenses/nikon-50mm-f1.8g/` |
+| [Sigma APO 300mm f/2.8 EX DG HSM](Lenses/sigma-300mm-f2.8-ex-dg/) | 300mm | f/2.8 | Needs Repair | $606.24 | xxxxxxx | `Lenses/sigma-300mm-f2.8-ex-dg/` |
+| Bower 24mm f/3.5 Tilt-Shift | 24mm | f/3.5 | Working | $679.00 | xxxxxxx | - |
+| Holga 60mm f/8 | 60mm | f/8 | Working | $24.99 | xxxxxxx | - |
+| Holga Effect Lens Turret (Nikon) | Multi | - | Working | $39.99 | xxxxxxx | - |
+| Holga HT-25 2.5X Telephoto | Teleconverter | - | Working | $16.81 | xxxxxxx | - |
+| Lensbaby Edge 80 Optic | 80mm | - | Working | $274.39 | xxxxxxx | - |
+| Lensbaby Edge 50 Optic | 50mm | - | Working | $224.95 | xxxxxxx | - |
+| Lensbaby Sweet 50 Optic | 50mm | - | Working | $119.95 | xxxxxxx | - |
+| Lensbaby Twist 60 Optic | 60mm | - | Working | $179.95 | xxxxxxx | - |
+| Lensbaby Composer Pro + Double Glass | Body | - | Working | $299.95 | xxxxxxx | - |
+| Lensbaby Sweet 35 Optic | 35mm | - | Working | $179.95 | xxxxxxx | - |
+| Lensbaby Optic Kit | Multi | - | Working | $99.95 | xxxxxxx | - |
+| Lensbaby Macro Converters (8mm + 16mm) | Macro | - | Working | $49.95 | xxxxxxx | - |
+| Lensbaby Creative Aperture Kit 2 | Apertures | - | Working | $19.95 | xxxxxxx | - |
+| Zeikos AF Macro Extension Tubes | Macro | - | Working | $69.89 | xxxxxxx | - |
 
 ### M42 (Screw Mount)
 
-| Lens | Focal Length | Aperture | Status | Price |
-|------|--------------|----------|--------|-------|
-| [MC Helios-44M-6](Lenses/helios-44m-6/) | 58mm | f/2 | Working | $32.00 |
-| [Spiratone 28mm f/2.8](Lenses/spiratone-28mm-f2.8/) | 28mm | f/2.8 | Working | $18.00 |
-| [Industar 50-2](Lenses/industar-50-2/) | 50mm | f/3.5 | Working | $14.00 |
+| Lens | Focal Length | Aperture | Status | Price | Git Hash | Directory |
+|------|--------------|----------|--------|-------|----------|-----------|
+| [MC Helios-44M-6](Lenses/helios-44m-6/) | 58mm | f/2 | Working | $32.00 | xxxxxxx | `Lenses/helios-44m-6/` |
+| [Spiratone 28mm f/2.8](Lenses/spiratone-28mm-f2.8/) | 28mm | f/2.8 | Working | $18.00 | xxxxxxx | `Lenses/spiratone-28mm-f2.8/` |
+| [Industar 50-2](Lenses/industar-50-2/) | 50mm | f/3.5 | Working | $14.00 | xxxxxxx | `Lenses/industar-50-2/` |
 
 ---
 
 ## Teleconverters
 
-| Teleconverter | Magnification | Mount | Status | Price |
-|---------------|---------------|-------|--------|-------|
-| [Sigma APO 1.4x EX DG](Teleconverters/sigma-1.4x-ex-dg/) | 1.4x | Nikon F | Working | $79.01 |
-| Sigma APO 2x EX DG | 2x | Nikon F | Working | $299.00 |
+| Teleconverter | Magnification | Mount | Status | Price | Git Hash | Directory |
+|---------------|---------------|-------|--------|-------|----------|-----------|
+| [Sigma APO 1.4x EX DG](Teleconverters/sigma-1.4x-ex-dg/) | 1.4x | Nikon F | Working | $79.01 | xxxxxxx | `Teleconverters/sigma-1.4x-ex-dg/` |
+| Sigma APO 2x EX DG | 2x | Nikon F | Working | $299.00 | xxxxxxx | - |
 
 ---
 
 ## Accessories
 
-| Item | Type | Status | Price |
-|------|------|--------|-------|
-| CL-50LS Arca Swiss QR Clamp | Quick Release | Working | $14.60 |
-| [Fotasy M42 to Nikon Z Adapter](Accessories/fotasy-m42-z-adapter/) | Mount Adapter | Working | $12.95 |
-| [Fotasy Canon FD to Nikon Z Adapter](Accessories/fotasy-fd-z-adapter/) | Mount Adapter | Working | $15.95 |
-| iShoot Tripod Ring (Sigma 135mm Art) | Lens Collar | Working | $49.99 |
-| Neewer L-Plate Bracket (D800) | Camera Grip | Working | $27.99 |
-| Olympus CSCH-123 Sports Holder | Camera Case | Working | $27.99 |
-| Breakthrough 77mm X1 Circular Polarizer | Filter | Working | $59.00 |
-| X-Rite i1 Display Pro + ColorChecker Passport | Color Calibration | Working | $347.98 |
-| AmScope CA-NIK-SLR Microscope Adapter | Adapter | Working | $89.75 |
-| ExpoDisc 77mm Neutral WB Filter | White Balance | Working | $99.95 |
-| ExpoDisc 77mm Portrait WB Filter | White Balance | Working | $99.95 |
-| Canon FD Body + Rear Lens Caps | Protective Caps (2-pack) | Working | $6.98 |
-| Nikon Z Body + Rear Lens Caps | Protective Caps (2-pack) | Working | $5.95 |
-| Nikon F Mount Body + Rear Lens Caps | Protective Caps (3-pack) | Working | $7.99 |
-| 58mm Lens Caps | Front lens caps with line (Boyee Lochto, 8pcs) | Working | $6.69 |
-| Rogue Small Diffusion Panel | Flash Modifier | Working | $19.95 |
-| Rogue FlashBenders Small Reflector | Flash Modifier | Working | $34.95 |
-| Nikon R1 Wireless Close-Up Speedlight | Macro Flash Kit | Working | $469.00 |
-| Sky-Watcher Star Adventurer 2i Pro Pack | Motorized star tracker | Working | $425.00 |
-| Neewer Interval Timer Remote | Nikon 10-pin remote | Working | $16.99 |
-| ICE 82mm LiPo Filter | Light pollution filter | Working | $44.95 |
-| 77-82mm Step-Up Ring | Filter adapter (Fire Rock, 2-pack) | Working | $8.59 |
-| 52-77mm Step-Up Ring | Filter adapter (2-pack) | Working | $6.59 |
-| Astromania Bahtinov Mask FM60mm | Telescope focusing aid | Working | $12.99 |
-| USB Lens Dew Heater | Condensation prevention strip | Working | $14.98 |
-| Nikon EN-EL15 Dummy Battery Kit | AC adapter EP-5B/EH-5 (TKDY) | Working | $33.99 |
-| Selens Tripod Weight Bag | Sandbag for stabilization | Working | $12.95 |
-| Transcend 8GB CompactFlash Card | 133x speed (TS8GCF133) | Working | $16.99 |
-| Verbatim 4GB CompactFlash Card | 95188 black | Working | $12.99 |
+| Item | Type | Status | Price | Git Hash | Directory |
+|------|------|--------|-------|----------|-----------|
+| CL-50LS Arca Swiss QR Clamp | Quick Release | Working | $14.60 | xxxxxxx | - |
+| [Fotasy M42 to Nikon Z Adapter](Accessories/fotasy-m42-z-adapter/) | Mount Adapter | Working | $12.95 | xxxxxxx | `Accessories/fotasy-m42-z-adapter/` |
+| [Fotasy Canon FD to Nikon Z Adapter](Accessories/fotasy-fd-z-adapter/) | Mount Adapter | Working | $15.95 | xxxxxxx | `Accessories/fotasy-fd-z-adapter/` |
+| iShoot Tripod Ring (Sigma 135mm Art) | Lens Collar | Working | $49.99 | xxxxxxx | - |
+| Neewer L-Plate Bracket (D800) | Camera Grip | Working | $27.99 | xxxxxxx | - |
+| Olympus CSCH-123 Sports Holder | Camera Case | Working | $27.99 | xxxxxxx | - |
+| Breakthrough 77mm X1 Circular Polarizer | Filter | Working | $59.00 | xxxxxxx | - |
+| X-Rite i1 Display Pro + ColorChecker Passport | Color Calibration | Working | $347.98 | xxxxxxx | - |
+| AmScope CA-NIK-SLR Microscope Adapter | Adapter | Working | $89.75 | xxxxxxx | - |
+| ExpoDisc 77mm Neutral WB Filter | White Balance | Working | $99.95 | xxxxxxx | - |
+| ExpoDisc 77mm Portrait WB Filter | White Balance | Working | $99.95 | xxxxxxx | - |
+| Canon FD Body + Rear Lens Caps | Protective Caps (2-pack) | Working | $6.98 | xxxxxxx | - |
+| Nikon Z Body + Rear Lens Caps | Protective Caps (2-pack) | Working | $5.95 | xxxxxxx | - |
+| Nikon F Mount Body + Rear Lens Caps | Protective Caps (3-pack) | Working | $7.99 | xxxxxxx | - |
+| 58mm Lens Caps | Front lens caps with line (Boyee Lochto, 8pcs) | Working | $6.69 | xxxxxxx | - |
+| Rogue Small Diffusion Panel | Flash Modifier | Working | $19.95 | xxxxxxx | - |
+| Rogue FlashBenders Small Reflector | Flash Modifier | Working | $34.95 | xxxxxxx | - |
+| Nikon R1 Wireless Close-Up Speedlight | Macro Flash Kit | Working | $469.00 | xxxxxxx | - |
+| Sky-Watcher Star Adventurer 2i Pro Pack | Motorized star tracker | Working | $425.00 | xxxxxxx | - |
+| Neewer Interval Timer Remote | Nikon 10-pin remote | Working | $16.99 | xxxxxxx | - |
+| ICE 82mm LiPo Filter | Light pollution filter | Working | $44.95 | xxxxxxx | - |
+| 77-82mm Step-Up Ring | Filter adapter (Fire Rock, 2-pack) | Working | $8.59 | xxxxxxx | - |
+| 52-77mm Step-Up Ring | Filter adapter (2-pack) | Working | $6.59 | xxxxxxx | - |
+| Astromania Bahtinov Mask FM60mm | Telescope focusing aid | Working | $12.99 | xxxxxxx | - |
+| USB Lens Dew Heater | Condensation prevention strip | Working | $14.98 | xxxxxxx | - |
+| Nikon EN-EL15 Dummy Battery Kit | AC adapter EP-5B/EH-5 (TKDY) | Working | $33.99 | xxxxxxx | - |
+| Selens Tripod Weight Bag | Sandbag for stabilization | Working | $12.95 | xxxxxxx | - |
+| Transcend 8GB CompactFlash Card | 133x speed (TS8GCF133) | Working | $16.99 | xxxxxxx | - |
+| Verbatim 4GB CompactFlash Card | 95188 black | Working | $12.99 | xxxxxxx | - |
 
 *Star Adventurer 2i purchased 2021-10-27. Astrophotography accessories for star tracking, night sky photography.*
 
