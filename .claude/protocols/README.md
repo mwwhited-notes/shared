@@ -205,7 +205,51 @@ If you encounter:
 - **Conflicting protocols** → Resolve and document the decision
 - **New use case** → Add example to protocol
 
+## Protocol Index Maintenance
+
+This README serves as the master index for all 17 documentation protocols. It is updated whenever:
+- A new protocol is created
+- An existing protocol version changes
+- Protocol purposes are clarified or reorganized
+
+### Version Tracking
+
+| Protocol | Purpose | Current Version | Last Updated |
+|----------|---------|-----------------|--------------|
+| PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md | Dev boards (FPGA/MCU) | 1.0 | Dec 2025 |
+| EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md | Shields/HATs/capes | 1.0 | Dec 2025 |
+| EQUIPMENT_DOCUMENTATION_PROTOCOL.md | Test equipment | 1.0 | Dec 2025 |
+| VINTAGE_COMPUTERS_DOCUMENTATION_PROTOCOL.md | Retro computers | 1.0 | Dec 2025 |
+| CAMERA_COLLECTION_PROTOCOL.md | Photography gear | 1.0 | Dec 2025 |
+| DEVICE_LAB_PROTOCOL.md | Computing devices | 1.0 | Jan 2026 |
+| TOOLS_AND_COMPONENTS_PROTOCOL.md | Tools/consumables | 1.0 | Jan 2026 |
+| BOOKS_PROTOCOL.md | Technical books | 1.0 | Jan 2026 |
+| PROJECTS_PROTOCOL.md | Active projects | 1.2 | Jan 2026 |
+| PROJECT_REVIEW_PROTOCOL.md | Quarterly reviews | 1.1 | Jan 2026 |
+| ONLINE_SHOPPING_PROTOCOL.md | Purchase tracking | 1.0 | Jan 2026 |
+| CLAUDE_MD_MAINTENANCE_PROTOCOL.md | CLAUDE.md upkeep | 1.0 | Jan 2026 |
+| TODO_MD_ARCHIVAL_PROTOCOL.md | Task archival | 1.0 | Jan 2026 |
+| CHANGELOG_PROTOCOL.md | Change tracking | 1.0 | Jan 2026 |
+| TECHNICAL-RESEARCH-PROTOCOL.md | Research projects | 1.3 | Jan 2026 |
+| INDEX_PROTOCOL.md | Creating indexes | 1.2 | Jan 2026 |
+
 ---
 
-*Protocol Index Version: 1.3*
-*Last Updated: 2026-01-07*
+*Protocol Index Version: 1.4*
+*Last Updated: 2026-01-16*
+
+### Changelog
+
+**v1.4 (2026-01-16) - Protocol Updates**
+- Added version tracking table for all 17 protocols
+- Added INDEX_PROTOCOL.md (v1.1) to maintain all directory indexes
+- Updated PROJECTS_PROTOCOL.md to v1.2 with TODO.md integration
+- Updated INDEX_PROTOCOL.md to v1.1 with TODO.md integration
+- Clarified protocol maintenance procedures
+- Made TODO.md tracking a standard practice for all work discovery
+
+**v1.3 (2026-01-07)**
+- Added cross-protocol dependencies section
+- Expanded decision tree examples
+- Added protocol consistency standards
+- Clarified cross-reference patterns

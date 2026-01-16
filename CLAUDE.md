@@ -195,6 +195,29 @@ Follow `.claude/protocols/TODO_MD_ARCHIVAL_PROTOCOL.md` to archive completed tas
 - TODO.md: Cleaned 2026-01-07 (7 active tasks)
 - See `changes/` directory for archived work
 
+### Directory Indexes for Performance & Token Usage
+
+Each major directory has a focused README.md index following `.claude/protocols/INDEX_PROTOCOL.md`. These serve dual purposes:
+
+**Performance Benefits:**
+- Indexes provide a quick reference without loading entire directory contents into context
+- Each index includes git hashes enabling targeted `git diff` review (avoids reviewing unrelated changes)
+- Structured table format with quick-reference summaries reduces context bloat
+
+**Index Organization:**
+- `projects/README.md` - Master index of 21+ projects (status, categories, cross-references)
+- `.claude/protocols/README.md` - Master index of 17 documentation protocols (versions, purposes, decision tree)
+- `Programmable Devices/README.md` - Device inventory index (20+ devices, specifications, programmer compatibility)
+- `Expansion Boards/README.md` - Shields/HATs/capes index (pin mappings, parent board cross-refs)
+- `Test Equipment/README.md` - Lab equipment index (oscilloscopes, meters, supplies)
+- `Vintage Computers/README.md` - Apple II/TI-99/4A systems and peripherals
+- `Camera Collection/README.md` - Photography equipment (bodies, lenses, mount compatibility)
+- `Device Lab/README.md` - Computing devices for hacking (tablets, phones, NAS, gaming)
+- `Notes/README.md` - Technical notes directory guide
+- `AnalogComputers/README.md` - Analog computing research collection overview
+
+**Key Principle:** When needing information about items in a collection, read the focused index first before drilling into individual item documentation.
+
 ### Analog Computers
 Reference `AnalogComputers/analog-computing-repository/CLAUDE.md` for the analog computing research collection.
 

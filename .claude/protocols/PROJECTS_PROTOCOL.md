@@ -239,6 +239,33 @@ Use consistent status labels:
 - **On Hold** - Paused, may resume later
 - **Abandoned** - Discontinued, document why
 
+## TODO.md Integration
+
+Whenever creating or updating a project, add discovered work to TODO.md:
+
+```markdown
+### [Project Name] - [Phase if applicable]
+- [ ] [Specific task discovered]
+- [ ] [Next task needed]
+```
+
+Examples:
+```markdown
+### FPGA CPU Design - Phase 2
+- [ ] Optimize timing constraints
+- [ ] Test on hardware
+
+### Home Automation - Integration
+- [ ] Add Z-Wave node healing automation
+- [ ] Create backup/restore procedure
+```
+
+This ensures:
+- Discovered work is tracked and not lost
+- Tasks can be prioritized across all projects
+- Progress is visible in TODO.md history
+- Related work can reference the task source
+
 ## Integration with workshop-capabilities.md
 
 When a project demonstrates new capabilities:
@@ -250,12 +277,120 @@ When a project demonstrates new capabilities:
 - [XBee Mesh Network](projects/xbee-mesh-network/) - Wireless sensor network
 ```
 
+## Protocol Maintenance & Version Control
+
+### Keeping projects/README.md Current
+
+The [projects/README.md](../projects/README.md) file serves as the **master index** of all projects and their documentation protocols. When creating or updating a project:
+
+1. **Add/update project entry** in the Quick Reference table
+2. **Create/update detailed section** under Projects by Category
+3. **Verify protocol version** being used (check protocol footer for latest version number)
+4. **Document git hash** of the protocol version for change tracking
+
+### Detecting Protocol Changes with Git
+
+Use git hashes to track when protocols are updated:
+
+```bash
+# Get the git hash of a specific protocol version
+git log -1 --format="%H %ad %s" .claude/protocols/PROJECTS_PROTOCOL.md
+
+# Document in projects/README.md as:
+# | [PROJECTS_PROTOCOL.md](path) | Description | 1.1 | abc1234 |
+
+# Later, detect if protocol has changed:
+git log -1 --format="%H" .claude/protocols/PROJECTS_PROTOCOL.md
+# Compare returned hash to documented hash above
+```
+
+### Template for Documenting Protocol Hash
+
+When tracking protocol versions in projects/README.md, include:
+
+```markdown
+| [PROJECTS_PROTOCOL.md](../.claude/protocols/PROJECTS_PROTOCOL.md) | Creating & documenting projects | 1.1 | abc1234 |
+#                                                                                                            ^ git hash
+```
+
+### When to Update projects/README.md
+
+**Update immediately when:**
+- Creating a new project
+- Moving project from ideas → active
+- Changing project status (Planning → In Progress, etc.)
+- Updating protocol version (add hash in footer)
+- Adding/removing projects
+
+**Update quarterly when:**
+- Running PROJECT_REVIEW_PROTOCOL
+- Reviewing protocol applicability
+- Checking for protocol updates from other team members
+
+### Verifying Protocol Currency
+
+Before following a protocol, verify it's the latest version:
+
+```bash
+# Check footer of protocol file for version and date
+grep -E "^\\*Protocol Version:|^\\*Last Updated:" PROTOCOL_FILE.md
+
+# If unsure, check git history:
+git log -1 --format="%ai %s" .claude/protocols/PROTOCOL_FILE.md
+```
+
+### Template Maintenance
+
+If this protocol is updated:
+1. Increment version number (1.0 → 1.1)
+2. Update "Last Updated" date
+3. Document changes in Changelog section (if present)
+4. Update projects/README.md with new version number and git hash
+5. Create descriptive commit: "Update PROJECTS_PROTOCOL.md to version 1.1"
+
 ## Examples
 
 See existing projects:
 - [projects/diy-trekpak-dividers/](../projects/diy-trekpak-dividers/) - Workshop organization project
+- [projects/fpga-cpu-design/](../projects/fpga-cpu-design/) - FPGA development project
+- [projects/home-automation/](../projects/home-automation/) - Smart home integration
+
+## Related Protocols
+
+For comprehensive research projects, see:
+- [TECHNICAL-RESEARCH-PROTOCOL.md](TECHNICAL-RESEARCH-PROTOCOL.md) - For multi-phase research documentation
+
+For overall project portfolio review:
+- [PROJECT_REVIEW_PROTOCOL.md](PROJECT_REVIEW_PROTOCOL.md) - Quarterly inventory and status reviews
 
 ---
 
-*Protocol Version: 1.0*
-*Last Updated: January 2026*
+*Protocol Version: 1.2*
+*Last Updated: 2026-01-16*
+
+### Changelog
+
+**v1.2 (2026-01-16)**
+- Added "TODO.md Integration" section
+- Made it standard to track discovered work when creating/updating projects
+- Provided examples for adding project work to TODO.md
+- Explained how this contributes to overall project progress tracking
+
+**v1.1 (2026-01-16)**
+- Added section: "Protocol Maintenance & Version Control"
+- Added guidance for keeping projects/README.md current
+- Added git hash tracking for detecting protocol updates
+- Added templates for documenting protocol versions
+- Added schedule for updating projects/README.md
+- Added verification procedures for checking protocol currency
+- Added "Related Protocols" section
+
+**v1.0 (January 2026)**
+- Initial protocol specification
+- Directory structure guidance
+- README.md template
+- Build log format
+- Parts list format
+- Cross-reference guidelines
+- Project naming conventions
+- Status tracking guide

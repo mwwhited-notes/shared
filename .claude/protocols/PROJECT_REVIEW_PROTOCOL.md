@@ -463,6 +463,91 @@ Use these prompts to trigger a review:
 
 ---
 
+## Documentation Protocols Maintenance
+
+As part of the quarterly review, check that all documentation protocols are current and indexed in [projects/README.md](../projects/README.md).
+
+### Protocol Currency Check
+
+During Phase 5 (Update Files), verify protocol versions:
+
+```bash
+# Check all protocol versions
+for f in .claude/protocols/*.md; do
+  echo "=== $(basename $f) ===";
+  grep -E "Protocol Version:|Last Updated:" "$f" | tail -2
+done
+
+# Document in projects/README.md with git hash for change tracking
+git log -1 --format="%H %ad" .claude/protocols/PROJECTS_PROTOCOL.md
+```
+
+### Updating projects/README.md
+
+The "Documentation Protocols Index" section in [projects/README.md](../projects/README.md) should be updated:
+
+1. **Check protocol versions** in each `.claude/protocols/*.md` file
+2. **Update version numbers** in the tables if any protocols changed
+3. **Add git commit hash** (first 7 characters) for each protocol:
+   ```bash
+   git log -1 --format="%h" .claude/protocols/FILENAME.md
+   ```
+4. **Update last updated date** in projects/README.md footer
+5. **Commit changes** with descriptive message: "Update protocol index in projects/README.md"
+
+### Detecting Protocol Updates Between Reviews
+
+To find which protocols changed since last review:
+
+```bash
+# If you know the review date:
+git log --since="2026-01-01" --until="2026-04-01" \
+  --format="%h %ad %s" .claude/protocols/ | grep -v "^commit"
+
+# Or compare specific protocol:
+git diff HEAD~20 .claude/protocols/PROJECTS_PROTOCOL.md | head -50
+```
+
+### When Protocols Need Updating
+
+Update a protocol's version when:
+- Adding new sections or guidance
+- Clarifying existing instructions
+- Changing recommendations or best practices
+- Deprecating old patterns
+- Integrating feedback from use
+
+**DO NOT update version for:**
+- Fixing typos (just commit the fix)
+- Minor formatting changes
+- Updating dates/links to external resources
+
+### Protocol Version Format
+
+Keep consistent version numbering:
+- **1.0** = Initial release
+- **1.1** = Minor updates (clarifications, new examples)
+- **1.2** = Moderate updates (new sections, significant examples)
+- **2.0** = Major changes (new workflow, breaking changes to recommendations)
+
+### Including Protocol References
+
+When documenting that a protocol was used or followed:
+
+Include version and hash for auditability:
+```markdown
+## Following PROJECTS_PROTOCOL.md
+
+Used version 1.1 (commit abc1234) created 2026-01-16
+
+This project follows the standard structure documented in the current protocol:
+- README.md with overview and materials
+- build-log.md for session progress
+- parts-list.md for detailed BOM
+```
+
+---
+
 ## Appendix: File Locations
 
 | File | Path |
@@ -480,5 +565,24 @@ Use these prompts to trigger a review:
 
 ---
 
-*Protocol version: 1.0*
-*Created: December 2025*
+*Protocol Version: 1.1*
+*Last Updated: 2026-01-16*
+
+## Changelog
+
+**v1.1 (2026-01-16)**
+- Added section: "Documentation Protocols Maintenance"
+- Added protocol currency check procedures
+- Added guidance for updating projects/README.md with protocol versions
+- Added git log commands for detecting protocol updates
+- Added protocol version numbering guidelines
+- Added template for including protocol references with version/hash
+- Integrated protocol maintenance into quarterly review workflow
+
+**v1.0 (December 2025)**
+- Initial protocol specification
+- Interactive workflow guidance
+- Inventory review checklist
+- Cross-reference procedures
+- Gap analysis framework
+- Project idea generation guidelines
