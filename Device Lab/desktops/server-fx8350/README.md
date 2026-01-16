@@ -1,6 +1,6 @@
-# Server (AMD FX-8350)
+# Server (AMD FX-9590)
 
-**AMD FX-8350 based home server with multiple storage drives**
+**AMD FX-9590 based home server with multiple storage drives**
 
 ## Device Information
 
@@ -103,7 +103,7 @@ Standard desktop/server - full control.
 - Intel X25-M SSDs are old but reliable (MLC NAND)
 - WD RE4 are enterprise drives - good for 24/7 operation
 - 32GB RAM is decent for VM hosting
-- FX-8350 has 8 cores - good for multi-threaded server workloads
+- FX-9590 has 8 cores - good for multi-threaded server workloads
 
 ### Considerations
 
