@@ -1,0 +1,71 @@
+@startuml Kafka CloudEvents Message Flow
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 10
+skinparam sequenceArrowThickness 2
+
+title Kafka CloudEvents Message Flow (CNCF Standard)
+
+participant "Event\nProducer" as prod
+participant "Kafka\nProducer API" as ka
+participant "Broker\nPartition" as broker
+participant "Consumer\nGroup" as cg
+participant "Event\nConsumer" as cons
+
+autonumber
+
+prod -> prod: CreateCloudEvent(\nspecversion: 1.0,\ntype: com.sensor.data,\nsource: /sensor/temp001,\nid: abc-123,\ntime: 2025-01-16T10:30:45Z,\ndatacontenttype: application/json,\ndataschema: https://schema.example.com,\nsubject: room/living_room,\npayload: {temp: 22.5, humidity: 65})
+
+note right of prod
+  CloudEvents Attributes:
+  - Context: metadata
+  - Data: typed payload
+  - Serialization: JSON
+end note
+
+prod -> ka: send(topic=sensor-data,\nkey=sensor/temp001,\nvalue=JSON-CE,\nheaders=[...])
+
+ka -> broker: WriteRecord(\npartition: 0,\noffset: 12345,\nkey_len: 19,\nvalue_len: 285,\ntimestamp: Unix-ms)
+
+broker -> broker: PersistToLog(\nreplication: 3x,\nmin_isr: 2)
+
+note right of broker
+  Kafka Guarantees:
+  - Durability (replication)
+  - Ordering (per partition)
+  - Compression: snappy
+  - TTL: 7 days
+end note
+
+broker -> cg: FetchRecords(\npartition: 0,\noffset: 12345,\nmax_records: 100)
+
+cg -> cons: onMessage(\nevent_headers,\nevent_body,\nmetadata)
+
+cons -> cons: ParseCloudEvent(\nverify_required_attrs,\nparse_data_schema)
+
+cons -> cons: ValidatePayload(\ndataschema: JSON-Schema,\nresult: valid)
+
+cons -> cons: ProcessEvent(\ntemp=22.5,\nhumidity=65,\nroom=living_room,\ntimestamp=2025-01-16T10:30:45Z)
+
+cons -> cons: EmitMetrics(\ninfluxdb_point: temp\ntags: sensor/temp001,room\nfields: value=22.5)
+
+cg -> ka: commitOffset(\npartition: 0,\noffset: 12345)
+
+ka -> broker: OffsetCommit(\nconsumer_group: analytics,\noffset_store: __consumer_offsets)
+
+note right of cons
+  Benefits:
+  - Schema evolution safe
+  - Metadata standardized
+  - Cross-system interop
+  - Traceable (source/id)
+end note
+
+note left of broker
+  Scaling Strategy:
+  - Partitioning by source
+  - Consumer groups parallel
+  - Rebalancing transparent
+end note
+
+@enduml

@@ -1,0 +1,108 @@
+@startuml System Architecture Overview
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 11
+skinparam roundCorners 8
+
+title Synchronized Telemetry Streaming - System Architecture Patterns
+
+package "Data Acquisition Layer" {
+    component [SCPI Instruments] as instruments <<hardware>>
+    component [Sensor Networks] as sensors <<hardware>>
+    component [SDR Receivers] as sdr <<hardware>>
+}
+
+package "Stream Collection" {
+    component [LSL Hub] as lsl <<middleware>>
+    component [MQTT Broker] as mqtt <<middleware>>
+    component [NATS Server] as nats <<middleware>>
+}
+
+package "Event Streaming Platform" {
+    component [Kafka Cluster] as kafka <<streaming>>
+    component [NATS JetStream] as jetstream <<streaming>>
+    component [RabbitMQ] as rabbitmq <<streaming>>
+}
+
+package "Processing & Analysis" {
+    component [Stream Processor\n(Apache Flink)] as processor <<compute>>
+    component [Time Correlation\nEngine] as correlator <<compute>>
+    component [RaptorQ Decoder] as decoder <<compute>>
+}
+
+package "Time Synchronization" {
+    component [NTP Server] as ntp <<sync>>
+    component [PTP Master] as ptp <<sync>>
+    component [GPS Receiver] as gps <<sync>>
+}
+
+package "Storage & Persistence" {
+    database [InfluxDB\nTime-Series] as influxdb <<storage>>
+    database [TimescaleDB\nPostgreSQL] as timescaledb <<storage>>
+    database [HDF5\nFiles] as hdf5 <<storage>>
+    database [S3\nBlob Storage] as s3 <<storage>>
+}
+
+package "Visualization & Alerting" {
+    component [Grafana\nDashboards] as grafana <<ui>>
+    component [Alert Manager] as alerts <<monitoring>>
+    component [Prometheus] as prometheus <<monitoring>>
+}
+
+' Connections - Data Flow
+instruments --> lsl
+sensors --> lsl
+sdr --> lsl
+
+lsl --> kafka
+mqtt --> kafka
+nats --> kafka
+
+kafka --> processor
+kafka --> decoder
+
+processor --> influxdb
+processor --> timescaledb
+decoder --> s3
+
+processor --> correlator
+ntp -.sync.-> processor
+ptp -.sync.-> processor
+gps -.sync.-> correlator
+
+influxdb --> grafana
+timescaledb --> grafana
+prometheus --> grafana
+
+processor --> prometheus
+alerts --> grafana
+
+note right of lsl
+  Lab Streaming Layer
+  - Multi-modal data
+  - Synchronized timestamps
+  - Sample rate: Hz to kHz
+end note
+
+note right of kafka
+  Event Streaming Hub
+  - CloudEvents envelope
+  - Topic-based routing
+  - Partition by sensor ID
+end note
+
+note right of processor
+  Real-time Processing
+  - Stateful operations
+  - Event-time semantics
+  - Late data handling
+end note
+
+note right of influxdb
+  High-cardinality timeseries
+  - Tag-based indexing
+  - Compression enabled
+  - Retention policies
+end note
+
+@enduml

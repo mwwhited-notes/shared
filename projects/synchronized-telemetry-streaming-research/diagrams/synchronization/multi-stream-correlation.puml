@@ -1,0 +1,124 @@
+@startuml Multi-Stream Time Synchronization Architecture
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 10
+
+title Multi-Receiver Time Synchronization & Correlation
+
+package "Time Source Infrastructure" {
+    component [GPS Receiver\n(PPS output)] as gps
+    component [NTP Server\n(Stratum 1)] as ntp
+    component [PTP Master\n(IEEE 1588v2)] as ptp
+}
+
+package "Receiver Devices" {
+    component [Receiver 1\n(SDR1)] as rx1
+    component [Receiver 2\n(SDR2)] as rx2
+    component [Receiver 3\n(Oscilloscope)] as rx3
+}
+
+package "Local Oscillator\nSynchronization" {
+    component [GPS Disciplined\nOscillator (GPSDO)] as gpsdo
+    component [Atomic Clock\nReference] as atomic
+}
+
+package "Timestamp Correlation\nEngine" {
+    component [NTP Time\nSync] as ntp_sync
+    component [PTP Sync\n(Grandmaster)] as ptp_sync
+    component [RTP Sync\nInfo] as rtp_sync
+}
+
+package "Multi-Receiver Processing" {
+    component [TDOA Computation\n(Time Diff of Arrival)] as tdoa
+    component [Cross-Correlation\nAnalysis] as xcorr
+    component [Phase Coherence\nEstimation] as phase
+}
+
+package "Data Storage" {
+    database [HDF5 with\nMetadata] as hdf5
+    database [Parquet with\nTimestamp Index] as parquet
+}
+
+package "Post-Processing" {
+    component [MATLAB/Python\nAnalysis] as analysis
+    component [Offline TDOA\nSolver] as solver
+}
+
+' Time sync connections
+gps --> gpsdo
+gps --> ntp
+gps --> ptp
+
+ntp --> ntp_sync
+ptp --> ptp_sync
+
+' Receiver synchronization
+rx1 -.clock sync.-> gpsdo
+rx2 -.clock sync.-> gpsdo
+rx3 -.clock sync.-> atomic
+
+' Timestamp correlation
+ntp_sync --> tdoa
+ptp_sync --> tdoa
+rtp_sync --> tdoa
+
+' Data correlation
+rx1 --> xcorr
+rx2 --> xcorr
+rx3 --> xcorr
+
+tdoa --> xcorr
+xcorr --> phase
+
+' Storage
+xcorr --> hdf5
+phase --> parquet
+
+' Analysis
+hdf5 --> analysis
+parquet --> solver
+analysis --> solver
+
+note right of gpsdo
+  Time Discipline:
+  - GPS 1PPS locked
+  - Atomic accuracy
+  - Holdover 1 week
+  - Phase noise: <-100 dBc
+end note
+
+note right of tdoa
+  TDOA Algorithm:
+  - Measure arrival times
+  - Calculate differences
+  - Localize sources
+  - Accuracy: λ/2 phase
+end note
+
+note right of xcorr
+  Cross-Correlation:
+  - Peak detection
+  - SNR estimation
+  - Confidence intervals
+  - Jitter measurement
+end note
+
+note right of hdf5
+  Metadata Storage:
+  - NTP offset model
+  - PTP grandmaster ID
+  - Temperature/humidity
+  - Oscillator discipline
+  - Clock drift rate
+end note
+
+note right of analysis
+  Use Cases:
+  - Passive radar TDOA
+  - Seismic triangulation
+  - Radio direction finding
+  - Audio localization
+  - Distributed sensing
+end note
+
+@enduml

@@ -1,0 +1,114 @@
+@startuml Protocol Selection Decision Tree
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 11
+skinparam linetype ortho
+
+title Telemetry System Protocol Selection Decision Tree
+
+start
+
+:Primary Requirement?;
+
+if (Real-time\nLocal Lab?) then (Yes)
+    :Use **LSL (Lab Streaming Layer)**;
+    :Multi-modal, low-latency\n<1ms synchronization;
+    :XDF format (self-documenting);
+    end
+else (No)
+    :Need Network\nDistribution?;
+
+    if (Yes) then
+        :Throughput\nRequirement?;
+
+        if (High\n(>10K msgs/sec)) then
+            :Message\nOrdering?;
+
+            if (Critical) then
+                :Use **Kafka**;
+                :High throughput\nPartition ordering\nReliable delivery\n3-9 replicas;
+                end
+            else (Flexible)
+                :Use **NATS**;
+                :Lower latency\nSimpler operations\nSubject-based;
+                end
+            endif
+        else (Medium\n100-10K msgs/sec)
+            :Use **NATS JetStream**\nor **RabbitMQ**;
+            :Balanced performance\nFlexible delivery modes;
+            end
+        endif
+    else (No)
+        :Local message\nqueue only?;
+
+        if (Yes) then
+            :Use **RabbitMQ**\nor **MQTT**;
+            :Pub/Sub, queue abstractions\nDurable, fault-tolerant;
+            end
+        endif
+    endif
+endif
+
+:Data Transfer\nProtocol Decision;
+
+:High packet\nloss (>5%)?;
+
+if (Yes) then
+    :Use **RaptorQ**\n(RFC 6330);
+    :Fountain codes\nNo retransmission\nOptimal for >10% loss;
+    :Symbol redundancy:\n10-30%;
+    :Encoding: O(K²),\nDecoding: O(K²);
+    end
+else (No)
+    :Packet loss\n<5%?;
+
+    if (Yes) then
+        :Use **QUIC**\nfor streaming\nor **TCP**\nfor reliable;
+        :Built-in error handling\nAutomatic retransmission;
+        end
+    else (None)
+        :Use **UDP**\nor **RTP**;
+        :Best latency\nNo overhead;
+        end
+    endif
+endif
+
+:Storage Format\nDecision;
+
+:Query\nPattern?;
+
+if (Analytics/SQL) then
+    :Use **Parquet**\n+ **TimescaleDB**;
+    :Columnar format\nFull SQL support\nCompression: 80%+;
+    end
+else if (Time-series\nMetrics) then
+    :Use **InfluxDB**;
+    :Tag-based indexing\nHigh cardinality\nAutomated downsampling;
+    end
+else (Offline\nProcessing)
+    :Use **HDF5**;
+    :Hierarchical structure\nEfficient arrays\nMatlab/Python friendly;
+    end
+endif
+
+:Synchronization\nMethod Decision;
+
+:Precision\nRequired?;
+
+if (µs/ns level) then
+    :Use **PTP**\n(IEEE 1588);
+    :Hardware-assisted\nCluster-wide sync\nAccuracy: <1 µs;
+    end
+else if (ms/100µs) then
+    :Use **NTP**;
+    :Network-based\nGlobal coverage\nAccuracy: 1-10 ms;
+    end
+else (Best effort)
+    :Use **RTP**\nor **Application\nTimestamps**;
+    :Simpler, lower overhead;
+    end
+endif
+
+stop
+
+@enduml

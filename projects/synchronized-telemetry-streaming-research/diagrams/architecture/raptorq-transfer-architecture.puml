@@ -1,0 +1,88 @@
+@startuml RaptorQ Erasure-Coded Transfer Architecture
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 10
+
+title RaptorQ Fountain Code Transfer (RFC 6330)
+
+package "Source Data" {
+    database [File/Stream\nK source symbols] as source
+}
+
+package "Encoder (RFC 6330)" {
+    component [Symbol\nGenerator] as encoder
+    component [FEC Parameters\n(K, N)] as fec_params
+}
+
+package "Transmission Network" {
+    component [Network\n(Unreliable)] as network
+    note "Packet Loss Rate: 0-30%\nLatency: Variable\nOut-of-order: Allowed" as net_note
+}
+
+package "Multiple Receivers" {
+    component [Receiver 1] as rx1
+    component [Receiver 2] as rx2
+    component [Receiver 3] as rx3
+}
+
+package "Decoder (RFC 6330)" {
+    component [Erasure\nRecovery] as decoder
+    component [Constraint\nSolver] as solver
+}
+
+package "Output Data" {
+    database [Reconstructed\nFile/Stream] as output
+}
+
+' Main flow
+source --> fec_params
+source --> encoder
+fec_params --> encoder
+
+encoder --> network
+network --> rx1
+network --> rx2
+network --> rx3
+
+rx1 --> decoder
+rx2 --> decoder
+rx3 --> decoder
+
+decoder --> solver
+solver --> output
+
+note right of encoder
+  Fountain Code Properties:
+  - Generates unlimited symbols
+  - Any K symbols sufficient to recover
+  - Linear operations over GF(2)
+  - Computational complexity: O(K²)
+end note
+
+note right of fec_params
+  FEC Configuration:
+  - K: Source blocks
+  - N_max: Max source symbols
+  - Symbol size: 16-64 bytes
+  - Repair percentage: 10-50%
+end note
+
+note right of network
+  Benefits:
+  - Loss agnostic (doesn't need ACK)
+  - Parallel transmission safe
+  - Out-of-order delivery OK
+  - No retransmission overhead
+end note
+
+note right of decoder
+  Recovery Process:
+  1. Collect K+ symbols
+  2. Solve system of equations
+  3. Reconstruct source symbols
+  4. Output original file
+
+  Probability of success >99.9%
+end note
+
+@enduml

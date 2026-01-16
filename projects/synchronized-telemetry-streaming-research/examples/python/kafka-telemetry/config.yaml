@@ -1,0 +1,100 @@
+# Kafka Telemetry Producer Configuration with CloudEvents
+
+kafka:
+  # Bootstrap servers for Kafka cluster
+  bootstrap_servers:
+    - "localhost:9092"
+    # - "kafka-0.kafka.example.com:9092"
+    # - "kafka-1.kafka.example.com:9092"
+
+  # Topic to publish to
+  topic: "telemetry"
+
+producer:
+  # Serialization format: json, avro, protobuf
+  serialization: "json"
+
+  # Compression: snappy, lz4, gzip, none
+  compression: "snappy"
+
+  # Acknowledgment level
+  # 0 = no ack, 1 = leader ack, all = all replicas
+  acks: 1
+
+  # Number of retries on failure
+  retries: 3
+
+  # Batch size in bytes
+  batch_size: 16384
+
+  # Linger time in milliseconds (wait for batch)
+  linger_ms: 10
+
+  # Timeout in milliseconds
+  request_timeout_ms: 30000
+
+  # Maximum in-flight requests
+  max_in_flight_requests: 5
+
+  # Partition key field (for ordering)
+  # null = round-robin, or field name like "sensor_id"
+  partition_key_field: "sensor_id"
+
+telemetry:
+  # Sensor types to generate data for
+  sensors:
+    - "temperature"
+    - "humidity"
+    - "pressure"
+
+  # Sample rate in Hz (messages per second)
+  sample_rate: 10
+
+cloudevents:
+  # CloudEvents source identifier
+  source: "/sensors/datacenter1"
+
+  # Optional schema URI for events
+  dataschema: "https://schema.example.com/sensor-data/v1"
+
+  # Event type prefix (becomes: prefix.measurement_type)
+  type_prefix: "com.sensor"
+
+logging:
+  # Log level: DEBUG, INFO, WARNING, ERROR
+  level: "INFO"
+
+  # Log format
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Example configurations for different scenarios:
+
+# High throughput (1000+ msgs/sec)
+# producer:
+#   batch_size: 65536
+#   linger_ms: 100
+#   compression: "snappy"
+#   acks: 1
+
+# Low latency (<1ms round-trip)
+# producer:
+#   batch_size: 100
+#   linger_ms: 1
+#   compression: "none"
+#   acks: 1
+
+# High durability (all replicas acknowledge)
+# producer:
+#   acks: "all"
+#   retries: 5
+#   compression: "snappy"
+
+# Multi-datacenter with Avro serialization
+# kafka:
+#   bootstrap_servers:
+#     - "dc1-kafka-1:9092"
+#     - "dc2-kafka-1:9092"
+#   topic: "telemetry-distributed"
+# producer:
+#   serialization: "avro"
+#   acks: "all"

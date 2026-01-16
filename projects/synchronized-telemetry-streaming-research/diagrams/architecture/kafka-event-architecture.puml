@@ -1,0 +1,88 @@
+@startuml Kafka Event Streaming with CloudEvents
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 10
+
+title Kafka Event Streaming Architecture with CloudEvents Envelope
+
+package "Event Producers" {
+    component [Sensor Producer 1] as prod1
+    component [Sensor Producer 2] as prod2
+    component [Instrument Producer] as prod3
+    component [Stream Processor] as prod4
+}
+
+package "CloudEvents Envelope" {
+    note "CloudEvents Wrapper\n- specversion\n- type\n- source\n- subject\n- datacontenttype\n- timestamp\n- dataschema" as ce_note
+}
+
+package "Kafka Cluster" {
+    component [Broker 1] as broker1
+    component [Broker 2] as broker2
+    component [Broker 3] as broker3
+}
+
+package "Topics (Partitioned)" {
+    queue [telemetry-raw\n(Partition 0-7)] as topic_raw
+    queue [telemetry-processed\n(Partition 0-3)] as topic_proc
+    queue [events-alarms\n(Partition 0-4)] as topic_alarms
+}
+
+package "Consumer Groups" {
+    component [Storage Consumer\n(Group: storage)] as consumer_storage
+    component [Analytics Consumer\n(Group: analytics)] as consumer_analytics
+    component [Alert Consumer\n(Group: alerts)] as consumer_alerts
+}
+
+package "Downstream Processing" {
+    component [S3 Sink] as s3_sink
+    component [InfluxDB Sink] as influx_sink
+    component [Alert Engine] as alert_engine
+    component [ML Pipeline] as ml_pipe
+}
+
+' Flows
+prod1 --> ce_note
+prod2 --> ce_note
+prod3 --> ce_note
+prod4 --> ce_note
+
+ce_note --> topic_raw
+ce_note --> topic_proc
+ce_note --> topic_alarms
+
+topic_raw --> broker1
+topic_proc --> broker2
+topic_alarms --> broker3
+
+broker1 --> consumer_storage
+broker2 --> consumer_analytics
+broker3 --> consumer_alerts
+
+consumer_storage --> s3_sink
+consumer_analytics --> influx_sink
+consumer_analytics --> ml_pipe
+consumer_alerts --> alert_engine
+
+note right of prod1
+  Serialization:
+  - JSON (human-readable)
+  - Avro (schema evolution)
+  - Protobuf (compact)
+end note
+
+note right of broker1
+  Replication Factor: 3
+  Min ISR: 2
+  Retention: 7 days
+  Compression: snappy
+end note
+
+note right of consumer_storage
+  Consumer Properties:
+  - auto.offset.reset: earliest
+  - enable.auto.commit: false
+  - isolation.level: read_committed
+end note
+
+@enduml

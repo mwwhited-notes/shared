@@ -1,0 +1,79 @@
+@startuml LSL Stream Synchronization Flow
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 10
+skinparam sequenceArrowThickness 2
+
+title LSL Multi-Stream Timestamp Synchronization
+
+participant "EEG Stream\n256 Hz" as eeg
+participant "ECG Stream\n250 Hz" as ecg
+participant "Eye Tracker\n120 Hz" as eye
+participant "LSL Hub" as hub
+participant "Clock\nSynchronizer" as sync
+participant "Recorder" as rec
+
+autonumber
+
+note over eeg, rec: T=0s: All streams start
+
+eeg -> hub: push_sample(\ndata=[ch0...ch255],\ntimestamp=local_clock[0])
+ecg -> hub: push_sample(\ndata=[I II III],\ntimestamp=local_clock[0])
+eye -> hub: push_sample(\ndata=[x y confidence],\ntimestamp=local_clock[0])
+
+note right of hub
+  Each stream maintains:
+  - Sample buffer
+  - Timestamp info
+  - Nominal sample rate
+  - Clock offset estimate
+end note
+
+par Parallel Stream 1
+    eeg -> eeg: Acquire 256 samples (t=1.0s)
+    eeg -> hub: push_samples(batch)
+else Parallel Stream 2
+    ecg -> ecg: Acquire 250 samples (t=1.0s)
+    ecg -> hub: push_samples(batch)
+else Parallel Stream 3
+    eye -> eye: Acquire 120 samples (t=1.0s)
+    eye -> hub: push_samples(batch)
+end
+
+note over hub: Timestamp Registration Phase
+
+loop Every 10 seconds
+    hub -> sync: register_clock_offset(\nstream_id: EEG,\nlocal_time: t_local,\nstream_time: t_stream)
+    hub -> sync: register_clock_offset(\nstream_id: ECG,\nlocal_time: t_local,\nstream_time: t_stream)
+    hub -> sync: register_clock_offset(\nstream_id: Eye,\nlocal_time: t_local,\nstream_time: t_stream)
+end
+
+sync -> sync: ComputeClockOffsets(\nregression analysis,\nslope = drift rate,\nintercept = offset)
+
+note right of sync
+  Clock Synchronization:
+  - Linear regression
+  - Detects clock drift
+  - Compensates offset
+  - Correlation: >99.5%
+end note
+
+hub -> rec: request_timestamps(\nmodal=common_timebase)
+
+rec -> sync: get_unified_timestamp(\nstream_ids=[EEG, ECG, Eye],\nlocal_samples=[256*t, 250*t, 120*t])
+
+sync -> rec: return(\nunified_ts=[...],\noffset_model=y=mx+b,\nconfidence=0.9999)
+
+note right of rec
+  Recording Timestamp Assignment:
+  - Use unified timebase
+  - Linear interpolation
+  - Apply offsets & drift
+  - Store with metadata
+end note
+
+rec -> rec: WriteSynchronizedXDF(\nall_streams_aligned,\ncommon_timestamp_domain,\nmetadata: offset_models)
+
+note over eeg, rec: Result: Multi-modal data synchronized to <1ms
+
+@enduml

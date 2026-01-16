@@ -1,0 +1,64 @@
+@startuml RaptorQ Encoding/Decoding Flow Diagram
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 10
+skinparam sequenceArrowThickness 2
+
+title RaptorQ Encoder/Decoder Sequence (RFC 6330)
+
+participant "Sender" as sender
+participant "RaptorQ\nEncoder" as encoder
+participant "Network\n(Lossy)" as network
+participant "Receiver 1" as rx1
+participant "Receiver 2" as rx2
+participant "RaptorQ\nDecoder" as decoder
+
+autonumber
+
+sender -> encoder: ReadFile(K symbols)
+note right of encoder: Symbol Count = K\nRedundancy = 20%\nRepair Symbols = 0.2*K
+
+encoder -> encoder: GenerateSourceBlock\n(D matrix, LT codes)
+
+loop Generate Symbols (unlimited)
+    encoder -> network: SendSymbol(ISI, payload)
+end
+
+note right of network: Simulating 20% packet loss\nPackets arrive out-of-order\nDelay: variable
+
+network -> rx1: RecvSymbol(ISI=0)
+network -> rx1: RecvSymbol(ISI=5)
+network -> rx1: RecvSymbol(ISI=12)
+network -> rx2: RecvSymbol(ISI=3)
+network -> rx2: RecvSymbol(ISI=7)
+network -> rx2: RecvSymbol(ISI=15)
+
+rx1 -> decoder: AddSymbol(ISI=0, data)
+rx1 -> decoder: AddSymbol(ISI=5, data)
+rx1 -> decoder: AddSymbol(ISI=12, data)
+
+rx2 -> decoder: AddSymbol(ISI=3, data)
+rx2 -> decoder: AddSymbol(ISI=7, data)
+rx2 -> decoder: AddSymbol(ISI=15, data)
+
+decoder -> decoder: CheckIfDecoded()
+note left of decoder: Received 6 symbols\nRequired: K >= 5\nReady to decode!
+
+decoder -> decoder: SolveGaussianElimination\n(over GF(256))
+
+decoder -> decoder: RecoverSourceSymbols\n(back-substitute)
+
+decoder --> sender: WriteFile(K symbols)
+
+note right of decoder: Recovery complete!\nFrom 6 received symbols,\nrecovered all K source symbols\nwith <20% overhead
+
+autonumber stop
+
+box "RaptorQ Advantages"
+  - No retransmission needed
+  - Efficient over high-loss networks
+  - Latency predictable
+  - Scalable to many receivers
+end box
+
+@enduml

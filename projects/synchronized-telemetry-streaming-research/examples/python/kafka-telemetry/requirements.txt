@@ -1,0 +1,32 @@
+# Kafka Telemetry Producer Dependencies
+
+# Kafka client library
+kafka-python>=2.0.2
+
+# Configuration file format
+PyYAML>=6.0
+
+# Optional: Confluent Python client (alternative to kafka-python)
+# confluent-kafka>=2.0.0
+
+# Optional: CloudEvents libraries
+# cloudevents>=1.6.0
+
+# Optional: Avro serialization
+# fastavro>=1.5.0
+
+# Optional: Protocol Buffers serialization
+# protobuf>=3.20.0
+
+# Optional: JSON Schema validation
+# jsonschema>=4.0.0
+
+# Optional: For OpenTelemetry integration
+# opentelemetry-api>=1.10.0
+# opentelemetry-sdk>=1.10.0
+# opentelemetry-exporter-jaeger>=1.10.0
+
+# Optional: For development and testing
+# pytest>=7.0.0
+# pytest-cov>=3.0.0
+# testcontainers[kafka]>=3.7.0

@@ -1,0 +1,29 @@
+# LSL-SCPI Bridge Dependencies
+
+# Lab Streaming Layer - Multi-modal data streaming and recording
+pylsl>=1.14.0
+
+# PyVISA - Virtual Instrument Software Architecture (VISA) support
+# Enables communication with SCPI instruments over various transports
+pyvisa>=1.13.0
+
+# PyVISA-py - Pure Python implementation (alternative to NI VISA)
+# Install either pyvisa-py or pyvisa-ni (National Instruments)
+pyvisa-py>=0.6.0
+
+# Configuration file format
+PyYAML>=6.0
+
+# Numerical computing (for averaging calculations)
+numpy>=1.21.0
+
+# Optional: NTP client for timestamp synchronization
+ntplib>=0.4.0
+
+# Optional: Advanced network access (for some VISA over network scenarios)
+# zeroconf>=0.40.0  # Uncomment if using zero-configuration networking
+
+# Optional: For development and testing
+# pytest>=7.0.0
+# pytest-cov>=3.0.0
+# mock>=4.0.0

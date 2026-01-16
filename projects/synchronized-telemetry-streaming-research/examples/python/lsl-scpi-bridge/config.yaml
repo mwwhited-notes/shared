@@ -1,0 +1,88 @@
+# LSL-SCPI Bridge Configuration
+
+instrument:
+  # VISA resource string format: TCPIP::IP_ADDRESS::INSTR
+  # Examples:
+  #   - TCPIP::192.168.1.100::INSTR  (LXI instrument)
+  #   - ASRL3::INSTR                  (Serial port COM3)
+  #   - GPIB0::10::INSTR              (GPIB address)
+  visa_resource: "TCPIP::192.168.1.100::INSTR"
+
+  # Communication timeout in milliseconds
+  visa_timeout: 5000
+
+  # Send *RST command on startup (resets instrument to default state)
+  reset_on_startup: false
+
+measurements:
+  # Measurement type: voltage, current, resistance, frequency, temperature, power, impedance
+  type: "voltage"
+
+  # Channel numbers to measure (instrument dependent)
+  channels: [1, 2, 3]
+
+  # Sampling rate in Hz (how often to query the instrument)
+  # Typical range: 0.1 Hz (once per 10s) to 1000 Hz (1ms intervals)
+  # Limited by instrument response time and network latency
+  sample_rate: 10
+
+  # Number of consecutive measurements to average before publishing
+  # Higher values smooth noise but increase latency
+  averaging_count: 1
+
+lsl_stream:
+  # Stream name (displayed in LabRecorder and other LSL apps)
+  name: "Rigol-DMM-01"
+
+  # Stream type (standard LSL types: EEG, ECG, EMG, Audio, etc. or custom)
+  type: "EEG"
+
+  # Instrument manufacturer for metadata
+  manufacturer: "Rigol"
+
+  # Instrument model for metadata
+  model: "DM3068"
+
+time_sync:
+  # Enable NTP-based timestamp correction
+  # When true, queries NTP server to align timestamps with network time
+  # Requires ntplib package: pip install ntplib
+  use_ntp: false
+
+  # NTP server address (default: pool.ntp.org - global NTP pool)
+  # Other common servers:
+  #   - time.nist.gov
+  #   - 0.pool.ntp.org, 1.pool.ntp.org, etc.
+  #   - Local NTP server IP (recommended for high precision)
+  ntp_server: "pool.ntp.org"
+
+# Example configurations for different use cases:
+
+# Example 1: Keysight Oscilloscope measuring voltage
+# instrument:
+#   visa_resource: "TCPIP::192.168.1.50::INSTR"
+#   timeout: 10000
+# measurements:
+#   type: "voltage"
+#   channels: [1, 2]
+#   sample_rate: 100
+
+# Example 2: Fluke Multimeter with NTP sync
+# measurements:
+#   type: "resistance"
+#   channels: [1]
+#   sample_rate: 1
+#   averaging_count: 5
+# time_sync:
+#   use_ntp: true
+#   ntp_server: "192.168.1.1"  # Local NTP server
+
+# Example 3: Power supply with high-frequency monitoring
+# measurements:
+#   type: "current"
+#   channels: [1]
+#   sample_rate: 1000
+#   averaging_count: 1
+# lsl_stream:
+#   name: "PSU-Channel-1"
+#   type: "EEG"  # Use EEG type for continuous analog data
