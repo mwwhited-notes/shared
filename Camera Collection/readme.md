@@ -1,10 +1,41 @@
 # Camera Collection
 
-Photography equipment inventory including camera bodies, lenses, teleconverters, and accessories.
+Complete photography equipment inventory including camera bodies, lenses, teleconverters, accessories, and astrophotography gear with mount compatibility and value tracking.
 
-## Documentation Protocol
+**Quick Reference:** 6 camera bodies | 30+ lenses & accessories | $9,500+ total value | [Documentation Protocol](../.claude/protocols/CAMERA_COLLECTION_PROTOCOL.md)
 
-See [CAMERA_COLLECTION_PROTOCOL.md](../.claude/protocols/CAMERA_COLLECTION_PROTOCOL.md) for documentation standards.
+## Table of Contents
+
+- [Quick Reference Summary](#quick-reference-summary)
+- [Camera Bodies](#camera-bodies)
+- [Lenses](#lenses)
+  - [Nikon Z-Mount](#nikon-z-mount)
+  - [Nikon F-Mount](#nikon-f-mount)
+  - [M42 (Screw Mount)](#m42-screw-mount)
+- [Teleconverters](#teleconverters)
+- [Accessories](#accessories)
+- [Mount Compatibility](#mount-compatibility)
+- [Collection Value Summary](#collection-value-summary)
+- [Astrophotography Gear](#astrophotography-gear)
+- [Darkroom / Film Processing](#darkroom--film-processing)
+- [Workstation / Editing](#workstation--editing)
+- [Cross-References](#cross-references)
+- [Notes](#notes)
+
+---
+
+## Quick Reference Summary
+
+| Category | Item Count | Total Value | Key Item |
+|----------|-----------|------------|---------|
+| Camera Bodies | 6 | $2,314.35 | Nikon D800 (36.3MP FX DSLR) |
+| Lenses (Nikon F) | 11 | $7,466.08 | Sigma 70-200mm f/2.8 OS HSM |
+| Lenses (M42) | 3 | $64.00 | Helios-44M-6 (vintage 58mm) |
+| Teleconverters | 2 | $378.01 | Sigma 2x APO EX DG |
+| Accessories | 40+ | $1,200+ | X-Rite i1 Display Pro, Nikon R1 Flash Kit |
+| Astrophotography | 8 | $570.44 | Sky-Watcher Star Adventurer 2i Pro |
+| Workstation | 5 | $8,009.27 | PowerSpec G474 + Epson V850 Pro |
+| **TOTAL** | **75+** | **$19,800+** | - |
 
 ---
 
@@ -215,4 +246,18 @@ Adapted lenses via Fotasy adapters:
 
 ---
 
-*Last updated: January 2026*
+## Cross-References
+
+- [Device Lab/](../Device%20Lab/) - Computing hardware used for photography workflow (Surface Book 2, PowerSpec G474)
+- [Test Equipment/](../Test%20Equipment/) - Optical tools and measurement equipment (AmScope microscopes, Light meters)
+- [Projects](../projects/) - Photography-related projects:
+  - Astrophotography experiments with Star Adventurer
+  - Film scanning and digital workflow optimization
+- [tools-and-components.md](../tools-and-components.md) - Consumables (film, cleaning supplies, batteries)
+
+---
+
+*Index Version: 1.0*
+*Last Updated: 2026-01-16*
+*Total Equipment: 75+ items including bodies, lenses, accessories, astrophotography gear, and workstation*
+*Scope: Digital and film camera bodies, interchangeable lenses (F-mount, Z-mount, M42), teleconverters, astrophotography equipment, accessories, and post-processing workstation*

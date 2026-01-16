@@ -1,10 +1,45 @@
 # Expansion Boards Inventory
 
-Personal collection of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and other development board expansion modules with specifications, documentation links, and compatibility information.
+Complete collection of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and Digilent Pmod modules organized by function and platform with pin compatibility and cross-reference information.
 
-Each expansion board has its own directory with detailed specifications and locally archived documentation.
+**Quick Reference:** 16 documented expansion boards | 8 Pmod modules | [Documentation Protocol](../.claude/protocols/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md)
 
-**[Expansion Boards Documentation Protocol](../.claude/protocols/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md)** - Guide for adding new expansion boards and maintaining this inventory.
+## Table of Contents
+
+- [Quick Reference Summary](#quick-reference-summary)
+- [Arduino Shields - Motor & Servo Control](#arduino-shields---motor--servo-control)
+- [Arduino Shields - Communication & Wireless](#arduino-shields---communication--wireless)
+- [Arduino Shields - Sensors & Data](#arduino-shields---sensors--data)
+- [Arduino Shields - Display & UI](#arduino-shields---display--ui)
+- [Arduino Shields - Prototyping](#arduino-shields---prototyping)
+- [Arduino Shields - Power Management](#arduino-shields---power-management)
+- [Arduino Shields - Programming & Development](#arduino-shields---programming--development)
+- [Raspberry Pi HATs](#raspberry-pi-hats)
+- [BeagleBone Capes](#beaglbone-capes)
+- [Digilent Pmod Modules](#digilent-pmod-modules)
+- [Quick Reference by Function](#quick-reference-by-function)
+- [Directory Structure](#directory-structure)
+- [Compatibility Cross-Reference](#compatibility-cross-reference)
+- [Common Interface Types](#common-interface-types)
+- [Collection Value Summary](#collection-value-summary)
+- [Cross-References](#cross-references)
+
+---
+
+## Quick Reference Summary
+
+| Category | Board Count | Status | Key Example |
+|----------|------------|--------|------------|
+| Arduino Shields - Motors | 2 | Active | Adafruit PWM/Servo (16 channels, I2C) |
+| Arduino Shields - Wireless | 3 | Active | XBee Shield (802.15.4 ZigBee) |
+| Arduino Shields - Sensors | 4 | Active | Robogaia 6-Axis IMU (MPU-6050) |
+| Arduino Shields - Display | 2 | Active | OSEPP LCD Keypad (16x2 + buttons) |
+| Arduino Shields - Other | 3 | Active | Evil Mad Science ISP (AVR programmer) |
+| Arduino Proto Shields | 2 | Active | 19 total proto boards |
+| Raspberry Pi HATs | 2 | Active | PoE HAT (802.3af Power over Ethernet) |
+| BeagleBone Capes | 1 | Active | Adafruit Proto Cape (3 units) |
+| Digilent Pmod Modules | 8 | Active | Pmod VGA, I2S2, Keypad, SSD, etc. |
+| **TOTAL** | **24** | **Active** | - |
 
 ---
 
@@ -12,88 +47,88 @@ Each expansion board has its own directory with detailed specifications and loca
 
 ### Arduino Shields - Motor & Servo Control
 
-| Shield | Function | Main IC | Interface | Qty | Directory |
-|--------|----------|---------|-----------|-----|-----------|
-| [Adafruit 16-Ch PWM/Servo](arduino-adafruit-pwm-servo-shield/) | 16-channel servo/PWM | PCA9685 | I2C | 1 | `arduino-adafruit-pwm-servo-shield/` |
-| [OSEPP Motor & Servo](arduino-osepp-motor-servo-shield/) | 4 DC / 2 stepper / 2 servo | 2x L293D | PWM + Shift | 1 | `arduino-osepp-motor-servo-shield/` |
+| Shield | Function | Main IC | Interface | Qty | Git Hash | Directory |
+|--------|----------|---------|-----------|-----|----------|-----------|
+| [Adafruit 16-Ch PWM/Servo](arduino-adafruit-pwm-servo-shield/) | 16-channel servo/PWM | PCA9685 | I2C | 1 | xxxxxxx | `arduino-adafruit-pwm-servo-shield/` |
+| [OSEPP Motor & Servo](arduino-osepp-motor-servo-shield/) | 4 DC / 2 stepper / 2 servo | 2x L293D | PWM + Shift | 1 | xxxxxxx | `arduino-osepp-motor-servo-shield/` |
 
 ### Arduino Shields - Communication & Wireless
 
-| Shield | Function | Main IC | Interface | Qty | Directory |
-|--------|----------|---------|-----------|-----|-----------|
-| [XBee Shield](arduino-xbee-shield/) | XBee wireless adapter | - | UART/SoftSerial | 2 | `arduino-xbee-shield/` |
-| [RedBear BLE Shield v2.1](arduino-redbear-ble-shield/) | Bluetooth Low Energy | nRF8001 | SPI (ACI) | 1 | `arduino-redbear-ble-shield/` |
-| [RS232/RS485 Shield](arduino-rs232-rs485-shield/) | Industrial serial | MAX232/MAX485 | UART | 1 | `arduino-rs232-rs485-shield/` |
+| Shield | Function | Main IC | Interface | Qty | Git Hash | Directory |
+|--------|----------|---------|-----------|-----|----------|-----------|
+| [XBee Shield](arduino-xbee-shield/) | XBee wireless adapter | - | UART/SoftSerial | 2 | xxxxxxx | `arduino-xbee-shield/` |
+| [RedBear BLE Shield v2.1](arduino-redbear-ble-shield/) | Bluetooth Low Energy | nRF8001 | SPI (ACI) | 1 | xxxxxxx | `arduino-redbear-ble-shield/` |
+| [RS232/RS485 Shield](arduino-rs232-rs485-shield/) | Industrial serial | MAX232/MAX485 | UART | 1 | xxxxxxx | `arduino-rs232-rs485-shield/` |
 
 ### Arduino Shields - Sensors & Data
 
-| Shield | Function | Main IC | Interface | Qty | Directory |
-|--------|----------|---------|-----------|-----|-----------|
-| [SainSmart Sensor Shield v4.0](arduino-sainsmart-sensor-shield-v4/) | Sensor breakout | - | Passthrough | 2 | `arduino-sainsmart-sensor-shield-v4/` |
-| [Mega Sensor Shield v2.0](arduino-mega-sensor-shield-v2/) | Mega sensor breakout | - | Passthrough | 2 | `arduino-mega-sensor-shield-v2/` |
-| [Robogaia 6-Axis IMU](arduino-robogaia-6axis-imu/) | Gyro + Accelerometer | MPU-6050 | I2C | 1 | `arduino-robogaia-6axis-imu/` |
-| [Deek-Robot Data Logger](arduino-deek-robot-data-logging-shield/) | SD card + RTC | DS1307 | SPI + I2C | 3 | `arduino-deek-robot-data-logging-shield/` |
+| Shield | Function | Main IC | Interface | Qty | Git Hash | Directory |
+|--------|----------|---------|-----------|-----|----------|-----------|
+| [SainSmart Sensor Shield v4.0](arduino-sainsmart-sensor-shield-v4/) | Sensor breakout | - | Passthrough | 2 | xxxxxxx | `arduino-sainsmart-sensor-shield-v4/` |
+| [Mega Sensor Shield v2.0](arduino-mega-sensor-shield-v2/) | Mega sensor breakout | - | Passthrough | 2 | xxxxxxx | `arduino-mega-sensor-shield-v2/` |
+| [Robogaia 6-Axis IMU](arduino-robogaia-6axis-imu/) | Gyro + Accelerometer | MPU-6050 | I2C | 1 | xxxxxxx | `arduino-robogaia-6axis-imu/` |
+| [Deek-Robot Data Logger](arduino-deek-robot-data-logging-shield/) | SD card + RTC | DS1307 | SPI + I2C | 3 | xxxxxxx | `arduino-deek-robot-data-logging-shield/` |
 
 ### Arduino Shields - Display & UI
 
-| Shield | Function | Main IC | Interface | Qty | Directory |
-|--------|----------|---------|-----------|-----|-----------|
-| [OSEPP LCD Keypad](arduino-osepp-lcd-keypad-shield/) | 16x2 LCD + 5 buttons | HD44780 | 4-bit parallel | 1 | `arduino-osepp-lcd-keypad-shield/` |
-| [Multi-Function Shield](arduino-multi-function-shield/) | 7-seg, LEDs, buttons, buzzer | 74HC595 | Shift register | 1 | `arduino-multi-function-shield/` |
+| Shield | Function | Main IC | Interface | Qty | Git Hash | Directory |
+|--------|----------|---------|-----------|-----|----------|-----------|
+| [OSEPP LCD Keypad](arduino-osepp-lcd-keypad-shield/) | 16x2 LCD + 5 buttons | HD44780 | 4-bit parallel | 1 | xxxxxxx | `arduino-osepp-lcd-keypad-shield/` |
+| [Multi-Function Shield](arduino-multi-function-shield/) | 7-seg, LEDs, buttons, buzzer | 74HC595 | Shift register | 1 | xxxxxxx | `arduino-multi-function-shield/` |
 
 ### Arduino Shields - Prototyping
 
-| Shield | Function | Main IC | Interface | Qty | Directory |
-|--------|----------|---------|-----------|-----|-----------|
-| Arduino Mega Proto Shield | Solderable prototype PCB | - | Passthrough | 10 | - |
-| Arduino Uno Proto Shield | ElectroCookie prototyping PCB (3 types) | - | Passthrough | 9 | - |
+| Shield | Function | Main IC | Interface | Qty | Git Hash | Directory |
+|--------|----------|---------|-----------|-----|----------|-----------|
+| Arduino Mega Proto Shield | Solderable prototype PCB | - | Passthrough | 10 | xxxxxxx | - |
+| Arduino Uno Proto Shield | ElectroCookie prototyping PCB (3 types) | - | Passthrough | 9 | xxxxxxx | - |
 
 *KEYESTUDIO 10-pack double-sided PCB prototype shields for Arduino Mega 2560. Purchased 2022-12-30 for $16.66.*
 *ElectroCookie 9-pack prototyping shields for Arduino Uno R3 (3 different types). Purchased 2021-04-01 for $14.99.*
 
 ### Arduino Shields - Power Management
 
-| Shield | Function | Main IC | Interface | Qty | Directory |
-|--------|----------|---------|-----------|-----|-----------|
-| [Adafruit PowerBoost 500](arduino-adafruit-powerboost-500-shield/) | Rechargeable 5V LiPo power | TPS61090 | Power only | 1 | `arduino-adafruit-powerboost-500-shield/` |
+| Shield | Function | Main IC | Interface | Qty | Git Hash | Directory |
+|--------|----------|---------|-----------|-----|----------|-----------|
+| [Adafruit PowerBoost 500](arduino-adafruit-powerboost-500-shield/) | Rechargeable 5V LiPo power | TPS61090 | Power only | 1 | xxxxxxx | `arduino-adafruit-powerboost-500-shield/` |
 
 ### Arduino Shields - Programming & Development
 
-| Shield | Function | Main IC | Interface | Qty | Directory |
-|--------|----------|---------|-----------|-----|-----------|
-| [Evil Mad Science ISP Shield 2.0](arduino-evil-mad-science-isp-shield/) | AVR ISP programmer | - | SPI | 1 | `arduino-evil-mad-science-isp-shield/` |
+| Shield | Function | Main IC | Interface | Qty | Git Hash | Directory |
+|--------|----------|---------|-----------|-----|----------|-----------|
+| [Evil Mad Science ISP Shield 2.0](arduino-evil-mad-science-isp-shield/) | AVR ISP programmer | - | SPI | 1 | xxxxxxx | `arduino-evil-mad-science-isp-shield/` |
 
 ### Raspberry Pi HATs
 
-| HAT | Function | Interface | Compatible Models | Qty | Directory |
-|-----|----------|-----------|-------------------|-----|-----------|
-| [PoE HAT (2018)](rpi-poe-hat-2018/) | Power over Ethernet | 802.3af PoE | Pi 3B+, Pi 4 | 1 | `rpi-poe-hat-2018/` |
-| [ARPI600](rpi-arpi600/) | Arduino shield + XBee adapter | GPIO/I2C/SPI | Pi 2/3/4, Jetson | 1 | `rpi-arpi600/` |
+| HAT | Function | Interface | Compatible Models | Qty | Git Hash | Directory |
+|-----|----------|-----------|-------------------|-----|----------|-----------|
+| [PoE HAT (2018)](rpi-poe-hat-2018/) | Power over Ethernet | 802.3af PoE | Pi 3B+, Pi 4 | 1 | xxxxxxx | `rpi-poe-hat-2018/` |
+| [ARPI600](rpi-arpi600/) | Arduino shield + XBee adapter | GPIO/I2C/SPI | Pi 2/3/4, Jetson | 1 | xxxxxxx | `rpi-arpi600/` |
 
 ### BeagleBone Capes
 
-| Cape | Function | Interface | Compatible Models | Qty | Directory |
-|------|----------|-----------|-------------------|-----|-----------|
-| [Adafruit Proto Cape](bbb-adafruit-proto-cape/) | Solderable prototyping PCB | All pins | BeagleBone, BBB | 3 | `bbb-adafruit-proto-cape/` |
+| Cape | Function | Interface | Compatible Models | Qty | Git Hash | Directory |
+|------|----------|-----------|-------------------|-----|----------|-----------|
+| [Adafruit Proto Cape](bbb-adafruit-proto-cape/) | Solderable prototyping PCB | All pins | BeagleBone, BBB | 3 | xxxxxxx | `bbb-adafruit-proto-cape/` |
 
 ### ESP32/ESP8266 Shields
 
-| Shield | Function | Interface | Compatible Boards | Directory |
-|--------|----------|-----------|-------------------|-----------|
-| *None yet* | | | | |
+| Shield | Function | Interface | Compatible Boards | Git Hash | Directory |
+|--------|----------|-----------|-------------------|----------|-----------|
+| *None yet* | | | | | |
 
 ### Digilent Pmod Modules
 
-| Module | Function | Interface | Qty | Price | Date |
-|--------|----------|-----------|-----|-------|------|
-| Pmod SSD | Seven-segment Display | GPIO | 1 | $6.99 | 2021-03-15 |
-| Pmod SWT | 4 Slide Switches | GPIO | 2 | $9.98 | 2021-03-15 |
-| Pmod TPH2 | 12-pin Test Point Header | - | 2 | $9.98 | 2021-03-15 |
-| Pmod I2S2 | Stereo Audio I/O | I2S | 1 | $21.99 | 2021-11-22 |
-| Pmod Shield (Uno) | Arduino to Pmod Adapter | - | 3 | $31.99 | 2021 |
-| Pmod KYPD | 16-Button Keypad | GPIO | 1 | $9.99 | - |
-| Pmod ENC | Rotary Encoder | GPIO | 1 | $6.99 | - |
-| Pmod VGA | Video Graphics Array | GPIO | 1 | $8.99 | 2020-12-25 |
+| Module | Function | Interface | Qty | Price | Date | Git Hash |
+|--------|----------|-----------|-----|-------|------|----------|
+| Pmod SSD | Seven-segment Display | GPIO | 1 | $6.99 | 2021-03-15 | xxxxxxx |
+| Pmod SWT | 4 Slide Switches | GPIO | 2 | $9.98 | 2021-03-15 | xxxxxxx |
+| Pmod TPH2 | 12-pin Test Point Header | - | 2 | $9.98 | 2021-03-15 | xxxxxxx |
+| Pmod I2S2 | Stereo Audio I/O | I2S | 1 | $21.99 | 2021-11-22 | xxxxxxx |
+| Pmod Shield (Uno) | Arduino to Pmod Adapter | - | 3 | $31.99 | 2021 | xxxxxxx |
+| Pmod KYPD | 16-Button Keypad | GPIO | 1 | $9.99 | - | xxxxxxx |
+| Pmod ENC | Rotary Encoder | GPIO | 1 | $6.99 | - | xxxxxxx |
+| Pmod VGA | Video Graphics Array | GPIO | 1 | $8.99 | 2020-12-25 | xxxxxxx |
 
 *Pmod modules compatible with Arty A7, Arty Z7, and other Digilent FPGA boards.*
 
@@ -279,4 +314,17 @@ The following items need purchase information added:
 
 ---
 
-*Last updated: December 2025*
+## Cross-References
+
+- [Programmable Devices/](../Programmable%20Devices/) - Arduino boards, Raspberry Pi, BeagleBone boards that use these shields
+- [Test Equipment/](../Test%20Equipment/) - Oscilloscopes, logic analyzers for debugging shield compatibility issues
+- [Projects](../projects/) - Active projects using expansion boards:
+  - Various Arduino-based projects utilizing shields
+  - Raspberry Pi projects with HATs
+
+---
+
+*Index Version: 1.0*
+*Last Updated: 2026-01-16*
+*Total Boards Documented: 16 shields + 8 Pmod modules*
+*Scope: Arduino shields, Raspberry Pi HATs, BeagleBone capes, and Digilent Pmod modules for programmable devices*

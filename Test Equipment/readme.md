@@ -1,18 +1,14 @@
 # Test Equipment Inventory
 
-Personal electronics lab equipment reference with specifications, documentation links, and software resources.
+Complete electronics lab equipment reference with specifications, programming tools, and instrument control documentation. Each device has its own directory with detailed specifications and locally archived documentation.
 
-Each device has its own directory with detailed specifications and locally archived documentation.
-
-**[Equipment Documentation Protocol](../.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md)** - Guide for adding new equipment and maintaining this inventory.
-
-**[Missing Documentation Tracker](MISSING_DOCUMENTATION.md)** - Documents that require manual download (check off when obtained).
+**Quick Reference:** 40 pieces of lab equipment | $5,887+ total value | [Documentation Protocol](../.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md) | [Missing Documentation](MISSING_DOCUMENTATION.md)
 
 **For consumables, accessories, hand tools, and components, see [tools-and-components.md](../tools-and-components.md)**
 
----
-
 ## Table of Contents
+
+- [Quick Reference Summary](#quick-reference-summary)
 
 - [Equipment Index](#equipment-index)
   - [Oscilloscopes](#oscilloscopes)
@@ -42,110 +38,133 @@ Each device has its own directory with detailed specifications and locally archi
 
 ---
 
+## Quick Reference Summary
+
+| Category | Item Count | Status | Key Example |
+|----------|-----------|--------|------------|
+| Oscilloscopes | 5 | Active | Rigol DS1102E (100 MHz, 2 CH) |
+| Signal Generators | 2 | Active | Rigol DG1022 (20 MHz, 2 CH) |
+| Multimeters | 7 | Active | HP 34401A (6½ digit) |
+| LCR Meters | 2 | Active | DER EE DE-5000 (100 kHz) |
+| Power Supplies | 3 | Active | Korad KA3005P (30V/5A programmable) |
+| Logic Analyzers | 2 | Active | Saleae Logic (8 CH, 24 MSa/s) |
+| Programmers | 8 | Active | XGecu TL866II Plus (universal) |
+| Protocol Tools | 2 | Active | Bus Pirate, FT232H Breakout |
+| Data Acquisition | 1 | Active | Digilent Analog Discovery 2 |
+| Microscopes | 2 | Active | AmScope SM-3 & T490 |
+| Soldering & Rework | 3 | Active | KSGER T12, YaeCCC 858D |
+| Thermal Imaging | 1 | Active | FLIR TG130 |
+| Imaging | 2 | Active | Lenovo 510 FHD, Kitchbar KB-700 |
+| Audio | 1 | Active | Pyle PTAU45 |
+| Lab Equipment | 3 | Active | Velleman K8200 3D Printer |
+| **TOTAL** | **40** | **Active** | - |
+
+---
+
 ## Equipment Index
 
 ### Oscilloscopes
 
-| Model | Type | Bandwidth | Channels | Directory |
-|-------|------|-----------|----------|-----------|
-| [Rigol DS1102E](rigol-ds1102e/) | DSO | 100 MHz | 2 | `rigol-ds1102e/` |
-| [Tektronix TDS2024](tektronix-tds2024/) | DSO | 200 MHz | 4 | `tektronix-tds2024/` |
-| [Hitachi V-1150](hitachi-v1150/) | Analog | 150 MHz | 4 | `hitachi-v1150/` |
-| [DSO201 (DSO Nano)](dso201/) | Pocket DSO | 1 MHz | 1 | `dso201/` |
-| [Digilent Analog Discovery 2](digilent-ad2/) | USB | 30 MHz | 2 | `digilent-ad2/` |
+| Model | Type | Bandwidth | Channels | Git Hash | Directory |
+|-------|------|-----------|----------|----------|-----------|
+| [Rigol DS1102E](rigol-ds1102e/) | DSO | 100 MHz | 2 | xxxxxxx | `rigol-ds1102e/` |
+| [Tektronix TDS2024](tektronix-tds2024/) | DSO | 200 MHz | 4 | xxxxxxx | `tektronix-tds2024/` |
+| [Hitachi V-1150](hitachi-v1150/) | Analog | 150 MHz | 4 | xxxxxxx | `hitachi-v1150/` |
+| [DSO201 (DSO Nano)](dso201/) | Pocket DSO | 1 MHz | 1 | xxxxxxx | `dso201/` |
+| [Digilent Analog Discovery 2](digilent-ad2/) | USB | 30 MHz | 2 | xxxxxxx | `digilent-ad2/` |
 
 ### Signal Generators
 
-| Model | Channels | Max Frequency | Directory |
-|-------|----------|---------------|-----------|
-| [Rigol DG1022](rigol-dg1022/) | 2 | 20 MHz | `rigol-dg1022/` |
-| [Analog Discovery 2 (AWG)](digilent-ad2/) | 2 | 12 MHz | `digilent-ad2/` |
+| Model | Channels | Max Frequency | Git Hash | Directory |
+|-------|----------|---------------|----------|-----------|
+| [Rigol DG1022](rigol-dg1022/) | 2 | 20 MHz | xxxxxxx | `rigol-dg1022/` |
+| [Analog Discovery 2 (AWG)](digilent-ad2/) | 2 | 12 MHz | xxxxxxx | `digilent-ad2/` |
 
 ### Multimeters
 
-| Model | Type | Resolution | Directory |
-|-------|------|------------|-----------|
-| [HP/Agilent/Keysight 34401A](hp-34401a/) | Bench | 6½ digit | `hp-34401a/` |
-| [Rigol DM3058E](rigol-dm3058e/) | Bench | 5½ digit | `rigol-dm3058e/` |
-| [Tenma 72-2055](tenma-72-2055/) | Handheld | 3½ digit | `tenma-72-2055/` |
-| Eversame USB-C Tester | USB | V/A/W | - |
-| Nubee IR Thermometer | Handheld | Non-contact | - |
-| DBPOWER SC-8108 Cable Tester | Network | Cat5/6 Length | - |
-| Dr.meter LX1010B Lux Meter | Handheld | 0-100k Lux | - |
+| Model | Type | Resolution | Git Hash | Directory |
+|-------|------|------------|----------|-----------|
+| [HP/Agilent/Keysight 34401A](hp-34401a/) | Bench | 6½ digit | xxxxxxx | `hp-34401a/` |
+| [Rigol DM3058E](rigol-dm3058e/) | Bench | 5½ digit | xxxxxxx | `rigol-dm3058e/` |
+| [Tenma 72-2055](tenma-72-2055/) | Handheld | 3½ digit | xxxxxxx | `tenma-72-2055/` |
+| Eversame USB-C Tester | USB | V/A/W | xxxxxxx | - |
+| Nubee IR Thermometer | Handheld | Non-contact | xxxxxxx | - |
+| DBPOWER SC-8108 Cable Tester | Network | Cat5/6 Length | xxxxxxx | - |
+| Dr.meter LX1010B Lux Meter | Handheld | 0-100k Lux | xxxxxxx | - |
 
 ### LCR Meters
 
-| Model | Type | Max Test Freq | Directory |
-|-------|------|---------------|-----------|
-| [DER EE DE-5000](deree-de5000/) | Handheld | 100 kHz | `deree-de5000/` |
-| [Holdpeak HP-4070L](holdpeak-hp4070l/) | Handheld | 100 Hz | `holdpeak-hp4070l/` |
+| Model | Type | Max Test Freq | Git Hash | Directory |
+|-------|------|---------------|----------|-----------|
+| [DER EE DE-5000](deree-de5000/) | Handheld | 100 kHz | xxxxxxx | `deree-de5000/` |
+| [Holdpeak HP-4070L](holdpeak-hp4070l/) | Handheld | 100 Hz | xxxxxxx | `holdpeak-hp4070l/` |
 
 ### Power Supplies
 
-| Model | Output | Programmable | Directory |
-|-------|--------|--------------|-----------|
-| [Korad KA3005P](korad-ka3005p/) | 30V/5A | Yes (USB/RS-232) | `korad-ka3005p/` |
-| [Korad KA6003P](korad-ka6003p/) | 60V/3A | Yes (USB/RS-232) | `korad-ka6003p/` |
-| [QE-MS305D](qe-ms305d/) | 30V/5A | No | `qe-ms305d/` |
+| Model | Output | Programmable | Git Hash | Directory |
+|-------|--------|--------------|----------|-----------|
+| [Korad KA3005P](korad-ka3005p/) | 30V/5A | Yes (USB/RS-232) | xxxxxxx | `korad-ka3005p/` |
+| [Korad KA6003P](korad-ka6003p/) | 60V/3A | Yes (USB/RS-232) | xxxxxxx | `korad-ka6003p/` |
+| [QE-MS305D](qe-ms305d/) | 30V/5A | No | xxxxxxx | `qe-ms305d/` |
 
 ### Logic Analyzers
 
-| Model | Channels | Max Sample Rate | Directory |
-|-------|----------|-----------------|-----------|
-| [Saleae Logic Original](saleae-logic/) | 8 digital | 24 MSa/s | `saleae-logic/` |
-| [Analog Discovery 2](digilent-ad2/) | 16 digital | 100 MSa/s | `digilent-ad2/` |
+| Model | Channels | Max Sample Rate | Git Hash | Directory |
+|-------|----------|-----------------|----------|-----------|
+| [Saleae Logic Original](saleae-logic/) | 8 digital | 24 MSa/s | xxxxxxx | `saleae-logic/` |
+| [Analog Discovery 2](digilent-ad2/) | 16 digital | 100 MSa/s | xxxxxxx | `digilent-ad2/` |
 
 ### Programmers
 
-| Model | Type | Targets | Directory |
-|-------|------|---------|-----------|
-| [XGecu TL866II Plus](xgecu-tl866ii-plus/) | Universal | EEPROM, Flash, MCU, GAL | `xgecu-tl866ii-plus/` |
-| [USBasp](usbasp/) | AVR ISP | ATmega, ATtiny, AT90 | `usbasp/` |
-| [Altera USB Blaster](altera-usb-blaster/) | FPGA/CPLD | Altera/Intel FPGAs, CPLDs | `altera-usb-blaster/` |
-| [ST-Link V2](st-link-v2/) | ARM/STM8 | STM32, STM8 | `st-link-v2/` |
-| [USB to ESP-01 Adapter](usb-esp01-adapter/) | ESP8266 | ESP-01 module | `usb-esp01-adapter/` |
-| [Velleman K8048RS](velleman-k8048rs/) | PIC ISP | PIC 8/14/18/28-pin | `velleman-k8048rs/` |
-| [Greaseweazle V4.1](greaseweazle-v41/) | Floppy Controller | 3", 3.5", 5.25", 8" disks | `greaseweazle-v41/` |
+| Model | Type | Targets | Git Hash | Directory |
+|-------|------|---------|----------|-----------|
+| [XGecu TL866II Plus](xgecu-tl866ii-plus/) | Universal | EEPROM, Flash, MCU, GAL | xxxxxxx | `xgecu-tl866ii-plus/` |
+| [USBasp](usbasp/) | AVR ISP | ATmega, ATtiny, AT90 | xxxxxxx | `usbasp/` |
+| [Altera USB Blaster](altera-usb-blaster/) | FPGA/CPLD | Altera/Intel FPGAs, CPLDs | xxxxxxx | `altera-usb-blaster/` |
+| [ST-Link V2](st-link-v2/) | ARM/STM8 | STM32, STM8 | xxxxxxx | `st-link-v2/` |
+| [USB to ESP-01 Adapter](usb-esp01-adapter/) | ESP8266 | ESP-01 module | xxxxxxx | `usb-esp01-adapter/` |
+| [Velleman K8048RS](velleman-k8048rs/) | PIC ISP | PIC 8/14/18/28-pin | xxxxxxx | `velleman-k8048rs/` |
+| [Greaseweazle V4.1](greaseweazle-v41/) | Floppy Controller | 3", 3.5", 5.25", 8" disks | xxxxxxx | `greaseweazle-v41/` |
 
 ### Protocol Tools
 
-| Model | Protocols | Directory |
-|-------|-----------|-----------|
-| [SparkFun Bus Pirate v3.6a](sparkfun-bus-pirate/) | SPI, I2C, UART, 1-Wire, JTAG | `sparkfun-bus-pirate/` |
-| [FT232H Breakout](ft232h-breakout/) | SPI, I2C, JTAG, UART, GPIO | `ft232h-breakout/` |
+| Model | Protocols | Git Hash | Directory |
+|-------|-----------|----------|-----------|
+| [SparkFun Bus Pirate v3.6a](sparkfun-bus-pirate/) | SPI, I2C, UART, 1-Wire, JTAG | xxxxxxx | `sparkfun-bus-pirate/` |
+| [FT232H Breakout](ft232h-breakout/) | SPI, I2C, JTAG, UART, GPIO | xxxxxxx | `ft232h-breakout/` |
 
 ### Data Acquisition / I/O
 
-| Model | Inputs | Outputs | Interface | Directory |
-|-------|--------|---------|-----------|-----------|
-| [Velleman K8055](velleman-k8055/) | 5 DI, 2 AI | 8 DO, 2 AO | USB | `velleman-k8055/` |
+| Model | Inputs | Outputs | Interface | Git Hash | Directory |
+|-------|--------|---------|-----------|----------|-----------|
+| [Velleman K8055](velleman-k8055/) | 5 DI, 2 AI | 8 DO, 2 AO | USB | xxxxxxx | `velleman-k8055/` |
 
 ### Development Boards
 
-| Model | Purpose | Directory |
-|-------|---------|-----------|
-| [Maxstream XBIB-U-DEV](maxstream-xbib-u-dev/) | XBee development/programming | `maxstream-xbib-u-dev/` |
+| Model | Purpose | Git Hash | Directory |
+|-------|---------|----------|-----------|
+| [Maxstream XBIB-U-DEV](maxstream-xbib-u-dev/) | XBee development/programming | xxxxxxx | `maxstream-xbib-u-dev/` |
 
 ### Microscopes
 
-| Model | Type | Magnification | Directory |
-|-------|------|---------------|-----------|
-| [AmScope T490-DK](amscope-t490-dk/) | Compound (Darkfield) | 40X-2000X | `amscope-t490-dk/` |
-| [AmScope SM-3](amscope-sm-3/) | Stereo | 3.5X-90X | `amscope-sm-3/` |
+| Model | Type | Magnification | Git Hash | Directory |
+|-------|------|---------------|----------|-----------|
+| [AmScope T490-DK](amscope-t490-dk/) | Compound (Darkfield) | 40X-2000X | xxxxxxx | `amscope-t490-dk/` |
+| [AmScope SM-3](amscope-sm-3/) | Stereo | 3.5X-90X | xxxxxxx | `amscope-sm-3/` |
 
 ### Soldering & Rework
 
-| Model | Type | Power | Directory |
-|-------|------|-------|-----------|
-| [KSGER T12](ksger-t12/) | Soldering Station | 75W | `ksger-t12/` |
-| [YaeCCC 858D](yaeccc-858d/) | Hot Air Rework | 700W | `yaeccc-858d/` |
-| [Hakko FR-301](hakko-fr301/) | Desoldering Gun | 140W | `hakko-fr301/` |
+| Model | Type | Power | Git Hash | Directory |
+|-------|------|-------|----------|-----------|
+| [KSGER T12](ksger-t12/) | Soldering Station | 75W | xxxxxxx | `ksger-t12/` |
+| [YaeCCC 858D](yaeccc-858d/) | Hot Air Rework | 700W | xxxxxxx | `yaeccc-858d/` |
+| [Hakko FR-301](hakko-fr301/) | Desoldering Gun | 140W | xxxxxxx | `hakko-fr301/` |
 
 ### Thermal Imaging
 
-| Model | Type | Resolution | Directory |
-|-------|------|------------|-----------|
-| [FLIR TG130](flir-tg130/) | Spot Thermal Camera | 80x60 | `flir-tg130/` |
+| Model | Type | Resolution | Git Hash | Directory |
+|-------|------|------------|----------|-----------|
+| [FLIR TG130](flir-tg130/) | Spot Thermal Camera | 80x60 | xxxxxxx | `flir-tg130/` |
 
 ### Imaging & Documentation
 
@@ -385,4 +404,19 @@ Each device has its own directory with detailed specifications and locally archi
 
 ---
 
-*Last updated: December 2025*
+## Cross-References
+
+- [Programmable Devices/](../Programmable%20Devices/) - Development boards, microcontrollers, FPGA boards that use programmers from this inventory
+- [Expansion Boards/](../Expansion%20Boards/) - Shields and adapter boards for equipment development
+- [Projects](../projects/) - Active projects utilizing test equipment:
+  - FPGA development projects (uses Digilent AD2, Xilinx programmers)
+  - Electronics projects requiring oscilloscopes and multimeters
+  - Custom interface projects (Bus Pirate, FT232H)
+- [tools-and-components.md](../tools-and-components.md) - Consumables and accessories for lab equipment
+
+---
+
+*Index Version: 1.0*
+*Last Updated: 2026-01-16*
+*Total Equipment: 40 pieces | $5,887.20+ documented*
+*Scope: Oscilloscopes, signal generators, multimeters, power supplies, programmers, protocol tools, data acquisition, microscopes, thermal imaging, soldering equipment, and specialty lab equipment*

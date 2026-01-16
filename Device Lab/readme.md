@@ -1,6 +1,26 @@
 # Device Lab
 
-Personal inventory of computing devices for hacking, tinkering, and repurposing projects.
+Complete inventory of computing devices for hacking, tinkering, and repurposing projects including desktops, laptops, mobile devices, gaming gear, VR/AR hardware, and network infrastructure.
+
+**Quick Reference:** 40+ devices across 8 categories | [Documentation Protocol](../.claude/protocols/DEVICE_LAB_PROTOCOL.md) | [Network Diagram](../network-diagram.md)
+
+## Table of Contents
+
+- [Quick Stats](#quick-stats)
+- [Mobile Devices](#mobile-devices)
+- [Gaming Devices](#gaming-devices)
+- [VR/AR & Motion Sensing](#vrar--motion-sensing)
+- [Network Storage](#network-storage)
+- [Desktops](#desktops)
+- [Laptops](#laptops)
+- [Networking](#networking)
+- [Audio](#audio)
+- [Single Board Computers](#single-board-computers)
+- [Other Devices](#other-devices)
+- [Projects](#projects)
+- [Cross-References](#cross-references)
+
+---
 
 ## Quick Stats
 
@@ -189,6 +209,9 @@ Has custom power controller/network device (code in [EmbeddedBakery](https://git
 
 ---
 
-## Documentation Protocol
+*Index Version: 1.0*
+*Last Updated: 2026-01-16*
+*Total Devices: 40+ across 8 categories*
+*Scope: Laptops, desktops, mobile devices, gaming handhelds, VR/AR, network storage, networking infrastructure, and specialty computing hardware for tinkering and repurposing*
 
 See [DEVICE_LAB_PROTOCOL.md](../.claude/protocols/DEVICE_LAB_PROTOCOL.md) for documentation standards.
