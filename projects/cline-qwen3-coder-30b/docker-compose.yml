@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama-server
+    # GPU support (requires nvidia-docker)
+    # Uncomment below if using nvidia-docker or Docker Desktop with GPU support
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+    # Map VRAM efficiently - adjust based on 12GB RTX 4070 Ti
+    environment:
+      - OLLAMA_NUM_GPU=1
+      - OLLAMA_LOAD_TIMEOUT=300s
+
+    ports:
+      - "11434:11434"
+
+    volumes:
+      # Persist downloaded models across container restarts
+      - ollama_data:/root/.ollama
+
+    # Keep running for Cline to connect
+    stdin_open: true
+    tty: true
+
+volumes:
+  ollama_data:
+    driver: local
+
+# Usage:
+# 1. Start Ollama in background:
+#    docker-compose up -d ollama
+#
+# 2. Wait for Ollama to be ready (check logs):
+#    docker-compose logs -f ollama
+#
+# 3. Pull a model in Ollama container:
+#    docker-compose exec ollama ollama pull qwen3-coder
+#
+# 4. Run Cline in separate terminal with working directory mounted:
+#    docker run -it --rm \
+#      -v %CD%:/workspace \
+#      -e OLLAMA_API_URL=http://host.docker.internal:11434 \
+#      cline-local
+#
+# Or build and run Cline using the included Dockerfile:
+#    docker build -t cline-local .
+#    docker run -it --rm \
+#      -v %CD%:/workspace \
+#      -e OLLAMA_API_URL=http://host.docker.internal:11434 \
+#      cline-local

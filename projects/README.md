@@ -26,6 +26,8 @@ Active project documentation and build logs organized by category.
 | [DevOps Playground Cluster](#devops-playground-cluster) | DevOps/HPC | In Progress | FX-9590, FX-8350 |
 | [Home Automation](#home-automation) | Smart Home | In Progress | Pi 3, Z-Wave |
 | [DIY TrekPak Dividers](#diy-trekpak-dividers) | Workshop | Reference | Foam, pins |
+| [Cline with Local LLM](#cline-with-local-llm) | AI / Dev Tools | Planning | RTX 4070 Ti |
+| [Local Docker Registry](#local-docker-registry) | DevOps / Infrastructure | Planning | NAS/Cluster |
 
 ## Projects by Category
 
@@ -257,6 +259,64 @@ Migrating from HomeSeer HS4 to Home Assistant for home automation. Z-Wave focus 
 
 ---
 
+### AI & Development Tools
+
+#### Cline with Local LLM (Qwen3 Coder)
+**Status:** Planning - Setup Pending
+**Directory:** [cline-qwen3-coder-30b/](cline-qwen3-coder-30b/)
+
+Local LLM-powered Cline CLI integration for private code generation and assistance. Testing Qwen3 Coder 30b 4-bit and Qwen2 variants served via Ollama on RTX 4070 Ti (12GB VRAM). Includes Docker containerization with working directory mapping, similar to Claude Code CLI.
+
+**Hardware:** Nvidia RTX 4070 Ti (12GB VRAM), 32GB+ System RAM
+**Key Advantage:** Code stays private (no cloud uploads), zero API costs, instant availability
+**Setup:** Docker containers with Ollama + Cline CLI, working directory mapped via `-v %CD%:/workspace`
+**Tools:** Ollama (model server), Cline CLI, Qwen3 Coder 30b + Qwen2 variants, Docker
+
+**Documentation:**
+- [README.md](cline-qwen3-coder-30b/README.md) - Project overview and specifications
+- [DOCKER_SETUP.md](cline-qwen3-coder-30b/DOCKER_SETUP.md) - Complete Docker integration guide
+- [Dockerfile](cline-qwen3-coder-30b/Dockerfile) - Container configuration
+- [cline-launch.bat](cline-qwen3-coder-30b/cline-launch.bat) / [cline-launch.sh](cline-qwen3-coder-30b/cline-launch.sh) - Launch scripts
+
+**Cross-references:** [ai-ml-research/](ai-ml-research/), [devops-playground-cluster/](devops-playground-cluster/) (GPU hardware), [local-docker-registry/](local-docker-registry/)
+
+---
+
+#### Local Docker Registry
+**Status:** Planning - Hardware Allocation Pending
+**Directory:** [local-docker-registry/](local-docker-registry/)
+
+Private, self-hosted Docker image registry for caching, offline deployment, and fast local image pulls. Reduces bandwidth costs and Docker Hub rate limiting. Integrates with DevOps Playground Cluster, SBC Cluster, Cline, and CI/CD pipelines.
+
+**Primary Use Cases:**
+- **Development:** Local image caching for faster builds
+- **CI/CD:** Private registry for internal image builds
+- **Cluster Deployments:** Central image source for DevOps and k3s clusters
+- **Air-gapped Systems:** Offline deployment support
+
+**Recommended Host:** WD My Cloud PR4100 NAS (always-on, centralized, persistent)
+**Alternative Hosts:** DevOps Playground Cluster machines, dedicated SBC, development workstation
+
+**Components:**
+- Docker Registry (v2) - REST API on port 5000
+- Optional: Registry UI (web browser at port 8080)
+- Image storage: Persistent volume with garbage collection
+
+**Documentation:**
+- [README.md](local-docker-registry/README.md) - Complete architecture and configuration
+- [QUICKSTART.md](local-docker-registry/QUICKSTART.md) - 5-minute setup guide
+- [docker-compose.yml](local-docker-registry/docker-compose.yml) - Full service definitions
+
+**Key Integration Points:**
+- DevOps Playground Cluster: Pull images from `localhost:5000`
+- SBC Cluster: k3s registries.yaml configuration
+- Cline Docker setup: Base images from local registry
+- CI/CD pipelines: Push to local registry instead of Docker Hub
+
+**Cross-references:** [devops-playground-cluster/](devops-playground-cluster/), [sbc-cluster/](sbc-cluster/), [cline-qwen3-coder-30b/](cline-qwen3-coder-30b/), [self-hosted-git-server/](self-hosted-git-server/)
+
+---
+
 ### Workshop Organization
 
 #### DIY TrekPak Dividers
@@ -274,9 +334,11 @@ Reference documentation and materials inventory for custom drawer dividers. Uses
 
 - **Completed:** 4 projects (ATtiny2313 LED Clock, Radex One Protocol, Favero Fencing System, Vector Search SQL Server)
 - **Active Development:** 6 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation)
-- **Planning/Research:** 4 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster)
+- **Planning/Research:** 7 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry)
 - **On Hold:** 1 project (MM-8000K Trainer UI - hardware functional, used as reference)
 - **Reference/As Needed:** 3 projects (DIY TrekPak Dividers, DRL/DTL Logic Boards, AI/ML Research)
+
+**Total: 21 projects** (4 completed, 6 active, 7 planning, 1 on hold, 3 reference)
 
 ## Cross-References
 
@@ -319,5 +381,5 @@ projects/
 
 ---
 
-*Last updated: 2026-01-07*
-*Total projects: 18*
+*Last updated: 2026-01-16*
+*Total projects: 21*

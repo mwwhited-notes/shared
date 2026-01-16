@@ -1,0 +1,164 @@
+version: '3.8'
+
+services:
+  # Main Docker Registry
+  registry:
+    image: registry:2
+    container_name: docker-registry
+
+    # Expose registry API on port 5000
+    ports:
+      - "5000:5000"
+
+    # Environment configuration
+    environment:
+      # Enable registry deletion API (allows image removal)
+      REGISTRY_STORAGE_DELETE_ENABLED: "true"
+
+      # Cache layer descriptors in memory for faster access
+      REGISTRY_STORAGE_CACHE_BLOBDESCRIPTOR: "inmemory"
+
+      # Logging
+      REGISTRY_LOG_LEVEL: "info"
+
+      # Storage parameters
+      REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: "/var/lib/registry"
+
+      # Garbage collection
+      REGISTRY_STORAGE_MAINTENANCE_UPLOADPURGING_ENABLED: "true"
+      REGISTRY_STORAGE_MAINTENANCE_UPLOADPURGING_DRYRUN: "false"
+
+    # Persistent storage volume
+    volumes:
+      # Main registry data - should be on fast SSD
+      - registry_data:/var/lib/registry
+
+      # Optional: Configuration file
+      # - ./config.yml:/etc/docker/registry/config.yml:ro
+
+      # Optional: TLS certificates (uncomment if using HTTPS)
+      # - ./certs:/certs:ro
+
+    # Resource limits (adjust for your system)
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          memory: 1G
+
+    # Restart policy
+    restart: unless-stopped
+
+    # Health check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/v2/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+    networks:
+      - registry-network
+
+    # Logging
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "10"
+
+  # Optional: Registry Web UI (remove section to disable)
+  registry-ui:
+    image: joxit/docker-registry-ui:latest
+    container_name: registry-ui
+
+    ports:
+      - "8080:80"
+
+    environment:
+      # Point UI to registry API
+      REGISTRY_TITLE: "Local Docker Registry"
+      REGISTRY_URL: "http://registry:5000"
+      REGISTRY_ALLOW_DELETE: "true"
+      SINGLE_REGISTRY: "true"
+
+    depends_on:
+      registry:
+        condition: service_healthy
+
+    restart: unless-stopped
+
+    networks:
+      - registry-network
+
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+
+  # Optional: Registry Garbage Collector (runs on schedule)
+  # Uncomment to enable automated cleanup
+  # registry-gc:
+  #   image: registry:2
+  #   container_name: registry-gc
+  #
+  #   volumes:
+  #     - registry_data:/var/lib/registry
+  #
+  #   command: ["registry", "garbage-collect", "/etc/docker/registry/config.yml", "--delete-untagged"]
+  #
+  #   depends_on:
+  #     - registry
+  #
+  #   networks:
+  #     - registry-network
+
+volumes:
+  # Registry storage (persistent across container restarts)
+  # Located at: docker volume inspect local-docker-registry_registry_data
+  registry_data:
+    driver: local
+
+networks:
+  registry-network:
+    driver: bridge
+
+# ============================================================================
+# Usage Instructions:
+# ============================================================================
+#
+# Start services:
+#   docker-compose up -d
+#
+# Check status:
+#   docker-compose ps
+#   curl http://localhost:5000/v2/
+#
+# View logs:
+#   docker-compose logs -f registry
+#   docker-compose logs -f registry-ui
+#
+# Push image to registry:
+#   docker tag myimage:latest localhost:5000/myimage:latest
+#   docker push localhost:5000/myimage:latest
+#
+# Pull from registry:
+#   docker pull localhost:5000/myimage:latest
+#
+# List all images in registry:
+#   curl http://localhost:5000/v2/_catalog | jq .
+#
+# Browse images (UI):
+#   Open http://localhost:8080 in browser
+#
+# Stop services:
+#   docker-compose down
+#
+# Remove all data (WARNING: destructive):
+#   docker-compose down -v
+#
+# ============================================================================
+
