@@ -51,7 +51,12 @@
       "Bash(cat:*)",
       "WebFetch(domain:www.adafruit.com)",
       "WebFetch(domain:learn.adafruit.com)",
-      "Bash(awk:*)"
+      "Bash(awk:*)",
+      "Bash(__NEW_LINE_72616478b8e1b038__ echo '=== Project Structure ===' tree /current/src/projects/synchronized-telemetry-streaming-research/ -L 2)",
+      "Bash(__NEW_LINE_5eba241ab22e8e0f__ find /current/src/projects/synchronized-telemetry-streaming-research/ -type f)",
+      "Bash(__NEW_LINE_3c6bdf6c7eca8f0a__ find /current/src/projects/synchronized-telemetry-streaming-research/ -type f)",
+      "Bash(__NEW_LINE_0a128d2d18bbeeb9__ du -sh /current/src/projects/synchronized-telemetry-streaming-research/ echo \"\" ls -lh /current/src/projects/synchronized-telemetry-streaming-research/documents/)",
+      "Bash(__NEW_LINE_c8a5c57c2d0be8a9__ echo \"FINAL FILE VERIFICATION\")"
     ]
   }
 }

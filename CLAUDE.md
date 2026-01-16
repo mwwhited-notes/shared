@@ -52,6 +52,7 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
   - `sap-1-computer/` - SAP-1/Ben Eater 8-bit breadboard computer
   - `diy-trekpak-dividers/` - Workshop organization
   - `home-automation/` - Home Assistant migration
+  - `synchronized-telemetry-streaming-research/` - **Research:** RFCs, standards, protocols for synchronized telemetry and blob transfer (40+ standards documented)
 - **network-diagram.md** - Home network topology, IP assignments, VLAN planning, and security notes
 - **tools-and-components.md** - Hand tools, wire, consumables, and component stock
 - **projects/project-ideas.md** - Project backlog and ideas (references detailed docs in `projects/`)
@@ -131,6 +132,7 @@ Follow `.claude/protocols/PROJECTS_PROTOCOL.md` when:
 - Documenting an active project that spans multiple sessions
 - Moving a project idea from `project-ideas.md` to active implementation
 - Creating build logs, parts lists, or progress tracking
+- **For research projects:** Follow research protocol below
 
 Key requirements:
 - Each project gets its own directory in `projects/`
@@ -138,6 +140,24 @@ Key requirements:
 - Optional build-log.md for session-by-session progress
 - Optional parts-list.md for detailed BOM
 - Cross-reference to/from project-ideas.md and equipment inventories
+
+### Research Projects (New Protocol)
+Follow this when creating comprehensive research/standards documentation:
+- Document RFCs, IEEE standards, and CNCF specifications
+- Create comparison matrices (technology selection guides)
+- Build comprehensive bibliography with 100+ resources
+- Cross-reference to related projects in repository
+- Include practical implementation guides and use case scenarios
+- Download primary standards documents (PDF) to `documents/` folder
+- Create index/navigation document for easy access
+- Include academic papers and foundational research citations
+
+**Recent example:** `projects/synchronized-telemetry-streaming-research/`
+- 5 documentation files (3000+ lines)
+- 40+ standards catalogued with RFCs and links
+- 8 repository projects cross-referenced
+- 100+ implementation resources indexed
+- Quick-start guides for 4 common scenarios
 
 ### Tools and Components
 Follow `.claude/protocols/TOOLS_AND_COMPONENTS_PROTOCOL.md` when:
@@ -247,6 +267,11 @@ done
 - `AnalogComputers/analog-computing-repository/README.md` - Analog computing collection overview
 - `AnalogComputers/analog-computing-repository/research-protocol.md` - Search strategies and download sources by topic
 - `AnalogComputers/analog-computing-repository/download-sources.md` - PDF source registry
+- `projects/synchronized-telemetry-streaming-research/` - RFC and standards research (40+ standards, 100+ implementation resources)
+  - `RESEARCH_BIBLIOGRAPHY.md` - Comprehensive RFC/standard catalog with cross-references
+  - `event-streaming-and-blob-transfer.md` - CloudEvents, Kafka, S3, BitTorrent, IPFS standards
+  - `out-of-order-blob-transfer.md` - RaptorQ (RFC 6330), FECFRAME, QUIC, SCTP protocols
+  - `documents/` - Downloaded RFC and standards PDFs (8 files, 1.1 MB)
 - `Notes/README.md` - Technical notes directory guide
 
 ## Notable Hardware
