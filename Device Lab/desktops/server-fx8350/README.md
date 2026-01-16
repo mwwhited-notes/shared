@@ -17,7 +17,7 @@
 
 | Component | Model | Notes |
 |-----------|-------|-------|
-| CPU | AMD FX-8350 | 4.0GHz 8-core |
+| CPU | AMD FX-9590	 | 4.7GHz 8-core, 220W TDP |
 | Motherboard | Asus M5A97 R2.0 | ATX AM3+ |
 | RAM | Corsair Vengeance 32GB | 4x8GB DDR3-1866 CL9 |
 | Storage (HDD) | WD Caviar Black 1TB | Primary HDD |
