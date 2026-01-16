@@ -6,42 +6,42 @@ skinparam defaultFontSize 10
 title Multi-Receiver Time Synchronization & Correlation
 
 package "Time Source Infrastructure" {
-    component [GPS Receiver\n(PPS output)] as gps
-    component [NTP Server\n(Stratum 1)] as ntp
-    component [PTP Master\n(IEEE 1588v2)] as ptp
+    component [GPS Receiver (PPS output)] as gps
+    component [NTP Server (Stratum 1)] as ntp
+    component [PTP Master (IEEE 1588v2)] as ptp
 }
 
 package "Receiver Devices" {
-    component [Receiver 1\n(SDR1)] as rx1
-    component [Receiver 2\n(SDR2)] as rx2
-    component [Receiver 3\n(Oscilloscope)] as rx3
+    component [Receiver 1 (SDR1)] as rx1
+    component [Receiver 2 (SDR2)] as rx2
+    component [Receiver 3 (Oscilloscope)] as rx3
 }
 
-package "Local Oscillator\nSynchronization" {
-    component [GPS Disciplined\nOscillator (GPSDO)] as gpsdo
-    component [Atomic Clock\nReference] as atomic
+package "Local Oscillator Synchronization" {
+    component [GPS Disciplined Oscillator (GPSDO)] as gpsdo
+    component [Atomic Clock Reference] as atomic
 }
 
-package "Timestamp Correlation\nEngine" {
-    component [NTP Time\nSync] as ntp_sync
-    component [PTP Sync\n(Grandmaster)] as ptp_sync
-    component [RTP Sync\nInfo] as rtp_sync
+package "Timestamp Correlation Engine" {
+    component [NTP Time Sync] as ntp_sync
+    component [PTP Sync (Grandmaster)] as ptp_sync
+    component [RTP Sync Info] as rtp_sync
 }
 
 package "Multi-Receiver Processing" {
-    component [TDOA Computation\n(Time Diff of Arrival)] as tdoa
-    component [Cross-Correlation\nAnalysis] as xcorr
-    component [Phase Coherence\nEstimation] as phase
+    component [TDOA Computation (Time Diff of Arrival)] as tdoa
+    component [Cross-Correlation Analysis] as xcorr
+    component [Phase Coherence Estimation] as phase
 }
 
 package "Data Storage" {
-    database [HDF5 with\nMetadata] as hdf5
-    database [Parquet with\nTimestamp Index] as parquet
+    database [HDF5 with Metadata] as hdf5
+    database [Parquet with Timestamp Index] as parquet
 }
 
 package "Post-Processing" {
-    component [MATLAB/Python\nAnalysis] as analysis
-    component [Offline TDOA\nSolver] as solver
+    component [MATLAB/Python Analysis] as analysis
+    component [Offline TDOA Solver] as solver
 }
 
 ' Time sync connections

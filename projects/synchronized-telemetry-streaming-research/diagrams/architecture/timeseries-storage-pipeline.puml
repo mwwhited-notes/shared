@@ -6,44 +6,44 @@ skinparam defaultFontSize 10
 title Time-Series Data Storage and Retrieval Pipeline
 
 package "Data Sources" {
-    component [Streaming Events\n(Kafka)] as kafka
-    component [Metrics\n(OpenTelemetry)] as otel
+    component [Streaming Events (Kafka)] as kafka
+    component [Metrics (OpenTelemetry)] as otel
     component [Application Logs] as logs
 }
 
 package "Ingestion Layer" {
-    component [Telegraf\nCollector] as telegraf
-    component [Prometheus\nRemote Write] as prom_write
+    component [Telegraf Collector] as telegraf
+    component [Prometheus Remote Write] as prom_write
     component [FluentBit] as fluent
 }
 
 package "Time-Series Databases" {
-    database [InfluxDB\n(High Cardinality)] as influx
-    database [TimescaleDB\n(SQL Queries)] as tsdb
-    database [Prometheus\n(Metrics)] as prom
-    database [QuestDB\n(Analytics)] as quest
+    database [InfluxDB (High Cardinality)] as influx
+    database [TimescaleDB (SQL Queries)] as tsdb
+    database [Prometheus (Metrics)] as prom
+    database [QuestDB (Analytics)] as quest
 }
 
 package "Aggregation & Downsampling" {
-    component [Retention\nPolicy Engine] as retention
-    component [Downsampling\nTasks] as downsample
+    component [Retention Policy Engine] as retention
+    component [Downsampling Tasks] as downsample
 }
 
 package "Query Layer" {
-    component [Flux\n(InfluxDB)] as flux
-    component [SQL\n(TimescaleDB)] as sql
-    component [PromQL\n(Prometheus)] as promql
+    component [Flux (InfluxDB)] as flux
+    component [SQL (TimescaleDB)] as sql
+    component [PromQL (Prometheus)] as promql
 }
 
 package "Visualization & Analysis" {
-    component [Grafana\nDashboards] as grafana
-    component [Jupyter\nNotebooks] as jupyter
+    component [Grafana Dashboards] as grafana
+    component [Jupyter Notebooks] as jupyter
     component [Python Analytics] as python_analytics
 }
 
 package "Cold Storage" {
-    database [S3/Blob\nArchive] as s3
-    database [Parquet\nDatasets] as parquet
+    database [S3/Blob Archive] as s3
+    database [Parquet Datasets] as parquet
 }
 
 ' Ingestion flows

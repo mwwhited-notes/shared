@@ -10,101 +10,101 @@ start
 
 :Primary Requirement?;
 
-if (Real-time\nLocal Lab?) then (Yes)
+if (Real-time Local Lab?) then (Yes)
     :Use **LSL (Lab Streaming Layer)**;
-    :Multi-modal, low-latency\n<1ms synchronization;
+    :Multi-modal, low-latency <1ms synchronization;
     :XDF format (self-documenting);
     end
 else (No)
-    :Need Network\nDistribution?;
+    :Need Network Distribution?;
 
     if (Yes) then
-        :Throughput\nRequirement?;
+        :Throughput Requirement?;
 
-        if (High\n(>10K msgs/sec)) then
-            :Message\nOrdering?;
+        if (High (>10K msgs/sec)) then
+            :Message Ordering?;
 
             if (Critical) then
                 :Use **Kafka**;
-                :High throughput\nPartition ordering\nReliable delivery\n3-9 replicas;
+                :High throughput Partition ordering Reliable delivery 3-9 replicas;
                 end
             else (Flexible)
                 :Use **NATS**;
-                :Lower latency\nSimpler operations\nSubject-based;
+                :Lower latency Simpler operations Subject-based;
                 end
             endif
-        else (Medium\n100-10K msgs/sec)
-            :Use **NATS JetStream**\nor **RabbitMQ**;
-            :Balanced performance\nFlexible delivery modes;
+        else (Medium 100-10K msgs/sec)
+            :Use **NATS JetStream** or **RabbitMQ**;
+            :Balanced performance Flexible delivery modes;
             end
         endif
     else (No)
-        :Local message\nqueue only?;
+        :Local message queue only?;
 
         if (Yes) then
-            :Use **RabbitMQ**\nor **MQTT**;
-            :Pub/Sub, queue abstractions\nDurable, fault-tolerant;
+            :Use **RabbitMQ** or **MQTT**;
+            :Pub/Sub, queue abstractions Durable, fault-tolerant;
             end
         endif
     endif
 endif
 
-:Data Transfer\nProtocol Decision;
+:Data Transfer Protocol Decision;
 
-:High packet\nloss (>5%)?;
+:High packet loss (>5%)?;
 
 if (Yes) then
-    :Use **RaptorQ**\n(RFC 6330);
-    :Fountain codes\nNo retransmission\nOptimal for >10% loss;
-    :Symbol redundancy:\n10-30%;
-    :Encoding: O(K²),\nDecoding: O(K²);
+    :Use **RaptorQ** (RFC 6330);
+    :Fountain codes No retransmission Optimal for >10% loss;
+    :Symbol redundancy: 10-30%;
+    :Encoding: O(K²), Decoding: O(K²);
     end
 else (No)
-    :Packet loss\n<5%?;
+    :Packet loss <5%?;
 
     if (Yes) then
-        :Use **QUIC**\nfor streaming\nor **TCP**\nfor reliable;
-        :Built-in error handling\nAutomatic retransmission;
+        :Use **QUIC** for streaming or **TCP** for reliable;
+        :Built-in error handling Automatic retransmission;
         end
     else (None)
-        :Use **UDP**\nor **RTP**;
-        :Best latency\nNo overhead;
+        :Use **UDP** or **RTP**;
+        :Best latency No overhead;
         end
     endif
 endif
 
-:Storage Format\nDecision;
+:Storage Format Decision;
 
-:Query\nPattern?;
+:Query Pattern?;
 
 if (Analytics/SQL) then
-    :Use **Parquet**\n+ **TimescaleDB**;
-    :Columnar format\nFull SQL support\nCompression: 80%+;
+    :Use **Parquet** + **TimescaleDB**;
+    :Columnar format Full SQL support Compression: 80%+;
     end
-else if (Time-series\nMetrics) then
+else if (Time-series Metrics) then
     :Use **InfluxDB**;
-    :Tag-based indexing\nHigh cardinality\nAutomated downsampling;
+    :Tag-based indexing High cardinality Automated downsampling;
     end
-else (Offline\nProcessing)
+else (Offline Processing)
     :Use **HDF5**;
-    :Hierarchical structure\nEfficient arrays\nMatlab/Python friendly;
+    :Hierarchical structure Efficient arrays Matlab/Python friendly;
     end
 endif
 
-:Synchronization\nMethod Decision;
+:Synchronization Method Decision;
 
-:Precision\nRequired?;
+:Precision Required?;
 
 if (µs/ns level) then
-    :Use **PTP**\n(IEEE 1588);
-    :Hardware-assisted\nCluster-wide sync\nAccuracy: <1 µs;
+    :Use **PTP** (IEEE 1588);
+    :Hardware-assisted Cluster-wide sync Accuracy: <1 µs;
     end
 else if (ms/100µs) then
     :Use **NTP**;
-    :Network-based\nGlobal coverage\nAccuracy: 1-10 ms;
+    :Network-based Global coverage Accuracy: 1-10 ms;
     end
 else (Best effort)
-    :Use **RTP**\nor **Application\nTimestamps**;
+    :Use **RTP** or **Application Timestamps**;
     :Simpler, lower overhead;
     end
 endif
