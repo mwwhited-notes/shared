@@ -53,9 +53,9 @@ ntp --> ntp_sync
 ptp --> ptp_sync
 
 ' Receiver synchronization
-rx1 -.clock sync.-> gpsdo
-rx2 -.clock sync.-> gpsdo
-rx3 -.clock sync.-> atomic
+rx1 ..> gpsdo
+rx2 ..> gpsdo
+rx3 ..> atomic
 
 ' Timestamp correlation
 ntp_sync --> tdoa

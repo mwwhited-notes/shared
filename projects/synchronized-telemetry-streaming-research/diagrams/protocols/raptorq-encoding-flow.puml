@@ -1,30 +1,38 @@
-@startuml RaptorQ Encoding/Decoding Flow Diagram
+@startuml RaptorQ Encoding Decoding Flow
 skinparam backgroundColor #FEFEFE
 skinparam defaultFontName Helvetica
 skinparam defaultFontSize 10
 skinparam sequenceArrowThickness 2
 
-title RaptorQ Encoder/Decoder Sequence (RFC 6330)
+title RaptorQ Encoder Decoder Sequence (RFC 6330)
 
 participant "Sender" as sender
-participant "RaptorQ\nEncoder" as encoder
-participant "Network\n(Lossy)" as network
+participant "RaptorQ Encoder" as encoder
+participant "Network (Lossy)" as network
 participant "Receiver 1" as rx1
 participant "Receiver 2" as rx2
-participant "RaptorQ\nDecoder" as decoder
+participant "RaptorQ Decoder" as decoder
 
 autonumber
 
 sender -> encoder: ReadFile(K symbols)
-note right of encoder: Symbol Count = K\nRedundancy = 20%\nRepair Symbols = 0.2*K
+note right of encoder
+  Symbol Count = K
+  Redundancy = 20%
+  Repair Symbols = 0.2*K
+end note
 
-encoder -> encoder: GenerateSourceBlock\n(D matrix, LT codes)
+encoder -> encoder: GenerateSourceBlock
 
-loop Generate Symbols (unlimited)
+loop Generate Symbols
     encoder -> network: SendSymbol(ISI, payload)
 end
 
-note right of network: Simulating 20% packet loss\nPackets arrive out-of-order\nDelay: variable
+note right of network
+  Simulating 20% packet loss
+  Packets arrive out-of-order
+  Delay = variable
+end note
 
 network -> rx1: RecvSymbol(ISI=0)
 network -> rx1: RecvSymbol(ISI=5)
@@ -42,23 +50,25 @@ rx2 -> decoder: AddSymbol(ISI=7, data)
 rx2 -> decoder: AddSymbol(ISI=15, data)
 
 decoder -> decoder: CheckIfDecoded()
-note left of decoder: Received 6 symbols\nRequired: K >= 5\nReady to decode!
+note left of decoder
+  Received 6 symbols
+  Required K >= 5
+  Ready to decode
+end note
 
-decoder -> decoder: SolveGaussianElimination\n(over GF(256))
+decoder -> decoder: SolveGaussianElimination
 
-decoder -> decoder: RecoverSourceSymbols\n(back-substitute)
+decoder -> decoder: RecoverSourceSymbols
 
 decoder --> sender: WriteFile(K symbols)
 
-note right of decoder: Recovery complete!\nFrom 6 received symbols,\nrecovered all K source symbols\nwith <20% overhead
+note right of decoder
+  Recovery complete
+  From 6 received symbols
+  Recovered all K source symbols
+  With less than 20% overhead
+end note
 
 autonumber stop
-
-box "RaptorQ Advantages"
-  - No retransmission needed
-  - Efficient over high-loss networks
-  - Latency predictable
-  - Scalable to many receivers
-end box
 
 @enduml

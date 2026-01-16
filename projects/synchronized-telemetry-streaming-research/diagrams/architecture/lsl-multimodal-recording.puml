@@ -6,13 +6,13 @@ skinparam defaultFontSize 10
 title LSL Multi-Modal Recording Architecture
 
 package "Acquisition Devices" {
-    component [EEG Headset\n(256 ch)] as eeg
-    component [ECG Monitor\n(3-lead)] as ecg
-    component [Eye Tracker\n(120 Hz)] as eye
-    component [Motion Capture\n(12 markers)] as mocap
+    component [EEG Headset (256 ch)] as eeg
+    component [ECG Monitor (3-lead)] as ecg
+    component [Eye Tracker (120 Hz)] as eye
+    component [Motion Capture (12 markers)] as mocap
 }
 
-package "Device Drivers & Bridges" {
+package "Device Drivers and Bridges" {
     component [BioSemi Driver] as biosemi_drv
     component [Shimmer Driver] as shimmer_drv
     component [Tobii Eye Driver] as tobii_drv
@@ -20,10 +20,10 @@ package "Device Drivers & Bridges" {
 }
 
 package "LSL Outlet Modules" {
-    component [EEG Outlet\n256 Hz] as eeg_outlet
-    component [ECG Outlet\n250 Hz] as ecg_outlet
-    component [Gaze Outlet\n120 Hz] as eye_outlet
-    component [Marker Outlet\n100 Hz] as mocap_outlet
+    component [EEG Outlet 256 Hz] as eeg_outlet
+    component [ECG Outlet 250 Hz] as ecg_outlet
+    component [Gaze Outlet 120 Hz] as eye_outlet
+    component [Marker Outlet 100 Hz] as mocap_outlet
 }
 
 package "LSL Hub (liblsl)" {
@@ -38,7 +38,7 @@ package "Recording Applications" {
 }
 
 package "Output Formats" {
-    database [XDF Files\n(MDF-like)] as xdf
+    database [XDF Files (MDF-like)] as xdf
     database [HDF5 Archive] as hdf5
     database [Parquet Dataset] as parquet
 }
@@ -73,10 +73,10 @@ recorder --> xdf
 processor --> hdf5
 processor --> parquet
 
-clock_sync -.sync.-> eeg_outlet
-clock_sync -.sync.-> ecg_outlet
-clock_sync -.sync.-> eye_outlet
-clock_sync -.sync.-> mocap_outlet
+clock_sync ..> eeg_outlet
+clock_sync ..> ecg_outlet
+clock_sync ..> eye_outlet
+clock_sync ..> mocap_outlet
 
 note right of registry
   LSL Registry Function:

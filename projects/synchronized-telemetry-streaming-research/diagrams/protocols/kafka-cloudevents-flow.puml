@@ -6,66 +6,108 @@ skinparam sequenceArrowThickness 2
 
 title Kafka CloudEvents Message Flow (CNCF Standard)
 
-participant "Event\nProducer" as prod
-participant "Kafka\nProducer API" as ka
-participant "Broker\nPartition" as broker
-participant "Consumer\nGroup" as cg
-participant "Event\nConsumer" as cons
+participant "Event Producer" as prod
+participant "Kafka Producer API" as ka
+participant "Broker Partition" as broker
+participant "Consumer Group" as cg
+participant "Event Consumer" as cons
 
 autonumber
 
-prod -> prod: CreateCloudEvent(\nspecversion: 1.0,\ntype: com.sensor.data,\nsource: /sensor/temp001,\nid: abc-123,\ntime: 2025-01-16T10:30:45Z,\ndatacontenttype: application/json,\ndataschema: https://schema.example.com,\nsubject: room/living_room,\npayload: {temp: 22.5, humidity: 65})
-
+prod -> prod: CreateCloudEvent
 note right of prod
-  CloudEvents Attributes:
-  - Context: metadata
-  - Data: typed payload
-  - Serialization: JSON
+  specversion 1.0
+  type com.sensor.data
+  source /sensor/temp001
+  id abc-123
+  time 2025-01-16T10:30:45Z
+  datacontenttype application/json
+  payload {temp: 22.5, humidity: 65}
 end note
 
-prod -> ka: send(topic=sensor-data,\nkey=sensor/temp001,\nvalue=JSON-CE,\nheaders=[...])
+prod -> ka: send(topic, key, value, headers)
 
-ka -> broker: WriteRecord(\npartition: 0,\noffset: 12345,\nkey_len: 19,\nvalue_len: 285,\ntimestamp: Unix-ms)
-
-broker -> broker: PersistToLog(\nreplication: 3x,\nmin_isr: 2)
-
+ka -> broker: WriteRecord
 note right of broker
-  Kafka Guarantees:
-  - Durability (replication)
-  - Ordering (per partition)
-  - Compression: snappy
-  - TTL: 7 days
+  partition 0
+  offset 12345
+  key_len 19
+  value_len 285
+  timestamp Unix-ms
 end note
 
-broker -> cg: FetchRecords(\npartition: 0,\noffset: 12345,\nmax_records: 100)
+broker -> broker: PersistToLog
+note right of broker
+  replication 3x
+  min_isr 2
+end note
 
-cg -> cons: onMessage(\nevent_headers,\nevent_body,\nmetadata)
+broker -> cg: FetchRecords
+note right of broker
+  partition 0
+  offset 12345
+  max_records 100
+end note
 
-cons -> cons: ParseCloudEvent(\nverify_required_attrs,\nparse_data_schema)
+cg -> cons: onMessage
+note right of cons
+  event_headers
+  event_body
+  metadata
+end note
 
-cons -> cons: ValidatePayload(\ndataschema: JSON-Schema,\nresult: valid)
+cons -> cons: ParseCloudEvent
+note right of cons
+  verify_required_attrs
+  parse_data_schema
+end note
 
-cons -> cons: ProcessEvent(\ntemp=22.5,\nhumidity=65,\nroom=living_room,\ntimestamp=2025-01-16T10:30:45Z)
+cons -> cons: ValidatePayload
+note right of cons
+  dataschema JSON-Schema
+  result valid
+end note
 
-cons -> cons: EmitMetrics(\ninfluxdb_point: temp\ntags: sensor/temp001,room\nfields: value=22.5)
+cons -> cons: ProcessEvent
+note right of cons
+  temp 22.5
+  humidity 65
+  room living_room
+  timestamp 2025-01-16T10:30:45Z
+end note
 
-cg -> ka: commitOffset(\npartition: 0,\noffset: 12345)
+cons -> cons: EmitMetrics
+note right of cons
+  influxdb_point temp
+  tags sensor/temp001,room
+  fields value 22.5
+end note
 
-ka -> broker: OffsetCommit(\nconsumer_group: analytics,\noffset_store: __consumer_offsets)
+cg -> ka: commitOffset
+note right of cg
+  partition 0
+  offset 12345
+end note
+
+ka -> broker: OffsetCommit
+note right of broker
+  consumer_group analytics
+  offset_store __consumer_offsets
+end note
 
 note right of cons
   Benefits:
-  - Schema evolution safe
-  - Metadata standardized
-  - Cross-system interop
-  - Traceable (source/id)
+  Schema evolution safe
+  Metadata standardized
+  Cross-system interop
+  Traceable
 end note
 
 note left of broker
   Scaling Strategy:
-  - Partitioning by source
-  - Consumer groups parallel
-  - Rebalancing transparent
+  Partitioning by source
+  Consumer groups parallel
+  Rebalancing transparent
 end note
 
 @enduml

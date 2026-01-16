@@ -6,27 +6,41 @@ skinparam sequenceArrowThickness 2
 
 title LSL Multi-Stream Timestamp Synchronization
 
-participant "EEG Stream\n256 Hz" as eeg
-participant "ECG Stream\n250 Hz" as ecg
-participant "Eye Tracker\n120 Hz" as eye
+participant "EEG Stream 256Hz" as eeg
+participant "ECG Stream 250Hz" as ecg
+participant "Eye Tracker 120Hz" as eye
 participant "LSL Hub" as hub
-participant "Clock\nSynchronizer" as sync
+participant "Clock Synchronizer" as sync
 participant "Recorder" as rec
 
 autonumber
 
-note over eeg, rec: T=0s: All streams start
+note over eeg, rec: T=0s All streams start
 
-eeg -> hub: push_sample(\ndata=[ch0...ch255],\ntimestamp=local_clock[0])
-ecg -> hub: push_sample(\ndata=[I II III],\ntimestamp=local_clock[0])
-eye -> hub: push_sample(\ndata=[x y confidence],\ntimestamp=local_clock[0])
+eeg -> hub: push_sample
+note right of eeg
+  data ch0 to ch255
+  timestamp local_clock[0]
+end note
+
+ecg -> hub: push_sample
+note right of ecg
+  data I II III
+  timestamp local_clock[0]
+end note
+
+eye -> hub: push_sample
+note right of eye
+  data x y confidence
+  timestamp local_clock[0]
+end note
 
 note right of hub
   Each stream maintains:
-  - Sample buffer
-  - Timestamp info
-  - Nominal sample rate
-  - Clock offset estimate
+  Sample buffer
+  Timestamp info
+  Nominal sample rate
+  Clock offset estimate
 end note
 
 par Parallel Stream 1
@@ -43,37 +57,52 @@ end
 note over hub: Timestamp Registration Phase
 
 loop Every 10 seconds
-    hub -> sync: register_clock_offset(\nstream_id: EEG,\nlocal_time: t_local,\nstream_time: t_stream)
-    hub -> sync: register_clock_offset(\nstream_id: ECG,\nlocal_time: t_local,\nstream_time: t_stream)
-    hub -> sync: register_clock_offset(\nstream_id: Eye,\nlocal_time: t_local,\nstream_time: t_stream)
+    hub -> sync: register_clock_offset for EEG
+    hub -> sync: register_clock_offset for ECG
+    hub -> sync: register_clock_offset for Eye
 end
 
-sync -> sync: ComputeClockOffsets(\nregression analysis,\nslope = drift rate,\nintercept = offset)
-
+sync -> sync: ComputeClockOffsets
 note right of sync
-  Clock Synchronization:
-  - Linear regression
-  - Detects clock drift
-  - Compensates offset
-  - Correlation: >99.5%
+  Linear regression
+  Detects clock drift
+  Compensates offset
+  Correlation greater than 99.5%
 end note
 
-hub -> rec: request_timestamps(\nmodal=common_timebase)
+hub -> rec: request_timestamps
+note right of rec
+  modal common_timebase
+end note
 
-rec -> sync: get_unified_timestamp(\nstream_ids=[EEG, ECG, Eye],\nlocal_samples=[256*t, 250*t, 120*t])
+rec -> sync: get_unified_timestamp
+note right of rec
+  stream_ids EEG ECG Eye
+  local_samples 256t 250t 120t
+end note
 
-sync -> rec: return(\nunified_ts=[...],\noffset_model=y=mx+b,\nconfidence=0.9999)
+sync -> rec: return unified timestamps
+note right of sync
+  unified_ts
+  offset_model y equals mx plus b
+  confidence 0.9999
+end note
 
 note right of rec
   Recording Timestamp Assignment:
-  - Use unified timebase
-  - Linear interpolation
-  - Apply offsets & drift
-  - Store with metadata
+  Use unified timebase
+  Linear interpolation
+  Apply offsets and drift
+  Store with metadata
 end note
 
-rec -> rec: WriteSynchronizedXDF(\nall_streams_aligned,\ncommon_timestamp_domain,\nmetadata: offset_models)
+rec -> rec: WriteSynchronizedXDF
+note right of rec
+  all_streams_aligned
+  common_timestamp_domain
+  metadata offset_models
+end note
 
-note over eeg, rec: Result: Multi-modal data synchronized to <1ms
+note over eeg, rec: Result Multi-modal data synchronized to less than 1ms
 
 @enduml

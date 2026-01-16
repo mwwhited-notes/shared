@@ -1,14 +1,14 @@
-@startuml SCPI Instrument Control + LSL Integration
+@startuml SCPI Instrument Control LSL Integration
 skinparam backgroundColor #FEFEFE
 skinparam defaultFontName Helvetica
 skinparam defaultFontSize 10
 
 title SCPI Instrument Control with LSL Data Streaming
 
-package "Test Instruments (LXI/Ethernet)" {
-    component [Oscilloscope (Rigol/Keysight)] as scope
-    component [DMM (Digital Multimeter)] as dmm
-    component [Power Supply (Programmable)] as psu
+package "Test Instruments (LXI)" {
+    component [Oscilloscope Rigol Keysight] as scope
+    component [DMM Digital Multimeter] as dmm
+    component [Power Supply Programmable] as psu
     component [Signal Generator] as siggen
 }
 
@@ -34,9 +34,9 @@ package "LSL Bridge Module" {
 }
 
 package "LSL Stream Outlets" {
-    component [Scope Data Stream (25 kHz)] as outlet_scope
-    component [DMM Stream (10 Hz)] as outlet_dmm
-    component [PSU Stream (1 Hz)] as outlet_psu
+    component [Scope Data Stream 25kHz] as outlet_scope
+    component [DMM Stream 10Hz] as outlet_dmm
+    component [PSU Stream 1Hz] as outlet_psu
 }
 
 package "LSL Hub" {
@@ -49,60 +49,51 @@ package "Storage" {
     database [HDF5 Export] as hdf5
 }
 
-' Hardware connections
 scope --> visa
 dmm --> visa
 psu --> visa
 siggen --> visa
 
-' Control flow
 visa --> builder
 visa --> parser
 builder --> cache
 parser --> cache
 
-' Network synchronization
-ntp -.sync.-> ts_corrector
+ntp ..> ts_corrector
 
-' SCPI marshalling
 builder --> mapper
 parser --> mapper
 
-' LSL mapping
 mapper --> outlet_factory
 ts_corrector --> outlet_factory
 
-' Outlets
 outlet_factory --> outlet_scope
 outlet_factory --> outlet_dmm
 outlet_factory --> outlet_psu
 
-' Recording
 outlet_scope --> recorder
 outlet_dmm --> recorder
 outlet_psu --> recorder
 
-' Post-processing
 outlet_scope --> processor
 outlet_dmm --> processor
 
-' Storage
 recorder --> xdf
 processor --> hdf5
 
 note right of scope
   Instrument Capabilities:
-  Sample rate: MHz range
-  Channel count: 2-4
-  Memory depth: Megasamples
-  Trigger modes: Multiple
+  Sample rate MHz range
+  Channel count 2-4
+  Memory depth Megasamples
+  Trigger modes Multiple
 end note
 
 note right of builder
   SCPI Commands:
-  *IDN? (identification)
-  CONF:VOLT:DC (config)
-  MEAS:VOLT:DC? (measurement)
+  IDN query
+  CONF VOLT DC
+  MEAS VOLT DC
   Data transfer modes
 end note
 
@@ -110,8 +101,8 @@ note right of outlet_factory
   LSL Stream Creation:
   Sample rate from instrument
   Channel info from config
-  Type: EEG/ECG/ECoG/Other
-  Metadata: manufacturer, model
+  Type EEG ECG ECoG Other
+  Metadata manufacturer, model
 end note
 
 note right of recorder

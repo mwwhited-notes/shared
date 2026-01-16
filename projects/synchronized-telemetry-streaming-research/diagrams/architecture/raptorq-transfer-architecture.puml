@@ -6,17 +6,17 @@ skinparam defaultFontSize 10
 title RaptorQ Fountain Code Transfer (RFC 6330)
 
 package "Source Data" {
-    database [File/Stream\nK source symbols] as source
+    database [File/Stream K source symbols] as source
 }
 
 package "Encoder (RFC 6330)" {
-    component [Symbol\nGenerator] as encoder
-    component [FEC Parameters\n(K, N)] as fec_params
+    component [Symbol Generator] as encoder
+    component [FEC Parameters (K, N)] as fec_params
 }
 
 package "Transmission Network" {
-    component [Network\n(Unreliable)] as network
-    note "Packet Loss Rate: 0-30%\nLatency: Variable\nOut-of-order: Allowed" as net_note
+    component [Network (Unreliable)] as network
+    note "Packet Loss Rate: 0-30% Latency: Variable Out-of-order: Allowed" as net_note
 }
 
 package "Multiple Receivers" {
@@ -26,12 +26,12 @@ package "Multiple Receivers" {
 }
 
 package "Decoder (RFC 6330)" {
-    component [Erasure\nRecovery] as decoder
-    component [Constraint\nSolver] as solver
+    component [Erasure Recovery] as decoder
+    component [Constraint Solver] as solver
 }
 
 package "Output Data" {
-    database [Reconstructed\nFile/Stream] as output
+    database [Reconstructed File/Stream] as output
 }
 
 ' Main flow
