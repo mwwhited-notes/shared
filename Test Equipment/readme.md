@@ -2,7 +2,7 @@
 
 Complete electronics lab equipment reference with specifications, programming tools, and instrument control documentation. Each device has its own directory with detailed specifications and locally archived documentation.
 
-**Quick Reference:** 40 pieces of lab equipment | $5,887+ total value | [Documentation Protocol](../.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md) | [Missing Documentation](MISSING_DOCUMENTATION.md)
+**Quick Reference:** 41 pieces of lab equipment | $6,015+ total value | [Documentation Protocol](../.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md) | [Missing Documentation](MISSING_DOCUMENTATION.md)
 
 **For consumables, accessories, hand tools, and components, see [tools-and-components.md](../tools-and-components.md)**
 
@@ -29,6 +29,7 @@ Complete electronics lab equipment reference with specifications, programming to
   - [Audio](#audio)
   - [Lab Equipment](#lab-equipment)
   - [Fabrication](#fabrication)
+  - [Safety & Monitoring](#safety--monitoring)
 - [Directory Structure](#directory-structure)
 - [Software Resources](#software-resources)
   - [Instrument Control](#instrument-control)
@@ -57,7 +58,8 @@ Complete electronics lab equipment reference with specifications, programming to
 | Imaging | 2 | Active | Lenovo 510 FHD, Kitchbar KB-700 |
 | Audio | 1 | Active | Pyle PTAU45 |
 | Lab Equipment | 3 | Active | Velleman K8200 3D Printer |
-| **TOTAL** | **40** | **Active** | - |
+| Safety & Monitoring | 1 | Active | RADEX ONE Geiger Counter |
+| **TOTAL** | **41** | **Active** | - |
 
 ---
 
@@ -98,6 +100,7 @@ Complete electronics lab equipment reference with specifications, programming to
 |-------|------|---------------|----------|-----------|
 | [DER EE DE-5000](deree-de5000/) | Handheld | 100 kHz | xxxxxxx | `deree-de5000/` |
 | [Holdpeak HP-4070L](holdpeak-hp4070l/) | Handheld | 100 Hz | xxxxxxx | `holdpeak-hp4070l/` |
+| Altnux LCR Meter | Handheld | 100 kHz | 2017-06-26 | - |
 
 ### Power Supplies
 
@@ -106,6 +109,20 @@ Complete electronics lab equipment reference with specifications, programming to
 | [Korad KA3005P](korad-ka3005p/) | 30V/5A | Yes (USB/RS-232) | xxxxxxx | `korad-ka3005p/` |
 | [Korad KA6003P](korad-ka6003p/) | 60V/3A | Yes (USB/RS-232) | xxxxxxx | `korad-ka6003p/` |
 | [QE-MS305D](qe-ms305d/) | 30V/5A | No | xxxxxxx | `qe-ms305d/` |
+| Antec HCP-1000 | 1000W | No | 2017-06-05 | - | 80Plus Platinum PSU |
+
+### Power Backup & UPS
+
+| Model | Type | Output | Runtime | Git Hash | Directory |
+|-------|------|--------|---------|----------|-----------|
+| APC Smart-UPS 1500VA | Battery Backup | 1500VA/900W | 20-30 min | 2017-07-04 | - | Pure sine wave, LCD display |
+
+### Cooling Systems
+
+| Model | Type | Size | Controller | Git Hash | Directory |
+|-------|------|------|------------|----------|-----------|
+| AC Infinity AIRPLATE T9 | Thermostat Fan | 18" | Thermostat | 2017-06-26 | - | Temperature-controlled cooling |
+| AC Infinity AIRPLATE S9 | Speed Control Fan | 18" | Speed Controller | 2017-06-26 | - | Variable speed cooling |
 
 ### Logic Analyzers
 
@@ -159,6 +176,7 @@ Complete electronics lab equipment reference with specifications, programming to
 | [KSGER T12](ksger-t12/) | Soldering Station | 75W | xxxxxxx | `ksger-t12/` |
 | [YaeCCC 858D](yaeccc-858d/) | Hot Air Rework | 700W | xxxxxxx | `yaeccc-858d/` |
 | [Hakko FR-301](hakko-fr301/) | Desoldering Gun | 140W | xxxxxxx | `hakko-fr301/` |
+| ColdHeat Cordless Soldering Pen | Pen Soldering | Battery | 2017-03-28 | - | ~~Portable cordless iron~~ **Non-functional - discarded** |
 
 ### Thermal Imaging
 
@@ -199,6 +217,12 @@ Complete electronics lab equipment reference with specifications, programming to
 | Model | Type | Build Volume | Git Hash | Directory |
 |-------|------|--------------|----------|-----------|
 | [Velleman K8200](velleman-k8200/) | 3D Printer (Duet 3) | 200x200x200mm | xxxxxxx | `velleman-k8200/` |
+
+### Safety & Monitoring
+
+| Model | Type | Detection | Git Hash | Directory |
+|-------|------|-----------|----------|-----------|
+| [RADEX ONE](radex-one/) | Geiger Counter | Gamma, Beta, X-ray | xxxxxxx | `radex-one/` |
 
 ---
 
@@ -308,11 +332,13 @@ Complete electronics lab equipment reference with specifications, programming to
 │   └── README.md
 ├── greaseweazle-v41/
 │   └── README.md
-└── velleman-k8200/
-    ├── README.md
-    ├── K8200_Assembly_Manual.pdf
-    ├── K8200_User_Manual.pdf
-    └── Duet3_MB_6HC_Schematic.pdf
+├── velleman-k8200/
+│   ├── README.md
+│   ├── K8200_Assembly_Manual.pdf
+│   ├── K8200_User_Manual.pdf
+│   └── Duet3_MB_6HC_Schematic.pdf
+└── radex-one/
+    └── README.md
 ```
 
 ---
@@ -391,7 +417,8 @@ Complete electronics lab equipment reference with specifications, programming to
 | Velleman K8055 (×3) | Data Acquisition | - | Micro Center | - |
 | Pyle PTAU45 | Audio Amplifier | $71.99 | Amazon | 2013-10-11 |
 | ExGizmo UV EPROM Eraser | Lab Equipment | $19.88 | Amazon (ExGizmo) | 2020-01-30 |
-| **Documented Total** | | **$5,887.20+** | | |
+| RADEX ONE | Safety & Monitoring | $127.95 | Amazon (Quarta-Rad) | 2020-09-15 |
+| **Documented Total** | | **$6,015.15+** | | |
 
 ---
 
@@ -416,7 +443,7 @@ Complete electronics lab equipment reference with specifications, programming to
 
 ---
 
-*Index Version: 1.0*
-*Last Updated: 2026-01-16*
-*Total Equipment: 40 pieces | $5,887.20+ documented*
-*Scope: Oscilloscopes, signal generators, multimeters, power supplies, programmers, protocol tools, data acquisition, microscopes, thermal imaging, soldering equipment, and specialty lab equipment*
+*Index Version: 1.1*
+*Last Updated: 2026-01-17*
+*Total Equipment: 41 pieces | $6,015.15+ documented*
+*Scope: Oscilloscopes, signal generators, multimeters, power supplies, programmers, protocol tools, data acquisition, microscopes, thermal imaging, soldering equipment, safety & monitoring, and specialty lab equipment*

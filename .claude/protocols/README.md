@@ -14,6 +14,8 @@ This directory contains protocols for documenting equipment, projects, and inven
 | [VINTAGE_COMPUTERS_DOCUMENTATION_PROTOCOL.md](VINTAGE_COMPUTERS_DOCUMENTATION_PROTOCOL.md) | Document vintage computers and peripherals | System specs, peripherals, FPGA soft core cross-refs |
 | [CAMERA_COLLECTION_PROTOCOL.md](CAMERA_COLLECTION_PROTOCOL.md) | Document cameras, lenses, and accessories | Bodies, lenses, mount compatibility, astrophotography |
 | [DEVICE_LAB_PROTOCOL.md](DEVICE_LAB_PROTOCOL.md) | Document computing devices for hacking/tinkering | Tablets, phones, NAS, hackability, repurposing projects |
+| [HOBBY_COLLECTION_PROTOCOL.md](HOBBY_COLLECTION_PROTOCOL.md) | Document hobby and craft equipment and supplies | Leathercraft, sewing, jewelry, materials, projects |
+| [SPORTS_COLLECTION_PROTOCOL.md](SPORTS_COLLECTION_PROTOCOL.md) | Document sports and outdoor recreation equipment | Water sports, biking, camping, fitness, trip planning |
 | [TOOLS_AND_COMPONENTS_PROTOCOL.md](TOOLS_AND_COMPONENTS_PROTOCOL.md) | Maintain tools-and-components.md inventory | Hand tools, wire, consumables, component stock |
 | [BOOKS_PROTOCOL.md](BOOKS_PROTOCOL.md) | Maintain books.md inventory | Technical books, software/hardware references |
 
@@ -44,6 +46,8 @@ This directory contains protocols for documenting equipment, projects, and inven
 - Vintage computer/peripheral? → [VINTAGE_COMPUTERS_DOCUMENTATION_PROTOCOL.md](VINTAGE_COMPUTERS_DOCUMENTATION_PROTOCOL.md)
 - Camera/lens/photo accessory? → [CAMERA_COLLECTION_PROTOCOL.md](CAMERA_COLLECTION_PROTOCOL.md)
 - Tablet/phone/NAS/gaming device? → [DEVICE_LAB_PROTOCOL.md](DEVICE_LAB_PROTOCOL.md)
+- Hobby/craft equipment (leathercraft, sewing, jewelry)? → [HOBBY_COLLECTION_PROTOCOL.md](HOBBY_COLLECTION_PROTOCOL.md)
+- Sports/outdoor recreation equipment? → [SPORTS_COLLECTION_PROTOCOL.md](SPORTS_COLLECTION_PROTOCOL.md)
 - Hand tool/wire/component/consumable? → [TOOLS_AND_COMPONENTS_PROTOCOL.md](TOOLS_AND_COMPONENTS_PROTOCOL.md)
 - Technical book/reference? → [BOOKS_PROTOCOL.md](BOOKS_PROTOCOL.md)
 
@@ -173,6 +177,12 @@ What are you documenting?
 ├─ Is it a computing device for hacking/repurposing?
 │  └─ YES → DEVICE_LAB_PROTOCOL.md
 │
+├─ Is it hobby/craft equipment (leathercraft, sewing, jewelry)?
+│  └─ YES → HOBBY_COLLECTION_PROTOCOL.md
+│
+├─ Is it sports or outdoor recreation equipment?
+│  └─ YES → SPORTS_COLLECTION_PROTOCOL.md
+│
 ├─ Is it a hand tool, wire, component, or consumable?
 │  └─ YES → TOOLS_AND_COMPONENTS_PROTOCOL.md
 │
@@ -218,15 +228,17 @@ This README serves as the master index for all 17 documentation protocols. It is
 |----------|---------|-----------------|--------------|
 | PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md | Dev boards (FPGA/MCU) | 1.0 | Dec 2025 |
 | EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md | Shields/HATs/capes | 1.0 | Dec 2025 |
-| EQUIPMENT_DOCUMENTATION_PROTOCOL.md | Test equipment | 1.0 | Dec 2025 |
+| EQUIPMENT_DOCUMENTATION_PROTOCOL.md | Test equipment | 1.1 | Jan 2026 |
 | VINTAGE_COMPUTERS_DOCUMENTATION_PROTOCOL.md | Retro computers | 1.0 | Dec 2025 |
 | CAMERA_COLLECTION_PROTOCOL.md | Photography gear | 1.0 | Dec 2025 |
 | DEVICE_LAB_PROTOCOL.md | Computing devices | 1.0 | Jan 2026 |
-| TOOLS_AND_COMPONENTS_PROTOCOL.md | Tools/consumables | 1.0 | Jan 2026 |
+| HOBBY_COLLECTION_PROTOCOL.md | Hobby & craft equipment | 1.0 | Jan 2026 |
+| SPORTS_COLLECTION_PROTOCOL.md | Sports & outdoor gear | 1.0 | Jan 2026 |
+| TOOLS_AND_COMPONENTS_PROTOCOL.md | Tools/consumables | 1.1 | Jan 2026 |
 | BOOKS_PROTOCOL.md | Technical books | 1.0 | Jan 2026 |
 | PROJECTS_PROTOCOL.md | Active projects | 1.2 | Jan 2026 |
 | PROJECT_REVIEW_PROTOCOL.md | Quarterly reviews | 1.1 | Jan 2026 |
-| ONLINE_SHOPPING_PROTOCOL.md | Purchase tracking | 1.0 | Jan 2026 |
+| ONLINE_SHOPPING_PROTOCOL.md | Purchase tracking | 1.1 | Jan 2026 |
 | CLAUDE_MD_MAINTENANCE_PROTOCOL.md | CLAUDE.md upkeep | 1.0 | Jan 2026 |
 | TODO_MD_ARCHIVAL_PROTOCOL.md | Task archival | 1.0 | Jan 2026 |
 | CHANGELOG_PROTOCOL.md | Change tracking | 1.0 | Jan 2026 |
@@ -235,10 +247,19 @@ This README serves as the master index for all 17 documentation protocols. It is
 
 ---
 
-*Protocol Index Version: 1.4*
-*Last Updated: 2026-01-16*
+*Protocol Index Version: 1.5*
+*Last Updated: 2026-01-17*
 
 ### Changelog
+
+**v1.5 (2026-01-17) - New Collection Protocols**
+- Added HOBBY_COLLECTION_PROTOCOL.md (v1.0) for leathercraft, sewing, jewelry making
+- Added SPORTS_COLLECTION_PROTOCOL.md (v1.0) for water sports, biking, camping, fitness
+- Updated TOOLS_AND_COMPONENTS_PROTOCOL.md to v1.1 for component kit organization
+- Updated EQUIPMENT_DOCUMENTATION_PROTOCOL.md to v1.1 for power backup and cooling systems
+- Updated ONLINE_SHOPPING_PROTOCOL.md to v1.1 for AliExpress archive standards
+- Added new decision tree branches for hobby and sports collections
+- Expanded version tracking table to 19 total protocols
 
 **v1.4 (2026-01-16) - Protocol Updates**
 - Added version tracking table for all 17 protocols

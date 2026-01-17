@@ -71,13 +71,25 @@ Screws, standoffs, nuts, bolts, zip ties, battery holders
 - Active Components (transistors, relays, motors, displays)
 - ICs (logic, microcontrollers, op-amps, voltage regulators)
 
-### 12. Computer Peripherals
+### 12. Components & Assembly Kits (Invoice-Based)
+Pre-assembled and DIY electronics kits imported from invoice processing:
+- Breadboards & Prototyping (breadboards, stripboards, proto kits)
+- Connectors & Cable Management (BNC, keystone, HDMI, terminal blocks)
+- Relays & Control Modules (SainSmart relays, RS-485 modules)
+- LED & Optical Components (RGB strips, LED drivers, 7-segment displays)
+- Component Assortments (resistor/capacitor/IC kits, potentiometers)
+- Switches & Control (toggle switches, DIP switches)
+- Serial & Communication (DB connectors, JST connectors)
+- Soldering & Rework (T12 tips, soldering stations, stands)
+- DIY Educational Kits (SMD practice, function generators, line followers)
+
+### 13. Computer Peripherals
 Mice, keyboards, hubs, docks, card readers, adapters
 
-### 13. Raspberry Pi Accessories
+### 14. Raspberry Pi Accessories
 Pi-specific accessories that aren't HATs
 
-### 14. Craft & Project Supplies
+### 15. Craft & Project Supplies
 Materials for projects (foam, tape, fasteners, etc.)
 
 *For technical books, see [books.md](../books.md) - separate inventory maintained by BOOKS_PROTOCOL.md*
@@ -180,15 +192,44 @@ When an item is documented elsewhere but purchase info is relevant:
 *FT232H Breakout module (purchased 2021-03-15, $10.99) documented in [Test Equipment/ft232h-breakout/](Test%20Equipment/ft232h-breakout/)*
 ```
 
-## Processing Amazon Orders
+## Processing Orders: Amazon and AliExpress
 
-When adding items from Amazon orders:
+When adding items from online retail orders:
+
+### Common Processing Rules
 
 1. **Date**: Use order placement date (not delivery)
 2. **Price**: Use item subtotal (before shipping/tax)
 3. **Quantity**: Actual quantity received
 4. **Skip**: Household items, food, returned items
 5. **Skip**: Items already documented in other inventories
+
+### Components from Invoice Archives
+
+When processing electronics components from invoice archives (Amazon, AliExpress):
+
+**Organization Strategy:**
+- Group similar components into the "Components & Assembly Kits (Invoice-Based)" section
+- Create subsections for functional categories rather than technology types
+- Include both individual items and pre-assembled kits
+- Maintain source and date information for future reference/replacement
+
+**Example subsection:**
+```markdown
+### Breadboards & Prototyping
+
+| Item | Description | Qty | Purchased | Source | Cost |
+|------|-------------|-----|-----------|--------|------|
+| 3220-Hole Breadboard | Solderless circuit test board | 1 | 2025-04-09 | AliExpress | $16.70 |
+| Mini Breadboards SYB-170 | 170 holes, 35x47mm prototype | 10 | 2025-04-07 | AliExpress | $3.70 |
+```
+
+**Decision Rule:** If a component appears in multiple invoices:
+- Use separate entries per invoice (to track date/source)
+- Add combined cost in parentheses if consolidating quantity info
+- Example: `| KSGER T12 Tips | ... | 5 | 2023-2025 | AliExpress | $7.79 |`
+
+### Amazon Order Processing
 
 **Example order processing:**
 ```
@@ -202,6 +243,16 @@ Items:
 - MOSFET Transistors (20pcs) $9.99 → Add to Active Components
 - Potato chips $8.99 → SKIP (food)
 ```
+
+### AliExpress Order Processing
+
+AliExpress orders are first archived in `.invoices/aliexpress-{YYYY}.md` files, then items are extracted to appropriate sections in tools-and-components.md.
+
+**Special considerations for AliExpress:**
+- Items often arrive in small batches with unpredictable delivery times
+- Some orders may lack detailed product descriptions - research and document as needed
+- Note any quality issues or counterfeited components (see ONLINE_SHOPPING_PROTOCOL.md)
+- Use store/seller names in description for future reference
 
 ## Maintaining Accuracy
 
@@ -314,5 +365,21 @@ Update the date when making significant changes.
 
 ---
 
-*Protocol Version: 1.2*
-*Last Updated: 2026-01-07*
+## Version History
+
+*Protocol Version: 1.1*
+*Last Updated: 2026-01-17*
+
+### v1.1 (2026-01-17) - Components & Assembly Kits Organization
+- Added "Components & Assembly Kits (Invoice-Based)" section (section 12)
+- Documented processing strategy for components from invoice archives
+- Added AliExpress order processing guidelines
+- Updated section numbering (Computer Peripherals now section 13, etc.)
+- Added guidance for consolidating multi-source component purchases
+- Clarified decision rules for component organization by functional category
+
+### v1.0 (2026-01-07)
+- Initial protocol documentation
+- Defined section organization and cross-references
+- Added processing guidelines for Amazon orders
+- Documented common mistakes and categorization examples

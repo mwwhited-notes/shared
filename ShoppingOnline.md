@@ -508,6 +508,81 @@ See `.claude/protocols/ONLINE_SHOPPING_PROTOCOL.md` for documentation standards.
 
 ## Direct Retailer Orders
 
+### Amazon
+
+Amazon order invoices are archived by year in the `.invoices/` directory:
+
+- [**amazon-2017.md**](.invoices/amazon-2017.md) - 2017 Amazon orders (40 orders, ~$4,600+ total)
+- [**amazon-2018.md**](.invoices/amazon-2018.md) - 2018 Amazon orders (23 orders, $1,244.15 total)
+- [**amazon-2019.md**](.invoices/amazon-2019.md) - 2019 Amazon orders (17 orders, $1,074.48 total)
+- [**amazon-2020.md**](.invoices/amazon-2020.md) - 2020 Amazon orders (40 orders, $1,789.47 total)
+
+---
+
+### AliExpress
+
+AliExpress order invoices are archived by year in the `.invoices/` directory:
+
+- [**aliexpress-2022.md**](.invoices/aliexpress-2022.md) - 2022 AliExpress orders (3 orders, ~$93.48 total)
+- [**aliexpress-2023.md**](.invoices/aliexpress-2023.md) - 2023 AliExpress orders (7 orders, ~$97.37 total)
+- [**aliexpress-2024.md**](.invoices/aliexpress-2024.md) - 2024 AliExpress orders (7 orders, ~$78.06 total)
+- [**aliexpress-2025.md**](.invoices/aliexpress-2025.md) - 2025 AliExpress orders (39 orders, ~$456.15 total)
+- [**aliexpress-2026.md**](.invoices/aliexpress-2026.md) - 2026 AliExpress orders (5 orders, ~$96.16 total, awaiting delivery)
+
+**Quality Notes:**
+- **2023 Alert:** Order from Shop2982020 Store (Jan 17) was confirmed in ShoppingOnline.md blacklist as selling counterfeit AD633 analog multiplier chips
+- **2026 Alert:** 3 duplicate orders of HDMI KVM Extenders placed on same date; all currently awaiting delivery
+- **Data Issues:** Several orders lack itemized product descriptions; totals provided where available
+
+---
+
+### Mouser Electronics
+
+- **Platform:** Direct (mouser.com)
+- **Store URL:** https://www.mouser.com/
+- **Purchases:**
+  - Order #253525815 (2021-02-05, delivered 2021-02-10):
+    - 1x Memory Card Connectors 2 In 1 (Mouser 523-GMC020080HR) @ $1.27
+    - 1x D-Sub High Density Receptacle (Mouser 587-634-015-274-906) @ $1.40
+    - 1x SRAM 1Mb, 128K x 8, 32pin PDIP, 55ns (Mouser 913-AS6C1008-55PCN) @ $2.91
+    - 1x RCA Phono Jack, SMT (Mouser 490-RCJ-013-SMT-TR) @ $1.04
+    - 3x 32P DIP Socket 600 (Mouser 571-1-2199300-2) @ $0.78 each = $2.34
+    - 2x NOR Flash 512K x 8 (Mouser 804-39SF0407CPHE) @ $1.83 each = $3.66
+    - 2x SRAM 256K, 32K x 8 Asynch (Mouser 913-AS6C62256-55PCN) @ $2.54 each = $5.08
+    - 4x Logic Gates Quad 2-input OR (Mouser 595-SN74LS32NE4) @ $0.65 each = $2.60
+    - 2x Dual 2 to 4-line Decoder/Demultiplexer (Mouser 595-SN74LS139ANE4) @ $0.84 each = $1.68
+    - 2x Octal D-Type FlipFlop w/Clock Enable (Mouser 595-SN74LS377NE4) @ $0.90 each = $1.80
+    - 2x 28P Dual Wipe DIP Socket (Mouser 517-4828-6000-CP) @ $0.81 each = $1.62
+    - 2x ATtiny13-20PU 8-bit MCU (Mouser 556-ATTINY13-20PU) @ $1.39 each = $2.78
+    - Subtotal: $28.18, Shipping (UPS Next Day): $8.00, Total: $36.17
+    - Status: Shipped
+  - Order #253797621 (2021-02-26, delivered 2021-02-26):
+    - 1x SRAM 256K, 32K x 8 Asynch (Mouser 913-AS6C62256-55PCN) @ $0.00 (NO CHARGE - replacement)
+    - Total: $0.00
+    - Status: Shipped
+  - Order #254274768 (2021-04-01, delivered 2021-04-05):
+    - 1x EEPROM 1Mbit (128K x 8) Flash (Mouser 804-GLS29EE010-70NHE) @ $2.28
+    - 10x 74HC154D Encoders/Decoders (Mouser 771-74HC154D-T) @ $0.561 each = $5.61
+    - 20x Flip Flops Octal D-Type w/Clear (Mouser 595-SN74HC273NE4) @ $0.557 each = $11.14
+    - 10x 3 to 8-Line Decoder/Demultiplexer (Mouser 595-SN74HC138NE4) @ $0.418 each = $4.18
+    - 20x Bus Transceivers Tri-State Octal Bus (Mouser 595-SN74HC245N) @ $0.518 each = $10.36
+    - 1x IC & Component Socket 84 POS Tin Plated (Mouser 575-948424) @ $2.67
+    - 1x IC & Component Socket PLCC 44P Through-Hole (Mouser 649-54020-44030LF) @ $2.31
+    - 1x IC & Component Socket PLCC 32P SMT (Mouser 649-69802-132LF) @ $1.41
+    - Subtotal: $39.96, Shipping (UPS Ground): $7.99, Total: $47.95
+    - Status: Shipped
+  - Order #254351903 (2021-04-08, delivered 2021-04-08):
+    - 20x Flip Flops Octal D-Type w/Clear (Mouser 595-SN74HC273NE4) @ $0.00 (NO CHARGE - replacement)
+    - Total: $0.00
+    - Status: Shipped
+- **Total Spent:** $84.12 (across 4 orders, 2 were no-charge replacements)
+- **Photo Accuracy:** N/A (components)
+- **Packaging Quality:** Good
+- **Would Buy Again:** Yes
+- **Notes:** Reliable distributor for ICs, connectors, and electronic components. All orders shipped promptly. Two orders marked as "NO CHARGE" appear to be replacements or corrections.
+
+---
+
 ### Adafruit Industries
 
 - **Platform:** Direct (adafruit.com)

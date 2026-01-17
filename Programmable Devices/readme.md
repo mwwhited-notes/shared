@@ -98,6 +98,7 @@ Complete collection of FPGA, CPLD, MCU, and other programmable development board
 |-------|-----|-------|-----|-------|----------|-----------|
 | [STM32 BluePill](stm32-bluepill/) | STM32F103C8T6 | 64 KB | 20 KB | 72 MHz | xxxxxxx | `stm32-bluepill/` |
 | [Netduino Mini](netduino-mini/) | AT91SAM7X512 | 512 KB | 128 KB | 48 MHz | xxxxxxx | `netduino-mini/` |
+| [Raspberry Pi Pico W](raspberry-pi-pico-w/) | RP2040 | 2 MB | 264 KB | 133 MHz | 2025-12-14 | `raspberry-pi-pico-w/` |
 | [Device Solutions Tahoe II](devicesolutions-tahoe-ii/) | i.MXS (ARM920T) | 4 MB | 8 MB | 100 MHz | xxxxxxx | `devicesolutions-tahoe-ii/` |
 
 ### IoT / Wireless Boards
@@ -330,8 +331,16 @@ Cross-reference with programmers in `../Test Equipment/`:
 | Digilent Arty A7-100 | FPGA | $0.00 | Gift (Christmas) | 2020-12-25 |
 | Digilent Arty Z7-20 | SoC FPGA | $209.00 | Digilent | 2021-11-22 |
 | Altera EP2C5 Mini | FPGA | $22.80 | Amazon (get005) | 2014-01-28 |
+| HiLetgo ESP8266 NodeMCU LUA CP2102 (×2) | ESP | $14.99 | HiLetgo | 2018-01-18 |
+| HiLetgo 2.0 ADK Mini USB Host Shield | Arduino Shield | $10.49 | HiLetgo | 2018-01-26 |
+| SunFounder ENC28J60 Ethernet LAN Module | Arduino Shield | $7.49 | SunFounderDirect | 2018-01-26 |
+| Raspberry Pi Camera Module 5MP OV5647 | Accessory | $12.88 | DF MAKER | 2018-10-12 |
+| RS232/RS485 Shield for Arduino | Arduino Shield | $15.95 | TINYSINE | 2018-12-30 |
+| Waveshare ARPI600 GPIO Expansion | Raspberry Pi Expansion | $16.99 | waveshare | 2019-01-16 |
+| Diymore USB to ESP8266 ESP-01S Programmer | ESP | $8.28 | diymore | 2019-01-28 |
 | Raspberry Pi 3 B+ | SBC | $38.30 | Amazon | 2019-01-28 |
 | ATmega328P-PU (×3) | AVR | $12.99 | Amazon | 2019-01-28 |
+| HonsCreat USBasp AVR Programmer | Programmer | $8.50 | Jiaheyi | 2019-01-28 |
 | NESMaker NES PCB (×2) | Homebrew PCB | $11.80 | Tindie (mrTentacle) | 2021-02-05 |
 | Gigatron TTL | TTL Computer | $0.00 | Gift (birthday) | 2020-03-16 |
 | MM-8000K | Trainer | $129.00 | Amazon (Zack's Edu Castle) | 2012-12-04 |
@@ -339,9 +348,19 @@ Cross-reference with programmers in `../Test Equipment/`:
 | STM32 BluePill (×5) | ARM | $15.88 | Amazon (Teyleten Robot) | 2023-04-02 |
 | Device Solutions Tahoe II | ARM | $0.00 | MS .NET MF competition | - |
 | Multicomp EP2C5-DB | Retro FPGA Kit | $16.00 | Tindie (Land Boards) | 2021-02-05 |
+| LAQIYA TL866II Plus IC Programmer | Programmer | $59.99 | LAQIYA | 2020-01-21 |
+| ExGizmo UV EPROM Eraser | Programmer | $19.88 | ExGizmo | 2020-01-30 |
+| Raspberry Pi Zero Case Kit with HDMI | Accessory | $9.99 | iUniker | 2020-01-30 |
+| Stemedu USB to ESP8266 ESP-01S Programmer | ESP | $7.99 | Stemedu | 2020-02-02 |
+| Aideepen ESP8266 Serial Wi-Fi Module 3.3V/5V | ESP | $5.59 | Aideepen | 2020-02-02 |
+| Raspberry Pi 40-pin GPIO 1 to 2 Expansion Board | Raspberry Pi Expansion | $8.99 | Amazon.com | 2020-04-28 |
+| MIDI Shield Breakout Board for Arduino | Arduino Shield | $12.99 | XieQianJin | 2020-12-03 |
+| Universal 40-Pin ZIF DIP IC Test Socket (×2) | Accessory | $8.99 | 3C4U@US | 2020-12-03 |
+| Multi-Function Shield with Buzzer/LEDs | Arduino Shield | $6.99 | Gump's grocery | 2020-12-25 |
+| Pmod VGA: Video Graphics Array | Pmod Module | $8.99 | Digilent | 2020-12-25 |
 | STC 89C52RC (DIY kit) | 8051 | $7.41 | AliExpress (cuiisw) | 2024-03-10 |
 | D1 ESP8266 | ESP | $0.36 | AliExpress (diymore) | 2022-12-14 |
-| **Documented Total** | | **$993.24** | | |
+| **Documented Total** | | **$1,406.24** | | |
 
 ### Undocumented Equipment
 

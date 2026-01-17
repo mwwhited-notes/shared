@@ -443,6 +443,18 @@ If the user doesn't provide full specifications, ask:
 - What is the interface? (USB, parallel)
 - What software does it use?
 
+**For UPS/Battery Backup:**
+- What is the VA rating? (e.g., 1500VA, 900W)
+- What type of batteries? (Lead-acid, lithium, NiMH)
+- How long does it backup at full load?
+- Pure sine wave or simulated?
+
+**For Cooling Systems:**
+- What size is it? (fan diameter, ducting size)
+- Is it temperature controlled or variable speed?
+- What is the airflow rating (CFM)?
+- What is the noise level (dB)?
+
 #### Research Assistance
 
 If the user only provides manufacturer and model, offer to research:
@@ -831,6 +843,10 @@ For when you need to add equipment quickly and fill in details later:
 
 **Power Supplies** - Include: voltage/current ranges, regulation specs, ripple, programmability
 
+**Power Backup & UPS** - Include: capacity (VA/W), battery type, runtime at load, AC/DC output, charging time
+
+**Cooling Systems** - Include: airflow (CFM), noise level (dB), temperature control type (thermostat/variable speed), mounting options
+
 **Signal Generators** - Include: frequency range, waveform types, modulation capabilities
 
 **Logic Analyzers** - Include: channel count, sample rate, protocol decoders
@@ -1016,5 +1032,19 @@ Check for:
 
 ---
 
-*Protocol version: 1.0*
-*Last updated: December 2024*
+## Version History
+
+*Protocol Version: 1.1*
+*Last Updated: 2026-01-17*
+
+### v1.1 (2026-01-17) - New Equipment Categories
+- Added "Power Backup & UPS" category with specifications guidance
+- Added "Cooling Systems" category with specifications guidance
+- Added follow-up questions for UPS/battery backup equipment
+- Added follow-up questions for cooling systems equipment
+- Updated equipment-type specific sections to reflect new categories
+
+### v1.0 (2024-12-XX)
+- Initial protocol documentation
+- Defined equipment documentation standards and workflow
+- Created README template and download procedures

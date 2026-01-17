@@ -42,6 +42,8 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 - **Vintage Computers/** - Apple IIc, Apple IIgs, TI-99/4A with peripherals (Floppy Emu, VGA adapters, RAM expansions)
 - **Camera Collection/** - Photography equipment inventory (Nikon D800, film cameras, lenses, M42 vintage glass)
 - **Device Lab/** - Computing devices for hacking/tinkering (tablets, phones, gaming handhelds, NAS, desktops)
+- **Hobby Collection/** - Hobby and craft equipment (leathercraft, sewing, jewelry making, materials and tools)
+- **Sports Collection/** - Sports and outdoor recreation equipment (water sports, biking, camping, fitness)
 - **projects/** - Active project documentation and build logs
   - `fpga-cpu-design/` - Custom CPU in SystemVerilog
   - `attiny2313-clock/` - ATtiny LED clock
@@ -126,6 +128,20 @@ Key focus areas:
 - Hackability status and options (CFW, root, homebrew)
 - Project ideas for repurposing devices
 
+### Hobby Collection
+Follow `.claude/protocols/HOBBY_COLLECTION_PROTOCOL.md` when:
+- Adding hobby and craft equipment (leathercraft, sewing, jewelry making)
+- Documenting materials and supplies inventory
+- Tracking project ideas and inspiration
+- Cross-referencing with related creative projects
+
+### Sports Collection
+Follow `.claude/protocols/SPORTS_COLLECTION_PROTOCOL.md` when:
+- Adding sports and outdoor recreation equipment (water sports, biking, camping, fitness)
+- Documenting maintenance and service history
+- Planning trips and adventures
+- Cross-referencing with outdoor projects
+
 ### Projects
 Follow `.claude/protocols/PROJECTS_PROTOCOL.md` when:
 - Creating documentation for a new project build
@@ -191,8 +207,8 @@ Follow `.claude/protocols/CLAUDE_MD_MAINTENANCE_PROTOCOL.md` to keep this file c
 Follow `.claude/protocols/TODO_MD_ARCHIVAL_PROTOCOL.md` to archive completed tasks from TODO.md.
 
 **Current status:**
-- CLAUDE.md: 256 lines (target <500, warning at 600)
-- TODO.md: Cleaned 2026-01-07 (7 active tasks)
+- CLAUDE.md: 328 lines (target <500, warning at 600)
+- TODO.md: Cleaned 2026-01-17 (18 pending tasks, 7 completed)
 - See `changes/` directory for archived work
 
 ### Directory Indexes for Performance & Token Usage
@@ -206,13 +222,15 @@ Each major directory has a focused README.md index following `.claude/protocols/
 
 **Index Organization:**
 - `projects/README.md` - Master index of 21+ projects (status, categories, cross-references)
-- `.claude/protocols/README.md` - Master index of 17 documentation protocols (versions, purposes, decision tree)
+- `.claude/protocols/README.md` - Master index of 19 documentation protocols (versions, purposes, decision tree)
 - `Programmable Devices/README.md` - Device inventory index (20+ devices, specifications, programmer compatibility)
 - `Expansion Boards/README.md` - Shields/HATs/capes index (pin mappings, parent board cross-refs)
 - `Test Equipment/README.md` - Lab equipment index (oscilloscopes, meters, supplies)
 - `Vintage Computers/README.md` - Apple II/TI-99/4A systems and peripherals
 - `Camera Collection/README.md` - Photography equipment (bodies, lenses, mount compatibility)
 - `Device Lab/README.md` - Computing devices for hacking (tablets, phones, NAS, gaming)
+- `Hobby Collection/README.md` - Hobby and craft equipment (leathercraft, sewing, jewelry)
+- `Sports Collection/README.md` - Sports and outdoor recreation equipment
 - `Notes/README.md` - Technical notes directory guide
 - `AnalogComputers/README.md` - Analog computing research collection overview
 
@@ -280,6 +298,8 @@ done
 - `Vintage Computers/readme.md` - Apple IIc, Apple IIgs, TI-99/4A inventory
 - `Camera Collection/readme.md` - Cameras, lenses, and photography accessories
 - `Device Lab/readme.md` - Computing devices for hacking/tinkering
+- `Hobby Collection/readme.md` - Leathercraft, sewing, jewelry equipment and materials
+- `Sports Collection/readme.md` - Water sports, biking, camping, fitness equipment
 
 ### Projects
 - `projects/` - Active project directories with READMEs (see projects/project-ideas.md for complete list)

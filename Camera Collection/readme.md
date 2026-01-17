@@ -77,6 +77,7 @@ Complete photography equipment inventory including camera bodies, lenses, teleco
 | Holga HT-25 2.5X Telephoto | Teleconverter | - | Working | $16.81 | xxxxxxx | - |
 | Lensbaby Edge 80 Optic | 80mm | - | Working | $274.39 | xxxxxxx | - |
 | Lensbaby Edge 50 Optic | 50mm | - | Working | $224.95 | xxxxxxx | - |
+| Lensbaby Sweet 80 Optic | 80mm | - | Working | $199.95 | 2018-10-21 | - |
 | Lensbaby Sweet 50 Optic | 50mm | - | Working | $119.95 | xxxxxxx | - |
 | Lensbaby Twist 60 Optic | 60mm | - | Working | $179.95 | xxxxxxx | - |
 | Lensbaby Composer Pro + Double Glass | Body | - | Working | $299.95 | xxxxxxx | - |
@@ -114,7 +115,8 @@ Complete photography equipment inventory including camera bodies, lenses, teleco
 | [Fotasy Canon FD to Nikon Z Adapter](Accessories/fotasy-fd-z-adapter/) | Mount Adapter | Working | $15.95 | xxxxxxx | `Accessories/fotasy-fd-z-adapter/` |
 | iShoot Tripod Ring (Sigma 135mm Art) | Lens Collar | Working | $49.99 | xxxxxxx | - |
 | Neewer L-Plate Bracket (D800) | Camera Grip | Working | $27.99 | xxxxxxx | - |
-| Olympus CSCH-123 Sports Holder | Camera Case | Working | $27.99 | xxxxxxx | - |
+| Olympus CSCH-123 Sports Holder | Camera Case | Working | $27.99 | 2017-08-09 | - | Case for TG-5 waterproof camera |
+| DSTE 2x Li-90B Battery + DC16 Travel Charger | Battery/Charger | Working | $11.49 | 2017-08-09 | - | Olympus TG-5 batteries (2x) + charger |
 | Breakthrough 77mm X1 Circular Polarizer | Filter | Working | $59.00 | xxxxxxx | - |
 | X-Rite i1 Display Pro + ColorChecker Passport | Color Calibration | Working | $347.98 | xxxxxxx | - |
 | AmScope CA-NIK-SLR Microscope Adapter | Adapter | Working | $89.75 | xxxxxxx | - |
@@ -138,8 +140,20 @@ Complete photography equipment inventory including camera bodies, lenses, teleco
 | Selens Tripod Weight Bag | Sandbag for stabilization | Working | $12.95 | xxxxxxx | - |
 | Transcend 8GB CompactFlash Card | 133x speed (TS8GCF133) | Working | $16.99 | xxxxxxx | - |
 | Verbatim 4GB CompactFlash Card | 95188 black | Working | $12.99 | xxxxxxx | - |
+| VIVITAR MB-D12 Pro Battery Grip | Nikon D800/D810 (Amazon, VIV-PG-D810) | Working | $29.00 | 2018-10-11 | - |
+| CEARI DK-20 Rubber Eyecup | Nikon DSLR eyepiece (2-pack) | Working | $7.42 | 2018-10-19 | - |
+| EN-EL15 RAVPower Battery Charger Set | Nikon D750/D7500/D850 (2-pack, Micro USB) | Working | $37.99 | 2018-10-11 | - |
+| DSLRKIT Nikon G to Canon EF Adapter | Nikon AF-S lens to Canon EOS mount | Working | $12.90 | 2018-10-25 | - |
+| XCSOURCE Complete Square Filter Kit | Cokin P Series (24pcs + holders + hoods + adapters) | Working | $38.99 | 2018-10-12 | - |
+| AmazonBasics Circular Polarizer | 82mm lens filter | Working | $16.50 | 2018-10-12 | - |
+| ZoMei 82mm Variable ND Filter | ND2-ND400 adjustable fader, optical glass | Working | $39.99 | 2018-10-12 | - |
+| Step-Up Lens Adapter Ring 67-77mm | CNC aluminum (Fire Filters, 2-pack) | Working | $9.94 | 2018-10-27 | - |
+| Step-Up Lens Adapter Ring 58-77mm | CNC aluminum (Fire Filters) | Working | $4.97 | 2018-10-27 | - |
+| Step-Up Lens Adapter Ring 72-82mm | CNC aluminum (Fire Filters) | Working | $4.97 | 2018-10-19 | - |
+| SanDisk Extreme CompactFlash | 64GB memory card (SDCFXS-064G-A46) | Working | $44.95 | 2018-03-04 | - |
+| SanDisk Extreme Pro SDXC | 64GB UHS-I memory card (SDSDXXG-064G-GN4IN) | Working | $35.50 | 2018-03-04 | - |
 
-*Star Adventurer 2i purchased 2021-10-27. Astrophotography accessories for star tracking, night sky photography.*
+*Filters and adapters added 2018. Star Adventurer 2i purchased 2021-10-27. Astrophotography accessories for star tracking, night sky photography.*
 
 ---
 
