@@ -12,6 +12,7 @@
 - [x] Create Sports Collection for water sports, biking, camping, fitness
 - [x] Extract AliExpress items to relevant collections (components, tools, equipment)
 - [x] Review and update documentation protocols (19 protocols, 2 new)
+- [x] Reorganize repository: create Personal/ folder for collections and invoices
 - [ ] Process Amazon invoices 2016 - extract items to collections
 - [ ] Process Amazon invoices 2015 - extract items to collections
 - [ ] Process Amazon invoices 2014 - extract items to collections
@@ -52,3 +53,4 @@
 
 *Last updated: 2026-01-17*
 *Last cleaned: 2026-01-17*
+*Last reorganized: 2026-01-17*

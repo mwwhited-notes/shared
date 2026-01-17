@@ -432,10 +432,7 @@ FodyWeavers.xsd
 #########################
 !*.md
 *.pdf
+*_tmp.html
 
 .ipynb_checkpoints/
 model_outputs/
-
-.vs/
-*_tmp.html
-.invoices/incomming

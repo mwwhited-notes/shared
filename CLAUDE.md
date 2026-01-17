@@ -40,10 +40,12 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 - **Expansion Boards/** - Inventory of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and other dev board accessories
 - **Test Equipment/** - Lab equipment documentation (oscilloscopes, DMMs, power supplies, programmers, 3D printer)
 - **Vintage Computers/** - Apple IIc, Apple IIgs, TI-99/4A with peripherals (Floppy Emu, VGA adapters, RAM expansions)
-- **Camera Collection/** - Photography equipment inventory (Nikon D800, film cameras, lenses, M42 vintage glass)
-- **Device Lab/** - Computing devices for hacking/tinkering (tablets, phones, gaming handhelds, NAS, desktops)
-- **Hobby Collection/** - Hobby and craft equipment (leathercraft, sewing, jewelry making, materials and tools)
-- **Sports Collection/** - Sports and outdoor recreation equipment (water sports, biking, camping, fitness)
+- **Personal/** - Personal collections and purchase history
+  - **Personal/Camera Collection/** - Photography equipment inventory (Nikon D800, film cameras, lenses, M42 vintage glass)
+  - **Personal/Device Lab/** - Computing devices for hacking/tinkering (tablets, phones, gaming handhelds, NAS, desktops)
+  - **Personal/Hobby Collection/** - Hobby and craft equipment (leathercraft, sewing, jewelry making, materials and tools)
+  - **Personal/Sports Collection/** - Sports and outdoor recreation equipment (water sports, biking, camping, fitness)
+  - **Personal/.invoices/** - Purchase invoices from Amazon and AliExpress (2017-2026)
 - **projects/** - Active project documentation and build logs
   - `fpga-cpu-design/` - Custom CPU in SystemVerilog
   - `attiny2313-clock/` - ATtiny LED clock
@@ -116,26 +118,24 @@ Follow `.claude/protocols/CAMERA_COLLECTION_PROTOCOL.md` when:
 - Tracking lens mount compatibility
 - Cross-referencing with purchase info in ShoppingOnline.md
 
-### Device Lab
+### Personal Collections
+Follow appropriate protocol when adding items to Personal/ folder collections:
+
+#### Device Lab
 Follow `.claude/protocols/DEVICE_LAB_PROTOCOL.md` when:
 - Adding computing devices (tablets, phones, gaming handhelds, NAS, desktops)
 - Documenting hackability (root, jailbreak, custom firmware options)
 - Tracking devices for tinkering and repurposing projects
 - Cross-referencing with home-automation and other projects
 
-Key focus areas:
-- Inventory with full specifications
-- Hackability status and options (CFW, root, homebrew)
-- Project ideas for repurposing devices
-
-### Hobby Collection
+#### Hobby Collection
 Follow `.claude/protocols/HOBBY_COLLECTION_PROTOCOL.md` when:
 - Adding hobby and craft equipment (leathercraft, sewing, jewelry making)
 - Documenting materials and supplies inventory
 - Tracking project ideas and inspiration
 - Cross-referencing with related creative projects
 
-### Sports Collection
+#### Sports Collection
 Follow `.claude/protocols/SPORTS_COLLECTION_PROTOCOL.md` when:
 - Adding sports and outdoor recreation equipment (water sports, biking, camping, fitness)
 - Documenting maintenance and service history
@@ -207,8 +207,9 @@ Follow `.claude/protocols/CLAUDE_MD_MAINTENANCE_PROTOCOL.md` to keep this file c
 Follow `.claude/protocols/TODO_MD_ARCHIVAL_PROTOCOL.md` to archive completed tasks from TODO.md.
 
 **Current status:**
-- CLAUDE.md: 328 lines (target <500, warning at 600)
-- TODO.md: Cleaned 2026-01-17 (18 pending tasks, 7 completed)
+- CLAUDE.md: 330 lines (target <500, warning at 600)
+- TODO.md: Cleaned 2026-01-17 (18 pending tasks, 8 completed)
+- Personal/: Contains collections and purchase history (separated from public reference material)
 - See `changes/` directory for archived work
 
 ### Directory Indexes for Performance & Token Usage
@@ -227,10 +228,10 @@ Each major directory has a focused README.md index following `.claude/protocols/
 - `Expansion Boards/README.md` - Shields/HATs/capes index (pin mappings, parent board cross-refs)
 - `Test Equipment/README.md` - Lab equipment index (oscilloscopes, meters, supplies)
 - `Vintage Computers/README.md` - Apple II/TI-99/4A systems and peripherals
-- `Camera Collection/README.md` - Photography equipment (bodies, lenses, mount compatibility)
-- `Device Lab/README.md` - Computing devices for hacking (tablets, phones, NAS, gaming)
-- `Hobby Collection/README.md` - Hobby and craft equipment (leathercraft, sewing, jewelry)
-- `Sports Collection/README.md` - Sports and outdoor recreation equipment
+- `Personal/Camera Collection/README.md` - Photography equipment (bodies, lenses, mount compatibility)
+- `Personal/Device Lab/README.md` - Computing devices for hacking (tablets, phones, NAS, gaming)
+- `Personal/Hobby Collection/README.md` - Hobby and craft equipment (leathercraft, sewing, jewelry)
+- `Personal/Sports Collection/README.md` - Sports and outdoor recreation equipment
 - `Notes/README.md` - Technical notes directory guide
 - `AnalogComputers/README.md` - Analog computing research collection overview
 
@@ -296,10 +297,12 @@ done
 - `Expansion Boards/readme.md` - Shields, HATs, capes index with compatibility info
 - `Test Equipment/readme.md` - Equipment index (oscilloscopes, DMMs, programmers, 3D printer)
 - `Vintage Computers/readme.md` - Apple IIc, Apple IIgs, TI-99/4A inventory
-- `Camera Collection/readme.md` - Cameras, lenses, and photography accessories
-- `Device Lab/readme.md` - Computing devices for hacking/tinkering
-- `Hobby Collection/readme.md` - Leathercraft, sewing, jewelry equipment and materials
-- `Sports Collection/readme.md` - Water sports, biking, camping, fitness equipment
+
+### Personal Equipment Collections
+- `Personal/Camera Collection/readme.md` - Cameras, lenses, and photography accessories
+- `Personal/Device Lab/readme.md` - Computing devices for hacking/tinkering
+- `Personal/Hobby Collection/readme.md` - Leathercraft, sewing, jewelry equipment and materials
+- `Personal/Sports Collection/readme.md` - Water sports, biking, camping, fitness equipment
 
 ### Projects
 - `projects/` - Active project directories with READMEs (see projects/project-ideas.md for complete list)
