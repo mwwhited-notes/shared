@@ -112,13 +112,25 @@ Key features:
 - Cross-reference verification between inventory and project files
 - Project idea generation based on equipment combinations
 
+### Books & Technical References
+Follow `.claude/protocols/BOOKS_PROTOCOL.md` when:
+- Maintaining technical book inventory
+- Adding new books to collection
+- Organizing technical references by topic
+
+### Changelog & Documentation
+Follow `.claude/protocols/CHANGELOG_PROTOCOL.md` when:
+- Documenting repository changes in `changes/` directory
+- Creating session/topic-based changelogs
+- Tracking file organization and change history
+
 ### Maintenance & Performance
 Follow `.claude/protocols/CLAUDE_MD_MAINTENANCE_PROTOCOL.md` to keep this file concise.
 Follow `.claude/protocols/TODO_MD_ARCHIVAL_PROTOCOL.md` to archive completed tasks from TODO.md.
 
 **Current status:**
-- CLAUDE.md: Root file (target <500 lines, warning at 600)
-- TODO.md: Root file with repository-wide tasks
+- CLAUDE.md: 219 lines (target <500, warning at 600)
+- TODO.md: Repository-wide tasks with Personal/ workflows removed
 - See `changes/` directory for archived work
 
 ### Directory Indexes for Performance & Token Usage
@@ -132,9 +144,10 @@ Each major directory has a focused README.md index following `.claude/protocols/
 
 **Index Organization:**
 - `projects/README.md` - Master index of 21+ projects (status, categories, cross-references)
-- `.claude/protocols/README.md` - Master index of documentation protocols (versions, purposes, decision tree)
+- `.claude/protocols/README.md` - Master index of 9 documentation protocols for root repository (versions, purposes, decision tree)
 - `Notes/README.md` - Technical notes directory guide
 - `AnalogComputers/README.md` - Analog computing research collection overview
+- See `PERSONAL-PROTOCOL.md` for requesting equipment inventory data from Personal repository
 
 **Key Principle:** When needing information about items in a collection, read the focused index first before drilling into individual item documentation.
 
@@ -191,6 +204,7 @@ done
 - `workshop-capabilities.md` - **Main workshop reference** with equipment summary, project ideas, troubleshooting guides
 - `projects/project-ideas.md` - Ongoing project backlog with cross-references to active projects
 - `links.md` - Curated reference links (AI/ML, dotnet, electronics, retro computing, vintage electronics)
+- `PERSONAL-PROTOCOL.md` - Workflow for requesting equipment, tools, books, and component data from Personal repository
 
 ### Projects
 - `projects/` - Active project directories with READMEs (see projects/project-ideas.md for complete list)
