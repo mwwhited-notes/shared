@@ -1,15 +1,38 @@
 # Missing Documentation & Broken References Report
 
-**Generated:** 2026-01-17
+**Generated:** 2026-01-17 (Updated after verification)
 **Reason:** Repository audit after removal of personal information and separation into Personal/ folder
+**Finding:** MAJOR DISCREPANCY - Files documented as moved don't actually exist
 
 ---
 
-## Critical Issues
+## CRITICAL DISCOVERY 🚨
 
-### 1. EMPTY PERSONAL/ FOLDER ⚠️ CRITICAL
+### 1. "MOVED" FILES DON'T EXIST ANYWHERE ⚠️ CRITICAL
 
-The `Personal/` folder exists but is **completely empty**.
+Files that were documented as successfully moved to Personal/ **do not exist in the repository**:
+
+1. `tools-and-components.md` - ❌ NOT FOUND
+2. `ShoppingOnline.md` - ❌ NOT FOUND
+3. `Restaurants.md` - ❌ NOT FOUND
+4. `books.md` - ❌ NOT FOUND
+
+**Verification:**
+```bash
+$ find /current -name "tools-and-components.md"  # Returns nothing
+$ find /current -name "ShoppingOnline.md"        # Returns nothing
+$ find /current -name "Restaurants.md"            # Returns nothing
+$ find /current -name "books.md"                  # Returns nothing
+```
+
+**Terminal Output vs Reality:**
+- Earlier terminal showed: "✓ tools-and-components.md removed from root"
+- Earlier showed files in Personal/ with sizes (49KB, 28KB, 835B)
+- **Actual state:** All files completely absent from repository
+
+### 2. EMPTY PERSONAL/ FOLDER ⚠️ CRITICAL
+
+The `Personal/` folder exists but is **completely empty** - no subdirectories, no files, no .claude/protocols/:
 
 **Current State:**
 ```
@@ -23,10 +46,57 @@ Personal/
 - Configuration files (CLAUDE.md, TODO.md, README.md)
 - 10 documentation protocols in `.claude/protocols/`
 - 2017-2020 Amazon invoices and 2022-2026 AliExpress archives
+- 4 moved files (tools-and-components.md, ShoppingOnline.md, Restaurants.md, books.md)
 
-**Status:** Either:
-1. Personal/ contents were deleted/removed during cleanup, OR
-2. Personal/ was moved to a separate repository location
+**Status:**
+1. Equipment collections were NEVER in this repository OR were deleted
+2. "Moved" files don't actually exist
+3. Personal/ is a placeholder with no content
+
+---
+
+## What Actually Exists in This Repository
+
+### Root Level Files ✓
+
+| File | Purpose | Status |
+|------|---------|--------|
+| CLAUDE.md | Project configuration | ✓ EXISTS |
+| TODO.md | Task tracking | ✓ EXISTS |
+| readme.md | Main entry point | ✓ EXISTS |
+| workshop-capabilities.md | Equipment reference | ✓ EXISTS |
+| links.md | Reference links | ✓ EXISTS |
+| network-diagram.md | Network topology | ✓ EXISTS |
+| missing-stuff.md | This report | ✓ EXISTS |
+| cross cloud reference.md | Cloud notes | ✓ EXISTS |
+
+### Root Level Directories ✓
+
+| Directory | Purpose | Status |
+|-----------|---------|--------|
+| projects/ | Active projects | ✓ EXISTS |
+| Notes/ | Technical notes | ✓ EXISTS |
+| AnalogComputers/ | Research collection | ✓ EXISTS |
+| diagrams-and-patterns/ | Architecture patterns | ✓ EXISTS |
+| Scripts/ | Utility scripts | ✓ EXISTS |
+| Files/ | Static files | ✓ EXISTS |
+| changes/ | Archived work | ✓ EXISTS |
+| designs/ | Design docs | ✓ EXISTS |
+| .claude/ | Protocols (9 files) | ✓ EXISTS |
+| Personal/ | Equipment collections | ✗ EMPTY |
+
+### Documentation vs Reality Mismatch
+
+**CLAUDE.md describes equipment collections that don't exist:**
+- Section 37-48 documents 8 collections in Personal/
+- All references are to directories that don't exist anywhere in the repository
+- 50+ lines of CLAUDE.md are dedicated to describing missing items
+
+**Missing Reference Files:**
+- `tools-and-components.md` - Referenced 3+ times, doesn't exist
+- `ShoppingOnline.md` - Referenced 1+ times, doesn't exist
+- `Restaurants.md` - Referenced 1+ times, doesn't exist
+- `books.md` - Referenced 1+ times, doesn't exist
 
 ---
 
@@ -203,14 +273,34 @@ All 10 collection/shopping protocols were moved to `Personal/.claude/protocols/`
 
 ---
 
-## Recommendations
+## THE CORE PROBLEM
+
+**CLAUDE.md contains ~60 lines describing a repository structure that doesn't exist.**
+
+The file extensively documents:
+- 8 equipment collections in Personal/
+- 4 purchase/inventory files (tools-and-components.md, ShoppingOnline.md, Restaurants.md, books.md)
+- 10 documentation protocols in Personal/.claude/protocols/
+- Cross-references to all of these missing items
+
+**None of these items actually exist in the repository.**
+
+This creates a situation where:
+1. New contributors read CLAUDE.md expecting to find these collections
+2. References in todo items and project ideas point to non-existent equipment
+3. Documentation is misleading about what this repository actually contains
+4. Links are broken because they reference equipment that doesn't exist
+
+---
+
+## Action Items to Fix CLAUDE.md
 
 ### IMMEDIATE (Critical - Must Fix)
 
 1. **Determine Personal/ Status**
-   - [ ] Was Personal/ contents intentionally deleted?
-   - [ ] Was Personal/ moved to separate repository?
-   - [ ] Should Personal/ references be removed from CLAUDE.md?
+   - Was Personal/ contents intentionally deleted?
+   - Was Personal/ moved to separate repository?
+   - Should Personal/ references be removed from CLAUDE.md?
    - **Action:** Either restore contents or update documentation
 
 2. **Update TODO.md Orphaned References**

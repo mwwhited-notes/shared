@@ -36,16 +36,6 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 
 ## Key Directories
 
-- **Personal/** - Personal equipment collections and purchase history (moved to standalone structure)
-  - **Personal/Programmable Devices/** - FPGA, CPLD, MCU, development boards
-  - **Personal/Expansion Boards/** - Arduino shields, Pi HATs, BeagleBone capes
-  - **Personal/Test Equipment/** - Lab equipment (oscilloscopes, DMMs, power supplies, programmers)
-  - **Personal/Vintage Computers/** - Apple IIc, IIgs, TI-99/4A with peripherals
-  - **Personal/Camera Collection/** - Photography equipment (cameras, lenses, M42 vintage glass)
-  - **Personal/Device Lab/** - Computing devices for hacking (tablets, phones, gaming, NAS)
-  - **Personal/Hobby Collection/** - Hobby and craft equipment (leathercraft, sewing, jewelry)
-  - **Personal/Sports Collection/** - Sports and outdoor recreation equipment
-  - **Personal/.invoices/** - Purchase invoices from Amazon and AliExpress (2017-2026)
 - **projects/** - Active project documentation and build logs
   - `fpga-cpu-design/` - Custom CPU in SystemVerilog
   - `attiny2313-clock/` - ATtiny LED clock
@@ -74,74 +64,6 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 ## Documentation Protocols
 
 All protocols are located in `.claude/protocols/`.
-
-### Programmable Devices
-Follow `.claude/protocols/PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md` when:
-- Adding new development boards or microcontrollers
-- Creating device README files with specifications
-- Downloading and verifying datasheets/schematics
-- Creating PlantUML block diagrams for device architecture
-
-Key requirements:
-- Each device gets its own directory with standardized README.md
-- Download PDFs locally (datasheets, schematics, pinouts)
-- Verify downloaded files are valid PDFs, not HTML error pages
-- Include pinout images and text-based pinout tables
-- Document both official tools and open-source alternatives (Arduino IDE, PlatformIO)
-
-### Expansion Boards
-Follow `.claude/protocols/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md` when:
-- Adding shields, HATs, capes, or other expansion modules
-- Documenting pin mappings and compatibility with parent boards
-- Cross-referencing with boards in `Programmable Devices/`
-
-### Test Equipment
-Follow `.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md` for lab equipment entries.
-
-### Vintage Computers
-Follow `.claude/protocols/VINTAGE_COMPUTERS_DOCUMENTATION_PROTOCOL.md` when:
-- Adding vintage computer systems or peripherals
-- Documenting accessories (Floppy Emu, RAM expansions, video adapters)
-- Cross-referencing with related FPGA soft cores or emulation projects
-
-### Online Shopping & Invoice Processing
-Invoice processing and purchase history tracking now happens in **Personal/** folder.
-
-See `Personal/CLAUDE.md` and `Personal/.claude/protocols/ONLINE_SHOPPING_PROTOCOL.md` when:
-- Processing purchases from online retailers
-- Documenting seller experiences and reliability
-- Tracking pricing, shipping quality, and purchase history
-- Adding items to Personal/.invoices/ archives
-
-### Camera Collection
-For camera collections documentation, see Personal folder:
-- Personal/Camera Collection/ - Photography equipment inventory
-- Personal/ShoppingOnline.md - Seller notes and purchase history
-- Personal/.invoices/ - Purchase invoices
-
-### Personal Collections
-Follow appropriate protocol when adding items to Personal/ folder collections:
-
-#### Device Lab
-Follow `.claude/protocols/DEVICE_LAB_PROTOCOL.md` when:
-- Adding computing devices (tablets, phones, gaming handhelds, NAS, desktops)
-- Documenting hackability (root, jailbreak, custom firmware options)
-- Tracking devices for tinkering and repurposing projects
-- Cross-referencing with home-automation and other projects
-
-#### Hobby Collection
-Follow `.claude/protocols/HOBBY_COLLECTION_PROTOCOL.md` when:
-- Adding hobby and craft equipment (leathercraft, sewing, jewelry making)
-- Documenting materials and supplies inventory
-- Tracking project ideas and inspiration
-- Cross-referencing with related creative projects
-
-#### Sports Collection
-Follow `.claude/protocols/SPORTS_COLLECTION_PROTOCOL.md` when:
-- Adding sports and outdoor recreation equipment (water sports, biking, camping, fitness)
-- Documenting maintenance and service history
-- Planning trips and adventures
-- Cross-referencing with outdoor projects
 
 ### Projects
 Follow `.claude/protocols/PROJECTS_PROTOCOL.md` when:
@@ -176,15 +98,6 @@ Follow this when creating comprehensive research/standards documentation:
 - 100+ implementation resources indexed
 - Quick-start guides for 4 common scenarios
 
-### Tools and Components (In Personal Folder)
-See `Personal/.claude/protocols/TOOLS_AND_COMPONENTS_PROTOCOL.md` when:
-- Adding components or tools from invoices
-- Processing Amazon/AliExpress orders for tools, wire, components
-- Organizing component stock in Personal collections
-- Cross-referencing with Personal equipment inventories
-
-**Note:** Tools and components processing is now part of Personal/ invoice workflow. See `Personal/CLAUDE.md` for details.
-
 ### Project Review
 Follow `.claude/protocols/PROJECT_REVIEW_PROTOCOL.md` when:
 - Reviewing repository inventory for consistency
@@ -206,12 +119,6 @@ Follow `.claude/protocols/TODO_MD_ARCHIVAL_PROTOCOL.md` to archive completed tas
 **Current status:**
 - CLAUDE.md: Root file (target <500 lines, warning at 600)
 - TODO.md: Root file with repository-wide tasks
-- Personal/: Standalone folder with all collections and protocols
-  - Personal/CLAUDE.md - Personal repository configuration
-  - Personal/TODO.md - Personal collection task tracking
-  - Personal/README.md - Personal collections main index
-  - Personal/.claude/protocols/ - 10 documentation protocols for collections
-- All equipment collections moved to Personal/ (ready for separate repository)
 - See `changes/` directory for archived work
 
 ### Directory Indexes for Performance & Token Usage
@@ -225,16 +132,7 @@ Each major directory has a focused README.md index following `.claude/protocols/
 
 **Index Organization:**
 - `projects/README.md` - Master index of 21+ projects (status, categories, cross-references)
-- `.claude/protocols/README.md` - Master index of 19 documentation protocols (versions, purposes, decision tree)
-- `Personal/README.md` - Main index for all personal equipment collections
-- `Personal/Programmable Devices/README.md` - Dev boards inventory
-- `Personal/Expansion Boards/README.md` - Shields, HATs, capes
-- `Personal/Test Equipment/README.md` - Lab equipment inventory
-- `Personal/Vintage Computers/README.md` - Vintage systems
-- `Personal/Camera Collection/README.md` - Photography equipment
-- `Personal/Device Lab/README.md` - Computing devices for hacking
-- `Personal/Hobby Collection/README.md` - Hobby and craft equipment
-- `Personal/Sports Collection/README.md` - Sports and recreation equipment
+- `.claude/protocols/README.md` - Master index of documentation protocols (versions, purposes, decision tree)
 - `Notes/README.md` - Technical notes directory guide
 - `AnalogComputers/README.md` - Analog computing research collection overview
 
@@ -293,29 +191,6 @@ done
 - `workshop-capabilities.md` - **Main workshop reference** with equipment summary, project ideas, troubleshooting guides
 - `projects/project-ideas.md` - Ongoing project backlog with cross-references to active projects
 - `links.md` - Curated reference links (AI/ML, dotnet, electronics, retro computing, vintage electronics)
-
-### Personal Equipment & Purchase Collections
-
-All personal equipment collections and purchase history have been moved to `Personal/` folder for standalone repository:
-
-**Personal Collections:**
-- `Personal/readme.md` - Main index for Personal collections
-- `Personal/CLAUDE.md` - Configuration for Personal repository
-- `Personal/TODO.md` - Task tracking for Personal collections
-- `Personal/Programmable Devices/readme.md` - Dev boards (FPGA, CPLD, MCU)
-- `Personal/Expansion Boards/readme.md` - Shields, HATs, capes
-- `Personal/Test Equipment/readme.md` - Lab equipment
-- `Personal/Vintage Computers/readme.md` - Vintage computer systems
-- `Personal/Camera Collection/readme.md` - Photography equipment
-- `Personal/Device Lab/readme.md` - Computing devices for hacking
-- `Personal/Hobby Collection/readme.md` - Hobby and craft equipment
-- `Personal/Sports Collection/readme.md` - Sports and recreation equipment
-
-**Personal Purchase & Inventory Records:**
-- `Personal/.invoices/` - Purchase history archives (Amazon, AliExpress)
-- `Personal/tools-and-components.md` - Hand tools, wire, consumables, component stock
-- `Personal/ShoppingOnline.md` - Seller notes and online shopping experience tracking
-- `Personal/Restaurants.md` - Personal restaurant and local dining recommendations
 
 ### Projects
 - `projects/` - Active project directories with READMEs (see projects/project-ideas.md for complete list)

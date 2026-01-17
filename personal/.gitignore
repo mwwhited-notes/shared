@@ -1,0 +1,4 @@
+# Ignore all files in incoming/ folder
+# This folder receives information returned from Personal repository
+# Content is temporary and specific to local workflow
+incoming/
