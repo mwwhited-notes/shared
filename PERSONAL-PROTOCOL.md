@@ -92,103 +92,91 @@ The `.personal/incoming/` folder is in `.gitignore` because:
 
 ---
 
-## Common Request Scenarios
+## Active Request Files
 
-### Request: Equipment Referenced in Projects
+The following 8 request files are maintained in `.personal/requests/` and ready to send to the Personal repository owner:
 
-**File:** `personal-request-equipment-by-project.md`
+### 1. Programmable Devices
+**File:** `.personal/requests/personal-request-programmable-devices.md`
 
-**Information Needed:**
-- Which equipment exists in Personal collections
-- Which projects reference which equipment
-- Cross-reference between Personal collections and root projects
+- **Data:** FPGA boards, microcontroller boards, Arduino variants, SoC boards, CPLD/GAL boards, retro boards
+- **Use Case:** Device inventory, project compatibility, toolchain documentation, programmer compatibility
 
-**Use Case:** Ensure project documentation accurately reflects available equipment
+### 2. Expansion Boards
+**File:** `.personal/requests/personal-request-expansion-boards.md`
 
----
+- **Data:** Arduino shields, Raspberry Pi HATs, BeagleBone capes, breakout boards
+- **Use Case:** Pin mapping, compatibility tracking, project requirements
 
-### Request: Component Inventory
+### 3. Test Equipment
+**File:** `.personal/requests/personal-request-test-equipment.md`
 
-**File:** `personal-request-components.md`
+- **Data:** Oscilloscopes, multimeters, LCR meters, logic analyzers, power supplies, thermal equipment, microscopes, signal generators, programmers
+- **Use Case:** Equipment summary for workshop-capabilities.md, project planning, troubleshooting guides
 
-**Information Needed:**
-- Passive components (resistors, capacitors, inductors)
-- Active components (ICs, transistors, diodes)
-- Stock levels and organization
-- Tools available
+### 4. Tools & Components
+**File:** `.personal/requests/personal-request-tools-and-components.md`
 
-**Use Case:** Project planning - verify what components are available before specifying parts
+- **Data:** Hand tools, soldering equipment, ESD safety, consumables, passive/active components, prototyping materials, wire/cable stock
+- **Use Case:** Component stock verification, project planning, workshop capabilities
 
----
+### 5. Books & Technical References
+**File:** `.personal/requests/personal-request-books.md`
 
-### Request: Test Equipment Specs
+- **Data:** Technical book collection organized by category (software, hardware, security, etc.)
+- **Use Case:** Cross-reference with design patterns, learning resources for projects
 
-**File:** `personal-request-test-equipment.md`
+### 6. Device Lab
+**File:** `.personal/requests/personal-request-device-lab.md`
 
-**Information Needed:**
-- Oscilloscope bandwidth and sample rate
-- Multimeter resolution and input impedance
-- Power supply voltage/current ratings
-- Signal generator frequency range
-- Programmers and supported targets
+- **Data:** Computing devices (workstations, servers, mobile, network storage), hackability status, project potential
+- **Use Case:** Device repurposing projects, home automation integration, cross-references with active projects
 
-**Use Case:** Document equipment capabilities for troubleshooting guides and workshop-capabilities.md
+### 7. Vintage Computers
+**File:** `.personal/requests/personal-request-vintage-computers.md`
 
----
+- **Data:** Vintage computer systems, peripherals, disk collections, display equipment, storage devices, emulation support tools
+- **Use Case:** Preservation planning, archival projects, emulation soft-cores, restoration projects
 
-### Request: Camera Collection
+### 8. Camera Collection
+**File:** `.personal/requests/personal-request-camera-collection.md`
 
-**File:** `personal-request-camera-equipment.md`
-
-**Information Needed:**
-- Camera bodies (model, sensor size, available features)
-- Lenses (focal length, mount type, aperture)
-- Accessories and adapters
-- Cross-reference to photography projects
-
-**Use Case:** Photo project planning and equipment documentation
-
----
-
-### Request: Device Lab Inventory
-
-**File:** `personal-request-device-lab.md`
-
-**Information Needed:**
-- Computing devices (tablets, phones, desktops, gaming devices)
-- Hackability status (root, jailbreak, CFW available)
-- Project ideas for each device
-- Cross-reference to home-automation or other projects
-
-**Use Case:** Device repurposing ideas and cross-referencing with root projects
+- **Data:** Camera bodies (digital/film), lenses by mount type, accessories, teleconverters, flashes, tripods, cases, filters
+- **Use Case:** Photography project planning, lens compatibility, vintage glass documentation
 
 ---
 
 ## File Naming Convention
 
-**Request files:** `personal-request-{topic}.md`
-- Examples:
+**Request files:** `personal-request-{topic}.md` in `.personal/requests/`
+- Current files:
+  - `personal-request-programmable-devices.md`
+  - `personal-request-expansion-boards.md`
   - `personal-request-test-equipment.md`
-  - `personal-request-components.md`
-  - `personal-request-camera-equipment.md`
+  - `personal-request-tools-and-components.md`
+  - `personal-request-books.md`
   - `personal-request-device-lab.md`
   - `personal-request-vintage-computers.md`
-  - `personal-request-tools-inventory.md`
+  - `personal-request-camera-collection.md`
 
 **Response files:** `.personal/incoming/{topic}.md`
-- Examples:
+- Expected responses:
+  - `.personal/incoming/programmable-devices.md`
+  - `.personal/incoming/expansion-boards.md`
   - `.personal/incoming/test-equipment.md`
-  - `.personal/incoming/components.md`
-  - `.personal/incoming/camera-equipment.md`
+  - `.personal/incoming/tools-and-components.md`
+  - `.personal/incoming/books.md`
   - `.personal/incoming/device-lab.md`
+  - `.personal/incoming/vintage-computers.md`
+  - `.personal/incoming/camera-collection.md`
 
 ---
 
 ## Implementation Notes
 
-1. **Request files stay in root** - They document what data is needed and why
-2. **Response files go to .personal/incoming/** - They're excluded from git but available locally
-3. **Link from documentation** - Root files reference `.personal/incoming/` files when displaying Personal data
+1. **Request files in `.personal/requests/`** - They document what data is needed and why, tracked in git for sending to Personal owner
+2. **Response files go to `.personal/incoming/`** - They're excluded from git but available locally for referencing
+3. **Link from documentation** - Root files (projects, workshop-capabilities.md, etc.) reference `.personal/incoming/` files when displaying Personal data
 4. **Update frequency** - Regenerate response files when Personal repository is updated
 5. **Minimal processing** - Responses should be direct exports from Personal with minimal transformation
 
