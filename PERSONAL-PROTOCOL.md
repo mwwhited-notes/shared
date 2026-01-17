@@ -21,13 +21,13 @@ When root repository documentation or projects need information from these Perso
 
 ### Step 1: Create a Personal Request File
 
-Create a new file named `personal-request-{topic}.md` in `personal/requests/` folder with:
+Create a new file named `personal-request-{topic}.md` in `.personal/requests/` folder with:
 
 1. **Clear description** of what information is needed
 2. **Specific prompt/protocol** for extracting that information from Personal
 3. **Use case** explaining why the root repository needs this data
 
-**Example filename:** `personal/requests/personal-request-test-equipment.md`
+**Example filename:** `.personal/requests/personal-request-test-equipment.md`
 
 **Example content:**
 ```markdown
@@ -40,7 +40,7 @@ A summary of test equipment available in Personal/Test Equipment collection.
 Projects in the root repository reference specific test equipment (oscilloscopes, multimeters, power supplies). We need a quick reference list to link projects to available equipment.
 
 ## To Send This Request
-File location: `personal/requests/personal-request-test-equipment.md`
+File location: `.personal/requests/personal-request-test-equipment.md`
 This file is tracked in git and can be sent to the Personal repository owner.
 
 ## Information to Extract From Personal/Test Equipment/
@@ -69,22 +69,22 @@ Markdown table with columns:
 
 When information is ready from Personal repository:
 
-1. **Place response file** in `./personal/incoming/{topic}.md`
+1. **Place response file** in `./.personal/incoming/{topic}.md`
 2. **Use the same filename structure** as the request for easy tracking
 
-**Example:** If request was `personal-request-test-equipment.md`, response goes to `personal/incoming/test-equipment.md`
+**Example:** If request was `personal-request-test-equipment.md`, response goes to `.personal/incoming/test-equipment.md`
 
 ### Step 3: Link Response Back
 
 In root repository documentation where the information is needed, reference the incoming file:
 
 ```markdown
-See [`personal/incoming/test-equipment.md`](personal/incoming/test-equipment.md) for current test equipment inventory from Personal repository.
+See [`.personal/incoming/test-equipment.md`](.personal/incoming/test-equipment.md) for current test equipment inventory from Personal repository.
 ```
 
 ### Step 4: .gitignore Handling
 
-The `personal/incoming/` folder is in `.gitignore` because:
+The `.personal/incoming/` folder is in `.gitignore` because:
 - Content is temporary and local to your workflow
 - Responses are specific to your working session
 - Files may be regenerated when Personal repository is updated
@@ -175,20 +175,20 @@ The `personal/incoming/` folder is in `.gitignore` because:
   - `personal-request-vintage-computers.md`
   - `personal-request-tools-inventory.md`
 
-**Response files:** `personal/incoming/{topic}.md`
+**Response files:** `.personal/incoming/{topic}.md`
 - Examples:
-  - `personal/incoming/test-equipment.md`
-  - `personal/incoming/components.md`
-  - `personal/incoming/camera-equipment.md`
-  - `personal/incoming/device-lab.md`
+  - `.personal/incoming/test-equipment.md`
+  - `.personal/incoming/components.md`
+  - `.personal/incoming/camera-equipment.md`
+  - `.personal/incoming/device-lab.md`
 
 ---
 
 ## Implementation Notes
 
 1. **Request files stay in root** - They document what data is needed and why
-2. **Response files go to personal/incoming/** - They're excluded from git but available locally
-3. **Link from documentation** - Root files reference `personal/incoming/` files when displaying Personal data
+2. **Response files go to .personal/incoming/** - They're excluded from git but available locally
+3. **Link from documentation** - Root files reference `.personal/incoming/` files when displaying Personal data
 4. **Update frequency** - Regenerate response files when Personal repository is updated
 5. **Minimal processing** - Responses should be direct exports from Personal with minimal transformation
 
@@ -201,9 +201,9 @@ The `personal/incoming/` folder is in `.gitignore` because:
    ↓
 2. Create personal-request-test-equipment.md with specific needs
    ↓
-3. You provide test-equipment.md in personal/incoming/
+3. You provide test-equipment.md in .personal/incoming/
    ↓
-4. Root project/doc references personal/incoming/test-equipment.md
+4. Root project/doc references .personal/incoming/test-equipment.md
    ↓
 5. Documentation stays current with Personal data
 ```

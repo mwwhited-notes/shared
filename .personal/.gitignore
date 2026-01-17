@@ -4,4 +4,4 @@
 incoming/
 
 # NOTE: requests/ folder is NOT ignored
-# Request files in personal/requests/ are tracked and can be sent to Personal repo owner
+# Request files in .personal/requests/ are tracked and can be sent to Personal repo owner

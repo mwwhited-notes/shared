@@ -147,7 +147,7 @@ Each major directory has a focused README.md index following `.claude/protocols/
 - `.claude/protocols/README.md` - Master index of 9 documentation protocols for root repository (versions, purposes, decision tree)
 - `Notes/README.md` - Technical notes directory guide
 - `AnalogComputers/README.md` - Analog computing research collection overview
-- See `PERSONAL-PROTOCOL.md` for requesting equipment inventory data from Personal repository
+- See `PERSONAL-PROTOCOL.md` for requesting equipment inventory data from Personal repository (see `.personal/requests/`)
 
 **Key Principle:** When needing information about items in a collection, read the focused index first before drilling into individual item documentation.
 
