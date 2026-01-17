@@ -98,6 +98,7 @@ Complete collection of FPGA, CPLD, MCU, and other programmable development board
 |-------|-----|-------|-----|-------|----------|-----------|
 | [STM32 BluePill](stm32-bluepill/) | STM32F103C8T6 | 64 KB | 20 KB | 72 MHz | xxxxxxx | `stm32-bluepill/` |
 | [Netduino Mini](netduino-mini/) | AT91SAM7X512 | 512 KB | 128 KB | 48 MHz | xxxxxxx | `netduino-mini/` |
+| [Raspberry Pi Pico W](raspberry-pi-pico-w/) | RP2040 | 2 MB | 264 KB | 133 MHz | 2025-12-14 | `raspberry-pi-pico-w/` |
 | [Device Solutions Tahoe II](devicesolutions-tahoe-ii/) | i.MXS (ARM920T) | 4 MB | 8 MB | 100 MHz | xxxxxxx | `devicesolutions-tahoe-ii/` |
 
 ### IoT / Wireless Boards

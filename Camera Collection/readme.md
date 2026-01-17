@@ -115,7 +115,8 @@ Complete photography equipment inventory including camera bodies, lenses, teleco
 | [Fotasy Canon FD to Nikon Z Adapter](Accessories/fotasy-fd-z-adapter/) | Mount Adapter | Working | $15.95 | xxxxxxx | `Accessories/fotasy-fd-z-adapter/` |
 | iShoot Tripod Ring (Sigma 135mm Art) | Lens Collar | Working | $49.99 | xxxxxxx | - |
 | Neewer L-Plate Bracket (D800) | Camera Grip | Working | $27.99 | xxxxxxx | - |
-| Olympus CSCH-123 Sports Holder | Camera Case | Working | $27.99 | xxxxxxx | - |
+| Olympus CSCH-123 Sports Holder | Camera Case | Working | $27.99 | 2017-08-09 | - | Case for TG-5 waterproof camera |
+| DSTE 2x Li-90B Battery + DC16 Travel Charger | Battery/Charger | Working | $11.49 | 2017-08-09 | - | Olympus TG-5 batteries (2x) + charger |
 | Breakthrough 77mm X1 Circular Polarizer | Filter | Working | $59.00 | xxxxxxx | - |
 | X-Rite i1 Display Pro + ColorChecker Passport | Color Calibration | Working | $347.98 | xxxxxxx | - |
 | AmScope CA-NIK-SLR Microscope Adapter | Adapter | Working | $89.75 | xxxxxxx | - |

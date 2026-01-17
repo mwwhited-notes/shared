@@ -100,6 +100,7 @@ Complete electronics lab equipment reference with specifications, programming to
 |-------|------|---------------|----------|-----------|
 | [DER EE DE-5000](deree-de5000/) | Handheld | 100 kHz | xxxxxxx | `deree-de5000/` |
 | [Holdpeak HP-4070L](holdpeak-hp4070l/) | Handheld | 100 Hz | xxxxxxx | `holdpeak-hp4070l/` |
+| Altnux LCR Meter | Handheld | 100 kHz | 2017-06-26 | - |
 
 ### Power Supplies
 
@@ -108,6 +109,20 @@ Complete electronics lab equipment reference with specifications, programming to
 | [Korad KA3005P](korad-ka3005p/) | 30V/5A | Yes (USB/RS-232) | xxxxxxx | `korad-ka3005p/` |
 | [Korad KA6003P](korad-ka6003p/) | 60V/3A | Yes (USB/RS-232) | xxxxxxx | `korad-ka6003p/` |
 | [QE-MS305D](qe-ms305d/) | 30V/5A | No | xxxxxxx | `qe-ms305d/` |
+| Antec HCP-1000 | 1000W | No | 2017-06-05 | - | 80Plus Platinum PSU |
+
+### Power Backup & UPS
+
+| Model | Type | Output | Runtime | Git Hash | Directory |
+|-------|------|--------|---------|----------|-----------|
+| APC Smart-UPS 1500VA | Battery Backup | 1500VA/900W | 20-30 min | 2017-07-04 | - | Pure sine wave, LCD display |
+
+### Cooling Systems
+
+| Model | Type | Size | Controller | Git Hash | Directory |
+|-------|------|------|------------|----------|-----------|
+| AC Infinity AIRPLATE T9 | Thermostat Fan | 18" | Thermostat | 2017-06-26 | - | Temperature-controlled cooling |
+| AC Infinity AIRPLATE S9 | Speed Control Fan | 18" | Speed Controller | 2017-06-26 | - | Variable speed cooling |
 
 ### Logic Analyzers
 
@@ -161,6 +176,7 @@ Complete electronics lab equipment reference with specifications, programming to
 | [KSGER T12](ksger-t12/) | Soldering Station | 75W | xxxxxxx | `ksger-t12/` |
 | [YaeCCC 858D](yaeccc-858d/) | Hot Air Rework | 700W | xxxxxxx | `yaeccc-858d/` |
 | [Hakko FR-301](hakko-fr301/) | Desoldering Gun | 140W | xxxxxxx | `hakko-fr301/` |
+| ColdHeat Cordless Soldering Pen | Pen Soldering | Battery | 2017-03-28 | - | ~~Portable cordless iron~~ **Non-functional - discarded** |
 
 ### Thermal Imaging
 

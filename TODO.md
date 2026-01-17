@@ -5,7 +5,23 @@
 ## Active Tasks
 
 ### Order Processing
-- [ ] Review amazon orders from 2020 and before
+- [x] Review amazon orders from 2020 and before (2018-2020 processed)
+- [x] Process Amazon invoices 2017 - extract items to collections
+- [x] Process AliExpress invoices 2022-2026 (all years archived 2026-01-17)
+- [ ] Extract AliExpress items to relevant collections (components, tools, equipment)
+- [ ] Process Amazon invoices 2016 - extract items to collections
+- [ ] Process Amazon invoices 2015 - extract items to collections
+- [ ] Process Amazon invoices 2014 - extract items to collections
+- [ ] Process Amazon invoices 2013 - extract items to collections
+- [ ] Process Amazon invoices 2012 - extract items to collections
+- [ ] Process Amazon invoices 2011 - extract items to collections
+- [ ] Process Amazon invoices 2010 - extract items to collections
+- [ ] Process Amazon invoices 2009 - extract items to collections
+- [ ] Process Amazon invoices 2008 - extract items to collections
+- [ ] Process Amazon invoices 2007 - extract items to collections
+- [ ] Process Amazon invoices 2006 - extract items to collections
+- [ ] Process Amazon invoices 2005 - extract items to collections
+- [ ] Process Amazon invoices 2004 - extract items to collections
 - [ ] Review aliexpress orders
 - [ ] Review mouser orders
 

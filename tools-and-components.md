@@ -594,6 +594,105 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 
 ---
 
+## Components & Assembly Kits (2017-2026)
+
+### Breadboards & Prototyping (from invoices 2017-2025)
+
+| Item | Description | Qty | Purchased | Price |
+|------|-------------|-----|-----------|-------|
+| 3220-Hole Breadboard | Solderless circuit test board ZY-208/MB-102 (Mega) | 1 | AliExpress 2025-04-09 | $16.70 |
+| Mini Breadboards SYB-170 | 170 holes, 35x47mm solderless prototype | 10 | AliExpress 2025-04-07 | $3.70 |
+| Stripboard Veroboard | 6.5x14.5cm uncut PCB platine (5pcs) | 5 | AliExpress 2024-03-10 | $10.67 |
+| DIY Prototype PCB | 5x7 cm paper PCB boards (Gikfun, 10pcs) | 10 | Amazon 2017-05-12 | $7.68 |
+| Breadboard Jumper Wires | M/M 65pcs + F/F + M/F kit (Kalevel) | 1 set | Amazon 2017-12-01 | $7.99 |
+
+### Connectors & Cable Management (from invoices)
+
+| Item | Description | Qty | Purchased | Price |
+|------|-------------|-----|-----------|-------|
+| BNC Connectors 90-Degree | 10-pack right-angle adapters | 10 | Amazon 2017-06-26 | $16.47 |
+| BNC Crimp-On Connectors | RG59/62 (Conwork, 20-pack) | 20 | Amazon 2017-06-26 | $10.99 |
+| RG58 BNC Cable | 100ft coaxial cable, 50-Ohm | 100 ft | Amazon 2017-06-26 | $16.37 |
+| Keystone Inserts Assortment | BNC (5-pack) + RCA (5-pack) + 3.5mm TRS (5-pack) | 15 | Amazon 2017-06-26 | $38.97 |
+| HDMI Keystone 4K Female | 5-pack white couplers (VICTEK) | 5 | Amazon 2017-06-26 | $10.99 |
+| Blank Keystone Jack Inserts | 20-pack | 20 | Amazon 2017-07-01 | $6.99 |
+| Keystone Panel 24-Port | Monoprice gold-plated | 1 | Amazon 2017-06-26 | $16.70 |
+| Banana Connectors & Adapters | 100pcs binding posts + cables + dual adapters | 1 set | Amazon 2017-03-28 | $37.78 |
+| Spiral Cable Wrap | 68ft 1/4 inch black | 1 | Amazon 2017-06-26 | $8.14 |
+
+### Relays & Control Modules (from invoices)
+
+| Item | Description | Qty | Purchased | Price |
+|------|-------------|-----|-----------|-------|
+| SainSmart 4-Channel Relay Module | Arduino/MCU compatible | 1 | Amazon 2017-12-01 | $8.99 |
+| SainSmart 8-Channel Relay Module | Arduino/MCU compatible | 1 | Amazon 2017-12-01 | $11.53 |
+| SainSmart 16-Channel Relay Ethernet Controller | Network controlled relay module | 1 | Amazon 2017-11-17 | $30.99 |
+| Max485 RS-485 Modules | 5pcs/pack, transceiver TXRX | 5 | Amazon 2017-04-11 | $6.99 |
+| USB to RS-485 Converter | ch340T adapter (JBtek) | 1 | Amazon 2017-04-11 | $6.99 |
+| USB to RS-485 Serial Converter | 1.5m UT-890A (Logisaf) | 1 | Amazon 2017-10-25 | $14.99 |
+
+### LED & Optical Components (from invoices)
+
+| Item | Description | Qty | Purchased | Price |
+|------|-------------|-----|-----------|-------|
+| WS2811 RGB LED Strip | 16.4ft 30LEDs/m (Mokungit) | 2 | Amazon 2017-05-15, 2017-04-11 | $31.76 |
+| RGB LED Flood Lights IP66 | 10W waterproof outdoor | 1 | Amazon 2017-05-15 | $14.99 |
+| RGB LED Flood Lights Dimmable | 50W | 1 | Amazon 2017-03-28 | $39.99 |
+| LED Driver 12V 10A | AC 100-240V to DC 12V (FAVOLCANO) | 1 | Amazon 2017-05-08 | $17.89 |
+| JST SM Connectors | 50 pairs 3-pin for WS2812B LED (HKBAYI) | 50 | Amazon 2017-05-08 | $11.99 |
+| 7-Segment LED Displays | TOOGOO 5 pcs 0.36" red (Clever Edgar) | 5 | Amazon 2017-04-19 | $2.78 |
+
+### Component Assortments (from invoices)
+
+| Item | Description | Qty | Purchased | Price |
+|------|-------------|-----|-----------|-------|
+| Resistor Kit 750pcs | 30 values 1/4W metal film (CuteQueen) | 1 | Amazon 2017-12-01 | $6.99 |
+| Variable Capacitor Kit | 100pcs 10 values 6mm 5-120pF (AliExpress) | 100 | AliExpress 2023-09-12 | $13.15 |
+| PPTC Resettable Fuse Kit | 660pcs 10 values assortment (AliExpress) | 660 | AliExpress 2024-12-14 | $23.62 |
+| Network Resistor Arrays | 5PIN 9PIN 100-100K ohm DIP (IBUW) | 20 | AliExpress 2025-01-27 | $5.17 |
+| 3296 Potentiometer Kit | High precision variable resistor 100R-1M (SZHJW) | 50 | AliExpress 2025-04-01 | $10.78 |
+| Digital Potentiometer TPL0501 | 100K adjustable SPI modules (multiple) | 13 | AliExpress 2025-12-14 | $24.18 |
+
+### Switches & Control (from invoices)
+
+| Item | Description | Qty | Purchased | Price |
+|------|-------------|-----|-----------|-------|
+| Toggle Switches 3PDT | AC 250V/2A 9-pin ON-ON (uxcell, 8pcs) | 8 | Amazon 2017-05-12 | $11.34 |
+| Mini Toggle Switches | SPDT 3-pin 2-position 6A 125V (AOKIN, 10pcs) | 10 | AliExpress 2025-12-14 | $4.02 |
+| DIP Switches | 20-position assortment (various)  | 50+ | Multiple 2020-2023 | $30+ |
+
+### Serial & Communication (from invoices)
+
+| Item | Description | Qty | Purchased | Price |
+|------|-------------|-----|-----------|-------|
+| Serial Connectors 5PIN DIN | MIDI plugs (CESS, 10-pack) | 10 | Amazon 2017-05-30 | $7.33 |
+| DB9 Connectors 20-pack | Male/female solder type (Connectors Pro) | 20 | Amazon 2017-05-30 | $9.55 |
+| DB9 Hoods Back Shells | Gray plastic (uxcell, 5pcs) | 5 | Amazon 2017-05-30 | $5.99 |
+| DB9 Adapter Terminal Board | Sysly breakout connector | 1 | Amazon 2017-10-30 | $8.29 |
+| 4-Pin JST SM Connectors | LED strip connectors (Mokungit, 20-pairs) | 20 | Amazon 2017-05-30 | $10.88 |
+
+### Soldering & Rework Tips (from invoices)
+
+| Item | Description | Qty | Purchased | Price |
+|------|-------------|-----|-----------|-------|
+| KSGER T12 Soldering Station | STM32 V3.1S OLED DIY (sets 11) | 1 | AliExpress 2022-12-27 | $79.04 |
+| T12 Soldering Iron Stand | Anti-static zinc alloy with insulation | 1 | AliExpress 2022-12-27 | $11.59 |
+| T12 Soldering Nozzles | T12-KF White Cabbage (Fancys) + T12-D52 + various | 5 | AliExpress 2023-2025 | $7.79 |
+| ~~ColdHeat Cordless Soldering Pen~~ | ~~Battery-powered portable iron~~ **Discarded - non-functional** | 1 | Amazon 2017-03-28 | $18.44 |
+
+### DIY Educational Kits (from invoices 2025)
+
+| Item | Description | Qty | Purchased | Price |
+|------|-------------|-----|-----------|-------|
+| SMD Soldering Practice Kit | 15-way lantern controller (IC module) | 1 | AliExpress 2025-05-14 | $2.98 |
+| SMD Component Soldering Kit | 300pcs high-strength practice board (HuiShengDongye) | 1 | AliExpress 2025-05-14 | $7.45 |
+| NE555 CD4017 LED Board | Rotating flashing SMT practice (Sincere Co) | 1 | AliExpress 2025-05-14 | $2.14 |
+| XR2206 Function Generator DIY Kit | 1Hz-1MHz sine/triangle/square (HuiShengDongye) | 1 | AliExpress 2025-11-07 | $4.05 |
+| Digital Tube Display Calculator | Soldering practice kit with case | 1 | AliExpress 2025-11-07 | $7.81 |
+| Line Follower Smart Car Kit | D2-1 DIY intelligent tracking car (AGUHAJSU) | 1 | AliExpress 2025-11-07 | $4.06 |
+
+---
+
 ## Do Not Buy Again
 
 | Item | Seller | Reason | Date |

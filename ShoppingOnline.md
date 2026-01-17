@@ -512,12 +512,29 @@ See `.claude/protocols/ONLINE_SHOPPING_PROTOCOL.md` for documentation standards.
 
 Amazon order invoices are archived by year in the `.invoices/` directory:
 
+- [**amazon-2017.md**](.invoices/amazon-2017.md) - 2017 Amazon orders (40 orders, ~$4,600+ total)
 - [**amazon-2018.md**](.invoices/amazon-2018.md) - 2018 Amazon orders (23 orders, $1,244.15 total)
 - [**amazon-2019.md**](.invoices/amazon-2019.md) - 2019 Amazon orders (17 orders, $1,074.48 total)
 - [**amazon-2020.md**](.invoices/amazon-2020.md) - 2020 Amazon orders (40 orders, $1,789.47 total)
 
 ---
 
+### AliExpress
+
+AliExpress order invoices are archived by year in the `.invoices/` directory:
+
+- [**aliexpress-2022.md**](.invoices/aliexpress-2022.md) - 2022 AliExpress orders (3 orders, ~$93.48 total)
+- [**aliexpress-2023.md**](.invoices/aliexpress-2023.md) - 2023 AliExpress orders (7 orders, ~$97.37 total)
+- [**aliexpress-2024.md**](.invoices/aliexpress-2024.md) - 2024 AliExpress orders (7 orders, ~$78.06 total)
+- [**aliexpress-2025.md**](.invoices/aliexpress-2025.md) - 2025 AliExpress orders (39 orders, ~$456.15 total)
+- [**aliexpress-2026.md**](.invoices/aliexpress-2026.md) - 2026 AliExpress orders (5 orders, ~$96.16 total, awaiting delivery)
+
+**Quality Notes:**
+- **2023 Alert:** Order from Shop2982020 Store (Jan 17) was confirmed in ShoppingOnline.md blacklist as selling counterfeit AD633 analog multiplier chips
+- **2026 Alert:** 3 duplicate orders of HDMI KVM Extenders placed on same date; all currently awaiting delivery
+- **Data Issues:** Several orders lack itemized product descriptions; totals provided where available
+
+---
 
 ### Mouser Electronics
 

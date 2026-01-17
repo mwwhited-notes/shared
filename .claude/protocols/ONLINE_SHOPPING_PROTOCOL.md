@@ -107,6 +107,7 @@ Detailed order invoices are organized in `.invoices/` directory by retailer and 
 **Examples:**
 - `.invoices/amazon-2019.md` - All Amazon orders from 2019
 - `.invoices/amazon-2020.md` - All Amazon orders from 2020
+- `.invoices/aliexpress-2022.md` - All AliExpress orders from 2022 through 2026
 - `.invoices/mouser-2021.md` - All Mouser orders from 2021
 
 **Each invoice file contains:**
@@ -206,6 +207,48 @@ Create a new invoice archive file (`.invoices/{retailer}-{year}.md`) when:
 - **Notes:** [any relevant details]
 ```
 
+### AliExpress Invoice Archive Format
+
+AliExpress invoices are archived with the following specific format:
+
+**File naming:** `.invoices/aliexpress-{YYYY}.md` (combined multi-year archives are acceptable if period is large)
+
+**Archive structure:**
+```markdown
+# AliExpress Orders - [Year Range]
+
+**Summary:**
+- Orders: [#] total across years
+- Date Range: YYYY-MM-DD to YYYY-MM-DD
+- Total Spent: $[amount]
+- Quality Alerts: [List any known issues - counterfeits, defects, etc.]
+
+---
+
+## Orders by Year
+
+### [Year]
+
+| Order ID | Date | Store | Item(s) | Qty | Price | Status | Notes |
+|----------|------|-------|---------|-----|-------|--------|-------|
+| [...] | YYYY-MM-DD | [Store Name] | [Description] | [#] | $[amount] | [Shipped/Delivered/Awaiting] | [Any notes] |
+```
+
+**Special handling for AliExpress:**
+1. **Quality alerts** - Document suspected counterfeits or quality issues upfront
+2. **Incomplete descriptions** - Note items lacking itemized details; use order IDs for reference
+3. **Shipping delays** - Track expected vs. actual delivery status
+4. **Store/seller tracking** - Include store names for future reference on repeat orders
+5. **Duplicate orders** - Note if same item was ordered multiple times on same date
+6. **Multi-package orders** - Track orders split across multiple shipments
+
+**Example quality alert:**
+```markdown
+**Quality Alerts:**
+- 2023-01-17 (Shop2982020 Store): AD633 chips - confirmed counterfeit (documented in ShoppingOnline.md blacklist)
+- 2026-01-14: 3 HDMI KVM Extenders ordered same day - verify if intentional
+```
+
 ---
 
 ## Blacklist Criteria
@@ -220,6 +263,19 @@ Move seller to Blacklist section if:
 
 ---
 
-*Protocol version: 1.1*
-*Last updated: January 2026*
-*Changes: Added invoice archiving documentation with pattern `.invoices/{retailer}-{year}.md`*
+## Version History
+
+*Protocol Version: 1.1*
+*Last Updated: 2026-01-17*
+
+### v1.1 (2026-01-17) - AliExpress Invoice Archive Standards
+- Added specific format documentation for AliExpress invoice archives
+- Documented special handling for AliExpress orders (quality alerts, duplicate tracking, shipping delays)
+- Added example quality alert format for counterfeited components
+- Expanded invoice archiving section with AliExpress-specific considerations
+- Updated examples to include AliExpress archive files
+
+### v1.0 (2026-01-XX)
+- Initial protocol documentation
+- Added invoice archiving documentation with pattern `.invoices/{retailer}-{year}.md`
+- Defined seller evaluation criteria and blacklist standards
