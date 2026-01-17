@@ -148,8 +148,8 @@ Utility scripts for various platforms and tools.
 
 | Resource | Location | Description |
 |----------|----------|-------------|
-| Hamming Distances | [HammingDistances/](HammingDistances/) | Precomputed lookup tables (CSV) |
-| Semantic Search | [Semantic Search/](Semantic%20Search/) | Search experiments |
+| Hamming Distances | [HammingDistances/](projects/vector-search-sqlserver/HammingDistances/) | Precomputed lookup tables (CSV) |
+| Semantic Search | [Semantic Search/](projects/vector-search-sqlserver/Semantic%20Search/) | Search experiments |
 | Files | [Files/](Files/) | Miscellaneous files |
 
 ---

@@ -52,30 +52,14 @@
       "WebFetch(domain:www.adafruit.com)",
       "WebFetch(domain:learn.adafruit.com)",
       "Bash(awk:*)",
-      "Bash(__NEW_LINE_72616478b8e1b038__ echo '=== Project Structure ===' tree /current/src/projects/synchronized-telemetry-streaming-research/ -L 2)",
-      "Bash(__NEW_LINE_5eba241ab22e8e0f__ find /current/src/projects/synchronized-telemetry-streaming-research/ -type f)",
-      "Bash(__NEW_LINE_3c6bdf6c7eca8f0a__ find /current/src/projects/synchronized-telemetry-streaming-research/ -type f)",
-      "Bash(__NEW_LINE_0a128d2d18bbeeb9__ du -sh /current/src/projects/synchronized-telemetry-streaming-research/ echo \"\" ls -lh /current/src/projects/synchronized-telemetry-streaming-research/documents/)",
-      "Bash(__NEW_LINE_c8a5c57c2d0be8a9__ echo \"FINAL FILE VERIFICATION\")",
       "Bash(if [ -f \"/current/src/$dir/README.md\" ])",
       "Bash(else)",
       "Bash(pdftotext:*)",
       "Bash([ ! -f tools-and-components.md ])",
       "Bash([ ! -f ShoppingOnline.md ])",
       "Bash([ ! -f Restaurants.md ])",
-      "Bash(__NEW_LINE_a35dae354c5166cb__ echo '=== Searching for .invoices directory ===')",
-      "Bash(__NEW_LINE_e112bd75df5cf0e5__ echo '=== Checking git status for Personal/ ===')",
-      "Bash(__NEW_LINE_67a81a64d0e99ae6__ echo \"=== Checking parent directories ===\")",
-      "Bash(__NEW_LINE_2c91d001f5d1e79b__ echo \"=== Full recursive listing of Personal/ with hidden files ===\")",
       "Bash([ -d \"/current/src/Personal/.claude\" ])",
-      "Bash(__NEW_LINE_af10380d26ef9692__ echo '=== FILES moved to Personal \\(that should exist\\) ===')",
-      "Bash(__NEW_LINE_714f681e14c7e5ee__ echo \"=== Searching for files that should have been moved ===\")",
-      "Bash(__NEW_LINE_c9fef6937b08ee32__ echo \"=== Actual current state of repository ===\")",
-      "Bash(__NEW_LINE_5599069fcb65d115__ echo \"=== REPORT SUMMARY ===\")",
-      "Bash([ ! -d Personal/ ])",
-      "Bash(__NEW_LINE_14dbe7dcbe34a17d__ echo \"=== CLAUDE.md cleanup complete ===\")",
-      "Bash(__NEW_LINE_1d08b3ae0484e461__ echo \"=== CLAUDE.md after cleanup ===\")",
-      "Bash(__NEW_LINE_0c39c5620564e188__ mkdir -p personal/incoming)"
+      "Bash([ ! -d Personal/ ])"
     ]
   }
 }

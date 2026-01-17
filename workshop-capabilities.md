@@ -70,7 +70,7 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 ### Device Lab (Modern Computing)
 
-*See [Device Lab/](Device%20Lab/) for full inventory.*
+Device inventory is maintained in Personal repository. See [`PERSONAL-PROTOCOL.md`](PERSONAL-PROTOCOL.md) for requesting current inventory data.
 
 #### Workstations & Servers
 
@@ -188,11 +188,11 @@ Two-node home lab for container orchestration and DevOps learning:
 | Arduino Shields | 12 | Motor/Servo, LCD Keypad, XBee, RS232/RS485, ISP, Sensor |
 | Raspberry Pi HATs | 2 | PoE HAT, ARPI600 |
 
-*See `Expansion Boards/` for full inventory.*
+Expansion board inventory is maintained in Personal repository. See [`PERSONAL-PROTOCOL.md`](PERSONAL-PROTOCOL.md) for requesting current inventory data.
 
 ### Components & Consumables Stock
 
-*See [Personal/tools-and-components.md](Personal/tools-and-components.md) for complete inventory.*
+Component and consumables inventory is maintained in Personal repository. See [`PERSONAL-PROTOCOL.md`](PERSONAL-PROTOCOL.md) for requesting current inventory data.
 
 | Category | Stock Summary |
 |----------|---------------|
