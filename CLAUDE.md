@@ -130,7 +130,11 @@ Follow `.claude/protocols/TODO_MD_ARCHIVAL_PROTOCOL.md` to archive completed tas
 
 **Current status:**
 - CLAUDE.md: 219 lines (target <500, warning at 600)
-- TODO.md: Repository-wide tasks with Personal/ workflows removed
+- TODO.md: Repository-wide tasks tracking integration of personal data
+- Personal data responses: 8 files in `.personal/incoming/` (2026-01-17)
+  - programmable-devices.md (37 boards), test-equipment.md (41 units), tools-and-components.md (100+ items)
+  - device-lab.md (40+ devices), vintage-computers.md (4 systems), books.md (50+ titles)
+  - expansion-boards.md (30+ boards), camera-collection.md (100+ items)
 - See `changes/` directory for archived work
 
 ### Directory Indexes for Performance & Token Usage

@@ -27,7 +27,7 @@ The system uses two or more SDR receivers: one pointed at the illuminator (refer
 **Next Steps:**
 
 1. **Hardware Selection**
-   - Evaluate SDR options: KrakenSDR vs. synchronized RTL-SDR vs. HackRF
+   - Evaluate SDR options: **[KrakenSDR](../../.personal/incoming/programmable-devices.md)** vs. synchronized **[RTL-SDR](../../.personal/incoming/programmable-devices.md)** vs. HackRF
    - Source clock synchronization hardware (GPS DO, external oscillator)
    - Select antenna configuration for reference and surveillance channels
 

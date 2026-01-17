@@ -58,6 +58,8 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 ### Vintage Computers
 
+For complete vintage computer inventory with specifications and restoration status, see [`.personal/incoming/vintage-computers.md`](.personal/incoming/vintage-computers.md) (4 systems with peripherals).
+
 | System     | Projects                           |
 |------------|------------------------------------|
 | Apple IIc  | Software, peripherals, restoration |
@@ -70,7 +72,7 @@ Quick reference for what this workshop can do and project suggestions when you n
 
 ### Device Lab (Modern Computing)
 
-Device inventory is maintained in Personal repository. See [`PERSONAL-PROTOCOL.md`](PERSONAL-PROTOCOL.md) for requesting current inventory data.
+For complete device lab inventory, see [`.personal/incoming/device-lab.md`](.personal/incoming/device-lab.md).
 
 #### Workstations & Servers
 
@@ -107,17 +109,21 @@ Two-node home lab for container orchestration and DevOps learning:
 
 ### Test & Measurement
 
+For complete test equipment inventory with detailed specifications, see [`.personal/incoming/test-equipment.md`](.personal/incoming/test-equipment.md) (41 units).
+
+Quick Reference:
+
 | Category            | Equipment                                        | Capability                    |
 |---------------------|--------------------------------------------------|-------------------------------|
-| **Oscilloscope**    | 200 MHz DSO, 150 MHz analog                      | Debug signals to ~50 MHz      |
-| **Multimeter**      | 6½ digit HP 34401A                               | Precision measurements        |
-| **LCR Meter**       | 100 kHz DE-5000                                  | Component characterization    |
-| **Logic Analyzer**  | 16 ch @ 100 MSa/s                                | Digital protocol debug        |
-| **Power Supply**    | 30V/5A, 60V/3A                                   | Most bench projects           |
+| **Oscilloscope**    | Rigol DS1102E (100MHz), Tektronix TDS2024 (200MHz), Hitachi V-1150 (150MHz analog) | Debug signals to ~50 MHz      |
+| **Multimeter**      | HP 34401A (6½ digit), Rigol DM3058E (5½ digit)   | Precision measurements        |
+| **LCR Meter**       | DER EE DE-5000 (100kHz)                          | Component characterization    |
+| **Logic Analyzer**  | Digilent Analog Discovery 2 (16 digital channels @ 100 MSa/s) | Digital protocol debug        |
+| **Power Supply**    | Korad KA3005P (30V/5A), Korad KA6003P (60V/3A)   | Most bench projects           |
 | **Thermal**         | FLIR TG130 (80x60)                               | Hot spot detection            |
 | **Microscope**      | 3.5X-90X stereo + 5MP camera, 40X-2000X compound | SMD work, inspection, imaging |
 | **Document Camera** | Kitchbar KB-700 (8MP)                            | PCB photos, documentation     |
-| **Webcam**          | Lenovo 510 FHD (1080p, 95° wide)                 | Video tutorials, streaming    |
+| **Signal Generator**| Rigol DG1022 (2ch, 20MHz)                        | Function generation, testing  |
 
 ### Assembly & Rework
 
@@ -165,6 +171,8 @@ Two-node home lab for container orchestration and DevOps learning:
 
 ### Programmers
 
+Device programmers for all supported platforms (see [`.personal/incoming/programmable-devices.md`](.personal/incoming/programmable-devices.md) for complete device/programmer matrix):
+
 | Programmer         | Targets                       |
 |--------------------|-------------------------------|
 | TL866II Plus       | EEPROM, Flash, AVR, PIC, GAL  |
@@ -183,16 +191,18 @@ Two-node home lab for container orchestration and DevOps learning:
 
 ### Expansion Boards
 
+For complete expansion board inventory with pin mappings and compatibility information, see [`.personal/incoming/expansion-boards.md`](.personal/incoming/expansion-boards.md) (30+ boards).
+
 | Type | Count | Examples |
 |------|-------|----------|
-| Arduino Shields | 12 | Motor/Servo, LCD Keypad, XBee, RS232/RS485, ISP, Sensor |
-| Raspberry Pi HATs | 2 | PoE HAT, ARPI600 |
-
-Expansion board inventory is maintained in Personal repository. See [`PERSONAL-PROTOCOL.md`](PERSONAL-PROTOCOL.md) for requesting current inventory data.
+| Arduino Shields | 12+ | Motor/Servo, LCD Keypad, XBee, RS232/RS485, ISP, Sensor |
+| Raspberry Pi HATs | 2+ | PoE HAT, ARPI600 |
+| BeagleBone Capes | Several | EEPROM, GPIO expanders |
+| Digilent Pmods | Various | Digital I/O, analog, protocols |
 
 ### Components & Consumables Stock
 
-Component and consumables inventory is maintained in Personal repository. See [`PERSONAL-PROTOCOL.md`](PERSONAL-PROTOCOL.md) for requesting current inventory data.
+For complete inventory of tools, consumables, and component stock with quantities, see [`.personal/incoming/tools-and-components.md`](.personal/incoming/tools-and-components.md) (100+ items).
 
 | Category | Stock Summary |
 |----------|---------------|
@@ -212,6 +222,22 @@ Component and consumables inventory is maintained in Personal repository. See [`
 | **Battery Holders** | AA (10), CR123 (10), CR2032 (30) |
 | **Fasteners** | M2 screws/nuts, M4 threaded rods, reusable cable ties |
 | **Hand Tools** | Precision crimper, chip lifter, wire stripper, ESD wrist straps |
+
+---
+
+## Reference Collections
+
+### Books & Technical References
+
+For technical book collection by topic (software design, hardware, security, etc.), see [`.personal/incoming/books.md`](.personal/incoming/books.md) (50+ titles).
+
+### Camera Equipment & Lenses
+
+For complete camera collection including bodies, lenses, adapters, and accessories, see [`.personal/incoming/camera-collection.md`](.personal/incoming/camera-collection.md) (100+ items).
+
+### Programmable Devices
+
+For complete inventory of FPGA, MCU, SoC, Arduino boards, and retro platforms with specifications and programmer compatibility, see [`.personal/incoming/programmable-devices.md`](.personal/incoming/programmable-devices.md) (37 boards).
 
 ---
 

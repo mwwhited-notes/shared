@@ -20,6 +20,10 @@ This is a collection of personal notes on various design/architectural patterns,
 
 ### Books
 
-Book collection inventory is maintained in Personal repository. See [`PERSONAL-PROTOCOL.md`](../PERSONAL-PROTOCOL.md) for requesting book inventory data.
+For comprehensive technical book collection organized by topic, see **[`.personal/incoming/books.md`](../.personal/incoming/books.md)** (50+ titles).
 
-Reference books include topics on design patterns, architecture, and related software design subjects.
+Reference books include topics on design patterns, architecture, and related software design subjects:
+- Design Patterns: Elements of Reusable Object-Oriented Software
+- The Pragmatic Programmer
+- Building Microservices
+- And many more in the `.personal/incoming/books.md` inventory

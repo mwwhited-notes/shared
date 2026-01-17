@@ -11,8 +11,8 @@ Project backlog for future development. Once a project has its own directory in 
 ### Vintage Computing & Retro
 
 * write a simple game for the NES and Apple II (program in 6502 assembly) [have NESMaker PCBs, Apple IIc, Apple IIgs]
-* archive floppy disk collection with Greaseweazle V4.1 [have Apple II 5.25", Apple IIgs 3.5", TI-99/4A disks]
-* build Multicomp Z80 CP/M system on EP2C5-DB [have Multicomp kit, Grant Searle designs available]
+* archive floppy disk collection with **[Greaseweazle V4.1](../.personal/incoming/test-equipment.md)** [have Apple II 5.25", Apple IIgs 3.5", **[TI-99/4A disks](../.personal/incoming/vintage-computers.md)**]
+* build **[Multicomp Z80 CP/M system](../.personal/incoming/programmable-devices.md)** on EP2C5-DB [have Multicomp kit, Grant Searle designs available]
 * build Multicomp 6502 system with BASIC [good prep for Apple II projects]
 * build Multicomp 6809 Flex/OS-9 system [learn another 8-bit architecture]
 * Gigatron TTL expansion or game development [have Gigatron TTL computer]
@@ -20,7 +20,7 @@ Project backlog for future development. Once a project has its own directory in 
 
 ### FPGA & CPU Design
 
-* 8085 soft core on FPGA [have MM-8000K as reference, Arty A7]
+* 8085 soft core on FPGA [have **[MM-8000K](../.personal/incoming/vintage-computers.md)** as reference, **[Arty A7](../.personal/incoming/programmable-devices.md)**]
 * 65C816 soft core (Apple IIgs compatible) [would enable IIgs clone]
 * TMS9900 soft core (TI-99/4A compatible) [would enable TI-99 clone]
 * VGA/HDMI framebuffer controller [needed for retro cores]
@@ -36,16 +36,16 @@ Project backlog for future development. Once a project has its own directory in 
 
 ### Wireless & IoT
 
-* XBee mesh sensor network with dashboard [have XBee modules + XBIB-U-DEV]
-* XBee-to-MQTT gateway [ESP32 + XBee]
-* battery-powered remote sensor nodes [ATtiny + XBee]
-* ESP32 home automation projects [have Inland ESP32, ESP8266 modules]
+* **[XBee](../.personal/incoming/programmable-devices.md)** mesh sensor network with dashboard [have XBee modules + XBIB-U-DEV]
+* **[XBee](../.personal/incoming/programmable-devices.md)**-to-MQTT gateway [**[ESP32](../.personal/incoming/programmable-devices.md)** + XBee]
+* battery-powered remote sensor nodes [**[ATtiny](../.personal/incoming/programmable-devices.md)** + XBee]
+* **[ESP32](../.personal/incoming/programmable-devices.md)** home automation projects [have Inland ESP32, **[ESP8266](../.personal/incoming/programmable-devices.md)** modules]
 
 ### Analog & Mixed Signal
 
-* Lorenz attractor on The Analog Thing [chaos visualization]
+* Lorenz attractor on **[The Analog Thing](../.personal/incoming/test-equipment.md)** [chaos visualization]
 * predator-prey ecosystem simulation [classic analog computing demo]
-* hybrid analog-digital system [THAT + STM32 interface]
+* hybrid analog-digital system [**[THAT](../.personal/incoming/test-equipment.md)** + **[STM32](../.personal/incoming/programmable-devices.md)** interface]
 * control system modeling [PID loops, feedback systems]
 
 ### Learning & Exploration
@@ -108,18 +108,18 @@ Recent inventory additions that enable new project categories:
 
 | Equipment | Projects Enabled |
 |-----------|------------------|
-| Greaseweazle V4.1 | Floppy disk archival, vintage disk preservation |
-| Multicomp EP2C5-DB | Z80/6502/6809 retro computing, CP/M, BASIC |
-| Anabrid THAT | Analog computing, chaos systems, hybrid digital |
-| XBee modules + XBIB-U-DEV | Mesh networking, remote sensors |
-| Gigatron TTL | TTL computing, expansion modules |
-| D2-1 Line Follower | Robot enhancement, sensor fusion |
-| DevOps Playground Cluster | Docker, Kubernetes, Slurm, CI/CD, monitoring |
-| PowerSpec G474 (160GB RAM) | Heavy development, VMs, photo editing |
-| WD My Cloud PR4100 | NAS services, Docker host, media server |
-| Galaxy Tab4 Nook | Home automation dashboard, kiosk display |
-| Sony PSVita | Retro gaming, emulation, homebrew |
-| Amazon Fire HD | Smart display, kiosk, Google Play hacking |
+| **[Greaseweazle V4.1](../.personal/incoming/test-equipment.md)** | Floppy disk archival, vintage disk preservation |
+| **[Multicomp EP2C5-DB](../.personal/incoming/programmable-devices.md)** | Z80/6502/6809 retro computing, CP/M, BASIC |
+| **[Anabrid THAT](../.personal/incoming/test-equipment.md)** | Analog computing, chaos systems, hybrid digital |
+| **[XBee modules](../.personal/incoming/programmable-devices.md)** | Mesh networking, remote sensors |
+| **[Gigatron TTL](../.personal/incoming/programmable-devices.md)** | TTL computing, expansion modules |
+| **[D2-1 Line Follower](../.personal/incoming/device-lab.md)** | Robot enhancement, sensor fusion |
+| **[DevOps Playground Cluster](./devops-playground-cluster/)** | Docker, Kubernetes, Slurm, CI/CD, monitoring |
+| **[PowerSpec G474](../.personal/incoming/device-lab.md)** (160GB RAM) | Heavy development, VMs, photo editing |
+| **[WD My Cloud PR4100](../.personal/incoming/device-lab.md)** | NAS services, Docker host, media server |
+| **[Galaxy Tab4 Nook](../.personal/incoming/device-lab.md)** | Home automation dashboard, kiosk display |
+| **[Sony PSVita](../.personal/incoming/device-lab.md)** | Retro gaming, emulation, homebrew |
+| **[Amazon Fire HD](../.personal/incoming/device-lab.md)** | Smart display, kiosk, Google Play hacking |
 
 ---
 
@@ -133,10 +133,10 @@ See [Projects Index (README.md)](README.md) for the complete list of 12 active p
 ### Equipment & Capabilities
 
 - [workshop-capabilities.md](../workshop-capabilities.md) - Full equipment summary and capabilities
-- [Programmable Devices/](../Programmable%20Devices/) - FPGA, MCU, dev board inventory
-- [Test Equipment/](../Test%20Equipment/) - Lab equipment inventory
-- [Device Lab/](../Device%20Lab/) - Computing devices for hacking/tinkering
-- [Vintage Computers/](../Vintage%20Computers/) - Retro computing hardware
+- **[Programmable Devices](../.personal/incoming/programmable-devices.md)** - FPGA, MCU, dev board inventory (37 boards)
+- **[Test Equipment](../.personal/incoming/test-equipment.md)** - Lab equipment inventory (41 units)
+- **[Device Lab](../.personal/incoming/device-lab.md)** - Computing devices for hacking/tinkering (40+ devices)
+- **[Vintage Computers](../.personal/incoming/vintage-computers.md)** - Retro computing hardware (4 systems)
 
 ---
 

@@ -25,8 +25,8 @@ This project explores System-on-Chip (SoC) design using the Xilinx Zynq architec
 
 ## Equipment Used
 
-- [Digilent Arty Z7-20](../../Programmable%20Devices/digilent-arty-z7-20/) - Zynq-7020 SoC development board
-- [AMD/Xilinx Vivado + Vitis](../../Programmable%20Devices/digilent-arty-z7-20/README.md#development-tools) - SoC development tools
+- **[Digilent Arty Z7-20](../../.personal/incoming/programmable-devices.md)** - Zynq-7020 SoC development board
+- **AMD/Xilinx Vivado + Vitis** - SoC development tools
 - MicroSD card for Linux boot
 - USB-UART for serial console
 

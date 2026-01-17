@@ -34,14 +34,14 @@ Potential improvements for future revisiting:
 
 ## Equipment Used
 
-- ATtiny2313 microcontroller
+- **[ATtiny2313 microcontroller](../../.personal/incoming/programmable-devices.md)**
 - LED display module (soldered and assembled)
-- [ISP programmer](../../Test%20Equipment/) - For programming ATtiny2313
-- Soldering equipment - [KSGER T12](../../Test%20Equipment/)
+- **[ISP programmer](../../.personal/incoming/test-equipment.md)** - For programming ATtiny2313
+- **[Soldering equipment - KSGER T12](../../.personal/incoming/test-equipment.md)**
 
 ## Materials
 
-See [tools-and-components.md](../../tools-and-components.md) for component inventory.
+See **[.personal/incoming/tools-and-components.md](../../.personal/incoming/tools-and-components.md)** for complete component inventory.
 
 **Key Components:**
 - ATtiny2313 microcontroller

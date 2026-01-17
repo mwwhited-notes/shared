@@ -26,12 +26,12 @@ The CPU will be implemented on the Digilent Arty A7-100 FPGA development board.
 
 ## Equipment Used
 
-- [Digilent Arty A7-100](../../Programmable%20Devices/digilent-arty-a7-100/) - FPGA development board (XC7A100T)
+- **[Digilent Arty A7-100](../../.personal/incoming/programmable-devices.md)** - FPGA development board (XC7A100T)
   - Artix-7 XC7A100T FPGA (15,850 slices, 4,860 Kbit Block RAM, 240 DSP slices)
   - 256MB DDR3L, 16MB Quad-SPI Flash
   - 4 Pmod connectors, Arduino/ChipKit shield connector
-- [AMD/Xilinx Vivado](../../Programmable%20Devices/digilent-arty-a7-100/README.md#development-tools) - FPGA synthesis and implementation
-- [Test Equipment/](../../Test%20Equipment/) - Logic analyzer for debugging
+- **AMD/Xilinx Vivado** - FPGA synthesis and implementation
+- **[Logic Analyzer](../../.personal/incoming/test-equipment.md)** - Digilent Analog Discovery 2 for debugging
 
 ## Code Repository
 

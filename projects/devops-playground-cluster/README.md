@@ -33,8 +33,8 @@ Multi-node home lab cluster for experimenting with container orchestration, HPC 
 
 | Node | Hardware | Role | Status |
 |------|----------|------|--------|
-| [Reduced BigRig](../../Device%20Lab/desktops/reduced-bigrig/) | FX-9590, 32GB RAM, 2x R9 290 | TBD | Building |
-| [Server](../../Device%20Lab/desktops/server-fx8350/) | FX-8350, 32GB RAM, 3TB storage | TBD | Building |
+| **[Reduced BigRig](../../.personal/incoming/device-lab.md)** | FX-9590, 32GB RAM, 2x R9 290 | TBD | Building |
+| **[Server](../../.personal/incoming/device-lab.md)** | FX-8350, 32GB RAM, 3TB storage | TBD | Building |
 
 ### Combined Resources
 

@@ -25,9 +25,9 @@ The project combines physical hardware (MM-8000K trainer) with software emulatio
 
 ## Equipment Used
 
-- [MM-8000K Intel 8085 Trainer](../../Vintage%20Computers/) - Physical hardware trainer
+- **[MM-8000K Intel 8085 Trainer](../../.personal/incoming/vintage-computers.md)** - Physical hardware trainer
 - Development workstation for UI and emulator work
-- [Logic analyzer](../../Test%20Equipment/) - For hardware debugging (if needed)
+- **[Logic analyzer](../../.personal/incoming/test-equipment.md)** - For hardware debugging (if needed)
 
 ## Architecture
 

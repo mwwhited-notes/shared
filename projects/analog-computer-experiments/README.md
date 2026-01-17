@@ -26,10 +26,10 @@ Goals include learning analog computing fundamentals, implementing classic demon
 
 ## Equipment Used
 
-- [Anabrid THAT (The Analog Thing)](../../Test%20Equipment/) - Educational analog computer
-- [Oscilloscope](../../Test%20Equipment/) - For visualizing outputs (Lorenz attractor, waveforms)
-- [STM32 boards](../../Programmable%20Devices/) - For hybrid analog-digital experiments
-- Function generator, power supplies
+- **[Anabrid THAT (The Analog Thing)](../../.personal/incoming/test-equipment.md)** - Educational analog computer
+- **[Oscilloscope](../../.personal/incoming/test-equipment.md)** - For visualizing outputs (Lorenz attractor, waveforms)
+- **[STM32 boards](../../.personal/incoming/programmable-devices.md)** - For hybrid analog-digital experiments
+- **[Function generator, power supplies](../../.personal/incoming/test-equipment.md)**
 
 ## Planned Experiments
 

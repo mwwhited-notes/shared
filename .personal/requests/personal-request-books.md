@@ -85,4 +85,4 @@ Markdown tables organized by category:
 
 ## Response File Location
 
-Place completed inventory at: `personal/incoming/books.md`
+Place completed inventory at: `.personal/incoming/books.md`

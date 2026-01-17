@@ -52,15 +52,15 @@
 ## Equipment Used
 
 ### Display Devices
-- [Galaxy Tab4 Nook](../../Device%20Lab/mobile/) - Primary dashboard display (LineageOS + kiosk mode)
-- [Amazon Fire HD](../../Device%20Lab/mobile/) - Secondary display (Google Play + kiosk)
+- **[Galaxy Tab4 Nook](../../.personal/incoming/device-lab.md)** - Primary dashboard display (LineageOS + kiosk mode)
+- **[Amazon Fire HD](../../.personal/incoming/device-lab.md)** - Secondary display (Google Play + kiosk)
 
 ### Controllers & Infrastructure
-- Raspberry Pi 3 (×2) - With Z-Wave hats/interfaces
+- **[Raspberry Pi 3](../../.personal/incoming/device-lab.md)** (×2) - With Z-Wave hats/interfaces
 - Z-Wave USB Z-Stick - Direct USB Z-Wave controller
 - Z-Net bridge - Ethernet-based Z-Wave adapter (HomeSeer)
-- [WD My Cloud PR4100](../../Device%20Lab/network-storage/) - Docker host option for Home Assistant
-- [DevOps Playground Cluster](../devops-playground-cluster/) - Alternative deployment platform
+- **[WD My Cloud PR4100](../../.personal/incoming/device-lab.md)** - Docker host option for Home Assistant
+- **[DevOps Playground Cluster](../devops-playground-cluster/)** - Alternative deployment platform
 
 ## Next Steps
 1. Find and identify Z-Wave USB stick model

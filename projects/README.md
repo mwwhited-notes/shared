@@ -8,26 +8,26 @@ Active project documentation and build logs organized by category.
 
 | Project | Category | Status | Equipment |
 |---------|----------|--------|-----------|
-| [FPGA CPU Design](#fpga-cpu-design) | Digital Logic | In Progress | Arty A7-100 |
-| [SAP-1 Computer](#sap-1-computer) | Digital Logic | In Progress | 74-series, breadboards |
-| [DRL/DTL Logic Boards](#drldtl-logic-boards) | Digital Logic | Reference | Diodes, transistors |
-| [Zynq SoC Exploration](#zynq-soc-exploration) | SoC/Embedded | In Progress | Arty Z7-20 |
-| [Analog Computer Experiments](#analog-computer-experiments) | Analog Computing | In Progress | THAT |
-| [ATtiny2313 LED Clock](#attiny2313-led-clock) | Microcontrollers | Completed | ATtiny2313 |
-| [MM-8000K Trainer UI](#mm-8000k-intel-8085-trainer-ui) | Retro Computing | On Hold | MM-8000K |
-| [Passive Radar SDR](#passive-radar-sdr-system) | RF/SDR | Planning | KrakenSDR/RTL-SDR |
-| [Radex One Protocol](#radex-one-geiger-counter-protocol) | Protocol Reverse Eng | Completed | Radex One |
+| [FPGA CPU Design](#fpga-cpu-design) | Digital Logic | In Progress | [Arty A7-100](../.personal/incoming/programmable-devices.md) |
+| [SAP-1 Computer](#sap-1-computer) | Digital Logic | In Progress | [74-series, breadboards](../.personal/incoming/tools-and-components.md) |
+| [DRL/DTL Logic Boards](#drldtl-logic-boards) | Digital Logic | Reference | [Diodes, transistors](../.personal/incoming/tools-and-components.md) |
+| [Zynq SoC Exploration](#zynq-soc-exploration) | SoC/Embedded | In Progress | [Arty Z7-20](../.personal/incoming/programmable-devices.md) |
+| [Analog Computer Experiments](#analog-computer-experiments) | Analog Computing | In Progress | [THAT](../.personal/incoming/test-equipment.md) |
+| [ATtiny2313 LED Clock](#attiny2313-led-clock) | Microcontrollers | Completed | [ATtiny2313](../.personal/incoming/programmable-devices.md) |
+| [MM-8000K Trainer UI](#mm-8000k-intel-8085-trainer-ui) | Retro Computing | On Hold | [MM-8000K](../.personal/incoming/vintage-computers.md) |
+| [Passive Radar SDR](#passive-radar-sdr-system) | RF/SDR | Planning | [KrakenSDR/RTL-SDR](../.personal/incoming/programmable-devices.md) |
+| [Radex One Protocol](#radex-one-geiger-counter-protocol) | Protocol Reverse Eng | Completed | [Radex One](../.personal/incoming/device-lab.md) |
 | [Favero Fencing System](#favero-fencing-scoring-system) | Protocol Integration | Completed | Favero Full-Arm-05 |
-| [SCPI Instrument Control](#scpi-instrument-control) | Test Automation | Planning | Lab equipment |
+| [SCPI Instrument Control](#scpi-instrument-control) | Test Automation | Planning | [Lab equipment](../.personal/incoming/test-equipment.md) |
 | [Vector Search SQL Server](#vector-search-in-sql-server) | Database/ML | Completed | SQL Server, .NET |
-| [AI/ML Research](#aiml-research--reference) | Research/Reference | Reference | Papers, notes |
-| [Self-Hosted Git Server](#self-hosted-git-server) | DevOps/Infrastructure | Planning | PR4100 NAS |
-| [SBC Cluster](#sbc-cluster-arm) | DevOps/Infrastructure | Planning | 8× ARM SBCs |
-| [DevOps Playground Cluster](#devops-playground-cluster) | DevOps/HPC | In Progress | FX-9590, FX-8350 |
-| [Home Automation](#home-automation) | Smart Home | In Progress | Pi 3, Z-Wave |
+| [AI/ML Research](#aiml-research--reference) | Research/Reference | Reference | [Technical books](../.personal/incoming/books.md) |
+| [Self-Hosted Git Server](#self-hosted-git-server) | DevOps/Infrastructure | Planning | [PR4100 NAS](../.personal/incoming/device-lab.md) |
+| [SBC Cluster](#sbc-cluster-arm) | DevOps/Infrastructure | Planning | [ARM SBCs](../.personal/incoming/device-lab.md) |
+| [DevOps Playground Cluster](#devops-playground-cluster) | DevOps/HPC | In Progress | [FX-9590, FX-8350](../.personal/incoming/device-lab.md) |
+| [Home Automation](#home-automation) | Smart Home | In Progress | [Pi 3, Z-Wave](../.personal/incoming/device-lab.md) |
 | [DIY TrekPak Dividers](#diy-trekpak-dividers) | Workshop | Reference | Foam, pins |
-| [Cline with Local LLM](#cline-with-local-llm) | AI / Dev Tools | Planning | RTX 4070 Ti |
-| [Local Docker Registry](#local-docker-registry) | DevOps / Infrastructure | Planning | NAS/Cluster |
+| [Cline with Local LLM](#cline-with-local-llm) | AI / Dev Tools | Planning | [RTX 4070 Ti](../.personal/incoming/device-lab.md) |
+| [Local Docker Registry](#local-docker-registry) | DevOps / Infrastructure | Planning | [NAS/Cluster](../.personal/incoming/device-lab.md) |
 
 ## Projects by Category
 

@@ -1,7 +1,0 @@
-# Ignore all files in incoming/ folder
-# This folder receives information returned from Personal repository
-# Content is temporary and specific to local workflow
-incoming/
-
-# NOTE: requests/ folder is NOT ignored
-# Request files in .personal/requests/ are tracked and can be sent to Personal repo owner

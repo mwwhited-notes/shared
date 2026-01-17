@@ -83,14 +83,14 @@ See [memory-controller-notes.md](memory-controller-notes.md) for detailed memory
 
 ## Equipment Used
 
-- Breadboards and jumper wires
-- 74-series TTL logic chips (74181, 74LS04, 74LS86, 74LS245, 74LS173, etc.)
-- AT28C16 EEPROMs (CAT28C16A) - For microcode storage
-- ATF16v8b GAL chips - For memory controller logic
-- [EEPROM programmer](../../Test%20Equipment/) - For programming microcode
-- [GAL programmer](../../Test%20Equipment/) - For programming ATF16v8b
-- [Logic analyzer](../../Test%20Equipment/) - For debugging
-- Power supply (5V regulated)
+- **[Breadboards and jumper wires](../../.personal/incoming/tools-and-components.md)**
+- **[74-series TTL logic chips](../../.personal/incoming/tools-and-components.md)** (74181, 74LS04, 74LS86, 74LS245, 74LS173, etc.)
+- **[AT28C16 EEPROMs](../../.personal/incoming/tools-and-components.md)** (CAT28C16A) - For microcode storage
+- **[ATF16v8b GAL chips](../../.personal/incoming/tools-and-components.md)** - For memory controller logic
+- **[EEPROM programmer](../../.personal/incoming/test-equipment.md)** - For programming microcode
+- **[GAL programmer](../../.personal/incoming/test-equipment.md)** - For programming ATF16v8b
+- **[Logic analyzer](../../.personal/incoming/test-equipment.md)** - For debugging
+- **[Power supply (5V regulated)](../../.personal/incoming/test-equipment.md)**
 
 ## Design Tools
 
@@ -111,9 +111,9 @@ See [memory-controller-notes.md](memory-controller-notes.md) for detailed memory
 ## References
 
 ### Books
-- **Digital Computer Electronics** by Albert Paul Malvino (purchased 2020-01-09, $29.44)
-  - Original SAP-1 computer design source
-  - See [tools-and-components.md](../../tools-and-components.md#books--references) for book inventory
+- **[Digital Computer Electronics](../../.personal/incoming/books.md)** by Albert Paul Malvino
+  - Original SAP-1 computer design source (purchased 2020-01-09, $29.44)
+  - See `.personal/incoming/books.md` for complete technical book inventory
 
 ### Online Resources
 - [Ben Eater's 8-bit Computer Playlist](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU) - Video tutorial series
