@@ -4,6 +4,17 @@
 
 ## Active Tasks
 
+### Repository Reorganization
+- [x] Create Personal/ folder structure
+- [x] Move all equipment collections to Personal/
+- [x] Copy relevant protocols to Personal/.claude/protocols/
+- [x] Create Personal/CLAUDE.md with collection configuration
+- [x] Create Personal/TODO.md for collection task tracking
+- [x] Create Personal/README.md as collection index
+- [x] Update ShoppingOnline.md to reference Personal/.invoices/
+- [x] Update root CLAUDE.md to document new structure
+- [x] Prepare Personal/ folder for use as standalone repository
+
 ### Order Processing
 - [x] Review amazon orders from 2020 and before (2018-2020 processed)
 - [x] Process Amazon invoices 2017 - extract items to collections
@@ -12,7 +23,6 @@
 - [x] Create Sports Collection for water sports, biking, camping, fitness
 - [x] Extract AliExpress items to relevant collections (components, tools, equipment)
 - [x] Review and update documentation protocols (19 protocols, 2 new)
-- [x] Reorganize repository: create Personal/ folder for collections and invoices
 - [ ] Process Amazon invoices 2016 - extract items to collections
 - [ ] Process Amazon invoices 2015 - extract items to collections
 - [ ] Process Amazon invoices 2014 - extract items to collections
@@ -53,4 +63,4 @@
 
 *Last updated: 2026-01-17*
 *Last cleaned: 2026-01-17*
-*Last reorganized: 2026-01-17*
+*Last reorganized: 2026-01-17 - Separated Personal/ as standalone repository*

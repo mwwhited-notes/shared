@@ -36,15 +36,15 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
 
 ## Key Directories
 
-- **Programmable Devices/** - Inventory of FPGA, CPLD, MCU, and development boards with specifications and archived documentation
-- **Expansion Boards/** - Inventory of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and other dev board accessories
-- **Test Equipment/** - Lab equipment documentation (oscilloscopes, DMMs, power supplies, programmers, 3D printer)
-- **Vintage Computers/** - Apple IIc, Apple IIgs, TI-99/4A with peripherals (Floppy Emu, VGA adapters, RAM expansions)
-- **Personal/** - Personal collections and purchase history
-  - **Personal/Camera Collection/** - Photography equipment inventory (Nikon D800, film cameras, lenses, M42 vintage glass)
-  - **Personal/Device Lab/** - Computing devices for hacking/tinkering (tablets, phones, gaming handhelds, NAS, desktops)
-  - **Personal/Hobby Collection/** - Hobby and craft equipment (leathercraft, sewing, jewelry making, materials and tools)
-  - **Personal/Sports Collection/** - Sports and outdoor recreation equipment (water sports, biking, camping, fitness)
+- **Personal/** - Personal equipment collections and purchase history (moved to standalone structure)
+  - **Personal/Programmable Devices/** - FPGA, CPLD, MCU, development boards
+  - **Personal/Expansion Boards/** - Arduino shields, Pi HATs, BeagleBone capes
+  - **Personal/Test Equipment/** - Lab equipment (oscilloscopes, DMMs, power supplies, programmers)
+  - **Personal/Vintage Computers/** - Apple IIc, IIgs, TI-99/4A with peripherals
+  - **Personal/Camera Collection/** - Photography equipment (cameras, lenses, M42 vintage glass)
+  - **Personal/Device Lab/** - Computing devices for hacking (tablets, phones, gaming, NAS)
+  - **Personal/Hobby Collection/** - Hobby and craft equipment (leathercraft, sewing, jewelry)
+  - **Personal/Sports Collection/** - Sports and outdoor recreation equipment
   - **Personal/.invoices/** - Purchase invoices from Amazon and AliExpress (2017-2026)
 - **projects/** - Active project documentation and build logs
   - `fpga-cpu-design/` - Custom CPU in SystemVerilog
@@ -105,11 +105,14 @@ Follow `.claude/protocols/VINTAGE_COMPUTERS_DOCUMENTATION_PROTOCOL.md` when:
 - Documenting accessories (Floppy Emu, RAM expansions, video adapters)
 - Cross-referencing with related FPGA soft cores or emulation projects
 
-### Online Shopping
-Follow `.claude/protocols/ONLINE_SHOPPING_PROTOCOL.md` when:
-- User mentions purchases from online sellers
-- Documenting seller experiences (good or bad)
-- Tracking pricing and shipping quality
+### Online Shopping & Invoice Processing
+Invoice processing and purchase history tracking now happens in **Personal/** folder.
+
+See `Personal/CLAUDE.md` and `Personal/.claude/protocols/ONLINE_SHOPPING_PROTOCOL.md` when:
+- Processing purchases from online retailers
+- Documenting seller experiences and reliability
+- Tracking pricing, shipping quality, and purchase history
+- Adding items to Personal/.invoices/ archives
 
 ### Camera Collection
 Follow `.claude/protocols/CAMERA_COLLECTION_PROTOCOL.md` when:
@@ -175,18 +178,14 @@ Follow this when creating comprehensive research/standards documentation:
 - 100+ implementation resources indexed
 - Quick-start guides for 4 common scenarios
 
-### Tools and Components
-Follow `.claude/protocols/TOOLS_AND_COMPONENTS_PROTOCOL.md` when:
-- Adding items to `tools-and-components.md`
-- Processing Amazon orders for tools, wire, components, or consumables
-- Organizing inventory into appropriate sections
-- Cross-referencing with Test Equipment or other inventories
+### Tools and Components (In Personal Folder)
+See `Personal/.claude/protocols/TOOLS_AND_COMPONENTS_PROTOCOL.md` when:
+- Adding components or tools from invoices
+- Processing Amazon/AliExpress orders for tools, wire, components
+- Organizing component stock in Personal collections
+- Cross-referencing with Personal equipment inventories
 
-Key principles:
-- Major equipment → dedicated inventories (Test Equipment, Programmable Devices, etc.)
-- Consumables, accessories, component stock → tools-and-components.md
-- Consistent date format (YYYY-MM-DD) and pricing
-- Cross-reference related equipment
+**Note:** Tools and components processing is now part of Personal/ invoice workflow. See `Personal/CLAUDE.md` for details.
 
 ### Project Review
 Follow `.claude/protocols/PROJECT_REVIEW_PROTOCOL.md` when:
@@ -207,9 +206,14 @@ Follow `.claude/protocols/CLAUDE_MD_MAINTENANCE_PROTOCOL.md` to keep this file c
 Follow `.claude/protocols/TODO_MD_ARCHIVAL_PROTOCOL.md` to archive completed tasks from TODO.md.
 
 **Current status:**
-- CLAUDE.md: 330 lines (target <500, warning at 600)
-- TODO.md: Cleaned 2026-01-17 (18 pending tasks, 8 completed)
-- Personal/: Contains collections and purchase history (separated from public reference material)
+- CLAUDE.md: Root file (target <500 lines, warning at 600)
+- TODO.md: Root file with repository-wide tasks
+- Personal/: Standalone folder with all collections and protocols
+  - Personal/CLAUDE.md - Personal repository configuration
+  - Personal/TODO.md - Personal collection task tracking
+  - Personal/README.md - Personal collections main index
+  - Personal/.claude/protocols/ - 10 documentation protocols for collections
+- All equipment collections moved to Personal/ (ready for separate repository)
 - See `changes/` directory for archived work
 
 ### Directory Indexes for Performance & Token Usage
@@ -224,14 +228,15 @@ Each major directory has a focused README.md index following `.claude/protocols/
 **Index Organization:**
 - `projects/README.md` - Master index of 21+ projects (status, categories, cross-references)
 - `.claude/protocols/README.md` - Master index of 19 documentation protocols (versions, purposes, decision tree)
-- `Programmable Devices/README.md` - Device inventory index (20+ devices, specifications, programmer compatibility)
-- `Expansion Boards/README.md` - Shields/HATs/capes index (pin mappings, parent board cross-refs)
-- `Test Equipment/README.md` - Lab equipment index (oscilloscopes, meters, supplies)
-- `Vintage Computers/README.md` - Apple II/TI-99/4A systems and peripherals
-- `Personal/Camera Collection/README.md` - Photography equipment (bodies, lenses, mount compatibility)
-- `Personal/Device Lab/README.md` - Computing devices for hacking (tablets, phones, NAS, gaming)
-- `Personal/Hobby Collection/README.md` - Hobby and craft equipment (leathercraft, sewing, jewelry)
-- `Personal/Sports Collection/README.md` - Sports and outdoor recreation equipment
+- `Personal/README.md` - Main index for all personal equipment collections
+- `Personal/Programmable Devices/README.md` - Dev boards inventory
+- `Personal/Expansion Boards/README.md` - Shields, HATs, capes
+- `Personal/Test Equipment/README.md` - Lab equipment inventory
+- `Personal/Vintage Computers/README.md` - Vintage systems
+- `Personal/Camera Collection/README.md` - Photography equipment
+- `Personal/Device Lab/README.md` - Computing devices for hacking
+- `Personal/Hobby Collection/README.md` - Hobby and craft equipment
+- `Personal/Sports Collection/README.md` - Sports and recreation equipment
 - `Notes/README.md` - Technical notes directory guide
 - `AnalogComputers/README.md` - Analog computing research collection overview
 
@@ -292,17 +297,22 @@ done
 - `links.md` - Curated reference links (AI/ML, dotnet, electronics, retro computing, vintage electronics)
 - `tools-and-components.md` - Hand tools, wire, consumables, component stock, books
 
-### Equipment Inventories
-- `Programmable Devices/readme.md` - Device index with programmer compatibility
-- `Expansion Boards/readme.md` - Shields, HATs, capes index with compatibility info
-- `Test Equipment/readme.md` - Equipment index (oscilloscopes, DMMs, programmers, 3D printer)
-- `Vintage Computers/readme.md` - Apple IIc, Apple IIgs, TI-99/4A inventory
-
 ### Personal Equipment Collections
-- `Personal/Camera Collection/readme.md` - Cameras, lenses, and photography accessories
-- `Personal/Device Lab/readme.md` - Computing devices for hacking/tinkering
-- `Personal/Hobby Collection/readme.md` - Leathercraft, sewing, jewelry equipment and materials
-- `Personal/Sports Collection/readme.md` - Water sports, biking, camping, fitness equipment
+
+All equipment collections have been moved to `Personal/` folder for standalone repository:
+
+- `Personal/readme.md` - Main index for Personal collections
+- `Personal/CLAUDE.md` - Configuration for Personal repository
+- `Personal/TODO.md` - Task tracking for Personal collections
+- `Personal/Programmable Devices/readme.md` - Dev boards (FPGA, CPLD, MCU)
+- `Personal/Expansion Boards/readme.md` - Shields, HATs, capes
+- `Personal/Test Equipment/readme.md` - Lab equipment
+- `Personal/Vintage Computers/readme.md` - Vintage computer systems
+- `Personal/Camera Collection/readme.md` - Photography equipment
+- `Personal/Device Lab/readme.md` - Computing devices for hacking
+- `Personal/Hobby Collection/readme.md` - Hobby and craft equipment
+- `Personal/Sports Collection/readme.md` - Sports and recreation equipment
+- `Personal/.invoices/` - Purchase history archives
 
 ### Projects
 - `projects/` - Active project directories with READMEs (see projects/project-ideas.md for complete list)
