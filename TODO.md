@@ -8,7 +8,10 @@
 - [x] Review amazon orders from 2020 and before (2018-2020 processed)
 - [x] Process Amazon invoices 2017 - extract items to collections
 - [x] Process AliExpress invoices 2022-2026 (all years archived 2026-01-17)
-- [ ] Extract AliExpress items to relevant collections (components, tools, equipment)
+- [x] Create Hobby Collection for leathercraft, sewing, jewelry
+- [x] Create Sports Collection for water sports, biking, camping, fitness
+- [x] Extract AliExpress items to relevant collections (components, tools, equipment)
+- [x] Review and update documentation protocols (19 protocols, 2 new)
 - [ ] Process Amazon invoices 2016 - extract items to collections
 - [ ] Process Amazon invoices 2015 - extract items to collections
 - [ ] Process Amazon invoices 2014 - extract items to collections
@@ -47,5 +50,5 @@
 
 ---
 
-*Last updated: 2026-01-16*
-*Last cleaned: 2026-01-16*
+*Last updated: 2026-01-17*
+*Last cleaned: 2026-01-17*
