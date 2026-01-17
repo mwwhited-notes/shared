@@ -2,7 +2,7 @@
 
 Complete collection of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and Digilent Pmod modules organized by function and platform with pin compatibility and cross-reference information.
 
-**Quick Reference:** 16 documented expansion boards | 8 Pmod modules | [Documentation Protocol](../.claude/protocols/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md)
+**Quick Reference:** 18 documented expansion boards | 8 Pmod modules | [Documentation Protocol](../.claude/protocols/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md)
 
 ## Table of Contents
 
@@ -11,6 +11,7 @@ Complete collection of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and
 - [Arduino Shields - Communication & Wireless](#arduino-shields---communication--wireless)
 - [Arduino Shields - Sensors & Data](#arduino-shields---sensors--data)
 - [Arduino Shields - Display & UI](#arduino-shields---display--ui)
+- [Arduino Shields - Audio](#arduino-shields---audio)
 - [Arduino Shields - Prototyping](#arduino-shields---prototyping)
 - [Arduino Shields - Power Management](#arduino-shields---power-management)
 - [Arduino Shields - Programming & Development](#arduino-shields---programming--development)
@@ -34,12 +35,13 @@ Complete collection of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and
 | Arduino Shields - Wireless | 3 | Active | XBee Shield (802.15.4 ZigBee) |
 | Arduino Shields - Sensors | 4 | Active | Robogaia 6-Axis IMU (MPU-6050) |
 | Arduino Shields - Display | 2 | Active | OSEPP LCD Keypad (16x2 + buttons) |
+| Arduino Shields - Audio | 1 | Active | MIDI Shield Breakout (5-pin DIN) |
 | Arduino Shields - Other | 3 | Active | Evil Mad Science ISP (AVR programmer) |
 | Arduino Proto Shields | 2 | Active | 19 total proto boards |
-| Raspberry Pi HATs | 2 | Active | PoE HAT (802.3af Power over Ethernet) |
+| Raspberry Pi HATs | 3 | Active | PoE HAT (802.3af Power over Ethernet) |
 | BeagleBone Capes | 1 | Active | Adafruit Proto Cape (3 units) |
 | Digilent Pmod Modules | 8 | Active | Pmod VGA, I2S2, Keypad, SSD, etc. |
-| **TOTAL** | **24** | **Active** | - |
+| **TOTAL** | **26** | **Active** | - |
 
 ---
 
@@ -76,6 +78,12 @@ Complete collection of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and
 | [OSEPP LCD Keypad](arduino-osepp-lcd-keypad-shield/) | 16x2 LCD + 5 buttons | HD44780 | 4-bit parallel | 1 | xxxxxxx | `arduino-osepp-lcd-keypad-shield/` |
 | [Multi-Function Shield](arduino-multi-function-shield/) | 7-seg, LEDs, buttons, buzzer | 74HC595 | Shift register | 1 | xxxxxxx | `arduino-multi-function-shield/` |
 
+### Arduino Shields - Audio
+
+| Shield | Function | Main IC | Interface | Qty | Git Hash | Directory |
+|--------|----------|---------|-----------|-----|----------|-----------|
+| [MIDI Shield Breakout](arduino-midi-shield/) | MIDI Digital Interface | - | 5-pin DIN MIDI | 1 | xxxxxxx | `arduino-midi-shield/` |
+
 ### Arduino Shields - Prototyping
 
 | Shield | Function | Main IC | Interface | Qty | Git Hash | Directory |
@@ -104,6 +112,7 @@ Complete collection of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and
 |-----|----------|-----------|-------------------|-----|----------|-----------|
 | [PoE HAT (2018)](rpi-poe-hat-2018/) | Power over Ethernet | 802.3af PoE | Pi 3B+, Pi 4 | 1 | xxxxxxx | `rpi-poe-hat-2018/` |
 | [ARPI600](rpi-arpi600/) | Arduino shield + XBee adapter | GPIO/I2C/SPI | Pi 2/3/4, Jetson | 1 | xxxxxxx | `rpi-arpi600/` |
+| [GPIO 1 to 2 Expansion](rpi-gpio-1x2-expansion-board/) | GPIO pin multiplier | Ribbon cable | Pi 2/3/4, Pi Zero | 1 | xxxxxxx | `rpi-gpio-1x2-expansion-board/` |
 
 ### BeagleBone Capes
 
@@ -199,12 +208,15 @@ Complete collection of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and
 ├── arduino-osepp-lcd-keypad-shield/             # Display/UI
 ├── arduino-multi-function-shield/
 │
+├── arduino-midi-shield/                         # Audio
+│
 ├── arduino-adafruit-powerboost-500-shield/      # Power
 │
 ├── arduino-evil-mad-science-isp-shield/         # Programming
 │
 ├── rpi-poe-hat-2018/                            # Raspberry Pi
 ├── rpi-arpi600/
+├── rpi-gpio-1x2-expansion-board/
 │
 └── bbb-adafruit-proto-cape/                     # BeagleBone
 ```
@@ -277,10 +289,12 @@ Complete collection of Arduino shields, Raspberry Pi HATs, BeagleBone capes, and
 | Pmod ENC | Pmod | $6.99 | Digilent | - |
 | Pmod VGA | Pmod | $8.99 | Amazon (Digilent) | 2020-12-25 |
 | Multi-Function Shield | Arduino | $6.99 | Amazon | 2020-12-25 |
+| MIDI Shield Breakout | Arduino Audio | $12.99 | Amazon (XieQianJin) | 2020-12-03 |
+| GPIO 1 to 2 Expansion Board | Raspberry Pi | $8.99 | Amazon | 2020-04-28 |
 | Proto Cape Kit (×3) | BeagleBone | $29.85 | Adafruit | 2026-01-09 |
 | Cape Stacking Headers (×3) | BeagleBone | $14.85 | Adafruit | 2026-01-09 |
 | PowerBoost 500 Shield | Arduino | $19.95 | Adafruit | 2026-01-09 |
-| **Documented Total** | | **$178.53** | | |
+| **Documented Total** | | **$200.51** | | |
 
 ### Undocumented Equipment
 
@@ -324,7 +338,7 @@ The following items need purchase information added:
 
 ---
 
-*Index Version: 1.0*
-*Last Updated: 2026-01-16*
-*Total Boards Documented: 16 shields + 8 Pmod modules*
-*Scope: Arduino shields, Raspberry Pi HATs, BeagleBone capes, and Digilent Pmod modules for programmable devices*
+*Index Version: 1.1*
+*Last Updated: 2026-01-17*
+*Total Boards Documented: 18 Arduino shields + 3 Raspberry Pi HATs + 1 BeagleBone cape + 8 Pmod modules = 30 total*
+*Scope: Arduino shields (motor, wireless, sensor, display, audio, power, programming, prototyping), Raspberry Pi HATs, BeagleBone capes, and Digilent Pmod modules*

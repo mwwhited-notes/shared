@@ -19,6 +19,7 @@ Personal library of technical books for software design, hardware, electronics, 
 | Event Processing in Action | Opher Etzion, Peter Niblett | Event-driven architecture | Manning | TBD | TBD |
 | Applying Use Cases: A Practical Guide | Geri Schneider, Jason P. Winters | Use case modeling | Addison-Wesley | TBD | TBD |
 | UML: A Beginner's Guide | Jason T. Roff | UML modeling | McGraw-Hill | TBD | TBD |
+| The Definitive ANTLR 4 Reference | Terence Parr | Compiler construction, domain-specific languages, parser generators | 2020-11-10 | $33.58 |
 
 *Referenced in [diagrams-and-patterns/](diagrams-and-patterns/) - Software architecture patterns and templates library*
 
@@ -28,6 +29,7 @@ Personal library of technical books for software design, hardware, electronics, 
 
 | Title | Author/Publisher | Topic | Purchased | Price |
 |-------|------------------|-------|-----------|-------|
+| Bit-Slice Design: Controllers and ALUs | (Author) | Bit-slice architecture, ALU design, controllers | 2020-01-09 | $7.61 (used) |
 | Digital Computer Electronics | Paul Malvino | Computer architecture, SAP-1, digital logic | 2020-01-09 | $29.44 |
 | Computer Architecture: A Quantitative Approach | John L. Hennessy, David A. Patterson | Computer architecture | 2021-12-30 | $98.46 |
 | Verilog by Example: A Concise Introduction for FPGA Design | Blaine C. Readler | FPGA/Verilog programming | 2021-01-30 | $19.95 |

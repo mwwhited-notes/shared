@@ -70,19 +70,26 @@ When the user mentions any of the following, update `ShoppingOnline.md`:
 
 ## File Structure
 
-Main file: `ShoppingOnline.md`
+### Main Documentation
+
+**Primary file:** `ShoppingOnline.md`
 
 ```markdown
 # Online Shopping - Seller Notes
 
-## eBay Sellers
+## Direct Retailer Orders
+
+### Amazon
+- References to archived invoice files by year
+
+### eBay Sellers
 [Quick reference table]
 
 ## Seller Details
 [Expanded entries per seller]
 
-## Online Retailers
-[Non-eBay sources]
+## Other Online Retailers
+[Non-eBay/Amazon sources]
 
 ## Blacklist
 [Sellers to avoid - with reasons]
@@ -90,6 +97,28 @@ Main file: `ShoppingOnline.md`
 ## Notes
 [General shopping tips]
 ```
+
+### Invoice Archiving
+
+Detailed order invoices are organized in `.invoices/` directory by retailer and year:
+
+**Pattern:** `.invoices/{retailer}-{year}.md`
+
+**Examples:**
+- `.invoices/amazon-2019.md` - All Amazon orders from 2019
+- `.invoices/amazon-2020.md` - All Amazon orders from 2020
+- `.invoices/mouser-2021.md` - All Mouser orders from 2021
+
+**Each invoice file contains:**
+- Complete order numbers and dates
+- Seller/platform information
+- Item descriptions with quantities
+- Pricing (item price, shipping, tax, total)
+- Condition (new/used/refurbished)
+- Shipping method and speed
+- Seller notes and feedback
+
+**ShoppingOnline.md references** point to these archive files rather than repeating full order details, keeping the main file focused on seller evaluation and retail strategy.
 
 ---
 
@@ -133,6 +162,52 @@ When new information is received about a known seller:
 
 ---
 
+## Invoice Organization Process
+
+### When to Archive Orders
+
+Create a new invoice archive file (`.invoices/{retailer}-{year}.md`) when:
+
+1. A retailer has accumulated multiple orders (5+) from a single year
+2. ShoppingOnline.md becomes difficult to navigate due to order volume
+3. You want to preserve complete order details while keeping ShoppingOnline.md focused on seller evaluation
+
+### How to Archive Orders
+
+1. **Create new file:** `.invoices/{retailer}-{year}.md`
+2. **Copy full order details** (order numbers, dates, items, pricing, notes) from ShoppingOnline.md
+3. **Update ShoppingOnline.md** to replace order details with a summary table or reference links pointing to the archive file
+4. **Include summary metadata** at the top of archive file:
+   - Retailer name
+   - Year covered
+   - Number of orders
+   - Total spending
+   - Date range
+
+### Archive File Template
+
+```markdown
+# [Retailer] Orders - [Year]
+
+**Summary:**
+- Period: [YYYY-MM-DD] to [YYYY-MM-DD]
+- Total Orders: [#]
+- Total Spent: $[amount]
+
+---
+
+## Order Details
+
+### Order #[number] - [Date]
+- **Items:** [description]
+- **Price:** $[item] + $[shipping] shipping + $[tax] tax = **$[total]**
+- **Condition:** [new/used/refurbished]
+- **Shipping:** [method]
+- **Notes:** [any relevant details]
+```
+
+---
+
 ## Blacklist Criteria
 
 Move seller to Blacklist section if:
@@ -145,5 +220,6 @@ Move seller to Blacklist section if:
 
 ---
 
-*Protocol version: 1.0*
-*Last updated: December 2025*
+*Protocol version: 1.1*
+*Last updated: January 2026*
+*Changes: Added invoice archiving documentation with pattern `.invoices/{retailer}-{year}.md`*

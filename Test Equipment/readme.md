@@ -2,7 +2,7 @@
 
 Complete electronics lab equipment reference with specifications, programming tools, and instrument control documentation. Each device has its own directory with detailed specifications and locally archived documentation.
 
-**Quick Reference:** 40 pieces of lab equipment | $5,887+ total value | [Documentation Protocol](../.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md) | [Missing Documentation](MISSING_DOCUMENTATION.md)
+**Quick Reference:** 41 pieces of lab equipment | $6,015+ total value | [Documentation Protocol](../.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md) | [Missing Documentation](MISSING_DOCUMENTATION.md)
 
 **For consumables, accessories, hand tools, and components, see [tools-and-components.md](../tools-and-components.md)**
 
@@ -29,6 +29,7 @@ Complete electronics lab equipment reference with specifications, programming to
   - [Audio](#audio)
   - [Lab Equipment](#lab-equipment)
   - [Fabrication](#fabrication)
+  - [Safety & Monitoring](#safety--monitoring)
 - [Directory Structure](#directory-structure)
 - [Software Resources](#software-resources)
   - [Instrument Control](#instrument-control)
@@ -57,7 +58,8 @@ Complete electronics lab equipment reference with specifications, programming to
 | Imaging | 2 | Active | Lenovo 510 FHD, Kitchbar KB-700 |
 | Audio | 1 | Active | Pyle PTAU45 |
 | Lab Equipment | 3 | Active | Velleman K8200 3D Printer |
-| **TOTAL** | **40** | **Active** | - |
+| Safety & Monitoring | 1 | Active | RADEX ONE Geiger Counter |
+| **TOTAL** | **41** | **Active** | - |
 
 ---
 
@@ -200,6 +202,12 @@ Complete electronics lab equipment reference with specifications, programming to
 |-------|------|--------------|----------|-----------|
 | [Velleman K8200](velleman-k8200/) | 3D Printer (Duet 3) | 200x200x200mm | xxxxxxx | `velleman-k8200/` |
 
+### Safety & Monitoring
+
+| Model | Type | Detection | Git Hash | Directory |
+|-------|------|-----------|----------|-----------|
+| [RADEX ONE](radex-one/) | Geiger Counter | Gamma, Beta, X-ray | xxxxxxx | `radex-one/` |
+
 ---
 
 ## Directory Structure
@@ -308,11 +316,13 @@ Complete electronics lab equipment reference with specifications, programming to
 │   └── README.md
 ├── greaseweazle-v41/
 │   └── README.md
-└── velleman-k8200/
-    ├── README.md
-    ├── K8200_Assembly_Manual.pdf
-    ├── K8200_User_Manual.pdf
-    └── Duet3_MB_6HC_Schematic.pdf
+├── velleman-k8200/
+│   ├── README.md
+│   ├── K8200_Assembly_Manual.pdf
+│   ├── K8200_User_Manual.pdf
+│   └── Duet3_MB_6HC_Schematic.pdf
+└── radex-one/
+    └── README.md
 ```
 
 ---
@@ -391,7 +401,8 @@ Complete electronics lab equipment reference with specifications, programming to
 | Velleman K8055 (×3) | Data Acquisition | - | Micro Center | - |
 | Pyle PTAU45 | Audio Amplifier | $71.99 | Amazon | 2013-10-11 |
 | ExGizmo UV EPROM Eraser | Lab Equipment | $19.88 | Amazon (ExGizmo) | 2020-01-30 |
-| **Documented Total** | | **$5,887.20+** | | |
+| RADEX ONE | Safety & Monitoring | $127.95 | Amazon (Quarta-Rad) | 2020-09-15 |
+| **Documented Total** | | **$6,015.15+** | | |
 
 ---
 
@@ -416,7 +427,7 @@ Complete electronics lab equipment reference with specifications, programming to
 
 ---
 
-*Index Version: 1.0*
-*Last Updated: 2026-01-16*
-*Total Equipment: 40 pieces | $5,887.20+ documented*
-*Scope: Oscilloscopes, signal generators, multimeters, power supplies, programmers, protocol tools, data acquisition, microscopes, thermal imaging, soldering equipment, and specialty lab equipment*
+*Index Version: 1.1*
+*Last Updated: 2026-01-17*
+*Total Equipment: 41 pieces | $6,015.15+ documented*
+*Scope: Oscilloscopes, signal generators, multimeters, power supplies, programmers, protocol tools, data acquisition, microscopes, thermal imaging, soldering equipment, safety & monitoring, and specialty lab equipment*

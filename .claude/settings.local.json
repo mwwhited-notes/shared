@@ -58,7 +58,8 @@
       "Bash(__NEW_LINE_0a128d2d18bbeeb9__ du -sh /current/src/projects/synchronized-telemetry-streaming-research/ echo \"\" ls -lh /current/src/projects/synchronized-telemetry-streaming-research/documents/)",
       "Bash(__NEW_LINE_c8a5c57c2d0be8a9__ echo \"FINAL FILE VERIFICATION\")",
       "Bash(if [ -f \"/current/src/$dir/README.md\" ])",
-      "Bash(else)"
+      "Bash(else)",
+      "Bash(pdftotext:*)"
     ]
   }
 }
