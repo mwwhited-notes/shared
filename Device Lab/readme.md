@@ -80,7 +80,7 @@ NAS devices for home lab, media server, and backup solutions.
 
 | Device | Model | Capacity | Status | Hackability | Git Hash | Project Ideas |
 |--------|-------|----------|--------|-------------|----------|---------------|
-| [WD My Cloud PR4100](network-storage/wd-mycloud-pr4100/) | PR4100 | TBD | TBD | TBD | xxxxxxx | Media server, Docker host |
+| [WD My Cloud PR4100](network-storage/wd-mycloud-pr4100/) | PR4100 + WD Red Plus 12TB | 12TB | Active | TBD | xxxxxxx | Media server, Docker host |
 | [WD MyBookLive](network-storage/wd-mybooklive/) | TBD | TBD | TBD | TBD | xxxxxxx | Backup, archive |
 
 ---
@@ -125,7 +125,9 @@ Routers, switches, and access points.
 | ipolex SFP+ to RJ45 | 10GBase-T transceiver | 2 | Active | xxxxxxx | For switch interconnect |
 | TP-Link TL-SG1005D | 5-port Gigabit | 1 | TBD | xxxxxxx | Unmanaged |
 | TP-Link TL-SG1008D | 8-port Gigabit | 1 | TBD | xxxxxxx | Unmanaged |
-| D-Link DGS-1100-08 | 8-port Gigabit | 1 | TBD | xxxxxxx | Smart managed |
+| D-Link DGS-1100-08 | 8-port Gigabit | 1 | TBD | xxxxxxx | Smart managed, 2019-01-03, $33.39 |
+| TP-Link AC750 TL-WR902AC | Wireless portable travel router | 1 | Shelved | xxxxxxx | 2020-01-30, $34.97 |
+| WiFi Card AC 1730Mbps | 802.11ac module | 1 | TBD | xxxxxxx | 2019-05-30, $38.99 |
 
 *See [Network Diagram](../network-diagram.md) for topology and IP assignments.*
 
@@ -154,6 +156,11 @@ Printers, media devices, and anything that doesn't fit the categories above.
 | JCHICI USB 2.0 Extender | USB over Ethernet | Active | xxxxxxx | 50m, 4 ports, $29.99 Jan 2024 |
 | InnoView Portable Monitor | 14" 4K Touch, USB-C | Active | xxxxxxx | $299.99 Jan 2024 |
 | XGODY X1 Projector | 1080p, Android, WiFi/BT | Active | xxxxxxx | $179.00 Aug 2023 |
+| Sony BDPS1700 Blu-Ray Player | Streaming player (Refurbished) | Shelved | xxxxxxx | 2018-01-15, $39.99 |
+| Wyze Cam Pan 1080p | Smart home camera (×2) | Active | xxxxxxx | 2018-10-19 & 2018-10-25, $37.98 each |
+| Esky Barcode Scanner | USB Laser Scanner with Stand | Shelved | xxxxxxx | 2018-01-22, $16.99 |
+| Gibbon Mounts Monitor Arm | Gas spring desk mount VESA 75/100 | Active | xxxxxxx | 2020-12-29, $59.99 |
+| TOTU 13-in-1 USB-C Hub | Docking with Ethernet, HDMI, PD | Active | xxxxxxx | 2020-03-11, $79.99 |
 
 ### SBC Cluster
 

@@ -10,8 +10,8 @@ Personal library of technical books for software design, hardware, electronics, 
 |-------|--------|-------|-----------|-----------|-------|
 | Design Patterns: Elements of Reusable Object-Oriented Software | Gang of Four (Gamma, Helm, Johnson, Vlissides) | Design patterns (GoF) | Addison-Wesley | TBD | TBD |
 | The Pragmatic Programmer: From Journeyman to Master | Andrew Hunt, David Thomas | Software craftsmanship | Addison-Wesley | TBD | TBD |
-| Building Microservices: Designing Fine-Grained Systems | Sam Newman | Microservices architecture | O'Reilly | TBD | TBD |
-| SOA Patterns | Arnon Rotem-Gal-Oz | Service-oriented architecture | Manning | TBD | TBD |
+| Building Microservices: Designing Fine-Grained Systems | Sam Newman | Microservices architecture | O'Reilly | 2018-10-25 | $39.49 |
+| SOA Patterns | Arnon Rotem-Gal-Oz | Service-oriented architecture | Manning | 2018-06-24 | $17.78 (used) |
 | Service Design Patterns: Fundamental Design Solutions for SOAP/WSDL and RESTful Web Services | Robert Daigneau | Web service patterns | Addison-Wesley | TBD | TBD |
 | Dependency Injection in .NET | Mark Seemann | DI/IoC patterns | Manning | TBD | TBD |
 | CQRS, The example | Mark Nijhof | CQRS pattern | Self-published | TBD | TBD |
@@ -22,6 +22,23 @@ Personal library of technical books for software design, hardware, electronics, 
 | The Definitive ANTLR 4 Reference | Terence Parr | Compiler construction, domain-specific languages, parser generators | 2020-11-10 | $33.58 |
 
 *Referenced in [diagrams-and-patterns/](diagrams-and-patterns/) - Software architecture patterns and templates library*
+
+---
+
+## Programming & Languages
+
+| Title | Author | Topic | Publisher | Purchased | Price |
+|-------|--------|-------|-----------|-----------|-------|
+| Exam Ref 70-483 Programming in C# (2nd Edition) | Microsoft | C# language, certification prep | Microsoft Press | 2018-12-09 | $32.63 |
+| Masterminds of Programming: Conversations with the Creators of Major Programming Languages | (Editors) | Language design, history | O'Reilly | 2018-07-11 | $14.92 (used) |
+
+---
+
+## Security & Certifications
+
+| Title | Author/Publisher | Topic | Purchased | Price |
+|-------|------------------|-------|-----------|-------|
+| CEH v10: EC-Council Certified Ethical Hacker Complete Training Guide with Practice Questions & Labs (Exam 312-50) | (EC-Council) | Ethical hacking, security certification | 2018-12-09 | $33.16 |
 
 ---
 

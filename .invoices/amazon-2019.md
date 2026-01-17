@@ -12,12 +12,6 @@ Networking equipment.
 |------|--------|-------|
 | D-Link 8-Port EasySmart Gigabit Ethernet Switch (DGS-1100-08) | Amazon.com | $33.39 |
 
-- **Subtotal:** $33.39
-- **Shipping:** $0.00 (Prime)
-- **Tax:** $2.42
-- **Total:** $35.81
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Network switch for home lab.
 
 ---
@@ -36,12 +30,6 @@ Audio connectors, cables, and project boxes.
 | Xiaoyztan 2 Pin 5mm Pitch PCB Mount Screw Terminal Block Connector, 50 Pcs | Brisky Top | $8.99 |
 | MMNNE 4Pack 8inch HDMI Male to Male Cable | Jasavdio | $10.29 |
 
-- **Subtotal:** $61.03
-- **Shipping:** $0.00 (Prime)
-- **Tax:** $0.00
-- **Total:** $76.01
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Audio connectors, USB cables, project enclosures, PCB boards, and HDMI cables for prototyping.
 
 ---
@@ -58,12 +46,6 @@ Audio adapters, soldering equipment, and accessories.
 | CERRXIAN 3.5mm 4 Pole Female Jack Stereo Audio Video to 4 Screw Terminal (2-Pack) | Lemeng | $6.79 |
 | Cerrxian 3.5mm 4 Pole Stereo TRRS Audio Video Male to 4 Screw Terminal (2-Pack) | Lemeng | $6.88 |
 
-- **Subtotal:** $55.13
-- **Shipping:** $0.00 (Prime)
-- **Tax:** $0.00
-- **Total:** $55.13
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Mixed order for audio equipment, soldering mat, and remote control for Zoom recorder.
 
 ---
@@ -79,14 +61,7 @@ Raspberry Pi expansion board, electronics components, and power supply.
 | Ltvystore Zener Diodes Kit, 1N4728~1N4737 1W, 10 Values Each 10PCS | Ltvystore | $9.99 |
 | 48V 1A 2V 3A AC DC Adapter 48W 96W 144W Switching Power Supply | SZ-Magnetbest | $15.62 |
 
-- **Subtotal:** $74.09
-- **Shipping:** $0.00 (Prime)
 - **Promo:** -$0.85 (Coupon)
-- **Tax:** $2.28
-- **Rewards Points:** -$50.00 (Amazon gift card balance)
-- **Total:** $25.52
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Mix of cat care, Raspberry Pi expansion, and electronics components. Cat collar not project-related.
 
 ---
@@ -102,12 +77,6 @@ Raspberry Pi and Arduino development components.
 | HonsCreat USBasp AVR Programming Programmer Device for ATMEL | Jiaheyi | $8.50 |
 | Diymore USB to Serial ESP8266 ESP-01 Adapter Wireless ESP8266 CH340 WiFi Module | diymore | $8.28 |
 
-- **Subtotal:** $68.07
-- **Shipping:** $0.00 (Prime)
-- **Tax:** $0.00
-- **Total:** $68.07
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Core development platform (Pi 3 B+), microcontroller ICs, USBasp programmer, and ESP8266 WiFi module.
 
 ---
@@ -120,12 +89,6 @@ Crystal oscillator assortment.
 |------|--------|-------|
 | 100Pcs 10 Value Crystal Resonators Oscillator Assortment Kit Assorted Set | Zovfam | $11.99 |
 
-- **Subtotal:** $11.99
-- **Shipping:** $0.00 (Prime)
-- **Tax:** $0.00
-- **Total:** $11.99
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Crystal oscillator assortment for prototyping (multiple frequencies: 4MHz, 6MHz, 8MHz, 11.0592MHz, 12MHz, 16MHz, 20MHz, 22.1184MHz, 24MHz, 48MHz).
 
 ---
@@ -140,12 +103,6 @@ Memory card adapter, breadboard, and insertion/extraction tool.
 | Jonard AR-910672 Contact Insertion-Extraction Tool | Amazon.com | $5.65 |
 | Elegoo EL-CP-003 3pcs MB-102 Breadboard 830 Point Solderless Prototype PCB Board Kit | ELEGOO Official US | $8.99 |
 
-- **Subtotal:** $29.62
-- **Shipping:** $0.00 (Prime)
-- **Tax:** $0.41
-- **Total:** $30.03
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Memory card adapter, breadboards for prototyping, and contact tool for DIP work.
 
 ---
@@ -161,12 +118,6 @@ Audio connectors and headers for Arduino.
 | 60pcs Male and Female Pin Headers for Arduino Connector Prototype Shield | SimpleBreeze | $8.99 |
 | DZYDZR 5pcs 5.5mm x 2.1mm Y Splitter Cable 1 Female to 2 Male Splitter 2 Way DC Power Cable | Store 1 + 1 | $8.66 |
 
-- **Subtotal:** $30.63
-- **Shipping:** $0.00 (Prime)
-- **Tax:** $0.00
-- **Total:** $30.63
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Audio connectors, DC barrel jacks, Arduino headers, and power splitter cables.
 
 ---
@@ -181,12 +132,6 @@ Audio cable extensions and adapters.
 | Ancable 2-Pack 6-Feet 2.5mm TRS Stereo Male to Female Audio Extension Cable | Ancable Direct | $6.99 |
 | USB C to HDMI Adapter (4K@60Hz) | MARSTECH | $15.99 |
 
-- **Subtotal:** $29.77
-- **Shipping:** $0.00 (Prime)
-- **Tax:** $0.51
-- **Total:** $37.27
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Audio extension cables for cameras and devices, USB-C to HDMI adapter.
 
 ---
@@ -204,13 +149,7 @@ Audio equipment and USB charging hub.
 | Perixx PERIBOARD-409P Mini Keyboard - PS2 Interface | Perixx USA | $17.99 |
 | VicTsing VGA To HDMI Converter Adapter, Output 1080P | VicTsingDirect | $15.99 |
 
-- **Subtotal:** $77.47
-- **Shipping:** $0.00 (Prime)
 - **Promo:** -$1.00 (Coupon)
-- **Tax:** $1.62
-- **Total:** $78.09
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Audio converters and optical cables for home theater setup, USB charging hub, PS/2 keyboard, and VGA to HDMI converter.
 
 ---
@@ -226,14 +165,7 @@ Memory card socket, storage adapters, and cables.
 | C2G 16899 USB To DB25 Parallel Printer Adapter Cable, 6 Feet | Amazon.com | $8.98 |
 | TechIntheBox SATA/PATA/IDE Drive to USB 2.0 Adapter Converter Cable | TechIntheBox | $10.99 |
 
-- **Subtotal:** $36.09
-- **Shipping:** $15.96 (Standard)
 - **Free Shipping:** -$15.96 (Promotion)
-- **Tax:** $1.82
-- **Rewards Points:** -$10.44 (Amazon gift card balance)
-- **Total:** $27.47
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Memory card sockets, storage device adapters (IDE/SATA/CF to USB), and parallel printer adapter.
 
 ---
@@ -247,12 +179,6 @@ Static RAM chips for retro computing.
 | Major Brands 6264LP-10 Static RAM, Low Profile, 64k-bit, 8k x 8 Configuration, 100ns, 28-Pin DIP, 5V (Pack of 2) | Amazon.com | $5.90 |
 | Major Brands 6264LP-10 Static RAM, Low Profile, 64k-bit, 8k x 8 Configuration, 100ns, 28-Pin DIP, 5V (Pack of 2) | Amazon.com | $5.90 |
 
-- **Subtotal:** $11.80
-- **Shipping:** $0.00 (Prime)
-- **Tax:** $0.88
-- **Total:** $12.68
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** 6264 static RAM chips for vintage computer projects. Ordered two packs (4 chips total).
 
 ---
@@ -265,12 +191,6 @@ USB game controllers.
 |------|--------|-------|
 | XCSOURCE USB Game Controllers | XCSOURCE | $11.59 |
 
-- **Subtotal:** $11.59
-- **Shipping:** $0.00 (Prime)
-- **Tax:** $0.00
-- **Total:** $11.59
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** USB game controllers for retro computing projects or emulation.
 
 ---
@@ -284,12 +204,6 @@ SSD storage and networking equipment.
 | Samsung 860 QVO 2TB SSD Internal Solid State Drive | Amazon.com | $244.99 |
 | WiFi Card AC 1730Mbps | Amazon.com | $38.99 |
 
-- **Subtotal:** $283.98
-- **Shipping:** $0.00 (Prime)
-- **Tax:** $0.00
-- **Total:** $283.98
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** High-capacity SSD for storage expansion, AC WiFi card upgrade for networking.
 
 ---
@@ -305,12 +219,6 @@ Video converters and workshop supplies.
 | E-SDS 4-Port VGA Switch Audio Switcher Box HDDB15+3.5mm PC Sharing | secure4u | $21.99 |
 | Andoer GBS8200 1 Channel Relay Module CGA/EGA/YUV/RGB to VGA Arcade Converter | KIMTON | $21.99 |
 
-- **Subtotal:** $67.93
-- **Shipping:** $0.00
-- **Tax:** $0.00
-- **Total:** $67.93
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Retro video conversion equipment and workshop organizer. VGA switcher and arcade converter for vintage systems.
 
 ---
@@ -324,14 +232,6 @@ Storage expansion and garden equipment.
 | Ziyituod 6 Port SATA Card PCIe SATA III Controller to 6GB/s for Desktop/NAS | Anboer | $37.99 |
 | Delxo 100FT Expandable Garden Hose with 9-Function High-Pressure Spray Nozzle | Delxo | $34.99 |
 
-- **Subtotal:** $72.98
-- **Coupons:** -$3.80
-- **Shipping:** $0.00
-- **Gift Card:** -$8.45
-- **Tax:** $0.00
-- **Total:** $60.73
-- **Status:** Delivered
-- **Would Buy Again:** Partial (SATA card yes, garden hose not tech related)
 - **Notes:** Storage expansion card for NAS/server. Includes unrelated garden equipment.
 
 ---
@@ -342,13 +242,6 @@ Storage expansion and garden equipment.
 |------|--------|-------|
 | SDTC Tech 4 Pin IDE Molex to 15 Pin SATA Power Splitter Cable 18AWG 2-pack | SDTC Tech | $6.99 |
 
-- **Subtotal:** $20.97
-- **Shipping:** $0.00
-- **Gift Card:** -$8.99
-- **Tax:** $0.00
-- **Total:** $11.98
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** IDE/Molex to SATA power adapter cables. Paid with gift card balance.
 
 ---
@@ -362,13 +255,7 @@ Storage hardware mounting kits.
 | Sabrent 3.5" to x2 SSD/2.5" HDD Mounting Kit SATA+Power Cables (BK-HDCC) | Amazon.com | $9.79 |
 | Rosewill RSV 4 x 3.5" HDD Cage RASA-11001 | Amazon.com | $14.99 |
 
-- **Subtotal:** $24.78
 - **Promo:** -$2.48 (Amazon Move promo)
-- **Shipping:** $0.00
-- **Tax:** $1.67
-- **Total:** $23.97
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Storage mounting hardware for desktop system expansion.
 
 ---
@@ -386,13 +273,7 @@ Storage hardware and miscellaneous.
 | Hymeca 2-Pack SSD 2.5" to 3.5" Mounting Bracket Adapter | Hymeca | $5.99 |
 | Super Star 50V Stabilized Cream Peroxide Developer 32 oz | Amazing Pride | $10.84 |
 
-- **Subtotal:** $61.94
 - **Promo:** -$2.91 (Amazon Move promo)
-- **Shipping:** $0.00
-- **Tax:** $3.17
-- **Total:** $62.20
-- **Status:** Delivered
-- **Would Buy Again:** Partial (storage items yes, hair product not relevant)
 - **Notes:** Storage hardware order with duplicate SATA cables and power splitter ordered. Includes unrelated hair product.
 
 ---
@@ -407,12 +288,6 @@ Sewing and electronics repair supplies.
 | YEQIN Large Metal Darning/Free Motion Sewing Machine Presser Foot #4021L | YEQIN US | $5.19 |
 | GANGZHIBAO 90pcs Electronics Repair Tool Kit Professional Precision Screwdriver | icicoo | $21.99 |
 
-- **Subtotal:** $33.17
-- **Shipping:** $0.00 (Prime)
-- **Tax:** $2.49
-- **Total:** $35.66
-- **Status:** Delivered
-- **Would Buy Again:** Yes
 - **Notes:** Mixed order with sewing supplies and electronics repair toolkit.
 
 ---

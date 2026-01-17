@@ -465,6 +465,116 @@ Consumables, hand tools, and miscellaneous supplies. For major equipment, see [T
 
 ---
 
+## 2018-2020 Amazon Orders (Components & Consumables)
+
+### Connectors & Networking (2018-2020)
+
+| Item | Date | Price | Qty | Notes |
+|------|------|-------|-----|-------|
+| RJ50 10p10c Modular Connector Crimp (10 PCS) | 2018-01-26 | $16.95 | 10 | Network termination |
+| RJ12 6P6C Modular Plugs Flat (50 Pack) | 2018-01-26 | $5.12 | 50 | Telephone/network connectors |
+| Zoostliss RJ11/RJ12/RJ45 Network Crimper Tool | 2018-01-26 | $14.89 | 1 | Crimping tool |
+| RJ45 Coupler CAT5E Female-Female (10 pack) | 2018-02-20 | $11.99 | 10 | Network adapter |
+| D-SUB DB Male Female Solder Type HDB15 (10 pairs) | 2020-02-02 | $8.46 | 10 pairs | Serial connectors |
+| ICC 12 Port Blank Keystone Patch Panel | 2020-02-02 | $16.41 | 1 | Networking infrastructure |
+| Cat5e Ethernet Keystone Jack RJ-45 45-Degree (20-pack) | 2020-11-03 | $16.95 | 20 | Network connectors |
+| CableCreation HDMI 2.0 Extension 3ft Right Angle 270° | 2020-01-12 | $6.99 | 1 | Video cable |
+| 7-Pack HDMI Angled Adapter (90/270 Degree) | 2020-01-12 | $8.99 | 7 | HDMI adapters |
+| Nintendo NES Extension Cable Controller 6ft (2-pack) | 2020-01-12 | $7.99 | 2 | Retro gaming cable |
+| SD2Vita 5.0 Memory Card Adapter PS Vita | 2020-11-03 | $5.95 | 1 | Memory adapter |
+
+### Sensors & Active Components (2018-2020)
+
+| Item | Date | Price | Qty | Notes |
+|------|------|-------|-----|-------|
+| W27E257-12 DIP-28 IC Chips (5pcs) | 2020-01-21 | $9.99 | 5 | Vintage memory ICs |
+| Hall Effect Sensor (A3144/A3144E, 20-pack) | 2020-05-18 | $7.99 | 20 | Proximity sensor |
+| DS18B20 Digital Temperature Sensor (10-pack, TO-92) | 2020-12-29 | $7.99 | 10 | Temperature sensor |
+| Guitar Potentiometers (A250K split shaft, 10-pack) | 2020-12-04 | $6.99 | 10 | Audio potentiometers |
+| Zener Diodes Kit (1N4728~1N4737, 1W, 10 values) | 2019-01-16 | $9.99 | 100 | Voltage regulation diodes |
+
+### Headers & Prototyping (2018-2020)
+
+| Item | Date | Price | Qty | Notes |
+|------|------|-------|-----|-------|
+| 60pcs Male and Female Pin Headers for Arduino | 2019-02-10 | $8.99 | 60 | Prototyping headers |
+| Universal 40-Pin ZIF DIP IC Test Socket (2-pack) | 2020-12-03 | $8.99 | 2 | Test socket |
+| 40-Pin 2.54mm Dual Row Straight Female Header (50pcs) | 2020-02-08 | $10.39 | 50 | Header strips |
+| Red DIP Switch Piano-Dip 1-8 Positions (10pcs) | 2020-02-08 | $10.64 | 10 | DIP switches |
+| DIP Switches 8 Position Slide Style (2 packs) | 2020-02-08 | $11.78 ea | 40 | DIP switches |
+| 40-Pin 2.54mm Dual Row Right Angle PCB Male Headers (10pcs) | 2020-03-10 | $7.59 | 10 | Right angle headers |
+| 8x8 Dot Matrix LED CL1588BS (16-pin, 5pcs) | 2020-03-10 | $8.99 | 5 | LED matrix displays |
+| Raspberry Pi GPIO 1 to 2 Expansion Board | 2020-04-28 | $8.99 | 1 | Pi expansion/doubler |
+| Multi-Function Shield with Buzzer & LM35 for Arduino | 2020-12-25 | $6.99 | 1 | Arduino shield |
+| MIDI Shield Breakout Board for Arduino UNO | 2020-12-03 | $12.99 | 1 | MIDI shield |
+| HiLetgo 2.0 ADK Mini USB Host Shield for Arduino | 2018-01-26 | $10.49 | 1 | Arduino shield |
+
+### Audio & Video Converters (2018-2020)
+
+| Item | Date | Price | Qty | Notes |
+|------|------|-------|-----|-------|
+| PROZOR Digital to Analog Converter DAC (Toslink/SPDIF) | 2019-03-10 | $12.99 | 1 | Audio converter |
+| LiNKFOR Digital Optical Audio 1x3 Splitter | 2019-03-10 | $16.95 | 1 | Optical splitter |
+| Ailkin 3.1A 3-Port USB Adapter Charging Station | 2019-03-10 | $7.99 | 1 | USB power hub |
+| Perixx PERIBOARD-409P Mini Keyboard PS/2 | 2019-03-10 | $17.99 | 1 | PS/2 keyboard |
+| VicTsing VGA to HDMI Converter (1080P) | 2019-03-10 | $15.99 | 1 | Video converter |
+| SLLEA RCA Composite AV S-Video to VGA Converter | 2019-06-10 | $13.99 | 1 | Video converter |
+| E-SDS 4-Port VGA Switch Audio Switcher Box | 2019-06-10 | $21.99 | 1 | Video switcher |
+| Andoer GBS8200 Relay Module Arcade Converter | 2019-06-10 | $21.99 | 1 | Arcade video converter |
+| USB C to HDMI Adapter 4K@60Hz | 2019-02-22 | $15.99 | 1 | USB-C adapter |
+| DisplayPort to DVI Adapter Male to Male 6ft | 2020-03-11 | $7.99 | 1 | Video adapter |
+| DisplayPort Cable 6.6ft DP 1.2 (4K@60Hz) | 2020-03-11 | $11.99 | 1 | DisplayPort cable |
+| MMNNE HDMI Male to Male Cable 8inch (4-pack) | 2019-01-08 | $10.29 | 4 | HDMI cables |
+
+### Tools & Supplies (2018-2020)
+
+| Item | Date | Price | Qty | Notes |
+|------|------|-------|-----|-------|
+| Hosa D5S-6 CAIG DeoxIT 5% Contact Cleaner Spray 5oz | 2020-01-09 | $14.70 | 1 | Contact cleaner/deoxidizer |
+| GANGZHIBAO 90pcs Electronics Repair Tool Kit | 2019-10-05 | $21.99 | 1 | Repair toolkit |
+| Nickel Plated Nibbling Tool | 2020-03-10 | $13.99 | 1 | Sheet metal tool |
+| SG Tool Aid SGT18600 Crimping Tool (Open Barrel) | 2020-04-22 | $26.23 | 1 | Crimping tool |
+| 100-Pack 2.8mm Gold Female Spade Crimp Terminals | 2020-04-22 | $6.99 | 100 | Crimp terminals |
+| Qibaok Crimping Tool Kit Ratcheting (1550pcs Dupont + 760pcs JST) | 2020-03-10 | $27.99 | 1 | Large crimping kit |
+| 100-Pack Spring Test Probe Pogo Pins (P75-E3, 1.5mm) | 2020-03-19 | $6.49 | 100 | Test probes |
+| 1080pcs M2/M3/M4 Socket Head Cap Screws/Bolts/Nuts/Washers | 2020-03-30 | $24.99 | 1 | Fastener assortment |
+| 100pcs Write-on Ethernet Wire Zip Ties with Tags | 2020-04-04 | $4.99 | 100 | Cable management |
+| AC 250V 5A SPDT Momentary Hinge Roller Micro Switches (10-pack) | 2020-04-04 | $7.99 | 10 | Micro switches |
+| Kapton Tape High Temperature 2" x 36yd | 2020-04-14 | $9.99 | 1 | Kapton tape |
+| 1940pcs JST-SM 2.5mm Connector Kit (2/3/4/5/6/7/8/9 Pin) | 2020-04-14 | $21.99 | 1 | JST connector assortment |
+| 195pcs M5 Stainless Steel Hex Button Head Bolts & Nuts | 2020-04-14 | $13.99 | 1 | Fastener kit |
+| 90pcs M3/M4/M5 Aluminum Extrusion T-Nut Fastener Kit | 2020-04-14 | $10.91 | 1 | Aluminum extrusion nuts |
+| 160pcs Mini Fuse Assortment (5-35 AMP) | 2020-04-17 | $11.29 | 160 | Fuse assortment |
+| AC 1A 125V 3Pin SPDT Limit Micro Switch (25-pack) | 2020-03-11 | $4.99 | 25 | Micro switches |
+| Legrand Wiremold Cord Cover Ivory (5ft) | 2020-12-29 | $10.95 | 1 | Cable protection |
+| iPhone Charger Lightning Cable 5-pack | 2020-03-11 | $12.99 | 5 | Lightning cables |
+
+### Storage Adapters & Memory (2018-2020)
+
+| Item | Date | Price | Qty | Notes |
+|------|------|-------|-----|-------|
+| Sandisk Extreme CompactFlash Memory Card 64GB | 2018-03-04 | $44.95 | 1 | Memory card |
+| SanDisk Extreme Pro SDXC UHS-I Memory Card 64GB | 2018-03-04 | $35.50 | 1 | Memory card |
+| SanDisk Ultra 128GB SDXC UHS-I Memory Card | 2018-10-12 | $29.98 | 1 | Memory card |
+| Kingston Canvas Select 64GB microSDHC Card | 2018-10-19 | $11.99 | 1 | Memory card |
+| Kingston Canvas Select 64GB microSDHC Class 10 | 2018-10-25 | $11.99 | 1 | Memory card |
+| SAMSUNG EVO Select 128GB MicroSDXC | 2020-11-03 | $19.99 | 1 | Memory card |
+| DSLRKIT 2.5" SSD to 3.5" SATA HDD Adapter | 2020-01-25 | $9.95 | 1 | HDD adapter |
+| TF/Micro SD to Micro SD Extension Cable 15cm | 2020-11-03 | $7.98 | 1 | SD extension |
+
+### WiFi/IoT & USB (2018-2020)
+
+| Item | Date | Price | Qty | Notes |
+|------|------|-------|-----|-------|
+| HonsCreat USBasp AVR Programming Device for ATMEL | 2019-01-28 | $8.50 | 1 | USB programmer |
+| Stemedu USB to ESP8266 WiFi Programmer CH340G | 2020-02-02 | $7.99 | 1 | WiFi programmer |
+| Aideepen ESP8266 Serial WiFi ESP-01 Adapter Module | 2020-02-02 | $5.59 | 1 | WiFi adapter |
+| USB MIDI Cable Converter 2.0/3.0 6.5ft | 2020-12-03 | $10.99 | 1 | MIDI cable |
+| 5 Pin DIN MIDI Cable 2-pack 10ft | 2020-12-03 | $10.49 | 2 | MIDI cables |
+| TOTU USB-C Hub 13-in-1 (Ethernet, HDMI, PD, SD/TF) | 2020-03-11 | $79.99 | 1 | USB-C docking hub |
+
+---
+
 ## Recent Purchases
 
 ### Amazon Order 111-8911585-7405822 (2024-03-17)
