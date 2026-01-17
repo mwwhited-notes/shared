@@ -19,7 +19,7 @@ This is a collection of personal notes on various design/architectural patterns,
 - [Object Constraint Language (OCL)](https://www.omg.org/spec/OCL/2.4/PDF) - OMG specification
 
 ### Books
-See [books.md](../books.md#software-design--architecture) for complete book inventory including:
+See [Personal/books.md](../Personal/books.md#software-design--architecture) for complete book inventory including:
 - Design Patterns: Elements of Reusable Object-Oriented Software (Gang of Four)
 - The Pragmatic Programmer: From Journeyman to Master
 - Building Microservices: Designing Fine-Grained Systems

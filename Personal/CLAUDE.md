@@ -6,6 +6,8 @@ This folder contains personal collections and purchase history documentation, de
 
 This repository organizes personal collections of equipment, gear, and materials across multiple categories with comprehensive documentation, cross-references, and purchase history.
 
+**Primary Workflow:** Invoice processing and extraction to collections happens in this folder. All purchase history from Amazon, AliExpress, and other retailers is maintained in `.invoices/` with items extracted to appropriate equipment collections.
+
 ## Collections
 
 ### Equipment Inventories
@@ -271,6 +273,61 @@ Document any issues discovered:
 4. **Add new items** - Use the appropriate protocol in `.claude/protocols/`
 5. **Update indices** - Keep collection README.md files current
 
+## Invoice Processing Workflow
+
+All invoice and purchase history processing happens in this Personal folder:
+
+### Process Flow
+
+1. **Archive Invoice** - Add new purchase receipt to `.invoices/{retailer}-{year}.md`
+   - Record order date, items, quantity, price, seller
+   - Note any quality issues (counterfeits, damage, defects)
+   - Track shipping status and delivery condition
+
+2. **Extract Items** - Move individual items to appropriate collections
+   - Add item to correct collection directory
+   - Create README.md with specifications
+   - Link back to invoice source
+
+3. **Update Collections** - Maintain collection README.md indices
+   - Add entry to collection table
+   - Update status (Active/Shelved/Project)
+   - Add cross-reference to invoice
+
+4. **Document Sellers** - Update seller tracking
+   - Add/update seller notes in root ShoppingOnline.md
+   - Track packaging quality and shipping speed
+   - Note any problematic sellers
+
+### Archive Format
+
+Invoices follow standardized format in `.invoices/`:
+
+```markdown
+# [Retailer] Orders - [Year]
+
+**Summary:**
+- Period: YYYY-MM-DD to YYYY-MM-DD
+- Total Orders: [#]
+- Total Spent: $[amount]
+
+---
+
+### Order #[number] - [Date]
+- **Items:** [description]
+- **Price:** $[item] + $[shipping] + $[tax] = $[total]
+- **Condition:** [new/used/refurbished]
+- **Notes:** [any issues or observations]
+```
+
+### Quality Alerts
+
+Document any issues discovered:
+- Suspected counterfeits
+- Quality defects or damage
+- Shipping delays
+- Seller reliability problems
+
 ## Customization
 
 This structure can be adapted for different purposes:
@@ -278,6 +335,7 @@ This structure can be adapted for different purposes:
 - Add new collections following existing protocols
 - Extend protocols with additional fields
 - Customize status/condition labels per collection
+- Modify invoice archive structure if needed
 
 ---
 

@@ -28,12 +28,34 @@ Personal equipment inventory and purchase history task tracking.
 
 ## Active Tasks
 
-### Invoice Processing
+### Invoice Processing (Primary Workflow)
 
-- [ ] Verify all invoices have cross-references to collections
-- [ ] Process Amazon invoices 2016 and earlier
-- [ ] Process AliExpress orders 2022-2026 (currently archived)
-- [ ] Add quality notes for problematic purchases
+**Amazon Orders:**
+- [x] Process Amazon 2017-2020 invoices
+- [ ] Process Amazon 2016 invoices - extract items to collections
+- [ ] Process Amazon 2015 invoices - extract items to collections
+- [ ] Process Amazon 2014 invoices - extract items to collections
+- [ ] Process Amazon 2013 invoices - extract items to collections
+- [ ] Process Amazon 2012 invoices - extract items to collections
+- [ ] Process Amazon 2011 invoices - extract items to collections
+- [ ] Process Amazon 2010 invoices - extract items to collections
+- [ ] Process Amazon 2009 invoices - extract items to collections
+- [ ] Process Amazon 2008 invoices - extract items to collections
+- [ ] Process Amazon 2007 invoices - extract items to collections
+- [ ] Process Amazon 2006 invoices - extract items to collections
+- [ ] Process Amazon 2005 invoices - extract items to collections
+- [ ] Process Amazon 2004 invoices - extract items to collections
+
+**AliExpress Orders:**
+- [x] Archive AliExpress 2022-2026 invoices in `.invoices/`
+- [ ] Extract AliExpress 2022-2026 items to collections
+- [ ] Add quality notes for known issues (counterfeits, defects)
+- [ ] Complete itemization for incomplete orders
+
+**Other Retailers:**
+- [ ] Process Mouser orders if archived
+- [ ] Process eBay seller tracking updates
+- [ ] Add any other retailer orders to archive
 
 ### Documentation
 
@@ -41,6 +63,7 @@ Personal equipment inventory and purchase history task tracking.
 - [ ] Update cross-references between related collections
 - [ ] Document equipment condition and service history
 - [ ] Add missing specifications to inventory items
+- [ ] Update ShoppingOnline.md seller notes from invoices
 
 ### Equipment Organization
 
@@ -48,6 +71,7 @@ Personal equipment inventory and purchase history task tracking.
 - [ ] Check for items missing from collections
 - [ ] Update status tracking (Active/Shelved/Project/Parts)
 - [ ] Identify equipment needing repair or maintenance
+- [ ] Cross-reference new items to purchase invoices
 
 ---
 

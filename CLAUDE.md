@@ -58,7 +58,6 @@ This is Matt's personal notebook - a collection of notes, project ideas, scripts
   - `home-automation/` - Home Assistant migration
   - `synchronized-telemetry-streaming-research/` - **Research:** RFCs, standards, protocols for synchronized telemetry and blob transfer (40+ standards documented)
 - **network-diagram.md** - Home network topology, IP assignments, VLAN planning, and security notes
-- **tools-and-components.md** - Hand tools, wire, consumables, and component stock
 - **projects/project-ideas.md** - Project backlog and ideas (references detailed docs in `projects/`)
 - **DiagramsAndPatterns/** - Software architecture patterns and templates library
   - Design patterns (behavioral, creational, structural, etc.)
@@ -115,11 +114,10 @@ See `Personal/CLAUDE.md` and `Personal/.claude/protocols/ONLINE_SHOPPING_PROTOCO
 - Adding items to Personal/.invoices/ archives
 
 ### Camera Collection
-Follow `.claude/protocols/CAMERA_COLLECTION_PROTOCOL.md` when:
-- Adding camera bodies (digital or film)
-- Documenting lenses, teleconverters, and accessories
-- Tracking lens mount compatibility
-- Cross-referencing with purchase info in ShoppingOnline.md
+For camera collections documentation, see Personal folder:
+- Personal/Camera Collection/ - Photography equipment inventory
+- Personal/ShoppingOnline.md - Seller notes and purchase history
+- Personal/.invoices/ - Purchase invoices
 
 ### Personal Collections
 Follow appropriate protocol when adding items to Personal/ folder collections:
@@ -295,12 +293,12 @@ done
 - `workshop-capabilities.md` - **Main workshop reference** with equipment summary, project ideas, troubleshooting guides
 - `projects/project-ideas.md` - Ongoing project backlog with cross-references to active projects
 - `links.md` - Curated reference links (AI/ML, dotnet, electronics, retro computing, vintage electronics)
-- `tools-and-components.md` - Hand tools, wire, consumables, component stock, books
 
-### Personal Equipment Collections
+### Personal Equipment & Purchase Collections
 
-All equipment collections have been moved to `Personal/` folder for standalone repository:
+All personal equipment collections and purchase history have been moved to `Personal/` folder for standalone repository:
 
+**Personal Collections:**
 - `Personal/readme.md` - Main index for Personal collections
 - `Personal/CLAUDE.md` - Configuration for Personal repository
 - `Personal/TODO.md` - Task tracking for Personal collections
@@ -312,7 +310,12 @@ All equipment collections have been moved to `Personal/` folder for standalone r
 - `Personal/Device Lab/readme.md` - Computing devices for hacking
 - `Personal/Hobby Collection/readme.md` - Hobby and craft equipment
 - `Personal/Sports Collection/readme.md` - Sports and recreation equipment
-- `Personal/.invoices/` - Purchase history archives
+
+**Personal Purchase & Inventory Records:**
+- `Personal/.invoices/` - Purchase history archives (Amazon, AliExpress)
+- `Personal/tools-and-components.md` - Hand tools, wire, consumables, component stock
+- `Personal/ShoppingOnline.md` - Seller notes and online shopping experience tracking
+- `Personal/Restaurants.md` - Personal restaurant and local dining recommendations
 
 ### Projects
 - `projects/` - Active project directories with READMEs (see projects/project-ideas.md for complete list)

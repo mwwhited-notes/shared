@@ -59,7 +59,10 @@
       "Bash(__NEW_LINE_c8a5c57c2d0be8a9__ echo \"FINAL FILE VERIFICATION\")",
       "Bash(if [ -f \"/current/src/$dir/README.md\" ])",
       "Bash(else)",
-      "Bash(pdftotext:*)"
+      "Bash(pdftotext:*)",
+      "Bash([ ! -f tools-and-components.md ])",
+      "Bash([ ! -f ShoppingOnline.md ])",
+      "Bash([ ! -f Restaurants.md ])"
     ]
   }
 }

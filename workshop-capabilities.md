@@ -192,7 +192,7 @@ Two-node home lab for container orchestration and DevOps learning:
 
 ### Components & Consumables Stock
 
-*See [tools-and-components.md](tools-and-components.md) for complete inventory.*
+*See [Personal/tools-and-components.md](Personal/tools-and-components.md) for complete inventory.*
 
 | Category | Stock Summary |
 |----------|---------------|
