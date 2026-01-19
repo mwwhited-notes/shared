@@ -35,21 +35,23 @@ Comprehensive archival and preservation of Apple II 5.25" and 3.5" floppy disk c
 
 ```
 apple-ii-disk-archival/
-├── README.md                                      # This file
-├── apple-ii-disk-copy-protection-archival.md     # General guide
-├── apple-ii-printshop-toyshop-guide.md           # Specific guide for Print Shop/Toy Shop
-├── workflow/
-│   └── greaseweazle-setup.md                     # Hardware connection guide
-├── tools/
-│   └── recommended-software.md                   # Tool installation guide
-└── archive/                                       # Created during archival
-    ├── flux-masters/                              # .SCP preservation files
-    ├── woz-images/                                # .WOZ converted images
-    ├── dsk-images/                                # .DSK unprotected backups
-    └── metadata/                                  # Disk catalogs and notes
+├── README.md                     # This file - project overview
+├── SETUP.md                      # Quick setup guide (START HERE!)
+├── hardware-setup.md             # Greaseweazle + SD-800 configuration
+├── tools/                        # Software tools for archival
+│   ├── README.md                 # Tool documentation
+│   ├── wozardry/                 # WOZ file manipulation
+│   └── passport.py/              # Protection removal (submodule)
+└── archive/                      # Created during archival
+    ├── flux-masters/             # .SCP preservation files
+    ├── woz-images/               # .WOZ converted images
+    ├── dsk-images/               # .DSK unprotected backups
+    └── metadata/                 # Disk catalogs and notes
 ```
 
 ## Quick Start
+
+**📖 See [SETUP.md](SETUP.md) for complete step-by-step setup instructions!**
 
 ### 1. Setup Greaseweazle
 
@@ -57,11 +59,15 @@ apple-ii-disk-archival/
 # Install Greaseweazle tools
 pip install greaseweazle
 
-# Connect hardware:
-# [PC] --USB--> [Greaseweazle] --34-pin--> [Apple IIc Disk II drive]
+# Update firmware
+gw update
 
-# Test read
+# Connect hardware:
+# [PC] --USB--> [Greaseweazle] --34-pin--> [Epson SD-800 (5.25" + 3.5")]
+
+# Test detection
 gw info
+# Should show Drive A: (5.25") and Drive B: (3.5")
 ```
 
 ### 2. Read First Disk (The Print Shop)
@@ -140,17 +146,20 @@ AppleWin.exe --disk1=archive/woz-images/PrintShop_Program.woz
 
 ### Hardware
 - Greaseweazle V4.1 - Flux imaging
-- Apple IIc/IIgs - Disk drives
+- Epson SD-800 - Dual 5.25"/3.5" floppy drives
 - 34-pin floppy cable
+- 5V power supply (for SD-800)
 
-### Software
-- **Greaseweazle** - Flux imaging tool
-- **wozardry** - .SCP to .WOZ conversion
+### Software (Included as Git Submodules)
+- **wozardry** - WOZ file manipulation (tools/wozardry/)
+- **passport.py** - Protection removal (tools/passport.py/)
+
+### Software (Install Separately)
+- **Greaseweazle** - Flux imaging tool (pip install)
 - **AppleWin** - Apple II emulator (Windows)
-- **4am crack tools** - Automated protection removal
-- **ADTPro** - Disk transfer to real hardware
-- **AppleCommander** - Disk image management
-- **CiderPress** - Windows disk image manager
+- **HxC Software** - SCP to WOZ conversion (free)
+- **AppleCommander** - Disk image management (Java)
+- **CiderPress** - Windows disk image manager (optional)
 
 ## Documentation
 

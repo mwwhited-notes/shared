@@ -59,7 +59,8 @@
       "Bash([ ! -f ShoppingOnline.md ])",
       "Bash([ ! -f Restaurants.md ])",
       "Bash([ -d \"/current/src/Personal/.claude\" ])",
-      "Bash([ ! -d Personal/ ])"
+      "Bash([ ! -d Personal/ ])",
+      "Bash(cd /current/src/projects/apple-ii-disk-archival/tools && git clone:*)"
     ]
   }
 }

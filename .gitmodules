@@ -1,0 +1,6 @@
+[submodule "projects/apple-ii-disk-archival/tools/passport.py"]
+	path = projects/apple-ii-disk-archival/tools/passport.py
+	url = https://github.com/a2-4am/passport.py.git
+[submodule "projects/apple-ii-disk-archival/tools/wozardry"]
+	path = projects/apple-ii-disk-archival/tools/wozardry
+	url = https://github.com/a2-4am/wozardry.git
