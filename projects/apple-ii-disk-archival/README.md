@@ -163,7 +163,14 @@ AppleWin.exe --disk1=archive/woz-images/PrintShop_Program.woz
 
 ## Documentation
 
-### General Guides
+### Project Guides (Start Here!)
+- **[SETUP.md](SETUP.md)** - Step-by-step setup guide (START HERE!)
+- **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Having issues with SD-800? Check here!
+- [APPLE-DISK-II-SETUP.md](APPLE-DISK-II-SETUP.md) - Using native Apple Disk II drive (if SD-800 insufficient)
+- [hardware-setup.md](hardware-setup.md) - Greaseweazle + SD-800 configuration
+- [tools/README.md](tools/README.md) - Software tools documentation
+
+### Reference Guides
 - [Notes/hardware/apple-ii-disk-copy-protection-archival.md](../../Notes/hardware/apple-ii-disk-copy-protection-archival.md)
   - Copy protection schemes explained
   - Tool comparison and recommendations
