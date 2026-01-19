@@ -11,7 +11,6 @@ Project backlog for future development. Once a project has its own directory in 
 ### Vintage Computing & Retro
 
 * write a simple game for the NES and Apple II (program in 6502 assembly) [have NESMaker PCBs, Apple IIc, Apple IIgs]
-* archive floppy disk collection with **[Greaseweazle V4.1](../.personal/incoming/test-equipment.md)** [have Apple II 5.25", Apple IIgs 3.5", **[TI-99/4A disks](../.personal/incoming/vintage-computers.md)**]
 * build **[Multicomp Z80 CP/M system](../.personal/incoming/programmable-devices.md)** on EP2C5-DB [have Multicomp kit, Grant Searle designs available]
 * build Multicomp 6502 system with BASIC [good prep for Apple II projects]
 * build Multicomp 6809 Flex/OS-9 system [learn another 8-bit architecture]
@@ -140,4 +139,9 @@ See [Projects Index (README.md)](README.md) for the complete list of 12 active p
 
 ---
 
-*Last updated: 2026-01-07*
+*Last updated: 2026-01-19*
+
+## Recently Moved to Active Projects
+
+- **Apple II Disk Archival** - Now active project using Greaseweazle V4.1 + Epson SD-800
+- **ImageWriter II Emulator** - Now planning project for Print Shop/Toy Shop output capture

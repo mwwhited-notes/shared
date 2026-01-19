@@ -15,9 +15,11 @@ Active project documentation and build logs organized by category.
 | [Analog Computer Experiments](#analog-computer-experiments) | Analog Computing | In Progress | [THAT](../.personal/incoming/test-equipment.md) |
 | [ATtiny2313 LED Clock](#attiny2313-led-clock) | Microcontrollers | Completed | [ATtiny2313](../.personal/incoming/programmable-devices.md) |
 | [MM-8000K Trainer UI](#mm-8000k-intel-8085-trainer-ui) | Retro Computing | On Hold | [MM-8000K](../.personal/incoming/vintage-computers.md) |
+| [Apple II Disk Archival](#apple-ii-disk-archival) | Retro Computing | Active | [Greaseweazle V4.1](../.personal/incoming/test-equipment.md), Epson SD-800 |
 | [Passive Radar SDR](#passive-radar-sdr-system) | RF/SDR | Planning | [KrakenSDR/RTL-SDR](../.personal/incoming/programmable-devices.md) |
 | [Radex One Protocol](#radex-one-geiger-counter-protocol) | Protocol Reverse Eng | Completed | [Radex One](../.personal/incoming/device-lab.md) |
 | [Favero Fencing System](#favero-fencing-scoring-system) | Protocol Integration | Completed | Favero Full-Arm-05 |
+| [ImageWriter II Emulator](#imagewriter-ii-emulator) | Protocol Integration | Planning | Serial cable, [Apple IIc](../.personal/incoming/vintage-computers.md) |
 | [SCPI Instrument Control](#scpi-instrument-control) | Test Automation | Planning | [Lab equipment](../.personal/incoming/test-equipment.md) |
 | [Vector Search SQL Server](#vector-search-in-sql-server) | Database/ML | Completed | SQL Server, .NET |
 | [AI/ML Research](#aiml-research--reference) | Research/Reference | Reference | [Technical books](../.personal/incoming/books.md) |
@@ -27,6 +29,7 @@ Active project documentation and build logs organized by category.
 | [Home Automation](#home-automation) | Smart Home | In Progress | [Pi 3, Z-Wave](../.personal/incoming/device-lab.md) |
 | [DIY TrekPak Dividers](#diy-trekpak-dividers) | Workshop | Reference | Foam, pins |
 | [Cline with Local LLM](#cline-with-local-llm) | AI / Dev Tools | Planning | [RTX 4070 Ti](../.personal/incoming/device-lab.md) |
+| [HuggingFace .NET Native](#huggingface-dotnet-native-execution) | AI/ML Research | Research | .NET workstation |
 | [Local Docker Registry](#local-docker-registry) | DevOps / Infrastructure | Planning | [NAS/Cluster](../.personal/incoming/device-lab.md) |
 
 ## Projects by Category
@@ -118,6 +121,30 @@ Physical MM-8000K Intel 8085 trainer hardware available and functional. CLI emul
 
 ---
 
+#### Apple II Disk Archival
+**Status:** Active Development
+**Directory:** [apple-ii-disk-archival/](apple-ii-disk-archival/)
+
+Comprehensive archival and preservation of Apple II 5.25" and 3.5" floppy disk collection using flux-level imaging with Greaseweazle V4.1 and Epson SD-800 dual-drive unit. Creating preservation masters (.SCP flux images), emulator-ready formats (.WOZ), and working backups (.DSK) of legally owned software.
+
+**Priority Disks:** The Print Shop, The Toy Shop (Broderbund)
+
+**Equipment:** Greaseweazle V4.1, Epson SD-800 (5.25" + 3.5" drives), Apple IIc, Apple IIgs
+
+**Workflow:**
+1. Flux imaging → .SCP preservation masters
+2. Convert to .WOZ for emulators (preserves copy protection)
+3. Optional: Create .DSK unprotected backups for real hardware
+
+**Documentation:**
+- [hardware-setup.md](apple-ii-disk-archival/hardware-setup.md) - Greaseweazle + SD-800 configuration
+- [Notes/hardware/apple-ii-disk-copy-protection-archival.md](../Notes/hardware/apple-ii-disk-copy-protection-archival.md) - Copy protection schemes and removal techniques
+- [Notes/hardware/apple-ii-printshop-toyshop-guide.md](../Notes/hardware/apple-ii-printshop-toyshop-guide.md) - Print Shop/Toy Shop specific guide
+
+**Related:** [ImageWriter II Emulator](imagewriter-ii-emulator/) (print archived programs), [PrinterEmulator](https://github.com/mwwhited/PrinterEmulator)
+
+---
+
 ### RF & Software-Defined Radio
 
 #### Passive Radar SDR System
@@ -160,6 +187,38 @@ Serial protocol integration for Favero Full-Arm-05 fencing scoring apparatus. Bu
 
 ---
 
+#### ImageWriter II Emulator
+**Status:** Planning
+**Directory:** [imagewriter-ii-emulator/](imagewriter-ii-emulator/)
+
+PC-based printer emulator that captures output from Apple II programs (The Print Shop, The Toy Shop, AppleWorks) and converts to modern formats (PDF, PNG) or routes to contemporary printers. Emulates an ImageWriter II dot-matrix printer over serial connection, enabling digital preservation of printed output and use of vintage software with modern printers.
+
+**Architecture:** `[Apple II] --Serial--> [PC] --Software--> [PDF/PNG/Modern Printer]`
+
+**Key Features:**
+- Serial capture via USB-to-Serial adapter
+- ImageWriter II protocol decoder (ESC commands, graphics mode)
+- Text and graphics rendering engine (144 DPI, 9×9 dot matrix)
+- Multi-format output (PDF, PNG, direct printing)
+- Special handling for Print Shop banners
+
+**Technology Stack:** .NET Core/8, System.IO.Ports, PdfSharp, ImageSharp
+
+**Implementation Plan:** 12-week phased development
+1. Serial capture (Week 1-2)
+2. Command parser (Week 3-4)
+3. Text rendering (Week 5-6)
+4. Graphics rendering (Week 7-8)
+5. PDF export (Week 9)
+6. Modern printer output (Week 10)
+7. Print Shop integration (Week 11-12)
+
+**Equipment:** Apple IIc/IIgs, USB-to-Serial adapter, serial cable
+
+**Related:** [Apple II Disk Archival](apple-ii-disk-archival/) (preserve disks first), [PrinterEmulator](https://github.com/mwwhited/PrinterEmulator), [DeviceBridge](https://github.com/mwwhited/DeviceBridge)
+
+---
+
 ### Database & Machine Learning
 
 #### Vector Search in SQL Server
@@ -188,6 +247,34 @@ Collection of AI/ML research papers, implementation notes, and critical perspect
 - Related: Vector search research moved to [Vector Search SQL Server](vector-search-sqlserver/) project
 
 **Resources:** Papers from arXiv, Fast.ai courses, AI Snake Oil blog
+
+---
+
+#### HuggingFace .NET Native Execution
+**Status:** Research - Comprehensive Documentation
+**Directory:** [huggingface-dotnet-native-execution/](huggingface-dotnet-native-execution/)
+
+Research project documenting approaches for running HuggingFace transformer models (BERT, GPT-2, T5, etc.) natively in .NET applications without calling out-of-process to Python. Covers ONNX conversion workflows, native .NET inference engines, tokenizer implementations, and code generation approaches.
+
+**Key Approaches:**
+1. **ONNX Runtime + ML.NET** - Production-ready, 130,000+ model support
+2. **TorchSharp** - Native PyTorch in .NET with training support
+3. **Transformers.NET** - Community library with HuggingFace Hub integration
+4. **Code Generation** - Experimental compile-time model embedding
+5. **Semantic Kernel** - AI orchestration framework
+
+**Documentation:**
+- [README.md](huggingface-dotnet-native-execution/README.md) - Project overview and quick start
+- [TECHNOLOGY_COMPARISON.md](huggingface-dotnet-native-execution/TECHNOLOGY_COMPARISON.md) - Detailed comparison matrix
+- [ONNX_CONVERSION_WORKFLOW.md](huggingface-dotnet-native-execution/ONNX_CONVERSION_WORKFLOW.md) - Export and deployment guide
+- [IMPLEMENTATION_GUIDES.md](huggingface-dotnet-native-execution/IMPLEMENTATION_GUIDES.md) - 6 practical scenarios
+- [RESEARCH_BIBLIOGRAPHY.md](huggingface-dotnet-native-execution/RESEARCH_BIBLIOGRAPHY.md) - 104+ resources
+
+**Technology Stack:** .NET 8, ONNX Runtime, TorchSharp, HuggingFace Optimum, ML.NET
+
+**Use Cases:** Sentiment analysis, question answering, NER, semantic search, text generation
+
+**Related:** [dotex](https://github.com/OutOfBandDevelopment/dotex) (.NET libraries), Vector Search SQL Server project
 
 ---
 
@@ -333,12 +420,13 @@ Reference documentation and materials inventory for custom drawer dividers. Uses
 ## Project Status Summary
 
 - **Completed:** 4 projects (ATtiny2313 LED Clock, Radex One Protocol, Favero Fencing System, Vector Search SQL Server)
-- **Active Development:** 6 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation)
-- **Planning/Research:** 7 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry)
+- **Active Development:** 7 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation, Apple II Disk Archival)
+- **Planning/Research:** 8 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry, ImageWriter II Emulator)
+- **Research Documentation:** 1 project (HuggingFace .NET Native Execution - comprehensive research complete)
 - **On Hold:** 1 project (MM-8000K Trainer UI - hardware functional, used as reference)
 - **Reference/As Needed:** 3 projects (DIY TrekPak Dividers, DRL/DTL Logic Boards, AI/ML Research)
 
-**Total: 21 projects** (4 completed, 6 active, 7 planning, 1 on hold, 3 reference)
+**Total: 24 projects** (4 completed, 7 active, 8 planning, 1 research, 1 on hold, 3 reference)
 
 ## Cross-References
 
@@ -381,5 +469,5 @@ projects/
 
 ---
 
-*Last updated: 2026-01-16*
-*Total projects: 21*
+*Last updated: 2026-01-19*
+*Total projects: 24*
