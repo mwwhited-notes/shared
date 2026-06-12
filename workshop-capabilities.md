@@ -777,9 +777,11 @@ For complete inventory of FPGA, MCU, SoC, Arduino boards, and retro platforms wi
     - [Rigol DSG815](https://www.rigolna.com/products/rf-signal-generators/dsg800/) (9 kHz - 1.5 GHz)
     - [Windfreak SynthHD](https://windfreaktech.com/product/microwave-signal-generator-synthhd/) (10 MHz - 15 GHz, USB)
 
+- [x] **SDR receiver** - RX capable for RF experimentation, spectrum analysis, ADS-B, weather satellites
+  - **Acquired:** RTL-SDR Blog V4 (R828D, 500 kHz - 1766 MHz, 1PPM TCXO) — 2026-04-03
 - [ ] **SDR transceiver** - TX/RX capable for RF experimentation, ham radio, Zynq projects
   - Budget/Used:
-    - [RTL-SDR Blog V4](https://www.rtl-sdr.com/rtl-sdr-blog-v4-dongle-initial-release/) (RX only, ~$30)
+    - [RTL-SDR Blog V4](https://www.rtl-sdr.com/rtl-sdr-blog-v4-dongle-initial-release/) (RX only) — already owned
     - Used USRP B200mini
   - New:
     - [HackRF One](https://greatscottgadgets.com/hackrf/one/) (1 MHz - 6 GHz, half-duplex TX/RX)
