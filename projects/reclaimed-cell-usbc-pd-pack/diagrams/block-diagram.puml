@@ -1,0 +1,28 @@
+@startuml
+skinparam componentStyle rectangle
+
+package "Matched Cell Groups (P cells each)" {
+  [Group 1] as G1
+  [Group 2] as G2
+  [Group N...] as GN
+}
+
+[Multi-S BMS\n(balance + protection,\n2S-4S configurable)] as BMS
+[Boost + USB-C PD Module\n(SW3518 / CH224K-based,\n100W class)] as PDMOD
+[USB-C Connector] as USBC
+[5V/9V/12V/20V\nCharger Input] as CHGIN
+
+G1 --> BMS : series link
+G2 --> BMS : series link
+GN --> BMS : series link
+BMS --> PDMOD : pack B+/B-\n(post-protection)
+CHGIN --> BMS : charge in\n(via balance leads)
+PDMOD --> USBC : negotiated PD\nvoltage/current
+USBC --> [Device Being Charged]
+
+note right of BMS
+  Balances cells during charge,
+  cuts pack on over/under-voltage
+  or overcurrent per series string.
+end note
+@enduml

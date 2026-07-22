@@ -27,6 +27,12 @@
 - [ ] **Set up Docker on PR4100** for production services (Gitea, Nextcloud)
 - [ ] Fix PR4100 Windows credential persistence issue (see Device Lab/network-storage/wd-mycloud-pr4100/windows-credential-fix.md)
 
+### Reclaimed-Cell USB-C PD Pack
+- [ ] Acquire programmable DC electronic load (e.g. ATORCH DL24/DL24P) - blocks all cell testing
+- [ ] Acquire 18650-capable spot welder
+- [ ] Discharge-test and sort accumulated salvaged cells (capacity + IR)
+- [ ] Decide final S/P layout once matched-group yield is known, then order exact BMS/boost module part numbers
+
 ---
 
 ## Recent Archives

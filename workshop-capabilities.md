@@ -695,99 +695,117 @@ For complete inventory of FPGA, MCU, SoC, Arduino boards, and retro platforms wi
 
 ## Wishlist (Would Expand Capabilities)
 
+*Prices verified via web research on 2026-07-22 — fluctuate over time, especially eBay/grey-market. eBay links are search queries (listings expire), not fixed auctions.*
+
 - [ ] **Spectrum analyzer** - RF debugging, EMI troubleshooting, SDR projects
   - Budget/Used:
-    - [tinySA Ultra](https://www.tinysa.org/wiki/pmwiki.php?n=Main.Buying) (~$120)
-    - Used HP 8590A
+    - [tinySA Ultra](https://www.randl.com) - ~$130 new (R&L Electronics; also see [official reseller list](https://www.tinysa.org/wiki/pmwiki.php?n=Main.Buying))
+    - Used HP 8590A - [eBay search](https://www.ebay.com/sch/i.html?_nkw=HP+8590A+spectrum+analyzer), ~$130-$300
   - New:
-    - [Rigol DSA815](https://www.rigolna.com/products/spectrum-analyzers/dsa800/)
-    - [Siglent SSA3021X](https://siglentna.com/spectrum-analyzers/ssa3000x-series/)
+    - [Rigol DSA815](https://www.testequity.com/product/32155-1-DSA815) - $1,319 ($999 for DSA815-TG w/ tracking gen), via TestEquity
+    - [Siglent SSA3021X](https://www.saelig.com/product/ssa3021x.htm) - $1,395 base / $1,733 Plus, via Saelig
 
 - [ ] **Isolation transformer** - Safe work on line-connected equipment
   - Budget/Used:
-    - Used Topaz or Tripp Lite (eBay)
-    - Surplus hospital-grade
+    - Used Tripp Lite - [eBay search](https://www.ebay.com/sch/i.html?_nkw=tripp+lite+isolation+transformer), ~$150 (500W) to ~$450 (larger)
+    - Used Topaz Ultra-Isolator - [eBay search](https://www.ebay.com/sch/i.html?_nkw=topaz+ultra-isolator+isolation+transformer), ~$150-$500
   - New:
-    - [Triad N-68X](https://www.amazon.com/dp/B00BXMBOTG) (500VA)
-    - [Hammond 171E](https://www.hammfg.com/electronics/transformers/isolation/171)
+    - [Hammond 171E](https://www.digikey.com/en/products/detail/hammond-manufacturing/171E/455505) (500VA) - $210.04, via DigiKey
+    - *(Correction: the previously-listed Triad N-68X is actually a 50VA unit, not 500VA, and its old Amazon link was dead/mismatched. If a small 50VA isolation tap is ever useful, N-68X is [$30.28 via DigiKey](https://www.digikey.com/en/products/detail/triad-magnetics/N-68X/1887210).)*
 
 - [ ] **Bench LCR meter** - In-circuit SMD testing, better accuracy than DE-5000
   - Budget/Used:
-    - Used HP 4263A/4263B
-    - BK Precision 879B
+    - Used HP 4263A/4263B - [eBay search](https://www.ebay.com/sch/i.html?_nkw=HP+4263A+LCR+meter), ~$100-$400+
+    - [BK Precision 879B](https://www.testequipmentdepot.com/bk-precision-879b-dual-display-handheld-lcr-meter-with-esr-measurement-and-usb-interface.html) - $377.95 new via Test Equipment Depot; used [eBay search](https://www.ebay.com/sch/i.html?_nkw=BK+Precision+879B+LCR+meter) ~$250-$400
   - New:
-    - [Keysight U1731C](https://www.keysight.com/us/en/product/U1731C/handheld-lcr-meter.html)
-    - [GW Instek LCR-6100](https://www.gwinstek.com/en-global/products/detail/LCR-6000)
+    - [Keysight U1731C](https://www.keysight.com/us/en/product/U1731C/handheld-lcr-meter-100-hz-120-hz-1-khz.html) - $489 list (buy via Transcat/TEquipment/Newark, not direct from Keysight)
+    - [GW Instek LCR-6100](https://www.transcat.com/gw-instek-lcr-6100-lcr-6100-308105) - $2,013, via Transcat
 
 - [ ] **Reflow oven** - Batch SMD assembly, consistent results
   - Budget/Used:
-    - DIY toaster oven + [Controleo3 kit](https://www.whizoo.com/c3)
-    - Used T-962
+    - DIY toaster oven + [Controleo3 build kit](https://whizoo.com/products/controleo3-reflow-oven-build-kit) - $395 (kit only, toaster oven separate)
+    - Used T-962/T-962A - [eBay search](https://www.ebay.com/sch/i.html?_nkw=T-962A+reflow+oven), ~$140-$450
   - New:
-    - [Miniware MHP50](https://www.amazon.com/dp/B0C7KXQQ8X) (hot plate)
-    - [Puhui T-937](https://www.amazon.com/dp/B07VR3Q3ZK)
+    - [Miniware MHP50](https://www.amazon.com/dp/B0CWQVQ96X) (hot plate) - ~$100-$109 (previous ASIN was dead; also ~€109 via welectron.com)
+    - Puhui T-937 - original Amazon ASIN dead; closest current match is rebrand [KY HOPE T-937](https://www.amazon.com/KY-HOPE-Desktop-Leadfree-Infrared/dp/B096JFFHNQ), or genuine Puhui via [AliExpress official store](https://www.aliexpress.com/item/32692181439.html) ~$575 (promo pricing, normally higher)
 
 - [ ] **Current probe** - Non-contact current measurement on scope
   - Budget/Used:
-    - Used Tektronix A621/A622
-    - [Micsig CP2100A](https://www.amazon.com/dp/B07WNLQVZJ)
+    - Used Tektronix A621/A622 - [eBay search](https://www.ebay.com/sch/i.html?_nkw=tektronix+a621+a622+current+probe), ~$450-$1,160
+    - [Micsig CP2100A](https://www.amazon.com/CP2100A-DC-800KHzUniversal-Measurement-Bandwidth-Oscilloscope/dp/B0C8DBP28F) - ~$260 (Amazon; previous ASIN was dead), $370 via Saelig
   - New:
-    - [Tektronix A622](https://www.tek.com/en/products/probes/current-probes)
-    - [Keysight N2783B](https://www.keysight.com/us/en/product/N2783B/current-probe-100-mhz.html)
+    - [Tektronix A622](https://www.tequipment.net/TektronixA622.html) - ~$1,360, via TEquipment (Tek's own site no longer has a working probes page)
+    - [Keysight N2783B](https://www.keysight.com/us/en/product/N2783B/ac-dc-current-probe-100-mhz.html) - ~$5,500-$6,000 (RS Online $5,991, Transcat $5,522)
 
 - [ ] **Higher res thermal camera** - Better hotspot detection than TG130
   - Budget/Used:
-    - [Uni-T UTi260B](https://www.amazon.com/dp/B08R6NK44L)
-    - Used FLIR E4/E5
+    - [Uni-T UTi260B](https://www.amazon.com/UNI-T-UTi260B-49152Pixels-Resolution-Rechargeable/dp/B09W16Z18K) - ~$300-$400 (previous ASIN was dead)
+    - Used FLIR E4/E5 - [eBay search](https://www.ebay.com/sch/i.html?_nkw=flir+e4+e5+thermal+camera), ~$750-$1,700
   - New:
-    - [FLIR C5](https://www.flir.com/products/c5/)
-    - [FLIR ONE Pro](https://www.flir.com/products/flir-one-pro/)
+    - [FLIR C5](https://www.flir.com/products/c5/) - $649.00 (standalone)
+    - [FLIR ONE Pro](https://www.flir.com/products/flir-one-pro/) - $429.00 (phone attachment, not standalone)
 
 - [ ] **Variac** - Motor testing, slow power-up for vintage gear
   - Budget/Used:
-    - Used Powerstat/Superior Electric (eBay)
-    - Surplus lab units
+    - Used Powerstat/Superior Electric - [eBay search](https://www.ebay.com/sch/i.html?_nkw=superior+electric+powerstat+variac), ~$100-$300 depending on amperage
+    - Surplus lab units (Staco, General Radio) - typically $75-$400+ on eBay depending on kVA
   - New:
-    - [Variac TDGC2-2KVA](https://www.amazon.com/dp/B09WDHM6NV)
-    - [Staco 3PN1010B](https://www.staco-energy.com/variable-transformers/)
+    - Variac TDGC2-2KVA - previous Amazon ASIN unconfirmed/likely delisted; comparable listing via [Circuit Specialists](https://www.circuitspecialists.com/variac-tdgc2-2), ~$60-$100
+    - [Staco 3PN1010B](https://www.digikey.com/en/products/detail/staco-energy-products-company/3PN1010B/526078) - $740.00, via DigiKey (old staco-energy.com domain is dead; correct site is [stacoenergy.com](https://www.stacoenergy.com/products-solutions/products/variable-transformers-and-test-sets/variable-transformers.html))
 
 - [ ] **PCB mill/router** - Prototype PCBs without waiting for fab (3D printer can't do this)
   - Budget/Used:
-    - [Genmitsu 3018-PROVer](https://www.amazon.com/dp/B07P6J9VB4) + PCB kit
-    - Used Roland Modela MDX-20
+    - [Genmitsu 3018-PROVer](https://www.sainsmart.com/products/sainsmart-genmitsu-cnc-router-3018-prover-kit) - $269.00 direct from SainSmart (was sold out at last check; old Amazon ASIN outdated)
+    - Used Roland Modela MDX-20 - [eBay search](https://www.ebay.com/sch/i.html?_nkw=roland+modela+mdx-20), ~$450-$700
   - New:
-    - [BobsCNC E4](https://www.amazon.com/dp/B07GJBTBB9) + spindle upgrade
-    - [Bantam Tools Desktop PCB Milling Machine](https://www.bantamtools.com/)
+    - ~~BobsCNC E4~~ - **BobsCNC has ceased operations (~March 2025)**; used units only via [eBay search](https://www.ebay.com/sch/i.html?_nkw=bobscnc+evolution+4), ~$550-$750
+    - [Bantam Tools Desktop CNC Milling Machine](https://bantamtools.com/products/bantam-tools-desktop-cnc-milling-machine) - ~$2,499 base / ~$3,299 bundle (old product URL 404s; may be low-stock, confirm with sales@bantamtools.com)
 
 - [ ] **Logic analyzer upgrade** - More channels, higher speed than current setup
   - Budget/Used:
-    - [DSLogic Plus](https://www.dreamsourcelab.com/product/dslogic-plus/) (16ch 400MHz)
-    - Used Agilent 16700
+    - [DSLogic Plus](https://www.dreamsourcelab.com/shop/logic-analyzer/dslogic-plus/) (16ch 400MHz) - $149 new (old product URL moved); used [eBay search](https://www.ebay.com/sch/i.html?_nkw=DSLogic+Plus+logic+analyzer), ~$80-$130
+    - Used Agilent 16700 (modular mainframe) - [eBay search](https://www.ebay.com/sch/i.html?_nkw=Agilent+16700+logic+analyzer), ~$50-$500 depending on modules included
   - New:
-    - [Saleae Logic Pro 16](https://www.saleae.com/products/saleae-logic-pro-16)
-    - [Analog Discovery 3](https://digilent.com/shop/analog-discovery-3/)
+    - [Saleae Logic Pro 16](https://www.mouser.com/ProductDetail/Saleae/Logic-Pro-16-Black) - $1,499 (sold out direct from Saleae; via Mouser); used ~$900-$1,200
+    - [Analog Discovery 3](https://www.digikey.com/en/product-highlight/d/digilent/analog-discovery-3) - $379 ($249 academic), Pro Bundle $409
 
 - [ ] **RF signal generator** - Clean LO/IF source for RF work, mixer testing, receiver alignment
   - Budget/Used:
-    - Used HP 8648A/B (100 kHz - 1 GHz / 2 GHz)
-    - Used HP 8656B (100 kHz - 990 MHz)
-    - Used Marconi 2024 (9 kHz - 2.4 GHz)
+    - Used HP 8648A/B - [eBay search](https://www.ebay.com/sch/i.html?_nkw=HP+8648A+signal+generator), ~$150-$450
+    - Used HP 8656B - [eBay search](https://www.ebay.com/sch/i.html?_nkw=HP+8656B+signal+generator), ~$225-$550
+    - Used Marconi 2024 - [eBay search](https://www.ebay.com/sch/i.html?_nkw=Marconi+2024+signal+generator), ~$230-$850
   - New:
-    - [Siglent SSG3021X](https://siglentna.com/rf-signal-generators/ssg3000x-series/) (9 kHz - 2.1 GHz)
-    - [Rigol DSG815](https://www.rigolna.com/products/rf-signal-generators/dsg800/) (9 kHz - 1.5 GHz)
-    - [Windfreak SynthHD](https://windfreaktech.com/product/microwave-signal-generator-synthhd/) (10 MHz - 15 GHz, USB)
+    - [Siglent SSG3021X](https://siglentna.com/product/ssg3021x/) (9 kHz - 2.1 GHz) - $2,645
+    - Rigol DSG815 (9 kHz - 1.5 GHz) - ~$2,099 via TEquipment/Transcat
+    - [Windfreak SynthHD v2](https://www.saelig.com/product/synthhd-v2.htm) (10 MHz - 15 GHz, USB) - $2,179 (base SynthHD $1,279); used [eBay search](https://www.ebay.com/sch/i.html?_nkw=Windfreak+SynthHD) ~$700-$1,000 when available
+
+- [ ] **Programmable DC electronic load** - Discharge testing (capacity/IR) for salvaged cells, PD output load-testing
+  - Needed for: [Reclaimed-Cell USB-C PD Pack](projects/reclaimed-cell-usbc-pd-pack/)
+  - Budget/grey-market:
+    - ATORCH DL24P (USB-input, ~150-180W) - ~$27-$46 via [AliExpress official store](https://atorch.aliexpress.com/store/1101249506) (note: atorch.com is a dead/parked domain; real brand site is atorch-electric.com)
+    - [MakerHawk 150W/200V/25A Load Tester](https://www.amazon.com/MakerHawk-Battery-Load-Tester-Adjustable/dp/B0DM8Z6D4P) - ~$40-$60
+  - New/bench-grade:
+    - [Siglent SDL1020X-E](https://www.saelig.com/product/sdl1020x-e.htm) (150V/30A, 200W) - $574.00 (also DigiKey, Circuit Specialists, TestEquity)
+
+- [ ] **Spot welder (18650-capable)** - Nickel strip welding for series/parallel cell packs, safer than soldering cell tops
+  - Needed for: [Reclaimed-Cell USB-C PD Pack](projects/reclaimed-cell-usbc-pd-pack/)
+  - Budget/grey-market:
+    - Generic 18650 spot welder kit, e.g. [Cozyel 5000W Mini Spot Welder](https://www.amazon.com/Cozyel-Battery-Adjustable-Soldering-0-1-0-2mm/dp/B0BMKLJRXT) - ~$40-$90
+  - New:
+    - [Kweld complete kit](https://www.keenlab.de/index.php/product/kweld-complete-kit/) - €169-177 direct from Keenlab (Germany); US via [Grid Rewired](https://gridrewired.com/en-us/products/kweld-spot-welder-kit) ~$251 (check stock)
+    - [Sunkko 709A](https://www.amazon.com/SUNKKO-Battery-Soldering-Welding-Machine/dp/B01JB8VR9E) - $259.99-$279.99 (Banggood/Sunkko MSRP); used [eBay search](https://www.ebay.com/sch/i.html?_nkw=sunkko+709a) ~$200-$340
 
 - [x] **SDR receiver** - RX capable for RF experimentation, spectrum analysis, ADS-B, weather satellites
   - **Acquired:** RTL-SDR Blog V4 (R828D, 500 kHz - 1766 MHz, 1PPM TCXO) — 2026-04-03
 - [ ] **SDR transceiver** - TX/RX capable for RF experimentation, ham radio, Zynq projects
   - Budget/Used:
     - [RTL-SDR Blog V4](https://www.rtl-sdr.com/rtl-sdr-blog-v4-dongle-initial-release/) (RX only) — already owned
-    - Used USRP B200mini
+    - Used USRP B200mini - [eBay search](https://www.ebay.com/sch/i.html?_nkw=usrp+b200mini), ~$800-$1,190 (new starts ~$556)
   - New:
-    - [HackRF One](https://greatscottgadgets.com/hackrf/one/) (1 MHz - 6 GHz, half-duplex TX/RX)
-    - [LimeSDR Mini 2.0](https://limemicro.com/products/boards/limesdr-mini-2-0/) (10 MHz - 3.5 GHz, full-duplex)
-    - [ADALM-PLUTO](https://www.analog.com/en/resources/evaluation-hardware-and-software/evaluation-boards-kits/adalm-pluto.html) (325 MHz - 3.8 GHz, full-duplex, hackable to 70 MHz - 6 GHz)
+    - [HackRF One](https://www.nooelec.com/store/hackrf.html) (1 MHz - 6 GHz, half-duplex TX/RX) - from $399.95 via Nooelec (greatscottgadgets.com is info-only, not a store)
+    - [LimeSDR Mini 2.0](https://www.crowdsupply.com/lime-micro/limesdr-mini-2) (10 MHz - 3.5 GHz, full-duplex) - $399 + $8 shipping, via Crowd Supply
+    - [ADALM-PLUTO](https://www.digikey.com/en/products/detail/analog-devices-inc/ADALM-PLUTO/6624230) (325 MHz - 3.8 GHz, full-duplex, hackable to 70 MHz - 6 GHz) - $233.14, via DigiKey
 
 ---
 
-*Last updated: January 2026 (Device Lab integration)*
+*Last updated: 2026-07-22 (Wishlist pricing/links verified against live retailer and eBay data)*

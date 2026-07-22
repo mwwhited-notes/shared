@@ -28,6 +28,7 @@ Active project documentation and build logs organized by category.
 | [DevOps Playground Cluster](#devops-playground-cluster) | DevOps/HPC | In Progress | [FX-9590, FX-8350](../.personal/incoming/device-lab.md) |
 | [Home Automation](#home-automation) | Smart Home | In Progress | [Pi 3, Z-Wave](../.personal/incoming/device-lab.md) |
 | [DIY TrekPak Dividers](#diy-trekpak-dividers) | Workshop | Reference | Foam, pins |
+| [Reclaimed-Cell USB-C PD Pack](#reclaimed-cell-usb-c-pd-pack) | Power/Battery | Planning | 18650 cells, e-load (needed), spot welder (needed) |
 | [Cline with Local LLM](#cline-with-local-llm) | AI / Dev Tools | Planning | [RTX 4070 Ti](../.personal/incoming/device-lab.md) |
 | [HuggingFace .NET Native](#huggingface-dotnet-native-execution) | AI/ML Research | Research | .NET workstation |
 | [Local Docker Registry](#local-docker-registry) | DevOps / Infrastructure | Planning | [NAS/Cluster](../.personal/incoming/device-lab.md) |
@@ -415,18 +416,33 @@ Reference documentation and materials inventory for custom drawer dividers. Uses
 **Materials:** Hair pins, EVA foam, felt tape, corrugated plastic (on hand)
 **Use Cases:** Component storage, tool organization, camera cases - build as needed
 
+### Power & Battery
+
+#### Reclaimed-Cell USB-C PD Pack
+**Status:** Planning
+**Directory:** [reclaimed-cell-usbc-pd-pack/](reclaimed-cell-usbc-pd-pack/)
+
+Sorting and matching salvaged/old power bank 18650 cells by tested capacity and internal
+resistance, then assembling a multi-S BMS-protected pack driving a SW3518/CH224K-based USB-C PD
+boost module for real negotiated PD output (5V/9V/12V/20V) instead of a stock power bank's fixed
+5V. Cell sorting is a gated first phase before any S/P layout is finalized.
+
+**Equipment:** Multimeter, bench supplies (on hand); programmable DC electronic load and spot
+welder needed (key gaps)
+**Related:** [tools-and-components.md](../tools-and-components.md), [Test Equipment inventory](../.personal/incoming/test-equipment.md)
+
 ---
 
 ## Project Status Summary
 
 - **Completed:** 4 projects (ATtiny2313 LED Clock, Radex One Protocol, Favero Fencing System, Vector Search SQL Server)
 - **Active Development:** 7 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation, Apple II Disk Archival)
-- **Planning/Research:** 8 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry, ImageWriter II Emulator)
+- **Planning/Research:** 9 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry, ImageWriter II Emulator, Reclaimed-Cell USB-C PD Pack)
 - **Research Documentation:** 1 project (HuggingFace .NET Native Execution - comprehensive research complete)
 - **On Hold:** 1 project (MM-8000K Trainer UI - hardware functional, used as reference)
 - **Reference/As Needed:** 3 projects (DIY TrekPak Dividers, DRL/DTL Logic Boards, AI/ML Research)
 
-**Total: 24 projects** (4 completed, 7 active, 8 planning, 1 research, 1 on hold, 3 reference)
+**Total: 25 projects** (4 completed, 7 active, 9 planning, 1 research, 1 on hold, 3 reference)
 
 ## Cross-References
 
@@ -469,5 +485,5 @@ projects/
 
 ---
 
-*Last updated: 2026-01-19*
-*Total projects: 24*
+*Last updated: 2026-07-22*
+*Total projects: 25*
