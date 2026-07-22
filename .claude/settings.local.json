@@ -99,7 +99,8 @@
       "WebFetch(domain:www.newark.com)",
       "WebFetch(domain:nl.farnell.com)",
       "WebFetch(domain:be.farnell.com)",
-      "WebFetch(domain:cz.farnell.com)"
+      "WebFetch(domain:cz.farnell.com)",
+      "WebFetch(domain:carbide3d.com)"
     ]
   }
 }
