@@ -276,11 +276,245 @@ No configuration needed - LSL handles multicast discovery.
 - **SCPI Standards**: https://www.ivifoundation.org/scpi/
 - **IVI Foundation**: https://www.ivifoundation.org/
 
+## Diagrams
+
+### System Architecture
+
+```plantuml
+@startuml SCPI Instrument Control LSL Integration
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 10
+
+title SCPI Instrument Control with LSL Data Streaming
+
+package "Test Instruments (LXI)" {
+    component [Oscilloscope Rigol Keysight] as scope
+    component [DMM Digital Multimeter] as dmm
+    component [Power Supply Programmable] as psu
+    component [Signal Generator] as siggen
+}
+
+package "Network Configuration" {
+    database [Instrument IP Registry] as reg
+    component [NTP Time Sync] as ntp
+}
+
+package "SCPI Marshaller Layer" {
+    component [SCPI Command Builder] as builder
+    component [Response Parser] as parser
+    database [Command Cache] as cache
+}
+
+package "VISA Transport" {
+    component [PyVISA Library] as visa
+}
+
+package "LSL Bridge Module" {
+    component [Channel Mapper] as mapper
+    component [Timestamp Corrector] as ts_corrector
+    component [LSL Outlet Factory] as outlet_factory
+}
+
+package "LSL Stream Outlets" {
+    component [Scope Data Stream 25kHz] as outlet_scope
+    component [DMM Stream 10Hz] as outlet_dmm
+    component [PSU Stream 1Hz] as outlet_psu
+}
+
+package "LSL Hub" {
+    component [LabRecorder] as recorder
+    component [Custom Processor] as processor
+}
+
+package "Storage" {
+    database [XDF Archive] as xdf
+    database [HDF5 Export] as hdf5
+}
+
+scope --> visa
+dmm --> visa
+psu --> visa
+siggen --> visa
+
+visa --> builder
+visa --> parser
+builder --> cache
+parser --> cache
+
+ntp ..> ts_corrector
+
+builder --> mapper
+parser --> mapper
+
+mapper --> outlet_factory
+ts_corrector --> outlet_factory
+
+outlet_factory --> outlet_scope
+outlet_factory --> outlet_dmm
+outlet_factory --> outlet_psu
+
+outlet_scope --> recorder
+outlet_dmm --> recorder
+outlet_psu --> recorder
+
+outlet_scope --> processor
+outlet_dmm --> processor
+
+recorder --> xdf
+processor --> hdf5
+
+note right of scope
+  Instrument Capabilities:
+  Sample rate MHz range
+  Channel count 2-4
+  Memory depth Megasamples
+  Trigger modes Multiple
+end note
+
+note right of builder
+  SCPI Commands:
+  IDN query
+  CONF VOLT DC
+  MEAS VOLT DC
+  Data transfer modes
+end note
+
+note right of outlet_factory
+  LSL Stream Creation:
+  Sample rate from instrument
+  Channel info from config
+  Type EEG ECG ECoG Other
+  Metadata manufacturer, model
+end note
+
+note right of recorder
+  Real-time Recording:
+  Multi-stream sync
+  Timestamp preservation
+  XDF self-documenting format
+  Immediate playback capability
+end note
+
+@enduml
+```
+
+### SCPI+LSL Synchronization Sequence
+
+```plantuml
+@startuml LSL Stream Synchronization Flow
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 10
+skinparam sequenceArrowThickness 2
+
+title LSL Multi-Stream Timestamp Synchronization
+
+participant "EEG Stream 256Hz" as eeg
+participant "ECG Stream 250Hz" as ecg
+participant "Eye Tracker 120Hz" as eye
+participant "LSL Hub" as hub
+participant "Clock Synchronizer" as sync
+participant "Recorder" as rec
+
+autonumber
+
+note over eeg, rec: T=0s All streams start
+
+eeg -> hub: push_sample
+note right of eeg
+  data ch0 to ch255
+  timestamp local_clock[0]
+end note
+
+ecg -> hub: push_sample
+note right of ecg
+  data I II III
+  timestamp local_clock[0]
+end note
+
+eye -> hub: push_sample
+note right of eye
+  data x y confidence
+  timestamp local_clock[0]
+end note
+
+note right of hub
+  Each stream maintains:
+  Sample buffer
+  Timestamp info
+  Nominal sample rate
+  Clock offset estimate
+end note
+
+par Parallel Stream 1
+    eeg -> eeg: Acquire 256 samples (t=1.0s)
+    eeg -> hub: push_samples(batch)
+else Parallel Stream 2
+    ecg -> ecg: Acquire 250 samples (t=1.0s)
+    ecg -> hub: push_samples(batch)
+else Parallel Stream 3
+    eye -> eye: Acquire 120 samples (t=1.0s)
+    eye -> hub: push_samples(batch)
+end
+
+note over hub: Timestamp Registration Phase
+
+loop Every 10 seconds
+    hub -> sync: register_clock_offset for EEG
+    hub -> sync: register_clock_offset for ECG
+    hub -> sync: register_clock_offset for Eye
+end
+
+sync -> sync: ComputeClockOffsets
+note right of sync
+  Linear regression
+  Detects clock drift
+  Compensates offset
+  Correlation greater than 99.5%
+end note
+
+hub -> rec: request_timestamps
+note right of rec
+  modal common_timebase
+end note
+
+rec -> sync: get_unified_timestamp
+note right of rec
+  stream_ids EEG ECG Eye
+  local_samples 256t 250t 120t
+end note
+
+sync -> rec: return unified timestamps
+note right of sync
+  unified_ts
+  offset_model y equals mx plus b
+  confidence 0.9999
+end note
+
+note right of rec
+  Recording Timestamp Assignment:
+  Use unified timebase
+  Linear interpolation
+  Apply offsets and drift
+  Store with metadata
+end note
+
+rec -> rec: WriteSynchronizedXDF
+note right of rec
+  all_streams_aligned
+  common_timestamp_domain
+  metadata offset_models
+end note
+
+note over eeg, rec: Result Multi-modal data synchronized to less than 1ms
+
+@enduml
+```
+
 ## See Also
 
 - Code example: `examples/python/lsl-scpi-bridge/`
-- System architecture diagram: `diagrams/architecture/scpi-lsl-integration.puml`
-- SCPI+LSL sequence diagram: `diagrams/protocols/lsl-stream-synchronization.puml`
 
 ---
 **Created**: 2026-01-16

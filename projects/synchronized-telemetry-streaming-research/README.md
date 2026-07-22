@@ -25,6 +25,244 @@ This research investigates modern protocols and patterns for streaming synchroni
 - **Distributed Architecture Patterns** (P2P design from BitTorrent v2)
 - **Telemetry Collection Standards** (ALTO protocol, network telemetry)
 
+## System Architecture
+
+Top-level view of how data acquisition, event streaming, time sync, storage, and visualization
+layers fit together:
+
+```plantuml
+@startuml System Architecture Overview
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 11
+skinparam roundCorners 8
+
+title Synchronized Telemetry Streaming System Architecture
+
+package "Data Acquisition Layer" {
+    component [SCPI Instruments] as instruments
+    component [Sensor Networks] as sensors
+    component [SDR Receivers] as sdr
+}
+
+package "Stream Collection" {
+    component [LSL Hub] as lsl
+    component [MQTT Broker] as mqtt
+    component [NATS Server] as nats
+}
+
+package "Event Streaming Platform" {
+    component [Kafka Cluster] as kafka
+    component [NATS JetStream] as jetstream
+    component [RabbitMQ] as rabbitmq
+}
+
+package "Processing and Analysis" {
+    component [Stream Processor Flink] as processor
+    component [Time Correlation Engine] as correlator
+    component [RaptorQ Decoder] as decoder
+}
+
+package "Time Synchronization" {
+    component [NTP Server] as ntp
+    component [PTP Master] as ptp
+    component [GPS Receiver] as gps
+}
+
+package "Storage and Persistence" {
+    database [InfluxDB TimeSeries] as influxdb
+    database [TimescaleDB PostgreSQL] as timescaledb
+    database [HDF5 Files] as hdf5
+    database [S3 Blob Storage] as s3
+}
+
+package "Visualization and Alerting" {
+    component [Grafana Dashboards] as grafana
+    component [Alert Manager] as alerts
+    component [Prometheus] as prometheus
+}
+
+' Data Flow
+instruments --> lsl
+sensors --> lsl
+sdr --> lsl
+
+lsl --> kafka
+mqtt --> kafka
+nats --> kafka
+
+kafka --> processor
+kafka --> decoder
+
+processor --> influxdb
+processor --> timescaledb
+decoder --> s3
+
+processor --> correlator
+ntp ..> processor
+ptp ..> processor
+gps ..> correlator
+
+influxdb --> grafana
+timescaledb --> grafana
+prometheus --> grafana
+
+processor --> prometheus
+alerts --> grafana
+
+note right of lsl
+  Lab Streaming Layer
+  Multi-modal data
+  Synchronized timestamps
+  Sample rate Hz to kHz
+end note
+
+note right of kafka
+  Event Streaming Hub
+  CloudEvents envelope
+  Topic-based routing
+  Partition by sensor ID
+end note
+
+note right of processor
+  Real-time Processing
+  Stateful operations
+  Event-time semantics
+  Late data handling
+end note
+
+note right of influxdb
+  High-cardinality timeseries
+  Tag-based indexing
+  Compression enabled
+  Retention policies
+end note
+
+@enduml
+```
+
+### Protocol Selection Decision Tree
+
+Which protocol/format to use at each layer (streaming transport, data-loss handling, storage
+format, time sync precision):
+
+```plantuml
+@startuml Protocol Selection Decision Tree
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 11
+skinparam linetype ortho
+
+title Telemetry System Protocol Selection Decision Tree
+
+start
+
+:Primary Requirement?;
+
+if (Real-time Local Lab?) then (Yes)
+    :Use **LSL (Lab Streaming Layer)**;
+    :Multi-modal, low-latency <1ms synchronization;
+    :XDF format (self-documenting);
+    end
+else (No)
+    :Need Network Distribution?;
+
+    if (Yes) then
+        :Throughput Requirement?;
+
+        if (High (>10K msgs/sec)) then
+            :Message Ordering?;
+
+            if (Critical) then
+                :Use **Kafka**;
+                :High throughput Partition ordering Reliable delivery 3-9 replicas;
+                end
+            else (Flexible)
+                :Use **NATS**;
+                :Lower latency Simpler operations Subject-based;
+                end
+            endif
+        else (Medium 100-10K msgs/sec)
+            :Use **NATS JetStream** or **RabbitMQ**;
+            :Balanced performance Flexible delivery modes;
+            end
+        endif
+    else (No)
+        :Local message queue only?;
+
+        if (Yes) then
+            :Use **RabbitMQ** or **MQTT**;
+            :Pub/Sub, queue abstractions Durable, fault-tolerant;
+            end
+        endif
+    endif
+endif
+
+:Data Transfer Protocol Decision;
+
+:High packet loss (>5%)?;
+
+if (Yes) then
+    :Use **RaptorQ** (RFC 6330);
+    :Fountain codes No retransmission Optimal for >10% loss;
+    :Symbol redundancy: 10-30%;
+    :Encoding: O(K²), Decoding: O(K²);
+    end
+else (No)
+    :Packet loss <5%?;
+
+    if (Yes) then
+        :Use **QUIC** for streaming or **TCP** for reliable;
+        :Built-in error handling Automatic retransmission;
+        end
+    else (None)
+        :Use **UDP** or **RTP**;
+        :Best latency No overhead;
+        end
+    endif
+endif
+
+:Storage Format Decision;
+
+:Query Pattern?;
+
+if (Analytics/SQL) then
+    :Use **Parquet** + **TimescaleDB**;
+    :Columnar format Full SQL support Compression: 80%+;
+    end
+else if (Time-series Metrics) then
+    :Use **InfluxDB**;
+    :Tag-based indexing High cardinality Automated downsampling;
+    end
+else (Offline Processing)
+    :Use **HDF5**;
+    :Hierarchical structure Efficient arrays Matlab/Python friendly;
+    end
+endif
+
+:Synchronization Method Decision;
+
+:Precision Required?;
+
+if (µs/ns level) then
+    :Use **PTP** (IEEE 1588);
+    :Hardware-assisted Cluster-wide sync Accuracy: <1 µs;
+    end
+else if (ms/100µs) then
+    :Use **NTP**;
+    :Network-based Global coverage Accuracy: 1-10 ms;
+    end
+else (Best effort)
+    :Use **RTP** or **Application Timestamps**;
+    :Simpler, lower overhead;
+    end
+endif
+
+stop
+
+@enduml
+```
+
 ## Directory Structure
 
 ```
@@ -38,23 +276,6 @@ synchronized-telemetry-streaming-research/
 │   ├── CloudEvents_Spec.md
 │   ├── BitTorrentV2_BEP52.md
 │   └── (27 more standards documents)
-│
-├── diagrams/                          # Architecture and protocol diagrams (PlantUML)
-│   ├── architecture/                 # System architecture patterns
-│   │   ├── system-overview.puml
-│   │   ├── lsl-multimodal-recording.puml
-│   │   ├── kafka-event-architecture.puml
-│   │   ├── raptorq-transfer-architecture.puml
-│   │   ├── scpi-lsl-integration.puml
-│   │   └── timeseries-storage-pipeline.puml
-│   ├── protocols/                    # Protocol flow diagrams
-│   │   ├── raptorq-encoding-flow.puml
-│   │   ├── kafka-cloudevents-flow.puml
-│   │   └── lsl-stream-synchronization.puml
-│   ├── decision-trees/               # Protocol selection guide
-│   │   └── protocol-selection.puml
-│   └── synchronization/              # Time synchronization architectures
-│       └── multi-stream-correlation.puml
 │
 ├── examples/                          # Working code examples (15 files)
 │   ├── python/
@@ -199,18 +420,15 @@ synchronized-telemetry-streaming-research/
 
 ## Phase 2: Implementation & Deployment (Complete)
 
-**Diagrams** (10 PlantUML files)
-- [x] System architecture overview
-- [x] LSL multi-modal recording
-- [x] Kafka event architecture
-- [x] RaptorQ transfer architecture
-- [x] SCPI-LSL integration
-- [x] Timeseries storage pipeline
-- [x] RaptorQ encoding/decoding flow
-- [x] Kafka CloudEvents message flow
-- [x] LSL stream synchronization
-- [x] Protocol selection decision tree
-- [x] Multi-stream time synchronization
+**Diagrams** (11 PlantUML diagrams, embedded inline in their host docs — see below, not standalone `.puml` files)
+- [x] System architecture overview — `README.md` (this file)
+- [x] Protocol selection decision tree — `README.md` (this file)
+- [x] SCPI-LSL integration + LSL stream synchronization — `guides/integration/scpi-lsl-integration.md`
+- [x] LSL multi-modal recording — `examples/python/lsl-scpi-bridge/README.md`
+- [x] Kafka event architecture + CloudEvents message flow — `guides/integration/kafka-cloudevents-event-streaming.md`
+- [x] RaptorQ transfer architecture + encoding/decoding flow — `guides/integration/raptorq-reliable-transfer.md`
+- [x] Multi-stream time synchronization — `guides/integration/passive-radar-multi-receiver.md`
+- [x] Timeseries storage pipeline — `storage/blob-stream-storage-standards.md`
 
 **Code Examples** (15 files)
 - [x] Python: LSL-SCPI Bridge (6 files: producer, SCPI client, LSL outlet factory, config)
@@ -288,7 +506,8 @@ synchronized-telemetry-streaming-research/
 │   ├── PROJECT_COMPLETION_SUMMARY.md
 │   └── PROJECT_SETUP_SUMMARY.md
 │
-└── diagrams/                   # Architecture diagrams (PlantUML)
+# (PlantUML diagrams are embedded inline in their host docs above —
+#  see README.md and guides/integration/ for architecture/protocol/sequence diagrams)
 ```
 
 ### Subdirectory Guide

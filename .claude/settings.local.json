@@ -93,7 +93,13 @@
       "WebFetch(domain:my.element14.com)",
       "WebFetch(domain:in.element14.com)",
       "WebFetch(domain:bantamtools.com)",
-      "WebFetch(domain:themakerhawk.com)"
+      "WebFetch(domain:themakerhawk.com)",
+      "WebFetch(domain:uk.farnell.com)",
+      "WebFetch(domain:theminiware.com)",
+      "WebFetch(domain:www.newark.com)",
+      "WebFetch(domain:nl.farnell.com)",
+      "WebFetch(domain:be.farnell.com)",
+      "WebFetch(domain:cz.farnell.com)"
     ]
   }
 }

@@ -11,24 +11,24 @@ Create production-ready diagrams, code examples, integration guides, benchmarks,
 
 ## Completed Deliverables
 
-### 1. PlantUML Diagrams (10 files)
+### 1. PlantUML Diagrams (11 diagrams, embedded inline in host docs — not standalone `.puml` files)
 
-**Architecture Diagrams (6 files)**
-- `diagrams/architecture/system-overview.puml` - Multi-layer telemetry architecture
-- `diagrams/architecture/lsl-multimodal-recording.puml` - Lab Streaming Layer acquisition
-- `diagrams/architecture/kafka-event-architecture.puml` - Event streaming with CloudEvents
-- `diagrams/architecture/raptorq-transfer-architecture.puml` - Erasure-coded file transfer
-- `diagrams/architecture/scpi-lsl-integration.puml` - Instrument control + LSL bridge
-- `diagrams/architecture/timeseries-storage-pipeline.puml` - Data storage lifecycle
+**Architecture Diagrams (6)**
+- System overview - Multi-layer telemetry architecture — embedded in `README.md`
+- LSL multi-modal recording - Lab Streaming Layer acquisition — embedded in `examples/python/lsl-scpi-bridge/README.md`
+- Kafka event architecture - Event streaming with CloudEvents — embedded in `guides/integration/kafka-cloudevents-event-streaming.md`
+- RaptorQ transfer architecture - Erasure-coded file transfer — embedded in `guides/integration/raptorq-reliable-transfer.md`
+- SCPI-LSL integration - Instrument control + LSL bridge — embedded in `guides/integration/scpi-lsl-integration.md`
+- Timeseries storage pipeline - Data storage lifecycle — embedded in `storage/blob-stream-storage-standards.md`
 
-**Protocol Flow Diagrams (3 files)**
-- `diagrams/protocols/raptorq-encoding-flow.puml` - RFC 6330 fountain code sequences
-- `diagrams/protocols/kafka-cloudevents-flow.puml` - CloudEvents message flow
-- `diagrams/protocols/lsl-stream-synchronization.puml` - Multi-stream timestamp correlation
+**Protocol Flow Diagrams (3)**
+- RaptorQ encoding flow - RFC 6330 fountain code sequences — embedded in `guides/integration/raptorq-reliable-transfer.md`
+- Kafka CloudEvents flow - CloudEvents message flow — embedded in `guides/integration/kafka-cloudevents-event-streaming.md`
+- LSL stream synchronization - Multi-stream timestamp correlation — embedded in `guides/integration/scpi-lsl-integration.md`
 
-**Decision & Synchronization (2 files)**
-- `diagrams/decision-trees/protocol-selection.puml` - Protocol selection flowchart
-- `diagrams/synchronization/multi-stream-correlation.puml` - Time sync architecture
+**Decision & Synchronization (2)**
+- Protocol selection - Protocol selection flowchart — embedded in `README.md`
+- Multi-stream correlation - Time sync architecture — embedded in `guides/integration/passive-radar-multi-receiver.md`
 
 ### 2. Code Examples (15 files)
 
@@ -193,10 +193,10 @@ Potential future enhancements:
 - **FOSS Focus**: `reference/FOSS-STANDARDS-FOCUS.md`
 
 ### Diagrams
-All 10 diagrams follow PlantUML standards and can be rendered with:
-- PlantUML Online Editor
-- VS Code PlantUML extension
-- Command-line: `plantuml diagrams/**/*.puml`
+All 11 diagrams follow PlantUML standards and are embedded as ` ```plantuml ` fenced code blocks
+in their host docs (see listing above). Render with:
+- PlantUML Online Editor (paste the fenced block contents)
+- VS Code PlantUML extension (renders fenced ```plantuml blocks directly)
 
 ### Code Examples
 All examples are functional but simplified for clarity:

@@ -76,6 +76,124 @@ SCPI Instrument (LXI)
 4. **Timestamp Sync**: Assign LSL timestamp from system clock (NTP-corrected)
 5. **Publishing**: Push data to LSL outlet
 
+### Full Multi-Modal Recording Architecture
+
+This example is one producer among several possible LSL sources. The diagram below shows how it
+fits alongside other device types (EEG, ECG, eye tracking, motion capture) feeding a shared LSL
+hub and recording pipeline.
+
+```plantuml
+@startuml LSL Multi-Modal Data Acquisition
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 10
+
+title LSL Multi-Modal Recording Architecture
+
+package "Acquisition Devices" {
+    component [EEG Headset (256 ch)] as eeg
+    component [ECG Monitor (3-lead)] as ecg
+    component [Eye Tracker (120 Hz)] as eye
+    component [Motion Capture (12 markers)] as mocap
+}
+
+package "Device Drivers and Bridges" {
+    component [BioSemi Driver] as biosemi_drv
+    component [Shimmer Driver] as shimmer_drv
+    component [Tobii Eye Driver] as tobii_drv
+    component [Vicon Bridge] as vicon_brg
+}
+
+package "LSL Outlet Modules" {
+    component [EEG Outlet 256 Hz] as eeg_outlet
+    component [ECG Outlet 250 Hz] as ecg_outlet
+    component [Gaze Outlet 120 Hz] as eye_outlet
+    component [Marker Outlet 100 Hz] as mocap_outlet
+}
+
+package "LSL Hub (liblsl)" {
+    component [LSL Registry] as registry
+    database [Stream Metadata] as metadata
+    component [Clock Synchronizer] as clock_sync
+}
+
+package "Recording Applications" {
+    component [LabRecorder] as recorder
+    component [Custom Processor] as processor
+}
+
+package "Output Formats" {
+    database [XDF Files (MDF-like)] as xdf
+    database [HDF5 Archive] as hdf5
+    database [Parquet Dataset] as parquet
+}
+
+' Device connections
+eeg --> biosemi_drv
+ecg --> shimmer_drv
+eye --> tobii_drv
+mocap --> vicon_brg
+
+' Driver to LSL Outlets
+biosemi_drv --> eeg_outlet
+shimmer_drv --> ecg_outlet
+tobii_drv --> eye_outlet
+vicon_brg --> mocap_outlet
+
+' Outlets to LSL Hub
+eeg_outlet --> registry
+ecg_outlet --> registry
+eye_outlet --> registry
+mocap_outlet --> registry
+
+registry --> metadata
+registry --> clock_sync
+
+' Applications consuming LSL
+registry --> recorder
+registry --> processor
+
+' Recording outputs
+recorder --> xdf
+processor --> hdf5
+processor --> parquet
+
+clock_sync ..> eeg_outlet
+clock_sync ..> ecg_outlet
+clock_sync ..> eye_outlet
+clock_sync ..> mocap_outlet
+
+note right of registry
+  LSL Registry Function:
+  - Stream discovery (multicast)
+  - Metadata publication
+  - Connection management
+end note
+
+note right of clock_sync
+  Clock Synchronization:
+  - NTP/PTP to LSL timestamps
+  - Drift compensation
+  - Multi-device correlation
+end note
+
+note right of recorder
+  LabRecorder:
+  - Subscribes to all streams
+  - XDF format (self-describing)
+  - Timestamp preservation
+end note
+
+note right of xdf
+  XDF (Extended Data Format)
+  - Hierarchical XML metadata
+  - Stream-specific sample rates
+  - Efficient binary encoding
+end note
+
+@enduml
+```
+
 ## Module Reference
 
 ### `lsl_scpi_producer.py`

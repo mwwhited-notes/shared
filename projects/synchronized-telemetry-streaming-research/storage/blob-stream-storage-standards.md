@@ -652,6 +652,148 @@ Software distribution, backup archives, sequential data streams
 
 ## Lifecycle & Retention Policies
 
+### Time-Series Storage Pipeline
+
+End-to-end view of how streaming/metrics data moves from ingestion through hot/warm/cold
+retention tiers into query and archive layers:
+
+```plantuml
+@startuml Time-Series Storage Pipeline
+skinparam backgroundColor #FEFEFE
+skinparam defaultFontName Helvetica
+skinparam defaultFontSize 10
+
+title Time-Series Data Storage and Retrieval Pipeline
+
+package "Data Sources" {
+    component [Streaming Events (Kafka)] as kafka
+    component [Metrics (OpenTelemetry)] as otel
+    component [Application Logs] as logs
+}
+
+package "Ingestion Layer" {
+    component [Telegraf Collector] as telegraf
+    component [Prometheus Remote Write] as prom_write
+    component [FluentBit] as fluent
+}
+
+package "Time-Series Databases" {
+    database [InfluxDB (High Cardinality)] as influx
+    database [TimescaleDB (SQL Queries)] as tsdb
+    database [Prometheus (Metrics)] as prom
+    database [QuestDB (Analytics)] as quest
+}
+
+package "Aggregation & Downsampling" {
+    component [Retention Policy Engine] as retention
+    component [Downsampling Tasks] as downsample
+}
+
+package "Query Layer" {
+    component [Flux (InfluxDB)] as flux
+    component [SQL (TimescaleDB)] as sql
+    component [PromQL (Prometheus)] as promql
+}
+
+package "Visualization & Analysis" {
+    component [Grafana Dashboards] as grafana
+    component [Jupyter Notebooks] as jupyter
+    component [Python Analytics] as python_analytics
+}
+
+package "Cold Storage" {
+    database [S3/Blob Archive] as s3
+    database [Parquet Datasets] as parquet
+}
+
+' Ingestion flows
+kafka --> telegraf
+otel --> prom_write
+logs --> fluent
+
+telegraf --> influx
+telegraf --> tsdb
+prom_write --> prom
+fluent --> tsdb
+
+' Aggregation
+influx --> retention
+tsdb --> retention
+prom --> retention
+
+retention --> downsample
+downsample --> influx
+downsample --> tsdb
+
+' Query layer
+influx --> flux
+tsdb --> sql
+prom --> promql
+
+' Analytics
+flux --> grafana
+sql --> grafana
+promql --> grafana
+
+grafana --> jupyter
+sql --> python_analytics
+parquet --> python_analytics
+
+' Archive
+influx --> s3
+tsdb --> parquet
+tsdb --> s3
+
+note right of telegraf
+  Data Transformation:
+  - Format conversion
+  - Tag/label creation
+  - Filtering & enrichment
+  - Rate limiting
+end note
+
+note right of influx
+  Configuration:
+  - Bucket: 1-day retention
+  - Downsampling: 5m/1h
+  - Compression: enabled
+  - Replication: 2x
+end note
+
+note right of retention
+  Data Lifecycle:
+  - Hot: 7 days (full)
+  - Warm: 30 days (5min)
+  - Cold: 1 year (1h)
+end note
+
+note right of sql
+  TimescaleDB Benefits:
+  - Full SQL support
+  - JSONB for metadata
+  - Compression 80%+
+  - Index creation flexible
+end note
+
+note right of grafana
+  Dashboard Features:
+  - Multi-DB queries
+  - Alert definitions
+  - Variable templating
+  - Distributed traces
+end note
+
+note right of s3
+  Archive Strategy:
+  - Parquet format
+  - Partition by date
+  - Snappy compression
+  - Queryable via S3 Select
+end note
+
+@enduml
+```
+
 ### AWS Glacier Tiers
 
 **Standard Pattern:**
