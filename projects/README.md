@@ -16,7 +16,7 @@ Active project documentation and build logs organized by category.
 | [ATtiny2313 LED Clock](#attiny2313-led-clock) | Microcontrollers | Completed | [ATtiny2313](../.personal/incoming/programmable-devices.md) |
 | [MM-8000K Trainer UI](#mm-8000k-intel-8085-trainer-ui) | Retro Computing | On Hold | [MM-8000K](../.personal/incoming/vintage-computers.md) |
 | [Apple II Disk Archival](#apple-ii-disk-archival) | Retro Computing | Active | [Greaseweazle V4.1](../.personal/incoming/test-equipment.md), Epson SD-800 |
-| [Passive Radar SDR](#passive-radar-sdr-system) | RF/SDR | Planning | [KrakenSDR/RTL-SDR](../.personal/incoming/programmable-devices.md) |
+| [Passive Radar SDR](#passive-radar-sdr-system) | RF/SDR | Planning | [KrakenSDR/RTL-SDR](../.personal/incoming/test-equipment.md) |
 | [Radex One Protocol](#radex-one-geiger-counter-protocol) | Protocol Reverse Eng | Completed | [Radex One](../.personal/incoming/device-lab.md) |
 | [Favero Fencing System](#favero-fencing-scoring-system) | Protocol Integration | Completed | Favero Full-Arm-05 |
 | [ImageWriter II Emulator](#imagewriter-ii-emulator) | Protocol Integration | Planning | Serial cable, [Apple IIc](../.personal/incoming/vintage-computers.md) |
@@ -32,6 +32,13 @@ Active project documentation and build logs organized by category.
 | [Cline with Local LLM](#cline-with-local-llm) | AI / Dev Tools | Planning | [RTX 4070 Ti](../.personal/incoming/device-lab.md) |
 | [HuggingFace .NET Native](#huggingface-dotnet-native-execution) | AI/ML Research | Research | .NET workstation |
 | [Local Docker Registry](#local-docker-registry) | DevOps / Infrastructure | Planning | [NAS/Cluster](../.personal/incoming/device-lab.md) |
+| [ScoreMachine](#scoremachine) | Distributed Systems / A/V | Production | RS-485-to-USB, NeTV, OBS |
+| [AI/ML Docker Orchestration](#aiml-docker-orchestration-platform) | AI / DevOps | Production-Ready | Docker/Swarm/K8s (software) |
+| [Docker Containers Collection](#docker-containers-collection) | DevOps/Infrastructure | In Progress | Software repository consolidation |
+| [dotex Consolidation](#dotex-consolidation-project) | Software Architecture | Planning | Software repository consolidation |
+| [Python Embedding in SQL Server](#can-you-run-and-embedding-model-in-sql-server) | Database/ML | Notes | SQL Server language extensions |
+| [Synchronized Telemetry Streaming Research](#synchronized-telemetry-streaming-research) | Research/Networking | Research | n/a (standards research) |
+| [Windows USB Passthrough](#windows-usb-passthrough-notes) | DevOps/Infrastructure | Notes | usbipd-win, WSL, Docker |
 
 ## Projects by Category
 
@@ -188,6 +195,18 @@ Serial protocol integration for Favero Full-Arm-05 fencing scoring apparatus. Bu
 
 ---
 
+#### ScoreMachine
+**Status:** Production (2018-Present)
+**Directory:** [scoremachine/](scoremachine/)
+
+Distributed fencing tournament scoring system with real-time overlay and network-based A/V control. Deployed at the Arnold Fencing Classic (2018-2020, part of Arnold Sports Festival) and still in production use at Royal Arts Fencing Academy events (2020-present). Multi-target overlay architecture serves one HTML/CSS/JS page to both NeTV hardware FPGA overlay (SignalR fallback) and OBS Browser Source (WebSockets), allowing migration from hardware-first to software-first overlay without rewriting.
+
+**Phases:** Phase 1 (2017-2019) Raspberry Pi 2 + NeTV FPGA (historical); Phase 2 (2019-present) Windows PC + OBS Studio (production)
+**Equipment:** RS-485-to-USB scoring interface, NeTV FPGA overlay hardware (Phase 1), Windows PC + OBS (Phase 2)
+**Applications:** Real-time tournament scoreboard overlay, broadcast/streaming graphics
+
+---
+
 #### ImageWriter II Emulator
 **Status:** Planning
 **Directory:** [imagewriter-ii-emulator/](imagewriter-ii-emulator/)
@@ -279,6 +298,25 @@ Research project documenting approaches for running HuggingFace transformer mode
 
 ---
 
+#### Can you run and embedding model in SQL Server
+**Status:** Notes
+**Directory:** [python-embedding-in-sql/](python-embedding-in-sql/)
+
+One-line scratch note asking whether SQL Server's language extensions can host a sBERT model directly in-database. No implementation yet — captured as a question to follow up on, related to the Vector Search SQL Server project's LSH approach.
+
+---
+
+#### Synchronized Telemetry Streaming Research
+**Status:** Research - Comprehensive Documentation
+**Directory:** [synchronized-telemetry-streaming-research/](synchronized-telemetry-streaming-research/)
+
+Research into protocols and patterns for streaming synchronized telemetry data from multiple sources simultaneously: real-time streaming protocols (RTSP 2.0, RTP, RTCP), multi-stream synchronization, stream multiplexing, CloudEvents, and distributed architecture patterns (BitTorrent v2, ALTO). 40+ standards catalogued with RFCs and links, 100+ implementation resources indexed, 8 repository projects cross-referenced.
+
+**Documentation:** [RESEARCH_BIBLIOGRAPHY.md](synchronized-telemetry-streaming-research/RESEARCH_BIBLIOGRAPHY.md), [event-streaming-and-blob-transfer.md](synchronized-telemetry-streaming-research/event-streaming-and-blob-transfer.md), [out-of-order-blob-transfer.md](synchronized-telemetry-streaming-research/out-of-order-blob-transfer.md)
+**Downloaded standards:** [documents/](synchronized-telemetry-streaming-research/documents/) (8 RFC/standards PDFs, 1.1 MB)
+
+---
+
 ### Test & Measurement Automation
 
 #### SCPI Instrument Control
@@ -293,6 +331,48 @@ Network control system for SCPI-compatible test equipment with custom .NET Core 
 ---
 
 ### DevOps & Infrastructure
+
+#### AI/ML Docker Orchestration Platform
+**Status:** Production-Ready
+**Directory:** [ai-ml-docker-orchestration/](ai-ml-docker-orchestration/)
+
+Docker orchestration platform for AI/ML workloads with multi-service stacks, GPU-aware deployment, and self-contained-service (v3.0) composition patterns. Unifies 8+ services (LLM inference, vector databases, embeddings, search, document processing, web interfaces) deployable independently or as composed stacks (Docker Compose, Swarm, or Kubernetes/Helm), with zero-downtime deployment and health monitoring.
+
+**Deployment targets:** Docker Compose (dev), Docker Swarm, Kubernetes/Helm
+**Key composition:** [compositions/ai-workspace](ai-ml-docker-orchestration/compositions/ai-workspace), [compositions/vector-search-rag](ai-ml-docker-orchestration/compositions/vector-search-rag)
+**Cross-references:** [local-docker-registry/](local-docker-registry/), [devops-playground-cluster/](devops-playground-cluster/), [cline-qwen3-coder-30b/](cline-qwen3-coder-30b/)
+
+---
+
+#### Docker Containers Collection
+**Status:** In Progress
+**Directory:** [containers-collection/](containers-collection/)
+
+Centralizing Docker assets (Dockerfiles, Compose stacks, management scripts) scattered across multiple repositories into a single `containers` repository for discoverability and reuse. Repository created 2026-01-08; Phase 1 (Infrastructure) complete.
+
+**Repository:** [OutOfBandDevelopment/containers](https://github.com/OutOfBandDevelopment/containers) → `code/public/containers`
+**Next:** Phase 2 (Asset Inventory Review), Phase 3 (Public Asset Migration)
+
+---
+
+#### dotex Consolidation Project
+**Status:** Planning
+**Directory:** [dotex-consolidation/](dotex-consolidation/)
+
+Consolidating scattered .NET extension libraries and utilities into the single [dotex](https://github.com/OutOfBandDevelopment/dotex) framework repository as modular packages (`dotex.Build.*`, `dotex.Data.*`, `dotex.Decoders.*`, etc.), reducing fragmented versioning and duplicated functionality across standalone repos.
+
+**Target:** [OutOfBandDevelopment/dotex](https://github.com/OutOfBandDevelopment/dotex)
+**Related analysis:** BinaryDataDecoders vs. dotex comparison (17 duplicate projects identified for migration/deletion, tracked in `code/` submodule)
+
+---
+
+#### Windows USB Passthrough (Notes)
+**Status:** Notes
+**Directory:** [windows-usb-passthough/](windows-usb-passthough/)
+
+Scratch notes on passing USB devices from Windows through WSL into a Docker container using `usbipd-win` (`usbipd wsl list` / `usbipd wsl attach`) and mapping the resulting `/dev/ttyUSBx` device into a Compose service.
+
+---
 
 #### Self-Hosted Git Server
 **Status:** Planning
@@ -435,14 +515,16 @@ welder needed (key gaps)
 
 ## Project Status Summary
 
+- **Production:** 2 projects (AI/ML Docker Orchestration Platform, ScoreMachine)
 - **Completed:** 4 projects (ATtiny2313 LED Clock, Radex One Protocol, Favero Fencing System, Vector Search SQL Server)
-- **Active Development:** 7 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation, Apple II Disk Archival)
-- **Planning/Research:** 9 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry, ImageWriter II Emulator, Reclaimed-Cell USB-C PD Pack)
-- **Research Documentation:** 1 project (HuggingFace .NET Native Execution - comprehensive research complete)
+- **Active Development:** 8 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation, Apple II Disk Archival, Docker Containers Collection)
+- **Planning/Research:** 9 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry, ImageWriter II Emulator, Reclaimed-Cell USB-C PD Pack, dotex Consolidation)
+- **Research Documentation:** 2 projects (HuggingFace .NET Native Execution, Synchronized Telemetry Streaming Research - comprehensive research complete)
 - **On Hold:** 1 project (MM-8000K Trainer UI - hardware functional, used as reference)
 - **Reference/As Needed:** 3 projects (DIY TrekPak Dividers, DRL/DTL Logic Boards, AI/ML Research)
+- **Notes/Scratch:** 2 projects (Python Embedding in SQL Server, Windows USB Passthrough) - single-note captures, not yet active work
 
-**Total: 25 projects** (4 completed, 7 active, 9 planning, 1 research, 1 on hold, 3 reference)
+**Total: 31 projects** (2 production, 4 completed, 8 active, 9 planning, 2 research documentation, 1 on hold, 3 reference, 2 notes)
 
 ## Cross-References
 

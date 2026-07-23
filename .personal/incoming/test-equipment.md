@@ -1,9 +1,9 @@
 # Test Equipment Inventory Response
 
-**Summary:** 41 pieces of laboratory test and measurement equipment with specifications for oscilloscopes, signal generators, multimeters, power supplies, programmers, and specialized instruments.
+**Summary:** 42 pieces of laboratory test and measurement equipment with specifications for oscilloscopes, signal generators, multimeters, power supplies, programmers, RF/SDR, and specialized instruments.
 
-**Response Date:** 2026-01-17
-**Total Equipment:** 41 units
+**Response Date:** 2026-01-17 (updated 2026-07-23: added RF / SDR)
+**Total Equipment:** 42 units
 **Status:** All Active
 
 ---
@@ -194,6 +194,14 @@
 
 ---
 
+## RF / SDR
+
+| Model | Type | Frequency Range | Status | Acquisition |
+|---|---|---|---|---|
+| RTL-SDR Blog V4 | SDR Receiver (RX only) | 500 kHz - 1766 MHz | Active | 2026 |
+
+---
+
 ## Safety & Monitoring
 
 | Model | Type | Detection | Range | Status | Acquisition |
@@ -295,8 +303,9 @@
 | Audio Equipment | 1 | Active |
 | Lab Equipment | 3 | Active |
 | Fabrication | 1 | Active |
+| RF / SDR | 1 | Active |
 | Safety & Monitoring | 1 | Active |
-| **TOTAL** | **41** | **All Active** |
+| **TOTAL** | **42** | **All Active** |
 
 ---
 

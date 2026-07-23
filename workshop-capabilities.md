@@ -109,7 +109,7 @@ Two-node home lab for container orchestration and DevOps learning:
 
 ### Test & Measurement
 
-For complete test equipment inventory with detailed specifications, see [`.personal/incoming/test-equipment.md`](.personal/incoming/test-equipment.md) (41 units).
+For complete test equipment inventory with detailed specifications, see [`.personal/incoming/test-equipment.md`](.personal/incoming/test-equipment.md) (42 units).
 
 Quick Reference:
 
@@ -124,6 +124,7 @@ Quick Reference:
 | **Microscope**      | 3.5X-90X stereo + 5MP camera, 40X-2000X compound | SMD work, inspection, imaging |
 | **Document Camera** | Kitchbar KB-700 (8MP)                            | PCB photos, documentation     |
 | **Signal Generator**| Rigol DG1022 (2ch, 20MHz)                        | Function generation, testing  |
+| **RF / SDR**        | RTL-SDR Blog V4 (500 kHz - 1766 MHz, RX only)    | Spectrum analysis, ADS-B, weather satellites |
 
 ### Assembly & Rework
 

@@ -11,14 +11,14 @@
 
 ### Equipment & Tools
 - [x] Personal responses received in `.personal/incoming/` (2026-01-17)
-  - [x] test-equipment.md - 41 units documented
+  - [x] test-equipment.md - 42 units documented
   - [x] tools-and-components.md - 100+ items documented
   - [x] device-lab.md - 40+ devices documented
   - [x] expansion-boards.md - 30+ boards documented
   - [x] programmable-devices.md - 37 boards documented
   - [x] vintage-computers.md - 4 systems documented
-  - [x] books.md - 50+ titles documented
-  - [x] camera-collection.md - 100+ items documented
+  - [x] books.md - 26 titles documented
+  - [x] camera-collection.md - 75+ items documented
 - [x] Updated workshop-capabilities.md to reference personal data
 - [ ] Update individual project READMEs to link equipment references to personal data
 
