@@ -47,6 +47,7 @@ The CPU will be implemented on the Digilent Arty A7-100 FPGA development board.
 
 ## Related Projects
 
+- [DevOps Playground Cluster](../devops-playground-cluster/) - Slurm target for offloading Vivado synthesis/implementation jobs
 - [SAP-1 Computer](../sap-1-computer/) - Breadboard 8-bit computer (learning progression: TTL breadboard → FPGA)
 - [Zynq SoC Exploration](../zynq-soc-exploration/) - ARM+FPGA SoC on Arty Z7-20
 - [MM-8000K Trainer UI](../mm8000-trainer-ui/) - Intel 8085 architecture reference
@@ -63,6 +64,7 @@ The CPU will be implemented on the Digilent Arty A7-100 FPGA development board.
 ## References
 
 - Existing ALU and graphics engine code (to be migrated)
+- [AMD Vivado SLURM-Specific Configuration](https://docs.amd.com/r/en-US/ug904-vivado-implementation/SLURM-Specific-Configuration) - offload synthesis/implementation runs to [DevOps Playground Cluster](../devops-playground-cluster/) once Slurm is set up there (SSH keys between the workstation and scheduler, custom Tcl Job-ID-extraction script, then "Launch runs on cluster" from the Vivado Design Runs window)
 - [project-ideas.md](../project-ideas.md) - Original project concept
 
 ---

@@ -155,6 +155,7 @@ This is a **learning playground**, not a production environment. The goal is to 
 - [Home Automation](../home-automation/) - Home Assistant could run on this cluster (if not on dedicated Pi)
 - [WD My Cloud PR4100](../../Device%20Lab/network-storage/wd-mycloud-pr4100/) - Could provide NFS storage to cluster
 - [Self-Hosted Git Server](../self-hosted-git-server/) - Production Git on PR4100; cluster can use for CI/CD webhooks
+- [FPGA CPU Design](../fpga-cpu-design/) - Once Slurm is running here, [AMD's Vivado SLURM-cluster integration guide](https://docs.amd.com/r/en-US/ug904-vivado-implementation/SLURM-Specific-Configuration) lets Vivado offload synthesis/place-and-route jobs from the FPGA CPU Design workstation to this cluster over SSH — a concrete real use for the Slurm learning goal beyond generic batch-job practice
 
 ## Architecture Separation
 

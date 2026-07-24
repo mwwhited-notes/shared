@@ -85,6 +85,7 @@
 - [SBC Cluster](../sbc-cluster/) - ARM-based cluster alternative for always-on services
 - [Self-Hosted Git Server](../self-hosted-git-server/) - Related infrastructure project on PR4100
 - [Radex One Protocol](../radex-one-protocol-reverse-engineering/) - Potential sensor integration
+- [Home NVR System](../home-nvr-system/) - Frigate/Viseron camera detection feeding Home Assistant automations, shares Docker host decision
 - [project-ideas.md](../project-ideas.md) - Original project concept
 
 ---

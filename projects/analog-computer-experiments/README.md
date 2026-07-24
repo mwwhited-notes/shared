@@ -51,6 +51,14 @@ Goals include learning analog computing fundamentals, implementing classic demon
    basic integrator/multiplier/function-generator experiments above are working, since it chains
    several of them together (3 multipliers, 3 sine + 2 cosine function generators, multiple
    integrators). Cross-reference: [11-aerospace-simulation](../../AnalogComputers/analog-computing-repository/11-aerospace-simulation/) collection for the underlying aircraft-simulation theory.
+6. **Bouncing Ball in a Box** - Classic demo combining bounded integration (gravity + damped
+   rebound, clamped by Zener diodes at ±1 machine unit) with comparator-driven sign flips for wall
+   collisions on the X axis, plus a separate high-frequency sine/cosine oscillator superimposed on
+   the position signals purely to draw a round "ball" on the scope instead of a dot. Modeled on
+   [Analog Museum's bouncing_ball example](https://www.analogmuseum.org/english/examples/bouncing_ball/)
+   (Telefunken RA742). Good precursor to the flight simulator above — same sine/cosine function
+   generator technique, simpler equations, and a nice concrete demonstration of using comparators
+   to handle discontinuities (collisions) without explicit event detection.
 
 ### Hybrid Computing
 1. **THAThc Arduino interface** - see [that-hybrid-controller](../that-hybrid-controller/) for the

@@ -16,6 +16,11 @@ Project backlog for future development. Once a project has its own directory in 
 * build Multicomp 6809 Flex/OS-9 system [learn another 8-bit architecture]
 * Gigatron TTL expansion or game development [have Gigatron TTL computer]
 * TI-99/4A cartridge development [have TI-99/4A with speech synthesizer]
+* explore the [Bendix G-15](https://www.phkimpel.us/Bendix-G15/) via the browser-based retro-g15 emulator [no hardware owned — 1950s drum-memory vacuum-tube computer, source on GitHub, software archive of original paper-tape programs; a pure-software way to explore an architecture radically different from anything else in this collection before considering a hardware recreation]
+
+### PCB Fabrication
+
+* laser-etched custom PCBs using a low-power laser engraver — [Instructables: How to Make a Custom PCB Using a Low Power Laser Engraver](https://www.instructables.com/How-to-Make-a-Custom-PCB-Using-a-Low-Power-Laser-E/) (article content couldn't be fully retrieved during research — page returned only its title on repeated fetch attempts; review the 8 steps directly before starting). Potential alternative/complement to the wishlisted [PCB mill/router](../workshop-capabilities.md#wishlist-would-expand-capabilities) if a laser engraver is cheaper/already on hand.
 
 ### FPGA & CPU Design
 
@@ -50,6 +55,7 @@ Project backlog for future development. Once a project has its own directory in 
 ### Learning & Exploration
 
 * play around more with diode logic (working though this in combination with trying to reverse engineer programming some old PAL chips helped me understand how "high voltage" programmers work as well as ROM, SRAM, and more about combinational logic)
+* build a 555 timer from discrete components — [Instructables: Designing a 555 Timer on Discrete Elements](https://www.instructables.com/Designing-a-555-Timer-on-Discrete-Elements/) (article content couldn't be fully retrieved during research — page returned only its title on repeated fetch attempts; review the 6 steps directly). Same "understand what's inside the IC" spirit as the diode logic and DRL/DTL work above — see [DRL/DTL Logic Boards](drl-dtl-logic-boards/)
 * D2-1 line follower robot enhancements [add MCU to analog base]
 * Velleman K8055 automation projects [USB I/O board for PC control]
 * build out multi-axis hand controller to work with oculus/hololens
@@ -76,6 +82,7 @@ Project backlog for future development. Once a project has its own directory in 
 
 * Multi-protocol hub (Z-Wave + Zigbee + Matter)
 * Local voice control without cloud services
+* root a Nest thermostat for cloud-free local control — [Hackaday: Rooting the Nest Thermostat](https://hackaday.com/2014/06/24/rooting-the-nest-thermostat/) [no Nest hardware currently owned; **article is from 2014** — exploits a factory DFU mode via USB, unknown whether this still works on any currently-sold or even most secondhand Nest hardware/firmware after a decade of updates; would need to acquire an old-enough unit and verify applicability before relying on this, don't buy hardware assuming it'll work]
 * Advanced automation scenes and rules
 * Energy monitoring and optimization
 

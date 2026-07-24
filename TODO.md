@@ -39,6 +39,22 @@
 - [ ] Install THAThc library, verify shell commands against a known circuit on THAT
 - [ ] Script first automated `rep` run and confirm captured ADC data
 
+### Home NVR System
+- [ ] Confirm Wyze Cam Pan RTSP firmware support (official or community)
+- [ ] Decide shared Docker host with home-automation (PR4100 vs. DevOps Playground Cluster)
+- [ ] **Verify PR4100's Pentium N3710 supports AVX2** before assuming it can host Frigate
+- [ ] Stand up Frigate against one camera as proof of concept
+- [ ] Wire first Home Assistant automation from a Frigate detection event
+
+### Serger Timing Repair
+- [ ] Source Brother 1034D user + service manuals before adjusting anything
+- [ ] Confirm hex wrench sizes and gauge set on hand
+- [ ] Try clean + oil + rethread before attempting timing adjustments
+
+### JWS/JWT From Scratch
+- [ ] Implement base64url encode/decode against RFC 7515 test vectors
+- [ ] Implement HS256 sign + verify, cross-check against System.IdentityModel.Tokens.Jwt output
+
 ---
 
 ## Recent Archives

@@ -30,6 +30,9 @@ Active project documentation and build logs organized by category.
 | [DIY TrekPak Dividers](#diy-trekpak-dividers) | Workshop | Reference | Foam, pins |
 | [Reclaimed-Cell USB-C PD Pack](#reclaimed-cell-usb-c-pd-pack) | Power/Battery | Planning | 18650 cells, e-load (needed), spot welder (needed) |
 | [THAT Hybrid Controller](#that-hybrid-controller-thathc) | Analog Computing | Planning | Arduino Mega 2560, Anabrid THAT |
+| [Home NVR System](#home-nvr-system-self-hosted-local-only) | Smart Home | Planning | Wyze Cam Pan (×2), PR4100/DevOps Cluster |
+| [Serger Timing Repair](#serger-timing-repair-brother-1034d) | Workshop/Repair | Planning | Brother 1034D serger |
+| [JWS/JWT From Scratch](#jwsjwt-from-scratch) | Software/Learning | Planning | .NET, no hardware |
 | [Cline with Local LLM](#cline-with-local-llm) | AI / Dev Tools | Planning | [RTX 4070 Ti](../.personal/incoming/device-lab.md) |
 | [HuggingFace .NET Native](#huggingface-dotnet-native-execution) | AI/ML Research | Research | .NET workstation |
 | [Local Docker Registry](#local-docker-registry) | DevOps / Infrastructure | Planning | [NAS/Cluster](../.personal/incoming/device-lab.md) |
@@ -439,6 +442,17 @@ Migrating from HomeSeer HS4 to Home Assistant for home automation. Z-Wave focus 
 
 ---
 
+#### Home NVR System (Self-Hosted, Local-Only)
+**Status:** Planning
+**Directory:** [home-nvr-system/](home-nvr-system/)
+
+Replacing cloud-dependent camera recording with a self-hosted NVR — Frigate (primary candidate) or Viseron, both Docker-deployable with local AI object detection and no subscriptions. Frigate's Home Assistant integration turns camera detections into automations. Gated on confirming the owned Wyze Cam Pan units support local RTSP firmware.
+
+**Equipment:** Wyze Cam Pan 1080p (×2, RTSP support TBD), shared Docker host with [Home Automation](home-automation/)
+**Related:** [Frigate writeup](https://www.xda-developers.com/replaced-a-dedicated-nvr-with-frigate/), [Viseron](https://viseron.netlify.app/)
+
+---
+
 ### AI & Development Tools
 
 #### Cline with Local LLM (Qwen3 Coder)
@@ -497,6 +511,19 @@ Private, self-hosted Docker image registry for caching, offline deployment, and 
 
 ---
 
+### Software Development
+
+#### JWS/JWT From Scratch
+**Status:** Planning
+**Directory:** [jws-jwt-from-scratch/](jws-jwt-from-scratch/)
+
+Implementing JSON Web Signature (RFC 7515) signing/verification directly rather than only calling a library — base64url encoding, HMAC-SHA256 signing input, verification — then cross-checking output against `System.IdentityModel.Tokens.Jwt` for correctness. Software-only, no hardware required.
+
+**Stack:** .NET, `System.Security.Cryptography.HMACSHA256`
+**Related:** [RFC 7515](https://www.rfc-editor.org/rfc/rfc7515), [C# Corner JWS/HMAC walkthrough](https://www.c-sharpcorner.com/article/how-to-use-jwshmac-in-asp-net-web-application)
+
+---
+
 ### Workshop Organization
 
 #### DIY TrekPak Dividers
@@ -507,6 +534,17 @@ Reference documentation and materials inventory for custom drawer dividers. Uses
 
 **Materials:** Hair pins, EVA foam, felt tape, corrugated plastic (on hand)
 **Use Cases:** Component storage, tool organization, camera cases - build as needed
+
+---
+
+#### Serger Timing Repair (Brother 1034D)
+**Status:** Planning
+**Directory:** [serger-timing-repair/](serger-timing-repair/)
+
+Precision mechanical repair project — diagnosing and correcting needle/looper timing on a Brother 1034D serger. Graduated approach (clean/oil first, then needle bar height, upper looper, lower looper timing in order), each step with explicit sub-mm tolerances from the source guide.
+
+**Materials:** Brother 1034D serger (owned), hex wrenches, digital caliper, gauge set, service manual (to source)
+**Related:** [Fixing the Timing on a Serger - Ellie & Mac](https://www.ellieandmac.com/blogs/blog/fixing-the-timing-on-a-serger-you-can-do-it)
 
 ### Power & Battery
 
@@ -530,13 +568,13 @@ welder needed (key gaps)
 - **Production:** 2 projects (AI/ML Docker Orchestration Platform, ScoreMachine)
 - **Completed:** 4 projects (ATtiny2313 LED Clock, Radex One Protocol, Favero Fencing System, Vector Search SQL Server)
 - **Active Development:** 8 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation, Apple II Disk Archival, Docker Containers Collection)
-- **Planning/Research:** 10 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry, ImageWriter II Emulator, Reclaimed-Cell USB-C PD Pack, dotex Consolidation, THAT Hybrid Controller)
+- **Planning/Research:** 13 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry, ImageWriter II Emulator, Reclaimed-Cell USB-C PD Pack, dotex Consolidation, THAT Hybrid Controller, Home NVR System, Serger Timing Repair, JWS/JWT From Scratch)
 - **Research Documentation:** 2 projects (HuggingFace .NET Native Execution, Synchronized Telemetry Streaming Research - comprehensive research complete)
 - **On Hold:** 1 project (MM-8000K Trainer UI - hardware functional, used as reference)
 - **Reference/As Needed:** 3 projects (DIY TrekPak Dividers, DRL/DTL Logic Boards, AI/ML Research)
 - **Notes/Scratch:** 2 projects (Python Embedding in SQL Server, Windows USB Passthrough) - single-note captures, not yet active work
 
-**Total: 32 projects** (2 production, 4 completed, 8 active, 10 planning, 2 research documentation, 1 on hold, 3 reference, 2 notes)
+**Total: 35 projects** (2 production, 4 completed, 8 active, 13 planning, 2 research documentation, 1 on hold, 3 reference, 2 notes)
 
 ## Cross-References
 
@@ -580,4 +618,4 @@ projects/
 ---
 
 *Last updated: 2026-07-24*
-*Total projects: 32*
+*Total projects: 35*
