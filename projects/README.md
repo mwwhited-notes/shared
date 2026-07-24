@@ -541,10 +541,10 @@ Reference documentation and materials inventory for custom drawer dividers. Uses
 **Status:** Planning
 **Directory:** [serger-timing-repair/](serger-timing-repair/)
 
-Precision mechanical repair project — diagnosing and correcting needle/looper timing on a Singer 14CG754 serger. Graduated approach (clean/oil first, then needle bar height, upper looper, lower looper timing in order) is universal across serger brands, but the exact clearance tolerances still need to come from a Singer-specific service manual — a Brother 1034D guide provided the general process only, not the target numbers.
+Precision mechanical repair project — diagnosing and correcting needle/looper timing on a Singer 14CG754 serger. No numeric service manual exists for this consumer-tier model (confirmed Singer publishes them for higher-end QuantumLock machines, but not this one) — repair approach is functional/visual adjustment (hand-crank, watch clearance) rather than measuring to spec, per community sources and the exact-model Sewing Mastery tutorial series. Shop service is the expected fallback if self-repair doesn't resolve it.
 
-**Materials:** Singer 14CG754 serger (owned), hex wrenches, digital caliper, gauge set, Singer timing/service manual (not yet located)
-**Related:** [Singer 14CG754 Operator's Manual](https://www.manualslib.com/manual/985220/Singer-14cg754.html)
+**Materials:** Singer 14CG754 serger (owned), hex wrenches, digital caliper
+**Related:** [Sewing Mastery's 14CG754 tutorial series](https://sewingmastery.com/singer-14cg754-pro-finish/), [Singer 14CG754 Operator's Manual](https://www.manualslib.com/manual/985220/Singer-14cg754.html)
 
 ### Power & Battery
 

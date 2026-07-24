@@ -29,7 +29,7 @@ numbers are machine-specific.
 |----------|---------|--------|-------|
 | Singer 14CG754 serger | Machine under repair | Already owned | ProFinish 2/3/4-thread model |
 | Singer 14CG754 operator's manual | Basic reference | Available — see [ManualsLib](https://www.manualslib.com/manual/985220/Singer-14cg754.html), [Internet Archive](https://archive.org/details/manualsbase-id-577762), or [Sewing Parts Online](https://www.sewingpartsonline.com/products/instruction-manual-singer-14cg754-14cg755-14sh754-and-14sh755) | Operator's/instruction manual only |
-| Singer 14CG754 **timing/service manual** | Actual timing tolerances (needle bar height, looper clearances) | **Not yet located** | Research turned up only user/operator manuals for this model, no dedicated technical/timing service manual — this is the real blocker before any adjustment |
+| Singer 14CG754 **timing/service manual** | Actual timing tolerances (needle bar height, looper clearances) | **Likely does not exist publicly** | Confirmed Singer *does* publish full technical service manuals with exact clearances for some models (e.g. QuantumLock [14T957DC](https://www.manualslib.com/manual/1351870/Singer-14t957dc.html), 14T967DC — both on ManualsLib with dedicated "Timing of the Lower/Upper Looper" sections), but none turned up for the 14CG754/14SH754/14CG744/14SH744 family despite thorough searching. Consumer-tier ProFinish machines appear to route timing work to dealer/shop service instead of publishing consumer-facing tolerances — see functional-adjustment approach below as the practical alternative |
 | Phillips + flat screwdrivers | General disassembly | On hand | |
 | Hex wrenches (assorted sizes) | Looper/needle bar adjustment screws | To confirm sizes once service manual is found | Brother's guide used #2/#3; Singer's fastener sizes are unconfirmed |
 | Digital caliper + mm ruler | Measuring clearances (sub-mm tolerances expected) | On hand | |
@@ -41,28 +41,42 @@ numbers are machine-specific.
 ## Construction Method / Build Steps
 
 Always hand-crank the machine while testing adjustments — never power it until confident
-everything runs smoothly. Unplug from power before cleaning, oiling, or adjusting anything. This
-safety practice and the overall sequence below are universal; **the specific clearance numbers are
-placeholders from the Brother 1034D article and must be replaced with Singer 14CG754 figures once
-a timing/service manual (or equivalent trustworthy source) is found.**
+everything runs smoothly. Unplug from power before cleaning, oiling, or adjusting anything.
+
+Since no numeric timing/service manual could be found for this model (see Materials above), the
+practical approach is **functional/visual adjustment** rather than measuring to a spec sheet — set
+each screw, hand-crank slowly, and watch the actual needle/looper interaction rather than a
+caliper reading. This is also how a [PatternReview](https://sewing.patternreview.com/SewingDiscussions/topic/23518)
+thread on this exact model and general Singer serger-timing guidance describe the process:
 
 1. **Clean** - Remove lint from all crevices with a brush/vacuum attachment; note disassembly
-   order for reassembly
+   order for reassembly. [Sewing Mastery's official 14CG754 tutorial series](https://sewingmastery.com/singer-14cg754-pro-finish/)
+   episode 17 ("Cleaning & Oiling") covers this for this exact machine
 2. **Oil** - One drop of sewing machine oil at each metal-on-metal contact point, especially the
-   needle bar and gears behind the front cover
+   needle bar and gears behind the front cover (same Sewing Mastery episode)
 3. **Rethread and test** - If it chains properly after cleaning/oiling, done. If not, proceed to
    timing adjustments below
-4. **Find the Singer 14CG754 timing/service manual before touching any adjustment screw** — the
-   operator's manuals found so far do not include timing tolerances; check Singer support, sewing
-   machine repair forums, or a local dealer/repair shop for the technical manual
-5. **Needle bar height** - Adjust per Singer's documented clearance (not Brother's 11.3-11.9mm —
-   that number is not applicable here); keep needles parallel to the plate
-6. **Upper looper timing** - Per Singer's documented clearance and looper-to-needle distances
-7. **Lower looper position** - Per Singer's documented clearance and looper-to-needle-center distance
-8. **Lower looper timing** - Per Singer's documented guard/needle clearances
-9. **Verify looper coordination** - Upper and lower loopers should pass each other without collision
-   regardless of machine brand; if they don't interlock cleanly, expect skipped stitches and loose
-   tension
+4. **Remove the front cover** to access the loopers
+5. **Check upper looper timing visually** - the hole in the upper looper should pass just under the
+   needle slightly as the needle descends; if not, loosen the set screws in the looper holder
+   slightly and reposition
+6. **Check looper-to-looper clearance** - set screws in the looper holders adjust the space between
+   the upper and lower loopers; after any adjustment, turn the handwheel by hand several times
+   through a full cycle to confirm the loopers clear each other without touching anywhere in the
+   rotation — do this incrementally, a little at a time, re-checking after each nudge
+7. **Check needle bar height/parallelism** - needles should stay parallel to the needle plate
+   through their full travel; adjust if not
+8. **Re-test by hand-cranking** a full cycle multiple times before ever running the motor, watching
+   for any collision between needles, loopers, and needle plate
+9. **If it still won't time up reliably** - this is a legitimate point to stop and take it to a
+   shop; multiple sources note timing on this tier of overlocker is fiddly enough that Singer
+   itself seems to route it to dealer service rather than publishing consumer tolerances
+
+**General Singer looper-timing video references** (not 14CG754-specific, but demonstrate the same
+visual-adjustment technique on similar Singer overlocker mechanisms):
+- ["Singer online Serger Timing"](https://www.youtube.com/watch?v=19zGzeynUjE)
+- ["How to fix the upper looper timing on a Singer serger/overlocker"](https://www.youtube.com/watch?v=TqmwP4afqs0)
+- ["How to fix timing on serger"](https://www.youtube.com/watch?v=BT6kiYyG2bw)
 
 ## Key Features
 
@@ -76,19 +90,28 @@ a timing/service manual (or equivalent trustworthy source) is found.**
 **Status:** Planning
 
 **Next Steps:**
-1. **Locate a Singer 14CG754 timing/technical service manual** (not just the operator's manual) —
-   this blocks every adjustment step below
-2. Confirm the operator's manual's needle size/type spec for this model
-3. Confirm actual fastener sizes (hex wrench sizes, screw types) once the service manual is in hand
-4. Start with clean + oil + rethread — may resolve the issue without any timing adjustment at all
-5. If timing adjustment is still needed, work through needle bar height → upper looper → lower
-   looper in that order, hand-cranking between every change, using Singer's own tolerances
+1. Watch [Sewing Mastery's episode 17 (Cleaning & Oiling)](https://sewingmastery.com/singer-14cg754-pro-finish/) for this exact machine before doing anything else
+2. Start with clean + oil + rethread — may resolve the issue without any timing adjustment at all
+3. Watch the general Singer looper-timing videos (linked above) to see the visual-check technique in motion
+4. If timing adjustment is still needed, work through needle bar → upper looper → looper-to-looper
+   clearance using functional/visual checks (hand-crank, watch for clearance) rather than a spec
+   sheet, since no numeric service manual exists for this model
+5. If it won't time up reliably after careful incremental adjustment, take it to a shop — this
+   appears to be the expected path for this consumer-tier machine, not a sign of doing it wrong
+6. Optional: the paywalled [JustAnswer thread](https://www.justanswer.com/general/9f2c1-think-timing-issue-singer-profinish-serger.html)
+   is titled exactly for this problem on this machine family — may be worth the paid answer if
+   self-repair stalls
 
 ## References
 
 - [Singer 14CG754 Operator's Manual - ManualsLib](https://www.manualslib.com/manual/985220/Singer-14cg754.html)
 - [Singer 14SH754/14CG754 manual - Internet Archive](https://archive.org/details/manualsbase-id-577762)
 - [Singer 14CG754 Instruction Manual - Sewing Parts Online](https://www.sewingpartsonline.com/products/instruction-manual-singer-14cg754-14cg755-14sh754-and-14sh755)
+- [Sewing Mastery: full 30-episode Singer 14CG754 tutorial series](https://sewingmastery.com/singer-14cg754-pro-finish/) — the closest thing to an official guide for this exact machine; no dedicated timing episode, but episode 17 (Cleaning & Oiling) and episode 14 (Fixing a Broken Thread) are directly relevant
+- [PatternReview: Singer ProFinish 14CG754 serger discussion](https://sewing.patternreview.com/SewingDiscussions/topic/23518) — community discussion of this exact model (403 on fetch, open directly)
+- [JustAnswer: "I think I have a timing issue on my Singer Profinish serger"](https://www.justanswer.com/general/9f2c1-think-timing-issue-singer-profinish-serger.html) — paywalled expert Q&A titled for this exact problem
+- General Singer looper-timing videos: [Singer online Serger Timing](https://www.youtube.com/watch?v=19zGzeynUjE), [How to fix the upper looper timing on a Singer serger/overlocker](https://www.youtube.com/watch?v=TqmwP4afqs0), [How to fix timing on serger](https://www.youtube.com/watch?v=BT6kiYyG2bw)
+- [Singer QuantumLock 14T957DC Service Manual](https://www.manualslib.com/manual/1351870/Singer-14t957dc.html) — proof Singer does publish full timing tolerances for some models (higher-end QuantumLock tier), just apparently not the ProFinish 14CG754
 - [Fixing the Timing on a Serger — You Can Do It (Ellie & Mac)](https://www.ellieandmac.com/blogs/blog/fixing-the-timing-on-a-serger-you-can-do-it) — Brother 1034D-specific; process/sequence only, **not** the source of target tolerances for this repair
 
 ---

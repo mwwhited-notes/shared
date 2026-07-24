@@ -47,9 +47,10 @@
 - [ ] Wire first Home Assistant automation from a Frigate detection event
 
 ### Serger Timing Repair (Singer 14CG754)
-- [ ] Locate a Singer 14CG754 timing/technical service manual (operator's manual alone lacks tolerances) - blocks everything else
-- [ ] Confirm hex wrench sizes and gauge set once service manual is found
+- [ ] Watch Sewing Mastery episode 17 (Cleaning & Oiling) for this exact machine
 - [ ] Try clean + oil + rethread before attempting timing adjustments
+- [ ] If needed, do functional/visual timing adjustment (no numeric service manual exists for this model) - hand-crank, watch clearance, don't force it
+- [ ] If it won't time up reliably, take to a shop rather than forcing further adjustment
 
 ### JWS/JWT From Scratch
 - [ ] Implement base64url encode/decode against RFC 7515 test vectors
