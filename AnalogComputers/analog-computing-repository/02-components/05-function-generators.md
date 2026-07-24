@@ -232,6 +232,90 @@ Vin ─────┴────────(-)──┐
 
 Hysteresis width = 2 × Vsat × R1/(R1 + Rf)
 
+### Sigmoid, Tanh, and Neural Network Activation Functions
+
+Generating classic neural-network activation functions (sigmoid, tanh, ReLU, ELU, leaky ReLU) in
+analog hardware — relevant both as a modern application of analog computing (analog/neuromorphic
+ANN inference) and as a good illustration of piecewise-linear/exponential function-generator
+technique applied to a currently-popular function family[^6][^7].
+
+**Key identity linking sigmoid and tanh:**
+```
+sigmoid(x) = 1/(1 + e⁻ˣ) = 1/2 + 1/2·tanh(x/2)
+```
+Any tanh-generating circuit becomes a sigmoid generator with a gain-of-½ scale and a +0.5 offset —
+the two function families below are really one family.
+
+**1. Anti-parallel diode clamp (simplest tanh approximation):**
+```
+        D1 (fwd)
+Vin ──┬──►|──┬── Vout ≈ tanh-like, clamped near ±0.6V
+      └──|◄──┘
+        D2 (reversed)
+```
+Two diodes in anti-parallel clamp the output near 0V with an exponential "twist" as each diode's
+knee is approached — a rough tanh shape. Scale to a useful range (e.g. ±1V) with a non-inverting
+amplifier stage afterward. For control over the steepness of the central slope, move the diode
+pair into the feedback loop of an inverting amplifier, with a resistor ahead of the diodes setting
+the initial (undamped) gain before the diodes take over and compress the output — larger resistor
+= steeper initial slope before compression kicks in. Scale/shift this tanh-like output (gain ≈
+−0.9, offset to center at +0.5V) to approximate a sigmoid directly.
+
+**2. Differential pair (Gilbert-style) — closest to a "native" tanh:**
+A BJT differential pair's transfer function *is* a tanh of the differential input voltage (scaled
+by VT) — this is the same underlying nonlinearity Barrie Gilbert exploited in the classic
+"High-Accuracy Sine-Function Generator" (US Patent 4,475,169) to synthesize trig functions from
+diff-pair transfer characteristics. Of the approaches here, this is the method most likely to give
+a mathematically "true" tanh rather than a diode-clamp approximation, at the cost of needing
+matched transistors and careful biasing (temperature-sensitive, like all transistor-exponential
+techniques — see [Logarithmic Function Generators](#3-logarithmic-function-generators) above for
+the same underlying issue).
+
+**3. Direct analog-computer decomposition (exponential + log-antilog multiply + feedback divide):**
+Build the function literally: an exponential converter for e⁻ˣ, a log-antilog multiplier (two more
+exponentiators + an adder + a logger) to form the product term, then a multiplier-in-feedback loop
+(see [Dividers](04-multipliers-dividers.md#dividers)) to turn the multiply into a divide, with the
+"1 +" handled as a trivial offset. Mathematically the most direct path from the formula to a
+circuit, but chains multiple temperature-sensitive exponential stages — compounds error at every
+stage and is mostly of theoretical/educational interest rather than a practical build.
+
+**4. Piecewise-linear approximation (cheapest, most practical for coarse accuracy):**
+Sigmoid is nearly linear over roughly x ∈ [−0.7, +0.7]. A single-segment linear fit over x ∈ [0,1]:
+```
+y ≈ 0.25x + 0.5
+```
+| x | Actual sigmoid(x) | Linear approx | Error |
+|---|---|---|---|
+| 0.2 | 0.5498 | 0.550 | 0.03% |
+| 0.3 | 0.5744 | 0.575 | ~0% |
+| 0.5 | 0.6225 | 0.625 | 0.5% |
+| 0.6 | 0.6457 | 0.650 | 0.67% |
+| 0.7 | 0.6688 | 0.675 | 0.9% |
+| 0.8 | 0.6900 | 0.690 | ~0% |
+| 1.0 | 0.7311 | 0.750 | 2.6% (max) |
+
+Easiest to implement with a single op-amp gain/offset stage — the hardest part in practice is
+generating an accurate 0.5V offset, since it affects overall accuracy directly. For a closer fit
+across a wider range, extend to the general [multi-segment diode function generator](#design-procedure-for-diode-function-generators)
+technique above rather than a single linear segment.
+
+**5. Multi-segment PWL via DAC array (highest precision, borrowed from LCD gamma correction):**
+LCD column drivers have used exactly this problem — mapping an input through an arbitrary smooth
+curve — for gamma correction for decades: an array of DACs implements a many-segment
+piecewise-linear approximation to whatever transfer curve is needed. The same technique maps
+directly onto tanh/sigmoid/ReLU generation and is the most precision-tunable of the approaches
+here, at the cost of needing multiple DACs instead of a single diode/transistor stage.
+
+**Important limitation for actual analog neural networks (not just single-function generation):**
+Any of the above will produce *a* nonlinearity, and the universal approximation theorem only
+requires *some* nonlinearity for a multi-layer network to gain expressive depth over a single
+linear stage. But generating the forward function is the easy part — training an analog ANN via
+backpropagation also requires computing the activation function's *derivative* in hardware and
+using it to update multiplier weights on the fly. None of the circuits above address that; they
+only solve feedforward inference. A circuit trained in software with a mathematically pure sigmoid
+and then implemented with one of these imperfect analog approximations will also pick up bias from
+the mismatch between the trained (pure) and deployed (approximate/asymmetric) activation function.
+
 ### Sine/Cosine Functions
 
 **Method 1: Function Generator with Many Segments**
@@ -402,6 +486,9 @@ Combine analog computing with digital function lookup for complex or arbitrary f
 [^3]: [Analog Mathematics - Nuts & Volts Magazine](https://www.nutsvolts.com/magazine/article/analog_mathematics)
 [^4]: [Op-Amp Applications Handbook - Analog Devices](https://www.analog.com/media/en/training-seminars/design-handbooks/Op-Amp-Applications/Op-Amp-Applications-Handbook.pdf)
 [^5]: [Engineering LibreTexts - Analog Computer](https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Operational_Amplifiers_and_Linear_Integrated_Circuits_-_Theory_and_Application_(Fiore)/10:_Integrators_and_Differentiators/10.04:_Section_4-)
+[^6]: [Sigmoid using op-amps - Electronics StackExchange](https://electronics.stackexchange.com/questions/639130/sigmoid-using-op-amps)
+[^7]: [What are the activation functions that can be generated using op-amps and filters? - Electronics StackExchange](https://electronics.stackexchange.com/questions/657902/what-are-the-activation-functions-that-can-be-generated-using-op-amps-and-filter)
+[^8]: [A method of generating a signal proportional to... (Gilbert) - Semantic Scholar](https://www.semanticscholar.org/paper/A-method-of-generating-a-signal-proportional-to-the-Gilbert/9bd413c5f451fd7c7cbc00bb3774154756057c98) - content could not be retrieved during research (page returned empty on repeated fetch attempts); URL slug suggests a Barrie Gilbert paper closely related to the differential-pair/translinear technique cited above — worth opening directly to confirm before citing further
 
 ## Further Reading
 
