@@ -31,7 +31,7 @@ Active project documentation and build logs organized by category.
 | [Reclaimed-Cell USB-C PD Pack](#reclaimed-cell-usb-c-pd-pack) | Power/Battery | Planning | 18650 cells, e-load (needed), spot welder (needed) |
 | [THAT Hybrid Controller](#that-hybrid-controller-thathc) | Analog Computing | Planning | Arduino Mega 2560, Anabrid THAT |
 | [Home NVR System](#home-nvr-system-self-hosted-local-only) | Smart Home | Planning | Wyze Cam Pan (×2), PR4100/DevOps Cluster |
-| [Serger Timing Repair](#serger-timing-repair-brother-1034d) | Workshop/Repair | Planning | Brother 1034D serger |
+| [Serger Timing Repair](#serger-timing-repair-singer-14cg754) | Workshop/Repair | Planning | Singer 14CG754 serger |
 | [JWS/JWT From Scratch](#jwsjwt-from-scratch) | Software/Learning | Planning | .NET, no hardware |
 | [Cline with Local LLM](#cline-with-local-llm) | AI / Dev Tools | Planning | [RTX 4070 Ti](../.personal/incoming/device-lab.md) |
 | [HuggingFace .NET Native](#huggingface-dotnet-native-execution) | AI/ML Research | Research | .NET workstation |
@@ -537,14 +537,14 @@ Reference documentation and materials inventory for custom drawer dividers. Uses
 
 ---
 
-#### Serger Timing Repair (Brother 1034D)
+#### Serger Timing Repair (Singer 14CG754)
 **Status:** Planning
 **Directory:** [serger-timing-repair/](serger-timing-repair/)
 
-Precision mechanical repair project — diagnosing and correcting needle/looper timing on a Brother 1034D serger. Graduated approach (clean/oil first, then needle bar height, upper looper, lower looper timing in order), each step with explicit sub-mm tolerances from the source guide.
+Precision mechanical repair project — diagnosing and correcting needle/looper timing on a Singer 14CG754 serger. Graduated approach (clean/oil first, then needle bar height, upper looper, lower looper timing in order) is universal across serger brands, but the exact clearance tolerances still need to come from a Singer-specific service manual — a Brother 1034D guide provided the general process only, not the target numbers.
 
-**Materials:** Brother 1034D serger (owned), hex wrenches, digital caliper, gauge set, service manual (to source)
-**Related:** [Fixing the Timing on a Serger - Ellie & Mac](https://www.ellieandmac.com/blogs/blog/fixing-the-timing-on-a-serger-you-can-do-it)
+**Materials:** Singer 14CG754 serger (owned), hex wrenches, digital caliper, gauge set, Singer timing/service manual (not yet located)
+**Related:** [Singer 14CG754 Operator's Manual](https://www.manualslib.com/manual/985220/Singer-14cg754.html)
 
 ### Power & Battery
 

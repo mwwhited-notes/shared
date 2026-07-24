@@ -46,9 +46,9 @@
 - [ ] Stand up Frigate against one camera as proof of concept
 - [ ] Wire first Home Assistant automation from a Frigate detection event
 
-### Serger Timing Repair
-- [ ] Source Brother 1034D user + service manuals before adjusting anything
-- [ ] Confirm hex wrench sizes and gauge set on hand
+### Serger Timing Repair (Singer 14CG754)
+- [ ] Locate a Singer 14CG754 timing/technical service manual (operator's manual alone lacks tolerances) - blocks everything else
+- [ ] Confirm hex wrench sizes and gauge set once service manual is found
 - [ ] Try clean + oil + rethread before attempting timing adjustments
 
 ### JWS/JWT From Scratch
