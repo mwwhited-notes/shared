@@ -22,7 +22,7 @@ Goals include learning analog computing fundamentals, implementing classic demon
 3. Implement Lorenz attractor (chaos visualization)
 4. Model predator-prey ecosystem simulation
 5. Experiment with control system modeling (PID loops)
-6. Explore hybrid computing (THAT + STM32 interface)
+6. Explore hybrid computing — see [that-hybrid-controller](../that-hybrid-controller/) (Arduino Mega 2560 + THAThc library, now the concrete plan for this step)
 
 ## Equipment Used
 
@@ -44,9 +44,17 @@ Goals include learning analog computing fundamentals, implementing classic demon
 2. **Predator-Prey Model** - Lotka-Volterra equations (population dynamics)
 3. **Control Systems** - PID loop modeling and tuning
 4. **Ballistic Trajectory** - Projectile motion simulation
+5. **Longitudinal Flight Simulator** - Simplified 2D (x,z-plane) aircraft flight dynamics: body-axis
+   acceleration from a multiplier/sine/cosine network, pitch-rate integration, and coordinate
+   transformation to Earth axes. Modeled on [Analog Museum's lfsim example](https://www.analogmuseum.org/english/examples/lfsim/)
+   (built on a Telefunken RA 770, inspired by NASA's X-15 simulator work) — a good target once the
+   basic integrator/multiplier/function-generator experiments above are working, since it chains
+   several of them together (3 multipliers, 3 sine + 2 cosine function generators, multiple
+   integrators). Cross-reference: [11-aerospace-simulation](../../AnalogComputers/analog-computing-repository/11-aerospace-simulation/) collection for the underlying aircraft-simulation theory.
 
 ### Hybrid Computing
-1. STM32 ADC reading THAT outputs
+1. **THAThc Arduino interface** - see [that-hybrid-controller](../that-hybrid-controller/) for the
+   concrete build (Arduino Mega 2560 + THAT HYBRID port)
 2. Digital control of analog parameters
 3. Data logging and analysis
 4. Real-time coefficient adjustment
@@ -69,6 +77,7 @@ See [AnalogComputers/analog-computing-repository/](../../AnalogComputers/analog-
 
 ## Related Projects
 
+- [THAT Hybrid Controller](../that-hybrid-controller/) - Arduino Mega 2560 + THAThc library for programmatic hybrid computing
 - [Zynq SoC Exploration](../zynq-soc-exploration/) - Zynq ARM+FPGA for hybrid analog-digital systems
 - [SCPI Instrument Control](../scpi-instrument-control/) - Automated measurement for analog computer outputs
 - [Passive Radar SDR](../passive-radar-sdr/) - Analog signal processing concepts

@@ -29,6 +29,7 @@ Active project documentation and build logs organized by category.
 | [Home Automation](#home-automation) | Smart Home | In Progress | [Pi 3, Z-Wave](../.personal/incoming/device-lab.md) |
 | [DIY TrekPak Dividers](#diy-trekpak-dividers) | Workshop | Reference | Foam, pins |
 | [Reclaimed-Cell USB-C PD Pack](#reclaimed-cell-usb-c-pd-pack) | Power/Battery | Planning | 18650 cells, e-load (needed), spot welder (needed) |
+| [THAT Hybrid Controller](#that-hybrid-controller-thathc) | Analog Computing | Planning | Arduino Mega 2560, Anabrid THAT |
 | [Cline with Local LLM](#cline-with-local-llm) | AI / Dev Tools | Planning | [RTX 4070 Ti](../.personal/incoming/device-lab.md) |
 | [HuggingFace .NET Native](#huggingface-dotnet-native-execution) | AI/ML Research | Research | .NET workstation |
 | [Local Docker Registry](#local-docker-registry) | DevOps / Infrastructure | Planning | [NAS/Cluster](../.personal/incoming/device-lab.md) |
@@ -112,6 +113,17 @@ Exploring analog computing fundamentals with Anabrid's "The Analog Thing" (THAT)
 
 **Equipment:** THAT analog computer, oscilloscope, STM32 boards
 **Research:** [AnalogComputers/analog-computing-repository/](../AnalogComputers/analog-computing-repository/) - 232 PDFs, 660MB collection
+
+---
+
+#### THAT Hybrid Controller (THAThc)
+**Status:** Planning
+**Directory:** [that-hybrid-controller/](that-hybrid-controller/)
+
+Arduino Mega 2560 interface to THAT's HYBRID port using Anabrid's open-source THAThc library, turning manual front-panel IC/OP cycling into programmatic, repeatable analog-computing runs with logged ADC data. Concrete implementation of the "hybrid computing" step from [Analog Computer Experiments](analog-computer-experiments/).
+
+**Equipment:** Arduino Mega 2560, Anabrid THAT (dedicated USB-C power, not Arduino-powered), HYBRID port breakout board
+**Related:** [THAThc on GitHub](https://github.com/anabrid/THAThc), [Analog Computer Experiments](analog-computer-experiments/)
 
 ---
 
@@ -518,13 +530,13 @@ welder needed (key gaps)
 - **Production:** 2 projects (AI/ML Docker Orchestration Platform, ScoreMachine)
 - **Completed:** 4 projects (ATtiny2313 LED Clock, Radex One Protocol, Favero Fencing System, Vector Search SQL Server)
 - **Active Development:** 8 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation, Apple II Disk Archival, Docker Containers Collection)
-- **Planning/Research:** 9 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry, ImageWriter II Emulator, Reclaimed-Cell USB-C PD Pack, dotex Consolidation)
+- **Planning/Research:** 10 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry, ImageWriter II Emulator, Reclaimed-Cell USB-C PD Pack, dotex Consolidation, THAT Hybrid Controller)
 - **Research Documentation:** 2 projects (HuggingFace .NET Native Execution, Synchronized Telemetry Streaming Research - comprehensive research complete)
 - **On Hold:** 1 project (MM-8000K Trainer UI - hardware functional, used as reference)
 - **Reference/As Needed:** 3 projects (DIY TrekPak Dividers, DRL/DTL Logic Boards, AI/ML Research)
 - **Notes/Scratch:** 2 projects (Python Embedding in SQL Server, Windows USB Passthrough) - single-note captures, not yet active work
 
-**Total: 31 projects** (2 production, 4 completed, 8 active, 9 planning, 2 research documentation, 1 on hold, 3 reference, 2 notes)
+**Total: 32 projects** (2 production, 4 completed, 8 active, 10 planning, 2 research documentation, 1 on hold, 3 reference, 2 notes)
 
 ## Cross-References
 
@@ -567,5 +579,5 @@ projects/
 
 ---
 
-*Last updated: 2026-07-22*
-*Total projects: 25*
+*Last updated: 2026-07-24*
+*Total projects: 32*

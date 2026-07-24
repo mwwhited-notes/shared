@@ -33,6 +33,12 @@
 - [ ] Discharge-test and sort accumulated salvaged cells (capacity + IR)
 - [ ] Decide final S/P layout once matched-group yield is known, then order exact BMS/boost module part numbers
 
+### THAT Hybrid Controller (THAThc)
+- [ ] Source or build HYBRID port piggyback/breakout board
+- [ ] Wire Arduino Mega 2560 per HYBRID port pinout
+- [ ] Install THAThc library, verify shell commands against a known circuit on THAT
+- [ ] Script first automated `rep` run and confirm captured ADC data
+
 ---
 
 ## Recent Archives
@@ -42,6 +48,6 @@
 
 ---
 
-*Last updated: 2026-01-17*
+*Last updated: 2026-07-24*
 *Last cleaned: 2026-01-17*
 *Last reorganized: 2026-01-17 - Integrated personal data responses into workshop-capabilities.md*

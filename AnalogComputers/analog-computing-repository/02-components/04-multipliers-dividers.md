@@ -126,6 +126,53 @@ Low-pass filter extracts product
 
 High accuracy but limited bandwidth.
 
+### 5. Diode-Based Pseudo-Square-Law Multiplier (Quad Op-Amp)
+
+A low-cost quarter-square variant that replaces the true squaring blocks with a pair of diodes,
+avoiding the need for a dedicated multiplier IC or log-antilog transistor matching[^7].
+
+**Principle:** Two matched diodes are connected across an op-amp stage with one reversed relative
+to the other. The composite V-I characteristic of this back-to-back diode pair is hyperbolic. For
+small signal excursions around the bias point, a Taylor series expansion of a diode's exponential
+I-V law has all constant and odd-order terms cancel between the forward and reverse-connected
+diode, leaving the leading even-order (quadratic) term dominant:
+
+```
+I_D ≈ I_S(e^(V/VT) - 1)   [single diode, standard exponential law]
+
+Two matched diodes, one reversed, summed:
+  odd-order terms (V, V³, V⁵...) cancel by symmetry
+  constant term cancels
+  leading surviving term ∝ V²   (parabola, for |V| small vs VT)
+```
+
+This makes the diode pair behave like a cheap analog squarer over a limited input range — locally
+indistinguishable from a true parabola even though the exact function is a hyperbola.
+
+**Topology (quarter-square identity, same as Technique 3):**
+```
+X × Y = ¼[(X + Y)² − (X − Y)²]
+```
+
+A quad op-amp package provides the four active stages needed: one to form (X+Y), one to form
+(X−Y), and the diode-pair pseudo-squarers feeding a final differential stage that produces the
+product. This packs an entire 4-quadrant multiplier into a single quad op-amp IC (e.g. TL074,
+LM348) plus a handful of resistors and matched diodes — no precision multiplier IC required.
+
+**Trade-offs vs. IC multipliers (AD633, MPY634, etc.):**
+- Much lower parts cost — one quad op-amp + diodes + resistors vs. a dedicated multiplier IC
+- Valid input range is limited: the "square-law" behavior only holds while the diode drop stays
+  small relative to VT (~26 mV at room temp) — larger signal swings reintroduce the odd-order
+  Taylor terms and distort the product
+- No built-in temperature compensation (diode V-I curve is strongly temperature-dependent, unlike
+  matched-transistor Gilbert cells or trimmed IC multipliers) — accuracy will drift with ambient
+  temperature
+- Best suited to small-signal analog-computing demonstrations rather than precision instrumentation
+
+**Note:** The source article's exact schematic and resistor values could not be retrieved during
+research (the EDN page repeatedly failed to load via automated fetch) — see the article directly
+for the full circuit diagram and component values before building.
+
 ## Commercial Multiplier ICs
 
 ### Available Devices
@@ -353,6 +400,7 @@ For high accuracy:
 [^4]: [Analog Multipliers and Dividers in Linear ICs](https://www.origin-ic.com/blog/analog-multipliers-and-dividers-in-linear-ics/40732)
 [^5]: [Alternative Computing Models: Electronic Analog Computing - Servo Magazine](https://www.servomagazine.com/magazine/article/alternative-computing-models-part-3-electronic-analog-computing)
 [^6]: [Analog Mathematics - Nuts & Volts Magazine](https://www.nutsvolts.com/magazine/article/analog_mathematics)
+[^7]: [Easy four-quadrant multiplier using a quad op amp - EDN](https://www.edn.com/easy-four-quadrant-multiplier-using-a-quad-op-amp/)
 
 ## Further Reading
 
