@@ -103,6 +103,10 @@ See [AnalogComputers/analog-computing-repository/](../../AnalogComputers/analog-
 - [AnalogComputers/analog-computing-repository/](../../AnalogComputers/analog-computing-repository/) - 232 PDFs, 660MB research collection
 - [project-ideas.md](../project-ideas.md) - Original project concept
 
+### Books (owned, see Personal/Collections/Books/)
+- *Applications of Operational Amplifiers: Third-Generation Techniques* - Jerald G. Graeme (Burr-Brown) - op-amp circuit design directly applicable to THAT's integrator/summer/multiplier building blocks
+- *Designing with Operational Amplifiers: Applications Alternatives* - Jerald G. Graeme (Burr-Brown) - companion volume, op-amp application circuits
+
 ---
 
 *Last updated: 2026-01-07*

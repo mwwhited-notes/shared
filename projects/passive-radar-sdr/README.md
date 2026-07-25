@@ -20,7 +20,7 @@ The system uses two or more SDR receivers: one pointed at the illuminator (refer
 
 **Background:**
 - Software development experience (C#, .NET)
-- Ham radio operator with RF/electronics knowledge
+- RF/electronics hobbyist with SDR experience (not a licensed ham operator)
 - Experience with Raspberry Pi projects and home automation
 - Previous conversation covered basic architecture and approaches
 
@@ -272,6 +272,10 @@ Check these inventories for available SDR hardware:
 ### Books
 - "Bistatic Radar: Principles and Practice" - Willis & Griffiths
 - "Principles of Modern Radar" - Richards, Scheer, Holm
+
+**Owned (see Personal/Collections/Books/):**
+- *The "Radio" Handbook* (9th Edition) - Editors and Engineers - classic amateur radio/RF reference, background for RF illuminator/antenna work
+- *Practical Radio Communication* - general RF communication reference
 
 ### Websites & Tools
 - [KrakenSDR Documentation](https://github.com/krakenrf/krakensdr_docs)

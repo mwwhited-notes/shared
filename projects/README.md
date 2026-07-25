@@ -178,7 +178,7 @@ Multi-channel SDR receiver system for passive radar detection of aircraft and ve
 
 **Equipment:** KrakenSDR or synchronized RTL-SDR array, GPSDO, directional antennas
 **Software:** GNU Radio, Python/NumPy, KrakenSDR passive radar toolkit
-**Related:** Ham radio operations, [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)
+**Related:** SDR/RF experimentation, [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)
 
 **Key challenges:** Clock synchronization, dynamic range (60-100 dB), multipath, real-time signal processing
 

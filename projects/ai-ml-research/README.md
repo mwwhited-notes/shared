@@ -88,6 +88,11 @@ Vector search and embeddings notes have been moved to:
 - [AI Snake Oil](https://www.aisnakeoil.com/) - Critical analysis of AI hype
 - [Emily M. Bender](https://faculty.washington.edu/ebender/) - NLP and AI ethics research
 
+**Books (owned, see Personal/Collections/Books/):**
+- *Artificial Intelligence: A Modern Approach* (2nd Edition) - Stuart Russell, Peter Norvig - foundational AI textbook
+- *Introduction to Artificial Intelligence* (2nd Enlarged Edition) - Philip C. Jackson, Jr. (Dover) - older foundational AI reference
+- *Smart Until It's Dumb* - Emmanuel Maggiori - critical perspective on AI limitations, complements the anti-ai.md notes above
+
 ## Notes
 
 - This is a reference collection, not an active project

@@ -288,6 +288,7 @@ All devices on single 192.168.0.0/24 subnet.
 - [home-automation/](home-automation/) - Home automation project
 - [Test Equipment/](Test%20Equipment/) - Lab equipment inventory
 - [Vintage Computers/](Vintage%20Computers/) - Retro systems
+- *Understanding IPv6* (3rd Edition), Joseph Davies (owned, see Personal/Collections/Books/) - reference for any future IPv6 rollout on this network
 
 ---
 

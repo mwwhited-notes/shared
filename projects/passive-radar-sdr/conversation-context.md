@@ -10,7 +10,7 @@ I'm working on building a passive radar receiver system using multiple SDR recei
 
 **My background:**
 - Software developer with experience in C#, .NET
-- Ham radio operator with RF/electronics knowledge
+- RF/electronics hobbyist with SDR experience (not a licensed ham operator)
 - Have worked with Raspberry Pi projects and home automation
 - Comfortable with technical projects and troubleshooting
 

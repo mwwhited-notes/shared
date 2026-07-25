@@ -69,6 +69,7 @@ See **[.personal/incoming/tools-and-components.md](../../.personal/incoming/tool
 - ATtiny2313 datasheet
 - AVR ISP programming guides
 - [project-ideas.md](../project-ideas.md) - Original project concept
+- *Make: AVR Programming: Learning to Write Software for Hardware* - Elliot Williams (owned, see Personal/Collections/Books/) - general AVR programming reference applicable to ATtiny work
 
 ---
 

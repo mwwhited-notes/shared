@@ -17,6 +17,12 @@ Project backlog for future development. Once a project has its own directory in 
 * Gigatron TTL expansion or game development [have Gigatron TTL computer]
 * TI-99/4A cartridge development [have TI-99/4A with speech synthesizer]
 * explore the [Bendix G-15](https://www.phkimpel.us/Bendix-G15/) via the browser-based retro-g15 emulator [no hardware owned — 1950s drum-memory vacuum-tube computer, source on GitHub, software archive of original paper-tape programs; a pure-software way to explore an architecture radically different from anything else in this collection before considering a hardware recreation]
+* IBM PC/XT-era x86 assembly programming project (DOS-era, real mode) — a system era nothing else in the collection currently covers (everything else is 6502/Z80/6809/TMS9900) [have *IBM PC Assembly Language is Fun and Easy* as reference; would need period-appropriate PC/XT hardware or DOSBox]
+
+### Amateur Radio
+
+* get a Technician-class amateur radio license — currently not licensed, and every RF project so far (Passive Radar SDR) is receive-only; a license would be the actual prerequisite for any transmit work [have *The "Radio" Handbook* (9th ed.) and *Practical Radio Communication* as study reference, though both are old enough that current exam pool/regulations should be checked separately]
+* once licensed: basic HF/VHF transmit setup, and a simple antenna build/tuning project informed by The "Radio" Handbook's classic antenna theory sections [good pairing with existing RTL-SDR receive setup]
 
 ### PCB Fabrication
 
@@ -60,6 +66,14 @@ Project backlog for future development. Once a project has its own directory in 
 * Velleman K8055 automation projects [USB I/O board for PC control]
 * build out multi-axis hand controller to work with oculus/hololens
 * design and build a handheld/bench calculator that will also function as a simple I/O interface for parallel and serial interfaces
+
+### Game Development
+
+*Backed by a growing reference shelf: Making Games for the NES (already tracked), Emergence in Games, Sams Teach Yourself Unity Game Development in 24 Hours, Going to War: Creating Computer War Games, Video Game Storytelling.*
+
+* small original game in Unity, following Sams Teach Yourself Unity Game Development in 24 Hours as a structured on-ramp [no hardware needed; natural next step up from the existing NES/6502 game idea above]
+* a simple wargame/strategy game prototype, informed by Going to War: Creating Computer War Games — pairs with the existing tabletop/board game design interest implied by the book itself
+* apply Emergence in Games' systems-design concepts and Video Game Storytelling's narrative techniques to whichever of the above gets built, rather than treating them as separate reading
 
 ### DevOps & Infrastructure
 
