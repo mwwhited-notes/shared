@@ -450,6 +450,7 @@ Replacing cloud-dependent camera recording with a self-hosted NVR — Frigate (p
 
 **Equipment:** Wyze Cam Pan 1080p (×2, RTSP support TBD), shared Docker host with [Home Automation](home-automation/)
 **Related:** [Frigate writeup](https://www.xda-developers.com/replaced-a-dedicated-nvr-with-frigate/), [Viseron](https://viseron.netlify.app/)
+**Hardware plan:** [reolink-migration-plan.md](home-nvr-system/reolink-migration-plan.md) - Reolink RLN16-410 PoE NVR build replacing the existing Nest cameras (ONVIF/RTSP-open for a later Frigate migration)
 
 ---
 

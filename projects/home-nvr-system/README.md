@@ -16,6 +16,13 @@ This follows the same self-hosted/no-subscription requirements already set for
 share deployment infrastructure with that project — the WD My Cloud PR4100 or DevOps Playground
 Cluster are both already under consideration as the Home Assistant host.
 
+> **See also:** [reolink-migration-plan.md](reolink-migration-plan.md) — a hardware acquisition plan
+> for replacing the existing Google Nest cameras with a Reolink RLN16-410 PoE NVR build (9 exterior
+> positions + doorbells + interior pet cams). It uses the Reolink NVR as the primary recorder while
+> keeping ONVIF/RTSP open so a later migration to Frigate stays possible. Note that plan buys 4K
+> Reolink and some WiFi units, which run counter to Frigate's own camera guidance below — that only
+> matters if/when Frigate becomes the NVR.
+
 **Core requirements carried over from home-automation:**
 - Local-only: no footage or metadata leaves the network
 - No subscriptions
