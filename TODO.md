@@ -33,6 +33,13 @@
 - [ ] Discharge-test and sort accumulated salvaged cells (capacity + IR)
 - [ ] Decide final S/P layout once matched-group yield is known, then order exact BMS/boost module part numbers
 
+### Offline Mapping, Search & Routing System
+- [ ] Stand up OsmAnd vs. Organic Maps side-by-side as the Phase 0 fast-path baseline
+- [ ] Evaluate BRouter vs. Valhalla against the actual need (a van height/weight routing profile)
+- [ ] Check iOverlander and Campendium for an official data export/API before considering any scraping
+- [ ] Decide home compute target (DevOps Playground Cluster vs. a dedicated SBC) and whether it shares infra with Local Docker Registry
+- [ ] Scope Phase 1 data ingestion down to a single test region/corridor before generalizing
+
 ### THAT Hybrid Controller (THAThc)
 - [ ] Source or build HYBRID port piggyback/breakout board
 - [ ] Wire Arduino Mega 2560 per HYBRID port pinout

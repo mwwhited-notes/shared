@@ -43,6 +43,7 @@ Active project documentation and build logs organized by category.
 | [Python Embedding in SQL Server](#can-you-run-and-embedding-model-in-sql-server) | Database/ML | Notes | SQL Server language extensions |
 | [Synchronized Telemetry Streaming Research](#synchronized-telemetry-streaming-research) | Research/Networking | Research | n/a (standards research) |
 | [Windows USB Passthrough](#windows-usb-passthrough-notes) | DevOps/Infrastructure | Notes | usbipd-win, WSL, Docker |
+| [Offline Mapping, Search & Routing System](#offline-mapping-search--routing-system) | Software/GIS | Planning | OSM extracts, self-hosted routing, [DevOps Cluster](devops-playground-cluster/) |
 
 ## Projects by Category
 
@@ -454,6 +455,20 @@ Replacing cloud-dependent camera recording with a self-hosted NVR — Frigate (p
 
 ---
 
+### Mapping & GIS
+
+#### Offline Mapping, Search & Routing System
+**Status:** Planning
+**Directory:** [offline-mapping-system/](offline-mapping-system/)
+
+Self-hosted offline maps, search, routing, and interest-based trip suggestions built from OpenStreetMap, the official Recreation.gov RIDB/NPS APIs, and (carefully, secondarily) community sources — a FOSS alternative to paying for Gaia GPS + Trailforks + Avenza. Motivated by real connectivity failures on the [van pickup trip](../../Personal/RoadTrip/20260805-20260809-van-pickup-drive-home/) (a cell booster showing signal while the connection was actually dead) and a state's camping-reservation rule that couldn't be checked offline. Fast path: stand up OsmAnd/Organic Maps now; custom path: BRouter/Valhalla self-hosted routing with a van-height profile, Nominatim/Photon search, Kiwix for offline Wikivoyage content.
+
+**Equipment:** OSM regional extracts, self-hosted routing/search engines, [DevOps Playground Cluster](devops-playground-cluster/) for build/hosting
+**Related:** [Home Automation](home-automation/), [Local Docker Registry](local-docker-registry/) — likely shared self-hosting pattern
+**Cross-reference:** [`Personal/Vans/DriftCampervans/09_Mod_Ideas.md`](../../Personal/Vans/DriftCampervans/09_Mod_Ideas.md) (the commercial-stack fallback), [`Personal/RoadTrip/_knowledge/lessons-learned.md`](../../Personal/RoadTrip/_knowledge/lessons-learned.md) (motivating lessons)
+
+---
+
 ### AI & Development Tools
 
 #### Cline with Local LLM (Qwen3 Coder)
@@ -569,13 +584,13 @@ welder needed (key gaps)
 - **Production:** 2 projects (AI/ML Docker Orchestration Platform, ScoreMachine)
 - **Completed:** 4 projects (ATtiny2313 LED Clock, Radex One Protocol, Favero Fencing System, Vector Search SQL Server)
 - **Active Development:** 8 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation, Apple II Disk Archival, Docker Containers Collection)
-- **Planning/Research:** 13 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry, ImageWriter II Emulator, Reclaimed-Cell USB-C PD Pack, dotex Consolidation, THAT Hybrid Controller, Home NVR System, Serger Timing Repair, JWS/JWT From Scratch)
+- **Planning/Research:** 14 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry, ImageWriter II Emulator, Reclaimed-Cell USB-C PD Pack, dotex Consolidation, THAT Hybrid Controller, Home NVR System, Serger Timing Repair, JWS/JWT From Scratch, Offline Mapping/Search/Routing System)
 - **Research Documentation:** 2 projects (HuggingFace .NET Native Execution, Synchronized Telemetry Streaming Research - comprehensive research complete)
 - **On Hold:** 1 project (MM-8000K Trainer UI - hardware functional, used as reference)
 - **Reference/As Needed:** 3 projects (DIY TrekPak Dividers, DRL/DTL Logic Boards, AI/ML Research)
 - **Notes/Scratch:** 2 projects (Python Embedding in SQL Server, Windows USB Passthrough) - single-note captures, not yet active work
 
-**Total: 35 projects** (2 production, 4 completed, 8 active, 13 planning, 2 research documentation, 1 on hold, 3 reference, 2 notes)
+**Total: 36 projects** (2 production, 4 completed, 8 active, 14 planning, 2 research documentation, 1 on hold, 3 reference, 2 notes)
 
 ## Cross-References
 
@@ -618,5 +633,5 @@ projects/
 
 ---
 
-*Last updated: 2026-07-24*
-*Total projects: 35*
+*Last updated: 2026-08-10*
+*Total projects: 36*
