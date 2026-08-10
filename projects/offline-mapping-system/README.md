@@ -184,7 +184,20 @@ r/overlanding, etc.).
 
 ## Project Status
 
-**Status:** Planning
+**Status:** Planning — **nothing built yet.** No code, no self-hosted services running,
+no data pulled, no API keys obtained (Recreation.gov RIDB and NPS both need a free key —
+neither has been requested yet). This README is the entire state of the project; picking
+this up on a different machine means starting from Phase 0, not resuming mid-build.
+
+**Open decisions, not yet made — don't assume either default:**
+- OsmAnd vs. Organic Maps for the Phase 0 baseline
+- BRouter vs. Valhalla for the routing engine
+- Nominatim vs. Photon for self-hosted search
+- Exact buffer widths for the per-trip corridor (route-line buffer and stop-radius
+  buffer both still placeholders — 25–50 mi and ~25 mi respectively, unvalidated)
+- Home compute target (DevOps Playground Cluster vs. a dedicated SBC)
+- Whether the unbuilt DIY-mapping thread in `DriftCampervans/change-tracking.md`
+  (08/10/2026 entries) duplicates or extends this project — not yet reconciled
 
 **Next Steps:**
 1. Stand up the Phase 0 fast-path baseline (OsmAnd vs. Organic Maps) before

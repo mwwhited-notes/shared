@@ -148,7 +148,7 @@ Each major directory has a focused README.md index following `.claude/protocols/
 
 **Index Organization:**
 - `projects/README.md` - Master index of 21+ projects (status, categories, cross-references)
-- `.claude/protocols/README.md` - Master index of 9 documentation protocols for root repository (versions, purposes, decision tree)
+- `.claude/protocols/README.md` - Master index of 10 documentation protocols for root repository (versions, purposes, decision tree)
 - `Notes/README.md` - Technical notes directory guide
 - `AnalogComputers/README.md` - Analog computing research collection overview
 - See `PERSONAL-PROTOCOL.md` for requesting equipment inventory data from Personal repository (see `.personal/requests/`)
@@ -212,7 +212,7 @@ done
 
 ### Projects
 - `projects/` - Active project directories with READMEs (see projects/project-ideas.md for complete list)
-- `home-automation/CLAUDE.md` - Home automation project (HomeSeer to Home Assistant migration)
+- `projects/home-automation/README.md` - Home automation project (HomeSeer to Home Assistant migration) — **corrected 2026-08-10: no `CLAUDE.md` exists for this project, README.md is the only doc**
 - `network-diagram.md` - Network topology and IP assignments
 
 ### Research Collections

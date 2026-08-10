@@ -10,6 +10,7 @@ This directory contains protocols for documenting equipment, projects, and inven
 |----------|---------|--------------|
 | [PROJECTS_PROTOCOL.md](PROJECTS_PROTOCOL.md) | Document active projects in projects/ directory | README format, build logs, parts lists, status tracking |
 | [PROJECT_REVIEW_PROTOCOL.md](PROJECT_REVIEW_PROTOCOL.md) | Periodic inventory review and maintenance | Full review workflow, quick sync, cross-reference checks |
+| [PROJECT_CONTEXT_RETENTION_PROTOCOL.md](PROJECT_CONTEXT_RETENTION_PROTOCOL.md) | Keep a complex/multi-session project resumable cold, on a different machine | Required Project Status content, when to escalate beyond README.md, preventing stale cross-references |
 
 ### Maintenance & Performance
 
@@ -30,6 +31,7 @@ This directory contains protocols for documenting equipment, projects, and inven
 - Starting a new build project? → [PROJECTS_PROTOCOL.md](PROJECTS_PROTOCOL.md)
 - Doing quarterly inventory review? → [PROJECT_REVIEW_PROTOCOL.md](PROJECT_REVIEW_PROTOCOL.md)
 - Creating comprehensive research/standards documentation? → [TECHNICAL-RESEARCH-PROTOCOL.md](TECHNICAL-RESEARCH-PROTOCOL.md)
+- Making sure a complex project can resume on a different machine/session? → [PROJECT_CONTEXT_RETENTION_PROTOCOL.md](PROJECT_CONTEXT_RETENTION_PROTOCOL.md)
 
 ### When Managing Documentation
 
@@ -175,14 +177,25 @@ This README serves as the master index for all 9 documentation protocols in root
 | PROJECT_REVIEW_PROTOCOL.md | Quarterly reviews | 1.1 | Jan 2026 |
 | TECHNICAL-RESEARCH-PROTOCOL.md | Research projects | 1.3 | Jan 2026 |
 | TODO_MD_ARCHIVAL_PROTOCOL.md | Task archival | 1.0 | Jan 2026 |
-| README.md | This index | 1.6 | Jan 2026 |
+| PROJECT_CONTEXT_RETENTION_PROTOCOL.md | Resumable multi-session projects | 1.0 | Aug 2026 |
+| README.md | This index | 1.7 | Aug 2026 |
 
 ---
 
-*Protocol Index Version: 1.6*
-*Last Updated: 2026-01-17*
+*Protocol Index Version: 1.7*
+*Last Updated: 2026-08-10*
 
 ### Changelog
+
+**v1.7 (2026-08-10) - Context Retention Protocol**
+- Added PROJECT_CONTEXT_RETENTION_PROTOCOL.md (v1.0) — keeps a complex/multi-session
+  project resumable cold on a different machine; codifies required Project Status
+  content and a rule against stale cross-references (a real one was found and fixed:
+  this repo's `CLAUDE.md` pointed at a `home-automation/CLAUDE.md` that doesn't exist)
+- Added decision-tree entry and Quick Reference row for the new protocol
+- Sibling protocol also created at the root wrapper repo level
+  (`.claude/protocols/PROJECT_CONTEXT_RETENTION_PROTOCOL.md`), generalized across
+  submodules rather than scoped to `shared/projects/`
 
 **v1.6 (2026-01-17) - Repository Reorganization**
 - Removed 10 collection protocols (moved to Personal repository):
