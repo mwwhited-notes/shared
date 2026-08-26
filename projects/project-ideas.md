@@ -35,6 +35,7 @@ Project backlog for future development. Once a project has its own directory in 
 * TMS9900 soft core (TI-99/4A compatible) [would enable TI-99 clone]
 * VGA/HDMI framebuffer controller [needed for retro cores]
 * custom ISA CPU design [building on ALU work]
+* LabVIEW XADC reader for **[Arty A7](../.personal/incoming/programmable-devices.md)** — port [LabVIEW XADC Reader for Arty Z7](https://www.hackster.io/jolobotero/labview-xadc-reader-for-arty-z7-af10bf) (Jorge Hernán López Botero) from the Zynq Z7 to the A7-100; original uses AXI4-Lite to read the XADC hard macro and stream to LabVIEW on Windows for real-time visualization — A7 lacks the Zynq PS, so would need a soft AXI4-Lite master (e.g. MicroBlaze or a simple custom controller) in front of the XADC primitive [reference: [Digilent Arty-Z7-20-xadc](https://github.com/Digilent/Arty-Z7-20-xadc), [Digilent Arty Z7 XADC Demo](https://digilent.com/reference/programmable-logic/arty-z7/demos/xadc); good pairing with FPGA CPU Design work already targeting the A7-100]
 
 ### Protocol Bridges & Interfaces
 
