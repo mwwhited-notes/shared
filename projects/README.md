@@ -33,6 +33,7 @@ Active project documentation and build logs organized by category.
 | [Home NVR System](#home-nvr-system-self-hosted-local-only) | Smart Home | Planning | Wyze Cam Pan (×2), PR4100/DevOps Cluster |
 | [Serger Timing Repair](#serger-timing-repair-singer-14cg754) | Workshop/Repair | Planning | Singer 14CG754 serger |
 | [JWS/JWT From Scratch](#jwsjwt-from-scratch) | Software/Learning | Planning | .NET, no hardware |
+| [Encrypted Search & Computation](#encrypted-search--computation) | Software/Research | Research Documentation | Software-only, no hardware |
 | [Cline with Local LLM](#cline-with-local-llm) | AI / Dev Tools | Planning | [RTX 4070 Ti](../.personal/incoming/device-lab.md) |
 | [HuggingFace .NET Native](#huggingface-dotnet-native-execution) | AI/ML Research | Research | .NET workstation |
 | [Local Docker Registry](#local-docker-registry) | DevOps / Infrastructure | Planning | [NAS/Cluster](../.personal/incoming/device-lab.md) |
@@ -540,6 +541,28 @@ Implementing JSON Web Signature (RFC 7515) signing/verification directly rather 
 
 ---
 
+#### Encrypted Search & Computation
+**Status:** Research Documentation
+**Directory:** [encrypted-search-and-computation/](encrypted-search-and-computation/)
+
+Research survey of four techniques for searching or computing over data without decrypting it:
+Order-Preserving Encryption (OPE), Order-Revealing Encryption (ORE), Partially Homomorphic
+Encryption (PHE), and Fully Homomorphic Encryption (FHE). Covers how each works, the 2015
+inference attacks that ended OPE's run as a default recommendation, PHE's mature production use
+(e-voting, private set intersection), and FHE's 2026 production niche (narrow private lookups —
+Apple Live Caller ID, Microsoft Edge Password Monitor, Zama's encrypted Ethereum mainnet).
+Includes a comparison matrix, decision guide, bibliography, standardization landscape (ISO/IEC
+18033-6 for PHE, the in-draft ISO/IEC 28033 FHE standard, NIST's PEC program — OPE/ORE have no
+formal standard at all), and per-scheme pseudocode + PlantUML protocol-flow diagrams.
+
+**Stack:** Research only, software-only, no hardware
+**Documentation:** [README.md](encrypted-search-and-computation/README.md) (comparison matrix +
+decision guide), per-scheme write-ups, [RESEARCH_BIBLIOGRAPHY.md](encrypted-search-and-computation/RESEARCH_BIBLIOGRAPHY.md)
+**Related:** [JWS/JWT From Scratch](#jwsjwt-from-scratch) (same from-scratch-implementation pattern
+if this project moves from research to prototype)
+
+---
+
 ### Workshop Organization
 
 #### DIY TrekPak Dividers
@@ -585,12 +608,12 @@ welder needed (key gaps)
 - **Completed:** 4 projects (ATtiny2313 LED Clock, Radex One Protocol, Favero Fencing System, Vector Search SQL Server)
 - **Active Development:** 8 projects (FPGA CPU, SAP-1, Zynq, Analog Computer, DevOps Cluster, Home Automation, Apple II Disk Archival, Docker Containers Collection)
 - **Planning/Research:** 14 projects (Passive Radar SDR, SCPI Control, Self-Hosted Git Server, SBC Cluster, Cline with Local LLM, Local Docker Registry, ImageWriter II Emulator, Reclaimed-Cell USB-C PD Pack, dotex Consolidation, THAT Hybrid Controller, Home NVR System, Serger Timing Repair, JWS/JWT From Scratch, Offline Mapping/Search/Routing System)
-- **Research Documentation:** 2 projects (HuggingFace .NET Native Execution, Synchronized Telemetry Streaming Research - comprehensive research complete)
+- **Research Documentation:** 3 projects (HuggingFace .NET Native Execution, Synchronized Telemetry Streaming Research, Encrypted Search & Computation - comprehensive research complete)
 - **On Hold:** 1 project (MM-8000K Trainer UI - hardware functional, used as reference)
 - **Reference/As Needed:** 3 projects (DIY TrekPak Dividers, DRL/DTL Logic Boards, AI/ML Research)
 - **Notes/Scratch:** 2 projects (Python Embedding in SQL Server, Windows USB Passthrough) - single-note captures, not yet active work
 
-**Total: 36 projects** (2 production, 4 completed, 8 active, 14 planning, 2 research documentation, 1 on hold, 3 reference, 2 notes)
+**Total: 37 projects** (2 production, 4 completed, 8 active, 14 planning, 3 research documentation, 1 on hold, 3 reference, 2 notes)
 
 ## Cross-References
 
@@ -633,5 +656,5 @@ projects/
 
 ---
 
-*Last updated: 2026-08-10*
-*Total projects: 36*
+*Last updated: 2026-08-27*
+*Total projects: 37*
