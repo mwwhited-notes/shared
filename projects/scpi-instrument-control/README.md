@@ -28,14 +28,14 @@ The system will control existing bench equipment: HP 34401A DMM, Rigol DM3058E D
 ## Equipment Used
 
 ### Test Instruments
-- [HP 34401A DMM](../../Test%20Equipment/) - 6.5-digit multimeter, GPIB/RS-232
-- [Rigol DM3058E](../../Test%20Equipment/rigol-dm3058e/) - 5.5-digit DMM, USB/LAN/RS-232
-- [Rigol DG1022](../../Test%20Equipment/rigol-dg1022/) - Function generator, USB/LAN
+- [HP 34401A DMM](../../.personal/incoming/test-equipment.md) - 6.5-digit multimeter, GPIB/RS-232
+- [Rigol DM3058E](../../.personal/incoming/test-equipment.md) - 5.5-digit DMM, USB/LAN/RS-232
+- [Rigol DG1022](../../.personal/incoming/test-equipment.md) - Function generator, USB/LAN
 - Korad power supplies - Programmable bench supplies
 
 ### Gateway/Interface Options
-- [Raspberry Pi](../../Programmable%20Devices/) - USB-to-network bridge
-- [BeagleBone Black](../../Programmable%20Devices/beaglebone-black-rev-c/) - Alternative gateway platform
+- [Raspberry Pi](../../.personal/incoming/programmable-devices.md) - USB-to-network bridge
+- [BeagleBone Black](../../.personal/incoming/programmable-devices.md) - Alternative gateway platform
 - RS-232/Ethernet adapter modules
 
 ## Architecture
@@ -47,7 +47,7 @@ The system will control existing bench equipment: HP 34401A DMM, Rigol DM3058E D
 ## Related Projects
 
 - [DeviceBridge](https://github.com/mwwhited/DeviceBridge) - IEEE-1284 parallel port capture (related protocol work)
-- [LXI Bridge for Test Equipment](../../project-ideas.md) - Potential future expansion with web interface
+- [LXI Bridge for Test Equipment](../project-ideas.md) - Potential future expansion with web interface
 
 ## Learning Goals
 

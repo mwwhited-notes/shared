@@ -178,9 +178,9 @@ The system uses two or more SDR receivers: one pointed at the illuminator (refer
 ### Current Inventory (to be verified)
 
 Check these inventories for available SDR hardware:
-- [Programmable Devices/](../../Programmable%20Devices/) - SDR receivers, RF modules
-- [Test Equipment/](../../Test%20Equipment/) - Spectrum analyzers, signal generators
-- [Expansion Boards/](../../Expansion%20Boards/) - Raspberry Pi SDR HATs
+- [Programmable Devices/](../../.personal/incoming/programmable-devices.md) - SDR receivers, RF modules
+- [Test Equipment/](../../.personal/incoming/test-equipment.md) - Spectrum analyzers, signal generators
+- [Expansion Boards/](../../.personal/incoming/expansion-boards.md) - Raspberry Pi SDR HATs
 
 ### To Be Acquired
 

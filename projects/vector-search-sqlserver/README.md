@@ -327,7 +327,7 @@ EXEC embedding.[request/send/batch] @TextTable;
 
 - [BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders) - Encoding/decoding library
 - [dotex](https://github.com/OutOfBandDevelopment/dotex) - .NET extensions framework (parent project)
-- **AI/ML Notes:** [shared/Notes/software/AI ML Stuff/](../../Notes/software/AI%20ML%20Stuff/) - LSH research notes
+- **AI/ML Notes:** [AI/ML Research](../ai-ml-research/) - LSH research notes
 
 ---
 

@@ -675,4 +675,4 @@ All recommended FOSS projects acceptable for:
 
 *Philosophy: Free and open-source software (FOSS) + open standards as primary recommendations, with commercial options noted for specific scenarios.*
 
-*Part of: [Synchronized Telemetry Streaming Research](README.md)*
+*Part of: [Synchronized Telemetry Streaming Research](../README.md)*

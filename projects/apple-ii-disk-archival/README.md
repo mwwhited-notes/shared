@@ -193,7 +193,7 @@ AppleWin.exe --disk1=archive/woz-images/PrintShop_Program.woz
 ### Other Projects in This Repo
 - [ImageWriter II Emulator](../imagewriter-ii-emulator/) - Capture Print Shop output to modern printers
 - [MM-8000K Trainer UI](../mm8000-trainer-ui/) - Intel 8085 reference hardware
-- [Vintage Computers](../../Vintage%20Computers/) - Apple II hardware inventory
+- [Vintage Computers](../../.personal/incoming/vintage-computers.md) - Apple II hardware inventory
 
 ## Resources
 

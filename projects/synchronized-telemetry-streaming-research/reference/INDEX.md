@@ -17,10 +17,10 @@
 
 | Document | Purpose | Audience |
 |----------|---------|----------|
-| **[README.md](README.md)** | Project overview, research focus areas, status | Project leads, planners |
+| **[README.md](../README.md)** | Project overview, research focus areas, status | Project leads, planners |
 | **[RESEARCH_BIBLIOGRAPHY.md](RESEARCH_BIBLIOGRAPHY.md)** | Comprehensive RFC/standard index with cross-references | Researchers, implementers |
-| **[event-streaming-and-blob-transfer.md](event-streaming-and-blob-transfer.md)** | Standards for event streams and large file transfer | Engineers selecting technologies |
-| **[out-of-order-blob-transfer.md](out-of-order-blob-transfer.md)** | Out-of-order packet protocols (RaptorQ, QUIC, SCTP) | System designers, network engineers |
+| **[event-streaming-and-blob-transfer.md](../streaming/event-streaming-and-blob-transfer.md)** | Standards for event streams and large file transfer | Engineers selecting technologies |
+| **[out-of-order-blob-transfer.md](../transfer/out-of-order-blob-transfer.md)** | Out-of-order packet protocols (RaptorQ, QUIC, SCTP) | System designers, network engineers |
 
 ---
 
@@ -91,13 +91,13 @@ A structured, cross-referenced database of:
 - Implementation resources for each standard
 - Academic papers and theory
 
-**[event-streaming-and-blob-transfer.md](event-streaming-and-blob-transfer.md)**
+**[event-streaming-and-blob-transfer.md](../streaming/event-streaming-and-blob-transfer.md)**
 - CloudEvents envelope format
 - Kafka event sourcing pattern
 - S3/BitTorrent/IPFS blob transfer
 - Serialization format comparison
 
-**[out-of-order-blob-transfer.md](out-of-order-blob-transfer.md)**
+**[out-of-order-blob-transfer.md](../transfer/out-of-order-blob-transfer.md)**
 - RaptorQ fountain codes (recover from ANY subset)
 - FECFRAME + sliding window FEC
 - QUIC, SCTP, DCCP protocols
@@ -108,15 +108,15 @@ A structured, cross-referenced database of:
 ## Related Projects
 
 **Will benefit directly:**
-- [SCPI Instrument Control](../../projects/scpi-instrument-control/) - Use LSL sink or Kafka
-- [ScoreMachine](../../projects/scoremachine/) - Adopt RaptorQ for backup
-- [Passive Radar SDR](../../projects/passive-radar-sdr/) - RaptorQ for multi-receiver
-- [Radex Protocol](../../projects/radex-one-protocol-reverse-engineering/) - Gateway pattern
+- [SCPI Instrument Control](../../scpi-instrument-control/) - Use LSL sink or Kafka
+- [ScoreMachine](../../scoremachine/) - Adopt RaptorQ for backup
+- [Passive Radar SDR](../../passive-radar-sdr/) - RaptorQ for multi-receiver
+- [Radex Protocol](../../radex-one-protocol-reverse-engineering/) - Gateway pattern
 
 **Will contribute to:**
-- [DevOps Cluster](../../projects/devops-playground-cluster/) - Stream processing
-- [Home Automation](../../projects/home-automation/) - Sensor patterns
-- [Analog Computing](../../AnalogComputers/) - Signal understanding
+- [DevOps Cluster](../../devops-playground-cluster/) - Stream processing
+- [Home Automation](../../home-automation/) - Sensor patterns
+- [Analog Computing](../../../AnalogComputers/) - Signal understanding
 
 ---
 

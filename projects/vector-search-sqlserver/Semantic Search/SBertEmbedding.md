@@ -6,5 +6,5 @@
 - [all-mpnet-base-v2](https://huggingface.co/sentence-transformers/all-mpnet-base-v2)
 - [SimilaritySearchExample](https://github.com/EliassenInnovation/SimilaritySearchExample)
 - [sentence_transformer_docker](https://github.com/korolkiewiczk/sentence_transformer_docker)
-- [AllMiniLML6v2Sharp](AllMiniLML6v2Sharp)
+- [AllMiniLML6v2Sharp](https://github.com/OutOfBandDevelopment/AllMiniLML6v2Sharp)
 - 

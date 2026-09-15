@@ -85,7 +85,7 @@ Educational logic boards demonstrating how digital logic gates work using discre
 ## Related Projects
 
 - [SAP-1 Computer](../sap-1-computer/) - Uses 74-series TTL, next evolution from DTL
-- [Gigatron TTL Computer](../../Programmable%20Devices/gigatron-ttl/) - TTL computer kit (7400-series)
+- [Gigatron TTL Computer](../../.personal/incoming/programmable-devices.md) - TTL computer kit (7400-series)
 - [FPGA CPU Design](../fpga-cpu-design/) - Modern digital logic implementation
 
 ## Comparison to Modern Logic

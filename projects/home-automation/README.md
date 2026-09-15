@@ -79,9 +79,9 @@
 
 ## Cross-References
 
-- [Device Lab/mobile/](../../Device%20Lab/mobile/) - Dashboard tablet inventory
+- [Device Lab/mobile/](../../.personal/incoming/device-lab.md) - Dashboard tablet inventory
 - [DevOps Playground Cluster](../devops-playground-cluster/) - Alternative deployment platform
-- [Device Lab/network-storage/](../../Device%20Lab/network-storage/) - NAS/Docker host options
+- [Device Lab/network-storage/](../../.personal/incoming/device-lab.md) - NAS/Docker host options
 - [SBC Cluster](../sbc-cluster/) - ARM-based cluster alternative for always-on services
 - [Self-Hosted Git Server](../self-hosted-git-server/) - Related infrastructure project on PR4100
 - [Radex One Protocol](../radex-one-protocol-reverse-engineering/) - Potential sensor integration

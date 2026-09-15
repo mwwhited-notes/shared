@@ -142,7 +142,7 @@ Physical MM-8000K Intel 8085 trainer hardware available and functional. CLI emul
 
 **Equipment:** MM-8000K trainer (built and working), development workstation
 **Related:** [MM8000 Emulator](https://github.com/mwwhited-archives/MM8000) (.NET Core + ANTLR)
-**Cross-reference:** Used as reference for [SAP-1 Computer](../sap-1-computer/) project
+**Cross-reference:** Used as reference for [SAP-1 Computer](sap-1-computer/) project
 
 ---
 
@@ -202,7 +202,7 @@ Successfully reverse-engineered the complete USB serial protocol for the Radex O
 
 #### Favero Fencing Scoring System
 **Status:** Completed
-**Directory:** [favero-fencing-scoring-system/](favero-fencing-scoring-system/)
+**Directory:** [scoremachine/favero-protocol.md](scoremachine/favero-protocol.md) (protocol lives with [ScoreMachine](#scoremachine), its production consumer)
 
 Serial protocol integration for Favero Full-Arm-05 fencing scoring apparatus. Built for old fencing club to capture real-time match data (scores, time, lamp status, penalties). Implemented 20mA current loop to RS-232 interface conversion and real-time data decoding.
 
@@ -329,7 +329,7 @@ One-line scratch note asking whether SQL Server's language extensions can host a
 
 Research into protocols and patterns for streaming synchronized telemetry data from multiple sources simultaneously: real-time streaming protocols (RTSP 2.0, RTP, RTCP), multi-stream synchronization, stream multiplexing, CloudEvents, and distributed architecture patterns (BitTorrent v2, ALTO). 40+ standards catalogued with RFCs and links, 100+ implementation resources indexed, 8 repository projects cross-referenced.
 
-**Documentation:** [RESEARCH_BIBLIOGRAPHY.md](synchronized-telemetry-streaming-research/RESEARCH_BIBLIOGRAPHY.md), [event-streaming-and-blob-transfer.md](synchronized-telemetry-streaming-research/event-streaming-and-blob-transfer.md), [out-of-order-blob-transfer.md](synchronized-telemetry-streaming-research/out-of-order-blob-transfer.md)
+**Documentation:** [RESEARCH_BIBLIOGRAPHY.md](synchronized-telemetry-streaming-research/reference/RESEARCH_BIBLIOGRAPHY.md), [event-streaming-and-blob-transfer.md](synchronized-telemetry-streaming-research/streaming/event-streaming-and-blob-transfer.md), [out-of-order-blob-transfer.md](synchronized-telemetry-streaming-research/transfer/out-of-order-blob-transfer.md)
 **Downloaded standards:** [documents/](synchronized-telemetry-streaming-research/documents/) (8 RFC/standards PDFs, 1.1 MB)
 
 ---
@@ -356,7 +356,7 @@ Network control system for SCPI-compatible test equipment with custom .NET Core 
 Docker orchestration platform for AI/ML workloads with multi-service stacks, GPU-aware deployment, and self-contained-service (v3.0) composition patterns. Unifies 8+ services (LLM inference, vector databases, embeddings, search, document processing, web interfaces) deployable independently or as composed stacks (Docker Compose, Swarm, or Kubernetes/Helm), with zero-downtime deployment and health monitoring.
 
 **Deployment targets:** Docker Compose (dev), Docker Swarm, Kubernetes/Helm
-**Key composition:** [compositions/ai-workspace](ai-ml-docker-orchestration/compositions/ai-workspace), [compositions/vector-search-rag](ai-ml-docker-orchestration/compositions/vector-search-rag)
+**Key composition:** ai-workspace, vector-search-rag *(compositions/services content described in `ai-ml-docker-orchestration/README.md` is not present on disk here — likely migrated during the [Docker Containers Collection](#docker-containers-collection) consolidation; needs verifying against `code/public/containers`)*
 **Cross-references:** [local-docker-registry/](local-docker-registry/), [devops-playground-cluster/](devops-playground-cluster/), [cline-qwen3-coder-30b/](cline-qwen3-coder-30b/)
 
 ---
@@ -598,7 +598,7 @@ boost module for real negotiated PD output (5V/9V/12V/20V) instead of a stock po
 
 **Equipment:** Multimeter, bench supplies (on hand); programmable DC electronic load and spot
 welder needed (key gaps)
-**Related:** [tools-and-components.md](../tools-and-components.md), [Test Equipment inventory](../.personal/incoming/test-equipment.md)
+**Related:** [tools-and-components.md](../.personal/incoming/tools-and-components.md), [Test Equipment inventory](../.personal/incoming/test-equipment.md)
 
 ---
 
@@ -618,16 +618,16 @@ welder needed (key gaps)
 ## Cross-References
 
 ### Equipment Inventories
-- [Programmable Devices/](../Programmable%20Devices/) - FPGA, MCU, dev boards
-- [Test Equipment/](../Test%20Equipment/) - Oscilloscopes, DMMs, programmers
-- [Vintage Computers/](../Vintage%20Computers/) - Apple II, TI-99/4A, MM-8000K
-- [Device Lab/](../Device%20Lab/) - Tablets, Pi devices, hackable hardware
-- [Expansion Boards/](../Expansion%20Boards/) - Arduino shields, Pi HATs
+- [Programmable Devices inventory](../.personal/incoming/programmable-devices.md) - FPGA, MCU, dev boards
+- [Test Equipment inventory](../.personal/incoming/test-equipment.md) - Oscilloscopes, DMMs, programmers
+- [Vintage Computers inventory](../.personal/incoming/vintage-computers.md) - Apple II, TI-99/4A, MM-8000K
+- [Device Lab inventory](../.personal/incoming/device-lab.md) - Tablets, Pi devices, hackable hardware
+- [Expansion Boards inventory](../.personal/incoming/expansion-boards.md) - Arduino shields, Pi HATs
 
 ### Planning & Documentation
 - [project-ideas.md](project-ideas.md) - Project backlog and future ideas
 - [workshop-capabilities.md](../workshop-capabilities.md) - Equipment summary and project ideas by difficulty
-- [tools-and-components.md](../tools-and-components.md) - Hand tools, wire, consumables, component stock
+- [tools-and-components.md](../.personal/incoming/tools-and-components.md) - Hand tools, wire, consumables, component stock
 
 ### Research Collections
 - [AnalogComputers/analog-computing-repository/](../AnalogComputers/analog-computing-repository/) - Analog computing research (232 PDFs)

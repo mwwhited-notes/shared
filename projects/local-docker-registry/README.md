@@ -462,11 +462,11 @@ iperf3 between registry and clients
 - [self-hosted-git-server/](../self-hosted-git-server/) - Related infrastructure
 
 ### Equipment
-- [WD My Cloud PR4100](../../Test%20Equipment/) - Recommended host (always-on NAS)
+- [WD My Cloud PR4100](../../.personal/incoming/device-lab.md) - Recommended host (always-on NAS)
 - [DevOps Playground Cluster](../devops-playground-cluster/) - Cluster infrastructure
 
 ### Documentation
-- [tools-and-components.md](../../tools-and-components.md) - Related tools
+- [tools-and-components.md](../../.personal/incoming/tools-and-components.md) - Related tools
 - [network-diagram.md](../../network-diagram.md) - Network topology/IP assignments
 
 ---

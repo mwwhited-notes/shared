@@ -155,7 +155,7 @@ See [phase1-raspberry-pi-netv.md](phase1-raspberry-pi-netv.md) for complete arch
 ### Historical Equipment (Phase 1)
 | Equipment | Location | Description |
 |:----------|:---------|:------------|
-| **NeTV FPGA** | [shared/Programmable Devices/netv-fpga/](../../Programmable%20Devices/netv-fpga/) | Xilinx Spartan-6 HDMI overlay device |
+| **NeTV FPGA** | [shared/Programmable Devices/netv-fpga/](../../.personal/incoming/programmable-devices.md) | Xilinx Spartan-6 HDMI overlay device |
 | **Ebyte E810-DTU** | 4× converters | Serial-to-Ethernet (10/100, RS-232/RS-422/RS-485) |
 | **Raspberry Pi 2** | Phase 1 host | ARM Cortex-A7, 1GB RAM, USB Ethernet adapter |
 | **Arduino Uno/Mega** | Phase 1 control | HDMI switch (IR), LANC camera control |
@@ -293,7 +293,7 @@ eth -right-> net
 - **[DeviceBridge](https://github.com/mwwhited/DeviceBridge)** - TDS2024 parallel port capture (shows protocol engineering)
 - **[proving-grounds/OoBDev.ScoreMachine](https://github.com/mwwhited/proving-grounds/tree/main/examples/OoBDev.ScoreMachine)** - Original prototype (2017-2018 historical reference)
 - **Favero Protocol:** [favero-protocol.md](favero-protocol.md)
-- **NeTV FPGA:** [shared/Programmable Devices/netv-fpga/](../../Programmable%20Devices/netv-fpga/)
+- **NeTV FPGA:** [shared/Programmable Devices/netv-fpga/](../../.personal/incoming/programmable-devices.md)
 
 ---
 

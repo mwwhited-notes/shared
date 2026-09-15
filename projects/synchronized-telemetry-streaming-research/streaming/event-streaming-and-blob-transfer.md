@@ -844,4 +844,4 @@ START: What are you recording?
 
 *Last updated: 2026-01-16*
 
-*This document complements [README.md](README.md) with deep dives into standardized event streaming and blob transfer approaches.*
+*This document complements [README.md](../README.md) with deep dives into standardized event streaming and blob transfer approaches.*

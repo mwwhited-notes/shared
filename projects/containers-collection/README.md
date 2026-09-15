@@ -270,7 +270,7 @@ See `.claude/protocols/DOCKER_CONTAINERS_COLLECTION_PROTOCOL.md` for complete wo
 - [CQRS-Examples Repository](https://github.com/mwwhited/CQRS-Examples)
   - Analysis: [.claude/analysis/CQRS-Examples/2c61d6b-2023-06-04.md](../../../.claude/analysis/CQRS-Examples/2c61d6b-2023-06-04.md) (Multi-service CQRS architecture)
 - [YearOfCode2024 Repository](https://github.com/mwwhited-archives/YearOfCode2024) 🔒 Archived
-  - Analysis: [.claude/analysis/YearOfCode2024/a83c39f-2025-02-14.md](../../../.claude/analysis/YearOfCode2024/a83c39f-2025-02-14.md) (Hybrid search with Qdrant, OpenSearch, Neo4j)
+  - Analysis: `.claude/analysis/YearOfCode2024/` (removed — repository no longer analyzed as of 2026-09-15; Hybrid search with Qdrant, OpenSearch, Neo4j)
 
 ### Related Infrastructure Projects
 - [dotex Consolidation](../dotex-consolidation/) - .NET library consolidation

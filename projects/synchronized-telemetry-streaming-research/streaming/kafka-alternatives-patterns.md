@@ -612,6 +612,6 @@ NATS JetStream (network sync)
 
 *Last updated: 2026-01-16*
 
-*Part of: [Synchronized Telemetry Streaming Research](README.md)*
+*Part of: [Synchronized Telemetry Streaming Research](../README.md)*
 
 *For Kafka decision-making, see decision tree above. For specific use case guidance, see comparison matrix.*

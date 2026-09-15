@@ -79,7 +79,7 @@ See [AnalogComputers/analog-computing-repository/](../../AnalogComputers/analog-
 
 **Hybrid Computing Code:** [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)
 
-**Repository Analysis:** [.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md](../../../.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md)
+**Repository Analysis:** [.claude/analysis/EmbeddedBakery/7074443-2026-01-08.md](../../../.claude/analysis/EmbeddedBakery/7074443-2026-01-08.md)
 - STM32 projects for hybrid computing
 - 484 Arduino sketches (including analog interface work)
 

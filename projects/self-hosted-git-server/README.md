@@ -126,7 +126,7 @@ git clone ssh://user@pr4100/volume1/git-repos/project1.git
 
 ### Hardware Selection
 
-**Target:** [WD My Cloud PR4100](../../Device%20Lab/network-storage/wd-mycloud-pr4100/)
+**Target:** [WD My Cloud PR4100](../../.personal/incoming/device-lab.md)
 - Intel N3710 CPU (4-core)
 - Docker support
 - Always-on NAS
@@ -194,13 +194,13 @@ services:
 
 **Repositories to backup:**
 - [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)
-  - Analysis: [.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md](../../../.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md) (6,586 files, 28 FPGA projects)
+  - Analysis: [.claude/analysis/EmbeddedBakery/7074443-2026-01-08.md](../../../.claude/analysis/EmbeddedBakery/7074443-2026-01-08.md) (6,586 files, 28 FPGA projects)
 - [BinaryDataDecoders](https://github.com/mwwhited/BinaryDataDecoders)
   - Analysis: [.claude/analysis/BinaryDataDecoders/faac1171-2025-02-14.md](../../../.claude/analysis/BinaryDataDecoders/faac1171-2025-02-14.md) (796K+ downloads, 65 projects)
 - [DeviceBridge](https://github.com/mwwhited/DeviceBridge)
-  - Analysis: [.claude/analysis/DeviceBridge/a9bc076-2025-08-01.md](../../../.claude/analysis/DeviceBridge/a9bc076-2025-08-01.md) (protocol engineering)
+  - Analysis: [.claude/analysis/DeviceBridge/a3acd76-2025-07-22.md](../../../.claude/analysis/DeviceBridge/a3acd76-2025-07-22.md) (protocol engineering)
 - [MM8000](https://github.com/mwwhited-archives/MM8000) 🔒 Archived
-  - Analysis: [.claude/analysis/MM8000/7fbbdec-2026-01-08.md](../../../.claude/analysis/MM8000/7fbbdec-2026-01-08.md) (Intel 8085 emulator)
+  - Analysis: [.claude/analysis/MM8000/c71dd8b-2023-01-01.md](../../../.claude/analysis/MM8000/c71dd8b-2023-01-01.md) (Intel 8085 emulator)
 - [dotex](https://github.com/OutOfBandDevelopment/dotex)
   - Analysis: [.claude/analysis/dotex/687bd7d-2025-08-01.md](../../../.claude/analysis/dotex/687bd7d-2025-08-01.md) (109 projects, .NET 9.0)
 - [RunScripts](https://github.com/OutOfBandDevelopment/RunScripts)
@@ -315,7 +315,7 @@ Host gitea
 ## Equipment Used
 
 ### Primary Hardware
-- [WD My Cloud PR4100](../../Device%20Lab/network-storage/wd-mycloud-pr4100/) - Docker host, storage backend
+- [WD My Cloud PR4100](../../.personal/incoming/device-lab.md) - Docker host, storage backend
 
 ### Optional Integration
 - [DevOps Playground Cluster](../devops-playground-cluster/) - CI/CD, container registry, GitOps

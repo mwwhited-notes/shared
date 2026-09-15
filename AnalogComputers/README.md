@@ -142,8 +142,8 @@ Documentation for classic analog computer systems:
 ## Cross-References
 
 - [Projects/analog-computer-experiments/](../projects/analog-computer-experiments/) - Active analog computing projects and experiments
-- [Programmable Devices/anabrid-that/](../Programmable Devices/anabrid-that/) - Anabrid THAT analog computer hardware
-- [Test Equipment/](../Test%20Equipment/) - Lab equipment for analog computing work
+- [Programmable Devices inventory](../.personal/incoming/programmable-devices.md) - Anabrid THAT analog computer hardware
+- [Test Equipment inventory](../.personal/incoming/test-equipment.md) - Lab equipment for analog computing work
 - [Notes/hardware/](../Notes/hardware/) - Hardware design notes and references
 
 ---

@@ -91,16 +91,16 @@ Located in `/documents/` folder:
 ### 🔗 Cross-References (8 Projects)
 
 **Projects that will directly benefit:**
-1. [SCPI Instrument Control](../../projects/scpi-instrument-control/) - Can use LSL sink or Kafka producer
-2. [ScoreMachine](../../projects/scoremachine/) - Real-world implementation pattern, RaptorQ for backup
-3. [Passive Radar SDR](../../projects/passive-radar-sdr/) - RaptorQ for multi-receiver data aggregation
-4. [Radex Protocol Reverse Engineering](../../projects/radex-one-protocol-reverse-engineering/) - Gateway/bridge pattern
+1. [SCPI Instrument Control](../../scpi-instrument-control/) - Can use LSL sink or Kafka producer
+2. [ScoreMachine](../../scoremachine/) - Real-world implementation pattern, RaptorQ for backup
+3. [Passive Radar SDR](../../passive-radar-sdr/) - RaptorQ for multi-receiver data aggregation
+4. [Radex Protocol Reverse Engineering](../../radex-one-protocol-reverse-engineering/) - Gateway/bridge pattern
 
 **Projects that will be enhanced:**
-5. [DevOps Playground Cluster](../../projects/devops-playground-cluster/) - Stream processing infrastructure
-6. [Home Automation](../../projects/home-automation/) - Sensor data collection patterns
-7. [Analog Computing Research](../../AnalogComputers/) - Signal processing context
-8. [Programmable Devices](../../Programmable%20Devices/) - Hardware data sources
+5. [DevOps Playground Cluster](../../devops-playground-cluster/) - Stream processing infrastructure
+6. [Home Automation](../../home-automation/) - Sensor data collection patterns
+7. [Analog Computing Research](../../../AnalogComputers/) - Signal processing context
+8. [Programmable Devices](../../../.personal/incoming/programmable-devices.md) - Hardware data sources
 
 ---
 
@@ -257,13 +257,13 @@ IEEE 1588 PTP (nanosecond clock sync)
 ## Integration Opportunities
 
 ### Immediate (Next Phase)
-- Enhance [SCPI Instrument Control](../../projects/scpi-instrument-control/) with LSL sink
-- Add RaptorQ backup to [ScoreMachine](../../projects/scoremachine/) streaming
-- Use LSL for [Passive Radar SDR](../../projects/passive-radar-sdr/) multi-receiver sync
+- Enhance [SCPI Instrument Control](../../scpi-instrument-control/) with LSL sink
+- Add RaptorQ backup to [ScoreMachine](../../scoremachine/) streaming
+- Use LSL for [Passive Radar SDR](../../passive-radar-sdr/) multi-receiver sync
 
 ### Short-term
-- Create [DevOps Cluster](../../projects/devops-playground-cluster/) stream processing pipelines
-- Implement Kafka for [Home Automation](../../projects/home-automation/) sensor collection
+- Create [DevOps Cluster](../../devops-playground-cluster/) stream processing pipelines
+- Implement Kafka for [Home Automation](../../home-automation/) sensor collection
 - Add Prometheus/Grafana monitoring with OpenTelemetry
 
 ### Long-term
@@ -357,7 +357,7 @@ synchronized-telemetry-streaming-research/
 4. Reference proof-of-concept code (Phase 2)
 
 ### For Technical Understanding
-1. Read overview in [README.md](README.md)
+1. Read overview in [README.md](../README.md)
 2. Deep-dive into specific topic (event-streaming, out-of-order, etc.)
 3. Review cross-references to projects
 4. Check academic papers for theory

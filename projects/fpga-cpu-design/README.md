@@ -39,7 +39,7 @@ The CPU will be implemented on the Digilent Arty A7-100 FPGA development board.
 
 **Location:** FPGA projects and SystemVerilog designs
 
-**Repository Analysis:** [.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md](../../../.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md)
+**Repository Analysis:** [.claude/analysis/EmbeddedBakery/7074443-2026-01-08.md](../../../.claude/analysis/EmbeddedBakery/7074443-2026-01-08.md)
 - 28 FPGA projects identified
 - 484 Arduino sketches
 - 6,586 total files
@@ -52,7 +52,7 @@ The CPU will be implemented on the Digilent Arty A7-100 FPGA development board.
 - [Zynq SoC Exploration](../zynq-soc-exploration/) - ARM+FPGA SoC on Arty Z7-20
 - [MM-8000K Trainer UI](../mm8000-trainer-ui/) - Intel 8085 architecture reference
   - Repository: [MM8000](https://github.com/mwwhited-archives/MM8000) (Archived)
-  - Analysis: [.claude/analysis/MM8000/7fbbdec-2026-01-08.md](../../../.claude/analysis/MM8000/7fbbdec-2026-01-08.md)
+  - Analysis: [.claude/analysis/MM8000/c71dd8b-2023-01-01.md](../../../.claude/analysis/MM8000/c71dd8b-2023-01-01.md)
 
 ## Learning Goals
 

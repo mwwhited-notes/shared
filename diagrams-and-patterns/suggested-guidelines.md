@@ -4,7 +4,7 @@
 
 Using composition makes for more reuseable and more testable code.  
 
-Another common example would be to use a [Strategy](./DesignPatterns/BehavioralPatterns.md#strategy) over a [Template Method](./DesignPatterns/BehavioralPatterns.md#template-method)
+Another common example would be to use a [Strategy](./design-patterns/BehavioralPatterns.md#strategy) over a [Template Method](./design-patterns/BehavioralPatterns.md#template-method)
 
 ### Inheritance
 
@@ -59,7 +59,7 @@ public class MyImplementation {
 
 ## Dependency Injection over Service Locators (Singletons)
 
-Service Locators/[Singletons](./DesignPatterns//CreationPatterns.md#singleton) create tightly coupled implementation that are more difficult to manage and test.  Singletons can also cause threading issues by allowing contention on shared resources.  
+Service Locators/[Singletons](./design-patterns/CreationPatterns.md#singleton) create tightly coupled implementation that are more difficult to manage and test.  Singletons can also cause threading issues by allowing contention on shared resources.  
 
 ### Service Locator (Singleton)
 

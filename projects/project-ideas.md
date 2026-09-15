@@ -155,7 +155,7 @@ See [Projects Index (README.md)](README.md) for the complete list of 12 active p
 
 - [workshop-capabilities.md](../workshop-capabilities.md) - Full equipment summary and capabilities
 - **[Programmable Devices](../.personal/incoming/programmable-devices.md)** - FPGA, MCU, dev board inventory (37 boards)
-- **[Test Equipment](../.personal/incoming/test-equipment.md)** - Lab equipment inventory (41 units)
+- **[Test Equipment](../.personal/incoming/test-equipment.md)** - Lab equipment inventory (44 units)
 - **[Device Lab](../.personal/incoming/device-lab.md)** - Computing devices for hacking/tinkering (40+ devices)
 - **[Vintage Computers](../.personal/incoming/vintage-computers.md)** - Retro computing hardware (4 systems)
 

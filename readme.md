@@ -31,32 +31,33 @@ Enjoy!
 
 ## Hardware Inventory
 
+Equipment collections (Programmable Devices, Expansion Boards, Test Equipment, Vintage Computers)
+now live in the private `Personal` repository. Summaries are synced here via
+[PERSONAL-PROTOCOL.md](PERSONAL-PROTOCOL.md) into `.personal/incoming/` (gitignored, local-only).
+
 ### Programmable Devices
 
 FPGAs, CPLDs, MCUs, and development boards with specifications and archived documentation.
 
-- **[Programmable Devices/](Programmable%20Devices/)** - Device index and inventory
-- **[Documentation Protocol](.claude/protocols/PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md)** - Standards for adding new devices
+- **[.personal/incoming/programmable-devices.md](.personal/incoming/programmable-devices.md)** - Device index and inventory
 
 ### Expansion Boards
 
 Arduino shields, Raspberry Pi HATs, BeagleBone capes, and other dev board accessories.
 
-- **[Expansion Boards/](Expansion%20Boards/)** - Shields, HATs, capes index
-- **[Documentation Protocol](.claude/protocols/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md)** - Standards for adding new boards
+- **[.personal/incoming/expansion-boards.md](.personal/incoming/expansion-boards.md)** - Shields, HATs, capes index
 
 ### Test Equipment
 
 Lab equipment documentation including oscilloscopes, DMMs, power supplies, programmers, microscopes, and soldering tools.
 
-- **[Test Equipment/](Test%20Equipment/)** - Equipment index and inventory
-- **[Documentation Protocol](.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md)** - Standards for adding new equipment
+- **[.personal/incoming/test-equipment.md](.personal/incoming/test-equipment.md)** - Equipment index and inventory
 
 ### Vintage Computers
 
 Classic home computers from the 1980s.
 
-- **[Vintage Computers/](Vintage%20Computers/)** - Computer index and inventory
+- **[.personal/incoming/vintage-computers.md](.personal/incoming/vintage-computers.md)** - Computer index and inventory
 
 | System | Year | CPU |
 |--------|------|-----|
@@ -90,38 +91,33 @@ Topics covered:
 
 | Topic | Location |
 |-------|----------|
-| .NET Development | [Notes/dotnet/](Notes/dotnet/) |
-| Kubernetes | [Notes/Kubernetes/](Notes/Kubernetes/) |
-| AI/ML | [Notes/AI ML Stuff/](Notes/AI%20ML%20Stuff/) |
-| App Ideas | [Notes/App Ideas/](Notes/App%20Ideas/) |
-| Build Your Own OCR | [Notes/Build your own OCR/](Notes/Build%20your%20own%20OCR/) |
-| Diagrams & Patterns | [Notes/DiagramsAndPatterns/](Notes/DiagramsAndPatterns/) |
+| .NET Development | [Notes/software/dotnet/](Notes/software/dotnet/) |
+| App Ideas | [Notes/software/App Ideas/](Notes/software/App%20Ideas/) |
+| Diagrams & Patterns | [Notes/software/DiagramsAndPatterns/](Notes/software/DiagramsAndPatterns/) |
+| Design Patterns & Architecture Reference | [diagrams-and-patterns/](diagrams-and-patterns/) |
+| WSL | [Notes/WSL Repair.md](Notes/WSL%20Repair.md) |
+| Git | [Notes/git-stuff/](Notes/git-stuff/) |
 
 ### Electronics & Hardware
 
 | Topic | Location |
 |-------|----------|
-| 74-181 ALU | [Notes/74-181/](Notes/74-181/) |
-| Analog Computing | [Notes/Analog Computing/](Notes/Analog%20Computing/) |
-| FPAA | [Notes/Field Programmable Analog Array/](Notes/Field%20Programmable%20Analog%20Array/) |
-| Logic Tables | [Notes/Logic Tables/](Notes/Logic%20Tables/) |
-| SAP-1 (Ben Eater 8-bit) | [Notes/SAP-1 - Eater 8-bit/](Notes/SAP-1%20-%20Eater%208-bit/) |
+| Logic Tables | [Notes/hardware/Logic Tables/](Notes/hardware/Logic%20Tables/) |
+| Apple II Disk Archival Notes | [Notes/hardware/](Notes/hardware/) |
 | Gadgets & Gizmos | [Notes/gadgets and gizmos/](Notes/gadgets%20and%20gizmos/) |
 
 ### Retro Computing
 
 | Topic | Location |
 |-------|----------|
-| TI-99/4A | [Notes/TI-99_4a/](Notes/TI-99_4a/) |
-| Vintage Stuff | [Notes/Vintage Stuff.md](Notes/Vintage%20Stuff.md) |
+| TI-99/4A, Apple II | [Vintage Computers Inventory](.personal/incoming/vintage-computers.md) |
 
 ### Other Topics
 
 | Topic | Location |
 |-------|----------|
-| 3D Printer | [Notes/3D Printer/](Notes/3D%20Printer/) |
 | Hobbies | [Notes/Hobbies/](Notes/Hobbies/) |
-| Favero (Fencing) | [Notes/Favero/](Notes/Favero/) |
+| Favero (Fencing) | [projects/scoremachine/favero-protocol.md](projects/scoremachine/favero-protocol.md) |
 | Home Network | [Notes/Home Network.md](Notes/Home%20Network.md) |
 
 ---
@@ -136,7 +132,7 @@ Utility scripts for various platforms and tools.
 | .NET | [Scripts/dotnet/](Scripts/dotnet/) | C# utilities |
 | T-SQL | [Scripts/T-SQL/](Scripts/T-SQL/) | SQL Server scripts |
 | Vivado | [Scripts/vivado/](Scripts/vivado/) | Xilinx TCL scripts |
-| WSL | [Scripts/wsl/](Scripts/wsl/) | Windows Subsystem for Linux config |
+| WSL | [Notes/WSL Repair.md](Notes/WSL%20Repair.md) | Windows Subsystem for Linux config |
 | Logic | [Scripts/Logic/](Scripts/Logic/) | Logic-related scripts |
 | Retro Tech | [Scripts/Retro Tech/](Scripts/Retro%20Tech/) | Vintage computing scripts |
 | Examples | [Scripts/Examples/](Scripts/Examples/) | Code examples |
@@ -168,12 +164,15 @@ Standards for maintaining consistent documentation across the repository. All pr
 
 | Protocol | Scope |
 |----------|-------|
-| [Programmable Devices Protocol](.claude/protocols/PROGRAMMABLE_DEVICES_DOCUMENTATION_PROTOCOL.md) | Dev boards, MCUs, FPGAs |
-| [Expansion Boards Protocol](.claude/protocols/EXPANSION_BOARDS_DOCUMENTATION_PROTOCOL.md) | Shields, HATs, capes |
-| [Equipment Protocol](.claude/protocols/EQUIPMENT_DOCUMENTATION_PROTOCOL.md) | Lab equipment |
-| [Online Shopping Protocol](.claude/protocols/ONLINE_SHOPPING_PROTOCOL.md) | Seller tracking |
+| [Projects Protocol](.claude/protocols/PROJECTS_PROTOCOL.md) | New project documentation |
+| [Project Review Protocol](.claude/protocols/PROJECT_REVIEW_PROTOCOL.md) | Periodic inventory/consistency review |
+| [Personal Data Protocol](PERSONAL-PROTOCOL.md) | Requesting equipment/tools/books data from the Personal repository |
 | [Analog Computing Research Protocol](AnalogComputers/analog-computing-repository/research-protocol.md) | PDF research & archiving |
+
+Equipment/device documentation protocols (Programmable Devices, Expansion Boards, Test
+Equipment) now live in the private `Personal` repository (`.claude/protocols/` there), since
+those collections moved out of this repo.
 
 ---
 
-*Last updated: December 2025*
+*Last updated: 2026-09-15*

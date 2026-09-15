@@ -189,8 +189,8 @@ Comprehensive Phase 2 implementation delivering 52 files across diagrams, code e
 - [Home Automation](../projects/home-automation/) - Time-series metrics streaming
 
 **Related documentation:**
-- [Test Equipment Inventory](../Test%20Equipment/README.md) - Physical instruments
-- [Device Lab](../Device%20Lab/README.md) - Computing devices for testing
+- [Test Equipment Inventory](../.personal/incoming/test-equipment.md) - Physical instruments
+- [Device Lab](../.personal/incoming/device-lab.md) - Computing devices for testing
 - [Workshop Capabilities](../workshop-capabilities.md) - Equipment capabilities summary
 
 **Standards & references:**

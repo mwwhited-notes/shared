@@ -1,9 +1,9 @@
 # Test Equipment Inventory Response
 
-**Summary:** 42 pieces of laboratory test and measurement equipment with specifications for oscilloscopes, signal generators, multimeters, power supplies, programmers, RF/SDR, and specialized instruments.
+**Summary:** 44 pieces of laboratory test and measurement equipment with specifications for oscilloscopes, signal generators, multimeters, power supplies, programmers, RF/SDR, and specialized instruments.
 
-**Response Date:** 2026-01-17 (updated 2026-07-23: added RF / SDR)
-**Total Equipment:** 42 units
+**Response Date:** 2026-01-17 (updated 2026-07-23: added RF / SDR; updated 2026-09-15: added Tektronix 2230 (×2) and Rigol DG1022Z, missed in prior syncs)
+**Total Equipment:** 44 units
 **Status:** All Active
 
 ---
@@ -14,6 +14,7 @@
 |---|---|---|---|---|---|---|---|
 | Rigol DS1102E | Digital Storage | 100 MHz | - | 2 | Standard 1x/10x | Active | 2017 |
 | Tektronix TDS2024 | Digital Storage | 200 MHz | - | 4 | 200MHz 1x/10x | Active | - |
+| Tektronix 2230 (×2) | Analog/Digital Storage | 100 MHz | 20 MS/s | 2 analog | P6121 10x passive | Active | 2026 |
 | Hitachi V-1150 | Analog | 150 MHz | - | 4 | Analog probes | Active | - |
 | DSO201 (DSO Nano) | Pocket DSO | 1 MHz | - | 1 | Built-in | Active | - |
 | Digilent Analog Discovery 2 | USB Multi-function | 30 MHz | 100 MSa/s | 2 analog + 16 digital | BNC + connectors | Active | 2021 |
@@ -25,6 +26,7 @@
 | Model | Channels | Max Frequency | Waveform Types | Interface | Status | Acquisition |
 |---|---|---|---|---|---|---|
 | Rigol DG1022 | 2 | 20 MHz | Sine, square, ramp, pulse | Built-in display | Active | - |
+| Rigol DG1022Z (unlocked as DG1062Z) | 2 | 60 MHz | Sine, square, ramp, pulse, arbitrary, SiFi | USB/LAN/GPIB (opt) | Active | 2026 |
 | Digilent Analog Discovery 2 (AWG) | 2 | 12 MHz | Arbitrary waveforms | USB via WaveForms | Active | 2021 |
 
 ---
@@ -251,7 +253,7 @@
 ## Functional Organization
 
 ### Measurement & Analysis
-- Oscilloscopes (5 units) - Waveform capture
+- Oscilloscopes (6 units) - Waveform capture
 - Multimeters (7 units) - Electrical measurements
 - LCR Meters (3 units) - Component testing
 - Logic Analyzers (2 units) - Digital protocol analysis
@@ -259,7 +261,7 @@
 
 ### Power & Sourcing
 - Power supplies (3 programmable + 1 PSU)
-- Signal generators (2 channels)
+- Signal generators (2 units, 4 channels)
 - UPS backup (1500VA)
 
 ### Device Programming
@@ -286,8 +288,8 @@
 
 | Category | Count | Status |
 |---|---|---|
-| Oscilloscopes | 5 | All Active |
-| Signal Generators | 2 | Active |
+| Oscilloscopes | 6 | All Active |
+| Signal Generators | 3 | Active |
 | Multimeters | 7 | Active |
 | LCR Meters | 3 | Active |
 | Power Supplies | 4 | Active |
@@ -305,7 +307,7 @@
 | Fabrication | 1 | Active |
 | RF / SDR | 1 | Active |
 | Safety & Monitoring | 1 | Active |
-| **TOTAL** | **42** | **All Active** |
+| **TOTAL** | **44** | **All Active** |
 
 ---
 
@@ -332,6 +334,6 @@
 
 ---
 
-*Response generated: 2026-01-17*
+*Response generated: 2026-01-17 (last updated 2026-09-15)*
 *Collection scope: Test equipment, measurement instruments, programmers, and fabrication tools*
 *Technical focus: Specifications, interface connectivity, and integration capabilities*

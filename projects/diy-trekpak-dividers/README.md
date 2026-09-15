@@ -8,7 +8,7 @@ TrekPak uses corrugated plastic with foam lamination and steel U-pins for modula
 
 ## Materials
 
-All materials documented in [tools-and-components.md](../../tools-and-components.md#craft--project-supplies).
+All materials documented in [tools-and-components.md](../../.personal/incoming/tools-and-components.md).
 
 | Material | Purpose | Source |
 |----------|---------|--------|

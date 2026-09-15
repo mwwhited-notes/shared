@@ -511,4 +511,4 @@ Archive:   RaptorQ encode QUIC stream, backup to S3
 
 *Last updated: 2026-01-16*
 
-*Part of: [Synchronized Telemetry Streaming Research](README.md)*
+*Part of: [Synchronized Telemetry Streaming Research](../README.md)*

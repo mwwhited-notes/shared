@@ -256,12 +256,12 @@ docker exec -it serial-test ls -l /dev/ttyUSB0
 - [DevOps Playground Cluster](../devops-playground-cluster/) - x86 high-performance cluster
 - [Home Automation](../home-automation/) - Home Assistant could use this cluster
 - [Self-Hosted Git Server](../self-hosted-git-server/) - Could use cluster for CI/CD integration
-- [WD My Cloud PR4100](../../Device%20Lab/network-storage/wd-mycloud-pr4100/) - NFS storage backend
+- [WD My Cloud PR4100](../../.personal/incoming/device-lab.md) - NFS storage backend
 
 ## Equipment Used
 
 ### Primary Hardware
-- [BeagleBone Black](../../Programmable%20Devices/) (×4) - Check Programmable Devices inventory
+- [BeagleBone Black](../../.personal/incoming/programmable-devices.md) (×4) - Check Programmable Devices inventory
 - Raspberry Pi 2 Model B (×2) - Check Device Lab inventory
 - Raspberry Pi Model A (×2) - Check Device Lab inventory
 
@@ -273,7 +273,7 @@ docker exec -it serial-test ls -l /dev/ttyUSB0
 - Ethernet cables
 
 ### Optional
-- [WD My Cloud PR4100](../../Device%20Lab/network-storage/wd-mycloud-pr4100/) - Shared NFS storage
+- [WD My Cloud PR4100](../../.personal/incoming/device-lab.md) - Shared NFS storage
 - USB drives for additional storage
 - Case/rack for organizing 8 boards
 

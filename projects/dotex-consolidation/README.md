@@ -172,7 +172,7 @@ dotex/
   - 65 .NET projects, 342 C# files
   - Target: `dotex.Decoders.*`
 - [BuildFirstOnce](https://github.com/OutOfBandDevelopment/BuildFirstOnce)
-  - Analysis: [.claude/analysis/BuildFirstOnce/619fa7c-2025-02-14.md](../../../.claude/analysis/BuildFirstOnce/619fa7c-2025-02-14.md)
+  - Analysis: `.claude/analysis/BuildFirstOnce/` (removed — repository no longer analyzed as of 2026-09-15)
   - MSBuild orchestration tool
   - Target: `dotex.Build.FirstOnce`
 - [oobtainium](https://github.com/OutOfBandDevelopment/oobtainium)

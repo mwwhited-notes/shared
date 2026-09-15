@@ -117,7 +117,7 @@ See [memory-controller-notes.md](memory-controller-notes.md) for detailed memory
 
 ### Online Resources
 - [Ben Eater's 8-bit Computer Playlist](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU) - Video tutorial series
-- [74181 ALU Notes](https://tomnisbet.github.io/nqsap/docs/74181-alu-notes/) - Also see [Notes/hardware/74f181.md](../../Notes/hardware/74f181.md)
+- [74181 ALU Notes](https://tomnisbet.github.io/nqsap/docs/74181-alu-notes/) - Also see [reference-74181-alu/74f181.md](reference-74181-alu/74f181.md)
 - [SAP-1 Architecture](https://en.wikipedia.org/wiki/Simple-As-Possible_computer) - Wikipedia article
 - [project-ideas.md](../project-ideas.md) - Original project concept
 
@@ -126,18 +126,18 @@ See [memory-controller-notes.md](memory-controller-notes.md) for detailed memory
 - [FPGA CPU Design](../fpga-cpu-design/) - Different project: custom CPU in SystemVerilog, not SAP-1
   - Progression: Breadboard SAP-1 → FPGA implementation
   - Repository: [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) (28 FPGA projects, Arty A7-100)
-  - Analysis: [.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md](../../../.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md) (6,586 files, Arduino + FPGA)
+  - Analysis: [.claude/analysis/EmbeddedBakery/7074443-2026-01-08.md](../../../.claude/analysis/EmbeddedBakery/7074443-2026-01-08.md) (6,586 files, Arduino + FPGA)
 - [MM-8000K Trainer UI](../mm8000-trainer-ui/) - Physical Intel 8085 trainer used as reference for 8-bit architecture
   - Repository: [MM8000](https://github.com/mwwhited-archives/MM8000) (Archived - .NET Core emulator + ANTLR assembler)
-  - Analysis: [.claude/analysis/MM8000/7fbbdec-2026-01-08.md](../../../.claude/analysis/MM8000/7fbbdec-2026-01-08.md) (CLI + ANTLR-based assembler)
+  - Analysis: [.claude/analysis/MM8000/c71dd8b-2023-01-01.md](../../../.claude/analysis/MM8000/c71dd8b-2023-01-01.md) (CLI + ANTLR-based assembler)
 - [DRL/DTL Logic Boards](../drl-dtl-logic-boards/) - Understanding TTL internals before building with TTL chips
-- See [Notes/hardware/74-181/](../../Notes/hardware/74-181/) for 74181 ALU chip Digital simulator files
+- See [reference-74181-alu/](reference-74181-alu/) for 74181 ALU chip Digital simulator files
 
 ## Cross-References
 
-- [Test Equipment/](../../Test%20Equipment/) - EEPROM and GAL programmers
-- [Notes/hardware/74-181/](../../Notes/hardware/74-181/) - 74181 ALU research and simulation files
-- [tools-and-components.md](../../tools-and-components.md) - 74-series logic chips inventory
+- [Test Equipment/](../../.personal/incoming/test-equipment.md) - EEPROM and GAL programmers
+- [reference-74181-alu/](reference-74181-alu/) - 74181 ALU research and simulation files
+- [tools-and-components.md](../../.personal/incoming/tools-and-components.md) - 74-series logic chips inventory
 
 ---
 

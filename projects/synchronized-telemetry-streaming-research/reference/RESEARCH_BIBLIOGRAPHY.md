@@ -40,9 +40,9 @@ Complete index of RFCs, standards, academic research, and implementation resourc
 - Section 13: RTSP Methods (SETUP, PLAY, PAUSE, TEARDOWN)
 
 **Cross-references in this notebook:**
-- [ScoreMachine Project](../../projects/scoremachine/) - Uses RTSP-like principles with OBS WebSocket
-- [SCPI Instrument Control](../../projects/scpi-instrument-control/) - Network streaming considerations
-- [Passive Radar SDR](../../projects/passive-radar-sdr/) - Multi-channel synchronization
+- [ScoreMachine Project](../../scoremachine/) - Uses RTSP-like principles with OBS WebSocket
+- [SCPI Instrument Control](../../scpi-instrument-control/) - Network streaming considerations
+- [Passive Radar SDR](../../passive-radar-sdr/) - Multi-channel synchronization
 
 ---
 
@@ -61,7 +61,7 @@ Complete index of RFCs, standards, academic research, and implementation resourc
 - **Application:** Resumable downloads, byte-range queries, streaming
 
 **Cross-references:**
-- Blob transfer strategies in [event-streaming-and-blob-transfer.md](event-streaming-and-blob-transfer.md)
+- Blob transfer strategies in [event-streaming-and-blob-transfer.md](../streaming/event-streaming-and-blob-transfer.md)
 - S3/MinIO multipart upload patterns
 
 ---
@@ -249,8 +249,8 @@ Any K + δ received encoding symbols (where K = source symbols, δ ≈ 0-2) can 
 - Independent recovery per block
 
 **Cross-references:**
-- [out-of-order-blob-transfer.md](out-of-order-blob-transfer.md) - Detailed analysis
-- Potential use in [Passive Radar SDR](../../projects/passive-radar-sdr/) for multi-receiver data aggregation
+- [out-of-order-blob-transfer.md](../transfer/out-of-order-blob-transfer.md) - Detailed analysis
+- Potential use in [Passive Radar SDR](../../passive-radar-sdr/) for multi-receiver data aggregation
 
 ---
 
@@ -380,8 +380,8 @@ Network loss 5% → Only affects stream with lost packet
 - RFC 9003: QUIC Applicability
 
 **Cross-references:**
-- Planned for [DevOps Playground Cluster](../../projects/devops-playground-cluster/) infrastructure
-- Potential use in future [Home Automation](../../projects/home-automation/) sensor network
+- Planned for [DevOps Playground Cluster](../../devops-playground-cluster/) infrastructure
+- Potential use in future [Home Automation](../../home-automation/) sensor network
 
 ---
 
@@ -508,8 +508,8 @@ Result: Message B delivered immediately (no blocking)
 - Harbor (container registry)
 
 **Cross-references:**
-- [event-streaming-and-blob-transfer.md](event-streaming-and-blob-transfer.md) - CloudEvents as universal envelope
-- Potential integration with [DevOps Playground Cluster](../../projects/devops-playground-cluster/)
+- [event-streaming-and-blob-transfer.md](../streaming/event-streaming-and-blob-transfer.md) - CloudEvents as universal envelope
+- Potential integration with [DevOps Playground Cluster](../../devops-playground-cluster/)
 
 ---
 
@@ -569,8 +569,8 @@ Result: Message B delivered immediately (no blocking)
 - Task distribution
 
 **Cross-references:**
-- [SBC Cluster](../../projects/sbc-cluster/) - Lightweight container orchestration (potential message broker)
-- [Home Automation](../../projects/home-automation/) - Z-Wave device integration
+- [SBC Cluster](../../sbc-cluster/) - Lightweight container orchestration (potential message broker)
+- [Home Automation](../../home-automation/) - Z-Wave device integration
 
 ---
 
@@ -598,8 +598,8 @@ Sensor (Publisher) → MQTT Broker → Dashboard (Subscriber)
 - Broad device support (Arduino, Raspberry Pi, etc.)
 
 **Cross-references:**
-- [Device Lab](../../Device%20Lab/) - IoT devices (tablets, phones, embedded systems)
-- [Home Automation](../../projects/home-automation/) - Z-Wave gateway potential
+- [Device Lab](../../../.personal/incoming/device-lab.md) - IoT devices (tablets, phones, embedded systems)
+- [Home Automation](../../home-automation/) - Z-Wave gateway potential
 
 ---
 
@@ -708,7 +708,7 @@ APIs, debugging, configuration, where human readability matters
 
 **Cross-references:**
 - [Lab Streaming Layer (LSL)](https://github.com/sccn/xdf) - Official spec
-- [Analog Computing Research](../../AnalogComputers/) - Neurophysiology applications
+- [Analog Computing Research](../../../AnalogComputers/) - Neurophysiology applications
 
 ---
 
@@ -784,8 +784,8 @@ Application queries network topology to make better routing/streaming decisions.
 - Protocol Buffers (RFC 3039 - informational)
 
 **Cross-references:**
-- [DevOps Playground Cluster](../../projects/devops-playground-cluster/) - Monitoring infrastructure
-- [Home Automation](../../projects/home-automation/) - Sensor data collection
+- [DevOps Playground Cluster](../../devops-playground-cluster/) - Monitoring infrastructure
+- [Home Automation](../../home-automation/) - Sensor data collection
 
 ---
 
@@ -1053,27 +1053,27 @@ Streaming audio alongside video/telemetry
 
 ### Active Development Projects
 
-**[ScoreMachine](../../projects/scoremachine/)**
+**[ScoreMachine](../../scoremachine/)**
 - Real-world synchronized telemetry + video production
 - Phase 1: Serial-to-TCP converters (E810-DTU) + Raspberry Pi
 - Phase 2: OBS Studio + WebSocket metadata overlay
 - **Relevant standards:** RTSP concepts, WebSocket protocol
 - **Lessons:** Single-PC acquisition is pragmatic for sync
 
-**[SCPI Instrument Control](../../projects/scpi-instrument-control/)**
+**[SCPI Instrument Control](../../scpi-instrument-control/)**
 - Network control of test equipment (HP 34401A, Rigol instruments)
 - IEEE 488.2 protocol
 - .NET Core VISA driver implementation
 - **Relevant standards:** SCPI, IEEE 488.2, network protocols
 - **Integration opportunity:** LSL sink for SCPI measurements
 
-**[Passive Radar SDR](../../projects/passive-radar-sdr/)**
+**[Passive Radar SDR](../../passive-radar-sdr/)**
 - Multi-channel synchronized receiver
 - Clock synchronization challenges (GPS GPSDO, RTL-SDR)
 - **Relevant standards:** PTP (IEEE 1588), RaptorQ for multi-receiver aggregation
 - **Timing critical:** Nanosecond sync needed for phase coherence
 
-**[Radex One Protocol Reverse Engineering](../../projects/radex-one-protocol-reverse-engineering/)**
+**[Radex One Protocol Reverse Engineering](../../radex-one-protocol-reverse-engineering/)**
 - USB serial protocol reverse engineering (geiger counter)
 - Binary protocol, checksums, packet structure
 - **Relevant standards:** Serial communication, data serialization
@@ -1081,13 +1081,13 @@ Streaming audio alongside video/telemetry
 
 ### Infrastructure & DevOps
 
-**[DevOps Playground Cluster](../../projects/devops-playground-cluster/)**
+**[DevOps Playground Cluster](../../devops-playground-cluster/)**
 - Docker/Kubernetes for data processing
 - Real-time stream processing potential
 - **Relevant standards:** Kafka, OpenTelemetry, gRPC
 - **Integration opportunity:** Stream processing pipelines
 
-**[Home Automation](../../projects/home-automation/)**
+**[Home Automation](../../home-automation/)**
 - Z-Wave network integration, Home Assistant migration
 - Sensor data collection
 - **Relevant standards:** MQTT, Z-Wave, event streaming
@@ -1095,24 +1095,24 @@ Streaming audio alongside video/telemetry
 
 ### Testing & Equipment
 
-**[Test Equipment Inventory](../../Test%20Equipment/)**
+**[Test Equipment Inventory](../../../.personal/incoming/test-equipment.md)**
 - SCPI-capable instruments (oscilloscope, DMM, function generator)
 - Analog Discovery 2, logic analyzers
 - **Standards directly applicable:** RFC 7826 (RTSP concepts for streaming measurements), SCPI, IEEE-488.2
 
-**[Programmable Devices](../../Programmable%20Devices/)**
+**[Programmable Devices](../../../.personal/incoming/programmable-devices.md)**
 - Arduino, STM32, Raspberry Pi, Zynq SoC
 - Data acquisition platforms
 - **Relevant standards:** Serial communication (UART), USB HID, SPI, I2C
 
 ### Research & Reference
 
-**[Analog Computing Research](../../AnalogComputers/)**
+**[Analog Computing Research](../../../AnalogComputers/)**
 - Signal processing fundamentals (232 PDFs)
 - Component datasheets (ADI, TI, ALPACA, biomedical)
 - **Relevance:** Understanding analog sensor characteristics before digitization
 
-**[Notes/software/](../../Notes/software/)**
+**[Notes/software/](../../../Notes/software/)**
 - AI/ML ecosystem documentation
 - Python-based data analysis tools
 - **Relevance:** Post-acquisition analysis pipeline
@@ -1220,6 +1220,6 @@ Streaming audio alongside video/telemetry
 
 *Last updated: 2026-01-16*
 
-*This bibliography is part of the [Synchronized Telemetry Streaming Research Project](README.md)*
+*This bibliography is part of the [Synchronized Telemetry Streaming Research Project](../README.md)*
 
 *For detailed implementations, see project-specific documentation files*

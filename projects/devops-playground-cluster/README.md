@@ -153,7 +153,7 @@ This is a **learning playground**, not a production environment. The goal is to 
 ## Related Projects
 
 - [Home Automation](../home-automation/) - Home Assistant could run on this cluster (if not on dedicated Pi)
-- [WD My Cloud PR4100](../../Device%20Lab/network-storage/wd-mycloud-pr4100/) - Could provide NFS storage to cluster
+- [WD My Cloud PR4100](../../.personal/incoming/device-lab.md) - Could provide NFS storage to cluster
 - [Self-Hosted Git Server](../self-hosted-git-server/) - Production Git on PR4100; cluster can use for CI/CD webhooks
 - [FPGA CPU Design](../fpga-cpu-design/) - Once Slurm is running here, [AMD's Vivado SLURM-cluster integration guide](https://docs.amd.com/r/en-US/ug904-vivado-implementation/SLURM-Specific-Configuration) lets Vivado offload synthesis/place-and-route jobs from the FPGA CPU Design workstation to this cluster over SSH — a concrete real use for the Slurm learning goal beyond generic batch-job practice
 
@@ -174,9 +174,9 @@ This is a **learning playground**, not a production environment. The goal is to 
 
 ## Equipment Used
 
-- [Reduced BigRig](../../Device%20Lab/desktops/reduced-bigrig/) - FX-9590, 32GB RAM, 2x R9 290 GPUs
-- [Server FX-8350](../../Device%20Lab/desktops/server-fx8350/) - FX-8350, 32GB RAM, 3TB storage
-- [WD My Cloud PR4100](../../Device%20Lab/network-storage/wd-mycloud-pr4100/) - Optional NFS storage backend
+- [Reduced BigRig](../../.personal/incoming/device-lab.md) - FX-9590, 32GB RAM, 2x R9 290 GPUs
+- [Server FX-8350](../../.personal/incoming/device-lab.md) - FX-8350, 32GB RAM, 3TB storage
+- [WD My Cloud PR4100](../../.personal/incoming/device-lab.md) - Optional NFS storage backend
 
 ## Notes
 

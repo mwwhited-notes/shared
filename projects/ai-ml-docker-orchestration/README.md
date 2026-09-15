@@ -2,6 +2,16 @@
 
 **Status**: Production-Ready | **Type**: DevOps / Infrastructure / AI/ML
 
+> **Link audit note (2026-09-15):** every relative link below (`compositions/`, `services/`,
+> `../containers/*`) points at content that isn't present in this directory or at
+> `projects/containers/` — only this README.md exists on disk here. Likely explanation: the
+> actual compose/service files migrated into the separate `containers` repository
+> (`OutOfBandDevelopment/containers` → `code/public/containers`, see the
+> [Docker Containers Collection](../README.md#docker-containers-collection) entry) during that
+> consolidation, and this README was never updated to match. Left unlinked rather than guessing
+> at paths — needs verifying against `code/public/containers` and either restoring the files
+> here or repointing these links there.
+
 ---
 
 ## Overview

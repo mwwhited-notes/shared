@@ -80,7 +80,7 @@ This project explores System-on-Chip (SoC) design using the Xilinx Zynq architec
 
 **Repository:** [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery)
 
-**Analysis:** [.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md](../../../.claude/analysis/EmbeddedBakery/4caaa60-2025-03-14.md)
+**Analysis:** [.claude/analysis/EmbeddedBakery/7074443-2026-01-08.md](../../../.claude/analysis/EmbeddedBakery/7074443-2026-01-08.md)
 - 28 FPGA projects (includes Arty Z7-20 work)
 - 6,586 files total
 - Platforms: Arty A7-100, Arty Z7-20, Cyclone II, PAL/GAL

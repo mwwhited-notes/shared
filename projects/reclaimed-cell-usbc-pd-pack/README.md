@@ -120,7 +120,7 @@ end note
 
 - Block diagram: see above (embedded PlantUML)
 - Cross-reference: [Test Equipment inventory](../../.personal/incoming/test-equipment.md) (existing multimeter, bench supplies)
-- Cross-reference: [tools-and-components.md](../../tools-and-components.md) (wire, heat shrink, general assembly stock)
+- Cross-reference: [tools-and-components.md](../../.personal/incoming/tools-and-components.md) (wire, heat shrink, general assembly stock)
 
 ---
 

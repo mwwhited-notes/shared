@@ -28,7 +28,8 @@ Electronics, FPGA, and digital design notes:
 **Moved to Projects:**
 - **74-181/** → [SAP-1 Computer](../projects/sap-1-computer/reference-74181-alu/) - 74181 ALU chip research and Digital simulator files
 - **74f181.md** → [SAP-1 Computer](../projects/sap-1-computer/reference-74181-alu/) - Link to 74181 ALU notes
-- **3D Printer/** → [Test Equipment/velleman-k8200/notes/](../Test%20Equipment/velleman-k8200/notes/) - K8200 pinout and power notes
+- **3D Printer/** → K8200 pinout and power notes now live with the equipment itself in the
+  Personal repository ([Test Equipment inventory](../.personal/incoming/test-equipment.md))
 - **Field Programmable Analog Array/** → [Analog Computer Experiments](../projects/analog-computer-experiments/fpaa-research/) - FPAA research notes
 - **Xilinx Native FIFO.md** → [FPGA CPU Design](../projects/fpga-cpu-design/xilinx-fifo-reference.md) - Xilinx FPGA FIFO implementation notes
 
@@ -67,10 +68,12 @@ Software development, architecture, and DevOps notes:
   - `KL-1 (Circular Slide Rule).md` - Circular slide rule notes
 
 **Moved to Projects:**
-- **Favero/** → [Favero Fencing System](../projects/favero-fencing-scoring-system/reference/) - Fencing timing equipment documentation
-- **Duet3 - 3D Printer.md** → [Test Equipment/velleman-k8200/](../Test%20Equipment/velleman-k8200/duet3-notes.md) - Duet 3 control board notes
+- **Favero/** → [ScoreMachine - Favero protocol](../projects/scoremachine/favero-protocol.md) - Fencing timing equipment documentation
+- **Duet3 - 3D Printer.md** → Duet 3 control board notes now live with the equipment itself in
+  the Personal repository ([Test Equipment inventory](../.personal/incoming/test-equipment.md))
 - **RadexOneReverseEngineerNotes.md** → [Radex One Protocol](../projects/radex-one-protocol-reverse-engineering/protocol-notes.md) - Geiger counter reverse engineering
-- **NeTV.md** → [Programmable Devices/netv-fpga/](../Programmable%20Devices/netv-fpga/) - NeTV FPGA video overlay device
+- **NeTV.md** → NeTV FPGA video overlay device notes now live with the hardware itself in the
+  Personal repository ([Programmable Devices inventory](../.personal/incoming/programmable-devices.md))
 
 ## Root Level Files
 
@@ -85,7 +88,7 @@ Software development, architecture, and DevOps notes:
 - **Gadgets.md** → [projects/gadget-kit-ideas.md](../projects/gadget-kit-ideas.md) - Computer kits, test equipment builds, circuit ideas
 - **Stream.md** → [projects/streaming-channel-planning.md](../projects/streaming-channel-planning.md) - YouTube/Twitch electronics/computer channel planning
 - **HomeSeer-pi Backup.md** → [Home Automation](../projects/home-automation/homeseer-backup-notes.md) - HomeSeer backup procedures
-- **Linux Serial.md** → [Favero Fencing System](../projects/favero-fencing-scoring-system/reference/linux-serial-setup.md) - Linux serial port setup for scoring machine
+- **Linux Serial.md** → [ScoreMachine](../projects/scoremachine/reference/favero/linux-serial-setup.md) - Linux serial port setup for scoring machine
 - **UsbHidDecode.md** → [Radex One Protocol](../projects/radex-one-protocol-reverse-engineering/usb-hid-notes.md) - USB HID protocol decoding for Radex One
 
 ## Related Documentation
@@ -94,14 +97,14 @@ Software development, architecture, and DevOps notes:
 
 Equipment-specific notes have been moved to their respective directories:
 
-- **TI-99/4A notes** → [Vintage Computers/ti-99-4a/notes/](../Vintage%20Computers/ti-99-4a/notes/)
+- **TI-99/4A notes** → [Vintage Computers inventory](../.personal/incoming/vintage-computers.md)
 - **Analog Computing notes** → [projects/analog-computer-experiments/notes/](../projects/analog-computer-experiments/notes/)
 - **SAP-1 Computer** → [projects/sap-1-computer/](../projects/sap-1-computer/)
 
 ### Link Collections
 
 - [links.md](../links.md) - Curated technical links (AI/ML, dotnet, electronics, retro computing, etc.)
-  - Consolidated from `good reads.md`, `Vintage Stuff.md`, and `nerdy.md`
+  - Consolidated from `good reads.md`, `Vintage Stuff.md`, and `nerdy.md` (originals removed)
 
 ## When to Use Notes/
 
@@ -115,16 +118,16 @@ Add content to Notes/ when:
 - It's equipment documentation → Use appropriate equipment directory (Test Equipment/, Programmable Devices/, etc.)
 - It's an active project → Use projects/ directory
 - It's just links → Add to [links.md](../links.md)
-- It's component inventory → Use [tools-and-components.md](../tools-and-components.md)
+- It's component inventory → Use [tools-and-components.md](../.personal/incoming/tools-and-components.md)
 
 ## Cross-References
 
 - [projects/](../projects/) - Active project documentation
-- [DiagramsAndPatterns/](../DiagramsAndPatterns/) - Software architecture patterns and templates library
-- [Test Equipment/](../Test%20Equipment/) - Lab equipment documentation
-- [Programmable Devices/](../Programmable%20Devices/) - FPGA, MCU, dev boards
-- [Vintage Computers/](../Vintage%20Computers/) - Retro computing hardware
-- [tools-and-components.md](../tools-and-components.md) - Component inventory
+- [diagrams-and-patterns/](../diagrams-and-patterns/) - Software architecture patterns and templates library
+- [Test Equipment inventory](../.personal/incoming/test-equipment.md) - Lab equipment documentation
+- [Programmable Devices inventory](../.personal/incoming/programmable-devices.md) - FPGA, MCU, dev boards
+- [Vintage Computers inventory](../.personal/incoming/vintage-computers.md) - Retro computing hardware
+- [tools-and-components.md](../.personal/incoming/tools-and-components.md) - Component inventory
 - [links.md](../links.md) - Curated technical links
 
 ---

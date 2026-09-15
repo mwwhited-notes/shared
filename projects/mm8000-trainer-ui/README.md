@@ -51,7 +51,7 @@ The project combines physical hardware (MM-8000K trainer) with software emulatio
 ## Related Projects
 
 - [MM8000 Emulator Repository](https://github.com/mwwhited-archives/MM8000) - Existing CLI emulator
-- [8085 soft core on FPGA](../../project-ideas.md) - Future FPGA implementation
+- [8085 soft core on FPGA](../project-ideas.md) - Future FPGA implementation
 - [EmbeddedBakery](https://github.com/mwwhited/EmbeddedBakery) - Related embedded systems work
 
 ## Learning Goals

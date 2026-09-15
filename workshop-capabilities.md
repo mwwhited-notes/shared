@@ -109,13 +109,13 @@ Two-node home lab for container orchestration and DevOps learning:
 
 ### Test & Measurement
 
-For complete test equipment inventory with detailed specifications, see [`.personal/incoming/test-equipment.md`](.personal/incoming/test-equipment.md) (42 units).
+For complete test equipment inventory with detailed specifications, see [`.personal/incoming/test-equipment.md`](.personal/incoming/test-equipment.md) (44 units).
 
 Quick Reference:
 
 | Category            | Equipment                                        | Capability                    |
 |---------------------|--------------------------------------------------|-------------------------------|
-| **Oscilloscope**    | Rigol DS1102E (100MHz), Tektronix TDS2024 (200MHz), Hitachi V-1150 (150MHz analog) | Debug signals to ~50 MHz      |
+| **Oscilloscope**    | Rigol DS1102E (100MHz), Tektronix TDS2024 (200MHz), Tektronix 2230 (100MHz, ×2), Hitachi V-1150 (150MHz analog) | Debug signals to ~100 MHz     |
 | **Multimeter**      | HP 34401A (6½ digit), Rigol DM3058E (5½ digit)   | Precision measurements        |
 | **LCR Meter**       | DER EE DE-5000 (100kHz)                          | Component characterization    |
 | **Logic Analyzer**  | Digilent Analog Discovery 2 (16 digital channels @ 100 MSa/s) | Digital protocol debug        |
@@ -123,7 +123,7 @@ Quick Reference:
 | **Thermal**         | FLIR TG130 (80x60)                               | Hot spot detection            |
 | **Microscope**      | 3.5X-90X stereo + 5MP camera, 40X-2000X compound | SMD work, inspection, imaging |
 | **Document Camera** | Kitchbar KB-700 (8MP)                            | PCB photos, documentation     |
-| **Signal Generator**| Rigol DG1022 (2ch, 20MHz)                        | Function generation, testing  |
+| **Signal Generator**| Rigol DG1022 (2ch, 20MHz), Rigol DG1022Z unlocked as DG1062Z (2ch, 60MHz) | Function generation, testing  |
 | **RF / SDR**        | RTL-SDR Blog V4 (500 kHz - 1766 MHz, RX only)    | Spectrum analysis, ADS-B, weather satellites |
 
 ### Assembly & Rework

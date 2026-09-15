@@ -76,7 +76,7 @@ Standardized data format for netCDF-4 (HDF5 under the hood) with additional scie
 Climate model output, weather forecast data, oceanographic measurements
 
 **Cross-references:**
-- [Analog Computing Research](../../AnalogComputers/) - Contains climate simulation papers
+- [Analog Computing Research](../../../AnalogComputers/) - Contains climate simulation papers
 
 ---
 
@@ -164,7 +164,7 @@ Format designed specifically for multimodal, asynchronous stream recording. Comb
 
 **Cross-references:**
 - [Lab Streaming Layer (LSL)](https://github.com/sccn/labstreaminglayer)
-- [event-streaming-and-blob-transfer.md](event-streaming-and-blob-transfer.md) - Detailed LSL coverage
+- [event-streaming-and-blob-transfer.md](../streaming/event-streaming-and-blob-transfer.md) - Detailed LSL coverage
 
 ---
 
@@ -354,7 +354,7 @@ High-volume analytics (billions of events), data warehouse, log analysis
 **Use Case:** Research data archival, video/blob storage, data lakes
 
 **Cross-reference:**
-- [event-streaming-and-blob-transfer.md](event-streaming-and-blob-transfer.md) - S3 multipart upload details
+- [event-streaming-and-blob-transfer.md](../streaming/event-streaming-and-blob-transfer.md) - S3 multipart upload details
 
 ---
 
@@ -381,8 +381,8 @@ Self-hosted S3-compatible object storage. Bit-for-bit compatible API, can replac
 Private blob storage, research data, local backup, avoiding AWS egress charges
 
 **Cross-references:**
-- [DevOps Playground Cluster](../../projects/devops-playground-cluster/) - Container infrastructure
-- [Passive Radar SDR](../../projects/passive-radar-sdr/) - Potential archive target
+- [DevOps Playground Cluster](../../devops-playground-cluster/) - Container infrastructure
+- [Passive Radar SDR](../../passive-radar-sdr/) - Potential archive target
 
 ---
 
@@ -440,7 +440,7 @@ Multi-cloud deployments, analytics integration
 **Use Case:**
 Large-scale research data centers, enterprise private cloud, data sovereignty requirements
 
-**Related:** [DevOps Playground Cluster](../../projects/devops-playground-cluster/) could explore Ceph
+**Related:** [DevOps Playground Cluster](../../devops-playground-cluster/) could explore Ceph
 
 ---
 
@@ -990,4 +990,4 @@ Parquet + Metadata (JSON)
 
 *Last updated: 2026-01-16*
 
-*Part of: [Synchronized Telemetry Streaming Research](README.md)*
+*Part of: [Synchronized Telemetry Streaming Research](../README.md)*

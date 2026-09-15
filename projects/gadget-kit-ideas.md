@@ -12,7 +12,7 @@ Wishlist of computer kits, replicas, test equipment builds, and circuit projects
   - [ ] Complete Kit
 - [x] [Eater 8-bit Computer Kit](https://eater.net/8bit) - **COMPLETED** - See [SAP-1 Computer](sap-1-computer/)
 - [ ] [Compdyna GP-6 Analog Computer](https://www.glennsmuseum.com/items/comdyna/) - Vintage analog computer
-- [x] [TI-99/4A Computer](https://en.m.wikipedia.org/wiki/TI-99/4A) - **HAVE** - See [Vintage Computers](../Vintage%20Computers/ti-99-4a/)
+- [x] [TI-99/4A Computer](https://en.m.wikipedia.org/wiki/TI-99/4A) - **HAVE** - See [Vintage Computers inventory](../.personal/incoming/vintage-computers.md)
 
 ### Clones & Replicas
 
@@ -75,7 +75,7 @@ Wishlist of computer kits, replicas, test equipment builds, and circuit projects
 ## Related
 
 - [project-ideas.md](project-ideas.md) - Full project backlog organized by category
-- [Test Equipment/](../Test%20Equipment/) - Current lab equipment inventory
+- [Test Equipment inventory](../.personal/incoming/test-equipment.md) - Current lab equipment inventory
 
 ---
 

@@ -2,6 +2,12 @@
 
 **Part of:** [Vector Search in SQL Server](../README.md)
 
+> **Link audit note (2026-09-15):** this doc and its siblings (data-flows.md, message-flows.md)
+> link to `sql-implementation.md`, `csharp-implementation.md`, `examples/example-2-async-processing.md`,
+> and `examples/example-3-hybrid-search.md` — none of these were ever written (only
+> `examples/example-1-basic-search.md` exists). Left as-is rather than removed since they read as
+> a real content backlog, not stale references.
+
 ## Overview
 
 This document describes the architectural design patterns, system components, and integration strategies for implementing vector search in SQL Server using Locality-Sensitive Hashing (LSH).
