@@ -17,49 +17,12 @@ of fixed:
   `csharp-implementation.md`, `examples/example-2-async-processing.md`,
   `examples/example-3-hybrid-search.md` that were apparently never written
 
-Full audit done (1136 relative links checked, 379 raw hits, ~40 real bugs after filtering
-template placeholders and intentional external-doc mirror self-links). Fixing file-by-file
-with Edit (not a blanket script — first script attempt corrupted 43 files with empty/garbage
-links, was fully reverted via `git checkout`, no lasting damage).
-- [x] network-diagram.md - fixed extra `../` before `.personal/incoming/*`, malformed
-  Cross-References block (stray parens/leaked text), stale `home-automation/`/`Test Equipment/`/
-  `Vintage Computers/` links
-- [ ] readme.md (shared root) - Notes/ section stale (reorged into software/hardware
-  subfolders; some content e.g. Kubernetes, AI ML Stuff, 74-181, TI-99_4a, Favero, 3D Printer
-  appears genuinely gone - needs a decision, not just a link fix), 4 protocol links now live in
-  Personal/.claude/protocols/ not shared/.claude/protocols/, Programmable/Expansion/Test/Vintage
-  collection links need `.personal/incoming/*.md` remap
-- [ ] projects/synchronized-telemetry-streaming-research/reference/*.md + storage/*.md (4
-  files, ~35 links) - redundant `projects/` segment in `../../projects/X/` links, wrong-depth
-  Test Equipment/Programmable Devices/AnalogComputers/Notes links, and `README.md` self-links
-  that should be `../README.md` (no README.md in reference/streaming/transfer/storage/, only
-  reference/INDEX.md)
-- [ ] AnalogComputers/README.md - Programmable Devices/Test Equipment remap
-- [ ] Notes/README.md - Favero → projects/scoremachine/favero-protocol.md, DiagramsAndPatterns
-  casing, tools-and-components.md needs `.personal/incoming/` prefix, equipment collection remap
-- [ ] projects/README.md - favero-fencing-scoring-system orphan link (real content is
-  projects/scoremachine/favero-protocol.md), `../sap-1-computer/` extra `../`, stale
-  synchronized-telemetry-streaming-research sub-file paths (moved into reference/streaming/transfer/),
-  equipment collection remap
-- [ ] projects/gadget-kit-ideas.md, projects/radex-one-protocol-reverse-engineering/README.md,
-  changes/synchronized-telemetry-streaming-phase2-2026-01.md - equipment collection remap /
-  favero orphan link
-- [ ] diagrams-and-patterns/table-of-contents.md + suggested-guidelines.md - `DesignPatterns`→
-  `design-patterns`, `ArchitecturePatterns`→`architecture-patterns` casing, `SuggestedGuidelines.md`→
-  `suggested-guidelines.md`, `FutureIdeas.md`→`future-ideas.md`, one literal `.md.md` typo
-  (`ServicePatterns.md.md`)
-- [ ] ~15 individual project READMEs - equipment collection remap (Test Equipment,
-  Programmable Devices, Device Lab, Vintage Computers, Expansion Boards → `.personal/incoming/*.md`)
-- [ ] Stale `.claude/analysis/{repo}/{hash}-{date}.md` links (wrapper-level) in
-  analog-computer-experiments, fpga-cpu-design, sap-1-computer, self-hosted-git-server,
-  zynq-soc-exploration, dotex-consolidation, containers-collection READMEs. Confirmed current:
-  EmbeddedBakery→7074443-2026-01-08.md, MM8000→c71dd8b-2023-01-01.md,
-  DeviceBridge→a3acd76-2025-07-22.md. BuildFirstOnce/YearOfCode2024 analyses no longer exist -
-  those links should just be removed.
-- [ ] Content gaps (not link bugs, need your call): vector-search-sqlserver/docs/ links to
-  sql-implementation.md, csharp-implementation.md, example-2/3 that were never written;
-  ai-ml-docker-orchestration/README.md describes compositions/ and services/ subdirs that don't
-  exist on disk at all despite being marked "Production-Ready" in projects/README.md
+Fixed: network-diagram.md, readme.md (equipment/Notes sections rewritten to match the actual
+current structure), the synchronized-telemetry-streaming-research reference/storage/streaming/
+transfer cluster, AnalogComputers/README.md, Notes/README.md, projects/README.md,
+diagrams-and-patterns casing, ~15 individual project READMEs' equipment-collection links, and
+stale `.claude/analysis/{repo}/{hash}.md` links (EmbeddedBakery, MM8000, DeviceBridge current;
+BuildFirstOnce/YearOfCode2024 analyses no longer exist, noted as removed).
 
 ### Protocol/Interface Project Scan (session 2026-09-15)
 - [ ] Review shared/projects/ for serial, network-protocol, and interface work that could move
