@@ -1,19 +1,26 @@
-# Hardware Setup - Greaseweazle + Epson SD-800
+# Hardware Setup - Greaseweazle + Epson SD-800/SD-700
 
 ## Equipment
 
 - **Greaseweazle V4.1** - Flux-level disk imaging device
-- **Epson SD-800** - **Dual-drive unit** (5.25" + 3.5" in one enclosure)
+- **Epson SD-800/SD-700** - **Dual-drive unit** (5.25" + 3.5" in one enclosure)
 - **34-pin floppy cable** - Standard PC floppy ribbon cable
-- **5V power supply** - For the SD-800 drives (Molex or SATA power)
+- **5V power supply** - For the SD-800/SD-700 drives (Molex or SATA power)
 
-## Epson SD-800 Overview
+**Identification (this unit):** the enclosure contains two independent mechanisms, each with its own label. Full spec sheet and jumper reference: [Personal/Collections/Test Equipment/epson-sd800-sd700-combo-drive/](../../../../Personal/Collections/Test%20Equipment/epson-sd800-sd700-combo-drive/README.md).
+
+| Mechanism | Model | Serial | Part Number | Date/Lot Code |
+|-----------|-------|--------|--------------|----------------|
+| 3.5" | SD-800 | n300105049 | SD880-002-01 | N81117 |
+| 5.25" | SD-700 | D300100838 | SD-780-001 | N71108 |
+
+## Epson SD-800/SD-700 Overview
 
 **This is PERFECT for Apple II archival!**
 
-The SD-800 is a combination drive with:
-- **5.25" drive** - For Apple II/IIe/IIc disks (140KB)
-- **3.5" drive** - For Apple IIgs disks (800KB)
+The combo unit pairs two mechanisms:
+- **SD-700 (5.25" drive)** - For Apple II/IIe/IIc disks (140KB); physically an 80-track/96 TPI 1.2MB-class mechanism, double-stepped to address Apple's 40 tracks
+- **SD-800 (3.5" drive)** - For Apple IIgs disks (800KB)
 - **Single 34-pin connector** - Both drives on one cable
 - **Shared power** - One Molex connector powers both
 - **Drive select jumpers** - Access either or both drives
@@ -25,8 +32,8 @@ The SD-800 is a combination drive with:
 | Feature | Apple Disk II | Epson SD-800 |
 |---------|--------------|--------------|
 | **Type** | Apple proprietary | Standard PC drive |
-| **Tracks** | 35 (0-34) | 40 (0-39) |
-| **Speed** | 300 RPM variable | 300 RPM constant |
+| **Tracks** | 35 (0-34), 48 TPI | 80 (0-79), 96 TPI — double-stepped to 40 tracks for Apple format |
+| **Speed** | 300 RPM variable | 300 RPM (SS2 set to "D" / NORM mode) |
 | **Head Load** | Solenoid | Mechanical |
 | **Interface** | Custom Apple controller | Standard PC floppy |
 | **Track 0 Sensor** | Optical | Magnetic |
@@ -48,6 +55,52 @@ The SD-800 is a combination drive with:
 **Recommendation:** The SD-800 will work, but you may encounter more read errors than with a native Apple Disk II drive. Greaseweazle's retry and error correction should compensate.
 
 ---
+
+## Jumper Check (Confirmed on This Unit, 2026-09-25)
+
+Jumpers were found at factory default. Verified against the official spec sheet:
+
+| Jumper | Found at | Meaning | Action |
+|--------|----------|---------|--------|
+| SS1 (drive select) | A | Drive A = 5.25" (SD-700), Drive B = 3.5" (SD-800) | None — matches `--drive A:`/`--drive B:` used throughout this project |
+| SS2 mode (L/H) | H | NORM mode when drive is selected | None — NORM is correct for Apple's DD-style format |
+| SS2 speed (D/S) | **S (360 RPM)** | 5.25" mechanism spins at 360 RPM in NORM mode | **Move to D (300 RPM)** — Apple II 5.25" disks require 300 RPM; leaving this at default will misread every disk, and no `--rpm-range` setting can compensate for the drive physically spinning at the wrong speed |
+
+### Jumper Block Diagram
+
+Reproduced from the official Epson spec sheet's pin layout (`X` = shorting jumper installed across that row; `o` = open pin; each column is a 3-pin header, top-to-bottom). SS2's 3rd column (speed) is the only thing that needs to move — SS1 and SS2's 4th column (mode) stay exactly as found.
+
+**As found (factory default — SS2 speed jumper shorts the bottom two pins = `S`, 360 RPM):**
+```
+     A                   1    3    D    L    R
+    ---                 -----------------------
+     X                   o    o    o    o    o
+SS1  X              SS2  o    o    X    X    o
+     o                   o    o    X    X    o
+    ---                 -----------------------
+     B                   0    2    S    H    D
+                                   ▲    ▲
+                               360 RPM  NORM mode
+                               (WRONG   (correct,
+                                for      leave as-is)
+                                Apple)
+```
+
+**Required for Apple II 5.25" archival (SS2 speed jumper moved up to short the top two pins = `D`, 300 RPM):**
+```
+     A                   1    3    D    L    R
+    ---                 -----------------------
+     X                   o    o    X    o    o
+SS1  X              SS2  o    o    X    X    o
+     o                   o    o    o    X    o
+    ---                 -----------------------
+     B                   0    2    S    H    D
+                                   ▲    ▲
+                               300 RPM  NORM mode
+                               (correct) (unchanged)
+```
+
+Only the speed jumper on SS2's 3rd column moves — pull it off the `S` position (bottom two pins) and reseat it one row up on the `D` position (top two pins). Nothing else on either block changes.
 
 ## Physical Connections
 
@@ -357,23 +410,21 @@ gw read --drive A: --format apple2.140 \
 4. **Readily available** - Easier to find than Apple drives
 5. **Cheaper** - PC drives are inexpensive
 
-**Recommendation:** Use the SD-800 for your archival project. If you encounter disks that won't read reliably, consider acquiring an Apple Disk II drive as a backup.
+**Recommendation:** Use the SD-800/SD-700 for your archival project. If you encounter disks that won't read reliably, consider acquiring an Apple Disk II drive as a backup — but see the correction below, this is not a "cable" swap.
 
 ---
 
 ## Alternative: Apple Disk II Drive
 
-If you want to use a native Apple drive in the future:
+**Correction (2026-09-25):** this section previously said a native Apple drive just needs a "custom cable" to Greaseweazle. That's wrong — it's a protocol mismatch, not a wiring problem:
 
-**Options:**
-1. **Standalone Disk II** - Apple A2M0003 (requires 12V power + custom cable)
-2. **IIc/IIgs Internal Drive** - Can be extracted and used standalone
-3. **Daisy Chain** - Use IIc with drive attached, interface via controller card
+- Greaseweazle speaks the **Shugart 34-pin protocol** (step + direction pulses, drive-side head-positioning logic) — what the SD-800/SD-700 and all standard PC drives use.
+- Apple's 19-pin DB-19 drives (Disk IIc, UniDisk 5.25", Apple 3.5") speak **IWM (Integrated Woz Machine)** signaling — phase lines that directly drive the stepper coils. A passive DB-19-to-34-pin pin adapter wires the wrong protocol to the wrong pins; it needs active translation logic.
+- The original **Disk II** (20-pin edge connector, pre-IIc) is further off still — it's a dumb drive with no onboard decode logic; the signal shaping happens on Apple's own Disk II controller card, which isn't in the loop if you connect the bare drive to Greaseweazle.
+- As of this writing there's an open, unresolved Greaseweazle GitHub issue ([#507](https://github.com/keirf/greaseweazle/issues/507)) asking for exactly this adapter — no official solution exists yet.
+- **[Applesauce](https://applesaucefdc.com/hardware/)** is the tool actually built for native Apple drives — it has real IWM support and sells the adapter cables for it. Big Mess o' Wires' DB-19 adapters are for their own Yellowstone Apple II controller, not Greaseweazle.
 
-**Connection to Greaseweazle:**
-- Requires custom cable (DA-15 or 19-pin to 34-pin)
-- Several adapters available commercially (~$30-50)
-- Or build your own (pinout available online)
+**Bottom line:** for Greaseweazle, stick with the SD-800/SD-700 (or another standard Shugart drive). If a native Apple drive becomes necessary for marginal disks, that means switching to Applesauce, not adapting a cable.
 
 **Not needed immediately** - Try SD-800 first!
 
@@ -426,6 +477,10 @@ gw read --drive A: --format apple2.140 \
 2. Increase retries: `--retries 20`
 3. Adjust settle time: `--settle-time 30ms`
 4. Try different disk (test if it's the drive or the disk)
+
+### Cross-Talk Between the Two Mechanisms
+
+**Documented gotcha (from Applesauce controller docs for this exact combo drive, not yet confirmed with Greaseweazle):** activity on one mechanism's internal flex cable can interfere with flux-level reads on the other, since both share the enclosure and cabling. If reads on one drive are noisy or inconsistent, try physically disconnecting the other mechanism's internal flex cable while imaging. Update this note once verified against this Greaseweazle setup.
 
 ### "Works for Some Disks, Not Others"
 
@@ -529,5 +584,6 @@ gw read --drive A: --format apple2.140 \
 ---
 
 **Created:** 2026-01-19
-**Hardware:** Greaseweazle V4.1 + Epson SD-800
+**Updated:** 2026-09-25 - identified individual mechanism model/serial/part numbers, corrected 5.25" track count/TPI, added cross-talk caution
+**Hardware:** Greaseweazle V4.1 + Epson SD-800/SD-700
 **For:** Apple II disk archival project
