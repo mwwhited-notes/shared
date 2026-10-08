@@ -18,6 +18,7 @@ Active project documentation and build logs organized by category.
 | [Apple II Disk Archival](#apple-ii-disk-archival) | Retro Computing | Active | [Greaseweazle V4.1](../.personal/incoming/test-equipment.md), Epson SD-800 |
 | [Apple II Toolkit](#apple-ii-toolkit) | Retro Computing | Early Prototype | [Apple IIc](../.personal/incoming/vintage-computers.md) |
 | [EEG Formats Learning](#eeg-formats-learning) | Data Formats / Learning | Early Stub | Software-only, no hardware |
+| [Plugin Sandbox](#plugin-sandbox) | Software/Architecture | Design Complete | .NET 10, no hardware |
 | [Passive Radar SDR](#passive-radar-sdr-system) | RF/SDR | Planning | [KrakenSDR/RTL-SDR](../.personal/incoming/test-equipment.md) |
 | [Radex One Protocol](#radex-one-geiger-counter-protocol) | Protocol Reverse Eng | Completed | [Radex One](../.personal/incoming/device-lab.md) |
 | [Favero Fencing System](#favero-fencing-scoring-system) | Protocol Integration | Completed | Favero Full-Arm-05 |
@@ -203,6 +204,24 @@ Learning project on EEG file formats, lossless storage and time synchronization,
 **Caveat:** Mostly written from model knowledge during a chat. Only the `.ksy` files were checked, and only against synthetic data. Claims are tagged `[tested]`, `[found]` or `[memory]`; not clinical or medical-device guidance.
 
 **Related:** [Apple II Toolkit](apple-ii-toolkit/) (same Kaitai Struct approach to format specs)
+
+---
+
+#### Plugin Sandbox
+**Status:** Design Complete (no production code; reference sketches never compiled or tested)
+**Directory:** [plugin-sandbox-project/](plugin-sandbox-project/)
+
+Design for a sandboxed, any-language plugin system for a .NET 10 host app, migrated from a claude.ai conversation. Plugins run as out-of-process children with no network and only host-selected files. The host supervises the full lifecycle (start, stop, restart, crash and hang recovery) with two lifetime policies, Bound (dies with the host) and Detached (survives a host crash). Communication is hub-and-spoke over one framed stdio protocol, with default-deny policy per plugin. Targets Windows (AppContainer), Linux (Landlock/seccomp shim) and macOS (Seatbelt shim).
+
+**Documentation:**
+- [docs/design.md](plugin-sandbox-project/docs/design.md) - Full design with inline PlantUML
+- [docs/decision-log.md](plugin-sandbox-project/docs/decision-log.md) - Decisions, corrections, open questions
+- `docs/diagrams/` - 9 PlantUML sources with rendered SVGs
+- `reference/` - AppContainer launcher, job object and `ManagedPlugin` supervisor (C# sketches)
+
+**Equipment:** None (software-only)
+
+**Not yet written:** Linux native shim, macOS Seatbelt profile, wire protocol/IDL, SDKs.
 
 ---
 
