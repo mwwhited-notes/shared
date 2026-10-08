@@ -1,0 +1,13 @@
+ver
+dir
+type hello.txt
+ren new.txt=hello.txt
+dir
+era new.txt
+era new.txt
+test arg
+nosuch
+save 1 prog.com
+dir
+dump 3c0
+exit

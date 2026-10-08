@@ -1,0 +1,16 @@
+# build output
+*.o
+*.lst
+*.bin
+*.map
+build/
+__pycache__/
+node_modules/
+# generated test images
+prodos-ksy/test.po
+prodos-ksy/test.2mg
+# disk images you make yourself
+*.po
+*.2mg
+*.hdv
+*.dsk
