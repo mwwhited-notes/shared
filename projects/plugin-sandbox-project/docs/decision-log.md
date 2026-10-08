@@ -27,6 +27,25 @@ A condensed record of how the design evolved in the original conversation: what 
 | 15 | Portability | No cross-platform runtime exists for every language | One package with an executable per platform. WASM (Wasmtime) is an optional extra entry. |
 | 16 | Packaging | Fat package first (all platforms in one zip), split later if size matters | Signature + per-file hashes verified before extraction. Run only from host-owned read-only locations. |
 
+## Proposed decisions added after migration (2026-10-08)
+
+From a follow-up discussion about external file and network access, approvals, connection types, network isolation and abuse limits. These are **proposed, not settled**. They are written up in `design.md` §10-13 and exercised by `use-cases.md`. Review each before treating it as a decision.
+
+| # | Topic | Proposed decision | Notes |
+|---|---|---|---|
+| 17 | Declared needs | Manifest `permissions` section lists external files, network endpoints, groups and listeners, each with an `id` and a `reason` | Author *requests*; nothing is granted by the package itself. |
+| 18 | Separate approval | The host operator or user approves, in a store that is not part of the package | The "secondary approval" idea. Scopes: install, session, once, expiring. Dual control left open. |
+| 19 | Effective policy | requested ∩ approved ∩ host ceiling | Keeps fail-closed. Ceiling covers things never allowed (loopback, private ranges, metadata addresses). |
+| 20 | Re-approval | Approvals keyed to package hash and signer. Widened requests need re-approval | A subset request keeps existing approvals. |
+| 21 | Brokered access | The OS sandbox stays deny-all. Approved access is served by the host broker over the single channel | One policy model across OSes. Grants and revocation need no restart. Per-use prompts become possible. |
+| 22 | Tunnel mode | **Blind tunnels** by default (no TLS termination, no content inspection). Semantic brokers and protocol helpers are opt-in extras | Gains: any protocol, credentials stay in the plugin. Loses: operation-level policy and secondary-connection derivation. |
+| 23 | Name resolution | The host resolves DNS and refuses loopback, private, link-local and metadata addresses unless the approval names them | Blocks SSRF and DNS rebinding. |
+| 24 | Connection models | Stream, datagram, multicast fan-out, primary-plus-secondary, inbound, and peer-to-peer are distinct. Host owns listeners. Inbound and peer-to-peer need explicit review, peer-to-peer denied by default | FTP-style protocols need declared secondaries or a helper; prefer SFTP. |
+| 25 | Network isolation | Plugins use no host ports (stdio/pipe channel). Linux adds an empty network namespace. Windows AppContainer stays the baseline; package-SID firewall rule and Windows containers are optional extras | Windows containers conflict with the low-latency goal. macOS is deny-only. |
+| 26 | Resource and abuse limits | Two layers: OS hard limits (job object, cgroup) plus host soft limits (token buckets, bounded queues, stream caps). Escalation: burst → throttle → warn → kill/restart → quarantine | Limits are declared, approved and intersected like other permissions. |
+
+Brokered files (handles instead of broader sandbox grants) are part of decision 21.
+
 ## Corrections made along the way
 
 These supersede earlier statements in the conversation. The reference code and `design.md` already reflect them.
@@ -57,9 +76,26 @@ Roughly 1.1-2x slower than native on compute-heavy code, near native for I/O-bou
 4. Fat packages vs per-platform packages with a registry?
 5. Which SDK languages ship first?
 
+### Open questions added 2026-10-08
+
+6. Approval timing: install, first use, per use, or a mix?
+7. Dual control: does any permission need two approvers, and who is the second?
+8. How do standard drivers reach the broker: SDK stream API only, or a local SOCKS5/`CONNECT` endpoint (which relaxes "plugins cannot create sockets")?
+9. Is channel-multiplexed streaming fast enough for bulk data, or should bulk data use passed handles?
+10. Which backends (if any) get a semantic broker or protocol helper?
+11. How are wildcard host approvals constrained?
+12. Detached plugins and brokered access: orphan mode, or OS services with scoped direct network access?
+13. Is peer-to-peer ever supported?
+14. Is the optional Windows firewall layer worth the elevation and cleanup cost?
+15. Automatic quarantine for repeat offenders, or warn-only?
+
+`design.md` §18 also lists the OS-level claims in the proposed sections that were written from general knowledge and need checking against current documentation before building.
+
 ## Suggested first tasks for Claude Code
 
 - Scaffold the .NET 10 solution: `Host` (manager, supervisor, router, policy, package loader), `Protocol` (envelope + framing + IDL), `Launchers.Windows`, `Launchers.Unix`, and a `Conformance` test project.
 - Turn `reference/shared/ManagedPlugin.cs` into compiled, unit-tested code (backoff, crash-loop, stop-during-backoff).
 - Define the wire protocol (pick protobuf or JSON-RPC) and implement the .NET SDK first, then one more language.
 - Build the Windows launcher from `reference/windows/` and verify with a test plugin that network and file escapes are denied.
+- Review `design.md` §10-13 and `use-cases.md`, answer open questions 6-15, then settle or reject decisions 17-26.
+- Verify the "claims to verify" list in `design.md` §18 before building the broker or the OS-level limits.

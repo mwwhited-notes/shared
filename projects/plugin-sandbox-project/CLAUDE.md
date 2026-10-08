@@ -27,6 +27,17 @@ A plugin system for the user's own .NET 10 application:
 9. **Plugins must be idempotent and restartable** (killable at any instant), not "reentrant". The host owns committed state.
 10. **Heartbeat must be answered by the same loop that handles requests**, so a deadlocked plugin can't keep beating from a side thread.
 
+## Proposed additions (2026-10-08, awaiting review, not settled)
+
+A follow-up discussion added a permission and brokering layer. Treat these as proposals until the user confirms them; do not code against them without asking. Details are in `docs/design.md` §10-13 and scenarios in `docs/use-cases.md`.
+
+- Plugins **declare** external file and network needs in the manifest; the host operator **approves** them separately. Effective policy = requested ∩ approved ∩ host ceiling.
+- Approved access is **brokered by the host** over the channel. The OS sandbox stays deny-all.
+- Network access defaults to **blind tunnels** (no TLS termination). The host resolves DNS and refuses private, loopback and metadata addresses. Semantic brokers and protocol helpers (Mongo, FTP) are opt-in.
+- Plugins use **no host ports**. Linux adds an empty network namespace. Windows Firewall package-SID rules are an optional second layer.
+- Resource control is two-layer: OS hard limits plus host soft limits, with an escalation ladder ending in quarantine.
+- Several OS-level claims in these sections are **unverified** (listed in `design.md` §18). Verify before relying on them.
+
 ## Corrections made during design (code in `reference/` already reflects these)
 
 - **One job object per plugin**, not one shared static job. `ActiveProcessLimit = 1` is per job.
@@ -41,7 +52,8 @@ A plugin system for the user's own .NET 10 application:
 CLAUDE.md                     this file
 docs/design.md                full design document (with PlantUML)
 docs/decision-log.md          decisions, rationale, rejected options, open questions
-docs/diagrams/src/*.puml      diagram sources
+docs/use-cases.md             scenarios the design should serve, with status and open items
+docs/diagrams/src/*.puml      diagram sources (10-12 are proposed and not yet rendered)
 docs/diagrams/svg/*.svg       rendered diagrams
 reference/windows/            AppContainer launcher + per-plugin job object (C# sketches)
 reference/shared/             ManagedPlugin supervisor + PluginManager (C# sketch)
@@ -67,6 +79,7 @@ The files in `reference/` are **design sketches, not compiled or tested**. Treat
 3. Should long-running telemetry plugins be Detached children, or OS services (Windows Service / systemd / launchd) with the host as a client?
 4. Fat packages (all platforms in one file) or per-platform packages with a registry?
 5. Which SDK languages ship first?
+6-15. Approval timing, dual control, driver access to the broker, bulk-data path, which backends get semantic brokers, wildcard limits, Detached plugins with network needs, peer-to-peer, the Windows firewall layer, automatic quarantine. See `docs/design.md` §18.
 
 ## Conventions
 

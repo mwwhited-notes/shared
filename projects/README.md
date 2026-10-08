@@ -221,6 +221,8 @@ Design for a sandboxed, any-language plugin system for a .NET 10 host app, migra
 
 **Equipment:** None (software-only)
 
+**Proposed additions awaiting review (2026-10-08):** declared permissions with separate operator approval, host-brokered file and network access (blind tunnels by default), network isolation, and resource limits with abuse handling. See `docs/design.md` §10-13 and `docs/use-cases.md`.
+
 **Not yet written:** Linux native shim, macOS Seatbelt profile, wire protocol/IDL, SDKs.
 
 ---

@@ -21,10 +21,15 @@ Claude Code loads `CLAUDE.md` automatically, which summarizes the goals, settled
 | `CLAUDE.md` | Project memory for Claude Code: context, decisions, conventions |
 | `docs/design.md` | Full design document with inline PlantUML |
 | `docs/decision-log.md` | Why each decision was made, what was corrected, open questions |
-| `docs/diagrams/src/` | PlantUML sources (9 diagrams) |
-| `docs/diagrams/svg/` | Rendered SVGs |
+| `docs/use-cases.md` | Scenarios the design should serve, with status and open items (added 2026-10-08) |
+| `docs/diagrams/src/` | PlantUML sources (12 diagrams; 10-12 are proposed additions) |
+| `docs/diagrams/svg/` | Rendered SVGs (diagrams 1-9 only; 10-12 not yet rendered) |
 | `reference/windows/` | AppContainer launcher and per-plugin job object (uncompiled C# sketches) |
 | `reference/shared/` | `ManagedPlugin` supervisor and `PluginManager` (uncompiled C# sketch) |
+
+## Review status (2026-10-08)
+
+`docs/design.md` sections 10-13 (permissions and approval, brokered external access, network isolation, resource limits and abuse handling) were added after the original design as **proposals for review**. They are not settled decisions. See decisions 17-26 and open questions 6-15 in `docs/decision-log.md`, and `docs/use-cases.md` for the scenarios behind them.
 
 ## Notes
 
