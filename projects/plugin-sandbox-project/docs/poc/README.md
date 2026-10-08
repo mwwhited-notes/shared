@@ -11,7 +11,7 @@ Concept-level documentation for the proof of concept (POC): what it must prove, 
 
 ## Where the code is
 
-`C:\repo\mine\proving-grounds\examples\plugin-sandbox-poc\` (the `proving-grounds` repo, as of 2026-10-08, **not yet committed there**). It holds:
+`examples/plugin-sandbox-poc/` in the [`proving-grounds`](https://github.com/mwwhited/proving-grounds) repo (local checkout `C:\repo\mine\proving-grounds`). As of 2026-10-08 it is **not yet committed or pushed there**, so the GitHub path will 404 until it is. It holds:
 
 - `PROFILE.md`: the example wire profile (framing, envelope, the six plugin rules). An example encoding, not a settled decision.
 - `plugins/`: example plugins in Python, C# and Node, plus a deliberately misbehaving `chaos-python` fixture.
@@ -19,6 +19,15 @@ Concept-level documentation for the proof of concept (POC): what it must prove, 
 - `README.md`: build, run and test instructions.
 
 Implementation continues there. This folder is the concept the code is built against.
+
+## Repositories
+
+| Role | Repository | Notes |
+|:--|:--|:--|
+| Concept and design (this folder) | [mwwhited-notes/shared](https://github.com/mwwhited-notes/shared) (`projects/plugin-sandbox-project`) | Public. Local: `C:\repo\notes\shared` |
+| POC implementation | [mwwhited/proving-grounds](https://github.com/mwwhited/proving-grounds) (`examples/plugin-sandbox-poc`) | Local: `C:\repo\mine\proving-grounds` |
+| Promotion target (phase 6) | [OutOfBandDevelopment/dotex](https://github.com/OutOfBandDevelopment/dotex) | Local: `C:\repo\oobdev\dotex`. Read its README and layering/coverage rules before moving code |
+| Wrapper | [mwwhited-notes/all](https://github.com/mwwhited-notes/all) | Tracks `shared` by submodule pointer |
 
 ## Relationship to the rest of the project
 

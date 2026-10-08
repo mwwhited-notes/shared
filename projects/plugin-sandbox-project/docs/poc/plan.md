@@ -14,7 +14,7 @@ Follows the planning shell's build order (§17), reordered so the Windows launch
 | 3 | Escape suite as a product | Escape plugins packaged as a runnable suite with a per-OS result table (held, failed, unverified) | Not started |
 | 4 | Linux shim and launcher | Same escape suite denied on Linux. Go, Node and JVM plugins can still create threads under seccomp | Not started |
 | 5 | Packaging | Platform selection, hash verification, signature check; tampered package rejected; "unavailable on this platform" before launch | Not started |
-| 6 | Promotion to dotex | Protocol, Host, launcher and conformance projects build and test on their own; moved with dotex READMEs and coverage; POC runs against the packages | Not started |
+| 6 | Promotion to [dotex](https://github.com/OutOfBandDevelopment/dotex) | Protocol, Host, launcher and conformance projects build and test on their own; moved with dotex READMEs and coverage; POC runs against the packages | Not started |
 | 7 | Detached mode, macOS | Detached survives host crash and reattaches by state file; macOS launcher with documented reduced guarantees | Later |
 
 Not planned until the base is proven: permissions and approval (§10), brokered access (§11), network isolation (§12), resource-limit escalation (§13).
