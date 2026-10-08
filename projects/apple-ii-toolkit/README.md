@@ -63,4 +63,7 @@ or MAME. Each project's own README has the details.
 5. Use the IIc's auxiliary 64K for a RAM disk or program buffers.
 6. Longer term: replace ProDOS with a boot sector and a disk layer of your own.
 
+**Related:** Originally documented in [projects/project-ideas.md](../project-ideas.md).
+Real disk images to test against can come from [apple-ii-disk-archival](../apple-ii-disk-archival/).
+
 See `CLAUDE.md` for working conventions if you open this folder in Claude Code.

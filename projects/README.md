@@ -16,6 +16,7 @@ Active project documentation and build logs organized by category.
 | [ATtiny2313 LED Clock](#attiny2313-led-clock) | Microcontrollers | Completed | [ATtiny2313](../.personal/incoming/programmable-devices.md) |
 | [MM-8000K Trainer UI](#mm-8000k-intel-8085-trainer-ui) | Retro Computing | On Hold | [MM-8000K](../.personal/incoming/vintage-computers.md) |
 | [Apple II Disk Archival](#apple-ii-disk-archival) | Retro Computing | Active | [Greaseweazle V4.1](../.personal/incoming/test-equipment.md), Epson SD-800 |
+| [Apple II Toolkit](#apple-ii-toolkit) | Retro Computing | Early Prototype | [Apple IIc](../.personal/incoming/vintage-computers.md) |
 | [Passive Radar SDR](#passive-radar-sdr-system) | RF/SDR | Planning | [KrakenSDR/RTL-SDR](../.personal/incoming/test-equipment.md) |
 | [Radex One Protocol](#radex-one-geiger-counter-protocol) | Protocol Reverse Eng | Completed | [Radex One](../.personal/incoming/device-lab.md) |
 | [Favero Fencing System](#favero-fencing-scoring-system) | Protocol Integration | Completed | Favero Full-Arm-05 |
@@ -167,6 +168,23 @@ Comprehensive archival and preservation of Apple II 5.25" and 3.5" floppy disk c
 - [Notes/hardware/apple-ii-printshop-toyshop-guide.md](../Notes/hardware/apple-ii-printshop-toyshop-guide.md) - Print Shop/Toy Shop specific guide
 
 **Related:** [ImageWriter II Emulator](imagewriter-ii-emulator/) (print archived programs), [PrinterEmulator](https://github.com/mwwhited/PrinterEmulator)
+
+---
+
+#### Apple II Toolkit
+**Status:** Early Prototype (assembles and passes mocked tests; never run on real hardware or a full Apple II emulator)
+**Directory:** [apple-ii-toolkit/](apple-ii-toolkit/)
+
+An operating system with a shell for the Apple IIc in 6502 assembly (ca65), plus precise specs of the disk format it uses. Three parts:
+- `a2shell/` - tiny command shell running as a ProDOS 8 `SYSTEM` file
+- `a2cpm/` - CP/M-style OS (command processor, BDOS calls, transient programs) on top of ProDOS files; tested under py65 with mocked ROM/ProDOS
+- `prodos-ksy/` - Kaitai Struct specs for the ProDOS 8 volume and 2IMG container, with a generated layout diagram page; tested on a synthetic image only
+
+**Equipment:** Apple IIc (and IIgs for later work); AppleWin or MAME for emulation
+
+**Caveat:** MLI parameter layouts and memory-banking details were written from memory and need checking against the ProDOS 8 and Apple IIc Technical References.
+
+**Related:** [Apple II Disk Archival](apple-ii-disk-archival/) (source of real disk images to test against), [project-ideas.md](project-ideas.md) (follow-on ideas)
 
 ---
 

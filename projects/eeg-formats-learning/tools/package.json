@@ -1,0 +1,10 @@
+{
+  "name": "eeg-formats-tools",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Compile-check helpers for the .ksy files in ../ksy",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "kaitai-struct-compiler": "^0.11.0"
+  }
+}

@@ -12,6 +12,7 @@ Project backlog for future development. Once a project has its own directory in 
 
 * write a simple game for the NES and Apple II (program in 6502 assembly) [have NESMaker PCBs, Apple IIc, Apple IIgs]
 * build **[Multicomp Z80 CP/M system](../.personal/incoming/programmable-devices.md)** on EP2C5-DB [have Multicomp kit, Grant Searle designs available]
+* ~~Build an OS with a shell for the Apple IIc in 6502 assembly~~ - **ACTIVE** [see projects/apple-ii-toolkit/](apple-ii-toolkit/) (next steps are tracked in its README) [have Apple IIc, Apple IIgs]
 * build Multicomp 6502 system with BASIC [good prep for Apple II projects]
 * build Multicomp 6809 Flex/OS-9 system [learn another 8-bit architecture]
 * Gigatron TTL expansion or game development [have Gigatron TTL computer]
