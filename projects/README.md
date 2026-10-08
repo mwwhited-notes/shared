@@ -17,6 +17,7 @@ Active project documentation and build logs organized by category.
 | [MM-8000K Trainer UI](#mm-8000k-intel-8085-trainer-ui) | Retro Computing | On Hold | [MM-8000K](../.personal/incoming/vintage-computers.md) |
 | [Apple II Disk Archival](#apple-ii-disk-archival) | Retro Computing | Active | [Greaseweazle V4.1](../.personal/incoming/test-equipment.md), Epson SD-800 |
 | [Apple II Toolkit](#apple-ii-toolkit) | Retro Computing | Early Prototype | [Apple IIc](../.personal/incoming/vintage-computers.md) |
+| [EEG Formats Learning](#eeg-formats-learning) | Data Formats / Learning | Early Stub | Software-only, no hardware |
 | [Passive Radar SDR](#passive-radar-sdr-system) | RF/SDR | Planning | [KrakenSDR/RTL-SDR](../.personal/incoming/test-equipment.md) |
 | [Radex One Protocol](#radex-one-geiger-counter-protocol) | Protocol Reverse Eng | Completed | [Radex One](../.personal/incoming/device-lab.md) |
 | [Favero Fencing System](#favero-fencing-scoring-system) | Protocol Integration | Completed | Favero Full-Arm-05 |
@@ -185,6 +186,23 @@ An operating system with a shell for the Apple IIc in 6502 assembly (ca65), plus
 **Caveat:** MLI parameter layouts and memory-banking details were written from memory and need checking against the ProDOS 8 and Apple IIc Technical References.
 
 **Related:** [Apple II Disk Archival](apple-ii-disk-archival/) (source of real disk images to test against), [project-ideas.md](project-ideas.md) (follow-on ideas)
+
+---
+
+#### EEG Formats Learning
+**Status:** Early Stub (learning notes plus format descriptions; no hardware involved)
+**Directory:** [eeg-formats-learning/](eeg-formats-learning/)
+
+Learning project on EEG file formats, lossless storage and time synchronization, ending in a draft design for a seekable, losslessly compressed multichannel format for overnight (sleep) recordings with video. Contents:
+- `ksy/` - Kaitai Struct descriptions of EDF/EDF+, BDF, FIF, XDF, EEGLAB `.fdt` and BrainVision `.eeg`
+- `tools/` - `run_checks.sh` compiles every `.ksy` and parses synthetic files
+- `docs/` - background, format layouts, storage/compression, canonical format design, time and sync, sources
+
+**Equipment:** None (software-only)
+
+**Caveat:** Mostly written from model knowledge during a chat. Only the `.ksy` files were checked, and only against synthetic data. Claims are tagged `[tested]`, `[found]` or `[memory]`; not clinical or medical-device guidance.
+
+**Related:** [Apple II Toolkit](apple-ii-toolkit/) (same Kaitai Struct approach to format specs)
 
 ---
 
