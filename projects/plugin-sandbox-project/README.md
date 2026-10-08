@@ -19,7 +19,8 @@ Claude Code loads `CLAUDE.md` automatically, which summarizes the goals, settled
 | Path | What it is |
 |---|---|
 | `CLAUDE.md` | Project memory for Claude Code: context, decisions, conventions |
-| `docs/design.md` | Full design document with inline PlantUML |
+| `docs/design.md` | Design index: section map, review status, reading paths |
+| `docs/design/` | The design itself, in 12 topic files with inline PlantUML (sandbox, communication, lifecycle, permissions, brokered access, and so on) |
 | `docs/decision-log.md` | Why each decision was made, what was corrected, open questions |
 | `docs/use-cases.md` | Scenarios the design should serve, with status and open items (added 2026-10-08) |
 | `docs/diagrams/src/` | PlantUML sources (12 diagrams; 10-12 are proposed additions) |

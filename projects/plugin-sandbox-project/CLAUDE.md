@@ -1,6 +1,6 @@
 # Plugin Sandboxing & Lifecycle Management
 
-This project was migrated from a claude.ai design conversation. It holds a completed design and reference code sketches. **No production code exists yet.** Start by reading `docs/design.md`, then `docs/decision-log.md` for the reasoning and the corrections made along the way.
+This project was migrated from a claude.ai design conversation. It holds a completed design and reference code sketches. **No production code exists yet.** Start by reading `docs/design.md` (an index to the topic files in `docs/design/`; `§` numbers cited anywhere map to files through its section table), then `docs/decision-log.md` for the reasoning and the corrections made along the way.
 
 ## What we're building
 
@@ -50,7 +50,8 @@ A follow-up discussion added a permission and brokering layer. Treat these as pr
 
 ```
 CLAUDE.md                     this file
-docs/design.md                full design document (with PlantUML)
+docs/design.md                design index: section map (§ numbers to files), review status, reading paths
+docs/design/*.md              the design in 12 topic files (01 goals/architecture ... 12 open questions), with PlantUML
 docs/decision-log.md          decisions, rationale, rejected options, open questions
 docs/use-cases.md             scenarios the design should serve, with status and open items
 docs/diagrams/src/*.puml      diagram sources (10-12 are proposed and not yet rendered)
