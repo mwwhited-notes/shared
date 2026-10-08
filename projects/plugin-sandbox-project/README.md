@@ -21,6 +21,7 @@ Claude Code loads `CLAUDE.md` automatically, which summarizes the goals, settled
 | `CLAUDE.md` | Project memory for Claude Code: context, decisions, conventions |
 | `docs/design.md` | Design index: section map, review status, reading paths |
 | `docs/design/` | The design itself, in 12 topic files with inline PlantUML (sandbox, communication, lifecycle, permissions, brokered access, and so on) |
+| `docs/poc/` | Concept docs for the proof of concept: use cases, user journeys, design, plan (added 2026-10-08). The POC code lives in `proving-grounds`, not here |
 | `docs/decision-log.md` | Why each decision was made, what was corrected, open questions |
 | `docs/use-cases.md` | Scenarios the design should serve, with status and open items (added 2026-10-08) |
 | `docs/diagrams/src/` | PlantUML sources (12 diagrams; 10-12 are proposed additions) |
